@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Desk Pulse</title>
-  <link rel="stylesheet" href="styles.css?v=v2pulse2">
+  <link rel="stylesheet" href="styles.css?v=v2pulse3">
 </head>
 <body>
   <header class="top">
@@ -26,7 +26,7 @@
     <div id="err" class="err" hidden role="alert"></div>
 
     <section class="hero" aria-label="Equity">
-      <p class="hero-k">Equity</p>
+      <p class="hero-k" id="hero-label">Equity</p>
       <p id="equity" class="hero-n">—</p>
       <div class="hero-pnl-row">
         <div class="pnl-block">
@@ -44,7 +44,7 @@
           <span id="liquid" class="num">—</span>
         </div>
         <div>
-          <span class="k">Funding</span>
+          <span class="k">Start</span>
           <span id="funding" class="num">—</span>
         </div>
         <div>
@@ -55,10 +55,21 @@
       </div>
       <p id="funding-note" class="funding-note" hidden></p>
       <div class="wallet-strip" id="wallet-strip">
-        <span class="k">V2</span>
-        <code id="wallet-hero" class="wallet-full">—</code>
-        <button type="button" id="wallet-copy-hero" class="copy-btn">Copy</button>
+        <code id="wallet" class="wallet-full" title="Full V2 address">—</code>
+        <button type="button" id="wallet-copy" class="copy-btn">Copy</button>
       </div>
+      <p id="wallet-copied" class="copied" hidden>Copied</p>
+      <p id="wallet-links" class="wallet-links"></p>
+    </section>
+
+    <section class="panel paper-panel" id="paper-panel" aria-label="Paper" hidden>
+      <div class="panel-h">
+        <h2>Paper</h2>
+        <span id="paper-badge" class="count">SIM</span>
+      </div>
+      <div id="paper-grid" class="hold-grid"></div>
+      <div id="paper-open" class="paper-open"></div>
+      <p id="paper-queued" class="paper-queued"></p>
     </section>
 
     <section class="panel" aria-label="Holdings">
@@ -108,16 +119,6 @@
       </div>
     </details>
 
-    <section class="panel wallet-panel" aria-label="Wallet">
-      <div class="panel-h">
-        <h2>Wallet</h2>
-        <button type="button" id="wallet-copy" class="copy-btn">Copy</button>
-      </div>
-      <p id="wallet" class="wallet-full" title="Tap Copy">—</p>
-      <p id="wallet-copied" class="copied" hidden>Copied</p>
-      <p id="wallet-links" class="wallet-links"></p>
-    </section>
-
     <section class="meta">
       <p><span class="k">Notes</span> <span id="notes" class="wrap">—</span></p>
     </section>
@@ -127,6 +128,6 @@
       <span>webbeep · auto 30s</span>
     </footer>
   </main>
-  <script src="app.js?v=v2pulse2"></script>
+  <script src="app.js?v=v2pulse3"></script>
 </body>
 </html>

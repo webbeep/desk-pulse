@@ -1,16 +1,20 @@
 {
-  "updated_et": "2026-09-16 22:57:37 ET",
+  "updated_et": "2026-09-16 23:05:12 ET",
+  "mode": "PAPER",
+  "display_mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "liquid_usd": 0.0,
-  "upnl_usd": 0.0,
-  "equity_usd": 0.0,
-  "status": "FLAT",
-  "funding_usd": 0.0,
-  "funding_note": "V2 cutover baseline $0 \u2014 legacy history archived",
-  "total_pnl_usd": 0.0,
-  "total_pnl_pct": null,
+  "liquid_usd": 80.0,
+  "upnl_usd": -0.12,
+  "equity_usd": 99.88,
+  "status": "PAPER",
+  "funding_usd": 100.0,
+  "funding_note": "PAPER mode \u00b7 $100 sim bankroll \u00b7 Coinbase hold \u00b7 live V2 still $0 on-chain",
+  "total_pnl_usd": -0.12,
+  "total_pnl_pct": -0.12,
   "holdings": {
+    "paper_cash_usd": 80.0,
+    "paper_open_usd": 20.0,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -30,11 +34,68 @@
     "ethereum": "https://etherscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "arbitrum": "https://arbiscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-    "robinhood": "RH chainId 4663"
+    "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-1",
+      "market": "NVDA",
+      "asset": "NVDA",
+      "side": "LONG",
+      "sizeUsd": 20.0,
+      "collUsd": 20.0,
+      "entry": 216.66339421511552,
+      "mark": null,
+      "upnl_usd": -0.12,
+      "sl": 199.33032267790628,
+      "tp": 249.16290334738284,
+      "notes": "PAPER SIM \u00b7 RH Uniswap \u00b7 NO LIVE"
+    }
+  ],
   "position": null,
-  "pnl_history": [],
+  "pnl_history": [
+    {
+      "t": "2026-09-16 23:05:12 ET",
+      "equity_usd": 99.88,
+      "liquid_usd": 80.0,
+      "upnl_usd": -0.12,
+      "n_pos": 1
+    }
+  ],
   "trades": [],
-  "notes": "V2 clean start \u00b7 old history/trades archived \u00b7 FLAT until fund"
+  "paper": {
+    "active": true,
+    "start_equity_usd": 100.0,
+    "paper_equity_usd": 100.0,
+    "mtm_equity_usd": 99.88,
+    "realized_pnl_usd": 0.0,
+    "unrealized_pnl_usd": -0.12,
+    "sleeve_usd_max": 25.0,
+    "ticket_usd_max": 25.0,
+    "open_max": 1,
+    "open": {
+      "id": "PAPER-1",
+      "ticker": "NVDA",
+      "side": "LONG",
+      "size_usd": 20.0,
+      "entry": 216.66339421511552,
+      "qty": 0.0923090865092923,
+      "mtm_pnl_usd": -0.12,
+      "mtm_pnl_pct": -0.5998,
+      "cut": 199.33032267790628,
+      "tp": 249.16290334738284,
+      "status": "SIM_OPEN"
+    },
+    "queued": [
+      {
+        "id": "PAPER-2",
+        "ticker": "TSLA",
+        "side": "LONG",
+        "size_usd": 20,
+        "status": "QUEUED"
+      }
+    ],
+    "notes": "SIM only \u00b7 live chain bal 0 \u00b7 wait Coinbase"
+  },
+  "notes": "PAPER board \u00b7 $100 start \u00b7 PAPER-1 NVDA LONG $20 SIM_OPEN \u00b7 live V2 unfunded"
 }

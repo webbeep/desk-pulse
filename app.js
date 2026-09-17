@@ -637,8 +637,8 @@
     renderTrades(book.trades);
     const fullW = book.wallet || "—";
     $("wallet").textContent = fullW;
-    if ($("wallet-hero")) $("wallet-hero").textContent = fullW;
     wireWalletCopy(fullW);
+    renderPaper(book);
     renderWalletLinks(book);
     $("notes").textContent = book.notes || "—";
     $("src").textContent = bookSrc.replace(/^https?:\/\//, "").slice(0, 42);
@@ -666,7 +666,7 @@
         clearTimeout(wireWalletCopy._t);
         wireWalletCopy._t = setTimeout(function () { tip.hidden = true; }, 1500);
       }
-      ["wallet-copy", "wallet-copy-hero"].forEach(function (id) {
+      ["wallet-copy"].forEach(function (id) {
         const b = $(id);
         if (!b) return;
         const prev = b.textContent;
@@ -674,12 +674,72 @@
         setTimeout(function () { b.textContent = prev; }, 1200);
       });
     }
-    ["wallet-copy", "wallet-copy-hero"].forEach(function (id) {
+    ["wallet-copy"].forEach(function (id) {
       const b = $(id);
       if (!b || b.dataset.wired) return;
       b.dataset.wired = "1";
       b.addEventListener("click", copy);
     });
+  }
+
+
+  function renderPaper(book) {
+    const panel = $("paper-panel");
+    if (!panel) return;
+    const paper = book.paper;
+    const mode = (book.mode || book.display_mode || "").toString().toUpperCase();
+    const active = paper && (paper.active || mode === "PAPER");
+    panel.hidden = !active;
+    if (!active) return;
+    if ($("hero-label")) $("hero-label").textContent = "Paper equity";
+    const st = $("status");
+    if (st) {
+      st.textContent = "PAPER";
+      st.className = "status paper";
+    }
+    const grid = $("paper-grid");
+    if (grid) {
+      grid.innerHTML = "";
+      const cells = [
+        ["Start", money(paper.start_equity_usd)],
+        ["Equity", money(paper.mtm_equity_usd != null ? paper.mtm_equity_usd : paper.paper_equity_usd)],
+        ["Realized", money(paper.realized_pnl_usd)],
+        ["uPnL", money(paper.unrealized_pnl_usd)],
+        ["Sleeve max", money(paper.sleeve_usd_max)],
+        ["Ticket max", money(paper.ticket_usd_max)]
+      ];
+      cells.forEach(function (c) {
+        const d = document.createElement("div");
+        d.className = "hold-card";
+        d.innerHTML = '<div class="hold-k">' + c[0] + '</div><div class="hold-v">' + c[1] + "</div>";
+        grid.appendChild(d);
+      });
+    }
+    const openEl = $("paper-open");
+    if (openEl) {
+      const o = paper.open;
+      if (o) {
+        openEl.innerHTML =
+          "<strong>" + (o.id || "OPEN") + "</strong> · " +
+          (o.side || "") + " " + (o.ticker || "") + " · $" +
+          (o.size_usd != null ? o.size_usd : "—") +
+          "<br>entry " + (o.entry != null ? Number(o.entry).toFixed(2) : "—") +
+          " · MTM " + money(o.mtm_pnl_usd) +
+          (o.mtm_pnl_pct != null ? " (" + Number(o.mtm_pnl_pct).toFixed(2) + "%)" : "") +
+          "<br>cut " + (o.cut != null ? Number(o.cut).toFixed(2) : "—") +
+          " · TP " + (o.tp != null ? Number(o.tp).toFixed(2) : "—") +
+          " · " + (o.status || "");
+      } else {
+        openEl.textContent = "No open paper ticket";
+      }
+    }
+    const q = $("paper-queued");
+    if (q) {
+      const list = paper.queued || [];
+      q.textContent = list.length
+        ? "Queued: " + list.map(function (x) { return (x.id || "") + " " + (x.ticker || ""); }).join(", ")
+        : "No queued paper";
+    }
   }
 
   function showError(msg) {
