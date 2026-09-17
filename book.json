@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-17 07:54:09 ET",
+  "updated_et": "2026-09-17 07:56:59 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 75.2255,
-  "upnl_usd": -0.0205,
-  "equity_usd": 75.205,
+  "liquid_usd": 70.5098,
+  "upnl_usd": 0.0044,
+  "equity_usd": 70.5142,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "PAPER \u00b7 script MTM loop \u00b7 NO LIVE",
-  "total_pnl_usd": -24.795,
-  "total_pnl_pct": -24.795,
-  "mark_eth": 2429.49,
-  "mark": 2429.49,
+  "total_pnl_usd": -29.4858,
+  "total_pnl_pct": -29.4858,
+  "mark_eth": 2430.895,
+  "mark": 2430.895,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2429.49
+    "ETH": 2430.895
   },
   "holdings": {
-    "paper_cash_usd": 55.2255,
+    "paper_cash_usd": 50.5098,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -41,92 +41,77 @@
   },
   "positions": [
     {
-      "id": "PAPER-8",
-      "market": "MEME",
+      "id": "PAPER-9",
+      "market": "ETH",
       "side": "LONG",
       "size_usd": 20.0,
-      "entry": 0.00021539812990429774,
-      "mark": 0.00021517734682114582,
-      "uPnL": -0.0205,
-      "mtm_pct": -0.1024,
-      "sl": 0.00017231850392343821,
-      "tp": 0.0003230971948564466,
+      "entry": 0.0003687591971047334,
+      "mark": 0.0003688403241280965,
+      "uPnL": 0.0044,
+      "mtm_pct": 0.0222,
+      "sl": 0.00029500735768378674,
+      "tp": 0.0005531387956571001,
       "lev": 1,
       "paper": true,
-      "liq": 67080341704914669845641,
-      "held_min": 0.07
+      "liq": 63246764568802612649417,
+      "held_min": 0.11
     }
   ],
   "position": {
-    "id": "PAPER-8",
-    "market": "MEME",
+    "id": "PAPER-9",
+    "market": "ETH",
     "side": "LONG",
     "size_usd": 20.0,
-    "entry": 0.00021539812990429774,
-    "mark": 0.00021517734682114582,
-    "uPnL": -0.0205,
-    "mtm_pct": -0.1024,
-    "sl": 0.00017231850392343821,
-    "tp": 0.0003230971948564466,
+    "entry": 0.0003687591971047334,
+    "mark": 0.0003688403241280965,
+    "uPnL": 0.0044,
+    "mtm_pct": 0.0222,
+    "sl": 0.00029500735768378674,
+    "tp": 0.0005531387956571001,
     "lev": 1,
     "paper": true,
-    "liq": 67080341704914669845641,
-    "held_min": 0.07
+    "liq": 63246764568802612649417,
+    "held_min": 0.11
   },
   "pnl_history": [
     {
-      "t": "2026-09-17 07:54:09 ET",
-      "equity_usd": 75.205,
-      "liquid_usd": 75.2255,
-      "upnl_usd": -0.0205,
+      "t": "2026-09-17 07:56:59 ET",
+      "equity_usd": 70.5142,
+      "liquid_usd": 70.5098,
+      "upnl_usd": 0.0044,
       "n_pos": 1
     }
   ],
   "trades": [
     {
-      "t": "2026-09-17 07:54:05 ET",
-      "kind": "PAPER",
-      "market": "MEME",
+      "t": "2026-09-17 07:56:53 ET",
+      "kind": "PAPER_OPEN",
+      "venue": "RH_SIM",
+      "market": "ETH",
       "side": "LONG",
-      "size": 20,
+      "size_usd": 20.0,
+      "price": 0.0003687591971047334,
       "pnl_usd": null,
-      "tx": "SIM_OPEN"
-    },
-    {
-      "t": "2026-09-16 23:55:19 ET",
-      "kind": "PAPER",
-      "market": "ZEROCOIN",
-      "side": "LONG",
-      "size": 20,
-      "pnl_usd": -20.0,
-      "tx": "CUT_HARD_LIQ0"
-    },
-    {
-      "t": "2026-09-16 23:41:17 ET",
-      "kind": "PAPER",
-      "market": "TSLA",
-      "side": "LONG",
-      "size": 20,
-      "pnl_usd": -0.1101,
-      "tx": "ROTATE_OFF"
+      "tx": null,
+      "note": "PAPER-9 SIM_OPEN gate PASS"
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 75.2255,
-    "mtm_equity_usd": 75.205,
-    "realized_pnl_usd": -24.7745,
-    "unrealized_pnl_usd": -0.0205,
+    "paper_equity_usd": 70.5098,
+    "mtm_equity_usd": 70.5142,
+    "realized_pnl_usd": -29.4902,
+    "unrealized_pnl_usd": 0.0044,
     "open": {
-      "id": "PAPER-8",
-      "ticker": "MEME",
+      "id": "PAPER-9",
+      "ticker": "ETH",
       "usd": 20.0,
-      "mtm_pct": -0.1024
+      "mtm_pct": 0.0222
     },
     "notes": "script MTM \u226410s HOLD",
     "mtm_poll_sec": 10.0,
     "mtm_max_sec": 60
   },
-  "notes": "OPEN MEME mtm -0.1024% \u00b7 script"
+  "notes": "OPEN ETH mtm 0.0222% \u00b7 script"
 }
