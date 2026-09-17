@@ -1,23 +1,24 @@
 {
-  "updated_et": "2026-09-16 23:18:16 ET",
+  "updated_et": "2026-09-16 23:20:54 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 99.88,
+  "liquid_usd": 79.88,
   "upnl_usd": 0,
   "equity_usd": 99.88,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 WAY aborted honeypot \u00b7 rotating PAPER-3",
+  "funding_note": "PAPER \u00b7 ARC open \u00b7 RT honeypot PASS",
   "total_pnl_usd": -0.12,
   "total_pnl_pct": -0.12,
-  "mark_eth": 2431.975,
-  "mark": 2431.975,
+  "mark_eth": 2431.465,
+  "mark": 2431.465,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2431.975
+    "ETH": 2431.465
   },
   "holdings": {
-    "paper_cash_usd": 99.88,
+    "paper_cash_usd": 79.88,
+    "paper_open_usd": 20,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,19 +40,30 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-3-ARC",
+      "market": "ARC",
+      "asset": "ARC",
+      "side": "LONG",
+      "sizeUsd": 20,
+      "collUsd": 20,
+      "upnl_usd": 0,
+      "notes": "PAPER SIM \u00b7 RT PASS 16bps \u00b7 HARD cuts"
+    }
+  ],
   "pnl_history": [
     {
-      "t": "2026-09-16 23:18:16 ET",
+      "t": "2026-09-16 23:20:54 ET",
       "equity_usd": 99.88,
-      "liquid_usd": 99.88,
+      "liquid_usd": 79.88,
       "upnl_usd": 0,
-      "n_pos": 0
+      "n_pos": 1
     }
   ],
   "trades": [
     {
-      "t": "2026-09-16 23:18:16 ET",
+      "t": "2026-09-16 23:20:54 ET",
       "kind": "PAPER",
       "market": "WAY",
       "side": "LONG",
@@ -60,7 +72,7 @@
       "tx": "ABORT_TAX"
     },
     {
-      "t": "2026-09-16 23:18:16 ET",
+      "t": "2026-09-16 23:20:54 ET",
       "kind": "PAPER",
       "market": "NVDA",
       "side": "LONG",
@@ -79,15 +91,19 @@
     "sleeve_usd_max": 25,
     "ticket_usd_max": 25,
     "open_max": 1,
-    "open": null,
-    "queued": [
-      {
-        "id": "PAPER-3",
-        "ticker": "ARC/SINU/ORBIT",
-        "status": "FIRING"
-      }
-    ],
-    "notes": "WAY aborted WARN_TAX \u00b7 RT honeypot required"
+    "open": {
+      "id": "PAPER-3-ARC",
+      "ticker": "ARC",
+      "side": "LONG",
+      "size_usd": 20,
+      "mtm_pnl_usd": 0,
+      "cut": -0.2,
+      "tp": 0.5,
+      "status": "SIM_OPEN",
+      "honeypot_bps": 16
+    },
+    "queued": [],
+    "notes": "ARC RT PASS \u00b7 ORBIT/WAY dead"
   },
-  "notes": "PAPER equity $99.88 \u00b7 WAY abort honeypot \u00b7 ETH $2431.975"
+  "notes": "PAPER-3 ARC LONG $20 \u00b7 equity $99.88 \u00b7 ETH $2431.465 \u00b7 RT 16bps"
 }
