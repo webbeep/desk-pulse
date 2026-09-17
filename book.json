@@ -1,24 +1,24 @@
 {
-  "updated_et": "2026-09-16 23:15:19 ET",
+  "updated_et": "2026-09-16 23:16:46 ET",
   "mode": "PAPER",
-  "display_mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 99.88,
-  "upnl_usd": 0,
+  "liquid_usd": 79.88,
+  "upnl_usd": 0.0,
   "equity_usd": 99.88,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER $100 \u00b7 universe ALL RH meme-first \u00b7 PAPER-1 closed",
+  "funding_note": "PAPER $100 meme-first \u00b7 PAPER-2 WAY open",
   "total_pnl_usd": -0.12,
   "total_pnl_pct": -0.12,
-  "mark_eth": 2431.745,
-  "mark": 2431.745,
+  "mark_eth": 2431.795,
+  "mark": 2431.795,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2431.745
+    "ETH": 2431.795
   },
   "holdings": {
-    "paper_cash_usd": 99.88,
+    "paper_cash_usd": 79.88,
+    "paper_open_usd": 20,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -40,19 +40,33 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-2",
+      "market": "WAY",
+      "asset": "WAY",
+      "side": "LONG",
+      "sizeUsd": 20,
+      "collUsd": 20,
+      "entry": null,
+      "upnl_usd": 0.0,
+      "sl": null,
+      "tp": null,
+      "notes": "PAPER SIM meme"
+    }
+  ],
   "pnl_history": [
     {
-      "t": "2026-09-16 23:15:19 ET",
+      "t": "2026-09-16 23:16:46 ET",
       "equity_usd": 99.88,
-      "liquid_usd": 99.88,
-      "upnl_usd": 0,
-      "n_pos": 0
+      "liquid_usd": 79.88,
+      "upnl_usd": 0.0,
+      "n_pos": 1
     }
   ],
   "trades": [
     {
-      "t": "2026-09-16 23:15:19 ET",
+      "t": "2026-09-16 23:16:46 ET",
       "kind": "PAPER",
       "market": "NVDA",
       "side": "LONG",
@@ -67,21 +81,24 @@
     "paper_equity_usd": 99.88,
     "mtm_equity_usd": 99.88,
     "realized_pnl_usd": -0.12,
-    "unrealized_pnl_usd": 0,
+    "unrealized_pnl_usd": 0.0,
     "sleeve_usd_max": 25,
     "ticket_usd_max": 25,
     "open_max": 1,
-    "open": null,
-    "queued": [
-      {
-        "id": "PAPER-2",
-        "ticker": "WAY",
-        "side": "LONG",
-        "size_usd": 20,
-        "status": "FIRING"
-      }
-    ],
-    "notes": "Universe ALL RH \u00b7 meme-first \u00b7 PAPER-2 opening"
+    "open": {
+      "id": "PAPER-2",
+      "ticker": "WAY",
+      "side": "LONG",
+      "size_usd": 20,
+      "entry": null,
+      "mtm_pnl_usd": 0.0,
+      "mtm_pnl_pct": null,
+      "cut": -0.2,
+      "tp": 0.5,
+      "status": "SIM_OPEN"
+    },
+    "queued": [],
+    "notes": "ALL RH \u00b7 meme-first \u00b7 WAY open"
   },
-  "notes": "PAPER equity $99.88 \u00b7 ALL RH coins \u00b7 meme-first \u00b7 ETH $2431.745"
+  "notes": "PAPER-2 WAY LONG $20 \u00b7 equity $99.88 \u00b7 ETH $2431.795"
 }
