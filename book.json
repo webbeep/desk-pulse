@@ -1,60 +1,40 @@
 {
-  "updated_et": "2026-09-16 22:56:51 ET",
+  "updated_et": "2026-09-16 22:57:37 ET",
+  "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
+  "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "liquid_usd": 0.0,
-  "upnl_usd": 0,
+  "upnl_usd": 0.0,
   "equity_usd": 0.0,
   "status": "FLAT",
-  "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "residuals": {
-    "arb_eth": 0.0,
-    "arb_usdc": 0.0,
-    "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "l1_eth": 0.0,
-    "rh_eth": 0.0
-  },
+  "funding_usd": 0.0,
+  "funding_note": "V2 cutover baseline $0 \u2014 legacy history archived",
+  "total_pnl_usd": 0.0,
+  "total_pnl_pct": null,
   "holdings": {
-    "L1": {
-      "eth": 0.0
-    },
-    "Arb": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "Base": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "RH": {
-      "eth": 0.0
-    }
+    "l1_eth": 0,
+    "arb_eth": 0,
+    "arb_usdc": 0,
+    "base_eth": 0,
+    "base_usdc": 0,
+    "rh_eth": 0
+  },
+  "residuals": {
+    "l1_eth": 0,
+    "arb_eth": 0,
+    "arb_usdc": 0,
+    "base_eth": 0,
+    "base_usdc": 0,
+    "rh_eth": 0
   },
   "wallet_urls": {
+    "ethereum": "https://etherscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "arbitrum": "https://arbiscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-    "ethereum": "https://etherscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-    "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
+    "robinhood": "RH chainId 4663"
   },
-  "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "V2 clean start \u00b7 old history archived \u00b7 FLAT until fund",
   "positions": [],
   "position": null,
   "pnl_history": [],
-  "funding_usd": 0.0,
-  "funding_note": "V2 cutover baseline $0 (2026-09-16). Prior $107 was legacy/Alpha burn bookkeeping \u2014 not V2 cash.",
-  "total_pnl_usd": 0.0,
-  "total_pnl_pct": null,
   "trades": [],
-  "mark": 2426.67,
-  "mark_src": "coinbase",
-  "mark_eth": 2426.67,
-  "mark_btc": 76315.19,
-  "mark_btc_src": "coinbase",
-  "mark_link": 11.105,
-  "mark_link_src": "coinbase",
-  "marks": {
-    "ETH": 2426.67,
-    "BTC": 76315.19,
-    "LINK": 11.105
-  }
+  "notes": "V2 clean start \u00b7 old history/trades archived \u00b7 FLAT until fund"
 }
