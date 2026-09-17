@@ -422,3 +422,48 @@ footer {
   .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .hold-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* V2 wallet copy */
+.wallet-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.wallet-full {
+  flex: 1;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  word-break: break-all;
+  color: #e8eef7;
+  user-select: all;
+  -webkit-user-select: all;
+}
+.copy-btn {
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #081018;
+  background: #7dd3fc;
+  cursor: pointer;
+}
+.copy-btn:active { transform: scale(0.98); }
+.copied {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  color: #86efac;
+}
+.wallet-panel .wallet-full {
+  margin: 0.25rem 0 0;
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.25);
+}

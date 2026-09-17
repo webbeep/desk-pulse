@@ -635,12 +635,51 @@
     renderPositions(live.cards);
     renderHist(book.pnlHistory);
     renderTrades(book.trades);
-    $("wallet").textContent = truncAddr(book.wallet);
+    const fullW = book.wallet || "—";
+    $("wallet").textContent = fullW;
+    if ($("wallet-hero")) $("wallet-hero").textContent = fullW;
+    wireWalletCopy(fullW);
     renderWalletLinks(book);
     $("notes").textContent = book.notes || "—";
     $("src").textContent = bookSrc.replace(/^https?:\/\//, "").slice(0, 42);
     paintAge();
     paintStale();
+  }
+
+
+  function wireWalletCopy(addr) {
+    async function copy() {
+      if (!addr || addr === "—") return;
+      try {
+        await navigator.clipboard.writeText(addr);
+      } catch (e) {
+        const ta = document.createElement("textarea");
+        ta.value = addr;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      const tip = $("wallet-copied");
+      if (tip) {
+        tip.hidden = false;
+        clearTimeout(wireWalletCopy._t);
+        wireWalletCopy._t = setTimeout(function () { tip.hidden = true; }, 1500);
+      }
+      ["wallet-copy", "wallet-copy-hero"].forEach(function (id) {
+        const b = $(id);
+        if (!b) return;
+        const prev = b.textContent;
+        b.textContent = "Copied";
+        setTimeout(function () { b.textContent = prev; }, 1200);
+      });
+    }
+    ["wallet-copy", "wallet-copy-hero"].forEach(function (id) {
+      const b = $(id);
+      if (!b || b.dataset.wired) return;
+      b.dataset.wired = "1";
+      b.addEventListener("click", copy);
+    });
   }
 
   function showError(msg) {

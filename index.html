@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Desk Pulse</title>
-  <link rel="stylesheet" href="styles.css?v=v2pulse1">
+  <link rel="stylesheet" href="styles.css?v=v2pulse2">
 </head>
 <body>
   <header class="top">
@@ -54,6 +54,11 @@
         </div>
       </div>
       <p id="funding-note" class="funding-note" hidden></p>
+      <div class="wallet-strip" id="wallet-strip">
+        <span class="k">V2</span>
+        <code id="wallet-hero" class="wallet-full">—</code>
+        <button type="button" id="wallet-copy-hero" class="copy-btn">Copy</button>
+      </div>
     </section>
 
     <section class="panel" aria-label="Holdings">
@@ -103,9 +108,17 @@
       </div>
     </details>
 
-    <section class="meta">
-      <p><span class="k">Wallet</span> <span id="wallet" class="num wrap">—</span></p>
+    <section class="panel wallet-panel" aria-label="Wallet">
+      <div class="panel-h">
+        <h2>Wallet</h2>
+        <button type="button" id="wallet-copy" class="copy-btn">Copy</button>
+      </div>
+      <p id="wallet" class="wallet-full" title="Tap Copy">—</p>
+      <p id="wallet-copied" class="copied" hidden>Copied</p>
       <p id="wallet-links" class="wallet-links"></p>
+    </section>
+
+    <section class="meta">
       <p><span class="k">Notes</span> <span id="notes" class="wrap">—</span></p>
     </section>
 
@@ -114,6 +127,6 @@
       <span>webbeep · auto 30s</span>
     </footer>
   </main>
-  <script src="app.js?v=v2pulse1"></script>
+  <script src="app.js?v=v2pulse2"></script>
 </body>
 </html>
