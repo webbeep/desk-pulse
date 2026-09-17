@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-16 23:05:12 ET",
+  "updated_et": "2026-09-16 23:05:40 ET",
   "mode": "PAPER",
   "display_mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
@@ -9,26 +9,36 @@
   "equity_usd": 99.88,
   "status": "PAPER",
   "funding_usd": 100.0,
-  "funding_note": "PAPER mode \u00b7 $100 sim bankroll \u00b7 Coinbase hold \u00b7 live V2 still $0 on-chain",
+  "funding_note": "PAPER $100 sim \u00b7 live on-chain V2 still unfunded (Coinbase hold) \u00b7 marks live",
   "total_pnl_usd": -0.12,
   "total_pnl_pct": -0.12,
+  "mark_eth": 2432.025,
+  "mark": 2432.025,
+  "mark_src": "coinbase",
+  "mark_btc": 76400.965,
+  "mark_btc_src": "coinbase",
+  "marks": {
+    "ETH": 2432.025,
+    "BTC": 76400.965
+  },
+  "live_onchain_liquid_usd": 0.0,
   "holdings": {
     "paper_cash_usd": 80.0,
     "paper_open_usd": 20.0,
-    "l1_eth": 0,
-    "arb_eth": 0,
-    "arb_usdc": 0,
-    "base_eth": 0,
-    "base_usdc": 0,
-    "rh_eth": 0
+    "l1_eth": 0.0,
+    "arb_eth": 0.0,
+    "arb_usdc": 0.0,
+    "base_eth": 0.0,
+    "base_usdc": 0.0,
+    "rh_eth": 0.0
   },
   "residuals": {
-    "l1_eth": 0,
-    "arb_eth": 0,
-    "arb_usdc": 0,
-    "base_eth": 0,
-    "base_usdc": 0,
-    "rh_eth": 0
+    "l1_eth": 0.0,
+    "arb_eth": 0.0,
+    "arb_usdc": 0.0,
+    "base_eth": 0.0,
+    "base_usdc": 0.0,
+    "rh_eth": 0.0
   },
   "wallet_urls": {
     "ethereum": "https://etherscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
@@ -45,17 +55,16 @@
       "sizeUsd": 20.0,
       "collUsd": 20.0,
       "entry": 216.66339421511552,
-      "mark": null,
       "upnl_usd": -0.12,
       "sl": 199.33032267790628,
       "tp": 249.16290334738284,
-      "notes": "PAPER SIM \u00b7 RH Uniswap \u00b7 NO LIVE"
+      "notes": "PAPER SIM \u00b7 RH \u00b7 NO LIVE"
     }
   ],
   "position": null,
   "pnl_history": [
     {
-      "t": "2026-09-16 23:05:12 ET",
+      "t": "2026-09-16 23:05:40 ET",
       "equity_usd": 99.88,
       "liquid_usd": 80.0,
       "upnl_usd": -0.12,
@@ -95,7 +104,7 @@
         "status": "QUEUED"
       }
     ],
-    "notes": "SIM only \u00b7 live chain bal 0 \u00b7 wait Coinbase"
+    "notes": "SIM only \u00b7 marks from Coinbase/RPC live"
   },
-  "notes": "PAPER board \u00b7 $100 start \u00b7 PAPER-1 NVDA LONG $20 SIM_OPEN \u00b7 live V2 unfunded"
+  "notes": "PAPER board \u00b7 ETH mark 2432.025 (coinbase) \u00b7 on-chain V2 liquid ~$0.00"
 }

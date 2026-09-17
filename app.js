@@ -201,6 +201,9 @@
       positions: positions,
       pnlHistory: hist,
       trades: Array.isArray(raw.trades) ? raw.trades : [],
+      mode: pick(raw, ["mode", "display_mode", "displayMode"]),
+      paper: (raw.paper && typeof raw.paper === "object") ? raw.paper : null,
+      markSrc: pick(raw, ["mark_src", "markSrc"]),
       marks: (function () {
         const src = raw.marks || raw.spot || {};
         const eth = num(pick(src, ["ETH", "eth", "ETH-USD", "eth_usd"])) ?? num(pick(raw, ["mark_eth", "markEth"]));
@@ -233,10 +236,11 @@
   }
 
   function liveNumbers(book) {
-    if (String(book.status || "").toUpperCase() === "FLAT") {
+    const st0 = String(book.status || "").toUpperCase();
+    if (st0 === "FLAT" && !(book.positions && book.positions.length)) {
       const liquid = book.liquidUsd != null ? book.liquidUsd : 0;
       const equity = book.bookEquity != null ? book.bookEquity : liquid;
-      return { mark: null, asset: markAsset, upnl: book.bookUpnl != null ? book.bookUpnl : 0, equity: equity, cards: [], open: [] };
+      return { mark: (book.marks && book.marks.ETH) || null, asset: "ETH", upnl: book.bookUpnl != null ? book.bookUpnl : 0, equity: equity, cards: [], open: [] };
     }
     const open = book.positions.filter(isOpen);
     let upnl = 0;
@@ -594,7 +598,10 @@
     const live = liveNumbers(book);
     markAsset = live.asset || markAsset;
     if ($("mark-label")) $("mark-label").textContent = markAsset;
-    $("live-mark").textContent = live.mark != null ? px(live.mark) : "—";
+    const ethMark = (book.marks && book.marks.ETH != null) ? book.marks.ETH : live.mark;
+    $("live-mark").textContent = ethMark != null ? px(ethMark) : "—";
+    if ($("mark-label")) $("mark-label").textContent = "ETH";
+    if ($("mark-age") && book.markSrc) $("mark-age").textContent = String(book.markSrc);
     $("liquid").textContent = money(book.liquidUsd);
 
     const fund = book.fundingUsd != null ? book.fundingUsd : 0;
