@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-16 23:21:20 ET",
+  "updated_et": "2026-09-16 23:22:52 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 79.88,
-  "upnl_usd": 0.0,
-  "equity_usd": 99.88,
+  "upnl_usd": 2.4499,
+  "equity_usd": 102.3299,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 ARC open \u00b7 RT honeypot PASS",
-  "total_pnl_usd": -0.12,
-  "total_pnl_pct": -0.12,
-  "mark_eth": 2430.825,
-  "mark": 2430.825,
+  "funding_note": "PAPER active \u00b7 live MTM refreshed",
+  "total_pnl_usd": 2.329899999999995,
+  "total_pnl_pct": 2.329899999999995,
+  "mark_eth": 2432.04,
+  "mark": 2432.04,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2430.825
+    "ETH": 2432.04
   },
   "holdings": {
     "paper_cash_usd": 79.88,
@@ -48,47 +48,47 @@
       "side": "LONG",
       "sizeUsd": 20,
       "collUsd": 20,
-      "entry": null,
-      "upnl_usd": 0.0,
-      "notes": "SIM_OPEN \u00b7 RT 18bps \u00b7 HARD cuts"
+      "entry": 7.101421269483175e-05,
+      "upnl_usd": 2.4499,
+      "notes": "MTM 12.25% \u00b7 HARD cuts"
     }
   ],
   "pnl_history": [
     {
-      "t": "2026-09-16 23:20:54 ET",
-      "equity_usd": 99.88,
-      "liquid_usd": 79.88,
-      "upnl_usd": 0,
+      "t": "2026-09-16 23:22:52 ET",
+      "equity_usd": 102.3299,
+      "liquid_usd": 99.88,
+      "upnl_usd": 2.4499,
       "n_pos": 1
     }
   ],
   "trades": [
     {
-      "t": "2026-09-16 23:20:54 ET",
-      "kind": "PAPER",
-      "market": "WAY",
-      "side": "LONG",
-      "size": 20,
-      "pnl_usd": 0,
-      "tx": "ABORT_TAX"
-    },
-    {
-      "t": "2026-09-16 23:20:54 ET",
+      "t": "2026-09-16 23:22:52 ET",
       "kind": "PAPER",
       "market": "NVDA",
       "side": "LONG",
       "size": 20,
       "pnl_usd": -0.12,
       "tx": "SIM_CLOSE"
+    },
+    {
+      "t": "2026-09-16 23:22:52 ET",
+      "kind": "PAPER",
+      "market": "WAY",
+      "side": "LONG",
+      "size": 20,
+      "pnl_usd": 0,
+      "tx": "ABORT_TAX"
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 99.88,
-    "mtm_equity_usd": 99.88,
+    "mtm_equity_usd": 102.3299,
     "realized_pnl_usd": -0.12,
-    "unrealized_pnl_usd": 0.0,
+    "unrealized_pnl_usd": 2.4499,
     "sleeve_usd_max": 25,
     "ticket_usd_max": 25,
     "open_max": 1,
@@ -97,17 +97,17 @@
       "ticker": "ARC",
       "side": "LONG",
       "size_usd": 20,
-      "entry": null,
+      "entry": 7.101421269483175e-05,
       "qty": 281633.7637360803,
-      "mtm_pnl_usd": 0.0,
-      "mtm_pnl_pct": null,
+      "mtm_pnl_usd": 2.4499,
+      "mtm_pnl_pct": 12.2497,
       "cut": -0.2,
       "tp": 0.5,
       "status": "SIM_OPEN",
       "honeypot_bps": 18
     },
     "queued": [],
-    "notes": "ARC RT PASS \u00b7 ORBIT/WAY dead"
+    "notes": "live QuoterV2 MTM"
   },
-  "notes": "PAPER-3 ARC SIM_OPEN \u00b7 qty\u2248281633.7637360803 \u00b7 MTM $0.00 \u00b7 ETH $2430.825"
+  "notes": "ARC MTM 12.25% ($2.45) \u00b7 ETH $2432.04 \u00b7 SIM_OPEN"
 }
