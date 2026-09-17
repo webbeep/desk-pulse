@@ -1,23 +1,25 @@
 {
-  "updated_et": "2026-09-16 23:28:25 ET",
+  "updated_et": "2026-09-16 23:29:18 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 95.3356,
-  "upnl_usd": 0,
-  "equity_usd": 95.3356,
+  "upnl_usd": -0.1199,
+  "equity_usd": 95.2157,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 WAY size-tax abort \u00b7 need trade-size RT PASS",
-  "total_pnl_usd": -4.6644,
-  "total_pnl_pct": -4.6644,
-  "mark_eth": 2433.845,
-  "mark": 2433.845,
+  "funding_note": "PAPER \u00b7 TSLA SIM_OPEN \u00b7 trade-size RT",
+  "total_pnl_usd": -4.7843,
+  "total_pnl_pct": -4.7843,
+  "mark_eth": 2433.68,
+  "mark": 2433.68,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2433.845
+    "ETH": 2433.68,
+    "TSLA": 360.17210371509765
   },
   "holdings": {
-    "paper_cash_usd": 95.3356,
+    "paper_cash_usd": 75.3356,
+    "paper_tsla_tokens": 0.05519602955188352,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,19 +41,41 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "market": "TSLA",
+      "side": "LONG",
+      "size_usd": 20.0,
+      "entry": 362.34490347173016,
+      "mark": 360.17210371509765,
+      "uPnL": -0.1199,
+      "sl": 289.8759227773841,
+      "tp": 543.5173552075953,
+      "lev": 1,
+      "paper": true
+    }
+  ],
   "pnl_history": [
     {
-      "t": "2026-09-16 23:28:25 ET",
-      "equity_usd": 95.3356,
+      "t": "2026-09-16 23:29:18 ET",
+      "equity_usd": 95.2157,
       "liquid_usd": 95.3356,
-      "upnl_usd": 0,
-      "n_pos": 0
+      "upnl_usd": -0.1199,
+      "n_pos": 1
     }
   ],
   "trades": [
     {
-      "t": "2026-09-16 23:28:25 ET",
+      "t": "2026-09-16 23:29:18 ET",
+      "kind": "PAPER",
+      "market": "TSLA",
+      "side": "LONG",
+      "size": 20.0,
+      "pnl_usd": null,
+      "tx": "SIM_OPEN"
+    },
+    {
+      "t": "2026-09-16 23:29:18 ET",
       "kind": "PAPER",
       "market": "WAY",
       "side": "LONG",
@@ -60,68 +84,33 @@
       "tx": "ABORT_SIZE_TAX"
     },
     {
-      "t": "2026-09-16 23:28:25 ET",
+      "t": "2026-09-16 23:29:18 ET",
       "kind": "PAPER",
       "market": "ARC",
       "side": "LONG",
       "size": 20,
       "pnl_usd": -4.5444,
       "tx": "CUT_HARD"
-    },
-    {
-      "t": "2026-09-16 23:28:25 ET",
-      "kind": "PAPER",
-      "market": "NVDA",
-      "side": "LONG",
-      "size": 20,
-      "pnl_usd": -0.12,
-      "tx": "SIM_CLOSE"
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 95.3356,
-    "mtm_equity_usd": 95.3356,
+    "mtm_equity_usd": 95.2157,
     "realized_pnl_usd": -4.6644,
-    "unrealized_pnl_usd": 0,
+    "unrealized_pnl_usd": -0.1199,
     "sleeve_usd_max": 25,
     "ticket_usd_max": 25,
     "open_max": 1,
-    "open": null,
-    "queued": [
-      {
-        "id": "PAPER-5",
-        "status": "NEED_TRADE_SIZE_RT_PASS",
-        "alts": [
-          {
-            "sym": "TSLA",
-            "token": "0x322F0929c4625eD5bAd873c95208D54E1c003b2d",
-            "fee": 3000,
-            "lost_bps": 60,
-            "size_weth": 0.008217450166300648,
-            "meme": false
-          },
-          {
-            "sym": "QQQ",
-            "token": "0xD5f3879160bc7c32ebb4dC785F8a4F505888de68",
-            "fee": 3000,
-            "lost_bps": 61,
-            "size_weth": 0.008217450166300648,
-            "meme": false
-          },
-          {
-            "sym": "PLTR",
-            "token": "0x894E1EC2D74FFE5AEF8Dc8A9e84686acCB964F2A",
-            "fee": 3000,
-            "lost_bps": 65,
-            "size_weth": 0.008217450166300648,
-            "meme": false
-          }
-        ]
-      }
-    ],
-    "notes": "stub must = trade size"
+    "open": {
+      "id": "PAPER-5",
+      "ticker": "TSLA",
+      "usd": 20.0,
+      "entry_px": 362.34490347173016,
+      "mtm_pct": -0.6
+    },
+    "notes": "trade-size RT rule live"
   },
-  "notes": "equity $95.34 \u00b7 WAY abort size-tax \u00b7 ETH $2433.845"
+  "notes": "PAPER-5 TSLA open \u00b7 equity $95.22 \u00b7 ETH $2433.68"
 }
