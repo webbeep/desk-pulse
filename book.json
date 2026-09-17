@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-17 08:31:58 ET",
+  "updated_et": "2026-09-17 08:58:37 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 43.2976,
-  "upnl_usd": -0.5365,
-  "equity_usd": 42.7611,
+  "liquid_usd": 22.6324,
+  "upnl_usd": 0,
+  "equity_usd": 22.6324,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 script MTM loop \u00b7 NO LIVE",
-  "total_pnl_usd": -57.2389,
-  "total_pnl_pct": -57.2389,
-  "mark_eth": 2470.61,
-  "mark": 2470.61,
+  "funding_note": "SCOUT PAUSED \u00b7 improve gate \u00b7 Liquid=realized equity",
+  "total_pnl_usd": -77.3676,
+  "total_pnl_pct": -77.3676,
+  "mark_eth": 2461.135,
+  "mark": 2461.135,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2470.61
+    "ETH": 2461.135
   },
   "holdings": {
-    "paper_cash_usd": 23.2976,
+    "paper_cash_usd": 22.6324,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,130 +39,36 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-15",
-      "market": "ARCAT",
-      "side": "LONG",
-      "size_usd": 20.0,
-      "entry": 3.497877139596834e-06,
-      "mark": 3.404046585327149e-06,
-      "uPnL": -0.5365,
-      "mtm_pct": -2.6826,
-      "sl": 2.7983017116774675e-06,
-      "tp": 5.2468157093952514e-06,
-      "lev": 1,
-      "paper": true,
-      "liq": 36819258015569838458222,
-      "held_min": 9.02
-    }
-  ],
-  "position": {
-    "id": "PAPER-15",
-    "market": "ARCAT",
-    "side": "LONG",
-    "size_usd": 20.0,
-    "entry": 3.497877139596834e-06,
-    "mark": 3.404046585327149e-06,
-    "uPnL": -0.5365,
-    "mtm_pct": -2.6826,
-    "sl": 2.7983017116774675e-06,
-    "tp": 5.2468157093952514e-06,
-    "lev": 1,
-    "paper": true,
-    "liq": 36819258015569838458222,
-    "held_min": 9.02
-  },
+  "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-17 08:31:58 ET",
-      "equity_usd": 42.7611,
-      "liquid_usd": 43.2976,
-      "upnl_usd": -0.5365,
-      "n_pos": 1
+      "t": "2026-09-17 08:58:37 ET",
+      "equity_usd": 22.6324,
+      "liquid_usd": 22.6324,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
     {
-      "t": "2026-09-17 08:31:25 ET",
+      "t": "2026-09-17 08:58:37 ET",
       "kind": "PAPER",
-      "market": "ARCAT",
+      "market": "GULPH",
       "side": "LONG",
-      "size": 20.0,
-      "pnl_usd": null,
-      "tx": "SIM_OPEN"
-    },
-    {
-      "t": "2026-09-17 08:02:53 ET",
-      "kind": "PAPER",
-      "market": "ETH",
-      "side": "LONG",
-      "size": 20.0,
-      "pnl_usd": -5.212,
-      "tx": "CUT_HARD_-20"
-    },
-    {
-      "t": "2026-09-17 08:07:11 ET",
-      "kind": "PAPER",
-      "market": "MEME",
-      "side": "LONG",
-      "size": 20.0,
-      "pnl_usd": -5.6532,
-      "tx": "CUT_HARD_-20"
-    },
-    {
-      "t": "2026-09-17 08:11:20 ET",
-      "kind": "PAPER",
-      "market": "MEME",
-      "side": "LONG",
-      "size": 20.0,
-      "pnl_usd": -4.3735,
-      "tx": "CUT_HARD_-20"
-    },
-    {
-      "t": "2026-09-17 08:13:21 ET",
-      "kind": "PAPER",
-      "market": "MEME",
-      "side": "LONG",
-      "size": 20.0,
-      "pnl_usd": -4.4637,
-      "tx": "CUT_HARD_-20"
-    },
-    {
-      "t": "2026-09-17 08:18:14 ET",
-      "kind": "PAPER",
-      "market": "MEME",
-      "side": "LONG",
-      "size": 20.0,
-      "pnl_usd": 12.4902,
-      "tx": "TP_+50"
-    },
-    {
-      "t": "2026-09-17 08:21:20 ET",
-      "kind": "PAPER",
-      "market": "MEME",
-      "side": "LONG",
-      "size": 20.0,
-      "pnl_usd": -20.0,
-      "tx": "CUT_HARD_QUOTER"
+      "size": 20,
+      "pnl_usd": -0.6652,
+      "tx": "COOLDOWN_CLOSE_CoS_improve"
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 43.2976,
-    "mtm_equity_usd": 42.7611,
-    "realized_pnl_usd": -56.7024,
-    "unrealized_pnl_usd": -0.5365,
-    "open": {
-      "id": "PAPER-15",
-      "ticker": "ARCAT",
-      "usd": 20.0,
-      "mtm_pct": -2.6826
-    },
-    "notes": "script MTM \u226410s HOLD",
-    "mtm_poll_sec": 10.0,
-    "mtm_max_sec": 60
+    "paper_equity_usd": 22.6324,
+    "mtm_equity_usd": 22.6324,
+    "realized_pnl_usd": -77.3676,
+    "unrealized_pnl_usd": 0,
+    "open": null,
+    "notes": "scout paused \u00b7 improve gate"
   },
-  "notes": "OPEN ARCAT mtm -2.6826% \u00b7 script"
+  "notes": "SCOUT OFF \u00b7 eq $22.63 \u00b7 2026-09-17 08:58:37 ET"
 }
