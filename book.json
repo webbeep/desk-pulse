@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-17 19:34:29 ET",
+  "updated_et": "2026-09-17 19:34:52 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 22.135,
@@ -7,14 +7,14 @@
   "equity_usd": 22.135,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 script MTM loop \u00b7 NO LIVE",
+  "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
   "total_pnl_usd": -77.865,
   "total_pnl_pct": -77.865,
-  "mark_eth": 2445.09,
-  "mark": 2445.09,
+  "mark_eth": 2444.82,
+  "mark": 2444.82,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2445.09
+    "ETH": 2444.82
   },
   "holdings": {
     "paper_cash_usd": 22.135,
@@ -40,27 +40,16 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "positions": [],
-  "position": null,
   "pnl_history": [
     {
-      "t": "2026-09-17 19:34:29 ET",
+      "t": "2026-09-17 19:34:52 ET",
       "equity_usd": 22.135,
       "liquid_usd": 22.135,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
-  "trades": [
-    {
-      "t": "2026-09-17 19:34:29 ET",
-      "kind": "PAPER",
-      "market": "TSLA",
-      "side": "LONG",
-      "size": 20.0,
-      "pnl_usd": -0.4974,
-      "tx": "ROTATE_STALE_2H"
-    }
-  ],
+  "trades": [],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
@@ -69,9 +58,7 @@
     "realized_pnl_usd": -77.865,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "CLOSED ROTATE_STALE_2H \u00b7 learn appended",
-    "mtm_poll_sec": 10.0,
-    "mtm_max_sec": 60
+    "notes": "heartbeat \u00b7 profit-first gate"
   },
-  "notes": "CUT TSLA ROTATE_STALE_2H \u00b7 eq $22.1350"
+  "notes": "PAPER heartbeat \u00b7 eq $22.14 \u00b7 2026-09-17 19:34:52 ET"
 }
