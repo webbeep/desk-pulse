@@ -1,24 +1,23 @@
 {
-  "updated_et": "2026-09-16 23:24:33 ET",
+  "updated_et": "2026-09-16 23:24:52 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 79.88,
-  "upnl_usd": -4.5444,
+  "liquid_usd": 95.3356,
+  "upnl_usd": 0,
   "equity_usd": 95.3356,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER active \u00b7 live MTM refreshed",
+  "funding_note": "PAPER \u00b7 ARC cut \u221220% \u00b7 slot free for PAPER-4",
   "total_pnl_usd": -4.6644,
-  "total_pnl_pct": 2.329899999999995,
-  "mark_eth": 2432.205,
-  "mark": 2432.205,
+  "total_pnl_pct": -4.6644,
+  "mark_eth": 2432.51,
+  "mark": 2432.51,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2432.205
+    "ETH": 2432.51
   },
   "holdings": {
-    "paper_cash_usd": 79.88,
-    "paper_open_usd": 20,
+    "paper_cash_usd": 95.3356,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -40,74 +39,63 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-3-ARC",
-      "market": "ARC",
-      "asset": "ARC",
-      "side": "LONG",
-      "sizeUsd": 20,
-      "collUsd": 20,
-      "entry": 7.101421269483175e-05,
-      "upnl_usd": -4.5444,
-      "notes": "MTM 12.25% \u00b7 HARD cuts"
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-16 23:22:52 ET",
-      "equity_usd": 102.3299,
-      "liquid_usd": 99.88,
-      "upnl_usd": 2.4499,
-      "n_pos": 1
+      "t": "2026-09-16 23:24:52 ET",
+      "equity_usd": 95.3356,
+      "liquid_usd": 95.3356,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
     {
-      "t": "2026-09-16 23:22:52 ET",
+      "t": "2026-09-16 23:24:52 ET",
       "kind": "PAPER",
-      "market": "NVDA",
+      "market": "ARC",
       "side": "LONG",
       "size": 20,
-      "pnl_usd": -0.12,
-      "tx": "SIM_CLOSE"
+      "pnl_usd": -4.5444,
+      "tx": "CUT_HARD"
     },
     {
-      "t": "2026-09-16 23:22:52 ET",
+      "t": "2026-09-16 23:24:52 ET",
       "kind": "PAPER",
       "market": "WAY",
       "side": "LONG",
       "size": 20,
       "pnl_usd": 0,
       "tx": "ABORT_TAX"
+    },
+    {
+      "t": "2026-09-16 23:24:52 ET",
+      "kind": "PAPER",
+      "market": "NVDA",
+      "side": "LONG",
+      "size": 20,
+      "pnl_usd": -0.12,
+      "tx": "SIM_CLOSE"
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 99.88,
+    "paper_equity_usd": 95.3356,
     "mtm_equity_usd": 95.3356,
-    "realized_pnl_usd": -0.12,
-    "unrealized_pnl_usd": -4.5444,
+    "realized_pnl_usd": -4.6644,
+    "unrealized_pnl_usd": 0,
     "sleeve_usd_max": 25,
     "ticket_usd_max": 25,
     "open_max": 1,
-    "open": {
-      "id": "PAPER-3-ARC",
-      "ticker": "ARC",
-      "side": "LONG",
-      "size_usd": 20,
-      "entry": 7.101421269483175e-05,
-      "qty": 281633.7637360803,
-      "mtm_pnl_usd": -4.5444,
-      "mtm_pnl_pct": -22.7221,
-      "cut": -0.2,
-      "tp": 0.5,
-      "status": "SIM_OPEN",
-      "honeypot_bps": 18
-    },
-    "queued": [],
-    "notes": "live QuoterV2 MTM"
+    "open": null,
+    "queued": [
+      {
+        "id": "PAPER-4",
+        "status": "NEED_RT_PASS_MEME"
+      }
+    ],
+    "notes": "ARC cut \u00b7 need next RT PASS meme"
   },
-  "notes": "ARC MTM -22.72% ($-4.54) \u00b7 ETH $2432.205"
+  "notes": "ARC CLOSED CUT -22.72% \u00b7 equity $95.34 \u00b7 ETH $2432.51"
 }
