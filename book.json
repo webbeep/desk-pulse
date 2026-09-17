@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-17 07:56:59 ET",
+  "updated_et": "2026-09-17 07:57:20 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 70.5098,
-  "upnl_usd": 0.0044,
-  "equity_usd": 70.5142,
+  "upnl_usd": -0.0041,
+  "equity_usd": 70.5057,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "PAPER \u00b7 script MTM loop \u00b7 NO LIVE",
-  "total_pnl_usd": -29.4858,
-  "total_pnl_pct": -29.4858,
-  "mark_eth": 2430.895,
-  "mark": 2430.895,
+  "total_pnl_usd": -29.4943,
+  "total_pnl_pct": -29.4943,
+  "mark_eth": 2431.06,
+  "mark": 2431.06,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2430.895
+    "ETH": 2431.06
   },
   "holdings": {
     "paper_cash_usd": 50.5098,
@@ -46,15 +46,15 @@
       "side": "LONG",
       "size_usd": 20.0,
       "entry": 0.0003687591971047334,
-      "mark": 0.0003688403241280965,
-      "uPnL": 0.0044,
-      "mtm_pct": 0.0222,
+      "mark": 0.0003686836014693269,
+      "uPnL": -0.0041,
+      "mtm_pct": -0.0204,
       "sl": 0.00029500735768378674,
       "tp": 0.0005531387956571001,
       "lev": 1,
       "paper": true,
       "liq": 63246764568802612649417,
-      "held_min": 0.11
+      "held_min": 0.46
     }
   ],
   "position": {
@@ -63,22 +63,22 @@
     "side": "LONG",
     "size_usd": 20.0,
     "entry": 0.0003687591971047334,
-    "mark": 0.0003688403241280965,
-    "uPnL": 0.0044,
-    "mtm_pct": 0.0222,
+    "mark": 0.0003686836014693269,
+    "uPnL": -0.0041,
+    "mtm_pct": -0.0204,
     "sl": 0.00029500735768378674,
     "tp": 0.0005531387956571001,
     "lev": 1,
     "paper": true,
     "liq": 63246764568802612649417,
-    "held_min": 0.11
+    "held_min": 0.46
   },
   "pnl_history": [
     {
-      "t": "2026-09-17 07:56:59 ET",
-      "equity_usd": 70.5142,
+      "t": "2026-09-17 07:57:20 ET",
+      "equity_usd": 70.5057,
       "liquid_usd": 70.5098,
-      "upnl_usd": 0.0044,
+      "upnl_usd": -0.0041,
       "n_pos": 1
     }
   ],
@@ -100,18 +100,18 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 70.5098,
-    "mtm_equity_usd": 70.5142,
+    "mtm_equity_usd": 70.5057,
     "realized_pnl_usd": -29.4902,
-    "unrealized_pnl_usd": 0.0044,
+    "unrealized_pnl_usd": -0.0041,
     "open": {
       "id": "PAPER-9",
       "ticker": "ETH",
       "usd": 20.0,
-      "mtm_pct": 0.0222
+      "mtm_pct": -0.0204
     },
     "notes": "script MTM \u226410s HOLD",
     "mtm_poll_sec": 10.0,
     "mtm_max_sec": 60
   },
-  "notes": "OPEN ETH mtm 0.0222% \u00b7 script"
+  "notes": "OPEN ETH mtm -0.0204% \u00b7 script"
 }
