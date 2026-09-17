@@ -8,10 +8,10 @@
     BTC: "https://api.coinbase.com/v2/prices/BTC-USD/spot",
     LINK: "https://api.coinbase.com/v2/prices/LINK-USD/spot",
   };
-  // Prefer same-origin Pages book; raw GH fallback. Never jsDelivr (multi-min CDN lag).
+  // Same-origin first. jsDelivr next (raw.githubusercontent.com often sticks stale 30m+).
   const SOURCES = [
     "./book.json",
-    "https://raw.githubusercontent.com/webbeep/desk-pulse/main/book.json",
+    "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/book.json",
   ];
 
   const CHAIN_LABELS = {
