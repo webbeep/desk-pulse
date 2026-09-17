@@ -1,16 +1,16 @@
 (function (root) {
   "use strict";
 
-  const BOOK_MS = 30000;
+  const BOOK_MS = 10000;
   const MARK_MS = 15000;
   const SPOT = {
     ETH: "https://api.coinbase.com/v2/prices/ETH-USD/spot",
     BTC: "https://api.coinbase.com/v2/prices/BTC-USD/spot",
     LINK: "https://api.coinbase.com/v2/prices/LINK-USD/spot",
   };
+  // Prefer same-origin Pages book; raw GH fallback. Never jsDelivr (multi-min CDN lag).
   const SOURCES = [
     "./book.json",
-    "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/book.json",
     "https://raw.githubusercontent.com/webbeep/desk-pulse/main/book.json",
   ];
 
@@ -771,15 +771,12 @@
 
   function pickBestBook(cands) {
     if (!cands.length) return null;
+    // Newest stamp wins. Stale CDN "open" must not beat a fresher book.
     const tagged = cands.map(function (c) {
       return { src: c.src, raw: c.raw, t: parseUpdatedEtMs(c.raw), flat: rawIsFlat(c.raw) };
     });
-    const lives = tagged.filter(function (c) { return !c.flat; });
-    const newestLiveT = lives.length ? Math.max.apply(null, lives.map(function (c) { return c.t; })) : -Infinity;
-    const goodFlats = tagged.filter(function (c) { return c.flat && c.t >= newestLiveT; });
-    const pool = goodFlats.length ? goodFlats : tagged;
-    pool.sort(function (a, b) { return b.t - a.t; });
-    return pool[0];
+    tagged.sort(function (a, b) { return b.t - a.t; });
+    return tagged[0];
   }
 
   async function refreshBook() {
