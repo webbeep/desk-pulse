@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-16 23:41:18 ET",
+  "updated_et": "2026-09-16 23:42:23 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 95.2034,
-  "upnl_usd": 0,
-  "equity_usd": 95.2034,
+  "liquid_usd": 95.2255,
+  "upnl_usd": 0.0,
+  "equity_usd": 95.2255,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 TRUE meme-first \u00b7 stocks blocked until meme RT empty",
-  "total_pnl_usd": -4.7966,
-  "total_pnl_pct": -4.7966,
-  "mark_eth": 2435.17,
-  "mark": 2435.17,
+  "funding_note": "PAPER \u00b7 FLAT \u00b7 PAPER-5 TSLA CLOSED ROTATE_MEME_FIRST \u00b7 PAPER-6 not opened \u00b7 ZERO meme PASS",
+  "total_pnl_usd": -4.7745,
+  "total_pnl_pct": -4.7745,
+  "mark_eth": 2435.365,
+  "mark": 2435.365,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2435.17
+    "ETH": 2435.365
   },
   "holdings": {
-    "paper_cash_usd": 95.2034,
+    "paper_cash_usd": 95.2255,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,43 +42,34 @@
   "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-16 23:41:18 ET",
-      "equity_usd": 95.2034,
-      "liquid_usd": 95.2034,
-      "upnl_usd": 0,
+      "t": "2026-09-16 23:42:23 ET",
+      "equity_usd": 95.2255,
+      "liquid_usd": 95.2255,
+      "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
     {
-      "t": "2026-09-16 23:41:18 ET",
+      "t": "2026-09-16 23:42:23 ET",
       "kind": "PAPER",
-      "market": "\u2014",
+      "market": "TSLA",
       "side": "LONG",
-      "size": 0,
-      "pnl_usd": null,
-      "tx": "FLAT_NO_MEME_PASS"
+      "size_usd": 20,
+      "pnl_usd": -0.1101,
+      "tx": "SIM_CLOSED_ROTATE_MEME_FIRST"
     },
     {
-      "t": "2026-09-16 23:41:18 ET",
+      "t": "2026-09-16 23:42:23 ET",
       "kind": "PAPER",
       "market": "SPCX",
       "side": "LONG",
-      "size": 20,
+      "size_usd": 20,
       "pnl_usd": 0,
       "tx": "REJECT_NOT_MEME"
     },
     {
-      "t": "2026-09-16 23:41:18 ET",
-      "kind": "PAPER",
-      "market": "TSLA",
-      "side": "LONG",
-      "size": 20,
-      "pnl_usd": -0.12,
-      "tx": "ROTATE_MEME"
-    },
-    {
-      "t": "2026-09-16 23:41:18 ET",
+      "t": "2026-09-16 23:24:52 ET",
       "kind": "PAPER",
       "market": "ARC",
       "side": "LONG",
@@ -90,15 +81,16 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 95.2034,
-    "mtm_equity_usd": 95.2034,
-    "realized_pnl_usd": -4.7966,
-    "unrealized_pnl_usd": 0,
+    "paper_equity_usd": 95.2255,
+    "mtm_equity_usd": 95.2255,
+    "realized_pnl_usd": -4.7745,
+    "unrealized_pnl_usd": 0.0,
     "sleeve_usd_max": 25,
     "ticket_usd_max": 25,
     "open_max": 1,
     "open": null,
-    "notes": "stocks blocked; true-meme RT only"
+    "queued": [],
+    "notes": "FLAT \u00b7 true-meme SIT \u00b7 stocks blocked \u00b7 NO LIVE"
   },
-  "notes": "meme-first \u00b7 FLAT no meme RT PASS \u00b7 eq $95.20 \u00b7 book poll 10s \u00b7 no jsDelivr"
+  "notes": "PAPER FLAT \u00b7 TSLA closed $-0.1101 \u00b7 equity $95.2255 \u00b7 ETH $2435.365 \u00b7 ZERO meme PASS \u00b7 cache: no jsDelivr \u00b7 BOOK_MS 10s"
 }
