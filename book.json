@@ -1,44 +1,38 @@
 {
-  "updated_et": "2026-09-16 23:06:27 ET",
+  "updated_et": "2026-09-16 23:15:19 ET",
   "mode": "PAPER",
   "display_mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "liquid_usd": 80.0,
-  "upnl_usd": -0.12,
+  "liquid_usd": 99.88,
+  "upnl_usd": 0,
   "equity_usd": 99.88,
   "status": "PAPER",
-  "funding_usd": 100.0,
-  "funding_note": "PAPER $100 sim \u00b7 live on-chain V2 still unfunded (Coinbase hold) \u00b7 marks live",
+  "funding_usd": 100,
+  "funding_note": "PAPER $100 \u00b7 universe ALL RH meme-first \u00b7 PAPER-1 closed",
   "total_pnl_usd": -0.12,
   "total_pnl_pct": -0.12,
-  "mark_eth": 2432.025,
-  "mark": 2432.025,
+  "mark_eth": 2431.745,
+  "mark": 2431.745,
   "mark_src": "coinbase",
-  "mark_btc": 76400.965,
-  "mark_btc_src": "coinbase",
   "marks": {
-    "ETH": 2432.025,
-    "BTC": 76400.965
+    "ETH": 2431.745
   },
-  "live_onchain_liquid_usd": 0.0,
   "holdings": {
-    "paper_cash_usd": 80.0,
-    "paper_open_usd": 20.0,
-    "l1_eth": 0.0,
-    "arb_eth": 0.0,
-    "arb_usdc": 0.0,
-    "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "rh_eth": 0.0
+    "paper_cash_usd": 99.88,
+    "l1_eth": 0,
+    "arb_eth": 0,
+    "arb_usdc": 0,
+    "base_eth": 0,
+    "base_usdc": 0,
+    "rh_eth": 0
   },
   "residuals": {
-    "l1_eth": 0.0,
-    "arb_eth": 0.0,
-    "arb_usdc": 0.0,
-    "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "rh_eth": 0.0
+    "l1_eth": 0,
+    "arb_eth": 0,
+    "arb_usdc": 0,
+    "base_eth": 0,
+    "base_usdc": 0,
+    "rh_eth": 0
   },
   "wallet_urls": {
     "ethereum": "https://etherscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
@@ -46,65 +40,48 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-1",
-      "market": "NVDA",
-      "asset": "NVDA",
-      "side": "LONG",
-      "sizeUsd": 20.0,
-      "collUsd": 20.0,
-      "entry": 216.66339421511552,
-      "upnl_usd": -0.12,
-      "sl": 199.33032267790628,
-      "tp": 249.16290334738284,
-      "notes": "PAPER SIM \u00b7 RH \u00b7 NO LIVE"
-    }
-  ],
-  "position": null,
+  "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-16 23:05:40 ET",
+      "t": "2026-09-16 23:15:19 ET",
       "equity_usd": 99.88,
-      "liquid_usd": 80.0,
-      "upnl_usd": -0.12,
-      "n_pos": 1
+      "liquid_usd": 99.88,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "t": "2026-09-16 23:15:19 ET",
+      "kind": "PAPER",
+      "market": "NVDA",
+      "side": "LONG",
+      "size": 20,
+      "pnl_usd": -0.12,
+      "tx": "SIM_CLOSE"
+    }
+  ],
   "paper": {
     "active": true,
-    "start_equity_usd": 100.0,
-    "paper_equity_usd": 100.0,
+    "start_equity_usd": 100,
+    "paper_equity_usd": 99.88,
     "mtm_equity_usd": 99.88,
-    "realized_pnl_usd": 0.0,
-    "unrealized_pnl_usd": -0.12,
-    "sleeve_usd_max": 25.0,
-    "ticket_usd_max": 25.0,
+    "realized_pnl_usd": -0.12,
+    "unrealized_pnl_usd": 0,
+    "sleeve_usd_max": 25,
+    "ticket_usd_max": 25,
     "open_max": 1,
-    "open": {
-      "id": "PAPER-1",
-      "ticker": "NVDA",
-      "side": "LONG",
-      "size_usd": 20.0,
-      "entry": 216.66339421511552,
-      "qty": 0.0923090865092923,
-      "mtm_pnl_usd": -0.12,
-      "mtm_pnl_pct": -0.5998,
-      "cut": 199.33032267790628,
-      "tp": 249.16290334738284,
-      "status": "SIM_OPEN"
-    },
+    "open": null,
     "queued": [
       {
         "id": "PAPER-2",
-        "ticker": "TSLA",
+        "ticker": "WAY",
         "side": "LONG",
         "size_usd": 20,
-        "status": "QUEUED"
+        "status": "FIRING"
       }
     ],
-    "notes": "SIM only \u00b7 marks from Coinbase/RPC live"
+    "notes": "Universe ALL RH \u00b7 meme-first \u00b7 PAPER-2 opening"
   },
-  "notes": "PAPER board \u00b7 ETH mark 2432.025 (coinbase) \u00b7 on-chain V2 liquid ~$0.00"
+  "notes": "PAPER equity $99.88 \u00b7 ALL RH coins \u00b7 meme-first \u00b7 ETH $2431.745"
 }
