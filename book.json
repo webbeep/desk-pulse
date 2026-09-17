@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-17 19:57:39 ET",
+  "updated_et": "2026-09-17 19:58:11 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 21.9427,
-  "upnl_usd": -0.3982,
-  "equity_usd": 21.5445,
+  "upnl_usd": -0.3974,
+  "equity_usd": 21.5453,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -78.4555,
-  "total_pnl_pct": -78.4555,
-  "mark_eth": 2446.97,
-  "mark": 2446.97,
+  "funding_note": "PAPER \u00b7 script MTM loop \u00b7 NO LIVE",
+  "total_pnl_usd": -78.4547,
+  "total_pnl_pct": -78.4547,
+  "mark_eth": 2447.03,
+  "mark": 2447.03,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2446.97
+    "ETH": 2447.03
   },
   "holdings": {
     "paper_cash_usd": 3.2927,
@@ -46,23 +46,39 @@
       "side": "LONG",
       "size_usd": 18.65,
       "entry": 0.00030864099029475733,
-      "mark": 0.00030205113279688217,
-      "uPnL": -0.3982,
-      "mtm_pct": -2.1349,
+      "mark": 0.000302064372088691,
+      "uPnL": -0.3974,
+      "mtm_pct": -2.1307,
       "sl": 0.0002469127922358059,
       "tp": 0.000462961485442136,
       "lev": 1,
       "paper": true,
       "liq": 35280236635523893150239,
-      "held_min": 1.23
+      "held_min": 1.93
     }
   ],
+  "position": {
+    "id": "PAPER-20",
+    "market": "VAROBOOK",
+    "side": "LONG",
+    "size_usd": 18.65,
+    "entry": 0.00030864099029475733,
+    "mark": 0.000302064372088691,
+    "uPnL": -0.3974,
+    "mtm_pct": -2.1307,
+    "sl": 0.0002469127922358059,
+    "tp": 0.000462961485442136,
+    "lev": 1,
+    "paper": true,
+    "liq": 35280236635523893150239,
+    "held_min": 1.93
+  },
   "pnl_history": [
     {
-      "t": "2026-09-17 19:57:39 ET",
-      "equity_usd": 21.5445,
+      "t": "2026-09-17 19:58:11 ET",
+      "equity_usd": 21.5453,
       "liquid_usd": 21.9427,
-      "upnl_usd": -0.3982,
+      "upnl_usd": -0.3974,
       "n_pos": 1
     }
   ],
@@ -71,16 +87,18 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 21.9427,
-    "mtm_equity_usd": 21.5445,
+    "mtm_equity_usd": 21.5453,
     "realized_pnl_usd": -78.0573,
-    "unrealized_pnl_usd": -0.3982,
+    "unrealized_pnl_usd": -0.3974,
     "open": {
       "id": "PAPER-20",
       "ticker": "VAROBOOK",
       "usd": 18.65,
-      "mtm_pct": -2.1349
+      "mtm_pct": -2.1307
     },
-    "notes": "heartbeat \u00b7 profit-first gate"
+    "notes": "script MTM <=10s HOLD",
+    "mtm_poll_sec": 10.0,
+    "mtm_max_sec": 60
   },
-  "notes": "PAPER heartbeat \u00b7 eq $21.54 \u00b7 2026-09-17 19:57:39 ET"
+  "notes": "OPEN VAROBOOK mtm -2.1307% \u00b7 script"
 }
