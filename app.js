@@ -118,7 +118,7 @@
       tp: num(pick(p, ["tp"])),
       venue: pick(p, ["venue"]),
       status: pick(p, ["status"]),
-      upnlUsd: num(pick(p, ["upnlUsd", "upnl_usd"])),
+      upnlUsd: num(pick(p, ["upnlUsd", "upnl_usd", "uPnL", "upnl"])),
     };
   }
 
@@ -283,8 +283,17 @@
     } else {
       totalUpnl = upnl;
     }
-    const equity = open.length ? liquid + coll + (totalUpnl || 0) : (book.bookEquity != null ? book.bookEquity : liquid);
-    return { mark: mark, asset: primary, upnl: totalUpnl, equity: equity, cards: cards, open: open };
+    // Paper sleeve: liquid_usd is already full paper equity (not idle cash). Do not add collateral.
+    const paperMode = String(bookRaw && (bookRaw.mode || bookRaw.display_mode) || "").toUpperCase() === "PAPER"
+      || !!(bookRaw && bookRaw.paper && bookRaw.paper.active);
+    let equity;
+    if (paperMode) {
+      if (book.bookEquity != null) equity = book.bookEquity;
+      else equity = liquid + (totalUpnl || 0);
+    } else {
+      equity = open.length ? liquid + coll + (totalUpnl || 0) : (book.bookEquity != null ? book.bookEquity : liquid);
+    }
+    return { mark: mark, asset: primary, upnl: totalUpnl, equity: equity, cards: cards, open: open, paperMode: paperMode };
   }
 
   function setTone(el, n) {
@@ -598,10 +607,20 @@
     const live = liveNumbers(book);
     markAsset = live.asset || markAsset;
     if ($("mark-label")) $("mark-label").textContent = markAsset;
-    const ethMark = (book.marks && book.marks.ETH != null) ? book.marks.ETH : live.mark;
-    $("live-mark").textContent = ethMark != null ? px(ethMark) : "—";
-    if ($("mark-label")) $("mark-label").textContent = "ETH";
-    if ($("mark-age") && book.markSrc) $("mark-age").textContent = String(book.markSrc);
+    const paperMode = !!(bookRaw && bookRaw.paper && bookRaw.paper.active)
+      || String(bookRaw && (bookRaw.mode || "") || "").toUpperCase() === "PAPER";
+    if (paperMode && live.open && live.open.length) {
+      const pm = live.open[0];
+      $("live-mark").textContent = pm.mark != null ? px(pm.mark) : (live.mark != null ? px(live.mark) : "—");
+      if ($("mark-label")) $("mark-label").textContent = String(pm.market || live.asset || "PAPER");
+      if ($("mark-age")) $("mark-age").textContent = "paper mark";
+    } else {
+      const ethMark = (book.marks && book.marks.ETH != null) ? book.marks.ETH : live.mark;
+      $("live-mark").textContent = ethMark != null ? px(ethMark) : "—";
+      if ($("mark-label")) $("mark-label").textContent = "ETH";
+      if ($("mark-age") && book.markSrc) $("mark-age").textContent = String(book.markSrc);
+    }
+    // Paper: Liquid row = realized paper equity; Funding row = start bankroll
     $("liquid").textContent = money(book.liquidUsd);
 
     const fund = book.fundingUsd != null ? book.fundingUsd : 0;
