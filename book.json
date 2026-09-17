@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-16 23:42:23 ET",
+  "updated_et": "2026-09-16 23:56:23 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 95.2255,
-  "upnl_usd": 0.0,
-  "equity_usd": 95.2255,
+  "liquid_usd": 75.2255,
+  "upnl_usd": 0,
+  "equity_usd": 75.2255,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 FLAT \u00b7 PAPER-5 TSLA CLOSED ROTATE_MEME_FIRST \u00b7 PAPER-6 not opened \u00b7 ZERO meme PASS",
-  "total_pnl_usd": -4.7745,
-  "total_pnl_pct": -4.7745,
-  "mark_eth": 2435.365,
-  "mark": 2435.365,
+  "funding_note": "PAPER \u00b7 ZEROCOIN \u2212$20 liq0 \u00b7 meme gate tightened",
+  "total_pnl_usd": -24.7745,
+  "total_pnl_pct": -24.7745,
+  "mark_eth": 2432.265,
+  "mark": 2432.265,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2435.365
+    "ETH": 2432.265
   },
   "holdings": {
-    "paper_cash_usd": 95.2255,
+    "paper_cash_usd": 75.2255,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,31 +42,31 @@
   "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-16 23:42:23 ET",
-      "equity_usd": 95.2255,
-      "liquid_usd": 95.2255,
-      "upnl_usd": 0.0,
+      "t": "2026-09-16 23:56:23 ET",
+      "equity_usd": 75.2255,
+      "liquid_usd": 75.2255,
+      "upnl_usd": 0,
       "n_pos": 0
     }
   ],
   "trades": [
     {
-      "t": "2026-09-16 23:42:23 ET",
+      "t": "2026-09-16 23:56:23 ET",
+      "kind": "PAPER",
+      "market": "ZEROCOIN",
+      "side": "LONG",
+      "size": 20,
+      "pnl_usd": -20.0,
+      "tx": "CUT_HARD_LIQ0"
+    },
+    {
+      "t": "2026-09-16 23:41:17 ET",
       "kind": "PAPER",
       "market": "TSLA",
       "side": "LONG",
-      "size_usd": 20,
+      "size": 20,
       "pnl_usd": -0.1101,
-      "tx": "SIM_CLOSED_ROTATE_MEME_FIRST"
-    },
-    {
-      "t": "2026-09-16 23:42:23 ET",
-      "kind": "PAPER",
-      "market": "SPCX",
-      "side": "LONG",
-      "size_usd": 20,
-      "pnl_usd": 0,
-      "tx": "REJECT_NOT_MEME"
+      "tx": "ROTATE_OFF"
     },
     {
       "t": "2026-09-16 23:24:52 ET",
@@ -76,21 +76,29 @@
       "size": 20,
       "pnl_usd": -4.5444,
       "tx": "CUT_HARD"
+    },
+    {
+      "t": "2026-09-16 23:28:25 ET",
+      "kind": "PAPER",
+      "market": "WAY",
+      "side": "LONG",
+      "size": 20,
+      "pnl_usd": 0,
+      "tx": "ABORT_SIZE_TAX"
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 95.2255,
-    "mtm_equity_usd": 95.2255,
-    "realized_pnl_usd": -4.7745,
-    "unrealized_pnl_usd": 0.0,
+    "paper_equity_usd": 75.2255,
+    "mtm_equity_usd": 75.2255,
+    "realized_pnl_usd": -24.7745,
+    "unrealized_pnl_usd": 0,
     "sleeve_usd_max": 25,
     "ticket_usd_max": 25,
     "open_max": 1,
     "open": null,
-    "queued": [],
-    "notes": "FLAT \u00b7 true-meme SIT \u00b7 stocks blocked \u00b7 NO LIVE"
+    "notes": "liq floor + 60s unquoteable CUT; stocks blocked"
   },
-  "notes": "PAPER FLAT \u00b7 TSLA closed $-0.1101 \u00b7 equity $95.2255 \u00b7 ETH $2435.365 \u00b7 ZERO meme PASS \u00b7 cache: no jsDelivr \u00b7 BOOK_MS 10s"
+  "notes": "FLAT \u00b7 eq $75.23 \u00b7 ZEROCOIN \u2212$20 \u00b7 next=true meme w/ liq floor"
 }
