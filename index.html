@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#080a0e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Desk Pulse</title>
+  <link rel="stylesheet" href="styles.css?v=v2pulse1">
+</head>
+<body>
+  <header class="top">
+    <div class="top-l">
+      <p class="brand">Desk Pulse</p>
+      <span id="status" class="status flat">FLAT</span>
+    </div>
+    <div class="top-r">
+      <p class="asof" id="last-updated">—</p>
+      <p class="age-line" id="book-age">book —</p>
+    </div>
+  </header>
+
+  <main>
+    <div id="err" class="err" hidden role="alert"></div>
+
+    <section class="hero" aria-label="Equity">
+      <p class="hero-k">Equity</p>
+      <p id="equity" class="hero-n">—</p>
+      <div class="hero-pnl-row">
+        <div class="pnl-block">
+          <span class="k">Total PnL</span>
+          <span id="total-pnl" class="hero-total">—</span>
+        </div>
+        <div class="pnl-block">
+          <span class="k">uPnL</span>
+          <span id="upnl" class="hero-upnl">—</span>
+        </div>
+      </div>
+      <div class="hero-sub">
+        <div>
+          <span class="k">Liquid</span>
+          <span id="liquid" class="num">—</span>
+        </div>
+        <div>
+          <span class="k">Funding</span>
+          <span id="funding" class="num">—</span>
+        </div>
+        <div>
+          <span class="k"><span id="mark-label">ETH</span> mark</span>
+          <span id="live-mark" class="num">—</span>
+          <span id="mark-age" class="age">—</span>
+        </div>
+      </div>
+      <p id="funding-note" class="funding-note" hidden></p>
+    </section>
+
+    <section class="panel" aria-label="Holdings">
+      <div class="panel-h">
+        <h2>Holdings</h2>
+        <span class="count">by chain</span>
+      </div>
+      <div id="holdings-grid" class="hold-grid"></div>
+      <ul id="residuals-list" class="res" hidden></ul>
+    </section>
+
+    <section class="panel" aria-label="Positions">
+      <div class="panel-h">
+        <h2>Positions</h2>
+        <span id="pos-count" class="count">0</span>
+      </div>
+      <div id="pos-empty" class="empty">No open position</div>
+      <div id="pos-list"></div>
+    </section>
+
+    <details class="fold">
+      <summary>History</summary>
+      <div id="spark-wrap" class="spark-wrap">
+        <svg id="spark" viewBox="0 0 320 64" preserveAspectRatio="none" aria-hidden="true"></svg>
+      </div>
+      <div id="hist-empty" class="empty" hidden>No snaps</div>
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr><th>Time</th><th>uPnL</th><th>Equity</th><th>n</th></tr>
+          </thead>
+          <tbody id="hist-body"></tbody>
+        </table>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary>Trades</summary>
+      <div id="trades-empty" class="empty" hidden>No trades</div>
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr><th>Time</th><th>Kind</th><th>Mkt</th><th>Side</th><th>Size</th><th>PnL</th><th>Tx</th></tr>
+          </thead>
+          <tbody id="trades-body"></tbody>
+        </table>
+      </div>
+    </details>
+
+    <section class="meta">
+      <p><span class="k">Wallet</span> <span id="wallet" class="num wrap">—</span></p>
+      <p id="wallet-links" class="wallet-links"></p>
+      <p><span class="k">Notes</span> <span id="notes" class="wrap">—</span></p>
+    </section>
+
+    <footer>
+      <span id="src">—</span>
+      <span>webbeep · auto 30s</span>
+    </footer>
+  </main>
+  <script src="app.js?v=v2pulse1"></script>
+</body>
+</html>
