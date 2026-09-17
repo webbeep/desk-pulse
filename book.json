@@ -1,74 +1,501 @@
 {
-  "updated_et": "2026-09-17 08:58:37 ET",
-  "mode": "PAPER",
-  "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 22.6324,
+  "updated_et": "2026-09-17 08:59:29 ET",
+  "liquid_usd": 0.0,
   "upnl_usd": 0,
-  "equity_usd": 22.6324,
-  "status": "PAPER",
-  "funding_usd": 100,
-  "funding_note": "SCOUT PAUSED \u00b7 improve gate \u00b7 Liquid=realized equity",
-  "total_pnl_usd": -77.3676,
-  "total_pnl_pct": -77.3676,
-  "mark_eth": 2461.135,
-  "mark": 2461.135,
-  "mark_src": "coinbase",
-  "marks": {
-    "ETH": 2461.135
+  "equity_usd": 0.0,
+  "status": "FLAT",
+  "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
+  "residuals": {
+    "arb_eth": 0.0,
+    "arb_usdc": 0.0,
+    "base_eth": 0.0,
+    "base_usdc": 0.0,
+    "l1_eth": 0.0,
+    "rh_eth": 0.0
   },
   "holdings": {
-    "paper_cash_usd": 22.6324,
-    "l1_eth": 0,
-    "arb_eth": 0,
-    "arb_usdc": 0,
-    "base_eth": 0,
-    "base_usdc": 0,
-    "rh_eth": 0
-  },
-  "residuals": {
-    "l1_eth": 0,
-    "arb_eth": 0,
-    "arb_usdc": 0,
-    "base_eth": 0,
-    "base_usdc": 0,
-    "rh_eth": 0
+    "L1": {
+      "eth": 0.0
+    },
+    "Arb": {
+      "eth": 0.0,
+      "usdc": 0.0
+    },
+    "Base": {
+      "eth": 0.0,
+      "usdc": 0.0
+    },
+    "RH": {
+      "eth": 0.0
+    }
   },
   "wallet_urls": {
-    "ethereum": "https://etherscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "arbitrum": "https://arbiscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
+    "ethereum": "https://etherscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
+  "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
   "positions": [],
+  "position": null,
   "pnl_history": [
     {
-      "t": "2026-09-17 08:58:37 ET",
+      "t": "2026-09-16 22:58:23 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-16 23:08:33 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-16 23:18:43 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-16 23:28:54 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-16 23:39:04 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-16 23:49:13 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-16 23:59:24 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 00:09:34 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 00:19:44 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 00:29:53 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 00:40:03 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 00:50:14 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 01:00:23 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 01:10:33 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 01:20:46 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 01:30:54 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 01:41:03 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 01:51:10 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 02:01:23 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 02:11:33 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 02:21:43 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 02:31:53 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 02:42:03 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 02:52:13 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 03:02:24 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 03:12:33 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 03:22:38 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 03:32:43 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 03:42:53 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 03:53:03 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 04:03:14 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 04:13:23 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 04:23:33 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 04:33:44 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 04:43:49 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 04:53:54 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 05:04:04 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 05:14:13 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 05:24:26 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 05:34:34 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 05:44:43 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 05:54:55 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 06:05:03 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 06:15:14 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 06:25:19 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 06:35:24 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 06:45:33 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 06:55:44 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 07:05:49 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 07:16:02 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 07:26:07 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 07:36:13 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 07:46:24 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 07:56:34 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 08:06:39 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 08:16:44 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 08:26:49 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 08:36:54 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 08:46:59 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 08:57:04 ET",
+      "equity_usd": 0.0,
+      "liquid_usd": 0.0,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-17 08:59:15 ET",
       "equity_usd": 22.6324,
       "liquid_usd": 22.6324,
       "upnl_usd": 0,
       "n_pos": 0
     }
   ],
+  "funding_usd": 0.0,
+  "funding_note": "V2 cutover baseline $0 (2026-09-16). Prior $107 was legacy/Alpha burn bookkeeping \u2014 not V2 cash.",
+  "total_pnl_usd": 0.0,
+  "total_pnl_pct": null,
   "trades": [
     {
-      "t": "2026-09-17 08:58:37 ET",
-      "kind": "PAPER",
-      "market": "GULPH",
-      "side": "LONG",
-      "size": 20,
-      "pnl_usd": -0.6652,
-      "tx": "COOLDOWN_CLOSE_CoS_improve"
+      "t": "2026-09-07 12:19 ET",
+      "kind": "OPEN",
+      "venue": "GMX",
+      "market": "ETH/USD",
+      "side": "SHORT",
+      "size_usd": 5000.0,
+      "price": null,
+      "pnl_usd": null,
+      "tx": "0x00847742e5c872e87f81c4ef1a25b016b345735c3653703f343ae166c0a1a306",
+      "note": "EOD1K-C-LEG3-OPEN.md"
     }
   ],
-  "paper": {
-    "active": true,
-    "start_equity_usd": 100,
-    "paper_equity_usd": 22.6324,
-    "mtm_equity_usd": 22.6324,
-    "realized_pnl_usd": -77.3676,
-    "unrealized_pnl_usd": 0,
-    "open": null,
-    "notes": "scout paused \u00b7 improve gate"
-  },
-  "notes": "SCOUT OFF \u00b7 eq $22.63 \u00b7 2026-09-17 08:58:37 ET"
+  "mark": 2458.95,
+  "mark_src": "coinbase",
+  "mark_eth": 2458.95,
+  "mark_btc": 76693.5,
+  "mark_btc_src": "coinbase",
+  "mark_link": 11.28,
+  "mark_link_src": "coinbase",
+  "marks": {
+    "ETH": 2458.95,
+    "BTC": 76693.5,
+    "LINK": 11.28
+  }
 }
