@@ -13,6 +13,15 @@
     "./book.json",
     "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/book.json",
   ];
+  async function loadVersionPinned() {
+    try {
+      const v = await loadOne("./version.json");
+      if (v && v.sha) {
+        return "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@" + v.sha + "/book.json";
+      }
+    } catch (e) {}
+    return null;
+  }
 
   const CHAIN_LABELS = {
     L1: "Ethereum L1",
@@ -340,14 +349,20 @@
   function paintStale() {
     const el = $("err");
     if (!el || !bookRaw) return;
+    // Prefer time since we successfully fetched book (CDN lag ≠ writer lag).
+    const fetchLagMin = bookAt ? (Date.now() - bookAt) / 60000 : 99;
     const et = normalize(bookRaw).updatedEt || "";
     const m = String(et).match(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})(?::(\d{2}))?/);
-    if (!m) return;
-    const approx = Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4] + 4, +m[5], +(m[6] || 0));
-    const lagMin = (Date.now() - approx) / 60000;
-    if (lagMin > 5) {
+    let stampLagMin = 0;
+    if (m) {
+      // ET ≈ UTC-4 in Sep (EDT)
+      const approx = Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4] + 4, +m[5], +(m[6] || 0));
+      stampLagMin = (Date.now() - approx) / 60000;
+    }
+    // Warn only if BOTH fetch is old and stamp is old (avoid false stale from one CDN hop)
+    if (fetchLagMin > 3 && stampLagMin > 12) {
       el.hidden = false;
-      el.textContent = "Book stale · " + et + " · lag ~" + Math.round(lagMin) + "m";
+      el.textContent = "Book stale · " + et + " · stamp lag ~" + Math.round(stampLagMin) + "m";
       el.className = "err stale";
     } else if (el.className === "err stale") {
       el.hidden = true;
@@ -801,7 +816,9 @@
   async function refreshBook() {
     let lastErr = null;
     const cands = [];
-    for (const src of SOURCES) {
+    const pinned = await loadVersionPinned();
+    const list = pinned ? ["./book.json", pinned].concat(SOURCES.filter(function (s) { return s !== "./book.json"; })) : SOURCES;
+    for (const src of list) {
       try {
         const raw = await loadOne(src);
         cands.push({ src: src, raw: raw });
