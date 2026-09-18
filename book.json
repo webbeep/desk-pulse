@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-18 08:10:22 ET",
+  "updated_et": "2026-09-18 08:10:40 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.0,
-  "upnl_usd": -0.6902,
-  "equity_usd": 99.3098,
+  "upnl_usd": -0.6934,
+  "equity_usd": 99.3066,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 script MTM loop \u00b7 NO LIVE",
-  "total_pnl_usd": -0.6902,
-  "total_pnl_pct": -0.6902,
-  "mark_eth": 2502.26,
-  "mark": 2502.26,
+  "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
+  "total_pnl_usd": -0.6934,
+  "total_pnl_pct": -0.6934,
+  "mark_eth": 2501.8,
+  "mark": 2501.8,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2502.26
+    "ETH": 2501.8
   },
   "holdings": {
     "paper_cash_usd": 80.0,
@@ -46,39 +46,30 @@
       "side": "LONG",
       "size_usd": 20.0,
       "entry": 3.5336665303191413e-06,
-      "mark": 3.4117196983578278e-06,
-      "uPnL": -0.6902,
-      "mtm_pct": -3.4512,
+      "mark": 3.411154311712977e-06,
+      "uPnL": -0.6934,
+      "mtm_pct": -3.4672,
       "sl": 2.8269332242553133e-06,
       "tp": 5.300499795478712e-06,
       "lev": 1,
       "paper": true,
       "liq": 36819258015569838458222,
-      "held_min": 73.35
+      "held_min": 73.52
     }
   ],
-  "position": {
-    "id": "PAPER-21",
-    "market": "KAI",
-    "side": "LONG",
-    "size_usd": 20.0,
-    "entry": 3.5336665303191413e-06,
-    "mark": 3.4117196983578278e-06,
-    "uPnL": -0.6902,
-    "mtm_pct": -3.4512,
-    "sl": 2.8269332242553133e-06,
-    "tp": 5.300499795478712e-06,
-    "lev": 1,
-    "paper": true,
-    "liq": 36819258015569838458222,
-    "held_min": 73.35
-  },
   "pnl_history": [
     {
-      "t": "2026-09-18 08:10:22 ET",
-      "equity_usd": 99.3098,
+      "t": "2026-09-18 08:10:32 ET",
+      "equity_usd": 99.3066,
       "liquid_usd": 100.0,
-      "upnl_usd": -0.6902,
+      "upnl_usd": -0.6934,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-18 08:10:40 ET",
+      "equity_usd": 99.3066,
+      "liquid_usd": 100.0,
+      "upnl_usd": -0.6934,
       "n_pos": 1
     }
   ],
@@ -87,18 +78,17 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 100.0,
-    "mtm_equity_usd": 99.3098,
+    "mtm_equity_usd": 99.3066,
     "realized_pnl_usd": 0.0,
-    "unrealized_pnl_usd": -0.6902,
+    "unrealized_pnl_usd": -0.6934,
     "open": {
       "id": "PAPER-21",
       "ticker": "KAI",
       "usd": 20.0,
-      "mtm_pct": -3.4512
+      "mtm_pct": -3.4672
     },
-    "notes": "script MTM <=10s HOLD",
-    "mtm_poll_sec": 10.0,
-    "mtm_max_sec": 60
+    "closed_n": 0,
+    "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "OPEN KAI mtm -3.4512% \u00b7 script"
+  "notes": "PAPER heartbeat \u00b7 eq $99.31 \u00b7 FLAT \u00b7 2026-09-18 08:10:40 ET"
 }
