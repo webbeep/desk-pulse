@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-18 06:57:00 ET",
+  "updated_et": "2026-09-18 06:57:29 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.0,
-  "upnl_usd": 0.0,
-  "equity_usd": 100.0,
+  "upnl_usd": -0.6082,
+  "equity_usd": 99.3918,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": 0.0,
-  "total_pnl_pct": 0.0,
-  "mark_eth": 2512.455,
-  "mark": 2512.455,
+  "total_pnl_usd": -0.6082,
+  "total_pnl_pct": -0.6082,
+  "mark_eth": 2512.615,
+  "mark": 2512.615,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2512.455
+    "ETH": 2512.615
   },
   "holdings": {
-    "paper_cash_usd": 100.0,
+    "paper_cash_usd": 80.0,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,255 +39,56 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-21",
+      "market": "KAI",
+      "side": "LONG",
+      "size_usd": 20.0,
+      "entry": 3.5336665303191413e-06,
+      "mark": 3.426207731132136e-06,
+      "uPnL": -0.6082,
+      "mtm_pct": -3.0409,
+      "sl": 2.8269332242553133e-06,
+      "tp": 5.300499795478712e-06,
+      "lev": 1,
+      "paper": true,
+      "liq": 36819258015569838458222,
+      "held_min": 0.31
+    }
+  ],
   "pnl_history": [
     {
-      "t": "2026-09-18 06:56:50 ET",
-      "equity_usd": 100.0,
+      "t": "2026-09-18 06:57:19 ET",
+      "equity_usd": 99.3918,
       "liquid_usd": 100.0,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "upnl_usd": -0.6082,
+      "n_pos": 1
     },
     {
-      "t": "2026-09-18 06:57:00 ET",
-      "equity_usd": 100.0,
+      "t": "2026-09-18 06:57:29 ET",
+      "equity_usd": 99.3918,
       "liquid_usd": 100.0,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "upnl_usd": -0.6082,
+      "n_pos": 1
     }
   ],
-  "trades": [
-    {
-      "id": "PAPER-20",
-      "ticker": "VAROBOOK",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -18.65,
-      "pnl_pct": -100.0,
-      "reason": "CUT_HARD_QUOTER",
-      "closed_et": "2026-09-17 20:10:24 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-19",
-      "ticker": "META",
-      "side": "LONG",
-      "size_usd": 15.0,
-      "pnl_usd": -0.091,
-      "pnl_pct": -0.607,
-      "reason": "ROTATE_NOT_MEME_STOCK",
-      "closed_et": "2026-09-17 19:52:00 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-18",
-      "ticker": "QQQ",
-      "side": "LONG",
-      "size_usd": 18.81,
-      "pnl_usd": -0.1013,
-      "pnl_pct": -0.5386,
-      "reason": "ROTATE_MEME_ONLY",
-      "closed_et": "2026-09-17 19:50:17 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-17",
-      "ticker": "TSLA",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.4974,
-      "pnl_pct": -2.487,
-      "reason": "ROTATE_STALE_2H",
-      "closed_et": "2026-09-17 19:34:28 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-16",
-      "ticker": "GULPH",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.6652,
-      "pnl_pct": null,
-      "reason": "COOLDOWN_CLOSE_CoS_improve",
-      "closed_et": "2026-09-17 08:58:37 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-15",
-      "ticker": "ARCAT",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -20.0,
-      "pnl_pct": -100.0,
-      "reason": "CUT_HARD_QUOTER",
-      "closed_et": "2026-09-17 08:35:40 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-14",
-      "ticker": "MEME",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -20.0,
-      "pnl_pct": -100.0,
-      "reason": "CUT_HARD_QUOTER",
-      "closed_et": "2026-09-17 08:21:20 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-13",
-      "ticker": "MEME",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 12.4902,
-      "pnl_pct": 62.4512,
-      "reason": "TP_+50",
-      "closed_et": "2026-09-17 08:18:14 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-12",
-      "ticker": "MEME",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -4.4637,
-      "pnl_pct": -22.3184,
-      "reason": "CUT_HARD_-20",
-      "closed_et": "2026-09-17 08:13:21 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-11",
-      "ticker": "MEME",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -4.3735,
-      "pnl_pct": -21.8673,
-      "reason": "CUT_HARD_-20",
-      "closed_et": "2026-09-17 08:11:20 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-10",
-      "ticker": "MEME",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -5.6532,
-      "pnl_pct": -28.2661,
-      "reason": "CUT_HARD_-20",
-      "closed_et": "2026-09-17 08:07:11 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-9",
-      "ticker": "ETH",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -5.212,
-      "pnl_pct": -26.0601,
-      "reason": "CUT_HARD_-20",
-      "closed_et": "2026-09-17 08:02:53 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-8",
-      "ticker": "MEME",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -4.7157,
-      "pnl_pct": -23.5784,
-      "reason": "CUT_HARD_-20",
-      "closed_et": "2026-09-17 07:54:19 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-5-GULPH",
-      "ticker": "GULPH",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0,
-      "pnl_pct": null,
-      "reason": "ABORT_SIT_ALIGN",
-      "closed_et": "2026-09-16 23:57:34 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-4-ZEROCOIN",
-      "ticker": "ZEROCOIN",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -20.0,
-      "pnl_pct": -100.0,
-      "reason": "CUT_HARD",
-      "closed_et": "2026-09-16 23:55:19 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-5",
-      "ticker": "TSLA",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.1101,
-      "pnl_pct": -0.5505,
-      "reason": "ROTATE_MEME_FIRST",
-      "closed_et": "2026-09-16 23:41:17 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-4",
-      "ticker": "WAY",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0,
-      "pnl_pct": null,
-      "reason": "ABORT_SIZE_TAX_dust_stub_mismatch",
-      "closed_et": "2026-09-16 23:28:25 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-3-ARC",
-      "ticker": "ARC",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -4.5444,
-      "pnl_pct": -22.7221,
-      "reason": "CUT_HARD_-20",
-      "closed_et": "2026-09-16 23:24:52 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-2",
-      "ticker": "WAY",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0,
-      "pnl_pct": null,
-      "reason": "ABORT_WARN_TAX_honeypot",
-      "closed_et": "2026-09-16 23:18:05 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-1",
-      "ticker": "NVDA",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.12,
-      "pnl_pct": -0.5998,
-      "reason": "rotate_meme_first",
-      "closed_et": "2026-09-16 23:15:06 ET",
-      "paper": true
-    }
-  ],
+  "trades": [],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 100.0,
-    "mtm_equity_usd": 100.0,
+    "mtm_equity_usd": 99.3918,
     "realized_pnl_usd": 0.0,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
+    "unrealized_pnl_usd": -0.6082,
+    "open": {
+      "id": "PAPER-21",
+      "ticker": "KAI",
+      "usd": 20.0,
+      "mtm_pct": -3.0409
+    },
     "closed_n": 0,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.00 \u00b7 FLAT \u00b7 2026-09-18 06:57:00 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $99.39 \u00b7 FLAT \u00b7 2026-09-18 06:57:29 ET"
 }
