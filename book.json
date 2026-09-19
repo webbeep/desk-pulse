@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-18 22:32:34 ET",
+  "updated_et": "2026-09-18 22:33:18 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 98.6719,
+  "liquid_usd": 95.1994,
   "upnl_usd": 0.0,
-  "equity_usd": 98.6719,
+  "equity_usd": 95.1994,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -1.3281,
-  "total_pnl_pct": -1.3281,
-  "mark_eth": 2619.695,
-  "mark": 2619.695,
+  "total_pnl_usd": -4.8006,
+  "total_pnl_pct": -4.8006,
+  "mark_eth": 2620.225,
+  "mark": 2620.225,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2619.695
+    "ETH": 2620.225
   },
   "holdings": {
-    "paper_cash_usd": 98.6719,
+    "paper_cash_usd": 95.1994,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,28 +42,30 @@
   "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-18 22:31:52 ET",
-      "equity_usd": 98.6719,
-      "liquid_usd": 98.6719,
+      "t": "2026-09-18 22:33:02 ET",
+      "equity_usd": 95.1994,
+      "liquid_usd": 95.1994,
       "upnl_usd": 0.0,
       "n_pos": 0
     },
     {
-      "t": "2026-09-18 22:32:31 ET",
-      "equity_usd": 98.6719,
-      "liquid_usd": 98.6719,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-18 22:32:34 ET",
-      "equity_usd": 98.6719,
-      "liquid_usd": 98.6719,
+      "t": "2026-09-18 22:33:18 ET",
+      "equity_usd": 95.1994,
+      "liquid_usd": 95.1994,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-18 22:33:02 ET",
+      "kind": "PAPER",
+      "market": "BASIS",
+      "side": "LONG",
+      "size": 20.0,
+      "pnl_usd": -3.4725,
+      "tx": "CUT_HARD_-10.0"
+    },
     {
       "t": "2026-09-18 22:31:52 ET",
       "kind": "PAPER",
@@ -104,13 +106,13 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 98.6719,
-    "mtm_equity_usd": 98.6719,
-    "realized_pnl_usd": -1.3281,
+    "paper_equity_usd": 95.1994,
+    "mtm_equity_usd": 95.1994,
+    "realized_pnl_usd": -4.8006,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "closed_n": 4,
+    "closed_n": 5,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $98.67 \u00b7 FLAT \u00b7 2026-09-18 22:32:34 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $95.20 \u00b7 FLAT \u00b7 2026-09-18 22:33:18 ET"
 }
