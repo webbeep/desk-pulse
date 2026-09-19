@@ -3,11 +3,11 @@
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 88.8733,
-  "upnl_usd": 0,
+  "upnl_usd": 0.0,
   "equity_usd": 88.8733,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 scout loop",
+  "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
   "total_pnl_usd": -11.1267,
   "total_pnl_pct": -11.1267,
   "mark_eth": 2627.775,
@@ -41,13 +41,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-19 02:33:31 ET",
-      "equity_usd": 88.8733,
-      "liquid_usd": 88.8733,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-09-19 02:33:44 ET",
       "equity_usd": 88.8733,
@@ -320,6 +313,13 @@
       "liquid_usd": 88.8733,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-19 02:45:34 ET",
+      "equity_usd": 88.8733,
+      "liquid_usd": 88.8733,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -411,9 +411,10 @@
     "paper_equity_usd": 88.8733,
     "mtm_equity_usd": 88.8733,
     "realized_pnl_usd": -11.1267,
-    "unrealized_pnl_usd": 0,
+    "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "scout+mtm scripts"
+    "closed_n": 9,
+    "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "FLAT \u00b7 scout gates failed \u00b7 2026-09-19 02:45:34 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $88.87 \u00b7 FLAT \u00b7 2026-09-19 02:45:34 ET"
 }
