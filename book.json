@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-19 02:44:46 ET",
+  "updated_et": "2026-09-19 02:45:34 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 88.8733,
-  "upnl_usd": 0.0,
+  "upnl_usd": 0,
   "equity_usd": 88.8733,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
+  "funding_note": "PAPER \u00b7 scout loop",
   "total_pnl_usd": -11.1267,
   "total_pnl_pct": -11.1267,
-  "mark_eth": 2627.805,
-  "mark": 2627.805,
+  "mark_eth": 2627.775,
+  "mark": 2627.775,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2627.805
+    "ETH": 2627.775
   },
   "holdings": {
     "paper_cash_usd": 88.8733,
@@ -41,20 +41,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-19 02:32:56 ET",
-      "equity_usd": 88.8733,
-      "liquid_usd": 88.8733,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-19 02:32:56 ET",
-      "equity_usd": 88.8733,
-      "liquid_usd": 88.8733,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
     {
       "t": "2026-09-19 02:33:31 ET",
       "equity_usd": 88.8733,
@@ -320,6 +306,20 @@
       "liquid_usd": 88.8733,
       "upnl_usd": 0.0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-19 02:45:33 ET",
+      "equity_usd": 88.8733,
+      "liquid_usd": 88.8733,
+      "upnl_usd": 0.0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-19 02:45:34 ET",
+      "equity_usd": 88.8733,
+      "liquid_usd": 88.8733,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -411,10 +411,9 @@
     "paper_equity_usd": 88.8733,
     "mtm_equity_usd": 88.8733,
     "realized_pnl_usd": -11.1267,
-    "unrealized_pnl_usd": 0.0,
+    "unrealized_pnl_usd": 0,
     "open": null,
-    "closed_n": 9,
-    "notes": "heartbeat \u00b7 preserves trade history"
+    "notes": "scout+mtm scripts"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $88.87 \u00b7 FLAT \u00b7 2026-09-19 02:44:46 ET"
+  "notes": "FLAT \u00b7 scout gates failed \u00b7 2026-09-19 02:45:34 ET"
 }
