@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-19 13:34:53 ET",
+  "updated_et": "2026-09-19 13:35:40 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 88.511,
-  "upnl_usd": -0.4722,
-  "equity_usd": 88.0388,
+  "liquid_usd": 79.0158,
+  "upnl_usd": 0.0,
+  "equity_usd": 79.0158,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -11.9612,
-  "total_pnl_pct": -11.9612,
-  "mark_eth": 2647.235,
-  "mark": 2647.235,
+  "total_pnl_usd": -20.9842,
+  "total_pnl_pct": -20.9842,
+  "mark_eth": 2646.65,
+  "mark": 2646.65,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2647.235
+    "ETH": 2646.65
   },
   "holdings": {
-    "paper_cash_usd": 68.511,
+    "paper_cash_usd": 79.0158,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,53 +39,33 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-37",
-      "market": "XPAD",
-      "side": "LONG",
-      "size_usd": 20.0,
-      "entry": 3.262102125106951e-05,
-      "mark": 3.185080069355387e-05,
-      "uPnL": -0.4722,
-      "mtm_pct": -2.361,
-      "sl": 2.935891912596256e-05,
-      "tp": 3.653554380119786e-05,
-      "lev": 1,
-      "paper": true
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-19 13:34:16 ET",
-      "equity_usd": 88.511,
-      "liquid_usd": 88.511,
+      "t": "2026-09-19 13:35:38 ET",
+      "equity_usd": 79.0158,
+      "liquid_usd": 79.0158,
       "upnl_usd": 0.0,
       "n_pos": 0
     },
     {
-      "t": "2026-09-19 13:34:35 ET",
-      "equity_usd": 88.0388,
-      "liquid_usd": 88.511,
-      "upnl_usd": -0.4722,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-19 13:34:53 ET",
-      "equity_usd": 88.0388,
-      "liquid_usd": 88.511,
-      "upnl_usd": -0.4722,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-19 13:34:53 ET",
-      "equity_usd": 88.0388,
-      "liquid_usd": 88.511,
-      "upnl_usd": -0.4722,
-      "n_pos": 1
+      "t": "2026-09-19 13:35:40 ET",
+      "equity_usd": 79.0158,
+      "liquid_usd": 79.0158,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-19 13:35:38 ET",
+      "kind": "PAPER",
+      "market": "XPAD",
+      "side": "LONG",
+      "size": 20.0,
+      "pnl_usd": -9.4952,
+      "tx": "CUT_HARD_-10.0"
+    },
     {
       "t": "2026-09-19 13:34:16 ET",
       "kind": "PAPER",
@@ -234,18 +214,13 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 88.511,
-    "mtm_equity_usd": 88.0388,
-    "realized_pnl_usd": -11.489,
-    "unrealized_pnl_usd": -0.4722,
-    "open": {
-      "id": "PAPER-37",
-      "ticker": "XPAD",
-      "usd": 20.0,
-      "mtm_pct": -2.361
-    },
-    "closed_n": 16,
+    "paper_equity_usd": 79.0158,
+    "mtm_equity_usd": 79.0158,
+    "realized_pnl_usd": -20.9842,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 17,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $88.04 \u00b7 FLAT \u00b7 2026-09-19 13:34:53 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $79.02 \u00b7 FLAT \u00b7 2026-09-19 13:35:40 ET"
 }
