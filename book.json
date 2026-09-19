@@ -3,13 +3,13 @@
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 108.511,
-  "upnl_usd": -1.7558,
-  "equity_usd": 106.7552,
+  "upnl_usd": -1.7547,
+  "equity_usd": 106.7563,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 script MTM loop \u00b7 NO LIVE",
-  "total_pnl_usd": 6.7552,
-  "total_pnl_pct": 6.7552,
+  "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
+  "total_pnl_usd": 6.7563,
+  "total_pnl_pct": 6.7563,
   "mark_eth": 2648.075,
   "mark": 2648.075,
   "mark_src": "coinbase",
@@ -57,28 +57,19 @@
       "held_min": 3.27
     }
   ],
-  "position": {
-    "id": "PAPER-36",
-    "market": "EAGLE",
-    "side": "LONG",
-    "size_usd": 20.0,
-    "entry": 8.001761776520255e-06,
-    "mark": 7.299287110159542e-06,
-    "uPnL": -1.7558,
-    "mtm_pct": -8.7788,
-    "sl": 6.401409421216204e-06,
-    "tp": 1.2002642664780382e-05,
-    "lev": 1,
-    "paper": true,
-    "liq": 54773207779044021846921,
-    "held_min": 3.27
-  },
   "pnl_history": [
     {
       "t": "2026-09-19 13:34:06 ET",
       "equity_usd": 106.7552,
       "liquid_usd": 108.511,
       "upnl_usd": -1.7558,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-19 13:34:06 ET",
+      "equity_usd": 106.7563,
+      "liquid_usd": 108.511,
+      "upnl_usd": -1.7547,
       "n_pos": 1
     }
   ],
@@ -223,18 +214,17 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 108.511,
-    "mtm_equity_usd": 106.7552,
+    "mtm_equity_usd": 106.7563,
     "realized_pnl_usd": 8.511,
-    "unrealized_pnl_usd": -1.7558,
+    "unrealized_pnl_usd": -1.7547,
     "open": {
       "id": "PAPER-36",
       "ticker": "EAGLE",
       "usd": 20.0,
       "mtm_pct": -8.7788
     },
-    "notes": "script MTM <=10s HOLD",
-    "mtm_poll_sec": 10.0,
-    "mtm_max_sec": 60
+    "closed_n": 15,
+    "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "OPEN EAGLE mtm -8.7788% \u00b7 script"
+  "notes": "PAPER heartbeat \u00b7 eq $106.76 \u00b7 FLAT \u00b7 2026-09-19 13:34:06 ET"
 }
