@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-18 22:29:26 ET",
+  "updated_et": "2026-09-18 22:30:10 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 97.0292,
-  "upnl_usd": 0.0,
-  "equity_usd": 97.0292,
+  "upnl_usd": 0.085,
+  "equity_usd": 97.1142,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -2.9708,
-  "total_pnl_pct": -2.9708,
-  "mark_eth": 2617.415,
-  "mark": 2617.415,
+  "total_pnl_usd": -2.8858,
+  "total_pnl_pct": -2.8858,
+  "mark_eth": 2617.015,
+  "mark": 2617.015,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2617.415
+    "ETH": 2617.015
   },
   "holdings": {
-    "paper_cash_usd": 97.0292,
+    "paper_cash_usd": 77.0292,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,42 +39,38 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-23",
+      "market": "BASIS",
+      "side": "LONG",
+      "size_usd": 20.0,
+      "entry": 3.408536704402592e-05,
+      "mark": 3.4230229853963034e-05,
+      "uPnL": 0.085,
+      "mtm_pct": 0.4252,
+      "sl": 2.7268293635220736e-05,
+      "tp": 5.112805056603888e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": 12271858696589425368886,
+      "held_min": 0.39
+    }
+  ],
   "pnl_history": [
     {
-      "t": "2026-09-18 22:28:20 ET",
-      "equity_usd": 97.0292,
+      "t": "2026-09-18 22:30:00 ET",
+      "equity_usd": 97.1142,
       "liquid_usd": 97.0292,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "upnl_usd": 0.085,
+      "n_pos": 1
     },
     {
-      "t": "2026-09-18 22:28:36 ET",
-      "equity_usd": 97.0292,
+      "t": "2026-09-18 22:30:10 ET",
+      "equity_usd": 97.1142,
       "liquid_usd": 97.0292,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-18 22:28:38 ET",
-      "equity_usd": 97.0292,
-      "liquid_usd": 97.0292,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-18 22:29:23 ET",
-      "equity_usd": 97.0292,
-      "liquid_usd": 97.0292,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-18 22:29:26 ET",
-      "equity_usd": 97.0292,
-      "liquid_usd": 97.0292,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "upnl_usd": 0.085,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -101,12 +97,17 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 97.0292,
-    "mtm_equity_usd": 97.0292,
+    "mtm_equity_usd": 97.1142,
     "realized_pnl_usd": -2.9708,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
+    "unrealized_pnl_usd": 0.085,
+    "open": {
+      "id": "PAPER-23",
+      "ticker": "BASIS",
+      "usd": 20.0,
+      "mtm_pct": 0.4252
+    },
     "closed_n": 2,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $97.03 \u00b7 FLAT \u00b7 2026-09-18 22:29:26 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $97.11 \u00b7 FLAT \u00b7 2026-09-18 22:30:10 ET"
 }
