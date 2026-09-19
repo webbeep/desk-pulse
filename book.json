@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-19 14:33:41 ET",
+  "updated_et": "2026-09-19 14:34:29 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 80.2398,
-  "upnl_usd": -1.273,
-  "equity_usd": 78.9668,
+  "liquid_usd": 78.9717,
+  "upnl_usd": 0.0,
+  "equity_usd": 78.9717,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -21.0332,
-  "total_pnl_pct": -21.0332,
-  "mark_eth": 2636.88,
-  "mark": 2636.88,
+  "total_pnl_usd": -21.0283,
+  "total_pnl_pct": -21.0283,
+  "mark_eth": 2638.245,
+  "mark": 2638.245,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2636.88
+    "ETH": 2638.245
   },
   "holdings": {
-    "paper_cash_usd": 60.2398,
+    "paper_cash_usd": 78.9717,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,41 +39,33 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-41",
-      "market": "GASOLINU",
-      "side": "LONG",
-      "size_usd": 20.0,
-      "entry": 0.0011295072509544136,
-      "mark": 0.0010576141144311652,
-      "uPnL": -1.273,
-      "mtm_pct": -6.3649,
-      "sl": 0.0009036058007635309,
-      "tp": 0.0016942608764316204,
-      "lev": 1,
-      "paper": true,
-      "liq": 3449698402091961362441,
-      "held_min": 29.98
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-19 14:33:40 ET",
-      "equity_usd": 78.9668,
-      "liquid_usd": 80.2398,
-      "upnl_usd": -1.273,
-      "n_pos": 1
+      "t": "2026-09-19 14:33:50 ET",
+      "equity_usd": 78.9717,
+      "liquid_usd": 78.9717,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     },
     {
-      "t": "2026-09-19 14:33:41 ET",
-      "equity_usd": 78.9668,
-      "liquid_usd": 80.2398,
-      "upnl_usd": -1.273,
-      "n_pos": 1
+      "t": "2026-09-19 14:34:29 ET",
+      "equity_usd": 78.9717,
+      "liquid_usd": 78.9717,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-19 14:33:50 ET",
+      "kind": "PAPER",
+      "market": "GASOLINU",
+      "side": "LONG",
+      "size": 20.0,
+      "pnl_usd": -1.2681,
+      "tx": "CUT_HARD_-5.0_30m"
+    },
     {
       "t": "2026-09-19 13:59:41 ET",
       "kind": "PAPER",
@@ -258,18 +250,13 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 80.2398,
-    "mtm_equity_usd": 78.9668,
-    "realized_pnl_usd": -19.7602,
-    "unrealized_pnl_usd": -1.273,
-    "open": {
-      "id": "PAPER-41",
-      "ticker": "GASOLINU",
-      "usd": 20.0,
-      "mtm_pct": -6.3649
-    },
-    "closed_n": 20,
+    "paper_equity_usd": 78.9717,
+    "mtm_equity_usd": 78.9717,
+    "realized_pnl_usd": -21.0283,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 21,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $78.97 \u00b7 FLAT \u00b7 2026-09-19 14:33:41 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $78.97 \u00b7 FLAT \u00b7 2026-09-19 14:34:29 ET"
 }
