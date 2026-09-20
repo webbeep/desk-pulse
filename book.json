@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-20 11:50:57 ET",
+  "updated_et": "2026-09-20 11:51:44 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 30.7442,
-  "upnl_usd": -0.0008,
-  "equity_usd": 30.7434,
+  "liquid_usd": 30.741,
+  "upnl_usd": 0.0,
+  "equity_usd": 30.741,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -69.2566,
-  "total_pnl_pct": -69.2566,
-  "mark_eth": 2605.54,
-  "mark": 2605.54,
+  "total_pnl_usd": -69.259,
+  "total_pnl_pct": -69.259,
+  "mark_eth": 2605.265,
+  "mark": 2605.265,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2605.54
+    "ETH": 2605.265
   },
   "holdings": {
-    "paper_cash_usd": 22.7442,
+    "paper_cash_usd": 30.741,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,41 +39,33 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-159",
-      "market": "MUSE\u200bBOOK",
-      "side": "LONG",
-      "size_usd": 8.0,
-      "entry": 8.460279547604026e-05,
-      "mark": 8.459433519649266e-05,
-      "uPnL": -0.0008,
-      "mtm_pct": -0.01,
-      "sl": 6.768223638083222e-05,
-      "tp": 0.0001269041932140604,
-      "lev": 1,
-      "paper": true,
-      "liq": 18606446110203925713011825,
-      "held_min": 2.58
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-20 11:50:49 ET",
-      "equity_usd": 30.7434,
-      "liquid_usd": 30.7442,
-      "upnl_usd": -0.0008,
-      "n_pos": 1
+      "t": "2026-09-20 11:51:36 ET",
+      "equity_usd": 30.741,
+      "liquid_usd": 30.741,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     },
     {
-      "t": "2026-09-20 11:50:57 ET",
-      "equity_usd": 30.7434,
-      "liquid_usd": 30.7442,
-      "upnl_usd": -0.0008,
-      "n_pos": 1
+      "t": "2026-09-20 11:51:44 ET",
+      "equity_usd": 30.741,
+      "liquid_usd": 30.741,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-20 11:51:36 ET",
+      "kind": "PAPER",
+      "market": "MUSE\u200bBOOK",
+      "side": "LONG",
+      "size": 8.0,
+      "pnl_usd": -0.0032,
+      "tx": "TIME_SOFT_240s"
+    },
     {
       "t": "2026-09-20 11:47:54 ET",
       "kind": "PAPER",
@@ -330,18 +322,13 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 30.7442,
-    "mtm_equity_usd": 30.7434,
-    "realized_pnl_usd": -69.2558,
-    "unrealized_pnl_usd": -0.0008,
-    "open": {
-      "id": "PAPER-159",
-      "ticker": "MUSE\u200bBOOK",
-      "usd": 8.0,
-      "mtm_pct": -0.01
-    },
-    "closed_n": 28,
+    "paper_equity_usd": 30.741,
+    "mtm_equity_usd": 30.741,
+    "realized_pnl_usd": -69.259,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 29,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $30.74 \u00b7 FLAT \u00b7 2026-09-20 11:50:57 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $30.74 \u00b7 FLAT \u00b7 2026-09-20 11:51:44 ET"
 }
