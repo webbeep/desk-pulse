@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-20 16:04:08 ET",
+  "updated_et": "2026-09-20 16:04:55 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.0,
-  "upnl_usd": -0.008,
-  "equity_usd": 99.992,
+  "upnl_usd": -0.0062,
+  "equity_usd": 99.9938,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -0.008,
-  "total_pnl_pct": -0.008,
-  "mark_eth": 2635.025,
-  "mark": 2635.025,
+  "total_pnl_usd": -0.0062,
+  "total_pnl_pct": -0.0062,
+  "mark_eth": 2635.785,
+  "mark": 2635.785,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2635.025
+    "ETH": 2635.785
   },
   "holdings": {
     "paper_cash_usd": 92.0,
@@ -39,14 +39,38 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-178",
+      "market": "PONS",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "entry": 0.5789908300858527,
+      "mark": 0.5785421121925363,
+      "uPnL": -0.0062,
+      "mtm_pct": -0.0776,
+      "sl": 0.4631926640686822,
+      "tp": 0.8684862451287791,
+      "lev": 1,
+      "paper": true,
+      "liq": 1117109204483449434013218589,
+      "held_min": 0.8
+    }
+  ],
   "pnl_history": [
     {
-      "t": "2026-09-20 16:04:08 ET",
-      "equity_usd": 99.992,
+      "t": "2026-09-20 16:04:47 ET",
+      "equity_usd": 99.9938,
       "liquid_usd": 100.0,
-      "upnl_usd": -0.008,
-      "n_pos": 0
+      "upnl_usd": -0.0062,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-20 16:04:55 ET",
+      "equity_usd": 99.9938,
+      "liquid_usd": 100.0,
+      "upnl_usd": -0.0062,
+      "n_pos": 1
     }
   ],
   "trades": [],
@@ -54,16 +78,17 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 100.0,
-    "mtm_equity_usd": 99.992,
+    "mtm_equity_usd": 99.9938,
     "realized_pnl_usd": 0.0,
-    "unrealized_pnl_usd": -0.008,
+    "unrealized_pnl_usd": -0.0062,
     "open": {
       "id": "PAPER-178",
       "ticker": "PONS",
-      "usd": 8.0
+      "usd": 8.0,
+      "mtm_pct": -0.0776
     },
     "closed_n": 0,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $99.99 \u00b7 FLAT \u00b7 2026-09-20 16:04:08 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $99.99 \u00b7 FLAT \u00b7 2026-09-20 16:04:55 ET"
 }
