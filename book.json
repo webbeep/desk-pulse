@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-20 11:51:44 ET",
+  "updated_et": "2026-09-20 11:52:31 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 30.741,
-  "upnl_usd": 0.0,
-  "equity_usd": 30.741,
+  "liquid_usd": 22.741,
+  "upnl_usd": -0.0193,
+  "equity_usd": 22.7217,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -69.259,
-  "total_pnl_pct": -69.259,
-  "mark_eth": 2605.265,
-  "mark": 2605.265,
+  "total_pnl_usd": -77.2783,
+  "total_pnl_pct": -77.2783,
+  "mark_eth": 2606.19,
+  "mark": 2606.19,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2605.265
+    "ETH": 2606.19
   },
   "holdings": {
-    "paper_cash_usd": 30.741,
+    "paper_cash_usd": 14.741,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,21 +42,30 @@
   "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-20 11:51:36 ET",
-      "equity_usd": 30.741,
-      "liquid_usd": 30.741,
+      "t": "2026-09-20 11:51:55 ET",
+      "equity_usd": 22.741,
+      "liquid_usd": 22.741,
       "upnl_usd": 0.0,
       "n_pos": 0
     },
     {
-      "t": "2026-09-20 11:51:44 ET",
-      "equity_usd": 30.741,
-      "liquid_usd": 30.741,
-      "upnl_usd": 0.0,
+      "t": "2026-09-20 11:52:31 ET",
+      "equity_usd": 22.7217,
+      "liquid_usd": 22.741,
+      "upnl_usd": -0.0193,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-20 11:51:55 ET",
+      "kind": "PAPER",
+      "market": "COGE",
+      "side": "LONG",
+      "size": 8.0,
+      "pnl_usd": -8.0,
+      "tx": "CUT_HARD_QUOTER"
+    },
     {
       "t": "2026-09-20 11:51:36 ET",
       "kind": "PAPER",
@@ -322,13 +331,17 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 30.741,
-    "mtm_equity_usd": 30.741,
-    "realized_pnl_usd": -69.259,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "closed_n": 29,
+    "paper_equity_usd": 22.741,
+    "mtm_equity_usd": 22.7217,
+    "realized_pnl_usd": -77.259,
+    "unrealized_pnl_usd": -0.0193,
+    "open": {
+      "id": "PAPER-161",
+      "ticker": "AUTO",
+      "usd": 8.0
+    },
+    "closed_n": 30,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $30.74 \u00b7 FLAT \u00b7 2026-09-20 11:51:44 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $22.72 \u00b7 FLAT \u00b7 2026-09-20 11:52:31 ET"
 }
