@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-19 23:08:21 ET",
+  "updated_et": "2026-09-19 23:08:27 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.0,
-  "upnl_usd": 0,
-  "equity_usd": 100.0,
+  "upnl_usd": 0.206,
+  "equity_usd": 100.206,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": 0,
-  "total_pnl_pct": 0,
-  "mark_eth": 2583.39,
-  "mark": 2583.39,
+  "total_pnl_usd": 0.206,
+  "total_pnl_pct": 0.206,
+  "mark_eth": 2584.99,
+  "mark": 2584.99,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2583.39
+    "ETH": 2584.99
   },
   "holdings": {
     "paper_cash_usd": 90.0,
@@ -54,53 +54,30 @@
       "liquid_usd": 100.0,
       "upnl_usd": 0.206,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-19 23:08:27 ET",
+      "equity_usd": 100.206,
+      "liquid_usd": 100.0,
+      "upnl_usd": 0.206,
+      "n_pos": 0
     }
   ],
   "trades": [],
   "paper": {
     "active": true,
-    "equity_usd": 100.0,
-    "clean_slate": true,
-    "jev_live": true
-  },
-  "notes": "JEV OPEN \u00b7 pick=DIB open_p=0.45 edge=1.33 conf=0.37 \u00b7 CLEAN $100 \u00b7 2026-09-19 23:08:21 ET",
-  "jev": {
-    "action": "OPEN",
-    "detail": "pick=DIB open_p=0.45 edge=1.33 conf=0.37",
-    "pick": "DIB",
-    "open_p": 0.45,
-    "confidence": 0.37,
-    "edge_score": 1.33,
-    "picks": [
-      {
-        "sym": "DIB",
-        "lost_bps": 8,
-        "selected": true,
-        "probs": 0.68
-      }
-    ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "DIB",
-        "confidence": 0.37
-      },
-      "edge": {
-        "type": "score",
-        "score": 1.33,
-        "confidence": 0.28
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.45
-      }
+    "start_equity_usd": 100,
+    "paper_equity_usd": 100.0,
+    "mtm_equity_usd": 100.206,
+    "realized_pnl_usd": 0.0,
+    "unrealized_pnl_usd": 0.206,
+    "open": {
+      "id": "PAPER-54",
+      "ticker": "DIB",
+      "usd": 10.0
     },
-    "idle": null,
-    "stamp_et": "2026-09-19 23:07:52 ET",
-    "live": true
+    "closed_n": 0,
+    "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "history": [],
-  "hist": [],
-  "open": null
+  "notes": "PAPER heartbeat \u00b7 eq $100.21 \u00b7 FLAT \u00b7 2026-09-19 23:08:27 ET"
 }
