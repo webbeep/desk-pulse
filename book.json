@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-20 05:27:03 ET",
+  "updated_et": "2026-09-20 05:27:50 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 30.8348,
-  "upnl_usd": -0.0321,
-  "equity_usd": 30.8027,
+  "liquid_usd": 28.7235,
+  "upnl_usd": 0.0,
+  "equity_usd": 28.7235,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -69.1973,
-  "total_pnl_pct": -69.1973,
-  "mark_eth": 2579.865,
-  "mark": 2579.865,
+  "total_pnl_usd": -71.2765,
+  "total_pnl_pct": -71.2765,
+  "mark_eth": 2579.19,
+  "mark": 2579.19,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2579.865
+    "ETH": 2579.19
   },
   "holdings": {
-    "paper_cash_usd": 22.8348,
+    "paper_cash_usd": 28.7235,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,66 +42,41 @@
   "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-20 05:24:20 ET",
-      "equity_usd": 30.8348,
-      "liquid_usd": 30.8348,
+      "t": "2026-09-20 05:27:07 ET",
+      "equity_usd": 28.7235,
+      "liquid_usd": 28.7235,
       "upnl_usd": 0.0,
       "n_pos": 0
     },
     {
-      "t": "2026-09-20 05:24:41 ET",
-      "equity_usd": 30.8348,
-      "liquid_usd": 30.8348,
+      "t": "2026-09-20 05:27:50 ET",
+      "equity_usd": 28.7235,
+      "liquid_usd": 28.7235,
       "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 05:25:28 ET",
-      "equity_usd": 30.8348,
-      "liquid_usd": 30.8348,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 05:26:15 ET",
-      "equity_usd": 30.8348,
-      "liquid_usd": 30.8348,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 05:27:03 ET",
-      "equity_usd": 30.8027,
-      "liquid_usd": 30.8348,
-      "upnl_usd": -0.0321,
       "n_pos": 0
     }
   ],
   "trades": [
     {
-      "t": "2026-09-20 05:24:20 ET",
+      "t": "2026-09-20 05:27:07 ET",
       "kind": "PAPER",
       "market": "GMEME",
       "side": "LONG",
       "size": 8.0,
-      "pnl_usd": -0.3732,
+      "pnl_usd": -2.1113,
       "tx": "CUT_HARD_-2.0"
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 30.8348,
-    "mtm_equity_usd": 30.8027,
-    "realized_pnl_usd": -69.1652,
-    "unrealized_pnl_usd": -0.0321,
-    "open": {
-      "id": "PAPER-114",
-      "ticker": "GMEME",
-      "usd": 8.0
-    },
-    "closed_n": 60,
+    "paper_equity_usd": 28.7235,
+    "mtm_equity_usd": 28.7235,
+    "realized_pnl_usd": -71.2765,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 61,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $30.80 \u00b7 FLAT \u00b7 2026-09-20 05:27:03 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $28.72 \u00b7 FLAT \u00b7 2026-09-20 05:27:50 ET"
 }
