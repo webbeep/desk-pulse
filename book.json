@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-20 11:25:48 ET",
+  "updated_et": "2026-09-20 11:26:35 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 48.5404,
-  "upnl_usd": -0.017,
-  "equity_usd": 48.5234,
+  "upnl_usd": -0.0093,
+  "equity_usd": 48.5311,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -51.4766,
-  "total_pnl_pct": -51.4766,
-  "mark_eth": 2598.055,
-  "mark": 2598.055,
+  "total_pnl_usd": -51.4689,
+  "total_pnl_pct": -51.4689,
+  "mark_eth": 2597.855,
+  "mark": 2597.855,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2598.055
+    "ETH": 2597.855
   },
   "holdings": {
     "paper_cash_usd": 38.8304,
@@ -39,21 +39,38 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-153",
+      "market": "COGE",
+      "side": "LONG",
+      "size_usd": 9.71,
+      "entry": 1.9948711692846582e-05,
+      "mark": 1.9929605305746327e-05,
+      "uPnL": -0.0093,
+      "mtm_pct": -0.0961,
+      "sl": 1.5958969354277266e-05,
+      "tp": 2.9923067539269873e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": 54773207779044021846921,
+      "held_min": 0.95
+    }
+  ],
   "pnl_history": [
     {
-      "t": "2026-09-20 11:25:10 ET",
-      "equity_usd": 48.5404,
+      "t": "2026-09-20 11:26:26 ET",
+      "equity_usd": 48.5311,
       "liquid_usd": 48.5404,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "upnl_usd": -0.0093,
+      "n_pos": 1
     },
     {
-      "t": "2026-09-20 11:25:48 ET",
-      "equity_usd": 48.5234,
+      "t": "2026-09-20 11:26:35 ET",
+      "equity_usd": 48.5311,
       "liquid_usd": 48.5404,
-      "upnl_usd": -0.017,
-      "n_pos": 0
+      "upnl_usd": -0.0093,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -260,16 +277,17 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 48.5404,
-    "mtm_equity_usd": 48.5234,
+    "mtm_equity_usd": 48.5311,
     "realized_pnl_usd": -51.4596,
-    "unrealized_pnl_usd": -0.017,
+    "unrealized_pnl_usd": -0.0093,
     "open": {
       "id": "PAPER-153",
       "ticker": "COGE",
-      "usd": 9.71
+      "usd": 9.71,
+      "mtm_pct": -0.0961
     },
     "closed_n": 22,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $48.52 \u00b7 FLAT \u00b7 2026-09-20 11:25:48 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $48.53 \u00b7 FLAT \u00b7 2026-09-20 11:26:35 ET"
 }
