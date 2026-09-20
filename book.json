@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-19 23:06:53 ET",
+  "updated_et": "2026-09-19 23:07:40 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.0,
-  "upnl_usd": 0.0,
-  "equity_usd": 100.0,
+  "upnl_usd": 0.206,
+  "equity_usd": 100.206,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": 0.0,
-  "total_pnl_pct": 0.0,
-  "mark_eth": 2581.59,
-  "mark": 2581.59,
+  "total_pnl_usd": 0.206,
+  "total_pnl_pct": 0.206,
+  "mark_eth": 2583.39,
+  "mark": 2583.39,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2581.59
+    "ETH": 2583.39
   },
   "holdings": {
-    "paper_cash_usd": 100.0,
+    "paper_cash_usd": 90.0,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,35 +39,38 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-54",
+      "market": "DIB",
+      "side": "LONG",
+      "size_usd": 10.0,
+      "entry": 0.0001286491194394944,
+      "mark": 0.00013129929129994798,
+      "uPnL": 0.206,
+      "mtm_pct": 2.0601,
+      "sl": 0.00010291929555159552,
+      "tp": 0.00019297367915924158,
+      "lev": 1,
+      "paper": true,
+      "liq": 63246764568802612649417,
+      "held_min": 0.48
+    }
+  ],
   "pnl_history": [
     {
-      "t": "2026-09-19 23:06:06 ET",
-      "equity_usd": 100.0,
+      "t": "2026-09-19 23:07:37 ET",
+      "equity_usd": 100.206,
       "liquid_usd": 100.0,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "upnl_usd": 0.206,
+      "n_pos": 1
     },
     {
-      "t": "2026-09-19 23:06:27 ET",
-      "equity_usd": 100.0,
+      "t": "2026-09-19 23:07:40 ET",
+      "equity_usd": 100.206,
       "liquid_usd": 100.0,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-19 23:06:27 ET",
-      "equity_usd": 100.0,
-      "liquid_usd": 100.0,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-19 23:06:53 ET",
-      "equity_usd": 100.0,
-      "liquid_usd": 100.0,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "upnl_usd": 0.206,
+      "n_pos": 1
     }
   ],
   "trades": [],
@@ -75,12 +78,17 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 100.0,
-    "mtm_equity_usd": 100.0,
+    "mtm_equity_usd": 100.206,
     "realized_pnl_usd": 0.0,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
+    "unrealized_pnl_usd": 0.206,
+    "open": {
+      "id": "PAPER-54",
+      "ticker": "DIB",
+      "usd": 10.0,
+      "mtm_pct": 2.0601
+    },
     "closed_n": 0,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.00 \u00b7 FLAT \u00b7 2026-09-19 23:06:53 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $100.21 \u00b7 FLAT \u00b7 2026-09-19 23:07:40 ET"
 }
