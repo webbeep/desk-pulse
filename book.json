@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-19 23:23:27 ET",
+  "updated_et": "2026-09-19 23:24:10 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 98.3749,
@@ -176,5 +176,24 @@
     "closed_n": 1,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $98.37 \u00b7 FLAT \u00b7 2026-09-19 23:23:27 ET"
+  "notes": "JEV DIAG \u00b7 why=cand_starve loops_ok_p=0.86 \u00b7 banned DIB \u00b7 scanning new pools \u00b7 eq $98.3749 \u00b7 loops 60s OK \u00b7 2026-09-19 23:24:10 ET",
+  "jev": {
+    "action": "DIAG",
+    "detail": "why=cand_starve loops_ok_p=0.86 \u00b7 banned DIB \u00b7 scanning new pools",
+    "model": "jev-1.13.0",
+    "confidence": 0.99,
+    "picks": [],
+    "idle": "cand_starve",
+    "raw_answers": {
+      "why_flat": {
+        "choice": "cand_starve",
+        "confidence": 0.99
+      },
+      "loops_ok": {
+        "noul": 0.86
+      }
+    },
+    "live": true,
+    "stamp_et": "2026-09-19 23:23:28 ET"
+  }
 }
