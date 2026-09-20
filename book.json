@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-20 11:44:40 ET",
+  "updated_et": "2026-09-20 11:45:27 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 30.7469,
-  "upnl_usd": 0.0,
-  "equity_usd": 30.7469,
+  "upnl_usd": -0.0077,
+  "equity_usd": 30.7392,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -69.2531,
-  "total_pnl_pct": -69.2531,
-  "mark_eth": 2602.27,
-  "mark": 2602.27,
+  "total_pnl_usd": -69.2608,
+  "total_pnl_pct": -69.2608,
+  "mark_eth": 2602.695,
+  "mark": 2602.695,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2602.27
+    "ETH": 2602.695
   },
   "holdings": {
-    "paper_cash_usd": 30.7469,
+    "paper_cash_usd": 22.7469,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,21 +39,38 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-158",
+      "market": "URANU5",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "entry": 0.0022858755554863827,
+      "mark": 0.0022836754002642273,
+      "uPnL": -0.0077,
+      "mtm_pct": -0.0964,
+      "sl": 0.0018287004443891062,
+      "tp": 0.0034288133332295743,
+      "lev": 1,
+      "paper": true,
+      "liq": 967302006225049068204315,
+      "held_min": 0.75
+    }
+  ],
   "pnl_history": [
     {
-      "t": "2026-09-20 11:44:23 ET",
-      "equity_usd": 30.7469,
+      "t": "2026-09-20 11:45:25 ET",
+      "equity_usd": 30.7392,
       "liquid_usd": 30.7469,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "upnl_usd": -0.0077,
+      "n_pos": 1
     },
     {
-      "t": "2026-09-20 11:44:40 ET",
-      "equity_usd": 30.7469,
+      "t": "2026-09-20 11:45:27 ET",
+      "equity_usd": 30.7392,
       "liquid_usd": 30.7469,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "upnl_usd": -0.0077,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -305,12 +322,17 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 30.7469,
-    "mtm_equity_usd": 30.7469,
+    "mtm_equity_usd": 30.7392,
     "realized_pnl_usd": -69.2531,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
+    "unrealized_pnl_usd": -0.0077,
+    "open": {
+      "id": "PAPER-158",
+      "ticker": "URANU5",
+      "usd": 8.0,
+      "mtm_pct": -0.0964
+    },
     "closed_n": 27,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $30.75 \u00b7 FLAT \u00b7 2026-09-20 11:44:40 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $30.74 \u00b7 FLAT \u00b7 2026-09-20 11:45:27 ET"
 }
