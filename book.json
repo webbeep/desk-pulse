@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-20 01:25:44 ET",
+  "updated_et": "2026-09-20 01:26:31 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 74.0139,
-  "upnl_usd": -0.0257,
-  "equity_usd": 73.9882,
+  "liquid_usd": 77.3346,
+  "upnl_usd": 0.0,
+  "equity_usd": 77.3346,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -26.0118,
-  "total_pnl_pct": -26.0118,
-  "mark_eth": 2575.27,
-  "mark": 2575.27,
+  "total_pnl_usd": -22.6654,
+  "total_pnl_pct": -22.6654,
+  "mark_eth": 2575.06,
+  "mark": 2575.06,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2575.27
+    "ETH": 2575.06
   },
   "holdings": {
-    "paper_cash_usd": 65.1339,
+    "paper_cash_usd": 77.3346,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,189 +39,44 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-66",
-      "market": "MEMEMAN",
-      "side": "LONG",
-      "size_usd": 8.88,
-      "entry": 7.885665860681075e-06,
-      "mark": 7.862843607007708e-06,
-      "uPnL": -0.0257,
-      "mtm_pct": -0.2894,
-      "sl": 6.30853268854486e-06,
-      "tp": 1.1828498791021611e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 54773207779044021846921,
-      "held_min": 2.2
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-20 01:25:39 ET",
-      "equity_usd": 73.9882,
-      "liquid_usd": 74.0139,
-      "upnl_usd": -0.0257,
-      "n_pos": 1
+      "t": "2026-09-20 01:26:11 ET",
+      "equity_usd": 77.3346,
+      "liquid_usd": 77.3346,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     },
     {
-      "t": "2026-09-20 01:25:44 ET",
-      "equity_usd": 73.9882,
-      "liquid_usd": 74.0139,
-      "upnl_usd": -0.0257,
-      "n_pos": 1
+      "t": "2026-09-20 01:26:31 ET",
+      "equity_usd": 77.3346,
+      "liquid_usd": 77.3346,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
     {
-      "id": "PAPER-65",
-      "ticker": "ASS",
+      "t": "2026-09-20 01:26:11 ET",
+      "kind": "PAPER",
+      "market": "ASS",
       "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.7722,
-      "pnl_pct": -8.6087,
-      "reason": "CUT_HARD_-2.0",
-      "closed_et": "2026-09-20 01:23:18 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-64",
-      "ticker": "ASS",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.5263,
-      "pnl_pct": 5.9069,
-      "reason": "TP_+2.5",
-      "closed_et": "2026-09-20 01:22:45 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-63",
-      "ticker": "ASS",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.3479,
-      "pnl_pct": 3.9223,
-      "reason": "TP_+2.5",
-      "closed_et": "2026-09-20 01:22:13 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-62",
-      "ticker": "ASS",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 1.1523,
-      "pnl_pct": 13.1995,
-      "reason": "TP_+2.5",
-      "closed_et": "2026-09-20 01:21:28 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-61",
-      "ticker": "ASS",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -2.4759,
-      "pnl_pct": -27.4191,
-      "reason": "CUT_HARD_-2.0",
-      "closed_et": "2026-09-20 01:18:13 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-60",
-      "ticker": "JEVPAD",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -10.26,
-      "pnl_pct": -100.0,
-      "reason": "CUT_HARD_QUOTER",
-      "closed_et": "2026-09-20 00:03:07 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-59",
-      "ticker": "MEMEMAN",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -11.66,
-      "pnl_pct": -100.0,
-      "reason": "CUT_HARD_QUOTER",
-      "closed_et": "2026-09-19 23:59:42 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-58",
-      "ticker": "MEMEMAN",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.0396,
-      "pnl_pct": -0.3396,
-      "reason": "TIME_SOFT_180s",
-      "closed_et": "2026-09-19 23:57:33 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-57",
-      "ticker": "ACA918",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.0312,
-      "pnl_pct": -0.2674,
-      "reason": "TIME_SOFT_180s",
-      "closed_et": "2026-09-19 23:54:42 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-56",
-      "ticker": "ACA918",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.1042,
-      "pnl_pct": 1.0735,
-      "reason": "TIME_EXIT_180s",
-      "closed_et": "2026-09-19 23:51:34 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-55",
-      "ticker": "THOT",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -1.2528,
-      "pnl_pct": -12.7322,
-      "reason": "CUT_HARD_-3.0",
-      "closed_et": "2026-09-19 23:32:19 ET",
-      "paper": true
-    },
-    {
-      "id": "PAPER-54",
-      "ticker": "DIB",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -1.6251,
-      "pnl_pct": -16.2513,
-      "reason": "CUT_HARD_-3.0",
-      "closed_et": "2026-09-19 23:08:38 ET",
-      "paper": true
+      "size": 8.88,
+      "pnl_usd": 3.3464,
+      "tx": "TP_+2.5"
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 74.0139,
-    "mtm_equity_usd": 73.9882,
-    "realized_pnl_usd": -25.9861,
-    "unrealized_pnl_usd": -0.0257,
-    "open": {
-      "id": "PAPER-66",
-      "ticker": "MEMEMAN",
-      "usd": 8.88,
-      "mtm_pct": -0.2894
-    },
-    "closed_n": 12,
+    "paper_equity_usd": 77.3346,
+    "mtm_equity_usd": 77.3346,
+    "realized_pnl_usd": -22.6654,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 14,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $73.99 \u00b7 FLAT \u00b7 2026-09-20 01:25:44 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $77.33 \u00b7 FLAT \u00b7 2026-09-20 01:26:31 ET"
 }
