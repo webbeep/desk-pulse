@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-20 11:13:13 ET",
+  "updated_et": "2026-09-20 11:14:00 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 94.9096,
-  "upnl_usd": -0.0382,
-  "equity_usd": 94.8714,
+  "upnl_usd": 0.9283,
+  "equity_usd": 95.8379,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -5.1286,
-  "total_pnl_pct": -5.1286,
-  "mark_eth": 2596.005,
-  "mark": 2596.005,
+  "total_pnl_usd": -4.1621,
+  "total_pnl_pct": -4.1621,
+  "mark_eth": 2597.725,
+  "mark": 2597.725,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2596.005
+    "ETH": 2597.725
   },
   "holdings": {
     "paper_cash_usd": 75.9296,
@@ -39,84 +39,38 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-147",
+      "market": "BABUSHKA",
+      "side": "LONG",
+      "size_usd": 18.98,
+      "entry": 4.199166067929684e-05,
+      "mark": 4.404544669660934e-05,
+      "uPnL": 0.9283,
+      "mtm_pct": 4.8912,
+      "sl": 3.359332854343747e-05,
+      "tp": 6.298749101894526e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": -1,
+      "held_min": 0.84
+    }
+  ],
   "pnl_history": [
     {
-      "t": "2026-09-20 11:05:51 ET",
-      "equity_usd": 94.9096,
+      "t": "2026-09-20 11:13:58 ET",
+      "equity_usd": 95.8379,
       "liquid_usd": 94.9096,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "upnl_usd": 0.9283,
+      "n_pos": 1
     },
     {
-      "t": "2026-09-20 11:06:09 ET",
-      "equity_usd": 94.9096,
+      "t": "2026-09-20 11:14:00 ET",
+      "equity_usd": 95.8379,
       "liquid_usd": 94.9096,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 11:06:56 ET",
-      "equity_usd": 94.9096,
-      "liquid_usd": 94.9096,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 11:07:43 ET",
-      "equity_usd": 94.9096,
-      "liquid_usd": 94.9096,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 11:08:30 ET",
-      "equity_usd": 94.9096,
-      "liquid_usd": 94.9096,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 11:09:18 ET",
-      "equity_usd": 94.9096,
-      "liquid_usd": 94.9096,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 11:10:05 ET",
-      "equity_usd": 94.9096,
-      "liquid_usd": 94.9096,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 11:10:52 ET",
-      "equity_usd": 94.9096,
-      "liquid_usd": 94.9096,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 11:11:39 ET",
-      "equity_usd": 94.9096,
-      "liquid_usd": 94.9096,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 11:12:26 ET",
-      "equity_usd": 94.9096,
-      "liquid_usd": 94.9096,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 11:13:13 ET",
-      "equity_usd": 94.8714,
-      "liquid_usd": 94.9096,
-      "upnl_usd": -0.0382,
-      "n_pos": 0
+      "upnl_usd": 0.9283,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -269,16 +223,17 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 94.9096,
-    "mtm_equity_usd": 94.8714,
+    "mtm_equity_usd": 95.8379,
     "realized_pnl_usd": -5.0904,
-    "unrealized_pnl_usd": -0.0382,
+    "unrealized_pnl_usd": 0.9283,
     "open": {
       "id": "PAPER-147",
       "ticker": "BABUSHKA",
-      "usd": 18.98
+      "usd": 18.98,
+      "mtm_pct": 4.8912
     },
     "closed_n": 16,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $94.87 \u00b7 FLAT \u00b7 2026-09-20 11:13:13 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $95.84 \u00b7 FLAT \u00b7 2026-09-20 11:14:00 ET"
 }
