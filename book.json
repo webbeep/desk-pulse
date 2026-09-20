@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-20 16:30:05 ET",
+  "updated_et": "2026-09-20 16:30:52 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 98.2899,
-  "upnl_usd": 0.0207,
-  "equity_usd": 98.3106,
+  "liquid_usd": 98.6693,
+  "upnl_usd": 0.0,
+  "equity_usd": 98.6693,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -1.6894,
-  "total_pnl_pct": -1.6894,
-  "mark_eth": 2637.7,
-  "mark": 2637.7,
+  "total_pnl_usd": -1.3307,
+  "total_pnl_pct": -1.3307,
+  "mark_eth": 2635.08,
+  "mark": 2635.08,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2637.7
+    "ETH": 2635.08
   },
   "holdings": {
-    "paper_cash_usd": 90.4299,
+    "paper_cash_usd": 98.6693,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,41 +39,33 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-181",
-      "market": "RYU",
-      "side": "LONG",
-      "size_usd": 7.86,
-      "entry": 8.710610449437357e-05,
-      "mark": 8.73355060672786e-05,
-      "uPnL": 0.0207,
-      "mtm_pct": 0.2632,
-      "sl": 6.968488359549886e-05,
-      "tp": 0.00013065915674156036,
-      "lev": 1,
-      "paper": true,
-      "liq": 54773207779044021846921,
-      "held_min": 0.46
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-20 16:29:56 ET",
-      "equity_usd": 98.3106,
-      "liquid_usd": 98.2899,
-      "upnl_usd": 0.0207,
-      "n_pos": 1
+      "t": "2026-09-20 16:30:37 ET",
+      "equity_usd": 98.6693,
+      "liquid_usd": 98.6693,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     },
     {
-      "t": "2026-09-20 16:30:05 ET",
-      "equity_usd": 98.3106,
-      "liquid_usd": 98.2899,
-      "upnl_usd": 0.0207,
-      "n_pos": 1
+      "t": "2026-09-20 16:30:52 ET",
+      "equity_usd": 98.6693,
+      "liquid_usd": 98.6693,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-20 16:30:37 ET",
+      "kind": "PAPER",
+      "market": "RYU",
+      "side": "LONG",
+      "size": 7.86,
+      "pnl_usd": 0.3794,
+      "tx": "TP_+4.0"
+    },
     {
       "t": "2026-09-20 16:13:45 ET",
       "kind": "PAPER",
@@ -105,18 +97,13 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 98.2899,
-    "mtm_equity_usd": 98.3106,
-    "realized_pnl_usd": -1.7101,
-    "unrealized_pnl_usd": 0.0207,
-    "open": {
-      "id": "PAPER-181",
-      "ticker": "RYU",
-      "usd": 7.86,
-      "mtm_pct": 0.2632
-    },
-    "closed_n": 3,
+    "paper_equity_usd": 98.6693,
+    "mtm_equity_usd": 98.6693,
+    "realized_pnl_usd": -1.3307,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 4,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $98.31 \u00b7 FLAT \u00b7 2026-09-20 16:30:05 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $98.67 \u00b7 FLAT \u00b7 2026-09-20 16:30:52 ET"
 }
