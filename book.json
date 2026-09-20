@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-20 12:28:56 ET",
+  "updated_et": "2026-09-20 12:29:43 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 19.7188,
-  "upnl_usd": -0.0056,
-  "equity_usd": 19.7132,
+  "liquid_usd": 21.3269,
+  "upnl_usd": 0.0,
+  "equity_usd": 21.3269,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -80.2868,
-  "total_pnl_pct": -80.2868,
-  "mark_eth": 2622.755,
-  "mark": 2622.755,
+  "total_pnl_usd": -78.6731,
+  "total_pnl_pct": -78.6731,
+  "mark_eth": 2622.125,
+  "mark": 2622.125,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2622.755
+    "ETH": 2622.125
   },
   "holdings": {
-    "paper_cash_usd": 11.7188,
+    "paper_cash_usd": 21.3269,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,35 +42,39 @@
   "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-20 12:27:02 ET",
-      "equity_usd": 19.7188,
-      "liquid_usd": 19.7188,
+      "t": "2026-09-20 12:29:33 ET",
+      "equity_usd": 21.3269,
+      "liquid_usd": 21.3269,
       "upnl_usd": 0.0,
       "n_pos": 0
     },
     {
-      "t": "2026-09-20 12:27:22 ET",
-      "equity_usd": 19.7188,
-      "liquid_usd": 19.7188,
+      "t": "2026-09-20 12:29:43 ET",
+      "equity_usd": 21.3269,
+      "liquid_usd": 21.3269,
       "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 12:28:09 ET",
-      "equity_usd": 19.7188,
-      "liquid_usd": 19.7188,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 12:28:56 ET",
-      "equity_usd": 19.7132,
-      "liquid_usd": 19.7188,
-      "upnl_usd": -0.0056,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-20 12:29:33 ET",
+      "kind": "PAPER",
+      "market": "PAWTROOPERS",
+      "side": "LONG",
+      "size": 8.0,
+      "pnl_usd": 1.0634,
+      "tx": "TP_+5.0"
+    },
+    {
+      "t": "2026-09-20 12:29:17 ET",
+      "kind": "PAPER",
+      "market": "PAWTROOPERS",
+      "side": "LONG",
+      "size": 8.0,
+      "pnl_usd": 0.5447,
+      "tx": "TP_+5.0"
+    },
     {
       "t": "2026-09-20 12:27:02 ET",
       "kind": "PAPER",
@@ -417,17 +421,13 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 19.7188,
-    "mtm_equity_usd": 19.7132,
-    "realized_pnl_usd": -80.2812,
-    "unrealized_pnl_usd": -0.0056,
-    "open": {
-      "id": "PAPER-169",
-      "ticker": "PAWTROOPERS",
-      "usd": 8.0
-    },
-    "closed_n": 38,
+    "paper_equity_usd": 21.3269,
+    "mtm_equity_usd": 21.3269,
+    "realized_pnl_usd": -78.6731,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 40,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $19.71 \u00b7 FLAT \u00b7 2026-09-20 12:28:56 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $21.33 \u00b7 FLAT \u00b7 2026-09-20 12:29:43 ET"
 }
