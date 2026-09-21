@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-21 12:02:51 ET",
+  "updated_et": "2026-09-21 12:06:32 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 29.0262,
-  "upnl_usd": 0,
-  "equity_usd": 29.0262,
-  "status": "FLAT",
+  "liquid_usd": 28.9756,
+  "upnl_usd": -0.0022,
+  "equity_usd": 28.9734,
+  "status": "LIVE_OPEN",
   "funding_usd": 29.0262,
-  "funding_note": "LIVE_FUNDED_RH \u00b7 rh=0.011349 l1=0.000880 \u00b7 liquid=$33.68 \u00b7 BLOCKER: no LIVE Uniswap scalp encode \u00b7 awaiting Wire pack \u00b7 checklist RISK-CHECKLIST-LIVE-SCALP-1 \u00b7 no EXECUTE \u00b7 2026-09-21 11:48:44 ET",
+  "funding_note": "FLAT \u00b7 LIVE-SCALP-1 KARURE wipe closed \u00b7 next LIVE-SCALP-2 + $8 SIM_OK_READY \u00b7 await CoS EXECUTE \u00b7 rh=0.007667 weth=0.001999 \u00b7 2026-09-21 12:04:57 ET",
   "total_pnl_usd": -4.7438,
   "total_pnl_pct": 0.0,
-  "mark_eth": 2756.2,
-  "mark": 2756.2,
+  "mark_eth": 2746.39,
+  "mark": 2746.39,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2756.2
+    "ETH": 2746.39
   },
   "holdings": {
     "l1_eth": 0.000879538014354878,
@@ -35,7 +35,25 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "+",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "entry": 1.1443883573525525e-05,
+      "mark": 1.1440804232646611e-05,
+      "uPnL": -0.0022,
+      "mtm_pct": -0.0269,
+      "lev": 1,
+      "paper": false,
+      "tx": "0xacdb04efcc399b3332290c9dff065d36b570f261fdeb4f6c39b72b77a4e00636",
+      "token": "0x72633b32e5cEa8379Fa93c45B4c8377Dfc2e22D9",
+      "held_sec": 60,
+      "weth_out": 0.002912130959382503,
+      "usd_out": 7.997847
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-21 11:31:22 ET",
@@ -111,6 +129,22 @@
       "liquid_usd": 23.5991,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 12:04:57 ET",
+      "equity_usd": 28.9756,
+      "liquid_usd": 28.9756,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "reason": "SCALP2_SIM_OK_READY",
+      "note": "FLAT \u00b7 + $8 SIM_OK_READY \u00b7 RISK-PASS written \u00b7 await CoS \u00b7 KARURE banned"
+    },
+    {
+      "t": "2026-09-21 12:06:32 ET",
+      "equity_usd": 28.9734,
+      "liquid_usd": 28.9756,
+      "upnl_usd": -0.0022,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -139,22 +173,44 @@
   ],
   "paper": {
     "active": false,
-    "archived": true
+    "archived": true,
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
   },
-  "notes": "LIVE FLAT after KARURE \u2212$4.60 \u00b7 liquid $29.0262 \u00b7 next \u2264$8 + KARURE banned \u00b7 2026-09-21 12:02:51 ET",
+  "notes": "LIVE MTM + uPnL $-0.0022 (-0.0269%) \u00b7 held 60s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 12:06:32 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$2|-20% \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
+    "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
   "live": {
-    "open": false,
-    "last": "KARURE",
-    "last_pnl_usd": -4.6,
-    "karure_banned": true
+    "open": true,
+    "ticker": "+",
+    "tx": "0xacdb04efcc399b3332290c9dff065d36b570f261fdeb4f6c39b72b77a4e00636",
+    "size_usd": 8.0,
+    "max_loss_usd": 1.5,
+    "mtm_pct": -0.0269,
+    "upnl_usd": -0.0022,
+    "held_sec": 60,
+    "watcher": "rh_live_mtm_loop"
   },
   "jev": {
     "paper_gates": false,
     "note": "paper off"
   },
-  "position": null
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "+",
+    "side": "LONG",
+    "size_usd": 8.0,
+    "entry": 1.1443883573525525e-05,
+    "mark": 1.1440804232646611e-05,
+    "uPnL": -0.0022,
+    "mtm_pct": -0.0269,
+    "lev": 1,
+    "paper": false,
+    "tx": "0xacdb04efcc399b3332290c9dff065d36b570f261fdeb4f6c39b72b77a4e00636",
+    "token": "0x72633b32e5cEa8379Fa93c45B4c8377Dfc2e22D9",
+    "held_sec": 60,
+    "weth_out": 0.002912130959382503,
+    "usd_out": 7.997847
+  }
 }
