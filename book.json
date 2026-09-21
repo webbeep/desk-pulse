@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 17:24:32 ET",
+  "updated_et": "2026-09-21 17:24:39 ET",
   "mode": "LIVE",
-  "status": "EXITING:TP_V6_+3.5",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 12.8196,
@@ -36,6 +36,18 @@
   },
   "positions": [],
   "trades": [
+    {
+      "id": "LIVE-SCALP-32-EXIT",
+      "market": "FROG",
+      "side": "SELL",
+      "size_usd": 7.11,
+      "pnl_usd": 1.5324,
+      "mtm_pct": 21.5528,
+      "tx": null,
+      "reason": "TP_V6_+3.5",
+      "stamp_et": "2026-09-21 17:24:39 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-31-EXIT",
       "market": "+",
@@ -414,13 +426,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 16:28:19 ET",
-      "equity_usd": 11.2909,
-      "liquid_usd": 11.2872,
-      "upnl_usd": 0.0037,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-21 16:28:33 ET",
       "equity_usd": 11.3001,
@@ -1813,6 +1818,13 @@
       "liquid_usd": 11.2872,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 17:24:39 ET",
+      "equity_usd": 12.8196,
+      "liquid_usd": 11.2872,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -1822,15 +1834,11 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xea497930dd3021c8e6e4cde6bbb2731eae156e2a208bd70c8f72f8792be7517c",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 37,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TP_V6_+3.5",
+    "last_exit_upnl": null
   },
-  "notes": "LIVE MTM FROG uPnL $1.5324 (21.5528%) \u00b7 held 38s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 17:24:30 ET \u00b7 CUT TP_V6_+3.5",
+  "notes": "LIVE EXIT FROG \u00b7 TP_V6_+3.5 \u00b7 tx None \u00b7 2026-09-21 17:24:39 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
