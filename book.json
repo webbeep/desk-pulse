@@ -1,33 +1,34 @@
 {
-  "updated_et": "2026-09-21 12:09:43 ET",
+  "updated_et": "2026-09-21 12:14:46 ET",
   "mode": "LIVE",
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 28.9756,
+  "liquid_usd": 28.9552,
+  "equity_usd": 28.9552,
   "upnl_usd": 0.0,
-  "equity_usd": 28.9684,
-  "status": "EXITED",
-  "funding_usd": 29.0262,
-  "funding_note": "FLAT \u00b7 LIVE-SCALP-1 KARURE wipe closed \u00b7 next LIVE-SCALP-2 + $8 SIM_OK_READY \u00b7 await CoS EXECUTE \u00b7 rh=0.007667 weth=0.001999 \u00b7 2026-09-21 12:04:57 ET",
-  "total_pnl_usd": -4.7438,
-  "total_pnl_pct": 0.0,
-  "mark_eth": 2744.66,
-  "mark": 2744.66,
+  "funding_usd": 33.77,
+  "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-4.6094 \u00b7 SoT chain mark",
+  "total_pnl_usd": -4.8148,
+  "total_pnl_pct": -14.2576,
+  "mark_eth": 2749.905,
+  "mark": 2749.905,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2744.66
+    "ETH": 2749.905
   },
   "holdings": {
     "l1_eth": 0.000879538014354878,
-    "rh_eth": 0.00766722237031293,
-    "rh_weth": 0.001998957785047602
-  },
-  "residuals": {
-    "l1_eth": 0.0123489,
+    "rh_eth": 0.004738916059786542,
+    "rh_weth": 0.004911088744430105,
     "arb_eth": 0,
     "arb_usdc": 0,
     "base_eth": 0,
-    "base_usdc": 0,
-    "rh_eth": 0
+    "base_usdc": 0
+  },
+  "residuals": {
+    "l1_eth": 0.000879538014354878,
+    "rh_eth": 0.004738916059786542,
+    "rh_weth": 0.004911088744430105
   },
   "wallet_urls": {
     "ethereum": "https://etherscan.io/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
@@ -36,267 +37,124 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "positions": [],
-  "pnl_history": [
-    {
-      "t": "2026-09-21 11:31:22 ET",
-      "equity_usd": 33.7733,
-      "liquid_usd": 33.7733,
-      "upnl_usd": 0.0,
-      "n_pos": 0,
-      "reason": "LIVE_FUND_L1",
-      "note": "0.0123489000 ETH L1 @ $2734.92"
-    },
-    {
-      "t": "2026-09-21 11:35:18 ET",
-      "equity_usd": 33.7733,
-      "liquid_usd": 33.7733,
-      "upnl_usd": 0.0,
-      "n_pos": 0,
-      "reason": "LIVE_BRIDGE_READY",
-      "note": "L1\u2192RH depositEth prepared \u00b7 0.0113489 ETH \u00b7 await CoS EXECUTE"
-    },
-    {
-      "t": "2026-09-21 11:36:35 ET",
-      "equity_usd": 2.4084,
-      "liquid_usd": 2.4084,
-      "upnl_usd": 0,
-      "n_pos": 0,
-      "reason": "RH_BRIDGE_SENT",
-      "note": "0xf4ebde155b56c428fc2b285dd161b108751a480107cf1290f61938bb0ac49b6f"
-    },
-    {
-      "t": "2026-09-21 11:44:48 ET",
-      "equity_usd": 33.5397,
-      "liquid_usd": 33.5397,
-      "upnl_usd": 0.0,
-      "n_pos": 0,
-      "reason": "RH_CREDIT",
-      "note": "LIVE \u00b7 RH CREDIT 0.011349 ETH \u00b7 L1 0.000880 \u00b7 0xf4ebde15\u2026 \u00b7 2026-09-21 11:44:48 ET"
-    },
-    {
-      "t": "2026-09-21 11:48:44 ET",
-      "equity_usd": 33.6811,
-      "liquid_usd": 33.6811,
-      "upnl_usd": 0.0,
-      "n_pos": 0,
-      "reason": "LIVE_FUNDED_RH_BLOCKER",
-      "note": "RH credited \u00b7 BLOCKER no LIVE scalp encode \u00b7 awaiting Wire pack"
-    },
-    {
-      "t": "2026-09-21 11:58:41 ET",
-      "equity_usd": 33.5991,
-      "liquid_usd": 23.5991,
-      "upnl_usd": 0,
-      "n_pos": 1,
-      "reason": "LIVE_OPEN_KARURE",
-      "note": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1"
-    },
-    {
-      "t": "2026-09-21 12:01:48 ET",
-      "equity_usd": 19.3156,
-      "liquid_usd": 23.5991,
-      "upnl_usd": -4.2835,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:01:50 ET",
-      "equity_usd": 19.3156,
-      "liquid_usd": 23.5991,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 12:01:58 ET",
-      "equity_usd": 19.3156,
-      "liquid_usd": 23.5991,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 12:04:57 ET",
-      "equity_usd": 28.9756,
-      "liquid_usd": 28.9756,
-      "upnl_usd": 0.0,
-      "n_pos": 0,
-      "reason": "SCALP2_SIM_OK_READY",
-      "note": "FLAT \u00b7 + $8 SIM_OK_READY \u00b7 RISK-PASS written \u00b7 await CoS \u00b7 KARURE banned"
-    },
-    {
-      "t": "2026-09-21 12:06:32 ET",
-      "equity_usd": 28.9734,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0022,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:06:43 ET",
-      "equity_usd": 28.9727,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0029,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:06:58 ET",
-      "equity_usd": 28.9671,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0085,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:07:11 ET",
-      "equity_usd": 28.9623,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0133,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:07:26 ET",
-      "equity_usd": 28.9785,
-      "liquid_usd": 28.9756,
-      "upnl_usd": 0.0029,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:07:39 ET",
-      "equity_usd": 28.9731,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0025,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:07:52 ET",
-      "equity_usd": 28.9701,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0055,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:08:05 ET",
-      "equity_usd": 28.9653,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0103,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:08:18 ET",
-      "equity_usd": 28.9664,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0092,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:08:30 ET",
-      "equity_usd": 28.9723,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0033,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:08:43 ET",
-      "equity_usd": 28.9721,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0035,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:08:56 ET",
-      "equity_usd": 28.9706,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.005,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:09:09 ET",
-      "equity_usd": 28.971,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0046,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:09:22 ET",
-      "equity_usd": 28.9677,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0079,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:09:35 ET",
-      "equity_usd": 28.9684,
-      "liquid_usd": 28.9756,
-      "upnl_usd": -0.0072,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-21 12:09:35 ET",
-      "equity_usd": 28.9684,
-      "liquid_usd": 28.9756,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 12:09:43 ET",
-      "equity_usd": 28.9684,
-      "liquid_usd": 28.9756,
-      "upnl_usd": 0,
-      "n_pos": 0
-    }
-  ],
   "trades": [
     {
-      "id": "LIVE-SCALP-2-EXIT",
-      "market": "+",
-      "side": "SELL",
-      "size_usd": 8.0,
-      "pnl_usd": -0.0068,
-      "mtm_pct": -0.0852,
-      "tx": "0x87616c38dcb6b70c78bda1458e6e69379aa962e7faf27746a0283e7bfac0f117",
-      "reason": "TIME_FLAT_240s",
-      "stamp_et": "2026-09-21 12:09:43 ET",
-      "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-1-EXIT",
-      "market": "KARURE",
-      "side": "SELL",
+      "id": "LIVE-SCALP-1",
+      "ticker": "KARURE",
+      "side": "LONG",
       "size_usd": 10.0,
-      "pnl_usd": -4.6026,
-      "mtm_pct": -46.0261,
-      "tx": "0x23a3f1811dabe4443f650eafb1d5d67f7f5946f6a5d3a534c2adad6ac711a588",
-      "reason": "HARD_SL_USD_-4.2835",
-      "stamp_et": "2026-09-21 12:01:58 ET",
-      "paper": false
+      "status": "OPEN",
+      "stamp_et": "2026-09-21 11:51:37 ET",
+      "tx": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1",
+      "pnl_usd": null
     },
     {
       "id": "LIVE-SCALP-1",
       "ticker": "KARURE",
       "side": "LONG",
       "size_usd": 10.0,
-      "pnl_usd": null,
-      "stamp_et": "2026-09-21 11:58:41 ET",
-      "tx": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1",
-      "status": "OPEN"
+      "status": "CLOSED",
+      "reason": "HARD_SL",
+      "stamp_et": "2026-09-21 12:01:58 ET",
+      "tx": "0x23a3f1811dabe4443f650eafb1d5d67f7f5946f6a5d3a534c2adad6ac711a588",
+      "pnl_usd": -4.6026
+    },
+    {
+      "id": "LIVE-SCALP-2",
+      "ticker": "+",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "status": "OPEN",
+      "stamp_et": "2026-09-21 12:05:32 ET",
+      "tx": "0xacdb04efcc399b3332290c9dff065d36b570f261fdeb4f6c39b72b77a4e00636",
+      "pnl_usd": null
+    },
+    {
+      "id": "LIVE-SCALP-2",
+      "ticker": "+",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "status": "CLOSED",
+      "reason": "TIME_FLAT_240s",
+      "stamp_et": "2026-09-21 12:09:43 ET",
+      "tx": "0x87616c38dcb6b70c78bda1458e6e69379aa962e7faf27746a0283e7bfac0f117",
+      "pnl_usd": -0.0068
+    }
+  ],
+  "pnl_history": [
+    {
+      "t": "2026-09-21 11:31:22 ET",
+      "equity_usd": 33.77,
+      "liquid_usd": 33.77,
+      "upnl_usd": 0,
+      "n_pos": 0,
+      "reason": "LIVE_FUND_L1"
+    },
+    {
+      "t": "2026-09-21 11:36:24 ET",
+      "equity_usd": 33.77,
+      "liquid_usd": 33.77,
+      "upnl_usd": 0,
+      "n_pos": 0,
+      "reason": "RH_BRIDGE_SENT",
+      "note": "0xf4ebde\u2026"
+    },
+    {
+      "t": "2026-09-21 11:44:51 ET",
+      "equity_usd": 33.68,
+      "liquid_usd": 33.68,
+      "upnl_usd": 0,
+      "n_pos": 0,
+      "reason": "RH_FUNDED"
+    },
+    {
+      "t": "2026-09-21 11:51:37 ET",
+      "equity_usd": 33.6,
+      "liquid_usd": 23.6,
+      "upnl_usd": 0,
+      "n_pos": 1,
+      "reason": "LIVE_OPEN_KARURE"
+    },
+    {
+      "t": "2026-09-21 12:01:58 ET",
+      "equity_usd": 29.03,
+      "liquid_usd": 29.03,
+      "upnl_usd": 0,
+      "n_pos": 0,
+      "reason": "LIVE_EXIT_KARURE_SL",
+      "note": "-4.60"
+    },
+    {
+      "t": "2026-09-21 12:05:32 ET",
+      "equity_usd": 29.03,
+      "liquid_usd": 21.03,
+      "upnl_usd": 0,
+      "n_pos": 1,
+      "reason": "LIVE_OPEN_PLUS"
+    },
+    {
+      "t": "2026-09-21 12:09:43 ET",
+      "equity_usd": 28.9552,
+      "liquid_usd": 28.9552,
+      "upnl_usd": 0,
+      "n_pos": 0,
+      "reason": "LIVE_EXIT_PLUS_TIME",
+      "note": "-0.0068"
     }
   ],
   "paper": {
     "active": false,
-    "archived": true,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
-  },
-  "notes": "LIVE EXIT + \u00b7 TIME_FLAT_240s \u00b7 tx 0x87616c38dcb6b70c78bda1458e6e69379aa962e7faf27746a0283e7bfac0f117 \u00b7 2026-09-21 12:09:43 ET",
-  "strategy": {
-    "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
+    "archived": true
   },
   "live": {
     "open": false,
-    "ticker": null,
+    "flat": true,
+    "karure_banned": true,
     "last_exit_tx": "0x87616c38dcb6b70c78bda1458e6e69379aa962e7faf27746a0283e7bfac0f117",
     "last_exit_reason": "TIME_FLAT_240s",
-    "last_exit_upnl": -0.0068
+    "realized_pnl_usd": -4.6094,
+    "bridge_tx": "0xf4ebde155b56c428fc2b285dd161b108751a480107cf1290f61938bb0ac49b6f"
   },
-  "jev": {
-    "paper_gates": false,
-    "note": "paper off"
-  },
-  "position": null
+  "notes": "LIVE FLAT \u00b7 eq $28.9552 \u00b7 KARURE \u2212$4.60 \u00b7 + TIME_FLAT ~$0 \u00b7 history rebuilt from proofs \u00b7 2026-09-21 12:14:46 ET",
+  "strategy": "LIVE_RH_MEME_TIGHT"
 }
