@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-21 11:44:48 ET",
+  "updated_et": "2026-09-21 11:48:44 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 33.5397,
+  "liquid_usd": 33.6811,
   "upnl_usd": 0,
-  "equity_usd": 33.5397,
+  "equity_usd": 33.6811,
   "status": "LIVE_FUNDED_RH",
-  "funding_usd": 33.5397,
-  "funding_note": "LIVE \u00b7 RH CREDIT 0.011349 ETH \u00b7 L1 0.000880 \u00b7 0xf4ebde15\u2026 \u00b7 2026-09-21 11:44:48 ET",
+  "funding_usd": 33.6811,
+  "funding_note": "LIVE_FUNDED_RH \u00b7 rh=0.011349 l1=0.000880 \u00b7 liquid=$33.68 \u00b7 BLOCKER: no LIVE Uniswap scalp encode \u00b7 awaiting Wire pack \u00b7 checklist RISK-CHECKLIST-LIVE-SCALP-1 \u00b7 no EXECUTE \u00b7 2026-09-21 11:48:44 ET",
   "total_pnl_usd": 0.0,
   "total_pnl_pct": 0.0,
-  "mark_eth": 2742.76,
-  "mark": 2742.76,
+  "mark_eth": 2754.325,
+  "mark": 2754.325,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2742.76
+    "ETH": 2754.325
   },
   "holdings": {
     "l1_eth": 0.000879538014354878,
@@ -75,6 +75,15 @@
       "n_pos": 0,
       "reason": "RH_CREDIT",
       "note": "LIVE \u00b7 RH CREDIT 0.011349 ETH \u00b7 L1 0.000880 \u00b7 0xf4ebde15\u2026 \u00b7 2026-09-21 11:44:48 ET"
+    },
+    {
+      "t": "2026-09-21 11:48:44 ET",
+      "equity_usd": 33.6811,
+      "liquid_usd": 33.6811,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "reason": "LIVE_FUNDED_RH_BLOCKER",
+      "note": "RH credited \u00b7 BLOCKER no LIVE scalp encode \u00b7 awaiting Wire pack"
     }
   ],
   "trades": [],
@@ -82,7 +91,7 @@
     "active": false,
     "archived": true
   },
-  "notes": "LIVE \u00b7 RH CREDIT 0.011349 ETH \u00b7 L1 0.000880 \u00b7 0xf4ebde15\u2026 \u00b7 2026-09-21 11:44:48 ET \u00b7 FUNDED via https://rpc.mainnet.chain.robinhood.com",
+  "notes": "LIVE_FUNDED_RH \u00b7 rh=0.011349 l1=0.000880 \u00b7 liquid=$33.68 \u00b7 BLOCKER: no LIVE Uniswap scalp encode \u00b7 awaiting Wire pack \u00b7 checklist RISK-CHECKLIST-LIVE-SCALP-1 \u00b7 no EXECUTE \u00b7 2026-09-21 11:48:44 ET",
   "strategy": "LIVE_FUNDED_RH",
   "live": {
     "bridge_tx": "0xf4ebde155b56c428fc2b285dd161b108751a480107cf1290f61938bb0ac49b6f",
@@ -90,7 +99,11 @@
     "rh_eth": 0.0113489,
     "l1_eth": 0.000879538014354878,
     "awaiting_rh_credit": false,
-    "poll_mins": 5.97
+    "poll_mins": 5.97,
+    "awaiting_first_pack": true,
+    "blocker": "BLOCKER-LIVE-SCALP-ENCODE-2026-09-21.md",
+    "risk_checklist": "RISK-CHECKLIST-LIVE-SCALP-1.md",
+    "execute_scalp": null
   },
   "jev": {
     "paper_gates": false,
