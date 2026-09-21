@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-21 11:18:26 ET",
+  "updated_et": "2026-09-21 11:19:13 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 108.9654,
-  "upnl_usd": -0.0077,
-  "equity_usd": 108.9577,
+  "upnl_usd": 0.2445,
+  "equity_usd": 109.2099,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 8.9577,
-  "total_pnl_pct": 8.9577,
-  "mark_eth": 2744.58,
-  "mark": 2744.58,
+  "total_pnl_usd": 9.2099,
+  "total_pnl_pct": 9.2099,
+  "mark_eth": 2743.505,
+  "mark": 2743.505,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2744.58
+    "ETH": 2743.505
   },
   "holdings": {
     "paper_cash_usd": 98.9654,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-242",
+      "market": "POPEYE",
+      "side": "LONG",
+      "size_usd": 10.0,
+      "entry": 9.875093155719365e-05,
+      "mark": 0.00010116539183376704,
+      "uPnL": 0.2445,
+      "mtm_pct": 2.4453,
+      "sl": 7.900074524575493e-05,
+      "tp": 0.00014812639733579046,
+      "lev": 1,
+      "paper": true,
+      "liq": 67083695638153680707333,
+      "held_min": 1.15
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -690,8 +707,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 108.9577,
-      "liquid_usd": 108.9577,
+      "equity_usd": 109.2099,
+      "liquid_usd": 109.2099,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -1534,20 +1551,21 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 108.9654,
-    "mtm_equity_usd": 108.9577,
+    "mtm_equity_usd": 109.2099,
     "realized_pnl_usd": 8.9654,
-    "unrealized_pnl_usd": -0.0077,
+    "unrealized_pnl_usd": 0.2445,
     "open": {
       "id": "PAPER-242",
       "ticker": "POPEYE",
-      "usd": 10.0
+      "usd": 10.0,
+      "mtm_pct": 2.4453
     },
-    "notes": "PAPER heartbeat \u00b7 eq $108.97 \u00b7 curve n=66 \u00b7 2026-09-21 11:18:26 ET",
-    "strategy": "MEME_V6_FAST_JEV",
+    "notes": "PAPER heartbeat \u00b7 eq $108.97 \u00b7 curve n=66 \u00b7 2026-09-21 11:19:13 ET",
+    "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 64
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $108.97 \u00b7 2026-09-21 11:18:26 ET",
-  "strategy": "MEME_V6_FAST_JEV",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $108.97 \u00b7 2026-09-21 11:19:13 ET",
+  "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
     "detail": "pick=KARURE open_p=0.68 edge=2.23 conf=0.87",
