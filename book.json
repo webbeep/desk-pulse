@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-21 06:00:49 ET",
+  "updated_et": "2026-09-21 06:01:37 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 121.6515,
-  "upnl_usd": 0.0,
-  "equity_usd": 121.6515,
+  "upnl_usd": -0.0464,
+  "equity_usd": 121.6051,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": 21.6515,
-  "total_pnl_pct": 21.6515,
-  "mark_eth": 2718.57,
-  "mark": 2718.57,
+  "total_pnl_usd": 21.6051,
+  "total_pnl_pct": 21.6051,
+  "mark_eth": 2719.695,
+  "mark": 2719.695,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2718.57
+    "ETH": 2719.695
   },
   "holdings": {
-    "paper_cash_usd": 121.6515,
+    "paper_cash_usd": 111.9215,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -179,6 +179,13 @@
       "equity_usd": 121.6515,
       "liquid_usd": 121.6515,
       "upnl_usd": 0.0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 06:01:37 ET",
+      "equity_usd": 121.6051,
+      "liquid_usd": 121.6515,
+      "upnl_usd": -0.0464,
       "n_pos": 0
     }
   ],
@@ -548,12 +555,16 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 121.6515,
-    "mtm_equity_usd": 121.6515,
+    "mtm_equity_usd": 121.6051,
     "realized_pnl_usd": 21.6515,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
+    "unrealized_pnl_usd": -0.0464,
+    "open": {
+      "id": "PAPER-227",
+      "ticker": "RSRVCAT",
+      "usd": 9.73
+    },
     "closed_n": 49,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $121.65 \u00b7 FLAT \u00b7 2026-09-21 06:00:49 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $121.61 \u00b7 FLAT \u00b7 2026-09-21 06:01:37 ET"
 }
