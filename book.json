@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 14:59:17 ET",
+  "updated_et": "2026-09-21 15:01:01 ET",
   "mode": "LIVE",
-  "status": "EXIT_None",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 28.9552,
   "equity_usd": 20.9552,
@@ -36,7 +36,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-7",
+      "market": "AI",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "tx": "0x92b4495de6b03eaec103e87f1567c025485656279b4c22dfe5eda5bd9a5fc6fb",
+      "token": "0x42a663fBF6C9877801CF4e66A6Ae0650689c991F",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "trades": [
     {
       "id": "LIVE-SCALP-6-EXIT",
@@ -2071,19 +2082,33 @@
   "paper": {
     "active": false,
     "archived": true,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "CUT_HARD_QUOTER",
-    "last_exit_upnl": null
+    "open": true,
+    "flat": false,
+    "ticker": "AI",
+    "tx": "0x92b4495de6b03eaec103e87f1567c025485656279b4c22dfe5eda5bd9a5fc6fb",
+    "size_usd": 8.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-7",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "notes": "LIVE EXIT OCTOCAT \u00b7 CUT_HARD_QUOTER \u00b7 tx None \u00b7 2026-09-21 14:59:17 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": null
+  "position": {
+    "id": "LIVE-SCALP-7",
+    "market": "AI",
+    "side": "LONG",
+    "size_usd": 8.0,
+    "tx": "0x92b4495de6b03eaec103e87f1567c025485656279b4c22dfe5eda5bd9a5fc6fb",
+    "token": "0x42a663fBF6C9877801CF4e66A6Ae0650689c991F",
+    "paper": false,
+    "uPnL": 0.0
+  }
 }
