@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-20 21:23:52 ET",
+  "updated_et": "2026-09-20 21:24:37 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 100.0103,
-  "upnl_usd": -0.006,
-  "equity_usd": 100.0043,
+  "liquid_usd": 99.9262,
+  "upnl_usd": 0.0,
+  "equity_usd": 99.9262,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": 0.0043,
-  "total_pnl_pct": 0.0043,
-  "mark_eth": 2695.82,
-  "mark": 2695.82,
+  "total_pnl_usd": -0.0738,
+  "total_pnl_pct": -0.0738,
+  "mark_eth": 2689.985,
+  "mark": 2689.985,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2695.82
+    "ETH": 2689.985
   },
   "holdings": {
-    "paper_cash_usd": 92.0103,
+    "paper_cash_usd": 99.9262,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,28 +42,30 @@
   "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-20 21:12:10 ET",
-      "equity_usd": 100.0103,
-      "liquid_usd": 100.0103,
+      "t": "2026-09-20 21:24:23 ET",
+      "equity_usd": 99.9262,
+      "liquid_usd": 99.9262,
       "upnl_usd": 0.0,
       "n_pos": 0
     },
     {
-      "t": "2026-09-20 21:23:50 ET",
-      "equity_usd": 100.0043,
-      "liquid_usd": 100.0103,
-      "upnl_usd": -0.006,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-20 21:23:52 ET",
-      "equity_usd": 100.0043,
-      "liquid_usd": 100.0103,
-      "upnl_usd": -0.006,
+      "t": "2026-09-20 21:24:37 ET",
+      "equity_usd": 99.9262,
+      "liquid_usd": 99.9262,
+      "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-20 21:24:23 ET",
+      "kind": "PAPER",
+      "market": "PRAY",
+      "side": "LONG",
+      "size": 8.0,
+      "pnl_usd": -0.0841,
+      "tx": "TRAIL_1.0"
+    },
     {
       "t": "2026-09-20 21:12:10 ET",
       "kind": "PAPER",
@@ -203,17 +205,13 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 100.0103,
-    "mtm_equity_usd": 100.0043,
-    "realized_pnl_usd": 0.0103,
-    "unrealized_pnl_usd": -0.006,
-    "open": {
-      "id": "PAPER-193",
-      "ticker": "PRAY",
-      "usd": 8.0
-    },
-    "closed_n": 15,
+    "paper_equity_usd": 99.9262,
+    "mtm_equity_usd": 99.9262,
+    "realized_pnl_usd": -0.0738,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 16,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.00 \u00b7 FLAT \u00b7 2026-09-20 21:23:52 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $99.93 \u00b7 FLAT \u00b7 2026-09-20 21:24:37 ET"
 }
