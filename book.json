@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 12:17:38 ET",
+  "updated_et": "2026-09-21 13:55:29 ET",
   "mode": "LIVE",
-  "status": "FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 28.9552,
   "equity_usd": 28.9552,
@@ -18,7 +18,7 @@
   },
   "holdings": {
     "l1_eth": 0.000879538014354878,
-    "rh_eth": 0.004738916059786542,
+    "rh_eth": 0.001805977855121916,
     "rh_weth": 0.004911088744430105,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -36,7 +36,19 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-3",
+      "market": "DRIP",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "tx": "0x8d5a5b964129c8b50db178e1fe7e36a72b907972b1334cbc5cf738e7f0674c45",
+      "token": "0x17E0Ac93D715110bf02B2c55b5fCCf04065a13A3",
+      "paper": false,
+      "uPnL": 0.0,
+      "tokens_raw": 11863190816092995645339
+    }
+  ],
   "trades": [
     {
       "id": "LIVE-SCALP-1",
@@ -144,18 +156,32 @@
   ],
   "paper": {
     "active": false,
-    "archived": true
+    "archived": true,
+    "notes": "PAPER-OFF \u00b7 LIVE continuous"
   },
   "live": {
-    "open": false,
-    "flat": true,
+    "open": true,
+    "flat": false,
+    "ticker": "DRIP",
+    "tx": "0x8d5a5b964129c8b50db178e1fe7e36a72b907972b1334cbc5cf738e7f0674c45",
+    "size_usd": 8.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-3",
     "karure_banned": true,
-    "last_exit_tx": "0x87616c38dcb6b70c78bda1458e6e69379aa962e7faf27746a0283e7bfac0f117",
-    "last_exit_reason": "TIME_FLAT_240s",
-    "realized_pnl_usd": -4.6094,
-    "bridge_tx": "0xf4ebde155b56c428fc2b285dd161b108751a480107cf1290f61938bb0ac49b6f"
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
-  "notes": "LIVE FLAT \u00b7 eq $28.9552 \u00b7 KARURE \u2212$4.60 \u00b7 + TIME_FLAT ~$0 \u00b7 history rebuilt from proofs \u00b7 2026-09-21 12:14:46 ET \u00b7 force-pages 2026-09-21 12:17:38 ET",
+  "notes": "LIVE FLAT \u00b7 eq $28.9552 \u00b7 KARURE \u2212$4.60 \u00b7 + TIME_FLAT ~$0 \u00b7 history rebuilt from proofs \u00b7 2026-09-21 12:14:46 ET",
   "strategy": "LIVE_RH_MEME_TIGHT",
-  "cache_bust": 1790007458
+  "position": {
+    "id": "LIVE-SCALP-3",
+    "market": "DRIP",
+    "side": "LONG",
+    "size_usd": 8.0,
+    "tx": "0x8d5a5b964129c8b50db178e1fe7e36a72b907972b1334cbc5cf738e7f0674c45",
+    "token": "0x17E0Ac93D715110bf02B2c55b5fCCf04065a13A3",
+    "paper": false,
+    "uPnL": 0.0,
+    "tokens_raw": 11863190816092995645339
+  }
 }
