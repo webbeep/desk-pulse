@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 15:14:15 ET",
+  "updated_et": "2026-09-21 15:14:22 ET",
   "mode": "LIVE",
-  "status": "EXITING:POST_FILL_FLAT_-7.8358",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 10.6603,
@@ -36,6 +36,18 @@
   },
   "positions": [],
   "trades": [
+    {
+      "id": "LIVE-SCALP-11-EXIT",
+      "market": "AI",
+      "side": "SELL",
+      "size_usd": 8.0,
+      "pnl_usd": -0.1959,
+      "mtm_pct": -2.4483,
+      "tx": "0xf69bf82d380f4d9857fddc4b6ef3f96bba8b79ac49b6b57346bd54e7b8d78ca2",
+      "reason": "POST_FILL_FLAT_-7.8358",
+      "stamp_et": "2026-09-21 15:14:22 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-10-EXIT",
       "market": "AI",
@@ -162,13 +174,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 14:03:54 ET",
-      "equity_usd": 28.9447,
-      "liquid_usd": 28.9552,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-09-21 14:05:11 ET",
       "equity_usd": 28.9519,
@@ -1562,6 +1567,13 @@
       "liquid_usd": 11.2872,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 15:14:22 ET",
+      "equity_usd": 10.6603,
+      "liquid_usd": 11.2872,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -1571,15 +1583,11 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xbbbfd3a964920970001f1639da7295aa0dc618bbe9505ec2f004e6b3a50a2b88",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 5,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xf69bf82d380f4d9857fddc4b6ef3f96bba8b79ac49b6b57346bd54e7b8d78ca2",
+    "last_exit_reason": "POST_FILL_FLAT_-7.8358",
+    "last_exit_upnl": -0.1959
   },
-  "notes": "LIVE MTM AI uPnL $-0.6269 (-7.8358%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 15:14:13 ET \u00b7 CUT POST_FILL_FLAT_-7.8358",
+  "notes": "LIVE EXIT AI \u00b7 POST_FILL_FLAT_-7.8358 \u00b7 tx 0xf69bf82d380f4d9857fddc4b6ef3f96bba8b79ac49b6b57346bd54e7b8d78ca2 \u00b7 2026-09-21 15:14:22 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
