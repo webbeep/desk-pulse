@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-21 02:10:08 ET",
+  "updated_et": "2026-09-21 02:12:17 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 116.2802,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
   "total_pnl_usd": 16.2802,
   "total_pnl_pct": 16.2802,
-  "mark_eth": 2664.775,
-  "mark": 2664.775,
+  "mark_eth": 2665.195,
+  "mark": 2665.195,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2664.775
+    "ETH": 2665.195
   },
   "holdings": {
     "paper_cash_usd": 116.2802,
@@ -70,7 +70,14 @@
       "n_pos": 0
     },
     {
-      "t": "2026-09-21 02:10:08 ET",
+      "t": "2026-09-21 02:11:30 ET",
+      "equity_usd": 116.2802,
+      "liquid_usd": 116.2802,
+      "upnl_usd": 0.0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 02:12:17 ET",
       "equity_usd": 116.2802,
       "liquid_usd": 116.2802,
       "upnl_usd": 0.0,
@@ -450,5 +457,48 @@
     "closed_n": 40,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $116.28 \u00b7 FLAT \u00b7 2026-09-21 02:10:08 ET"
+  "notes": "JEV OPEN \u00b7 pick=NOSH open_p=0.66 edge=2.38 conf=0.9 \u00b7 PAPER heartbeat \u00b7 eq $116.28 \u00b7 FLAT \u00b7 2026-09-21 02:12:17 ET",
+  "jev": {
+    "stamp_et": "2026-09-21 02:12:20 ET",
+    "model": "jev-1.13.0",
+    "action": "OPEN",
+    "detail": "pick=NOSH open_p=0.66 edge=2.38 conf=0.9",
+    "picks": [
+      {
+        "sym": "NOSH",
+        "lost_bps": 6,
+        "selected": true,
+        "probs": 0.92
+      },
+      {
+        "sym": "BUCK",
+        "lost_bps": 8,
+        "selected": false,
+        "probs": 0.01
+      },
+      {
+        "sym": "+",
+        "lost_bps": 9,
+        "selected": false,
+        "probs": 0.03
+      },
+      {
+        "sym": "PO\u200bNS",
+        "lost_bps": 10,
+        "selected": false,
+        "probs": 0.02
+      },
+      {
+        "sym": "ASTROPIKA",
+        "lost_bps": 21,
+        "selected": false,
+        "probs": 0.0
+      }
+    ],
+    "idle": null,
+    "open_p": 0.66,
+    "risk": null,
+    "confidence": 0.9,
+    "live": true
+  }
 }
