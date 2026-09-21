@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 17:13:47 ET",
+  "updated_et": "2026-09-21 17:13:56 ET",
   "mode": "LIVE",
-  "status": "EXITING:TP_V6_+3.5",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 11.7584,
@@ -36,6 +36,18 @@
   },
   "positions": [],
   "trades": [
+    {
+      "id": "LIVE-SCALP-29-EXIT",
+      "market": "FROG",
+      "side": "SELL",
+      "size_usd": 5.96,
+      "pnl_usd": 0.4732,
+      "mtm_pct": 7.9403,
+      "tx": "0xc88adf434d75cb39cc1d8077b51d242271a1d9a7180ca164e6a38979bdc5f78c",
+      "reason": "TP_V6_+3.5",
+      "stamp_et": "2026-09-21 17:13:56 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-28-EXIT",
       "market": "+",
@@ -366,13 +378,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 16:17:35 ET",
-      "equity_usd": 11.2903,
-      "liquid_usd": 11.2872,
-      "upnl_usd": 0.0031,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-21 16:17:49 ET",
       "equity_usd": 11.2964,
@@ -1765,6 +1770,13 @@
       "liquid_usd": 11.2872,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 17:13:56 ET",
+      "equity_usd": 11.7584,
+      "liquid_usd": 11.2872,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -1774,15 +1786,11 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x38108ed9814af3427ac6f7fcf9699609cb9228eb7901359eec77d496502733ea",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 58,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xc88adf434d75cb39cc1d8077b51d242271a1d9a7180ca164e6a38979bdc5f78c",
+    "last_exit_reason": "TP_V6_+3.5",
+    "last_exit_upnl": 0.4732
   },
-  "notes": "LIVE MTM FROG uPnL $0.4712 (7.9068%) \u00b7 held 59s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 17:13:45 ET \u00b7 CUT TP_V6_+3.5",
+  "notes": "LIVE EXIT FROG \u00b7 TP_V6_+3.5 \u00b7 tx 0xc88adf434d75cb39cc1d8077b51d242271a1d9a7180ca164e6a38979bdc5f78c \u00b7 2026-09-21 17:13:56 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
