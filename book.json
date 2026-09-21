@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-21 11:11:16 ET",
+  "updated_et": "2026-09-21 11:12:03 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 101.5018,
-  "upnl_usd": -0.0247,
-  "equity_usd": 101.4771,
+  "liquid_usd": 110.4275,
+  "upnl_usd": 0.0,
+  "equity_usd": 110.4275,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 1.4771,
-  "total_pnl_pct": 1.4771,
-  "mark_eth": 2745.73,
-  "mark": 2745.73,
+  "total_pnl_usd": 10.4275,
+  "total_pnl_pct": 10.4275,
+  "mark_eth": 2745.1,
+  "mark": 2745.1,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2745.73
+    "ETH": 2745.1
   },
   "holdings": {
-    "paper_cash_usd": 93.3818,
+    "paper_cash_usd": 110.4275,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -659,14 +659,30 @@
       "pnl_usd": -1.0367
     },
     {
-      "t": "now",
-      "equity_usd": 101.4771,
-      "liquid_usd": 101.4771,
+      "t": "2026-09-21 11:11:25 ET",
+      "equity_usd": 110.4275,
+      "liquid_usd": 110.4275,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "NAUTILO",
+      "reason": "TP_+4.0",
+      "pnl_usd": 8.9257
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-21 11:11:25 ET",
+      "kind": "PAPER",
+      "market": "NAUTILO",
+      "side": "LONG",
+      "size": 8.12,
+      "size_usd": 8.12,
+      "pnl_usd": 8.9257,
+      "pnl_pct": 109.9227,
+      "tx": "TP_+4.0",
+      "id": "PAPER-239",
+      "paper": true
+    },
     {
       "t": "2026-09-21 11:03:29 ET",
       "kind": "PAPER",
@@ -1464,40 +1480,36 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 101.5018,
-    "mtm_equity_usd": 101.4771,
-    "realized_pnl_usd": 1.5018,
-    "unrealized_pnl_usd": -0.0247,
-    "open": {
-      "id": "PAPER-239",
-      "ticker": "NAUTILO",
-      "usd": 8.12
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $101.50 \u00b7 curve n=63 \u00b7 2026-09-21 11:11:16 ET",
+    "paper_equity_usd": 110.4275,
+    "mtm_equity_usd": 110.4275,
+    "realized_pnl_usd": 10.4275,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $110.43 \u00b7 curve n=63 \u00b7 2026-09-21 11:12:03 ET",
     "strategy": "MEME_V6_SCALE_QUALITY",
-    "closed_n": 61
+    "closed_n": 62
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $101.50 \u00b7 2026-09-21 11:11:16 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $110.43 \u00b7 FLAT \u00b7 2026-09-21 11:12:03 ET",
   "strategy": "MEME_V6_SCALE_QUALITY",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=KARURE open_p=0.65 edge=2.41 conf=0.84",
+    "detail": "pick=KARURE open_p=0.64 edge=2.29 conf=0.8",
     "pick": "KARURE",
-    "open_p": 0.65,
-    "confidence": 0.84,
-    "edge_score": 2.41,
+    "open_p": 0.64,
+    "confidence": 0.8,
+    "edge_score": 2.29,
     "picks": [
       {
         "sym": "KARURE",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.88
+        "probs": 0.85
       },
       {
         "sym": "POPEYE",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.13
       },
       {
         "sym": "+",
@@ -1507,13 +1519,13 @@
       },
       {
         "sym": "IPO",
-        "lost_bps": 26,
+        "lost_bps": 25,
         "selected": false,
         "probs": 0.0
       },
       {
         "sym": "NAUTILO",
-        "lost_bps": 41,
+        "lost_bps": 35,
         "selected": false,
         "probs": 0.0
       }
@@ -1523,20 +1535,20 @@
       "pick": {
         "type": "choice",
         "choice": "KARURE",
-        "confidence": 0.84
+        "confidence": 0.8
       },
       "edge": {
         "type": "score",
-        "score": 2.41,
-        "confidence": 0.19
+        "score": 2.29,
+        "confidence": 0.1
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-21 11:11:10 ET",
+    "stamp_et": "2026-09-21 11:11:57 ET",
     "live": true
   }
 }
