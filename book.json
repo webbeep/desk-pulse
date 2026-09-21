@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-20 20:40:31 ET",
+  "updated_et": "2026-09-20 20:41:18 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 94.4001,
-  "upnl_usd": -0.1267,
-  "equity_usd": 94.2734,
+  "liquid_usd": 91.9217,
+  "upnl_usd": 0.0,
+  "equity_usd": 91.9217,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": -5.7266,
-  "total_pnl_pct": -5.7266,
-  "mark_eth": 2691.095,
-  "mark": 2691.095,
+  "total_pnl_usd": -8.0783,
+  "total_pnl_pct": -8.0783,
+  "mark_eth": 2688.695,
+  "mark": 2688.695,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2691.095
+    "ETH": 2688.695
   },
   "holdings": {
-    "paper_cash_usd": 86.8501,
+    "paper_cash_usd": 91.9217,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,41 +39,33 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-187",
-      "market": "ZEBRA",
-      "side": "LONG",
-      "size_usd": 7.55,
-      "entry": 5.884668239525287e-05,
-      "mark": 5.785914932777227e-05,
-      "uPnL": -0.1267,
-      "mtm_pct": -1.6777,
-      "sl": 4.70773459162023e-05,
-      "tp": 8.827002359287931e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 12271858696589425368886,
-      "held_min": 0.38
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-20 20:40:16 ET",
-      "equity_usd": 94.2734,
-      "liquid_usd": 94.4001,
-      "upnl_usd": -0.1267,
-      "n_pos": 1
+      "t": "2026-09-20 20:40:36 ET",
+      "equity_usd": 91.9217,
+      "liquid_usd": 91.9217,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     },
     {
-      "t": "2026-09-20 20:40:31 ET",
-      "equity_usd": 94.2734,
-      "liquid_usd": 94.4001,
-      "upnl_usd": -0.1267,
-      "n_pos": 1
+      "t": "2026-09-20 20:41:18 ET",
+      "equity_usd": 91.9217,
+      "liquid_usd": 91.9217,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-20 20:40:36 ET",
+      "kind": "PAPER",
+      "market": "ZEBRA",
+      "side": "LONG",
+      "size": 7.55,
+      "pnl_usd": -2.4784,
+      "tx": "CUT_HARD_-3.0"
+    },
     {
       "t": "2026-09-20 20:32:25 ET",
       "kind": "PAPER",
@@ -159,18 +151,13 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 94.4001,
-    "mtm_equity_usd": 94.2734,
-    "realized_pnl_usd": -5.5999,
-    "unrealized_pnl_usd": -0.1267,
-    "open": {
-      "id": "PAPER-187",
-      "ticker": "ZEBRA",
-      "usd": 7.55,
-      "mtm_pct": -1.6777
-    },
-    "closed_n": 9,
+    "paper_equity_usd": 91.9217,
+    "mtm_equity_usd": 91.9217,
+    "realized_pnl_usd": -8.0783,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 10,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $94.27 \u00b7 FLAT \u00b7 2026-09-20 20:40:31 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $91.92 \u00b7 FLAT \u00b7 2026-09-20 20:41:18 ET"
 }
