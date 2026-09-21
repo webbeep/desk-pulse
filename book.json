@@ -1,27 +1,27 @@
 {
-  "updated_et": "2026-09-21 15:06:57 ET",
+  "updated_et": "2026-09-21 15:07:00 ET",
   "mode": "LIVE",
-  "status": "LIVE_OPEN",
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 11.3657,
-  "equity_usd": 11.3637,
-  "upnl_usd": -0.002,
+  "liquid_usd": 11.2931,
+  "equity_usd": 11.2931,
+  "upnl_usd": 0.0,
   "funding_usd": 33.77,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-4.6094 \u00b7 SoT chain mark",
   "total_pnl_usd": -4.8148,
   "total_pnl_pct": -14.2576,
-  "mark_eth": 2758.65,
-  "mark": 2758.65,
+  "mark_eth": 2758.87,
+  "mark": 2758.87,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2758.65
+    "ETH": 2758.87
   },
   "holdings": {
-    "rh_eth": 0.000628719807644757,
-    "weth": 0.003493649120460811,
+    "rh_eth": 0.000638686533439377,
+    "weth": 0.003454684099527581,
+    "plus_raw": 692683289286319427871963,
     "octocat_raw": 130085154742947454135877,
-    "octocat_mark_usd": 0.0,
-    "note": "OCTOCAT liq0 wipe \u2014 mark 0; KARURE+OCTOCAT banned"
+    "octocat_mark_usd": 0.0
   },
   "residuals": {
     "l1_eth": 0.000879538014354878,
@@ -34,25 +34,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-9",
-      "market": "+",
-      "side": "LONG",
-      "size_usd": 8.0,
-      "entry": 1.1549289731303469e-05,
-      "mark": 1.154635298048983e-05,
-      "uPnL": -0.002,
-      "mtm_pct": -0.0254,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x9f38c125ee6c12491ddf98c3f46a5fc7ea1eb3ac70aa406def22ff22bf5a8cb5",
-      "token": "0x72633b32e5cEa8379Fa93c45B4c8377Dfc2e22D9",
-      "held_sec": 5,
-      "weth_out": 0.002899231784309932,
-      "usd_out": 7.997966
-    }
-  ],
+  "positions": [],
   "trades": [
     {
       "id": "LIVE-SCALP-8-EXIT",
@@ -60,7 +42,6 @@
       "side": "SELL",
       "size_usd": 8.0,
       "pnl_usd": 7.9863,
-      "mtm_pct": 99.8288,
       "tx": "0x3657d9046ecdf8bdc0dadee74bf0faa8a3a397daf329b761f7a8d9317b915bbd",
       "reason": "TP_V6_+3.5",
       "stamp_et": "2026-09-21 15:06:13 ET",
@@ -85,7 +66,7 @@
       "pnl_usd": -8.0,
       "tx": null,
       "reason": "QUOTER_DEAD_LIQ0_WIPE",
-      "stamp_et": "2026-09-21 15:04:50 ET",
+      "stamp_et": "2026-09-21 15:07:00 ET",
       "paper": false
     },
     {
@@ -145,14 +126,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 12:05:32 ET",
-      "equity_usd": 29.03,
-      "liquid_usd": 21.03,
-      "upnl_usd": 0,
-      "n_pos": 1,
-      "reason": "LIVE_OPEN_PLUS"
-    },
     {
       "t": "2026-09-21 12:09:43 ET",
       "equity_usd": 28.9552,
@@ -1548,45 +1521,37 @@
       "liquid_usd": 11.3657,
       "upnl_usd": -0.002,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-21 15:07:00 ET",
+      "equity_usd": 11.2931,
+      "liquid_usd": 11.2931,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "paper": {
     "active": false,
-    "archived": true,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   },
   "live": {
-    "open": true,
-    "ticker": "+",
-    "tx": "0x9f38c125ee6c12491ddf98c3f46a5fc7ea1eb3ac70aa406def22ff22bf5a8cb5",
-    "size_usd": 8.0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": -0.0254,
-    "upnl_usd": -0.002,
-    "held_sec": 5,
-    "watcher": "rh_live_mtm_loop"
+    "open": false,
+    "flat": true,
+    "ticker": null,
+    "banned": [
+      "KARURE",
+      "OCTOCAT"
+    ],
+    "last_exit_tx": null,
+    "last_exit_reason": null,
+    "last_exit_upnl": null,
+    "prior_wipe": "LIVE-SCALP-6 OCTOCAT"
   },
   "notes": "LIVE MTM + uPnL $-0.002 (-0.0254%) \u00b7 held 5s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 15:06:57 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": {
-    "id": "LIVE-SCALP-9",
-    "market": "+",
-    "side": "LONG",
-    "size_usd": 8.0,
-    "entry": 1.1549289731303469e-05,
-    "mark": 1.154635298048983e-05,
-    "uPnL": -0.002,
-    "mtm_pct": -0.0254,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x9f38c125ee6c12491ddf98c3f46a5fc7ea1eb3ac70aa406def22ff22bf5a8cb5",
-    "token": "0x72633b32e5cEa8379Fa93c45B4c8377Dfc2e22D9",
-    "held_sec": 5,
-    "weth_out": 0.002899231784309932,
-    "usd_out": 7.997966
-  },
-  "realized_ledger_usd": -11.443
+  "position": null,
+  "realized_ledger_usd": -3.4567
 }
