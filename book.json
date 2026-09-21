@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-21 15:20:02 ET",
+  "updated_et": "2026-09-21 15:20:06 ET",
   "mode": "LIVE",
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
-  "equity_usd": 11.3179,
-  "upnl_usd": 0.0,
+  "equity_usd": 11.2826,
+  "upnl_usd": -0.0046,
   "funding_usd": 33.77,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-4.6094 \u00b7 SoT chain mark",
   "total_pnl_usd": -4.8148,
   "total_pnl_pct": -14.2576,
-  "mark_eth": 2771.93,
-  "mark": 2771.93,
+  "mark_eth": 2770.28,
+  "mark": 2770.28,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2771.93
+    "ETH": 2770.28
   },
   "holdings": {
     "rh_eth": 0.000638686533439377,
@@ -40,10 +40,17 @@
       "market": "BLISS",
       "side": "LONG",
       "size_usd": 8.0,
+      "entry": 4.4077853368264005e-05,
+      "mark": 4.405234959375205e-05,
+      "uPnL": -0.0046,
+      "mtm_pct": -0.0579,
+      "lev": 1,
+      "paper": false,
       "tx": "0x6fa5d696400c7077e446c9c3d63d0be7acd60cd4d8a27d1ae4a1ae0972065438",
       "token": "0x4192a139a5236e826961A4d778264ce4e10B3Afc",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 5,
+      "weth_out": 0.002886123835990798,
+      "usd_out": 7.995371
     }
   ],
   "trades": [
@@ -197,13 +204,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 14:11:37 ET",
-      "equity_usd": 29.6242,
-      "liquid_usd": 28.9552,
-      "upnl_usd": 0.669,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-21 14:11:39 ET",
       "equity_usd": 29.6242,
@@ -1597,25 +1597,31 @@
       "liquid_usd": 11.2872,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 15:20:06 ET",
+      "equity_usd": 11.2826,
+      "liquid_usd": 11.2872,
+      "upnl_usd": -0.0046,
+      "n_pos": 1
     }
   ],
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "BLISS",
     "tx": "0x6fa5d696400c7077e446c9c3d63d0be7acd60cd4d8a27d1ae4a1ae0972065438",
     "size_usd": 8.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-13",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.0579,
+    "upnl_usd": -0.0046,
+    "held_sec": 5,
+    "watcher": "rh_live_mtm_loop"
   },
-  "notes": "LIVE EXIT + \u00b7 TIME_FLAT_240s \u00b7 tx 0xd2b3c245bb309cf27b0167dda3d287d6a65ca2982040011cfbefbaec94a6a498 \u00b7 2026-09-21 15:19:19 ET",
+  "notes": "LIVE MTM BLISS uPnL $-0.0046 (-0.0579%) \u00b7 held 5s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 15:20:06 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
@@ -1625,10 +1631,17 @@
     "market": "BLISS",
     "side": "LONG",
     "size_usd": 8.0,
+    "entry": 4.4077853368264005e-05,
+    "mark": 4.405234959375205e-05,
+    "uPnL": -0.0046,
+    "mtm_pct": -0.0579,
+    "lev": 1,
+    "paper": false,
     "tx": "0x6fa5d696400c7077e446c9c3d63d0be7acd60cd4d8a27d1ae4a1ae0972065438",
     "token": "0x4192a139a5236e826961A4d778264ce4e10B3Afc",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 5,
+    "weth_out": 0.002886123835990798,
+    "usd_out": 7.995371
   },
   "realized_ledger_usd": -3.4567
 }
