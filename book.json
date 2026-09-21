@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-21 14:13:35 ET",
+  "updated_et": "2026-09-21 14:13:41 ET",
   "mode": "LIVE",
-  "status": "EXIT_None",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 28.9552,
-  "equity_usd": 29.8249,
-  "upnl_usd": 0.0,
+  "equity_usd": 29.4702,
+  "upnl_usd": 0.515,
   "funding_usd": 33.77,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-4.6094 \u00b7 SoT chain mark",
   "total_pnl_usd": -4.8148,
   "total_pnl_pct": -14.2576,
-  "mark_eth": 2751.26,
-  "mark": 2751.26,
+  "mark_eth": 2751.27,
+  "mark": 2751.27,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2751.26
+    "ETH": 2751.27
   },
   "holdings": {
     "l1_eth": 0.000879538014354878,
@@ -36,7 +36,25 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-6",
+      "market": "OCTOCAT",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "entry": 6.149817798816677e-05,
+      "mark": 6.545725637265833e-05,
+      "uPnL": 0.515,
+      "mtm_pct": 6.4377,
+      "lev": 1,
+      "paper": false,
+      "tx": "0xf85e917e91ddf0e13927ad6734c2309af744ea7e4dbf6f3d1b1769d84a91c9b1",
+      "token": "0xF161674Ed84DEeeE73E37E62912B8D477f50c3eA",
+      "held_sec": 515,
+      "weth_out": 0.003094940636246549,
+      "usd_out": 8.515017
+    }
+  ],
   "trades": [
     {
       "id": "LIVE-SCALP-6-EXIT",
@@ -647,6 +665,13 @@
       "liquid_usd": 28.9552,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 14:13:41 ET",
+      "equity_usd": 29.4702,
+      "liquid_usd": 28.9552,
+      "upnl_usd": 0.515,
+      "n_pos": 1
     }
   ],
   "paper": {
@@ -655,16 +680,36 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
   },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "TP_V6_+3.5",
-    "last_exit_upnl": null
+    "open": true,
+    "ticker": "OCTOCAT",
+    "tx": "0xf85e917e91ddf0e13927ad6734c2309af744ea7e4dbf6f3d1b1769d84a91c9b1",
+    "size_usd": 8.0,
+    "max_loss_usd": 1.5,
+    "mtm_pct": 6.4377,
+    "upnl_usd": 0.515,
+    "held_sec": 515,
+    "watcher": "rh_live_mtm_loop"
   },
-  "notes": "LIVE EXIT OCTOCAT \u00b7 TP_V6_+3.5 \u00b7 tx None \u00b7 2026-09-21 14:13:35 ET",
+  "notes": "LIVE MTM OCTOCAT uPnL $0.515 (6.4377%) \u00b7 held 515s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 14:13:41 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": null
+  "position": {
+    "id": "LIVE-SCALP-6",
+    "market": "OCTOCAT",
+    "side": "LONG",
+    "size_usd": 8.0,
+    "entry": 6.149817798816677e-05,
+    "mark": 6.545725637265833e-05,
+    "uPnL": 0.515,
+    "mtm_pct": 6.4377,
+    "lev": 1,
+    "paper": false,
+    "tx": "0xf85e917e91ddf0e13927ad6734c2309af744ea7e4dbf6f3d1b1769d84a91c9b1",
+    "token": "0xF161674Ed84DEeeE73E37E62912B8D477f50c3eA",
+    "held_sec": 515,
+    "weth_out": 0.003094940636246549,
+    "usd_out": 8.515017
+  }
 }
