@@ -172,6 +172,44 @@
     return st === "FLAT" || open.length === 0;
   }
 
+
+  let histRange = "session";
+  let lastFullHist = [];
+
+  function parseEtMs(s) {
+    if (!s || s === "session_start" || s === "now") return null;
+    const m = String(s).match(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2}):(\d{2})/);
+    if (!m) return null;
+    return Date.UTC(+m[1], +m[2]-1, +m[3], +m[4]+4, +m[5], +m[6]);
+  }
+
+  function filterHistRange(hist, range) {
+    const arr = Array.isArray(hist) ? hist.slice() : [];
+    if (!arr.length || range === "all" || range === "session") return arr;
+    const now = Date.now();
+    const win = range === "1h" ? 3600e3 : range === "6h" ? 6*3600e3 : null;
+    if (!win) return arr;
+    const cut = now - win;
+    const kept = arr.filter(function (h) {
+      const ms = parseEtMs(pick(h, ["t", "updated_et"]));
+      return ms == null || ms >= cut;
+    });
+    return kept.length >= 2 ? kept : arr;
+  }
+
+  function wireHistRange() {
+    const row = $("hist-range");
+    if (!row || row.dataset.wired) return;
+    row.dataset.wired = "1";
+    row.addEventListener("click", function (ev) {
+      const btn = ev.target && ev.target.closest ? ev.target.closest("[data-range]") : null;
+      if (!btn) return;
+      histRange = btn.getAttribute("data-range") || "session";
+      row.querySelectorAll(".range-btn").forEach(function (b) { b.classList.toggle("active", b === btn); });
+      renderHist(filterHistRange(lastFullHist, histRange));
+    });
+  }
+
   function normalize(raw) {
     const positions = positionsFrom(raw);
     const open = positions.filter(isOpen);
@@ -674,7 +712,9 @@
 
     renderHoldings(book);
     renderPositions(live.cards);
-    renderHist(book.pnlHistory);
+    lastFullHist = book.pnlHistory || [];
+    renderHist(filterHistRange(lastFullHist, histRange));
+    wireHistRange();
     renderTrades(book.trades);
     const fullW = book.wallet || "—";
     $("wallet").textContent = fullW;

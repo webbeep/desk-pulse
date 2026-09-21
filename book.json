@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-21 11:08:03 ET",
+  "updated_et": "2026-09-21 11:08:52 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 101.5018,
@@ -7,14 +7,14 @@
   "equity_usd": 101.5018,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
+  "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 1.5018,
   "total_pnl_pct": 1.5018,
-  "mark_eth": 2744.425,
-  "mark": 2744.425,
+  "mark_eth": 2748.36,
+  "mark": 2748.36,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2744.425
+    "ETH": 2748.36
   },
   "holdings": {
     "paper_cash_usd": 101.5018,
@@ -42,53 +42,621 @@
   "positions": [],
   "pnl_history": [
     {
+      "t": "session_start",
+      "equity_usd": 100.0,
+      "liquid_usd": 100.0,
+      "upnl_usd": 0.0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-20 16:08:10 ET",
+      "equity_usd": 99.9906,
+      "liquid_usd": 99.9906,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PONS",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0094
+    },
+    {
+      "t": "2026-09-20 16:12:44 ET",
+      "equity_usd": 99.9766,
+      "liquid_usd": 99.9766,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PONS",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.014
+    },
+    {
+      "t": "2026-09-20 16:13:45 ET",
+      "equity_usd": 98.2899,
+      "liquid_usd": 98.2899,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "RYU",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -1.6867
+    },
+    {
+      "t": "2026-09-20 16:30:37 ET",
+      "equity_usd": 98.6693,
+      "liquid_usd": 98.6693,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "RYU",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.3794
+    },
+    {
+      "t": "2026-09-20 18:02:35 ET",
+      "equity_usd": 90.7793,
+      "liquid_usd": 90.7793,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "GATSBY",
+      "reason": "CUT_HARD_QUOTER",
+      "pnl_usd": -7.89
+    },
+    {
+      "t": "2026-09-20 18:40:07 ET",
+      "equity_usd": 100.2882,
+      "liquid_usd": 100.2882,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "10",
+      "reason": "TP_+4.0",
+      "pnl_usd": 9.5089
+    },
+    {
+      "t": "2026-09-20 18:55:58 ET",
+      "equity_usd": 100.9676,
+      "liquid_usd": 100.9676,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "10",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.6794
+    },
+    {
+      "t": "2026-09-20 19:52:32 ET",
+      "equity_usd": 92.8876,
+      "liquid_usd": 92.8876,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TERMINATOR",
+      "reason": "CUT_HARD_QUOTER",
+      "pnl_usd": -8.08
+    },
+    {
+      "t": "2026-09-20 20:32:25 ET",
+      "equity_usd": 94.4001,
+      "liquid_usd": 94.4001,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JACKJACK",
+      "reason": "TP_+4.0",
+      "pnl_usd": 1.5125
+    },
+    {
+      "t": "2026-09-20 20:40:36 ET",
+      "equity_usd": 91.9217,
+      "liquid_usd": 91.9217,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ZEBRA",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -2.4784
+    },
+    {
+      "t": "2026-09-20 20:47:56 ET",
+      "equity_usd": 92.5163,
+      "liquid_usd": 92.5163,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JACKJACK",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.5946
+    },
+    {
+      "t": "2026-09-20 20:56:37 ET",
+      "equity_usd": 93.4382,
+      "liquid_usd": 93.4382,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ZEBRA",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.9219
+    },
+    {
+      "t": "2026-09-20 20:57:59 ET",
+      "equity_usd": 93.0113,
+      "liquid_usd": 93.0113,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TERMINATOR",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -0.4269
+    },
+    {
+      "t": "2026-09-20 21:04:19 ET",
+      "equity_usd": 99.5876,
+      "liquid_usd": 99.5876,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PRAY",
+      "reason": "TP_+4.0",
+      "pnl_usd": 6.5763
+    },
+    {
+      "t": "2026-09-20 21:12:10 ET",
+      "equity_usd": 100.0103,
+      "liquid_usd": 100.0103,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SI",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.4227
+    },
+    {
+      "t": "2026-09-20 21:24:23 ET",
+      "equity_usd": 99.9262,
+      "liquid_usd": 99.9262,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PRAY",
+      "reason": "TRAIL_1.0",
+      "pnl_usd": -0.0841
+    },
+    {
+      "t": "2026-09-20 21:32:54 ET",
+      "equity_usd": 100.0267,
+      "liquid_usd": 100.0267,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SI",
+      "reason": "TIME_EXIT_300s",
+      "pnl_usd": 0.1005
+    },
+    {
+      "t": "2026-09-20 21:50:45 ET",
+      "equity_usd": 99.6416,
+      "liquid_usd": 99.6416,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ZLONG",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -0.3851
+    },
+    {
+      "t": "2026-09-20 22:10:26 ET",
+      "equity_usd": 101.3043,
+      "liquid_usd": 101.3043,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "VORTEX",
+      "reason": "TP_+4.0",
+      "pnl_usd": 1.6627
+    },
+    {
+      "t": "2026-09-20 22:15:17 ET",
+      "equity_usd": 102.5457,
+      "liquid_usd": 102.5457,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ASTROPIKA",
+      "reason": "TP_+4.0",
+      "pnl_usd": 1.2414
+    },
+    {
+      "t": "2026-09-20 22:26:07 ET",
+      "equity_usd": 102.1195,
+      "liquid_usd": 102.1195,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "VORTEX",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -0.4262
+    },
+    {
+      "t": "2026-09-20 22:41:00 ET",
+      "equity_usd": 102.9344,
+      "liquid_usd": 102.9344,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ASTROPIKA",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.8149
+    },
+    {
+      "t": "2026-09-21 00:00:54 ET",
+      "equity_usd": 102.547,
+      "liquid_usd": 102.547,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ASTROPIKA",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -0.3874
+    },
+    {
+      "t": "2026-09-21 00:01:45 ET",
+      "equity_usd": 102.9429,
+      "liquid_usd": 102.9429,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PRAY",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.3959
+    },
+    {
+      "t": "2026-09-21 00:06:19 ET",
+      "equity_usd": 102.9152,
+      "liquid_usd": 102.9152,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PONS",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0277
+    },
+    {
+      "t": "2026-09-21 00:10:45 ET",
+      "equity_usd": 102.9011,
+      "liquid_usd": 102.9011,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PONS",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0141
+    },
+    {
+      "t": "2026-09-21 00:15:43 ET",
+      "equity_usd": 102.8824,
+      "liquid_usd": 102.8824,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TERMINATOR",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0187
+    },
+    {
+      "t": "2026-09-21 00:16:44 ET",
+      "equity_usd": 101.7229,
+      "liquid_usd": 101.7229,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ASTROPIKA",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -1.1595
+    },
+    {
+      "t": "2026-09-21 00:17:35 ET",
+      "equity_usd": 102.2842,
+      "liquid_usd": 102.2842,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PRAY",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.5613
+    },
+    {
+      "t": "2026-09-21 00:22:29 ET",
+      "equity_usd": 102.2591,
+      "liquid_usd": 102.2591,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TERMINATOR",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0251
+    },
+    {
+      "t": "2026-09-21 00:27:03 ET",
+      "equity_usd": 102.2413,
+      "liquid_usd": 102.2413,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "10",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0178
+    },
+    {
+      "t": "2026-09-21 00:31:27 ET",
+      "equity_usd": 102.2166,
+      "liquid_usd": 102.2166,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "10",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0247
+    },
+    {
+      "t": "2026-09-21 00:32:17 ET",
+      "equity_usd": 102.8634,
+      "liquid_usd": 102.8634,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TWINPAD",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.6468
+    },
+    {
+      "t": "2026-09-21 00:33:08 ET",
+      "equity_usd": 104.8742,
+      "liquid_usd": 104.8742,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "NOSH",
+      "reason": "TP_+4.0",
+      "pnl_usd": 2.0108
+    },
+    {
+      "t": "2026-09-21 00:48:19 ET",
+      "equity_usd": 103.8354,
+      "liquid_usd": 103.8354,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TWINPAD",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -1.0388
+    },
+    {
+      "t": "2026-09-21 00:48:39 ET",
+      "equity_usd": 103.0367,
+      "liquid_usd": 103.0367,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "NOSH",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -0.7987
+    },
+    {
+      "t": "2026-09-21 01:51:50 ET",
+      "equity_usd": 104.1947,
+      "liquid_usd": 104.1947,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "BUCK",
+      "reason": "TP_+4.0",
+      "pnl_usd": 1.158
+    },
+    {
+      "t": "2026-09-21 01:59:41 ET",
+      "equity_usd": 114.6514,
+      "liquid_usd": 114.6514,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "+",
+      "reason": "TP_+4.0",
+      "pnl_usd": 10.4567
+    },
+    {
+      "t": "2026-09-21 02:02:31 ET",
+      "equity_usd": 115.6527,
+      "liquid_usd": 115.6527,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "UNICOIN",
+      "reason": "TP_+4.0",
+      "pnl_usd": 1.0013
+    },
+    {
+      "t": "2026-09-21 02:07:22 ET",
+      "equity_usd": 116.2802,
+      "liquid_usd": 116.2802,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "BUCK",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.6275
+    },
+    {
+      "t": "2026-09-21 02:15:18 ET",
+      "equity_usd": 114.7851,
+      "liquid_usd": 114.7851,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "+",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -1.4951
+    },
+    {
+      "t": "2026-09-21 02:18:28 ET",
+      "equity_usd": 115.2702,
+      "liquid_usd": 115.2702,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "UNICOIN",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.4851
+    },
+    {
+      "t": "2026-09-21 03:00:20 ET",
+      "equity_usd": 116.6867,
+      "liquid_usd": 116.6867,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "DOUCHEBAG",
+      "reason": "TP_+4.0",
+      "pnl_usd": 1.4165
+    },
+    {
+      "t": "2026-09-21 03:08:11 ET",
+      "equity_usd": 117.7215,
+      "liquid_usd": 117.7215,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TAPS",
+      "reason": "TP_+4.0",
+      "pnl_usd": 1.0348
+    },
+    {
+      "t": "2026-09-21 03:26:32 ET",
+      "equity_usd": 116.3389,
+      "liquid_usd": 116.3389,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TAPS",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -1.3826
+    },
+    {
+      "t": "2026-09-21 03:53:03 ET",
+      "equity_usd": 117.6885,
+      "liquid_usd": 117.6885,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "DOUCHEBAG",
+      "reason": "TP_+4.0",
+      "pnl_usd": 1.3496
+    },
+    {
+      "t": "2026-09-21 04:49:59 ET",
+      "equity_usd": 118.9253,
+      "liquid_usd": 118.9253,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "UPTOBER",
+      "reason": "TP_+4.0",
+      "pnl_usd": 1.2368
+    },
+    {
+      "t": "2026-09-21 05:05:50 ET",
+      "equity_usd": 121.1331,
+      "liquid_usd": 121.1331,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "UPTOBER",
+      "reason": "TP_+4.0",
+      "pnl_usd": 2.2078
+    },
+    {
+      "t": "2026-09-21 05:46:16 ET",
+      "equity_usd": 121.6515,
+      "liquid_usd": 121.6515,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "RSRVCAT",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.5184
+    },
+    {
+      "t": "2026-09-21 06:01:37 ET",
+      "equity_usd": 122.1824,
+      "liquid_usd": 122.1824,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "RSRVCAT",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.5309
+    },
+    {
+      "t": "2026-09-21 06:41:29 ET",
+      "equity_usd": 121.8779,
+      "liquid_usd": 121.8779,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "HACHI",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -0.3045
+    },
+    {
+      "t": "2026-09-21 06:57:20 ET",
+      "equity_usd": 122.3994,
+      "liquid_usd": 122.3994,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "HACHI",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.5215
+    },
+    {
+      "t": "2026-09-21 08:18:12 ET",
+      "equity_usd": 118.5239,
+      "liquid_usd": 118.5239,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "POPEYE",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -3.8755
+    },
+    {
+      "t": "2026-09-21 08:34:03 ET",
+      "equity_usd": 116.0174,
+      "liquid_usd": 116.0174,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "POPEYE",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -2.5065
+    },
+    {
+      "t": "2026-09-21 08:36:54 ET",
+      "equity_usd": 115.0736,
+      "liquid_usd": 115.0736,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "REK",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -0.9438
+    },
+    {
+      "t": "2026-09-21 08:54:06 ET",
+      "equity_usd": 105.8636,
+      "liquid_usd": 105.8636,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "REK",
+      "reason": "CUT_HARD_QUOTER",
+      "pnl_usd": -9.21
+    },
+    {
+      "t": "2026-09-21 08:56:47 ET",
+      "equity_usd": 105.2401,
+      "liquid_usd": 105.2401,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "KARURE",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -0.6235
+    },
+    {
+      "t": "2026-09-21 09:12:24 ET",
+      "equity_usd": 105.6625,
+      "liquid_usd": 105.6625,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "KARURE",
+      "reason": "TP_+4.0",
+      "pnl_usd": 0.4224
+    },
+    {
+      "t": "2026-09-21 09:47:46 ET",
+      "equity_usd": 101.3339,
+      "liquid_usd": 101.3339,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "BOARD",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -4.3286
+    },
+    {
+      "t": "2026-09-21 10:47:38 ET",
+      "equity_usd": 102.5385,
+      "liquid_usd": 102.5385,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "IPO",
+      "reason": "TP_+4.0",
+      "pnl_usd": 1.2046
+    },
+    {
       "t": "2026-09-21 11:03:29 ET",
       "equity_usd": 101.5018,
       "liquid_usd": 101.5018,
       "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 11:04:07 ET",
-      "equity_usd": 101.5018,
-      "liquid_usd": 101.5018,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 11:04:54 ET",
-      "equity_usd": 101.5018,
-      "liquid_usd": 101.5018,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 11:05:41 ET",
-      "equity_usd": 101.5018,
-      "liquid_usd": 101.5018,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 11:06:29 ET",
-      "equity_usd": 101.5018,
-      "liquid_usd": 101.5018,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 11:07:16 ET",
-      "equity_usd": 101.5018,
-      "liquid_usd": 101.5018,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 11:08:03 ET",
-      "equity_usd": 101.5018,
-      "liquid_usd": 101.5018,
-      "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "IPO",
+      "reason": "CUT_HARD_-3.0",
+      "pnl_usd": -1.0367
     }
   ],
   "trades": [
@@ -98,8 +666,12 @@
       "market": "IPO",
       "side": "LONG",
       "size": 8.2,
+      "size_usd": 8.2,
       "pnl_usd": -1.0367,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -12.6421,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-238",
+      "paper": true
     },
     {
       "t": "2026-09-21 10:47:38 ET",
@@ -107,8 +679,12 @@
       "market": "IPO",
       "side": "LONG",
       "size": 8.11,
+      "size_usd": 8.11,
       "pnl_usd": 1.2046,
-      "tx": "TP_+4.0"
+      "pnl_pct": 14.8529,
+      "tx": "TP_+4.0",
+      "id": "PAPER-237",
+      "paper": true
     },
     {
       "t": "2026-09-21 09:47:46 ET",
@@ -116,8 +692,12 @@
       "market": "BOARD",
       "side": "LONG",
       "size": 8.45,
+      "size_usd": 8.45,
       "pnl_usd": -4.3286,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -51.2261,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-236",
+      "paper": true
     },
     {
       "t": "2026-09-21 09:12:24 ET",
@@ -125,8 +705,12 @@
       "market": "KARURE",
       "side": "LONG",
       "size": 8.42,
+      "size_usd": 8.42,
       "pnl_usd": 0.4224,
-      "tx": "TP_+4.0"
+      "pnl_pct": 5.0161,
+      "tx": "TP_+4.0",
+      "id": "PAPER-235",
+      "paper": true
     },
     {
       "t": "2026-09-21 08:56:47 ET",
@@ -134,8 +718,12 @@
       "market": "KARURE",
       "side": "LONG",
       "size": 8.47,
+      "size_usd": 8.47,
       "pnl_usd": -0.6235,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -7.3609,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-234",
+      "paper": true
     },
     {
       "t": "2026-09-21 08:54:06 ET",
@@ -143,8 +731,12 @@
       "market": "REK",
       "side": "LONG",
       "size": 9.21,
+      "size_usd": 9.21,
       "pnl_usd": -9.21,
-      "tx": "CUT_HARD_QUOTER"
+      "pnl_pct": -100.0,
+      "tx": "CUT_HARD_QUOTER",
+      "id": "PAPER-233",
+      "paper": true
     },
     {
       "t": "2026-09-21 08:36:54 ET",
@@ -152,8 +744,12 @@
       "market": "REK",
       "side": "LONG",
       "size": 9.28,
+      "size_usd": 9.28,
       "pnl_usd": -0.9438,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -10.1703,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-232",
+      "paper": true
     },
     {
       "t": "2026-09-21 08:34:03 ET",
@@ -161,8 +757,12 @@
       "market": "POPEYE",
       "side": "LONG",
       "size": 9.48,
+      "size_usd": 9.48,
       "pnl_usd": -2.5065,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -26.4395,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-231",
+      "paper": true
     },
     {
       "t": "2026-09-21 08:18:12 ET",
@@ -170,8 +770,12 @@
       "market": "POPEYE",
       "side": "LONG",
       "size": 9.79,
+      "size_usd": 9.79,
       "pnl_usd": -3.8755,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -39.5862,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-230",
+      "paper": true
     },
     {
       "t": "2026-09-21 06:57:20 ET",
@@ -179,8 +783,12 @@
       "market": "HACHI",
       "side": "LONG",
       "size": 9.75,
+      "size_usd": 9.75,
       "pnl_usd": 0.5215,
-      "tx": "TP_+4.0"
+      "pnl_pct": 5.3491,
+      "tx": "TP_+4.0",
+      "id": "PAPER-229",
+      "paper": true
     },
     {
       "t": "2026-09-21 06:41:29 ET",
@@ -188,8 +796,12 @@
       "market": "HACHI",
       "side": "LONG",
       "size": 9.77,
+      "size_usd": 9.77,
       "pnl_usd": -0.3045,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -3.1166,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-228",
+      "paper": true
     },
     {
       "t": "2026-09-21 06:01:37 ET",
@@ -197,8 +809,12 @@
       "market": "RSRVCAT",
       "side": "LONG",
       "size": 9.73,
+      "size_usd": 9.73,
       "pnl_usd": 0.5309,
-      "tx": "TP_+4.0"
+      "pnl_pct": 5.4565,
+      "tx": "TP_+4.0",
+      "id": "PAPER-227",
+      "paper": true
     },
     {
       "t": "2026-09-21 05:46:16 ET",
@@ -206,8 +822,12 @@
       "market": "RSRVCAT",
       "side": "LONG",
       "size": 9.69,
+      "size_usd": 9.69,
       "pnl_usd": 0.5184,
-      "tx": "TP_+4.0"
+      "pnl_pct": 5.3501,
+      "tx": "TP_+4.0",
+      "id": "PAPER-226",
+      "paper": true
     },
     {
       "t": "2026-09-21 05:05:50 ET",
@@ -215,8 +835,12 @@
       "market": "UPTOBER",
       "side": "LONG",
       "size": 9.51,
+      "size_usd": 9.51,
       "pnl_usd": 2.2078,
-      "tx": "TP_+4.0"
+      "pnl_pct": 23.2157,
+      "tx": "TP_+4.0",
+      "id": "PAPER-225",
+      "paper": true
     },
     {
       "t": "2026-09-21 04:49:59 ET",
@@ -224,8 +848,12 @@
       "market": "UPTOBER",
       "side": "LONG",
       "size": 9.42,
+      "size_usd": 9.42,
       "pnl_usd": 1.2368,
-      "tx": "TP_+4.0"
+      "pnl_pct": 13.129,
+      "tx": "TP_+4.0",
+      "id": "PAPER-224",
+      "paper": true
     },
     {
       "t": "2026-09-21 03:53:03 ET",
@@ -233,8 +861,12 @@
       "market": "DOUCHEBAG",
       "side": "LONG",
       "size": 9.31,
+      "size_usd": 9.31,
       "pnl_usd": 1.3496,
-      "tx": "TP_+4.0"
+      "pnl_pct": 14.4958,
+      "tx": "TP_+4.0",
+      "id": "PAPER-223",
+      "paper": true
     },
     {
       "t": "2026-09-21 03:26:32 ET",
@@ -242,8 +874,12 @@
       "market": "TAPS",
       "side": "LONG",
       "size": 9.42,
+      "size_usd": 9.42,
       "pnl_usd": -1.3826,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -14.6777,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-222",
+      "paper": true
     },
     {
       "t": "2026-09-21 03:08:11 ET",
@@ -251,8 +887,12 @@
       "market": "TAPS",
       "side": "LONG",
       "size": 9.33,
+      "size_usd": 9.33,
       "pnl_usd": 1.0348,
-      "tx": "TP_+4.0"
+      "pnl_pct": 11.0911,
+      "tx": "TP_+4.0",
+      "id": "PAPER-221",
+      "paper": true
     },
     {
       "t": "2026-09-21 03:00:20 ET",
@@ -260,17 +900,25 @@
       "market": "DOUCHEBAG",
       "side": "LONG",
       "size": 9.22,
+      "size_usd": 9.22,
       "pnl_usd": 1.4165,
-      "tx": "TP_+4.0"
+      "pnl_pct": 15.3632,
+      "tx": "TP_+4.0",
+      "id": "PAPER-220",
+      "paper": true
     },
     {
-      "t": "2026-09-21 02:18:29 ET",
+      "t": "2026-09-21 02:18:28 ET",
       "kind": "PAPER",
       "market": "UNICOIN",
       "side": "LONG",
       "size": 9.18,
+      "size_usd": 9.18,
       "pnl_usd": 0.4851,
-      "tx": "TP_+4.0"
+      "pnl_pct": 5.2839,
+      "tx": "TP_+4.0",
+      "id": "PAPER-219",
+      "paper": true
     },
     {
       "t": "2026-09-21 02:15:18 ET",
@@ -278,8 +926,12 @@
       "market": "+",
       "side": "LONG",
       "size": 9.3,
+      "size_usd": 9.3,
       "pnl_usd": -1.4951,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -16.0764,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-218",
+      "paper": true
     },
     {
       "t": "2026-09-21 02:07:22 ET",
@@ -287,8 +939,12 @@
       "market": "BUCK",
       "side": "LONG",
       "size": 9.25,
+      "size_usd": 9.25,
       "pnl_usd": 0.6275,
-      "tx": "TP_+4.0"
+      "pnl_pct": 6.784,
+      "tx": "TP_+4.0",
+      "id": "PAPER-217",
+      "paper": true
     },
     {
       "t": "2026-09-21 02:02:31 ET",
@@ -296,8 +952,12 @@
       "market": "UNICOIN",
       "side": "LONG",
       "size": 9.17,
+      "size_usd": 9.17,
       "pnl_usd": 1.0013,
-      "tx": "TP_+4.0"
+      "pnl_pct": 10.9198,
+      "tx": "TP_+4.0",
+      "id": "PAPER-216",
+      "paper": true
     },
     {
       "t": "2026-09-21 01:59:41 ET",
@@ -305,8 +965,12 @@
       "market": "+",
       "side": "LONG",
       "size": 8.34,
+      "size_usd": 8.34,
       "pnl_usd": 10.4567,
-      "tx": "TP_+4.0"
+      "pnl_pct": 125.3798,
+      "tx": "TP_+4.0",
+      "id": "PAPER-215",
+      "paper": true
     },
     {
       "t": "2026-09-21 01:51:50 ET",
@@ -314,8 +978,12 @@
       "market": "BUCK",
       "side": "LONG",
       "size": 8.24,
+      "size_usd": 8.24,
       "pnl_usd": 1.158,
-      "tx": "TP_+4.0"
+      "pnl_pct": 14.0532,
+      "tx": "TP_+4.0",
+      "id": "PAPER-214",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:48:39 ET",
@@ -323,8 +991,12 @@
       "market": "NOSH",
       "side": "LONG",
       "size": 8.31,
+      "size_usd": 8.31,
       "pnl_usd": -0.7987,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -9.6119,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-213",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:48:19 ET",
@@ -332,8 +1004,12 @@
       "market": "TWINPAD",
       "side": "LONG",
       "size": 8.39,
+      "size_usd": 8.39,
       "pnl_usd": -1.0388,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -12.3817,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-212",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:33:08 ET",
@@ -341,8 +1017,12 @@
       "market": "NOSH",
       "side": "LONG",
       "size": 8.23,
+      "size_usd": 8.23,
       "pnl_usd": 2.0108,
-      "tx": "TP_+4.0"
+      "pnl_pct": 24.4323,
+      "tx": "TP_+4.0",
+      "id": "PAPER-211",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:32:17 ET",
@@ -350,8 +1030,12 @@
       "market": "TWINPAD",
       "side": "LONG",
       "size": 8.18,
+      "size_usd": 8.18,
       "pnl_usd": 0.6468,
-      "tx": "TP_+4.0"
+      "pnl_pct": 7.9066,
+      "tx": "TP_+4.0",
+      "id": "PAPER-210",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:31:27 ET",
@@ -359,8 +1043,12 @@
       "market": "10",
       "side": "LONG",
       "size": 8.18,
+      "size_usd": 8.18,
       "pnl_usd": -0.0247,
-      "tx": "TIME_SOFT_300s"
+      "pnl_pct": -0.3023,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-209",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:27:03 ET",
@@ -368,8 +1056,12 @@
       "market": "10",
       "side": "LONG",
       "size": 8.18,
+      "size_usd": 8.18,
       "pnl_usd": -0.0178,
-      "tx": "TIME_SOFT_300s"
+      "pnl_pct": -0.2172,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-208",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:22:29 ET",
@@ -377,8 +1069,12 @@
       "market": "TERMINATOR",
       "side": "LONG",
       "size": 8.18,
+      "size_usd": 8.18,
       "pnl_usd": -0.0251,
-      "tx": "TIME_SOFT_300s"
+      "pnl_pct": -0.3072,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-207",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:17:35 ET",
@@ -386,8 +1082,12 @@
       "market": "PRAY",
       "side": "LONG",
       "size": 8.14,
+      "size_usd": 8.14,
       "pnl_usd": 0.5613,
-      "tx": "TP_+4.0"
+      "pnl_pct": 6.8951,
+      "tx": "TP_+4.0",
+      "id": "PAPER-206",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:16:44 ET",
@@ -395,8 +1095,12 @@
       "market": "ASTROPIKA",
       "side": "LONG",
       "size": 8.23,
+      "size_usd": 8.23,
       "pnl_usd": -1.1595,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -14.0887,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-205",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:15:43 ET",
@@ -404,8 +1108,12 @@
       "market": "TERMINATOR",
       "side": "LONG",
       "size": 8.23,
+      "size_usd": 8.23,
       "pnl_usd": -0.0187,
-      "tx": "TIME_SOFT_300s"
+      "pnl_pct": -0.2275,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-204",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:10:45 ET",
@@ -413,17 +1121,25 @@
       "market": "PONS",
       "side": "LONG",
       "size": 8.23,
+      "size_usd": 8.23,
       "pnl_usd": -0.0141,
-      "tx": "TIME_SOFT_300s"
+      "pnl_pct": -0.1713,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-203",
+      "paper": true
     },
     {
-      "t": "2026-09-21 00:06:20 ET",
+      "t": "2026-09-21 00:06:19 ET",
       "kind": "PAPER",
       "market": "PONS",
       "side": "LONG",
       "size": 8.24,
+      "size_usd": 8.24,
       "pnl_usd": -0.0277,
-      "tx": "TIME_SOFT_300s"
+      "pnl_pct": -0.3358,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-202",
+      "paper": true
     },
     {
       "t": "2026-09-21 00:01:45 ET",
@@ -431,17 +1147,25 @@
       "market": "PRAY",
       "side": "LONG",
       "size": 8.2,
+      "size_usd": 8.2,
       "pnl_usd": 0.3959,
-      "tx": "TP_+4.0"
+      "pnl_pct": 4.8285,
+      "tx": "TP_+4.0",
+      "id": "PAPER-201",
+      "paper": true
     },
     {
-      "t": "2026-09-21 00:00:55 ET",
+      "t": "2026-09-21 00:00:54 ET",
       "kind": "PAPER",
       "market": "ASTROPIKA",
       "side": "LONG",
       "size": 8.23,
+      "size_usd": 8.23,
       "pnl_usd": -0.3874,
-      "tx": "CUT_HARD_-3.0"
+      "pnl_pct": -4.7076,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-200",
+      "paper": true
     },
     {
       "t": "2026-09-20 22:41:00 ET",
@@ -449,8 +1173,285 @@
       "market": "ASTROPIKA",
       "side": "LONG",
       "size": 8.17,
+      "size_usd": 8.17,
       "pnl_usd": 0.8149,
-      "tx": "TP_+4.0"
+      "pnl_pct": 9.9742,
+      "tx": "TP_+4.0",
+      "id": "PAPER-199",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 22:26:07 ET",
+      "kind": "PAPER",
+      "market": "VORTEX",
+      "side": "LONG",
+      "size": 8.2,
+      "size_usd": 8.2,
+      "pnl_usd": -0.4262,
+      "pnl_pct": -5.1979,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-198",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 22:15:17 ET",
+      "kind": "PAPER",
+      "market": "ASTROPIKA",
+      "side": "LONG",
+      "size": 8.1,
+      "size_usd": 8.1,
+      "pnl_usd": 1.2414,
+      "pnl_pct": 15.3256,
+      "tx": "TP_+4.0",
+      "id": "PAPER-197",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 22:10:26 ET",
+      "kind": "PAPER",
+      "market": "VORTEX",
+      "side": "LONG",
+      "size": 7.97,
+      "size_usd": 7.97,
+      "pnl_usd": 1.6627,
+      "pnl_pct": 20.8615,
+      "tx": "TP_+4.0",
+      "id": "PAPER-196",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 21:50:45 ET",
+      "kind": "PAPER",
+      "market": "ZLONG",
+      "side": "LONG",
+      "size": 8.0,
+      "size_usd": 8.0,
+      "pnl_usd": -0.3851,
+      "pnl_pct": -4.8135,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-195",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 21:32:54 ET",
+      "kind": "PAPER",
+      "market": "SI",
+      "side": "LONG",
+      "size": 7.99,
+      "size_usd": 7.99,
+      "pnl_usd": 0.1005,
+      "pnl_pct": 1.2579,
+      "tx": "TIME_EXIT_300s",
+      "id": "PAPER-194",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 21:24:23 ET",
+      "kind": "PAPER",
+      "market": "PRAY",
+      "side": "LONG",
+      "size": 8.0,
+      "size_usd": 8.0,
+      "pnl_usd": -0.0841,
+      "pnl_pct": -1.0509,
+      "tx": "TRAIL_1.0",
+      "id": "PAPER-193",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 21:12:10 ET",
+      "kind": "PAPER",
+      "market": "SI",
+      "side": "LONG",
+      "size": 7.97,
+      "size_usd": 7.97,
+      "pnl_usd": 0.4227,
+      "pnl_pct": 5.3036,
+      "tx": "TP_+4.0",
+      "id": "PAPER-192",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 21:04:19 ET",
+      "kind": "PAPER",
+      "market": "PRAY",
+      "side": "LONG",
+      "size": 7.44,
+      "size_usd": 7.44,
+      "pnl_usd": 6.5763,
+      "pnl_pct": 88.3915,
+      "tx": "TP_+4.0",
+      "id": "PAPER-191",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 20:57:59 ET",
+      "kind": "PAPER",
+      "market": "TERMINATOR",
+      "side": "LONG",
+      "size": 7.48,
+      "size_usd": 7.48,
+      "pnl_usd": -0.4269,
+      "pnl_pct": -5.7066,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-190",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 20:56:37 ET",
+      "kind": "PAPER",
+      "market": "ZEBRA",
+      "side": "LONG",
+      "size": 7.4,
+      "size_usd": 7.4,
+      "pnl_usd": 0.9219,
+      "pnl_pct": 12.4578,
+      "tx": "TP_+4.0",
+      "id": "PAPER-189",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 20:47:56 ET",
+      "kind": "PAPER",
+      "market": "JACKJACK",
+      "side": "LONG",
+      "size": 7.35,
+      "size_usd": 7.35,
+      "pnl_usd": 0.5946,
+      "pnl_pct": 8.0898,
+      "tx": "TP_+4.0",
+      "id": "PAPER-188",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 20:40:36 ET",
+      "kind": "PAPER",
+      "market": "ZEBRA",
+      "side": "LONG",
+      "size": 7.55,
+      "size_usd": 7.55,
+      "pnl_usd": -2.4784,
+      "pnl_pct": -32.8262,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-187",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 20:32:25 ET",
+      "kind": "PAPER",
+      "market": "JACKJACK",
+      "side": "LONG",
+      "size": 7.43,
+      "size_usd": 7.43,
+      "pnl_usd": 1.5125,
+      "pnl_pct": 20.3567,
+      "tx": "TP_+4.0",
+      "id": "PAPER-186",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 19:52:32 ET",
+      "kind": "PAPER",
+      "market": "TERMINATOR",
+      "side": "LONG",
+      "size": 8.08,
+      "size_usd": 8.08,
+      "pnl_usd": -8.08,
+      "pnl_pct": -100.0,
+      "tx": "CUT_HARD_QUOTER",
+      "id": "PAPER-185",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 18:55:58 ET",
+      "kind": "PAPER",
+      "market": "10",
+      "side": "LONG",
+      "size": 8.02,
+      "size_usd": 8.02,
+      "pnl_usd": 0.6794,
+      "pnl_pct": 8.4717,
+      "tx": "TP_+4.0",
+      "id": "PAPER-184",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 18:40:07 ET",
+      "kind": "PAPER",
+      "market": "10",
+      "side": "LONG",
+      "size": 7.26,
+      "size_usd": 7.26,
+      "pnl_usd": 9.5089,
+      "pnl_pct": 130.9763,
+      "tx": "TP_+4.0",
+      "id": "PAPER-183",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 18:02:35 ET",
+      "kind": "PAPER",
+      "market": "GATSBY",
+      "side": "LONG",
+      "size": 7.89,
+      "size_usd": 7.89,
+      "pnl_usd": -7.89,
+      "pnl_pct": -100.0,
+      "tx": "CUT_HARD_QUOTER",
+      "id": "PAPER-182",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 16:30:37 ET",
+      "kind": "PAPER",
+      "market": "RYU",
+      "side": "LONG",
+      "size": 7.86,
+      "size_usd": 7.86,
+      "pnl_usd": 0.3794,
+      "pnl_pct": 4.8266,
+      "tx": "TP_+4.0",
+      "id": "PAPER-181",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 16:13:45 ET",
+      "kind": "PAPER",
+      "market": "RYU",
+      "side": "LONG",
+      "size": 8.0,
+      "size_usd": 8.0,
+      "pnl_usd": -1.6867,
+      "pnl_pct": -21.0835,
+      "tx": "CUT_HARD_-3.0",
+      "id": "PAPER-180",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 16:12:44 ET",
+      "kind": "PAPER",
+      "market": "PONS",
+      "side": "LONG",
+      "size": 8.0,
+      "size_usd": 8.0,
+      "pnl_usd": -0.014,
+      "pnl_pct": -0.1747,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-179",
+      "paper": true
+    },
+    {
+      "t": "2026-09-20 16:08:10 ET",
+      "kind": "PAPER",
+      "market": "PONS",
+      "side": "LONG",
+      "size": 8.0,
+      "size_usd": 8.0,
+      "pnl_usd": -0.0094,
+      "pnl_pct": -0.1176,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-178",
+      "paper": true
     }
   ],
   "paper": {
@@ -461,8 +1462,64 @@
     "realized_pnl_usd": 1.5018,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "closed_n": 61,
-    "notes": "heartbeat \u00b7 preserves trade history"
+    "notes": "PAPER heartbeat \u00b7 eq $101.50 \u00b7 curve n=62 \u00b7 2026-09-21 11:08:52 ET",
+    "strategy": "MEME_V6_SCALE_QUALITY",
+    "closed_n": 61
   },
-  "notes": "PAPER heartbeat \u00b7 eq $101.50 \u00b7 FLAT \u00b7 2026-09-21 11:08:03 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $101.50 \u00b7 FLAT \u00b7 2026-09-21 11:08:52 ET",
+  "strategy": "MEME_V6_SCALE_QUALITY",
+  "jev": {
+    "action": "OPEN",
+    "detail": "pick=KARURE open_p=0.64 edge=2.39 conf=0.83",
+    "pick": "KARURE",
+    "open_p": 0.64,
+    "confidence": 0.83,
+    "edge_score": 2.39,
+    "picks": [
+      {
+        "sym": "KARURE",
+        "lost_bps": 4,
+        "selected": true,
+        "probs": 0.86
+      },
+      {
+        "sym": "POPEYE",
+        "lost_bps": 8,
+        "selected": false,
+        "probs": 0.11
+      },
+      {
+        "sym": "+",
+        "lost_bps": 20,
+        "selected": false,
+        "probs": 0.0
+      },
+      {
+        "sym": "IPO",
+        "lost_bps": 27,
+        "selected": false,
+        "probs": 0.0
+      }
+    ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "KARURE",
+        "confidence": 0.83
+      },
+      "edge": {
+        "type": "score",
+        "score": 2.39,
+        "confidence": 0.17
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
+    "idle": null,
+    "stamp_et": "2026-09-21 11:08:17 ET",
+    "live": true
+  }
 }

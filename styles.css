@@ -481,3 +481,7 @@ footer {
 .status.paper { background: rgba(125, 211, 252, 0.18); color: #7dd3fc; }
 .wallet-strip { margin-top: 0.85rem; }
 .wallet-strip .wallet-full { font-size: 0.7rem; }
+
+.range-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}
+.range-btn{appearance:none;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#c8cdd6;border-radius:999px;padding:6px 12px;font:600 12px/1.2 system-ui,sans-serif}
+.range-btn.active{background:#fff;color:#0b0d12;border-color:#fff}

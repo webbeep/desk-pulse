@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Desk Pulse</title>
-  <link rel="stylesheet" href="styles.css?v=v2pulse4">
+  <link rel="stylesheet" href="styles.css?v=v2pulse5">
 </head>
 <body>
   <header class="top">
@@ -92,6 +92,12 @@
 
     <details class="fold">
       <summary>History</summary>
+      <div class="range-row" id="hist-range" role="group" aria-label="Chart range">
+        <button type="button" class="range-btn" data-range="1h">1h</button>
+        <button type="button" class="range-btn" data-range="6h">6h</button>
+        <button type="button" class="range-btn active" data-range="session">Session</button>
+        <button type="button" class="range-btn" data-range="all">All</button>
+      </div>
       <div id="spark-wrap" class="spark-wrap">
         <svg id="spark" viewBox="0 0 320 64" preserveAspectRatio="none" aria-hidden="true"></svg>
       </div>
@@ -128,6 +134,6 @@
       <span>webbeep · auto 30s</span>
     </footer>
   </main>
-  <script src="app.js?v=v2pulse4"></script>
+  <script src="app.js?v=v2pulse5"></script>
 </body>
 </html>
