@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-21 08:55:34 ET",
+  "updated_et": "2026-09-21 08:56:22 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 105.8636,
-  "upnl_usd": 0.0,
-  "equity_usd": 105.8636,
+  "upnl_usd": -0.0354,
+  "equity_usd": 105.8282,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": 5.8636,
-  "total_pnl_pct": 5.8636,
-  "mark_eth": 2729.995,
-  "mark": 2729.995,
+  "total_pnl_usd": 5.8282,
+  "total_pnl_pct": 5.8282,
+  "mark_eth": 2729.305,
+  "mark": 2729.305,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2729.995
+    "ETH": 2729.305
   },
   "holdings": {
-    "paper_cash_usd": 105.8636,
+    "paper_cash_usd": 97.3936,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -60,6 +60,13 @@
       "equity_usd": 105.8636,
       "liquid_usd": 105.8636,
       "upnl_usd": 0.0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 08:56:22 ET",
+      "equity_usd": 105.8282,
+      "liquid_usd": 105.8636,
+      "upnl_usd": -0.0354,
       "n_pos": 0
     }
   ],
@@ -429,12 +436,16 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 105.8636,
-    "mtm_equity_usd": 105.8636,
+    "mtm_equity_usd": 105.8282,
     "realized_pnl_usd": 5.8636,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
+    "unrealized_pnl_usd": -0.0354,
+    "open": {
+      "id": "PAPER-234",
+      "ticker": "KARURE",
+      "usd": 8.47
+    },
     "closed_n": 56,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $105.86 \u00b7 FLAT \u00b7 2026-09-21 08:55:34 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $105.83 \u00b7 FLAT \u00b7 2026-09-21 08:56:22 ET"
 }
