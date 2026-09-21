@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 18:44:16 ET",
+  "updated_et": "2026-09-21 18:44:58 ET",
   "mode": "LIVE",
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 11.2779,
@@ -34,7 +34,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-51",
+      "market": "FROG",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "tx": "0x2622dbfb49a49401ebe12c10512d06b46512e7f02df452ae9f533df12484cee7",
+      "token": "0x3176039dE80eCc91C14C9e6f011c9DF6412Ddc97",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "trades": [
     {
       "id": "LIVE-SCALP-50-EXIT",
@@ -2081,21 +2092,35 @@
   ],
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x255978692c50d8af9e89885a10b2c9b0b31da43dfd2190ab14f893355602aa8f",
-    "last_exit_reason": "TIME_FLAT_240s",
-    "last_exit_upnl": -0.0099
+    "open": true,
+    "flat": false,
+    "ticker": "FROG",
+    "tx": "0x2622dbfb49a49401ebe12c10512d06b46512e7f02df452ae9f533df12484cee7",
+    "size_usd": 8.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-51",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "notes": "LIVE EXIT + \u00b7 TIME_FLAT_240s \u00b7 tx 0x255978692c50d8af9e89885a10b2c9b0b31da43dfd2190ab14f893355602aa8f \u00b7 2026-09-21 18:44:16 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-51",
+    "market": "FROG",
+    "side": "LONG",
+    "size_usd": 8.0,
+    "tx": "0x2622dbfb49a49401ebe12c10512d06b46512e7f02df452ae9f533df12484cee7",
+    "token": "0x3176039dE80eCc91C14C9e6f011c9DF6412Ddc97",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "realized_ledger_usd": -3.4567,
   "rh_eth": 0.000910765098665932,
   "rh_eth_wei": 910765098665932,
