@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 14:57:18 ET",
+  "updated_et": "2026-09-21 14:57:22 ET",
   "mode": "LIVE",
-  "status": "EXITING:CUT_HARD_QUOTER",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 28.9552,
   "equity_usd": 20.9552,
@@ -38,6 +38,18 @@
   },
   "positions": [],
   "trades": [
+    {
+      "id": "LIVE-SCALP-6-EXIT",
+      "market": "OCTOCAT",
+      "side": "SELL",
+      "size_usd": 8.0,
+      "pnl_usd": -8.0,
+      "mtm_pct": -100.0,
+      "tx": null,
+      "reason": "CUT_HARD_QUOTER",
+      "stamp_et": "2026-09-21 14:57:22 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-6-EXIT",
       "market": "OCTOCAT",
@@ -1948,6 +1960,13 @@
       "liquid_usd": 28.9552,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 14:57:22 ET",
+      "equity_usd": 20.9552,
+      "liquid_usd": 28.9552,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -1958,15 +1977,11 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xf85e917e91ddf0e13927ad6734c2309af744ea7e4dbf6f3d1b1769d84a91c9b1",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 3130,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "CUT_HARD_QUOTER",
+    "last_exit_upnl": null
   },
-  "notes": "LIVE MTM OCTOCAT uPnL $-8.0 (-100.0%) \u00b7 held 3130s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 14:57:16 ET \u00b7 CUT CUT_HARD_QUOTER",
+  "notes": "LIVE EXIT OCTOCAT \u00b7 CUT_HARD_QUOTER \u00b7 tx None \u00b7 2026-09-21 14:57:22 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
