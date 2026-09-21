@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-09-21 12:01:58 ET",
+  "updated_et": "2026-09-21 12:02:51 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 23.5991,
-  "upnl_usd": 0.0,
-  "equity_usd": 19.3156,
-  "status": "EXITED",
-  "funding_usd": 33.6811,
+  "liquid_usd": 29.0262,
+  "upnl_usd": 0,
+  "equity_usd": 29.0262,
+  "status": "FLAT",
+  "funding_usd": 29.0262,
   "funding_note": "LIVE_FUNDED_RH \u00b7 rh=0.011349 l1=0.000880 \u00b7 liquid=$33.68 \u00b7 BLOCKER: no LIVE Uniswap scalp encode \u00b7 awaiting Wire pack \u00b7 checklist RISK-CHECKLIST-LIVE-SCALP-1 \u00b7 no EXECUTE \u00b7 2026-09-21 11:48:44 ET",
-  "total_pnl_usd": 0.0,
+  "total_pnl_usd": -4.7438,
   "total_pnl_pct": 0.0,
   "mark_eth": 2756.2,
   "mark": 2756.2,
@@ -18,12 +18,8 @@
   },
   "holdings": {
     "l1_eth": 0.000879538014354878,
-    "rh_eth": 0.00768056766893693,
-    "karure": 2228.4566726158623,
-    "arb_eth": 0,
-    "arb_usdc": 0,
-    "base_eth": 0,
-    "base_usdc": 0
+    "rh_eth": 0.00766722237031293,
+    "rh_weth": 0.001998957785047602
   },
   "residuals": {
     "l1_eth": 0.0123489,
@@ -143,20 +139,18 @@
   ],
   "paper": {
     "active": false,
-    "archived": true,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "archived": true
   },
-  "notes": "LIVE EXIT KARURE \u00b7 HARD_SL_USD_-4.2835 \u00b7 tx 0x23a3f1811dabe4443f650eafb1d5d67f7f5946f6a5d3a534c2adad6ac711a588 \u00b7 2026-09-21 12:01:58 ET",
+  "notes": "LIVE FLAT after KARURE \u2212$4.60 \u00b7 liquid $29.0262 \u00b7 next \u2264$8 + KARURE banned \u00b7 2026-09-21 12:02:51 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$2|-20% \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
   "live": {
     "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x23a3f1811dabe4443f650eafb1d5d67f7f5946f6a5d3a534c2adad6ac711a588",
-    "last_exit_reason": "HARD_SL_USD_-4.2835",
-    "last_exit_upnl": -4.6026
+    "last": "KARURE",
+    "last_pnl_usd": -4.6,
+    "karure_banned": true
   },
   "jev": {
     "paper_gates": false,
