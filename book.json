@@ -1,24 +1,24 @@
 {
-  "updated_et": "2026-09-21 11:44:16 ET",
+  "updated_et": "2026-09-21 11:44:48 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 2.411,
+  "liquid_usd": 33.5397,
   "upnl_usd": 0,
-  "equity_usd": 2.411,
-  "status": "LIVE",
-  "funding_usd": 2.411,
-  "funding_note": "LIVE \u00b7 awaiting RH credit (5.4m) \u00b7 RH 0.000000 \u00b7 L1 0.000880 \u00b7 bridge 0xf4ebde15\u2026 \u00b7 2026-09-21 11:44:16 ET",
+  "equity_usd": 33.5397,
+  "status": "LIVE_FUNDED_RH",
+  "funding_usd": 33.5397,
+  "funding_note": "LIVE \u00b7 RH CREDIT 0.011349 ETH \u00b7 L1 0.000880 \u00b7 0xf4ebde15\u2026 \u00b7 2026-09-21 11:44:48 ET",
   "total_pnl_usd": 0.0,
   "total_pnl_pct": 0.0,
-  "mark_eth": 2741.17,
-  "mark": 2741.17,
+  "mark_eth": 2742.76,
+  "mark": 2742.76,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2741.17
+    "ETH": 2742.76
   },
   "holdings": {
     "l1_eth": 0.000879538014354878,
-    "rh_eth": 0.0,
+    "rh_eth": 0.0113489,
     "arb_eth": 0,
     "arb_usdc": 0,
     "base_eth": 0,
@@ -66,6 +66,15 @@
       "n_pos": 0,
       "reason": "RH_BRIDGE_SENT",
       "note": "0xf4ebde155b56c428fc2b285dd161b108751a480107cf1290f61938bb0ac49b6f"
+    },
+    {
+      "t": "2026-09-21 11:44:48 ET",
+      "equity_usd": 33.5397,
+      "liquid_usd": 33.5397,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "reason": "RH_CREDIT",
+      "note": "LIVE \u00b7 RH CREDIT 0.011349 ETH \u00b7 L1 0.000880 \u00b7 0xf4ebde15\u2026 \u00b7 2026-09-21 11:44:48 ET"
     }
   ],
   "trades": [],
@@ -73,15 +82,15 @@
     "active": false,
     "archived": true
   },
-  "notes": "LIVE \u00b7 awaiting RH credit (5.4m) \u00b7 RH 0.000000 \u00b7 L1 0.000880 \u00b7 bridge 0xf4ebde15\u2026 \u00b7 2026-09-21 11:44:16 ET \u00b7 poll#11 via https://rpc.mainnet.chain.robinhood.com",
-  "strategy": "RH_BRIDGE_AWAIT",
+  "notes": "LIVE \u00b7 RH CREDIT 0.011349 ETH \u00b7 L1 0.000880 \u00b7 0xf4ebde15\u2026 \u00b7 2026-09-21 11:44:48 ET \u00b7 FUNDED via https://rpc.mainnet.chain.robinhood.com",
+  "strategy": "LIVE_FUNDED_RH",
   "live": {
     "bridge_tx": "0xf4ebde155b56c428fc2b285dd161b108751a480107cf1290f61938bb0ac49b6f",
     "bridge_status": "SUCCESS",
-    "rh_eth": 0.0,
+    "rh_eth": 0.0113489,
     "l1_eth": 0.000879538014354878,
-    "awaiting_rh_credit": true,
-    "poll_mins": 5.43
+    "awaiting_rh_credit": false,
+    "poll_mins": 5.97
   },
   "jev": {
     "paper_gates": false,
