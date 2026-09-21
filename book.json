@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-21 11:25:05 ET",
+  "updated_et": "2026-09-21 11:25:52 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 109.5334,
-  "upnl_usd": -0.0123,
-  "equity_usd": 109.5211,
+  "upnl_usd": -0.1236,
+  "equity_usd": 109.4098,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 9.5211,
-  "total_pnl_pct": 9.5211,
-  "mark_eth": 2733.525,
-  "mark": 2733.525,
+  "total_pnl_usd": 9.4098,
+  "total_pnl_pct": 9.4098,
+  "mark_eth": 2733.135,
+  "mark": 2733.135,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2733.525
+    "ETH": 2733.135
   },
   "holdings": {
     "paper_cash_usd": 97.5334,
@@ -46,15 +46,31 @@
       "side": "LONG",
       "size_usd": 12.0,
       "entry": 1.1399270718008183e-05,
-      "mark": 1.1365262893699459e-05,
-      "uPnL": -0.0358,
-      "mtm_pct": -0.2987,
+      "mark": 1.136488291800886e-05,
+      "uPnL": -0.0362,
+      "mtm_pct": -0.3014,
       "sl": 9.119416574406547e-06,
       "tp": 1.7098906077012276e-05,
       "lev": 1,
       "paper": true,
       "liq": 63246764568802612649417,
-      "held_min": 1.56
+      "held_min": 2.18
+    },
+    {
+      "id": "PAPER-252",
+      "market": "POPEYE",
+      "side": "LONG",
+      "size_usd": 12.0,
+      "entry": 0.00010693396624479552,
+      "mark": 0.00010615513052397927,
+      "uPnL": -0.0874,
+      "mtm_pct": -0.7287,
+      "sl": 8.554717299583642e-05,
+      "tp": 0.00016040094936719328,
+      "lev": 1,
+      "paper": true,
+      "liq": 67083695638153680707333,
+      "held_min": 0.38
     }
   ],
   "pnl_history": [
@@ -797,8 +813,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 109.5211,
-      "liquid_usd": 109.5211,
+      "equity_usd": 109.4098,
+      "liquid_usd": 109.4098,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -1758,40 +1774,40 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 109.5334,
-    "mtm_equity_usd": 109.5211,
+    "mtm_equity_usd": 109.4098,
     "realized_pnl_usd": 9.5334,
-    "unrealized_pnl_usd": -0.0123,
+    "unrealized_pnl_usd": -0.1236,
     "open": {
       "id": "PAPER-248",
       "ticker": "+",
       "usd": 12.0,
-      "mtm_pct": -0.2987
+      "mtm_pct": -0.3014
     },
-    "notes": "PAPER heartbeat \u00b7 eq $109.53 \u00b7 curve n=75 \u00b7 2026-09-21 11:25:05 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $109.53 \u00b7 curve n=75 \u00b7 2026-09-21 11:25:52 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 73
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $109.53 \u00b7 2026-09-21 11:25:05 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $109.53 \u00b7 2026-09-21 11:25:52 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=KARURE open_p=0.65 edge=2.17 conf=0.89",
+    "detail": "pick=KARURE open_p=0.65 edge=2.12 conf=0.87",
     "pick": "KARURE",
     "open_p": 0.65,
-    "confidence": 0.89,
-    "edge_score": 2.17,
+    "confidence": 0.87,
+    "edge_score": 2.12,
     "picks": [
       {
         "sym": "KARURE",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.91
+        "probs": 0.9
       },
       {
         "sym": "POPEYE",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.09
       },
       {
         "sym": "NAUTILO",
@@ -1817,11 +1833,11 @@
       "pick": {
         "type": "choice",
         "choice": "KARURE",
-        "confidence": 0.89
+        "confidence": 0.87
       },
       "edge": {
         "type": "score",
-        "score": 2.17,
+        "score": 2.12,
         "confidence": 0.28
       },
       "open_now": {
@@ -1830,7 +1846,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-21 11:24:52 ET",
+    "stamp_et": "2026-09-21 11:25:46 ET",
     "live": true
   }
 }
