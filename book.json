@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-21 00:01:09 ET",
+  "updated_et": "2026-09-21 00:01:56 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 102.547,
+  "liquid_usd": 102.9429,
   "upnl_usd": 0.0,
-  "equity_usd": 102.547,
+  "equity_usd": 102.9429,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": 2.547,
-  "total_pnl_pct": 2.547,
-  "mark_eth": 2665.135,
-  "mark": 2665.135,
+  "total_pnl_usd": 2.9429,
+  "total_pnl_pct": 2.9429,
+  "mark_eth": 2666.535,
+  "mark": 2666.535,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2665.135
+    "ETH": 2666.535
   },
   "holdings": {
-    "paper_cash_usd": 102.547,
+    "paper_cash_usd": 102.9429,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,21 +42,30 @@
   "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-21 00:00:55 ET",
-      "equity_usd": 102.547,
-      "liquid_usd": 102.547,
+      "t": "2026-09-21 00:01:45 ET",
+      "equity_usd": 102.9429,
+      "liquid_usd": 102.9429,
       "upnl_usd": 0.0,
       "n_pos": 0
     },
     {
-      "t": "2026-09-21 00:01:09 ET",
-      "equity_usd": 102.547,
-      "liquid_usd": 102.547,
+      "t": "2026-09-21 00:01:56 ET",
+      "equity_usd": 102.9429,
+      "liquid_usd": 102.9429,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-21 00:01:45 ET",
+      "kind": "PAPER",
+      "market": "PRAY",
+      "side": "LONG",
+      "size": 8.2,
+      "pnl_usd": 0.3959,
+      "tx": "TP_+4.0"
+    },
     {
       "t": "2026-09-21 00:00:55 ET",
       "kind": "PAPER",
@@ -268,13 +277,13 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 102.547,
-    "mtm_equity_usd": 102.547,
-    "realized_pnl_usd": 2.547,
+    "paper_equity_usd": 102.9429,
+    "mtm_equity_usd": 102.9429,
+    "realized_pnl_usd": 2.9429,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "closed_n": 23,
+    "closed_n": 24,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $102.55 \u00b7 FLAT \u00b7 2026-09-21 00:01:09 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $102.94 \u00b7 FLAT \u00b7 2026-09-21 00:01:56 ET"
 }
