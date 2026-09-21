@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 13:56:45 ET",
+  "updated_et": "2026-09-21 13:57:31 ET",
   "mode": "LIVE",
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 28.9552,
   "equity_usd": 27.1485,
@@ -36,7 +36,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-4",
+      "market": "DRIP",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "tx": "0xd29ba23e9929731acb846b6297b6759cc08c10bf9785cb60c0a9303b58824b4c",
+      "token": "0x17E0Ac93D715110bf02B2c55b5fCCf04065a13A3",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "trades": [
     {
       "id": "LIVE-SCALP-3-EXIT",
@@ -185,19 +196,33 @@
   "paper": {
     "active": false,
     "archived": true,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x7a5ffdfc27d8ba8307f7e911f8d5df3b332b72cb2102e20c998d001fd0ec565c",
-    "last_exit_reason": "HARD_SL_USD_-1.8067",
-    "last_exit_upnl": -1.6239
+    "open": true,
+    "flat": false,
+    "ticker": "DRIP",
+    "tx": "0xd29ba23e9929731acb846b6297b6759cc08c10bf9785cb60c0a9303b58824b4c",
+    "size_usd": 8.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-4",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "notes": "LIVE EXIT DRIP \u00b7 HARD_SL_USD_-1.8067 \u00b7 tx 0x7a5ffdfc27d8ba8307f7e911f8d5df3b332b72cb2102e20c998d001fd0ec565c \u00b7 2026-09-21 13:56:45 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": null
+  "position": {
+    "id": "LIVE-SCALP-4",
+    "market": "DRIP",
+    "side": "LONG",
+    "size_usd": 8.0,
+    "tx": "0xd29ba23e9929731acb846b6297b6759cc08c10bf9785cb60c0a9303b58824b4c",
+    "token": "0x17E0Ac93D715110bf02B2c55b5fCCf04065a13A3",
+    "paper": false,
+    "uPnL": 0.0
+  }
 }
