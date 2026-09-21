@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 13:56:37 ET",
+  "updated_et": "2026-09-21 13:56:45 ET",
   "mode": "LIVE",
-  "status": "EXITING:HARD_SL_USD_-1.8067",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 28.9552,
   "equity_usd": 27.1485,
@@ -38,6 +38,18 @@
   },
   "positions": [],
   "trades": [
+    {
+      "id": "LIVE-SCALP-3-EXIT",
+      "market": "DRIP",
+      "side": "SELL",
+      "size_usd": 8.0,
+      "pnl_usd": -1.6239,
+      "mtm_pct": -20.2983,
+      "tx": "0x7a5ffdfc27d8ba8307f7e911f8d5df3b332b72cb2102e20c998d001fd0ec565c",
+      "reason": "HARD_SL_USD_-1.8067",
+      "stamp_et": "2026-09-21 13:56:45 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-1",
       "ticker": "KARURE",
@@ -161,6 +173,13 @@
       "liquid_usd": 28.9552,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 13:56:45 ET",
+      "equity_usd": 27.1485,
+      "liquid_usd": 28.9552,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -171,15 +190,11 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x8d5a5b964129c8b50db178e1fe7e36a72b907972b1334cbc5cf738e7f0674c45",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 83,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x7a5ffdfc27d8ba8307f7e911f8d5df3b332b72cb2102e20c998d001fd0ec565c",
+    "last_exit_reason": "HARD_SL_USD_-1.8067",
+    "last_exit_upnl": -1.6239
   },
-  "notes": "LIVE MTM DRIP uPnL $-1.8067 (-22.5837%) \u00b7 held 84s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 13:56:35 ET \u00b7 CUT HARD_SL_USD_-1.8067",
+  "notes": "LIVE EXIT DRIP \u00b7 HARD_SL_USD_-1.8067 \u00b7 tx 0x7a5ffdfc27d8ba8307f7e911f8d5df3b332b72cb2102e20c998d001fd0ec565c \u00b7 2026-09-21 13:56:45 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
