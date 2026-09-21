@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-21 15:01:05 ET",
+  "updated_et": "2026-09-21 15:01:20 ET",
   "mode": "LIVE",
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 28.9552,
-  "equity_usd": 28.9552,
-  "upnl_usd": 0.0,
+  "equity_usd": 30.5909,
+  "upnl_usd": 1.6357,
   "funding_usd": 33.77,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-4.6094 \u00b7 SoT chain mark",
   "total_pnl_usd": -4.8148,
   "total_pnl_pct": -14.2576,
-  "mark_eth": 2758.26,
-  "mark": 2758.26,
+  "mark_eth": 2757.89,
+  "mark": 2757.89,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2758.26
+    "ETH": 2757.89
   },
   "holdings": {
     "l1_eth": 0.000879538014354878,
@@ -43,16 +43,16 @@
       "side": "LONG",
       "size_usd": 8.0,
       "entry": 0.00017734420357673776,
-      "mark": 0.0001773447485496976,
-      "uPnL": 0.0,
-      "mtm_pct": 0.0003,
+      "mark": 0.0002136049283242591,
+      "uPnL": 1.6357,
+      "mtm_pct": 20.4465,
       "lev": 1,
       "paper": false,
       "tx": "0x92b4495de6b03eaec103e87f1567c025485656279b4c22dfe5eda5bd9a5fc6fb",
       "token": "0x42a663fBF6C9877801CF4e66A6Ae0650689c991F",
-      "held_sec": 5,
-      "weth_out": 0.002900388137354479,
-      "usd_out": 8.000025
+      "held_sec": 20,
+      "weth_out": 0.003493874629511266,
+      "usd_out": 9.635722
     }
   ],
   "trades": [
@@ -2091,6 +2091,13 @@
       "liquid_usd": 28.9552,
       "upnl_usd": 0.0,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-21 15:01:20 ET",
+      "equity_usd": 30.5909,
+      "liquid_usd": 28.9552,
+      "upnl_usd": 1.6357,
+      "n_pos": 1
     }
   ],
   "paper": {
@@ -2104,12 +2111,12 @@
     "tx": "0x92b4495de6b03eaec103e87f1567c025485656279b4c22dfe5eda5bd9a5fc6fb",
     "size_usd": 8.0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 0.0003,
-    "upnl_usd": 0.0,
-    "held_sec": 5,
+    "mtm_pct": 20.4465,
+    "upnl_usd": 1.6357,
+    "held_sec": 20,
     "watcher": "rh_live_mtm_loop"
   },
-  "notes": "LIVE MTM AI uPnL $0.0 (0.0003%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 15:01:05 ET",
+  "notes": "LIVE MTM AI uPnL $1.6357 (20.4465%) \u00b7 held 21s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 15:01:20 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
@@ -2120,15 +2127,15 @@
     "side": "LONG",
     "size_usd": 8.0,
     "entry": 0.00017734420357673776,
-    "mark": 0.0001773447485496976,
-    "uPnL": 0.0,
-    "mtm_pct": 0.0003,
+    "mark": 0.0002136049283242591,
+    "uPnL": 1.6357,
+    "mtm_pct": 20.4465,
     "lev": 1,
     "paper": false,
     "tx": "0x92b4495de6b03eaec103e87f1567c025485656279b4c22dfe5eda5bd9a5fc6fb",
     "token": "0x42a663fBF6C9877801CF4e66A6Ae0650689c991F",
-    "held_sec": 5,
-    "weth_out": 0.002900388137354479,
-    "usd_out": 8.000025
+    "held_sec": 20,
+    "weth_out": 0.003493874629511266,
+    "usd_out": 9.635722
   }
 }
