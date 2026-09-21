@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-21 11:29:49 ET",
+  "updated_et": "2026-09-21 11:30:36 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 113.7623,
-  "upnl_usd": -0.0269,
-  "equity_usd": 113.7354,
+  "upnl_usd": 0.0,
+  "equity_usd": 113.7623,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 13.7354,
-  "total_pnl_pct": 13.7354,
-  "mark_eth": 2731.295,
-  "mark": 2731.295,
+  "total_pnl_usd": 13.7623,
+  "total_pnl_pct": 13.7623,
+  "mark_eth": 2735.74,
+  "mark": 2735.74,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2731.295
+    "ETH": 2735.74
   },
   "holdings": {
-    "paper_cash_usd": 101.7623,
+    "paper_cash_usd": 113.7623,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-257",
-      "market": "+",
-      "side": "LONG",
-      "size_usd": 12.0,
-      "entry": 1.1383115862892749e-05,
-      "mark": 1.1357598711500097e-05,
-      "uPnL": -0.0269,
-      "mtm_pct": -0.2242,
-      "sl": 9.1064926903142e-06,
-      "tp": 1.7074673794339123e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 63246764568802612649417,
-      "held_min": 0.59
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -854,13 +837,6 @@
       "ticker": "+",
       "reason": "TIME_SOFT_180s",
       "pnl_usd": -0.0392
-    },
-    {
-      "t": "now",
-      "equity_usd": 113.7354,
-      "liquid_usd": 113.7354,
-      "upnl_usd": 0.0,
-      "n_pos": 0
     }
   ],
   "trades": [
@@ -1896,20 +1872,15 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 113.7623,
-    "mtm_equity_usd": 113.7354,
+    "mtm_equity_usd": 113.7623,
     "realized_pnl_usd": 13.7623,
-    "unrealized_pnl_usd": -0.0269,
-    "open": {
-      "id": "PAPER-257",
-      "ticker": "+",
-      "usd": 12.0,
-      "mtm_pct": -0.2242
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $113.76 \u00b7 curve n=81 \u00b7 2026-09-21 11:29:49 ET",
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $113.76 \u00b7 curve n=80 \u00b7 2026-09-21 11:30:36 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 79
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $113.76 \u00b7 2026-09-21 11:29:49 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $113.76 \u00b7 FLAT \u00b7 2026-09-21 11:30:36 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
