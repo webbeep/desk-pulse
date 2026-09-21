@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 17:40:09 ET",
+  "updated_et": "2026-09-21 17:40:18 ET",
   "mode": "LIVE",
-  "status": "EXITING:TP_V6_+3.5",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 12.089,
@@ -36,6 +36,18 @@
   },
   "positions": [],
   "trades": [
+    {
+      "id": "LIVE-SCALP-37-EXIT",
+      "market": "COPCAT",
+      "side": "SELL",
+      "size_usd": 8.0,
+      "pnl_usd": 1.2601,
+      "mtm_pct": 15.7516,
+      "tx": "0xbe2337251c2df0a97c56739a2f48e8b8a708c471c47e19ba2e7193edd02204ee",
+      "reason": "TP_V6_+3.5",
+      "stamp_et": "2026-09-21 17:40:18 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-36-EXIT",
       "market": "+",
@@ -486,13 +498,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 16:42:14 ET",
-      "equity_usd": 11.2836,
-      "liquid_usd": 11.2872,
-      "upnl_usd": -0.0036,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-21 16:42:26 ET",
       "equity_usd": 11.281,
@@ -1885,6 +1890,13 @@
       "liquid_usd": 11.2872,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 17:40:18 ET",
+      "equity_usd": 12.089,
+      "liquid_usd": 11.2872,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -1894,15 +1906,11 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x06b56da3f2756cdb955b28afcb456633bf2c90726775ce6b01e21741c3aa62df",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 5,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xbe2337251c2df0a97c56739a2f48e8b8a708c471c47e19ba2e7193edd02204ee",
+    "last_exit_reason": "TP_V6_+3.5",
+    "last_exit_upnl": 1.2601
   },
-  "notes": "LIVE MTM COPCAT uPnL $0.8018 (10.0224%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 17:40:07 ET \u00b7 CUT TP_V6_+3.5",
+  "notes": "LIVE EXIT COPCAT \u00b7 TP_V6_+3.5 \u00b7 tx 0xbe2337251c2df0a97c56739a2f48e8b8a708c471c47e19ba2e7193edd02204ee \u00b7 2026-09-21 17:40:18 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
