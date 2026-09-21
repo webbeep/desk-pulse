@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-21 00:15:18 ET",
+  "updated_et": "2026-09-21 00:16:05 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 102.9011,
-  "upnl_usd": -0.0226,
-  "equity_usd": 102.8785,
+  "liquid_usd": 102.8824,
+  "upnl_usd": -0.0057,
+  "equity_usd": 102.8767,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": 2.8785,
-  "total_pnl_pct": 2.8785,
-  "mark_eth": 2658.835,
-  "mark": 2658.835,
+  "total_pnl_usd": 2.8767,
+  "total_pnl_pct": 2.8767,
+  "mark_eth": 2660.09,
+  "mark": 2660.09,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2658.835
+    "ETH": 2660.09
   },
   "holdings": {
-    "paper_cash_usd": 94.6711,
+    "paper_cash_usd": 94.6524,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -41,39 +41,48 @@
   },
   "positions": [
     {
-      "id": "PAPER-204",
-      "market": "TERMINATOR",
+      "id": "PAPER-205",
+      "market": "ASTROPIKA",
       "side": "LONG",
       "size_usd": 8.23,
-      "entry": 8.085402020381487e-06,
-      "mark": 8.063199093812761e-06,
-      "uPnL": -0.0226,
-      "mtm_pct": -0.2752,
-      "sl": 6.46832161630519e-06,
-      "tp": 1.2128103030572231e-05,
+      "entry": 0.0010279866994160063,
+      "mark": 0.0010272747280689017,
+      "uPnL": -0.0057,
+      "mtm_pct": -0.0697,
+      "sl": 0.0008223893595328051,
+      "tp": 0.0015419800491240094,
       "lev": 1,
       "paper": true,
-      "liq": 54773207779044021846921,
-      "held_min": 3.53
+      "liq": 20000380864153724677470,
+      "held_min": 0.09
     }
   ],
   "pnl_history": [
     {
-      "t": "2026-09-21 00:14:58 ET",
-      "equity_usd": 102.8785,
-      "liquid_usd": 102.9011,
-      "upnl_usd": -0.0226,
+      "t": "2026-09-21 00:16:04 ET",
+      "equity_usd": 102.8767,
+      "liquid_usd": 102.8824,
+      "upnl_usd": -0.0057,
       "n_pos": 1
     },
     {
-      "t": "2026-09-21 00:15:18 ET",
-      "equity_usd": 102.8785,
-      "liquid_usd": 102.9011,
-      "upnl_usd": -0.0226,
+      "t": "2026-09-21 00:16:05 ET",
+      "equity_usd": 102.8767,
+      "liquid_usd": 102.8824,
+      "upnl_usd": -0.0057,
       "n_pos": 1
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-21 00:15:43 ET",
+      "kind": "PAPER",
+      "market": "TERMINATOR",
+      "side": "LONG",
+      "size": 8.23,
+      "pnl_usd": -0.0187,
+      "tx": "TIME_SOFT_300s"
+    },
     {
       "t": "2026-09-21 00:10:45 ET",
       "kind": "PAPER",
@@ -312,18 +321,18 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 102.9011,
-    "mtm_equity_usd": 102.8785,
-    "realized_pnl_usd": 2.9011,
-    "unrealized_pnl_usd": -0.0226,
+    "paper_equity_usd": 102.8824,
+    "mtm_equity_usd": 102.8767,
+    "realized_pnl_usd": 2.8824,
+    "unrealized_pnl_usd": -0.0057,
     "open": {
-      "id": "PAPER-204",
-      "ticker": "TERMINATOR",
+      "id": "PAPER-205",
+      "ticker": "ASTROPIKA",
       "usd": 8.23,
-      "mtm_pct": -0.2752
+      "mtm_pct": -0.0697
     },
-    "closed_n": 26,
+    "closed_n": 27,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $102.88 \u00b7 FLAT \u00b7 2026-09-21 00:15:18 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $102.88 \u00b7 FLAT \u00b7 2026-09-21 00:16:05 ET"
 }
