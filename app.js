@@ -10,6 +10,7 @@
   };
   // jsDelivr first — GH Pages status=errored was serving stale PAPER book.
   const SOURCES = [
+    "https://raw.githubusercontent.com/webbeep/desk-pulse/main/book.json",
     "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/book.json",
     "./book.json",
   ];
@@ -17,7 +18,7 @@
     try {
       const v = await loadOne("./version.json");
       if (v && v.sha) {
-        return "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@" + v.sha + "/book.json";
+        return "https://raw.githubusercontent.com/webbeep/desk-pulse/main/book.json";
       }
     } catch (e) {}
     return null;
@@ -857,7 +858,7 @@
     let lastErr = null;
     const cands = [];
     const pinned = await loadVersionPinned();
-    const list = pinned ? [pinned, "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/book.json"].concat(SOURCES.filter(function (s) { return s !== pinned; })) : SOURCES;
+    const list = SOURCES.slice(); // always prefer raw/jsdelivr over Pages same-origin
     for (const src of list) {
       try {
         const raw = await loadOne(src);
