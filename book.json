@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 17:32:35 ET",
+  "updated_et": "2026-09-21 17:33:17 ET",
   "mode": "LIVE",
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 10.0095,
@@ -34,7 +34,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-35",
+      "market": "FROG",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "tx": "0x24f0cd4070969b343075b8c31de7f71bebca83830f75ee6c9e6e43d32da28f43",
+      "token": "0x3176039dE80eCc91C14C9e6f011c9DF6412Ddc97",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "trades": [
     {
       "id": "LIVE-SCALP-34-EXIT",
@@ -1865,21 +1876,35 @@
   ],
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x5054374d02e3b7a0fdb9d2391a6bc90f4eeb7cfda22404db14698b7bec0e701b",
-    "last_exit_reason": "POST_FILL_FLAT_-15.971",
-    "last_exit_upnl": -1.2759
+    "open": true,
+    "flat": false,
+    "ticker": "FROG",
+    "tx": "0x24f0cd4070969b343075b8c31de7f71bebca83830f75ee6c9e6e43d32da28f43",
+    "size_usd": 8.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-35",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "notes": "LIVE EXIT FROG \u00b7 POST_FILL_FLAT_-15.971 \u00b7 tx 0x5054374d02e3b7a0fdb9d2391a6bc90f4eeb7cfda22404db14698b7bec0e701b \u00b7 2026-09-21 17:32:35 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-35",
+    "market": "FROG",
+    "side": "LONG",
+    "size_usd": 8.0,
+    "tx": "0x24f0cd4070969b343075b8c31de7f71bebca83830f75ee6c9e6e43d32da28f43",
+    "token": "0x3176039dE80eCc91C14C9e6f011c9DF6412Ddc97",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "realized_ledger_usd": -3.4567,
   "rh_eth": 0.000910765098665932,
   "rh_eth_wei": 910765098665932,
