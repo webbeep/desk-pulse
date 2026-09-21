@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 14:03:47 ET",
+  "updated_et": "2026-09-21 14:03:54 ET",
   "mode": "LIVE",
-  "status": "EXITING:TIME_FLAT_240s",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 28.9552,
   "equity_usd": 28.9447,
@@ -38,6 +38,18 @@
   },
   "positions": [],
   "trades": [
+    {
+      "id": "LIVE-SCALP-5-EXIT",
+      "market": "+",
+      "side": "SELL",
+      "size_usd": 8.0,
+      "pnl_usd": -0.0086,
+      "mtm_pct": -0.1078,
+      "tx": "0x3304f16fccac831c4c52f294749d785e945f0dfbb2077d2157aa04a5a20c8d19",
+      "reason": "TIME_FLAT_240s",
+      "stamp_et": "2026-09-21 14:03:54 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-4-EXIT",
       "market": "DRIP",
@@ -360,6 +372,13 @@
       "liquid_usd": 28.9552,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 14:03:54 ET",
+      "equity_usd": 28.9447,
+      "liquid_usd": 28.9552,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -370,15 +389,11 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x039ec0abbb6e633e0e7941ee9be230e58bea904ad441682a7a416564c2fae8c8",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 251,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x3304f16fccac831c4c52f294749d785e945f0dfbb2077d2157aa04a5a20c8d19",
+    "last_exit_reason": "TIME_FLAT_240s",
+    "last_exit_upnl": -0.0086
   },
-  "notes": "LIVE MTM + uPnL $-0.0105 (-0.1315%) \u00b7 held 252s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 14:03:47 ET \u00b7 CUT TIME_FLAT_240s",
+  "notes": "LIVE EXIT + \u00b7 TIME_FLAT_240s \u00b7 tx 0x3304f16fccac831c4c52f294749d785e945f0dfbb2077d2157aa04a5a20c8d19 \u00b7 2026-09-21 14:03:54 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
