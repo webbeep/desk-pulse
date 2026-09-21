@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 14:07:37 ET",
+  "updated_et": "2026-09-21 14:07:43 ET",
   "mode": "LIVE",
-  "status": "EXITING:TP_V6_+3.5",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 28.9552,
   "equity_usd": 29.4622,
@@ -38,6 +38,18 @@
   },
   "positions": [],
   "trades": [
+    {
+      "id": "LIVE-SCALP-6-EXIT",
+      "market": "OCTOCAT",
+      "side": "SELL",
+      "size_usd": 8.0,
+      "pnl_usd": 0.507,
+      "mtm_pct": 6.337,
+      "tx": null,
+      "reason": "TP_V6_+3.5",
+      "stamp_et": "2026-09-21 14:07:43 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-5-EXIT",
       "market": "+",
@@ -463,6 +475,13 @@
       "liquid_usd": 28.9552,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 14:07:43 ET",
+      "equity_usd": 29.4622,
+      "liquid_usd": 28.9552,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -473,15 +492,11 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xf85e917e91ddf0e13927ad6734c2309af744ea7e4dbf6f3d1b1769d84a91c9b1",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 149,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TP_V6_+3.5",
+    "last_exit_upnl": null
   },
-  "notes": "LIVE MTM OCTOCAT uPnL $0.507 (6.337%) \u00b7 held 150s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 14:07:35 ET \u00b7 CUT TP_V6_+3.5",
+  "notes": "LIVE EXIT OCTOCAT \u00b7 TP_V6_+3.5 \u00b7 tx None \u00b7 2026-09-21 14:07:43 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
