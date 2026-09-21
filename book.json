@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-21 18:55:30 ET",
+  "updated_et": "2026-09-21 18:55:45 ET",
   "mode": "LIVE",
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
-  "equity_usd": 11.5276,
-  "upnl_usd": 0.2404,
+  "equity_usd": 9.4711,
+  "upnl_usd": -1.8161,
   "funding_usd": 33.77,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-4.6094 \u00b7 SoT chain mark",
   "total_pnl_usd": -4.8148,
   "total_pnl_pct": -14.2576,
-  "mark_eth": 2777.99,
-  "mark": 2777.99,
+  "mark_eth": 2778.35,
+  "mark": 2778.35,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2777.99
+    "ETH": 2778.35
   },
   "holdings": {
     "rh_eth": 0.000638686533439377,
@@ -41,16 +41,16 @@
       "side": "LONG",
       "size_usd": 8.0,
       "entry": 0.0019137073801334928,
-      "mark": 0.001971203802305202,
-      "uPnL": 0.2404,
-      "mtm_pct": 3.0045,
+      "mark": 0.001479264880959139,
+      "uPnL": -1.8161,
+      "mtm_pct": -22.7016,
       "lev": 1,
       "paper": false,
       "tx": "0xca50760fc7490cab8d0c9c6ce9e5e09f234754af0fc68a8c9febe239a0f5a3f8",
       "token": "0x88042D98421B4d4014910bD9Ca40D3cf3A309733",
-      "held_sec": 5,
-      "weth_out": 0.002966301595943186,
-      "usd_out": 8.240356
+      "held_sec": 20,
+      "weth_out": 0.002225734960247033,
+      "usd_out": 6.183871
     }
   ],
   "trades": [
@@ -744,13 +744,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 17:46:23 ET",
-      "equity_usd": 11.277,
-      "liquid_usd": 11.2872,
-      "upnl_usd": -0.0102,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-21 17:46:35 ET",
       "equity_usd": 11.2743,
@@ -2143,6 +2136,13 @@
       "liquid_usd": 11.2872,
       "upnl_usd": 0.2404,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-21 18:55:45 ET",
+      "equity_usd": 9.4711,
+      "liquid_usd": 11.2872,
+      "upnl_usd": -1.8161,
+      "n_pos": 1
     }
   ],
   "paper": {
@@ -2155,12 +2155,12 @@
     "tx": "0xca50760fc7490cab8d0c9c6ce9e5e09f234754af0fc68a8c9febe239a0f5a3f8",
     "size_usd": 8.0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 3.0045,
-    "upnl_usd": 0.2404,
-    "held_sec": 5,
+    "mtm_pct": -22.7016,
+    "upnl_usd": -1.8161,
+    "held_sec": 20,
     "watcher": "rh_live_mtm_loop"
   },
-  "notes": "LIVE MTM COPCAT uPnL $0.2404 (3.0045%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 18:55:30 ET",
+  "notes": "LIVE MTM COPCAT uPnL $-1.8161 (-22.7016%) \u00b7 held 21s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 18:55:45 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
@@ -2171,16 +2171,16 @@
     "side": "LONG",
     "size_usd": 8.0,
     "entry": 0.0019137073801334928,
-    "mark": 0.001971203802305202,
-    "uPnL": 0.2404,
-    "mtm_pct": 3.0045,
+    "mark": 0.001479264880959139,
+    "uPnL": -1.8161,
+    "mtm_pct": -22.7016,
     "lev": 1,
     "paper": false,
     "tx": "0xca50760fc7490cab8d0c9c6ce9e5e09f234754af0fc68a8c9febe239a0f5a3f8",
     "token": "0x88042D98421B4d4014910bD9Ca40D3cf3A309733",
-    "held_sec": 5,
-    "weth_out": 0.002966301595943186,
-    "usd_out": 8.240356
+    "held_sec": 20,
+    "weth_out": 0.002225734960247033,
+    "usd_out": 6.183871
   },
   "realized_ledger_usd": -3.4567,
   "rh_eth": 0.000910765098665932,
