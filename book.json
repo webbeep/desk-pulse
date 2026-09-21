@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-21 11:34:16 ET",
+  "updated_et": "2026-09-21 11:35:18 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 33.7733,
@@ -50,6 +50,15 @@
       "n_pos": 0,
       "reason": "LIVE_FUND_L1",
       "note": "0.0123489000 ETH L1 @ $2734.92"
+    },
+    {
+      "t": "2026-09-21 11:35:18 ET",
+      "equity_usd": 33.7733,
+      "liquid_usd": 33.7733,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "reason": "LIVE_BRIDGE_READY",
+      "note": "L1\u2192RH depositEth prepared \u00b7 0.0113489 ETH \u00b7 await CoS EXECUTE"
     }
   ],
   "trades": [],
@@ -64,8 +73,8 @@
     "bankroll_archive": "quant/paper/archive/PAPER-BANKROLL-FINAL-2026-09-21.json",
     "notes": "Paper sleeve archived under quant/paper/ \u2014 LIVE UI clean slate"
   },
-  "notes": "LIVE flip 2026-09-21 \u00b7 paper archived \u00b7 L1 confirmed \u00b7 bridge to RH before first scalp \u00b7 Risk \u2264$2 \u00b7 CoS EXECUTE required \u00b7 pages-fix 2026-09-21 11:34:16 ET",
-  "strategy": "LIVE_STANDBY",
+  "notes": "LIVE \u00b7 L1 funded \u00b7 RH bridge ready \u00b7 depositEth 0.0113489 leave 0.001 \u00b7 Inbox 0x1A07\u2026a2D verified \u00b7 await CoS EXECUTE \u00b7 paper OFF",
+  "strategy": "LIVE_BRIDGE_READY",
   "live": {
     "active": true,
     "pending_confirm": false,
@@ -75,12 +84,20 @@
     "mark_eth": 2734.92,
     "liquid_usd": 33.7733,
     "max_loss_usd_default": 2.0,
-    "next": "bridge L1\u2192RH then meme LIVE on RH Uniswap; Risk PASS + CoS EXECUTE",
-    "do_not_broadcast": true
+    "next": "CoS EXECUTE \u2192 Wire rh_l1_deposit_eth_wire.py --execute \u2192 confirm rh_eth",
+    "do_not_broadcast": true,
+    "bridge": {
+      "status": "READY_AWAITING_COS_EXECUTE",
+      "path": "canonical_delayed_inbox_depositEth",
+      "inbox": "0x1A07cc4BD17E0118BdB54D70990D2158AbAD7a2D",
+      "value_eth": 0.0113489,
+      "leave_l1_eth": 0.001,
+      "broadcast": false,
+      "plan": "fleet-v2/rh-chain/BRIDGE-PLAN-2026-09-21.md"
+    }
   },
   "jev": {
     "paper_gates": false,
     "note": "paper off"
-  },
-  "cache_bust": 1790004856
+  }
 }
