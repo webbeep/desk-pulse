@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-21 17:40:07 ET",
+  "updated_et": "2026-09-21 17:40:09 ET",
   "mode": "LIVE",
-  "status": "LIVE_OPEN",
+  "status": "EXITING:TP_V6_+3.5",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 12.089,
-  "upnl_usd": 0.8018,
+  "upnl_usd": 0.0,
   "funding_usd": 33.77,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-4.6094 \u00b7 SoT chain mark",
   "total_pnl_usd": -4.8148,
@@ -34,25 +34,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-37",
-      "market": "COPCAT",
-      "side": "LONG",
-      "size_usd": 8.0,
-      "entry": 2.4422009978302328e-05,
-      "mark": 2.6869682448012733e-05,
-      "uPnL": 0.8018,
-      "mtm_pct": 10.0224,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x06b56da3f2756cdb955b28afcb456633bf2c90726775ce6b01e21741c3aa62df",
-      "token": "0x81691E836d86864DBa4ED0101DE23fAF49dD49c4",
-      "held_sec": 5,
-      "weth_out": 0.003169863726661348,
-      "usd_out": 8.801792
-    }
-  ],
+  "positions": [],
   "trades": [
     {
       "id": "LIVE-SCALP-36-EXIT",
@@ -504,13 +486,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 16:42:01 ET",
-      "equity_usd": 11.2827,
-      "liquid_usd": 11.2872,
-      "upnl_usd": -0.0045,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-21 16:42:14 ET",
       "equity_usd": 11.2836,
@@ -1903,6 +1878,13 @@
       "liquid_usd": 11.2872,
       "upnl_usd": 0.8018,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-21 17:40:09 ET",
+      "equity_usd": 12.089,
+      "liquid_usd": 11.2872,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -1910,38 +1892,22 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
   },
   "live": {
-    "open": true,
-    "ticker": "COPCAT",
+    "open": false,
+    "ticker": null,
     "tx": "0x06b56da3f2756cdb955b28afcb456633bf2c90726775ce6b01e21741c3aa62df",
-    "size_usd": 8.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 10.0224,
-    "upnl_usd": 0.8018,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 5,
     "watcher": "rh_live_mtm_loop"
   },
-  "notes": "LIVE MTM COPCAT uPnL $0.8018 (10.0224%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 17:40:07 ET",
+  "notes": "LIVE MTM COPCAT uPnL $0.8018 (10.0224%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 17:40:07 ET \u00b7 CUT TP_V6_+3.5",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": {
-    "id": "LIVE-SCALP-37",
-    "market": "COPCAT",
-    "side": "LONG",
-    "size_usd": 8.0,
-    "entry": 2.4422009978302328e-05,
-    "mark": 2.6869682448012733e-05,
-    "uPnL": 0.8018,
-    "mtm_pct": 10.0224,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x06b56da3f2756cdb955b28afcb456633bf2c90726775ce6b01e21741c3aa62df",
-    "token": "0x81691E836d86864DBa4ED0101DE23fAF49dD49c4",
-    "held_sec": 5,
-    "weth_out": 0.003169863726661348,
-    "usd_out": 8.801792
-  },
+  "position": null,
   "realized_ledger_usd": -3.4567,
   "rh_eth": 0.000910765098665932,
   "rh_eth_wei": 910765098665932,
