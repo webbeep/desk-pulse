@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-21 17:23:54 ET",
+  "updated_et": "2026-09-21 17:23:58 ET",
   "mode": "LIVE",
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
-  "equity_usd": 11.2882,
-  "upnl_usd": 0.0,
+  "equity_usd": 11.2349,
+  "upnl_usd": -0.0523,
   "funding_usd": 33.77,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-4.6094 \u00b7 SoT chain mark",
   "total_pnl_usd": -4.8148,
   "total_pnl_pct": -14.2576,
-  "mark_eth": 2767.51,
-  "mark": 2767.51,
+  "mark_eth": 2765.6,
+  "mark": 2765.6,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2767.51
+    "ETH": 2765.6
   },
   "holdings": {
     "rh_eth": 0.000638686533439377,
@@ -40,10 +40,17 @@
       "market": "FROG",
       "side": "LONG",
       "size_usd": 7.11,
+      "entry": 0.00010708662675060832,
+      "mark": 0.00010629864376455209,
+      "uPnL": -0.0523,
+      "mtm_pct": -0.7358,
+      "lev": 1,
+      "paper": false,
       "tx": "0xea497930dd3021c8e6e4cde6bbb2731eae156e2a208bd70c8f72f8792be7517c",
       "token": "0x3176039dE80eCc91C14C9e6f011c9DF6412Ddc97",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 5,
+      "weth_out": 0.002551953280179862,
+      "usd_out": 7.057682
     }
   ],
   "trades": [
@@ -425,13 +432,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 16:27:24 ET",
-      "equity_usd": 11.2896,
-      "liquid_usd": 11.2872,
-      "upnl_usd": 0.0024,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-21 16:27:41 ET",
       "equity_usd": 11.2909,
@@ -1824,25 +1824,31 @@
       "liquid_usd": 11.2872,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 17:23:58 ET",
+      "equity_usd": 11.2349,
+      "liquid_usd": 11.2872,
+      "upnl_usd": -0.0523,
+      "n_pos": 1
     }
   ],
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "FROG",
     "tx": "0xea497930dd3021c8e6e4cde6bbb2731eae156e2a208bd70c8f72f8792be7517c",
     "size_usd": 7.11,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-32",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.7358,
+    "upnl_usd": -0.0523,
+    "held_sec": 5,
+    "watcher": "rh_live_mtm_loop"
   },
-  "notes": "LIVE EXIT + \u00b7 TIME_FLAT_240s \u00b7 tx 0x3b2515b56a339538260d47c5358fe2a5f7dd9cf638e9fa74c95f2bd7dc71535f \u00b7 2026-09-21 17:22:46 ET",
+  "notes": "LIVE MTM FROG uPnL $-0.0523 (-0.7358%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 17:23:58 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
@@ -1852,10 +1858,17 @@
     "market": "FROG",
     "side": "LONG",
     "size_usd": 7.11,
+    "entry": 0.00010708662675060832,
+    "mark": 0.00010629864376455209,
+    "uPnL": -0.0523,
+    "mtm_pct": -0.7358,
+    "lev": 1,
+    "paper": false,
     "tx": "0xea497930dd3021c8e6e4cde6bbb2731eae156e2a208bd70c8f72f8792be7517c",
     "token": "0x3176039dE80eCc91C14C9e6f011c9DF6412Ddc97",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 5,
+    "weth_out": 0.002551953280179862,
+    "usd_out": 7.057682
   },
   "realized_ledger_usd": -3.4567,
   "rh_eth": 0.000910765098665932,
