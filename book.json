@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-21 12:01:50 ET",
+  "updated_et": "2026-09-21 12:01:58 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 23.5991,
   "upnl_usd": 0.0,
   "equity_usd": 19.3156,
-  "status": "EXITING:HARD_SL_USD_-4.2835",
+  "status": "EXITED",
   "funding_usd": 33.6811,
   "funding_note": "LIVE_FUNDED_RH \u00b7 rh=0.011349 l1=0.000880 \u00b7 liquid=$33.68 \u00b7 BLOCKER: no LIVE Uniswap scalp encode \u00b7 awaiting Wire pack \u00b7 checklist RISK-CHECKLIST-LIVE-SCALP-1 \u00b7 no EXECUTE \u00b7 2026-09-21 11:48:44 ET",
   "total_pnl_usd": 0.0,
@@ -108,9 +108,28 @@
       "liquid_usd": 23.5991,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 12:01:58 ET",
+      "equity_usd": 19.3156,
+      "liquid_usd": 23.5991,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-1-EXIT",
+      "market": "KARURE",
+      "side": "SELL",
+      "size_usd": 10.0,
+      "pnl_usd": -4.6026,
+      "mtm_pct": -46.0261,
+      "tx": "0x23a3f1811dabe4443f650eafb1d5d67f7f5946f6a5d3a534c2adad6ac711a588",
+      "reason": "HARD_SL_USD_-4.2835",
+      "stamp_et": "2026-09-21 12:01:58 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-1",
       "ticker": "KARURE",
@@ -127,7 +146,7 @@
     "archived": true,
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
   },
-  "notes": "LIVE MTM KARURE uPnL $-4.2835 (-42.8355%) \u00b7 held 612s \u00b7 max-loss \u2264$2.0 \u00b7 2026-09-21 12:01:48 ET \u00b7 CUT HARD_SL_USD_-4.2835",
+  "notes": "LIVE EXIT KARURE \u00b7 HARD_SL_USD_-4.2835 \u00b7 tx 0x23a3f1811dabe4443f650eafb1d5d67f7f5946f6a5d3a534c2adad6ac711a588 \u00b7 2026-09-21 12:01:58 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$2|-20% \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
@@ -135,13 +154,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 611,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x23a3f1811dabe4443f650eafb1d5d67f7f5946f6a5d3a534c2adad6ac711a588",
+    "last_exit_reason": "HARD_SL_USD_-4.2835",
+    "last_exit_upnl": -4.6026
   },
   "jev": {
     "paper_gates": false,
