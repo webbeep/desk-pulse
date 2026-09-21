@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 18:55:47 ET",
+  "updated_et": "2026-09-21 18:55:54 ET",
   "mode": "LIVE",
-  "status": "EXITING:HARD_SL_USD_-1.8161",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 9.4711,
@@ -36,6 +36,18 @@
   },
   "positions": [],
   "trades": [
+    {
+      "id": "LIVE-SCALP-55-EXIT",
+      "market": "COPCAT",
+      "side": "SELL",
+      "size_usd": 8.0,
+      "pnl_usd": -1.5485,
+      "mtm_pct": -19.3557,
+      "tx": "0xe37d167aea741598ceaac9ff1a206a0e785a00d0ab8c2935c00e9cd2771adc19",
+      "reason": "HARD_SL_USD_-1.8161",
+      "stamp_et": "2026-09-21 18:55:54 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-54-EXIT",
       "market": "COPCAT",
@@ -726,13 +738,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 17:46:48 ET",
-      "equity_usd": 11.2767,
-      "liquid_usd": 11.2872,
-      "upnl_usd": -0.0105,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-21 17:47:01 ET",
       "equity_usd": 11.2702,
@@ -2125,6 +2130,13 @@
       "liquid_usd": 11.2872,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 18:55:54 ET",
+      "equity_usd": 9.4711,
+      "liquid_usd": 11.2872,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -2134,15 +2146,11 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xca50760fc7490cab8d0c9c6ce9e5e09f234754af0fc68a8c9febe239a0f5a3f8",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 20,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xe37d167aea741598ceaac9ff1a206a0e785a00d0ab8c2935c00e9cd2771adc19",
+    "last_exit_reason": "HARD_SL_USD_-1.8161",
+    "last_exit_upnl": -1.5485
   },
-  "notes": "LIVE MTM COPCAT uPnL $-1.8161 (-22.7016%) \u00b7 held 21s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 18:55:45 ET \u00b7 CUT HARD_SL_USD_-1.8161",
+  "notes": "LIVE EXIT COPCAT \u00b7 HARD_SL_USD_-1.8161 \u00b7 tx 0xe37d167aea741598ceaac9ff1a206a0e785a00d0ab8c2935c00e9cd2771adc19 \u00b7 2026-09-21 18:55:54 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
