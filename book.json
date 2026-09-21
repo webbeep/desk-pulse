@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-21 12:09:35 ET",
+  "updated_et": "2026-09-21 12:09:43 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 28.9756,
   "upnl_usd": 0.0,
   "equity_usd": 28.9684,
-  "status": "EXITING:TIME_FLAT_240s",
+  "status": "EXITED",
   "funding_usd": 29.0262,
   "funding_note": "FLAT \u00b7 LIVE-SCALP-1 KARURE wipe closed \u00b7 next LIVE-SCALP-2 + $8 SIM_OK_READY \u00b7 await CoS EXECUTE \u00b7 rh=0.007667 weth=0.001999 \u00b7 2026-09-21 12:04:57 ET",
   "total_pnl_usd": -4.7438,
@@ -232,9 +232,28 @@
       "liquid_usd": 28.9756,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 12:09:43 ET",
+      "equity_usd": 28.9684,
+      "liquid_usd": 28.9756,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-2-EXIT",
+      "market": "+",
+      "side": "SELL",
+      "size_usd": 8.0,
+      "pnl_usd": -0.0068,
+      "mtm_pct": -0.0852,
+      "tx": "0x87616c38dcb6b70c78bda1458e6e69379aa962e7faf27746a0283e7bfac0f117",
+      "reason": "TIME_FLAT_240s",
+      "stamp_et": "2026-09-21 12:09:43 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-1-EXIT",
       "market": "KARURE",
@@ -263,7 +282,7 @@
     "archived": true,
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
   },
-  "notes": "LIVE MTM + uPnL $-0.0072 (-0.0899%) \u00b7 held 244s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 12:09:35 ET \u00b7 CUT TIME_FLAT_240s",
+  "notes": "LIVE EXIT + \u00b7 TIME_FLAT_240s \u00b7 tx 0x87616c38dcb6b70c78bda1458e6e69379aa962e7faf27746a0283e7bfac0f117 \u00b7 2026-09-21 12:09:43 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
@@ -271,13 +290,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xacdb04efcc399b3332290c9dff065d36b570f261fdeb4f6c39b72b77a4e00636",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 243,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x87616c38dcb6b70c78bda1458e6e69379aa962e7faf27746a0283e7bfac0f117",
+    "last_exit_reason": "TIME_FLAT_240s",
+    "last_exit_upnl": -0.0068
   },
   "jev": {
     "paper_gates": false,
