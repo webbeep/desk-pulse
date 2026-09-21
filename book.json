@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-21 11:58:41 ET",
+  "updated_et": "2026-09-21 12:01:48 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 23.5991,
-  "upnl_usd": 0.0,
-  "equity_usd": 33.5991,
+  "upnl_usd": -4.2835,
+  "equity_usd": 19.3156,
   "status": "LIVE_OPEN",
   "funding_usd": 33.6811,
   "funding_note": "LIVE_FUNDED_RH \u00b7 rh=0.011349 l1=0.000880 \u00b7 liquid=$33.68 \u00b7 BLOCKER: no LIVE Uniswap scalp encode \u00b7 awaiting Wire pack \u00b7 checklist RISK-CHECKLIST-LIVE-SCALP-1 \u00b7 no EXECUTE \u00b7 2026-09-21 11:48:44 ET",
   "total_pnl_usd": 0.0,
   "total_pnl_pct": 0.0,
-  "mark_eth": 2754.325,
-  "mark": 2754.325,
+  "mark_eth": 2756.2,
+  "mark": 2756.2,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2754.325
+    "ETH": 2756.2
   },
   "holdings": {
     "l1_eth": 0.000879538014354878,
@@ -46,13 +46,16 @@
       "side": "LONG",
       "size_usd": 10.0,
       "entry": 0.004487410557667048,
-      "mark": 0.004487410557667048,
-      "uPnL": 0,
-      "mtm_pct": 0,
+      "mark": 0.0025652079447484578,
+      "uPnL": -4.2835,
+      "mtm_pct": -42.8355,
       "lev": 1,
       "paper": false,
       "tx": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1",
-      "token": "0x978177408C2f741C24ddf5ea9Eb14cECbf9b3926"
+      "token": "0x978177408C2f741C24ddf5ea9Eb14cECbf9b3926",
+      "held_sec": 611,
+      "weth_out": 0.002074034816458139,
+      "usd_out": 5.716455
     }
   ],
   "pnl_history": [
@@ -109,6 +112,13 @@
       "n_pos": 1,
       "reason": "LIVE_OPEN_KARURE",
       "note": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1"
+    },
+    {
+      "t": "2026-09-21 12:01:48 ET",
+      "equity_usd": 19.3156,
+      "liquid_usd": 23.5991,
+      "upnl_usd": -4.2835,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -125,20 +135,44 @@
   ],
   "paper": {
     "active": false,
-    "archived": true
+    "archived": true,
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
   },
-  "notes": "LIVE OPEN KARURE $10 \u00b7 tx 0x61a39e9674\u2026 \u00b7 max-loss \u2264$2 \u00b7 2026-09-21 11:58:41 ET",
-  "strategy": "LIVE_FUNDED_RH",
+  "notes": "LIVE MTM KARURE uPnL $-4.2835 (-42.8355%) \u00b7 held 612s \u00b7 max-loss \u2264$2.0 \u00b7 2026-09-21 12:01:48 ET",
+  "strategy": {
+    "lane": "RH_LIVE_SCALP",
+    "cut_rules": "SL -$2|-20% \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
+  },
   "live": {
     "open": true,
     "ticker": "KARURE",
     "tx": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1",
     "size_usd": 10.0,
     "max_loss_usd": 2.0,
-    "bridge_tx": "0xf4ebde155b56c428fc2b285dd161b108751a480107cf1290f61938bb0ac49b6f"
+    "mtm_pct": -42.8355,
+    "upnl_usd": -4.2835,
+    "held_sec": 611,
+    "watcher": "rh_live_mtm_loop"
   },
   "jev": {
     "paper_gates": false,
     "note": "paper off"
+  },
+  "position": {
+    "id": "LIVE-SCALP-1",
+    "market": "KARURE",
+    "side": "LONG",
+    "size_usd": 10.0,
+    "entry": 0.004487410557667048,
+    "mark": 0.0025652079447484578,
+    "uPnL": -4.2835,
+    "mtm_pct": -42.8355,
+    "lev": 1,
+    "paper": false,
+    "tx": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1",
+    "token": "0x978177408C2f741C24ddf5ea9Eb14cECbf9b3926",
+    "held_sec": 611,
+    "weth_out": 0.002074034816458139,
+    "usd_out": 5.716455
   }
 }
