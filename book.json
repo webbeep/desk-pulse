@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-21 11:51:59 ET",
+  "updated_et": "2026-09-21 11:58:41 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 33.6811,
-  "upnl_usd": 0,
-  "equity_usd": 33.6811,
-  "status": "LIVE_FUNDED_RH",
+  "liquid_usd": 23.5991,
+  "upnl_usd": 0.0,
+  "equity_usd": 33.5991,
+  "status": "LIVE_OPEN",
   "funding_usd": 33.6811,
   "funding_note": "LIVE_FUNDED_RH \u00b7 rh=0.011349 l1=0.000880 \u00b7 liquid=$33.68 \u00b7 BLOCKER: no LIVE Uniswap scalp encode \u00b7 awaiting Wire pack \u00b7 checklist RISK-CHECKLIST-LIVE-SCALP-1 \u00b7 no EXECUTE \u00b7 2026-09-21 11:48:44 ET",
   "total_pnl_usd": 0.0,
@@ -18,7 +18,8 @@
   },
   "holdings": {
     "l1_eth": 0.000879538014354878,
-    "rh_eth": 0.0113489,
+    "rh_eth": 0.00768056766893693,
+    "karure": 2228.4566726158623,
     "arb_eth": 0,
     "arb_usdc": 0,
     "base_eth": 0,
@@ -38,7 +39,22 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-1",
+      "market": "KARURE",
+      "side": "LONG",
+      "size_usd": 10.0,
+      "entry": 0.004487410557667048,
+      "mark": 0.004487410557667048,
+      "uPnL": 0,
+      "mtm_pct": 0,
+      "lev": 1,
+      "paper": false,
+      "tx": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1",
+      "token": "0x978177408C2f741C24ddf5ea9Eb14cECbf9b3926"
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-21 11:31:22 ET",
@@ -84,30 +100,45 @@
       "n_pos": 0,
       "reason": "LIVE_FUNDED_RH_BLOCKER",
       "note": "RH credited \u00b7 BLOCKER no LIVE scalp encode \u00b7 awaiting Wire pack"
+    },
+    {
+      "t": "2026-09-21 11:58:41 ET",
+      "equity_usd": 33.5991,
+      "liquid_usd": 23.5991,
+      "upnl_usd": 0,
+      "n_pos": 1,
+      "reason": "LIVE_OPEN_KARURE",
+      "note": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1"
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "id": "LIVE-SCALP-1",
+      "ticker": "KARURE",
+      "side": "LONG",
+      "size_usd": 10.0,
+      "pnl_usd": null,
+      "stamp_et": "2026-09-21 11:58:41 ET",
+      "tx": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1",
+      "status": "OPEN"
+    }
+  ],
   "paper": {
     "active": false,
     "archived": true
   },
-  "notes": "LIVE_FUNDED_RH \u00b7 rh=0.011349 l1=0.000880 \u00b7 liquid=$33.68 \u00b7 BLOCKER: no LIVE Uniswap scalp encode \u00b7 awaiting Wire pack \u00b7 checklist RISK-CHECKLIST-LIVE-SCALP-1 \u00b7 no EXECUTE \u00b7 2026-09-21 11:48:44 ET",
+  "notes": "LIVE OPEN KARURE $10 \u00b7 tx 0x61a39e9674\u2026 \u00b7 max-loss \u2264$2 \u00b7 2026-09-21 11:58:41 ET",
   "strategy": "LIVE_FUNDED_RH",
   "live": {
-    "bridge_tx": "0xf4ebde155b56c428fc2b285dd161b108751a480107cf1290f61938bb0ac49b6f",
-    "bridge_status": "SUCCESS",
-    "rh_eth": 0.0113489,
-    "l1_eth": 0.000879538014354878,
-    "awaiting_rh_credit": false,
-    "poll_mins": 5.97,
-    "awaiting_first_pack": true,
-    "blocker": "BLOCKER-LIVE-SCALP-ENCODE-2026-09-21.md",
-    "risk_checklist": "RISK-CHECKLIST-LIVE-SCALP-1.md",
-    "execute_scalp": null
+    "open": true,
+    "ticker": "KARURE",
+    "tx": "0x61a39e96749b2a6d51d89915699df7dc81d9a80b4f3d7849bfe9e5bf3d0ef4b1",
+    "size_usd": 10.0,
+    "max_loss_usd": 2.0,
+    "bridge_tx": "0xf4ebde155b56c428fc2b285dd161b108751a480107cf1290f61938bb0ac49b6f"
   },
   "jev": {
     "paper_gates": false,
     "note": "paper off"
-  },
-  "cache_bust": 1790005919
+  }
 }
