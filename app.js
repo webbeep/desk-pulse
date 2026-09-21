@@ -857,7 +857,7 @@
     let lastErr = null;
     const cands = [];
     const pinned = await loadVersionPinned();
-    const list = pinned ? ["./book.json", pinned].concat(SOURCES.filter(function (s) { return s !== "./book.json"; })) : SOURCES;
+    const list = pinned ? [pinned, "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/book.json"].concat(SOURCES.filter(function (s) { return s !== pinned; })) : SOURCES;
     for (const src of list) {
       try {
         const raw = await loadOne(src);
