@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-21 10:47:33 ET",
+  "updated_et": "2026-09-21 10:48:20 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 101.3339,
-  "upnl_usd": -0.0798,
-  "equity_usd": 101.2541,
+  "liquid_usd": 102.5385,
+  "upnl_usd": 0.0,
+  "equity_usd": 102.5385,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": 1.2541,
-  "total_pnl_pct": 1.2541,
-  "mark_eth": 2738.0,
-  "mark": 2738.0,
+  "total_pnl_usd": 2.5385,
+  "total_pnl_pct": 2.5385,
+  "mark_eth": 2739.765,
+  "mark": 2739.765,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2738.0
+    "ETH": 2739.765
   },
   "holdings": {
-    "paper_cash_usd": 93.2239,
+    "paper_cash_usd": 102.5385,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,41 +39,33 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-237",
-      "market": "IPO",
-      "side": "LONG",
-      "size_usd": 8.11,
-      "entry": 5.0656820639059925e-05,
-      "mark": 5.015837251489261e-05,
-      "uPnL": -0.0798,
-      "mtm_pct": -0.9834,
-      "sl": 4.052545651124794e-05,
-      "tp": 7.598523095858988e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 12271858696589425368886,
-      "held_min": 0.46
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-21 10:47:18 ET",
-      "equity_usd": 101.2541,
-      "liquid_usd": 101.3339,
-      "upnl_usd": -0.0798,
-      "n_pos": 1
+      "t": "2026-09-21 10:47:38 ET",
+      "equity_usd": 102.5385,
+      "liquid_usd": 102.5385,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     },
     {
-      "t": "2026-09-21 10:47:33 ET",
-      "equity_usd": 101.2541,
-      "liquid_usd": 101.3339,
-      "upnl_usd": -0.0798,
-      "n_pos": 1
+      "t": "2026-09-21 10:48:20 ET",
+      "equity_usd": 102.5385,
+      "liquid_usd": 102.5385,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-21 10:47:38 ET",
+      "kind": "PAPER",
+      "market": "IPO",
+      "side": "LONG",
+      "size": 8.11,
+      "pnl_usd": 1.2046,
+      "tx": "TP_+4.0"
+    },
     {
       "t": "2026-09-21 09:47:46 ET",
       "kind": "PAPER",
@@ -424,32 +416,18 @@
       "size": 8.2,
       "pnl_usd": -0.4262,
       "tx": "CUT_HARD_-3.0"
-    },
-    {
-      "t": "2026-09-20 22:15:17 ET",
-      "kind": "PAPER",
-      "market": "ASTROPIKA",
-      "side": "LONG",
-      "size": 8.1,
-      "pnl_usd": 1.2414,
-      "tx": "TP_+4.0"
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 101.3339,
-    "mtm_equity_usd": 101.2541,
-    "realized_pnl_usd": 1.3339,
-    "unrealized_pnl_usd": -0.0798,
-    "open": {
-      "id": "PAPER-237",
-      "ticker": "IPO",
-      "usd": 8.11,
-      "mtm_pct": -0.9834
-    },
-    "closed_n": 59,
+    "paper_equity_usd": 102.5385,
+    "mtm_equity_usd": 102.5385,
+    "realized_pnl_usd": 2.5385,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 60,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $101.25 \u00b7 FLAT \u00b7 2026-09-21 10:47:33 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $102.54 \u00b7 FLAT \u00b7 2026-09-21 10:48:20 ET"
 }
