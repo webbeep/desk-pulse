@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 17:48:14 ET",
+  "updated_et": "2026-09-21 17:50:39 ET",
   "mode": "LIVE",
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 11.2701,
@@ -34,7 +34,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-40",
+      "market": "+",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "tx": "0x21a6feacb044467bece14a52133fc4b74deadda19a7cca582fd4661d8e5e98a4",
+      "token": "0x72633b32e5cEa8379Fa93c45B4c8377Dfc2e22D9",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "trades": [
     {
       "id": "LIVE-SCALP-39-EXIT",
@@ -1925,21 +1936,35 @@
   ],
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x9367fce8967f915be40045417a69199b12963d990b6228e2a5f025335eedcd5e",
-    "last_exit_reason": "TIME_FLAT_240s",
-    "last_exit_upnl": -0.017
+    "open": true,
+    "flat": false,
+    "ticker": "+",
+    "tx": "0x21a6feacb044467bece14a52133fc4b74deadda19a7cca582fd4661d8e5e98a4",
+    "size_usd": 8.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-40",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "notes": "LIVE EXIT + \u00b7 TIME_FLAT_240s \u00b7 tx 0x9367fce8967f915be40045417a69199b12963d990b6228e2a5f025335eedcd5e \u00b7 2026-09-21 17:48:14 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-40",
+    "market": "+",
+    "side": "LONG",
+    "size_usd": 8.0,
+    "tx": "0x21a6feacb044467bece14a52133fc4b74deadda19a7cca582fd4661d8e5e98a4",
+    "token": "0x72633b32e5cEa8379Fa93c45B4c8377Dfc2e22D9",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "realized_ledger_usd": -3.4567,
   "rh_eth": 0.000910765098665932,
   "rh_eth_wei": 910765098665932,
