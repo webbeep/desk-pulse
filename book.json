@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-21 01:59:36 ET",
+  "updated_et": "2026-09-21 02:00:23 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 104.1947,
-  "upnl_usd": -0.0096,
-  "equity_usd": 104.1851,
+  "liquid_usd": 114.6514,
+  "upnl_usd": 0.0,
+  "equity_usd": 114.6514,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 heartbeat stamp",
-  "total_pnl_usd": 4.1851,
-  "total_pnl_pct": 4.1851,
-  "mark_eth": 2664.115,
-  "mark": 2664.115,
+  "total_pnl_usd": 14.6514,
+  "total_pnl_pct": 14.6514,
+  "mark_eth": 2664.965,
+  "mark": 2664.965,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2664.115
+    "ETH": 2664.965
   },
   "holdings": {
-    "paper_cash_usd": 95.8547,
+    "paper_cash_usd": 114.6514,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,84 +42,30 @@
   "positions": [],
   "pnl_history": [
     {
-      "t": "2026-09-21 01:51:50 ET",
-      "equity_usd": 104.1947,
-      "liquid_usd": 104.1947,
+      "t": "2026-09-21 01:59:41 ET",
+      "equity_usd": 114.6514,
+      "liquid_usd": 114.6514,
       "upnl_usd": 0.0,
       "n_pos": 0
     },
     {
-      "t": "2026-09-21 01:52:31 ET",
-      "equity_usd": 104.1947,
-      "liquid_usd": 104.1947,
+      "t": "2026-09-21 02:00:23 ET",
+      "equity_usd": 114.6514,
+      "liquid_usd": 114.6514,
       "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 01:53:18 ET",
-      "equity_usd": 104.1947,
-      "liquid_usd": 104.1947,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 01:54:05 ET",
-      "equity_usd": 104.1947,
-      "liquid_usd": 104.1947,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 01:54:53 ET",
-      "equity_usd": 104.1947,
-      "liquid_usd": 104.1947,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 01:55:40 ET",
-      "equity_usd": 104.1947,
-      "liquid_usd": 104.1947,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 01:56:27 ET",
-      "equity_usd": 104.1947,
-      "liquid_usd": 104.1947,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 01:57:14 ET",
-      "equity_usd": 104.1947,
-      "liquid_usd": 104.1947,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 01:58:01 ET",
-      "equity_usd": 104.1947,
-      "liquid_usd": 104.1947,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 01:58:48 ET",
-      "equity_usd": 104.1947,
-      "liquid_usd": 104.1947,
-      "upnl_usd": 0.0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-21 01:59:36 ET",
-      "equity_usd": 104.1851,
-      "liquid_usd": 104.1947,
-      "upnl_usd": -0.0096,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-21 01:59:41 ET",
+      "kind": "PAPER",
+      "market": "+",
+      "side": "LONG",
+      "size": 8.34,
+      "pnl_usd": 10.4567,
+      "tx": "TP_+4.0"
+    },
     {
       "t": "2026-09-21 01:51:50 ET",
       "kind": "PAPER",
@@ -457,17 +403,13 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 104.1947,
-    "mtm_equity_usd": 104.1851,
-    "realized_pnl_usd": 4.1947,
-    "unrealized_pnl_usd": -0.0096,
-    "open": {
-      "id": "PAPER-215",
-      "ticker": "+",
-      "usd": 8.34
-    },
-    "closed_n": 37,
+    "paper_equity_usd": 114.6514,
+    "mtm_equity_usd": 114.6514,
+    "realized_pnl_usd": 14.6514,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "closed_n": 38,
     "notes": "heartbeat \u00b7 preserves trade history"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $104.19 \u00b7 FLAT \u00b7 2026-09-21 01:59:36 ET"
+  "notes": "PAPER heartbeat \u00b7 eq $114.65 \u00b7 FLAT \u00b7 2026-09-21 02:00:23 ET"
 }
