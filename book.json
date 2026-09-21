@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-21 11:16:51 ET",
+  "updated_et": "2026-09-21 11:17:38 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 110.4275,
-  "upnl_usd": -0.004,
-  "equity_usd": 110.4235,
+  "liquid_usd": 111.0406,
+  "upnl_usd": 0.2826,
+  "equity_usd": 111.3232,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 10.4235,
-  "total_pnl_pct": 10.4235,
-  "mark_eth": 2741.505,
-  "mark": 2741.505,
+  "total_pnl_usd": 11.3232,
+  "total_pnl_pct": 11.3232,
+  "mark_eth": 2742.165,
+  "mark": 2742.165,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2741.505
+    "ETH": 2742.165
   },
   "holdings": {
-    "paper_cash_usd": 100.4275,
+    "paper_cash_usd": 101.0406,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-241",
+      "market": "KARURE",
+      "side": "LONG",
+      "size_usd": 10.0,
+      "entry": 0.0037873412822774866,
+      "mark": 0.0038943715469146483,
+      "uPnL": 0.2826,
+      "mtm_pct": 2.8262,
+      "sl": 0.0030298730258219893,
+      "tp": 0.00568101192341623,
+      "lev": 1,
+      "paper": true,
+      "liq": 31942230398369514935678,
+      "held_min": 0.2
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -669,14 +686,37 @@
       "pnl_usd": 8.9257
     },
     {
+      "t": "2026-09-21 11:17:11 ET",
+      "equity_usd": 111.0406,
+      "liquid_usd": 111.0406,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "KARURE",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.6131
+    },
+    {
       "t": "now",
-      "equity_usd": 110.4235,
-      "liquid_usd": 110.4235,
+      "equity_usd": 111.3232,
+      "liquid_usd": 111.3232,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-21 11:17:11 ET",
+      "kind": "PAPER",
+      "market": "KARURE",
+      "side": "LONG",
+      "size": 10.0,
+      "size_usd": 10.0,
+      "pnl_usd": 0.6131,
+      "pnl_pct": 6.1314,
+      "tx": "TP_+3.5",
+      "id": "PAPER-240",
+      "paper": true
+    },
     {
       "t": "2026-09-21 11:11:25 ET",
       "kind": "PAPER",
@@ -1487,44 +1527,45 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 110.4275,
-    "mtm_equity_usd": 110.4235,
-    "realized_pnl_usd": 10.4275,
-    "unrealized_pnl_usd": -0.004,
+    "paper_equity_usd": 111.0406,
+    "mtm_equity_usd": 111.3232,
+    "realized_pnl_usd": 11.0406,
+    "unrealized_pnl_usd": 0.2826,
     "open": {
-      "id": "PAPER-240",
+      "id": "PAPER-241",
       "ticker": "KARURE",
-      "usd": 10.0
+      "usd": 10.0,
+      "mtm_pct": 2.8262
     },
-    "notes": "PAPER heartbeat \u00b7 eq $110.43 \u00b7 curve n=64 \u00b7 2026-09-21 11:16:51 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $111.04 \u00b7 curve n=65 \u00b7 2026-09-21 11:17:38 ET",
     "strategy": "MEME_V6_FAST_JEV",
-    "closed_n": 62
+    "closed_n": 63
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $110.43 \u00b7 2026-09-21 11:16:51 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $111.04 \u00b7 2026-09-21 11:17:38 ET",
   "strategy": "MEME_V6_FAST_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=KARURE open_p=0.66 edge=2.05 conf=0.87",
+    "detail": "pick=KARURE open_p=0.67 edge=2.09 conf=0.88",
     "pick": "KARURE",
-    "open_p": 0.66,
-    "confidence": 0.87,
-    "edge_score": 2.05,
+    "open_p": 0.67,
+    "confidence": 0.88,
+    "edge_score": 2.09,
     "picks": [
       {
         "sym": "KARURE",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.9
+        "probs": 0.91
       },
       {
         "sym": "POPEYE",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.09
+        "probs": 0.08
       },
       {
         "sym": "NAUTILO",
-        "lost_bps": 17,
+        "lost_bps": 11,
         "selected": false,
         "probs": 0.0
       },
@@ -1536,7 +1577,7 @@
       },
       {
         "sym": "IPO",
-        "lost_bps": 25,
+        "lost_bps": 35,
         "selected": false,
         "probs": 0.0
       }
@@ -1546,20 +1587,20 @@
       "pick": {
         "type": "choice",
         "choice": "KARURE",
-        "confidence": 0.87
+        "confidence": 0.88
       },
       "edge": {
         "type": "score",
-        "score": 2.05,
-        "confidence": 0.21
+        "score": 2.09,
+        "confidence": 0.22
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.67
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-21 11:16:41 ET",
+    "stamp_et": "2026-09-21 11:17:13 ET",
     "live": true
   }
 }
