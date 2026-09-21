@@ -8,10 +8,10 @@
     BTC: "https://api.coinbase.com/v2/prices/BTC-USD/spot",
     LINK: "https://api.coinbase.com/v2/prices/LINK-USD/spot",
   };
-  // Same-origin first. jsDelivr next (raw.githubusercontent.com often sticks stale 30m+).
+  // jsDelivr first — GH Pages status=errored was serving stale PAPER book.
   const SOURCES = [
-    "./book.json",
     "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/book.json",
+    "./book.json",
   ];
   async function loadVersionPinned() {
     try {
