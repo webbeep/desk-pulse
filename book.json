@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 15:40:56 ET",
+  "updated_et": "2026-09-22 15:41:44 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 136.261,
+  "liquid_usd": 137.6066,
   "upnl_usd": 0.0,
-  "equity_usd": 136.261,
+  "equity_usd": 137.6066,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 36.261,
-  "total_pnl_pct": 36.261,
-  "mark_eth": 2753.995,
-  "mark": 2753.995,
+  "total_pnl_usd": 37.6066,
+  "total_pnl_pct": 37.6066,
+  "mark_eth": 2753.53,
+  "mark": 2753.53,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2753.995
+    "ETH": 2753.53
   },
   "holdings": {
-    "paper_cash_usd": 136.261,
+    "paper_cash_usd": 137.6066,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1677,9 +1677,32 @@
       "ticker": "SHINYHUNTERS",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -1.2031
+    },
+    {
+      "t": "2026-09-22 15:41:35 ET",
+      "equity_usd": 137.6066,
+      "liquid_usd": 137.6066,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SHINYHUNTERS",
+      "reason": "TP_+3.5",
+      "pnl_usd": 1.3456
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 15:41:35 ET",
+      "kind": "PAPER",
+      "market": "SHINYHUNTERS",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 1.3456,
+      "pnl_pct": 11.2129,
+      "tx": "TP_+3.5",
+      "id": "PAPER-342",
+      "paper": true
+    },
     {
       "t": "2026-09-22 15:37:14 ET",
       "kind": "PAPER",
@@ -2706,70 +2729,57 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-263",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 07:56:54 ET",
-      "kind": "PAPER",
-      "market": "DUALITY",
-      "side": "LONG",
-      "size": 25.0,
-      "size_usd": 25.0,
-      "pnl_usd": 4.1176,
-      "pnl_pct": 16.4705,
-      "tx": "TP_+3.5",
-      "id": "PAPER-262",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 136.261,
-    "mtm_equity_usd": 136.261,
-    "realized_pnl_usd": 36.261,
+    "paper_equity_usd": 137.6066,
+    "mtm_equity_usd": 137.6066,
+    "realized_pnl_usd": 37.6066,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $136.26 \u00b7 curve n=164 \u00b7 2026-09-22 15:40:56 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $137.61 \u00b7 curve n=165 \u00b7 2026-09-22 15:41:44 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 163
+    "closed_n": 164
   },
-  "notes": "PAPER heartbeat \u00b7 eq $136.26 \u00b7 FLAT \u00b7 2026-09-22 15:40:56 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $137.61 \u00b7 FLAT \u00b7 2026-09-22 15:41:44 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TIMUR open_p=0.64 edge=2.24 conf=0.69",
+    "detail": "pick=TIMUR open_p=0.67 edge=2.39 conf=0.96",
     "pick": "TIMUR",
-    "open_p": 0.64,
-    "confidence": 0.69,
-    "edge_score": 2.24,
+    "open_p": 0.67,
+    "confidence": 0.96,
+    "edge_score": 2.39,
     "picks": [
-      {
-        "sym": "HOOD6900",
-        "lost_bps": 6,
-        "selected": false,
-        "probs": 0.24
-      },
       {
         "sym": "TIMUR",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.74
+        "probs": 0.96
       },
       {
-        "sym": "SHINYHUNTERS",
-        "lost_bps": 8,
+        "sym": "HOOD6900",
+        "lost_bps": 7,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "SI",
+        "lost_bps": 7,
+        "selected": false,
+        "probs": 0.01
+      },
+      {
+        "sym": "SHINYHUNTERS",
         "lost_bps": 8,
         "selected": false,
         "probs": 0.01
       },
       {
         "sym": "COMPTY",
-        "lost_bps": 49,
+        "lost_bps": 42,
         "selected": false,
         "probs": 0.0
       }
@@ -2779,20 +2789,20 @@
       "pick": {
         "type": "choice",
         "choice": "TIMUR",
-        "confidence": 0.69
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 2.24,
-        "confidence": 0.34
+        "score": 2.39,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.67
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 15:39:42 ET",
+    "stamp_et": "2026-09-22 15:41:12 ET",
     "live": true
   }
 }
