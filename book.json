@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 07:54:27 ET",
+  "updated_et": "2026-09-22 07:55:14 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 111.7222,
-  "upnl_usd": 0.0,
-  "equity_usd": 111.7222,
+  "upnl_usd": -0.0576,
+  "equity_usd": 111.6646,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 11.7222,
-  "total_pnl_pct": 11.7222,
-  "mark_eth": 2739.395,
-  "mark": 2739.395,
+  "total_pnl_usd": 11.6646,
+  "total_pnl_pct": 11.6646,
+  "mark_eth": 2738.26,
+  "mark": 2738.26,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2739.395
+    "ETH": 2738.26
   },
   "holdings": {
-    "paper_cash_usd": 111.7222,
+    "paper_cash_usd": 86.7222,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -867,6 +867,13 @@
       "ticker": "SLND",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -0.9346
+    },
+    {
+      "t": "now",
+      "equity_usd": 111.6646,
+      "liquid_usd": 111.6646,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -1915,23 +1922,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 111.7222,
-    "mtm_equity_usd": 111.7222,
+    "mtm_equity_usd": 111.6646,
     "realized_pnl_usd": 11.7222,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $111.72 \u00b7 curve n=83 \u00b7 2026-09-22 07:54:27 ET",
+    "unrealized_pnl_usd": -0.0576,
+    "open": {
+      "id": "PAPER-261",
+      "ticker": "DUALITY",
+      "usd": 25.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $111.72 \u00b7 curve n=84 \u00b7 2026-09-22 07:55:14 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 82
   },
-  "notes": "PAPER heartbeat \u00b7 eq $111.72 \u00b7 FLAT \u00b7 2026-09-22 07:54:27 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $111.72 \u00b7 2026-09-22 07:55:14 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=DUALITY open_p=0.60 edge=1.82 conf=0.96",
+    "detail": "pick=DUALITY open_p=0.64 edge=2.16 conf=0.98",
     "pick": "DUALITY",
-    "open_p": 0.6,
-    "confidence": 0.96,
-    "edge_score": 1.82,
+    "open_p": 0.64,
+    "confidence": 0.98,
+    "edge_score": 2.16,
     "picks": [
       {
         "sym": "DUALITY",
@@ -1940,16 +1951,10 @@
         "probs": 0.98
       },
       {
-        "sym": "+",
-        "lost_bps": 24,
-        "selected": false,
-        "probs": 0.0
-      },
-      {
         "sym": "SLND",
-        "lost_bps": 48,
+        "lost_bps": 41,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -1957,20 +1962,20 @@
       "pick": {
         "type": "choice",
         "choice": "DUALITY",
-        "confidence": 0.96
+        "confidence": 0.98
       },
       "edge": {
         "type": "score",
-        "score": 1.82,
-        "confidence": 0.26
+        "score": 2.16,
+        "confidence": 0.43
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.6
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 07:53:37 ET",
+    "stamp_et": "2026-09-22 07:55:09 ET",
     "live": true
   }
 }
