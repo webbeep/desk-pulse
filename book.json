@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 14:55:10 ET",
+  "updated_et": "2026-09-22 14:55:58 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 117.3338,
-  "upnl_usd": 0.0,
-  "equity_usd": 117.3338,
+  "upnl_usd": -0.0274,
+  "equity_usd": 117.3064,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 17.3338,
-  "total_pnl_pct": 17.3338,
-  "mark_eth": 2750.945,
-  "mark": 2750.945,
+  "total_pnl_usd": 17.3064,
+  "total_pnl_pct": 17.3064,
+  "mark_eth": 2753.945,
+  "mark": 2753.945,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2750.945
+    "ETH": 2753.945
   },
   "holdings": {
-    "paper_cash_usd": 117.3338,
+    "paper_cash_usd": 105.3338,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1577,6 +1577,13 @@
       "ticker": "HOOD6900",
       "reason": "TP_+3.5",
       "pnl_usd": 1.511
+    },
+    {
+      "t": "now",
+      "equity_usd": 117.3064,
+      "liquid_usd": 117.3064,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2625,23 +2632,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 117.3338,
-    "mtm_equity_usd": 117.3338,
+    "mtm_equity_usd": 117.3064,
     "realized_pnl_usd": 17.3338,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $117.33 \u00b7 curve n=154 \u00b7 2026-09-22 14:55:10 ET",
+    "unrealized_pnl_usd": -0.0274,
+    "open": {
+      "id": "PAPER-332",
+      "ticker": "HOOD6900",
+      "usd": 12.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $117.33 \u00b7 curve n=155 \u00b7 2026-09-22 14:55:58 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 153
   },
-  "notes": "PAPER heartbeat \u00b7 eq $117.33 \u00b7 FLAT \u00b7 2026-09-22 14:55:10 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $117.33 \u00b7 2026-09-22 14:55:58 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=LUNA open_p=0.64 edge=2.13 conf=0.95",
+    "detail": "pick=LUNA open_p=0.63 edge=1.98 conf=0.95",
     "pick": "LUNA",
-    "open_p": 0.64,
+    "open_p": 0.63,
     "confidence": 0.95,
-    "edge_score": 2.13,
+    "edge_score": 1.98,
     "picks": [
       {
         "sym": "LUNA",
@@ -2677,16 +2688,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.13,
-        "confidence": 0.33
+        "score": 1.98,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 14:54:02 ET",
+    "stamp_et": "2026-09-22 14:55:35 ET",
     "live": true
   }
 }
