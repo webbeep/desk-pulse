@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 07:51:18 ET",
+  "updated_et": "2026-09-22 07:52:05 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 113.7623,
-  "upnl_usd": 0.3055,
-  "equity_usd": 114.0678,
+  "liquid_usd": 114.3864,
+  "upnl_usd": 0.0,
+  "equity_usd": 114.3864,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 14.0678,
-  "total_pnl_pct": 14.0678,
-  "mark_eth": 2741.645,
-  "mark": 2741.645,
+  "total_pnl_usd": 14.3864,
+  "total_pnl_pct": 14.3864,
+  "mark_eth": 2742.125,
+  "mark": 2742.125,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2741.645
+    "ETH": 2742.125
   },
   "holdings": {
-    "paper_cash_usd": 101.7623,
+    "paper_cash_usd": 114.3864,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-258",
-      "market": "SLND",
-      "side": "LONG",
-      "size_usd": 12.0,
-      "entry": 7.298479127078124e-05,
-      "mark": 7.484286241521655e-05,
-      "uPnL": 0.3055,
-      "mtm_pct": 2.5456,
-      "sl": 5.8387833016624994e-05,
-      "tp": 0.00010947718690617186,
-      "lev": 1,
-      "paper": true,
-      "liq": 12271858696589425368886,
-      "held_min": 0.63
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -856,14 +839,30 @@
       "pnl_usd": -0.0392
     },
     {
-      "t": "now",
-      "equity_usd": 114.0678,
-      "liquid_usd": 114.0678,
+      "t": "2026-09-22 07:51:22 ET",
+      "equity_usd": 114.3864,
+      "liquid_usd": 114.3864,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "SLND",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.6241
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 07:51:22 ET",
+      "kind": "PAPER",
+      "market": "SLND",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 0.6241,
+      "pnl_pct": 5.2008,
+      "tx": "TP_+3.5",
+      "id": "PAPER-258",
+      "paper": true
+    },
     {
       "t": "2026-09-21 11:28:51 ET",
       "kind": "PAPER",
@@ -1895,35 +1894,30 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 113.7623,
-    "mtm_equity_usd": 114.0678,
-    "realized_pnl_usd": 13.7623,
-    "unrealized_pnl_usd": 0.3055,
-    "open": {
-      "id": "PAPER-258",
-      "ticker": "SLND",
-      "usd": 12.0,
-      "mtm_pct": 2.5456
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $113.76 \u00b7 curve n=81 \u00b7 2026-09-22 07:51:18 ET",
+    "paper_equity_usd": 114.3864,
+    "mtm_equity_usd": 114.3864,
+    "realized_pnl_usd": 14.3864,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $114.39 \u00b7 curve n=81 \u00b7 2026-09-22 07:52:05 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 79
+    "closed_n": 80
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $113.76 \u00b7 2026-09-22 07:51:18 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $114.39 \u00b7 FLAT \u00b7 2026-09-22 07:52:05 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=DUALITY open_p=0.59 edge=1.8 conf=0.94",
+    "detail": "pick=DUALITY open_p=0.61 edge=1.87 conf=0.96",
     "pick": "DUALITY",
-    "open_p": 0.59,
-    "confidence": 0.94,
-    "edge_score": 1.8,
+    "open_p": 0.61,
+    "confidence": 0.96,
+    "edge_score": 1.87,
     "picks": [
       {
         "sym": "DUALITY",
         "lost_bps": 9,
         "selected": true,
-        "probs": 0.96
+        "probs": 0.98
       },
       {
         "sym": "+",
@@ -1935,7 +1929,7 @@
         "sym": "SLND",
         "lost_bps": 48,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -1943,20 +1937,20 @@
       "pick": {
         "type": "choice",
         "choice": "DUALITY",
-        "confidence": 0.94
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 1.8,
-        "confidence": 0.24
+        "score": 1.87,
+        "confidence": 0.3
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.59
+        "noul": 0.61
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 07:50:31 ET",
+    "stamp_et": "2026-09-22 07:52:05 ET",
     "live": true
   }
 }
