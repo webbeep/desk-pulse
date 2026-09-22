@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 12:22:17 ET",
+  "updated_et": "2026-09-22 12:23:03 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 118.3034,
+  "liquid_usd": 116.8812,
   "upnl_usd": 0.0,
-  "equity_usd": 118.3034,
+  "equity_usd": 116.8812,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 18.3034,
-  "total_pnl_pct": 18.3034,
-  "mark_eth": 2734.59,
-  "mark": 2734.59,
+  "total_pnl_usd": 16.8812,
+  "total_pnl_pct": 16.8812,
+  "mark_eth": 2732.59,
+  "mark": 2732.59,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2734.59
+    "ETH": 2732.59
   },
   "holdings": {
-    "paper_cash_usd": 118.3034,
+    "paper_cash_usd": 116.8812,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1247,9 +1247,32 @@
       "ticker": "ELEPHANT",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -0.8538
+    },
+    {
+      "t": "2026-09-22 12:22:54 ET",
+      "equity_usd": 116.8812,
+      "liquid_usd": 116.8812,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "LEAFS",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -1.4222
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 12:22:54 ET",
+      "kind": "PAPER",
+      "market": "LEAFS",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -1.4222,
+      "pnl_pct": -11.8514,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-299",
+      "paper": true
+    },
     {
       "t": "2026-09-22 12:21:44 ET",
       "kind": "PAPER",
@@ -2276,54 +2299,41 @@
       "tx": "TP_+4.0",
       "id": "PAPER-219",
       "paper": true
-    },
-    {
-      "t": "2026-09-21 02:15:18 ET",
-      "kind": "PAPER",
-      "market": "+",
-      "side": "LONG",
-      "size": 9.3,
-      "size_usd": 9.3,
-      "pnl_usd": -1.4951,
-      "pnl_pct": -16.0764,
-      "tx": "CUT_HARD_-3.0",
-      "id": "PAPER-218",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 118.3034,
-    "mtm_equity_usd": 118.3034,
-    "realized_pnl_usd": 18.3034,
+    "paper_equity_usd": 116.8812,
+    "mtm_equity_usd": 116.8812,
+    "realized_pnl_usd": 16.8812,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $118.30 \u00b7 curve n=121 \u00b7 2026-09-22 12:22:17 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $116.88 \u00b7 curve n=122 \u00b7 2026-09-22 12:23:03 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 120
+    "closed_n": 121
   },
-  "notes": "PAPER heartbeat \u00b7 eq $118.30 \u00b7 FLAT \u00b7 2026-09-22 12:22:17 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $116.88 \u00b7 FLAT \u00b7 2026-09-22 12:23:03 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=GROK open_p=0.68 edge=2.43 conf=0.91",
+    "detail": "pick=GROK open_p=0.71 edge=2.51 conf=0.9",
     "pick": "GROK",
-    "open_p": 0.68,
-    "confidence": 0.91,
-    "edge_score": 2.43,
+    "open_p": 0.71,
+    "confidence": 0.9,
+    "edge_score": 2.51,
     "picks": [
       {
         "sym": "GROK",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.9400000000000001
+        "probs": 0.92
       },
       {
         "sym": "POCHI",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.06
+        "probs": 0.07
       },
       {
         "sym": "ELEPHANT",
@@ -2349,20 +2359,20 @@
       "pick": {
         "type": "choice",
         "choice": "GROK",
-        "confidence": 0.91
+        "confidence": 0.9
       },
       "edge": {
         "type": "score",
-        "score": 2.43,
-        "confidence": 0.35
+        "score": 2.51,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.68
+        "noul": 0.71
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 12:20:56 ET",
+    "stamp_et": "2026-09-22 12:22:29 ET",
     "live": true
   }
 }
