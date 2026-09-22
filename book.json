@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 09:52:17 ET",
+  "updated_et": "2026-09-22 09:53:04 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 125.0146,
-  "upnl_usd": -0.0119,
-  "equity_usd": 125.0027,
+  "liquid_usd": 127.94,
+  "upnl_usd": 0.0,
+  "equity_usd": 127.94,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 25.0027,
-  "total_pnl_pct": 25.0027,
-  "mark_eth": 2753.895,
-  "mark": 2753.895,
+  "total_pnl_usd": 27.94,
+  "total_pnl_pct": 27.94,
+  "mark_eth": 2753.875,
+  "mark": 2753.875,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2753.895
+    "ETH": 2753.875
   },
   "holdings": {
-    "paper_cash_usd": 113.0146,
+    "paper_cash_usd": 127.94,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1109,14 +1109,30 @@
       "pnl_usd": -1.4835
     },
     {
-      "t": "now",
-      "equity_usd": 125.0027,
-      "liquid_usd": 125.0027,
+      "t": "2026-09-22 09:52:41 ET",
+      "equity_usd": 127.94,
+      "liquid_usd": 127.94,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "GROK",
+      "reason": "TP_+3.5",
+      "pnl_usd": 2.9254
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 09:52:41 ET",
+      "kind": "PAPER",
+      "market": "GROK",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 2.9254,
+      "pnl_pct": 24.3787,
+      "tx": "TP_+3.5",
+      "id": "PAPER-285",
+      "paper": true
+    },
     {
       "t": "2026-09-22 09:49:00 ET",
       "kind": "PAPER",
@@ -2143,38 +2159,21 @@
       "tx": "CUT_HARD_-3.0",
       "id": "PAPER-205",
       "paper": true
-    },
-    {
-      "t": "2026-09-21 00:15:43 ET",
-      "kind": "PAPER",
-      "market": "TERMINATOR",
-      "side": "LONG",
-      "size": 8.23,
-      "size_usd": 8.23,
-      "pnl_usd": -0.0187,
-      "pnl_pct": -0.2275,
-      "tx": "TIME_SOFT_300s",
-      "id": "PAPER-204",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 125.0146,
-    "mtm_equity_usd": 125.0027,
-    "realized_pnl_usd": 25.0146,
-    "unrealized_pnl_usd": -0.0119,
-    "open": {
-      "id": "PAPER-285",
-      "ticker": "GROK",
-      "usd": 12.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $125.01 \u00b7 curve n=108 \u00b7 2026-09-22 09:52:17 ET",
+    "paper_equity_usd": 127.94,
+    "mtm_equity_usd": 127.94,
+    "realized_pnl_usd": 27.94,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $127.94 \u00b7 curve n=108 \u00b7 2026-09-22 09:53:04 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 106
+    "closed_n": 107
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $125.01 \u00b7 2026-09-22 09:52:17 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $127.94 \u00b7 FLAT \u00b7 2026-09-22 09:53:04 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
