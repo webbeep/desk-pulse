@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 09:11:13 ET",
+  "updated_et": "2026-09-22 09:12:00 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 123.0547,
-  "upnl_usd": 0.0,
-  "equity_usd": 123.0547,
+  "upnl_usd": 0.7382,
+  "equity_usd": 123.7929,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 23.0547,
-  "total_pnl_pct": 23.0547,
-  "mark_eth": 2758.395,
-  "mark": 2758.395,
+  "total_pnl_usd": 23.7929,
+  "total_pnl_pct": 23.7929,
+  "mark_eth": 2756.195,
+  "mark": 2756.195,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2758.395
+    "ETH": 2756.195
   },
   "holdings": {
-    "paper_cash_usd": 123.0547,
+    "paper_cash_usd": 98.0547,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-271",
+      "market": "TWEENIX",
+      "side": "LONG",
+      "size_usd": 25.0,
+      "entry": 0.00030209255434347895,
+      "mark": 0.0003110127432881332,
+      "uPnL": 0.7382,
+      "mtm_pct": 2.9527,
+      "sl": 0.00024167404347478317,
+      "tp": 0.0004531388315152184,
+      "lev": 1,
+      "paper": true,
+      "liq": 77461716712797723483369,
+      "held_min": 0.73
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -967,6 +984,13 @@
       "ticker": "KIRKINU",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -0.3015
+    },
+    {
+      "t": "now",
+      "equity_usd": 123.7929,
+      "liquid_usd": 123.7929,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2015,23 +2039,28 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 123.0547,
-    "mtm_equity_usd": 123.0547,
+    "mtm_equity_usd": 123.7929,
     "realized_pnl_usd": 23.0547,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $123.05 \u00b7 curve n=93 \u00b7 2026-09-22 09:11:13 ET",
+    "unrealized_pnl_usd": 0.7382,
+    "open": {
+      "id": "PAPER-271",
+      "ticker": "TWEENIX",
+      "usd": 25.0,
+      "mtm_pct": 2.9527
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $123.05 \u00b7 curve n=94 \u00b7 2026-09-22 09:12:00 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 92
   },
-  "notes": "PAPER heartbeat \u00b7 eq $123.05 \u00b7 FLAT \u00b7 2026-09-22 09:11:13 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $123.05 \u00b7 2026-09-22 09:12:00 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TWEENIX open_p=0.64 edge=1.98 conf=0.96",
+    "detail": "pick=TWEENIX open_p=0.64 edge=1.94 conf=0.96",
     "pick": "TWEENIX",
     "open_p": 0.64,
     "confidence": 0.96,
-    "edge_score": 1.98,
+    "edge_score": 1.94,
     "picks": [
       {
         "sym": "TWEENIX",
@@ -2041,7 +2070,7 @@
       },
       {
         "sym": "KIRKINU",
-        "lost_bps": 8,
+        "lost_bps": 9,
         "selected": false,
         "probs": 0.02
       }
@@ -2055,8 +2084,8 @@
       },
       "edge": {
         "type": "score",
-        "score": 1.98,
-        "confidence": 0.35
+        "score": 1.94,
+        "confidence": 0.43
       },
       "open_now": {
         "type": "noul",
@@ -2064,7 +2093,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 09:09:44 ET",
+    "stamp_et": "2026-09-22 09:11:16 ET",
     "live": true
   }
 }
