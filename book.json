@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 12:39:15 ET",
+  "updated_et": "2026-09-22 12:40:01 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 114.4067,
-  "upnl_usd": -0.0137,
-  "equity_usd": 114.393,
+  "liquid_usd": 116.8949,
+  "upnl_usd": 0.0,
+  "equity_usd": 116.8949,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 14.393,
-  "total_pnl_pct": 14.393,
-  "mark_eth": 2736.075,
-  "mark": 2736.075,
+  "total_pnl_usd": 16.8949,
+  "total_pnl_pct": 16.8949,
+  "mark_eth": 2736.28,
+  "mark": 2736.28,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2736.075
+    "ETH": 2736.28
   },
   "holdings": {
-    "paper_cash_usd": 102.4067,
+    "paper_cash_usd": 116.8949,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-304",
-      "market": "ELEPHANT",
-      "side": "LONG",
-      "size_usd": 12.0,
-      "entry": 3.8468725978240365e-05,
-      "mark": 3.842480751608187e-05,
-      "uPnL": -0.0137,
-      "mtm_pct": -0.1138,
-      "sl": 3.0774980782592295e-05,
-      "tp": 5.770308896736055e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 54773207779044021846921,
-      "held_min": 1.58
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -1316,14 +1299,30 @@
       "pnl_usd": -1.5167
     },
     {
-      "t": "now",
-      "equity_usd": 114.393,
-      "liquid_usd": 114.393,
+      "t": "2026-09-22 12:39:18 ET",
+      "equity_usd": 116.8949,
+      "liquid_usd": 116.8949,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "ELEPHANT",
+      "reason": "TP_+3.5",
+      "pnl_usd": 2.4882
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 12:39:18 ET",
+      "kind": "PAPER",
+      "market": "ELEPHANT",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 2.4882,
+      "pnl_pct": 20.7348,
+      "tx": "TP_+3.5",
+      "id": "PAPER-304",
+      "paper": true
+    },
     {
       "t": "2026-09-22 12:34:04 ET",
       "kind": "PAPER",
@@ -2350,39 +2349,21 @@
       "tx": "TP_+4.0",
       "id": "PAPER-224",
       "paper": true
-    },
-    {
-      "t": "2026-09-21 03:53:03 ET",
-      "kind": "PAPER",
-      "market": "DOUCHEBAG",
-      "side": "LONG",
-      "size": 9.31,
-      "size_usd": 9.31,
-      "pnl_usd": 1.3496,
-      "pnl_pct": 14.4958,
-      "tx": "TP_+4.0",
-      "id": "PAPER-223",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 114.4067,
-    "mtm_equity_usd": 114.393,
-    "realized_pnl_usd": 14.4067,
-    "unrealized_pnl_usd": -0.0137,
-    "open": {
-      "id": "PAPER-304",
-      "ticker": "ELEPHANT",
-      "usd": 12.0,
-      "mtm_pct": -0.1138
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $114.41 \u00b7 curve n=127 \u00b7 2026-09-22 12:39:15 ET",
+    "paper_equity_usd": 116.8949,
+    "mtm_equity_usd": 116.8949,
+    "realized_pnl_usd": 16.8949,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $116.89 \u00b7 curve n=127 \u00b7 2026-09-22 12:40:01 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 125
+    "closed_n": 126
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $114.41 \u00b7 2026-09-22 12:39:15 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $116.89 \u00b7 FLAT \u00b7 2026-09-22 12:40:01 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
