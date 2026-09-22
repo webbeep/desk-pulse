@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 11:17:11 ET",
+  "updated_et": "2026-09-22 11:17:57 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 125.8607,
-  "upnl_usd": 0.0,
-  "equity_usd": 125.8607,
+  "upnl_usd": -0.0607,
+  "equity_usd": 125.8,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 25.8607,
-  "total_pnl_pct": 25.8607,
-  "mark_eth": 2742.625,
-  "mark": 2742.625,
+  "total_pnl_usd": 25.8,
+  "total_pnl_pct": 25.8,
+  "mark_eth": 2741.91,
+  "mark": 2741.91,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2742.625
+    "ETH": 2741.91
   },
   "holdings": {
-    "paper_cash_usd": 125.8607,
+    "paper_cash_usd": 113.8607,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1177,6 +1177,13 @@
       "ticker": "ELEPHANT",
       "reason": "TP_+3.5",
       "pnl_usd": 1.2728
+    },
+    {
+      "t": "now",
+      "equity_usd": 125.8,
+      "liquid_usd": 125.8,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2225,23 +2232,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 125.8607,
-    "mtm_equity_usd": 125.8607,
+    "mtm_equity_usd": 125.8,
     "realized_pnl_usd": 25.8607,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $125.86 \u00b7 curve n=114 \u00b7 2026-09-22 11:17:11 ET",
+    "unrealized_pnl_usd": -0.0607,
+    "open": {
+      "id": "PAPER-292",
+      "ticker": "COMPTY",
+      "usd": 12.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $125.86 \u00b7 curve n=115 \u00b7 2026-09-22 11:17:57 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 113
   },
-  "notes": "PAPER heartbeat \u00b7 eq $125.86 \u00b7 FLAT \u00b7 2026-09-22 11:17:11 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $125.86 \u00b7 2026-09-22 11:17:57 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=GROK open_p=0.68 edge=2.44 conf=0.95",
+    "detail": "pick=GROK open_p=0.69 edge=2.4 conf=0.95",
     "pick": "GROK",
-    "open_p": 0.68,
+    "open_p": 0.69,
     "confidence": 0.95,
-    "edge_score": 2.44,
+    "edge_score": 2.4,
     "picks": [
       {
         "sym": "GROK",
@@ -2283,16 +2294,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.44,
-        "confidence": 0.37
+        "score": 2.4,
+        "confidence": 0.32
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.68
+        "noul": 0.69
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 11:16:07 ET",
+    "stamp_et": "2026-09-22 11:17:39 ET",
     "live": true
   }
 }
