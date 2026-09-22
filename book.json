@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 18:56:26 ET",
+  "updated_et": "2026-09-22 18:57:15 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 130.322,
+  "liquid_usd": 133.6308,
   "upnl_usd": 0.0,
-  "equity_usd": 130.322,
+  "equity_usd": 133.6308,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 30.322,
-  "total_pnl_pct": 30.322,
-  "mark_eth": 2755.485,
-  "mark": 2755.485,
+  "total_pnl_usd": 33.6308,
+  "total_pnl_pct": 33.6308,
+  "mark_eth": 2755.425,
+  "mark": 2755.425,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2755.485
+    "ETH": 2755.425
   },
   "holdings": {
-    "paper_cash_usd": 130.322,
+    "paper_cash_usd": 133.6308,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1767,9 +1767,32 @@
       "ticker": "AGRIPPA",
       "reason": "TP_+3.5",
       "pnl_usd": 1.6476
+    },
+    {
+      "t": "2026-09-22 18:56:56 ET",
+      "equity_usd": 133.6308,
+      "liquid_usd": 133.6308,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "OAI",
+      "reason": "TP_+3.5",
+      "pnl_usd": 3.3088
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 18:56:56 ET",
+      "kind": "PAPER",
+      "market": "OAI",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 3.3088,
+      "pnl_pct": 27.573,
+      "tx": "TP_+3.5",
+      "id": "PAPER-351",
+      "paper": true
+    },
     {
       "t": "2026-09-22 18:55:15 ET",
       "kind": "PAPER",
@@ -2796,48 +2819,35 @@
       "tx": "TP_+3.5",
       "id": "PAPER-272",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 09:12:21 ET",
-      "kind": "PAPER",
-      "market": "TWEENIX",
-      "side": "LONG",
-      "size": 25.0,
-      "size_usd": 25.0,
-      "pnl_usd": 1.891,
-      "pnl_pct": 7.5641,
-      "tx": "TP_+3.5",
-      "id": "PAPER-271",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 130.322,
-    "mtm_equity_usd": 130.322,
-    "realized_pnl_usd": 30.322,
+    "paper_equity_usd": 133.6308,
+    "mtm_equity_usd": 133.6308,
+    "realized_pnl_usd": 33.6308,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $130.32 \u00b7 curve n=173 \u00b7 2026-09-22 18:56:26 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $133.63 \u00b7 curve n=174 \u00b7 2026-09-22 18:57:15 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 172
+    "closed_n": 173
   },
-  "notes": "PAPER heartbeat \u00b7 eq $130.32 \u00b7 FLAT \u00b7 2026-09-22 18:56:26 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $133.63 \u00b7 FLAT \u00b7 2026-09-22 18:57:15 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=HOOD6900 open_p=0.64 edge=2.01 conf=0.95",
+    "detail": "pick=HOOD6900 open_p=0.65 edge=1.95 conf=0.94",
     "pick": "HOOD6900",
-    "open_p": 0.64,
-    "confidence": 0.95,
-    "edge_score": 2.01,
+    "open_p": 0.65,
+    "confidence": 0.94,
+    "edge_score": 1.95,
     "picks": [
       {
         "sym": "HOOD6900",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.96
       },
       {
         "sym": "AGRIPPA",
@@ -2849,7 +2859,7 @@
         "sym": "OAI",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -2857,20 +2867,20 @@
       "pick": {
         "type": "choice",
         "choice": "HOOD6900",
-        "confidence": 0.95
+        "confidence": 0.94
       },
       "edge": {
         "type": "score",
-        "score": 2.01,
-        "confidence": 0.34
+        "score": 1.95,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 18:55:04 ET",
+    "stamp_et": "2026-09-22 18:56:37 ET",
     "live": true
   }
 }
