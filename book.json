@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 20:25:39 ET",
+  "updated_et": "2026-09-21 20:30:53 ET",
   "mode": "LIVE",
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 3.2872,
@@ -34,7 +34,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-63",
+      "market": "JOLLYBOT",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "tx": "0x9e988f8af3f7c81b63df9e47465b3e0864303fe57e6298aafcc6b3bea784f5bd",
+      "token": "0xe1565204f970846Bc915Bf66B5aE62a4B4482bBB",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "trades": [
     {
       "id": "LIVE-SCALP-62-EXIT",
@@ -2225,21 +2236,35 @@
   ],
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "CUT_HARD_QUOTER",
-    "last_exit_upnl": -8.0
+    "open": true,
+    "flat": false,
+    "ticker": "JOLLYBOT",
+    "tx": "0x9e988f8af3f7c81b63df9e47465b3e0864303fe57e6298aafcc6b3bea784f5bd",
+    "size_usd": 8.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-63",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "notes": "LIVE EXIT OLLYBOT \u00b7 CUT_HARD_QUOTER \u00b7 tx None \u00b7 2026-09-21 20:25:39 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-63",
+    "market": "JOLLYBOT",
+    "side": "LONG",
+    "size_usd": 8.0,
+    "tx": "0x9e988f8af3f7c81b63df9e47465b3e0864303fe57e6298aafcc6b3bea784f5bd",
+    "token": "0xe1565204f970846Bc915Bf66B5aE62a4B4482bBB",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "realized_ledger_usd": -3.4567,
   "rh_eth": 0.000910765098665932,
   "rh_eth_wei": 910765098665932,
