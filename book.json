@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-21 20:30:57 ET",
+  "updated_et": "2026-09-21 20:30:59 ET",
   "mode": "LIVE",
-  "status": "LIVE_OPEN",
+  "status": "EXITING:CUT_HARD_QUOTER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 3.2872,
-  "upnl_usd": -8.0,
+  "upnl_usd": 0.0,
   "funding_usd": 33.77,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-25.2095 \u00b7 SoT ledger sum",
   "total_pnl_usd": -25.2095,
@@ -34,25 +34,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-63",
-      "market": "JOLLYBOT",
-      "side": "LONG",
-      "size_usd": 8.0,
-      "entry": 4.967517034187265e-05,
-      "mark": 4.967517034187265e-05,
-      "uPnL": -8.0,
-      "mtm_pct": -100.0,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x9e988f8af3f7c81b63df9e47465b3e0864303fe57e6298aafcc6b3bea784f5bd",
-      "token": "0xe1565204f970846Bc915Bf66B5aE62a4B4482bBB",
-      "held_sec": 6,
-      "weth_out": 0.0,
-      "usd_out": 0.0
-    }
-  ],
+  "positions": [],
   "trades": [
     {
       "id": "LIVE-SCALP-62-EXIT",
@@ -840,13 +822,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 18:09:39 ET",
-      "equity_usd": 11.2843,
-      "liquid_usd": 11.2872,
-      "upnl_usd": -0.0029,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-21 18:09:52 ET",
       "equity_usd": 11.2845,
@@ -2239,6 +2214,13 @@
       "liquid_usd": 11.2872,
       "upnl_usd": -8.0,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-21 20:30:59 ET",
+      "equity_usd": 3.2872,
+      "liquid_usd": 11.2872,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -2246,38 +2228,22 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
   },
   "live": {
-    "open": true,
-    "ticker": "JOLLYBOT",
+    "open": false,
+    "ticker": null,
     "tx": "0x9e988f8af3f7c81b63df9e47465b3e0864303fe57e6298aafcc6b3bea784f5bd",
-    "size_usd": 8.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -100.0,
-    "upnl_usd": -8.0,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 6,
     "watcher": "rh_live_mtm_loop"
   },
-  "notes": "LIVE MTM JOLLYBOT uPnL $-8.0 (-100.0%) \u00b7 held 7s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 20:30:57 ET",
+  "notes": "LIVE MTM JOLLYBOT uPnL $-8.0 (-100.0%) \u00b7 held 7s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 20:30:57 ET \u00b7 CUT CUT_HARD_QUOTER",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": {
-    "id": "LIVE-SCALP-63",
-    "market": "JOLLYBOT",
-    "side": "LONG",
-    "size_usd": 8.0,
-    "entry": 4.967517034187265e-05,
-    "mark": 4.967517034187265e-05,
-    "uPnL": -8.0,
-    "mtm_pct": -100.0,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x9e988f8af3f7c81b63df9e47465b3e0864303fe57e6298aafcc6b3bea784f5bd",
-    "token": "0xe1565204f970846Bc915Bf66B5aE62a4B4482bBB",
-    "held_sec": 6,
-    "weth_out": 0.0,
-    "usd_out": 0.0
-  },
+  "position": null,
   "realized_ledger_usd": -3.4567,
   "rh_eth": 0.000910765098665932,
   "rh_eth_wei": 910765098665932,
