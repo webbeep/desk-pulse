@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 09:34:56 ET",
+  "updated_et": "2026-09-22 09:35:43 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 124.3873,
+  "liquid_usd": 122.9643,
   "upnl_usd": 0.0,
-  "equity_usd": 124.3873,
+  "equity_usd": 122.9643,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 24.3873,
-  "total_pnl_pct": 24.3873,
-  "mark_eth": 2753.625,
-  "mark": 2753.625,
+  "total_pnl_usd": 22.9643,
+  "total_pnl_pct": 22.9643,
+  "mark_eth": 2760.42,
+  "mark": 2760.42,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2753.625
+    "ETH": 2760.42
   },
   "holdings": {
-    "paper_cash_usd": 124.3873,
+    "paper_cash_usd": 122.9643,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1047,9 +1047,32 @@
       "ticker": "ORBX",
       "reason": "TP_+3.5",
       "pnl_usd": 1.7744
+    },
+    {
+      "t": "2026-09-22 09:35:37 ET",
+      "equity_usd": 122.9643,
+      "liquid_usd": 122.9643,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ORBX",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -1.423
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 09:35:37 ET",
+      "kind": "PAPER",
+      "market": "ORBX",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -1.423,
+      "pnl_pct": -11.8584,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-279",
+      "paper": true
+    },
     {
       "t": "2026-09-22 09:34:16 ET",
       "kind": "PAPER",
@@ -2076,54 +2099,41 @@
       "tx": "TP_+4.0",
       "id": "PAPER-199",
       "paper": true
-    },
-    {
-      "t": "2026-09-20 22:26:07 ET",
-      "kind": "PAPER",
-      "market": "VORTEX",
-      "side": "LONG",
-      "size": 8.2,
-      "size_usd": 8.2,
-      "pnl_usd": -0.4262,
-      "pnl_pct": -5.1979,
-      "tx": "CUT_HARD_-3.0",
-      "id": "PAPER-198",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 124.3873,
-    "mtm_equity_usd": 124.3873,
-    "realized_pnl_usd": 24.3873,
+    "paper_equity_usd": 122.9643,
+    "mtm_equity_usd": 122.9643,
+    "realized_pnl_usd": 22.9643,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $124.39 \u00b7 curve n=101 \u00b7 2026-09-22 09:34:56 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $122.96 \u00b7 curve n=102 \u00b7 2026-09-22 09:35:43 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 100
+    "closed_n": 101
   },
-  "notes": "PAPER heartbeat \u00b7 eq $124.39 \u00b7 FLAT \u00b7 2026-09-22 09:34:56 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $122.96 \u00b7 FLAT \u00b7 2026-09-22 09:35:43 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TWEENIX open_p=0.65 edge=2.18 conf=0.66",
+    "detail": "pick=TWEENIX open_p=0.66 edge=2.18 conf=0.62",
     "pick": "TWEENIX",
-    "open_p": 0.65,
-    "confidence": 0.66,
+    "open_p": 0.66,
+    "confidence": 0.62,
     "edge_score": 2.18,
     "picks": [
       {
         "sym": "TWEENIX",
         "lost_bps": 7,
         "selected": true,
-        "probs": 0.75
+        "probs": 0.71
       },
       {
         "sym": "KIRKINU",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.23
+        "probs": 0.27
       },
       {
         "sym": "ORBX",
@@ -2137,20 +2147,20 @@
       "pick": {
         "type": "choice",
         "choice": "TWEENIX",
-        "confidence": 0.66
+        "confidence": 0.62
       },
       "edge": {
         "type": "score",
         "score": 2.18,
-        "confidence": 0.35
+        "confidence": 0.3
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 09:33:50 ET",
+    "stamp_et": "2026-09-22 09:35:22 ET",
     "live": true
   }
 }
