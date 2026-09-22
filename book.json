@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 09:53:04 ET",
+  "updated_et": "2026-09-22 09:53:52 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 127.94,
-  "upnl_usd": 0.0,
-  "equity_usd": 127.94,
+  "upnl_usd": -0.0077,
+  "equity_usd": 127.9323,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 27.94,
-  "total_pnl_pct": 27.94,
-  "mark_eth": 2753.875,
-  "mark": 2753.875,
+  "total_pnl_usd": 27.9323,
+  "total_pnl_pct": 27.9323,
+  "mark_eth": 2754.18,
+  "mark": 2754.18,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2753.875
+    "ETH": 2754.18
   },
   "holdings": {
-    "paper_cash_usd": 127.94,
+    "paper_cash_usd": 115.94,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-286",
+      "market": "GROK",
+      "side": "LONG",
+      "size_usd": 12.0,
+      "entry": 0.0005665498190901412,
+      "mark": 0.000566186282956225,
+      "uPnL": -0.0077,
+      "mtm_pct": -0.0645,
+      "sl": 0.0004532398552721129,
+      "tp": 0.0008498247286352117,
+      "lev": 1,
+      "paper": true,
+      "liq": 31942230398369514935678,
+      "held_min": 0.07
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -1117,6 +1134,13 @@
       "ticker": "GROK",
       "reason": "TP_+3.5",
       "pnl_usd": 2.9254
+    },
+    {
+      "t": "now",
+      "equity_usd": 127.9323,
+      "liquid_usd": 127.9323,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2165,41 +2189,46 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 127.94,
-    "mtm_equity_usd": 127.94,
+    "mtm_equity_usd": 127.9323,
     "realized_pnl_usd": 27.94,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $127.94 \u00b7 curve n=108 \u00b7 2026-09-22 09:53:04 ET",
+    "unrealized_pnl_usd": -0.0077,
+    "open": {
+      "id": "PAPER-286",
+      "ticker": "GROK",
+      "usd": 12.0,
+      "mtm_pct": -0.0645
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $127.94 \u00b7 curve n=109 \u00b7 2026-09-22 09:53:52 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 107
   },
-  "notes": "PAPER heartbeat \u00b7 eq $127.94 \u00b7 FLAT \u00b7 2026-09-22 09:53:04 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $127.94 \u00b7 2026-09-22 09:53:52 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TWEENIX open_p=0.71 edge=2.47 conf=0.97",
+    "detail": "pick=TWEENIX open_p=0.70 edge=2.37 conf=0.96",
     "pick": "TWEENIX",
-    "open_p": 0.71,
-    "confidence": 0.97,
-    "edge_score": 2.47,
+    "open_p": 0.7,
+    "confidence": 0.96,
+    "edge_score": 2.37,
     "picks": [
       {
         "sym": "TWEENIX",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.98
+        "probs": 0.96
       },
       {
         "sym": "KIRKINU",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
       },
       {
         "sym": "GROK",
         "lost_bps": 11,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "ORBX",
@@ -2213,20 +2242,20 @@
       "pick": {
         "type": "choice",
         "choice": "TWEENIX",
-        "confidence": 0.97
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 2.47,
-        "confidence": 0.34
+        "score": 2.37,
+        "confidence": 0.3
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.71
+        "noul": 0.7
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 09:52:14 ET",
+    "stamp_et": "2026-09-22 09:53:46 ET",
     "live": true
   }
 }
