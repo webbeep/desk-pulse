@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 13:55:01 ET",
+  "updated_et": "2026-09-22 13:55:48 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 116.0653,
+  "liquid_usd": 117.9601,
   "upnl_usd": 0.0,
-  "equity_usd": 116.0653,
+  "equity_usd": 117.9601,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 16.0653,
-  "total_pnl_pct": 16.0653,
-  "mark_eth": 2757.28,
-  "mark": 2757.28,
+  "total_pnl_usd": 17.9601,
+  "total_pnl_pct": 17.9601,
+  "mark_eth": 2752.855,
+  "mark": 2752.855,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2757.28
+    "ETH": 2752.855
   },
   "holdings": {
-    "paper_cash_usd": 116.0653,
+    "paper_cash_usd": 117.9601,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1367,9 +1367,32 @@
       "ticker": "GOSSIP",
       "reason": "TP_+3.5",
       "pnl_usd": 0.7716
+    },
+    {
+      "t": "2026-09-22 13:55:42 ET",
+      "equity_usd": 117.9601,
+      "liquid_usd": 117.9601,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TIMUR",
+      "reason": "TP_+3.5",
+      "pnl_usd": 1.8948
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 13:55:42 ET",
+      "kind": "PAPER",
+      "market": "TIMUR",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 1.8948,
+      "pnl_pct": 15.79,
+      "tx": "TP_+3.5",
+      "id": "PAPER-311",
+      "paper": true
+    },
     {
       "t": "2026-09-22 13:10:36 ET",
       "kind": "PAPER",
@@ -2396,81 +2419,74 @@
       "tx": "CUT_HARD_-3.0",
       "id": "PAPER-231",
       "paper": true
-    },
-    {
-      "t": "2026-09-21 08:18:12 ET",
-      "kind": "PAPER",
-      "market": "POPEYE",
-      "side": "LONG",
-      "size": 9.79,
-      "size_usd": 9.79,
-      "pnl_usd": -3.8755,
-      "pnl_pct": -39.5862,
-      "tx": "CUT_HARD_-3.0",
-      "id": "PAPER-230",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 116.0653,
-    "mtm_equity_usd": 116.0653,
-    "realized_pnl_usd": 16.0653,
+    "paper_equity_usd": 117.9601,
+    "mtm_equity_usd": 117.9601,
+    "realized_pnl_usd": 17.9601,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $116.07 \u00b7 curve n=133 \u00b7 2026-09-22 13:55:01 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $117.96 \u00b7 curve n=134 \u00b7 2026-09-22 13:55:48 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 132
+    "closed_n": 133
   },
-  "notes": "PAPER heartbeat \u00b7 eq $116.07 \u00b7 FLAT \u00b7 2026-09-22 13:55:01 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $117.96 \u00b7 FLAT \u00b7 2026-09-22 13:55:48 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=POCHI open_p=0.65 edge=2.22 conf=0.94",
-    "pick": "POCHI",
-    "open_p": 0.65,
-    "confidence": 0.94,
-    "edge_score": 2.22,
+    "detail": "pick=TIMUR open_p=0.63 edge=2.17 conf=0.58",
+    "pick": "TIMUR",
+    "open_p": 0.63,
+    "confidence": 0.58,
+    "edge_score": 2.17,
     "picks": [
       {
-        "sym": "POCHI",
-        "lost_bps": 7,
+        "sym": "TIMUR",
+        "lost_bps": 8,
         "selected": true,
-        "probs": 0.96
+        "probs": 0.66
       },
       {
-        "sym": "GOSSIP",
-        "lost_bps": 9,
+        "sym": "POCHI",
+        "lost_bps": 8,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.24
       },
       {
-        "sym": "GROK",
-        "lost_bps": 10,
+        "sym": "SI",
+        "lost_bps": 13,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.07
+      },
+      {
+        "sym": "COMPTY",
+        "lost_bps": 50,
+        "selected": false,
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "POCHI",
-        "confidence": 0.94
+        "choice": "TIMUR",
+        "confidence": 0.58
       },
       "edge": {
         "type": "score",
-        "score": 2.22,
-        "confidence": 0.31
+        "score": 2.17,
+        "confidence": 0.32
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 13:54:35 ET",
+    "stamp_et": "2026-09-22 13:55:07 ET",
     "live": true
   }
 }
