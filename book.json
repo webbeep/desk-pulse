@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-22 16:26:40 ET",
+  "updated_et": "2026-09-22 16:27:28 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 137.6066,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 37.6066,
   "total_pnl_pct": 37.6066,
-  "mark_eth": 2754.63,
-  "mark": 2754.63,
+  "mark_eth": 2755.01,
+  "mark": 2755.01,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2754.63
+    "ETH": 2755.01
   },
   "holdings": {
     "paper_cash_usd": 137.6066,
@@ -2739,41 +2739,41 @@
     "realized_pnl_usd": 37.6066,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $137.61 \u00b7 curve n=165 \u00b7 2026-09-22 16:26:40 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $137.61 \u00b7 curve n=165 \u00b7 2026-09-22 16:27:28 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 164
   },
-  "notes": "PAPER heartbeat \u00b7 eq $137.61 \u00b7 FLAT \u00b7 2026-09-22 16:26:40 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $137.61 \u00b7 FLAT \u00b7 2026-09-22 16:27:28 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=HOOD6900 open_p=0.68 edge=2.39 conf=0.87",
+    "detail": "pick=HOOD6900 open_p=0.68 edge=2.33 conf=0.9",
     "pick": "HOOD6900",
     "open_p": 0.68,
-    "confidence": 0.87,
-    "edge_score": 2.39,
+    "confidence": 0.9,
+    "edge_score": 2.33,
     "picks": [
       {
         "sym": "HOOD6900",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.89
+        "probs": 0.92
       },
       {
         "sym": "SHINYHUNTERS",
-        "lost_bps": 7,
+        "lost_bps": 10,
         "selected": false,
-        "probs": 0.09
+        "probs": 0.07
       },
       {
         "sym": "SI",
-        "lost_bps": 8,
+        "lost_bps": 22,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "COMPTY",
-        "lost_bps": 48,
+        "lost_bps": 52,
         "selected": false,
         "probs": 0.0
       }
@@ -2783,12 +2783,12 @@
       "pick": {
         "type": "choice",
         "choice": "HOOD6900",
-        "confidence": 0.87
+        "confidence": 0.9
       },
       "edge": {
         "type": "score",
-        "score": 2.39,
-        "confidence": 0.32
+        "score": 2.33,
+        "confidence": 0.27
       },
       "open_now": {
         "type": "noul",
@@ -2796,7 +2796,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 16:26:37 ET",
+    "stamp_et": "2026-09-22 16:27:08 ET",
     "live": true
   }
 }
