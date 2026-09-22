@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-21 19:43:58 ET",
+  "updated_et": "2026-09-21 20:25:00 ET",
   "mode": "LIVE",
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 11.7713,
   "upnl_usd": 0.0,
   "funding_usd": 33.77,
-  "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-26.1604 \u00b7 SoT ledger sum",
-  "total_pnl_usd": -26.1604,
-  "total_pnl_pct": -77.4664,
+  "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-25.2095 \u00b7 SoT ledger sum",
+  "total_pnl_usd": -25.2095,
+  "total_pnl_pct": -74.6506,
   "mark_eth": 2772.82,
   "mark": 2772.82,
   "mark_src": "coinbase",
@@ -34,7 +34,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-62",
+      "market": "OLLYBOT",
+      "side": "LONG",
+      "size_usd": 8.0,
+      "tx": "0x5dfe3a2148a8da71eaf3e08eed20e8b6c2f4824df60b27275e89bc6a465af818",
+      "token": "0x77048331544525ea36185DB9Ab319F871A56599b",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "trades": [
     {
       "id": "LIVE-SCALP-61-EXIT",
@@ -2213,21 +2224,35 @@
   ],
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0xdb586ffb170655a51528225632ac3386f8d52c4aa93603443db61dc76cb595c2",
-    "last_exit_reason": "TP_V6_+3.5",
-    "last_exit_upnl": 0.9509
+    "open": true,
+    "flat": false,
+    "ticker": "OLLYBOT",
+    "tx": "0x5dfe3a2148a8da71eaf3e08eed20e8b6c2f4824df60b27275e89bc6a465af818",
+    "size_usd": 8.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-62",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "notes": "LIVE EXIT COPCAT \u00b7 TP_V6_+3.5 \u00b7 tx 0xdb586ffb170655a51528225632ac3386f8d52c4aa93603443db61dc76cb595c2 \u00b7 2026-09-21 19:43:58 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-62",
+    "market": "OLLYBOT",
+    "side": "LONG",
+    "size_usd": 8.0,
+    "tx": "0x5dfe3a2148a8da71eaf3e08eed20e8b6c2f4824df60b27275e89bc6a465af818",
+    "token": "0x77048331544525ea36185DB9Ab319F871A56599b",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "realized_ledger_usd": -3.4567,
   "rh_eth": 0.000910765098665932,
   "rh_eth_wei": 910765098665932,
