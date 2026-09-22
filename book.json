@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 19:53:09 ET",
+  "updated_et": "2026-09-22 19:53:57 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 137.1588,
-  "upnl_usd": -0.0123,
-  "equity_usd": 137.1465,
+  "liquid_usd": 137.1429,
+  "upnl_usd": -0.0232,
+  "equity_usd": 137.1197,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 37.1465,
-  "total_pnl_pct": 37.1465,
-  "mark_eth": 2755.215,
-  "mark": 2755.215,
+  "total_pnl_usd": 37.1197,
+  "total_pnl_pct": 37.1197,
+  "mark_eth": 2753.925,
+  "mark": 2753.925,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2755.215
+    "ETH": 2753.925
   },
   "holdings": {
-    "paper_cash_usd": 125.1588,
+    "paper_cash_usd": 125.1429,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-353",
-      "market": "OAI",
-      "side": "LONG",
-      "size_usd": 12.0,
-      "entry": 1.3875819459858536e-05,
-      "mark": 1.386159674491218e-05,
-      "uPnL": -0.0123,
-      "mtm_pct": -0.1024,
-      "sl": 1.110065556788683e-05,
-      "tp": 2.0813729189787804e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 70713633738326896357008,
-      "held_min": 2.35
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -1806,14 +1789,37 @@
       "pnl_usd": 3.528
     },
     {
+      "t": "2026-09-22 19:53:19 ET",
+      "equity_usd": 137.1429,
+      "liquid_usd": 137.1429,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "OAI",
+      "reason": "TIME_SOFT_180s",
+      "pnl_usd": -0.0159
+    },
+    {
       "t": "now",
-      "equity_usd": 137.1465,
-      "liquid_usd": 137.1465,
+      "equity_usd": 137.1197,
+      "liquid_usd": 137.1197,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 19:53:19 ET",
+      "kind": "PAPER",
+      "market": "OAI",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -0.0159,
+      "pnl_pct": -0.1321,
+      "tx": "TIME_SOFT_180s",
+      "id": "PAPER-353",
+      "paper": true
+    },
     {
       "t": "2026-09-22 18:58:36 ET",
       "kind": "PAPER",
@@ -2840,47 +2846,33 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-274",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 09:14:42 ET",
-      "kind": "PAPER",
-      "market": "TWEENIX",
-      "side": "LONG",
-      "size": 25.0,
-      "size_usd": 25.0,
-      "pnl_usd": 1.4771,
-      "pnl_pct": 5.9084,
-      "tx": "TP_+3.5",
-      "id": "PAPER-273",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 137.1588,
-    "mtm_equity_usd": 137.1465,
-    "realized_pnl_usd": 37.1588,
-    "unrealized_pnl_usd": -0.0123,
+    "paper_equity_usd": 137.1429,
+    "mtm_equity_usd": 137.1197,
+    "realized_pnl_usd": 37.1429,
+    "unrealized_pnl_usd": -0.0232,
     "open": {
-      "id": "PAPER-353",
+      "id": "PAPER-354",
       "ticker": "OAI",
-      "usd": 12.0,
-      "mtm_pct": -0.1024
+      "usd": 12.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $137.16 \u00b7 curve n=176 \u00b7 2026-09-22 19:53:09 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $137.14 \u00b7 curve n=177 \u00b7 2026-09-22 19:53:57 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 174
+    "closed_n": 175
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $137.16 \u00b7 2026-09-22 19:53:09 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $137.14 \u00b7 2026-09-22 19:53:57 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=HOOD6900 open_p=0.65 edge=2.09 conf=0.96",
+    "detail": "pick=HOOD6900 open_p=0.66 edge=2.16 conf=0.96",
     "pick": "HOOD6900",
-    "open_p": 0.65,
+    "open_p": 0.66,
     "confidence": 0.96,
-    "edge_score": 2.09,
+    "edge_score": 2.16,
     "picks": [
       {
         "sym": "HOOD6900",
@@ -2910,16 +2902,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.09,
-        "confidence": 0.39
+        "score": 2.16,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 19:52:19 ET",
+    "stamp_et": "2026-09-22 19:53:49 ET",
     "live": true
   }
 }
