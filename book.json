@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 19:58:47 ET",
+  "updated_et": "2026-09-22 19:59:35 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 138.7542,
+  "liquid_usd": 133.3394,
   "upnl_usd": 0.0,
-  "equity_usd": 138.7542,
+  "equity_usd": 133.3394,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 38.7542,
-  "total_pnl_pct": 38.7542,
-  "mark_eth": 2752.65,
-  "mark": 2752.65,
+  "total_pnl_usd": 33.3394,
+  "total_pnl_pct": 33.3394,
+  "mark_eth": 2752.88,
+  "mark": 2752.88,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2752.65
+    "ETH": 2752.88
   },
   "holdings": {
-    "paper_cash_usd": 138.7542,
+    "paper_cash_usd": 133.3394,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1817,9 +1817,32 @@
       "ticker": "EULER",
       "reason": "TP_+3.5",
       "pnl_usd": 1.641
+    },
+    {
+      "t": "2026-09-22 19:59:05 ET",
+      "equity_usd": 133.3394,
+      "liquid_usd": 133.3394,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "EULER",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -5.4148
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 19:59:05 ET",
+      "kind": "PAPER",
+      "market": "EULER",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -5.4148,
+      "pnl_pct": -45.1231,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-356",
+      "paper": true
+    },
     {
       "t": "2026-09-22 19:57:55 ET",
       "kind": "PAPER",
@@ -2846,42 +2869,29 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-277",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 09:25:25 ET",
-      "kind": "PAPER",
-      "market": "ORBX",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": -1.0233,
-      "pnl_pct": -8.5276,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-276",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 138.7542,
-    "mtm_equity_usd": 138.7542,
-    "realized_pnl_usd": 38.7542,
+    "paper_equity_usd": 133.3394,
+    "mtm_equity_usd": 133.3394,
+    "realized_pnl_usd": 33.3394,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $138.75 \u00b7 curve n=178 \u00b7 2026-09-22 19:58:47 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $133.34 \u00b7 curve n=179 \u00b7 2026-09-22 19:59:35 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 177
+    "closed_n": 178
   },
-  "notes": "PAPER heartbeat \u00b7 eq $138.75 \u00b7 FLAT \u00b7 2026-09-22 19:58:47 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $133.34 \u00b7 FLAT \u00b7 2026-09-22 19:59:35 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=HOOD6900 open_p=0.67 edge=2.15 conf=0.95",
+    "detail": "pick=HOOD6900 open_p=0.69 edge=2.23 conf=0.96",
     "pick": "HOOD6900",
-    "open_p": 0.67,
-    "confidence": 0.95,
-    "edge_score": 2.15,
+    "open_p": 0.69,
+    "confidence": 0.96,
+    "edge_score": 2.23,
     "picks": [
       {
         "sym": "HOOD6900",
@@ -2919,20 +2929,20 @@
       "pick": {
         "type": "choice",
         "choice": "HOOD6900",
-        "confidence": 0.95
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 2.15,
-        "confidence": 0.38
+        "score": 2.23,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.69
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 19:57:25 ET",
+    "stamp_et": "2026-09-22 19:58:57 ET",
     "live": true
   }
 }
