@@ -2443,60 +2443,43 @@
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 134
   },
-  "notes": "PAPER heartbeat \u00b7 eq $116.93 \u00b7 FLAT \u00b7 2026-09-22 13:58:06 ET",
+  "notes": "JEV OPEN \u00b7 pick=TIMUR open_p=0.64 edge=2.23 conf=0.59 \u00b7 PAPER heartbeat \u00b7 eq $116.93 \u00b7 FLAT \u00b7 2026-09-22 13:58:06 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-22 13:58:11 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=TIMUR open_p=0.63 edge=2.29 conf=0.56",
-    "pick": "TIMUR",
-    "open_p": 0.63,
-    "confidence": 0.56,
-    "edge_score": 2.29,
+    "detail": "pick=TIMUR open_p=0.64 edge=2.23 conf=0.59",
     "picks": [
       {
         "sym": "TIMUR",
         "lost_bps": 8,
         "selected": true,
-        "probs": 0.64
+        "probs": 0.68
       },
       {
         "sym": "POCHI",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.25
+        "probs": 0.23
       },
       {
         "sym": "SI",
         "lost_bps": 12,
         "selected": false,
-        "probs": 0.07
+        "probs": 0.06
       },
       {
         "sym": "COMPTY",
         "lost_bps": 50,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "TIMUR",
-        "confidence": 0.56
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.29,
-        "confidence": 0.3
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.63
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-22 13:56:39 ET",
+    "open_p": 0.64,
+    "risk": null,
+    "confidence": 0.59,
     "live": true
   }
 }
