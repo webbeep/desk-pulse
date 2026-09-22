@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-22 12:56:59 ET",
+  "updated_et": "2026-09-22 12:57:46 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 115.8675,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 15.8675,
   "total_pnl_pct": 15.8675,
-  "mark_eth": 2748.325,
-  "mark": 2748.325,
+  "mark_eth": 2747.54,
+  "mark": 2747.54,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2748.325
+    "ETH": 2747.54
   },
   "holdings": {
     "paper_cash_usd": 115.8675,
@@ -2379,37 +2379,35 @@
     "realized_pnl_usd": 15.8675,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $115.87 \u00b7 curve n=129 \u00b7 2026-09-22 12:56:59 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $115.87 \u00b7 curve n=129 \u00b7 2026-09-22 12:57:46 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 128
   },
-  "notes": "PAPER heartbeat \u00b7 eq $115.87 \u00b7 FLAT \u00b7 2026-09-22 12:56:59 ET",
+  "notes": "JEV OPEN \u00b7 pick=POCHI open_p=0.64 edge=2.21 conf=0.53 \u00b7 PAPER heartbeat \u00b7 eq $115.87 \u00b7 FLAT \u00b7 2026-09-22 12:57:46 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-22 12:57:46 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=POCHI open_p=0.65 edge=2.2 conf=0.49",
-    "pick": "POCHI",
-    "open_p": 0.65,
-    "confidence": 0.49,
-    "edge_score": 2.2,
+    "detail": "pick=POCHI open_p=0.64 edge=2.21 conf=0.53",
     "picks": [
       {
         "sym": "POCHI",
         "lost_bps": 8,
         "selected": true,
-        "probs": 0.59
+        "probs": 0.63
       },
       {
         "sym": "GROK",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.34
+        "probs": 0.31
       },
       {
         "sym": "GOSSIP",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.04
       },
       {
         "sym": "ELEPHANT",
@@ -2418,25 +2416,10 @@
         "probs": 0.0
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "POCHI",
-        "confidence": 0.49
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.2,
-        "confidence": 0.37
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.65
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-22 12:56:15 ET",
+    "open_p": 0.64,
+    "risk": null,
+    "confidence": 0.53,
     "live": true
   }
 }
