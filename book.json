@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 15:21:41 ET",
+  "updated_et": "2026-09-22 15:22:29 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 130.9439,
-  "upnl_usd": 0.0,
-  "equity_usd": 130.9439,
+  "upnl_usd": -0.0156,
+  "equity_usd": 130.9283,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 30.9439,
-  "total_pnl_pct": 30.9439,
-  "mark_eth": 2761.545,
-  "mark": 2761.545,
+  "total_pnl_usd": 30.9283,
+  "total_pnl_pct": 30.9283,
+  "mark_eth": 2761.645,
+  "mark": 2761.645,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2761.545
+    "ETH": 2761.645
   },
   "holdings": {
-    "paper_cash_usd": 130.9439,
+    "paper_cash_usd": 118.9439,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1627,6 +1627,13 @@
       "ticker": "HOOD6900",
       "reason": "TP_+3.5",
       "pnl_usd": 0.7463
+    },
+    {
+      "t": "now",
+      "equity_usd": 130.9283,
+      "liquid_usd": 130.9283,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2675,74 +2682,78 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 130.9439,
-    "mtm_equity_usd": 130.9439,
+    "mtm_equity_usd": 130.9283,
     "realized_pnl_usd": 30.9439,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $130.94 \u00b7 curve n=159 \u00b7 2026-09-22 15:21:41 ET",
+    "unrealized_pnl_usd": -0.0156,
+    "open": {
+      "id": "PAPER-337",
+      "ticker": "SHINYHUNTERS",
+      "usd": 12.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $130.94 \u00b7 curve n=160 \u00b7 2026-09-22 15:22:29 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 158
   },
-  "notes": "PAPER heartbeat \u00b7 eq $130.94 \u00b7 FLAT \u00b7 2026-09-22 15:21:41 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $130.94 \u00b7 2026-09-22 15:22:29 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.67 edge=2.4 conf=0.92",
-    "pick": "SI",
-    "open_p": 0.67,
-    "confidence": 0.92,
-    "edge_score": 2.4,
+    "detail": "pick=HOOD6900 open_p=0.63 edge=2.21 conf=0.46",
+    "pick": "HOOD6900",
+    "open_p": 0.63,
+    "confidence": 0.46,
+    "edge_score": 2.21,
     "picks": [
+      {
+        "sym": "HOOD6900",
+        "lost_bps": 7,
+        "selected": true,
+        "probs": 0.55
+      },
       {
         "sym": "SI",
         "lost_bps": 7,
-        "selected": true,
-        "probs": 0.92
-      },
-      {
-        "sym": "HOOD6900",
-        "lost_bps": 8,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.32
       },
       {
         "sym": "TIMUR",
-        "lost_bps": 11,
+        "lost_bps": 10,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.09
       },
       {
         "sym": "SHINYHUNTERS",
-        "lost_bps": 13,
+        "lost_bps": 15,
         "selected": false,
         "probs": 0.01
       },
       {
         "sym": "COMPTY",
-        "lost_bps": 46,
+        "lost_bps": 50,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "SI",
-        "confidence": 0.92
+        "choice": "HOOD6900",
+        "confidence": 0.46
       },
       "edge": {
         "type": "score",
-        "score": 2.4,
-        "confidence": 0.28
+        "score": 2.21,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 15:20:15 ET",
+    "stamp_et": "2026-09-22 15:22:18 ET",
     "live": true
   }
 }
