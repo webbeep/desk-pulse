@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-09-21 20:25:35 ET",
+  "updated_et": "2026-09-21 20:25:39 ET",
   "mode": "LIVE",
-  "status": "EXITING:CUT_HARD_QUOTER",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 11.2872,
   "equity_usd": 3.2872,
@@ -36,6 +36,18 @@
   },
   "positions": [],
   "trades": [
+    {
+      "id": "LIVE-SCALP-62-EXIT",
+      "market": "OLLYBOT",
+      "side": "SELL",
+      "size_usd": 8.0,
+      "pnl_usd": -8.0,
+      "mtm_pct": -100.0,
+      "tx": null,
+      "reason": "CUT_HARD_QUOTER",
+      "stamp_et": "2026-09-21 20:25:39 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-61-EXIT",
       "market": "COPCAT",
@@ -810,13 +822,6 @@
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-21 18:08:36 ET",
-      "equity_usd": 12.3798,
-      "liquid_usd": 11.2872,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-09-21 18:09:24 ET",
       "equity_usd": 11.285,
@@ -2209,6 +2214,13 @@
       "liquid_usd": 11.2872,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-21 20:25:39 ET",
+      "equity_usd": 3.2872,
+      "liquid_usd": 11.2872,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "paper": {
@@ -2218,15 +2230,11 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x5dfe3a2148a8da71eaf3e08eed20e8b6c2f4824df60b27275e89bc6a465af818",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 35,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "CUT_HARD_QUOTER",
+    "last_exit_upnl": -8.0
   },
-  "notes": "LIVE MTM OLLYBOT uPnL $-8.0 (-100.0%) \u00b7 held 35s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-21 20:25:33 ET \u00b7 CUT CUT_HARD_QUOTER",
+  "notes": "LIVE EXIT OLLYBOT \u00b7 CUT_HARD_QUOTER \u00b7 tx None \u00b7 2026-09-21 20:25:39 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-18.75% \u00b7 post-fill -3%/15s \u00b7 TP +3.5% \u00b7 time 4m flat / 5m max"
