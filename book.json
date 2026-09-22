@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 14:54:22 ET",
+  "updated_et": "2026-09-22 14:55:10 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 115.8228,
-  "upnl_usd": -0.0206,
-  "equity_usd": 115.8022,
+  "liquid_usd": 117.3338,
+  "upnl_usd": 0.0,
+  "equity_usd": 117.3338,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 15.8022,
-  "total_pnl_pct": 15.8022,
-  "mark_eth": 2751.38,
-  "mark": 2751.38,
+  "total_pnl_usd": 17.3338,
+  "total_pnl_pct": 17.3338,
+  "mark_eth": 2750.945,
+  "mark": 2750.945,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2751.38
+    "ETH": 2750.945
   },
   "holdings": {
-    "paper_cash_usd": 103.8228,
+    "paper_cash_usd": 117.3338,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1569,14 +1569,30 @@
       "pnl_usd": -1.1144
     },
     {
-      "t": "now",
-      "equity_usd": 115.8022,
-      "liquid_usd": 115.8022,
+      "t": "2026-09-22 14:54:25 ET",
+      "equity_usd": 117.3338,
+      "liquid_usd": 117.3338,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "HOOD6900",
+      "reason": "TP_+3.5",
+      "pnl_usd": 1.511
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 14:54:25 ET",
+      "kind": "PAPER",
+      "market": "HOOD6900",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 1.511,
+      "pnl_pct": 12.5918,
+      "tx": "TP_+3.5",
+      "id": "PAPER-331",
+      "paper": true
+    },
     {
       "t": "2026-09-22 14:47:14 ET",
       "kind": "PAPER",
@@ -2603,38 +2619,21 @@
       "tx": "TIME_SOFT_180s",
       "id": "PAPER-248",
       "paper": true
-    },
-    {
-      "t": "2026-09-21 11:25:05 ET",
-      "kind": "PAPER",
-      "market": "KARURE",
-      "side": "LONG",
-      "size": 20.0,
-      "size_usd": 20.0,
-      "pnl_usd": 0.9558,
-      "pnl_pct": 4.779,
-      "tx": "TP_+3.5",
-      "id": "PAPER-251",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 115.8228,
-    "mtm_equity_usd": 115.8022,
-    "realized_pnl_usd": 15.8228,
-    "unrealized_pnl_usd": -0.0206,
-    "open": {
-      "id": "PAPER-331",
-      "ticker": "HOOD6900",
-      "usd": 12.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $115.82 \u00b7 curve n=154 \u00b7 2026-09-22 14:54:22 ET",
+    "paper_equity_usd": 117.3338,
+    "mtm_equity_usd": 117.3338,
+    "realized_pnl_usd": 17.3338,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $117.33 \u00b7 curve n=154 \u00b7 2026-09-22 14:55:10 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 152
+    "closed_n": 153
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $115.82 \u00b7 2026-09-22 14:54:22 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $117.33 \u00b7 FLAT \u00b7 2026-09-22 14:55:10 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
