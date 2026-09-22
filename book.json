@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-22 19:51:33 ET",
+  "updated_et": "2026-09-22 19:52:21 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 137.1588,
-  "upnl_usd": -0.0221,
-  "equity_usd": 137.1367,
+  "upnl_usd": -0.0139,
+  "equity_usd": 137.1449,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 37.1367,
-  "total_pnl_pct": 37.1367,
-  "mark_eth": 2752.13,
-  "mark": 2752.13,
+  "total_pnl_usd": 37.1449,
+  "total_pnl_pct": 37.1449,
+  "mark_eth": 2754.835,
+  "mark": 2754.835,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2752.13
+    "ETH": 2754.835
   },
   "holdings": {
     "paper_cash_usd": 125.1588,
@@ -46,15 +46,15 @@
       "side": "LONG",
       "size_usd": 12.0,
       "entry": 1.3875819459858536e-05,
-      "mark": 1.3850264825686631e-05,
-      "uPnL": -0.0221,
-      "mtm_pct": -0.1843,
+      "mark": 1.3859746635650866e-05,
+      "uPnL": -0.0139,
+      "mtm_pct": -0.1162,
       "sl": 1.110065556788683e-05,
       "tp": 2.0813729189787804e-05,
       "lev": 1,
       "paper": true,
       "liq": 70713633738326896357008,
-      "held_min": 0.61
+      "held_min": 1.48
     }
   ],
   "pnl_history": [
@@ -1807,8 +1807,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 137.1367,
-      "liquid_usd": 137.1367,
+      "equity_usd": 137.1449,
+      "liquid_usd": 137.1449,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -2859,28 +2859,28 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 137.1588,
-    "mtm_equity_usd": 137.1367,
+    "mtm_equity_usd": 137.1449,
     "realized_pnl_usd": 37.1588,
-    "unrealized_pnl_usd": -0.0221,
+    "unrealized_pnl_usd": -0.0139,
     "open": {
       "id": "PAPER-353",
       "ticker": "OAI",
       "usd": 12.0,
-      "mtm_pct": -0.1843
+      "mtm_pct": -0.1162
     },
-    "notes": "PAPER heartbeat \u00b7 eq $137.16 \u00b7 curve n=176 \u00b7 2026-09-22 19:51:33 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $137.16 \u00b7 curve n=176 \u00b7 2026-09-22 19:52:21 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 174
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $137.16 \u00b7 2026-09-22 19:51:33 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $137.16 \u00b7 2026-09-22 19:52:21 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=HOOD6900 open_p=0.66 edge=2.01 conf=0.96",
+    "detail": "pick=HOOD6900 open_p=0.65 edge=2.09 conf=0.96",
     "pick": "HOOD6900",
-    "open_p": 0.66,
+    "open_p": 0.65,
     "confidence": 0.96,
-    "edge_score": 2.01,
+    "edge_score": 2.09,
     "picks": [
       {
         "sym": "HOOD6900",
@@ -2910,16 +2910,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.01,
-        "confidence": 0.36
+        "score": 2.09,
+        "confidence": 0.39
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 19:50:47 ET",
+    "stamp_et": "2026-09-22 19:52:19 ET",
     "live": true
   }
 }
