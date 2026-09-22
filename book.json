@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 14:33:28 ET",
+  "updated_et": "2026-09-22 14:34:16 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 113.5666,
-  "upnl_usd": 0.0,
-  "equity_usd": 113.5666,
+  "upnl_usd": -0.012,
+  "equity_usd": 113.5546,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 13.5666,
-  "total_pnl_pct": 13.5666,
-  "mark_eth": 2747.945,
-  "mark": 2747.945,
+  "total_pnl_usd": 13.5546,
+  "total_pnl_pct": 13.5546,
+  "mark_eth": 2747.665,
+  "mark": 2747.665,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2747.945
+    "ETH": 2747.665
   },
   "holdings": {
-    "paper_cash_usd": 113.5666,
+    "paper_cash_usd": 101.5666,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1517,6 +1517,13 @@
       "ticker": "LUNA",
       "reason": "TP_+3.5",
       "pnl_usd": 2.5043
+    },
+    {
+      "t": "now",
+      "equity_usd": 113.5546,
+      "liquid_usd": 113.5546,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2565,39 +2572,49 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 113.5666,
-    "mtm_equity_usd": 113.5666,
+    "mtm_equity_usd": 113.5546,
     "realized_pnl_usd": 13.5666,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $113.57 \u00b7 curve n=148 \u00b7 2026-09-22 14:33:28 ET",
+    "unrealized_pnl_usd": -0.012,
+    "open": {
+      "id": "PAPER-326",
+      "ticker": "LUNA",
+      "usd": 12.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $113.57 \u00b7 curve n=149 \u00b7 2026-09-22 14:34:16 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 147
   },
-  "notes": "PAPER heartbeat \u00b7 eq $113.57 \u00b7 FLAT \u00b7 2026-09-22 14:33:28 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $113.57 \u00b7 2026-09-22 14:34:16 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TIMUR open_p=0.66 edge=2.24 conf=0.95",
+    "detail": "pick=TIMUR open_p=0.65 edge=2.35 conf=0.96",
     "pick": "TIMUR",
-    "open_p": 0.66,
-    "confidence": 0.95,
-    "edge_score": 2.24,
+    "open_p": 0.65,
+    "confidence": 0.96,
+    "edge_score": 2.35,
     "picks": [
       {
         "sym": "TIMUR",
         "lost_bps": 9,
         "selected": true,
-        "probs": 0.96
+        "probs": 0.97
       },
       {
         "sym": "SI",
-        "lost_bps": 10,
+        "lost_bps": 11,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.01
+      },
+      {
+        "sym": "LUNA",
+        "lost_bps": 11,
+        "selected": false,
+        "probs": 0.01
       },
       {
         "sym": "COMPTY",
-        "lost_bps": 51,
+        "lost_bps": 48,
         "selected": false,
         "probs": 0.0
       }
@@ -2607,20 +2624,20 @@
       "pick": {
         "type": "choice",
         "choice": "TIMUR",
-        "confidence": 0.95
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 2.24,
-        "confidence": 0.26
+        "score": 2.35,
+        "confidence": 0.27
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 14:33:25 ET",
+    "stamp_et": "2026-09-22 14:33:59 ET",
     "live": true
   }
 }
