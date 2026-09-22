@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-22 10:01:47 ET",
+  "updated_et": "2026-09-22 10:02:34 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 126.2257,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 26.2257,
   "total_pnl_pct": 26.2257,
-  "mark_eth": 2754.805,
-  "mark": 2754.805,
+  "mark_eth": 2756.475,
+  "mark": 2756.475,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2754.805
+    "ETH": 2756.475
   },
   "holdings": {
     "paper_cash_usd": 126.2257,
@@ -2189,25 +2189,25 @@
     "realized_pnl_usd": 26.2257,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $126.23 \u00b7 curve n=110 \u00b7 2026-09-22 10:01:47 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $126.23 \u00b7 curve n=110 \u00b7 2026-09-22 10:02:34 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 109
   },
-  "notes": "PAPER heartbeat \u00b7 eq $126.23 \u00b7 FLAT \u00b7 2026-09-22 10:01:47 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $126.23 \u00b7 FLAT \u00b7 2026-09-22 10:02:34 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TWEENIX open_p=0.69 edge=2.51 conf=0.98",
+    "detail": "pick=TWEENIX open_p=0.70 edge=2.5 conf=0.96",
     "pick": "TWEENIX",
-    "open_p": 0.69,
-    "confidence": 0.98,
-    "edge_score": 2.51,
+    "open_p": 0.7,
+    "confidence": 0.96,
+    "edge_score": 2.5,
     "picks": [
       {
         "sym": "TWEENIX",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.98
+        "probs": 0.97
       },
       {
         "sym": "KIRKINU",
@@ -2217,13 +2217,13 @@
       },
       {
         "sym": "GROK",
-        "lost_bps": 7,
+        "lost_bps": 9,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "ORBX",
-        "lost_bps": 42,
+        "lost_bps": 43,
         "selected": false,
         "probs": 0.0
       }
@@ -2233,20 +2233,20 @@
       "pick": {
         "type": "choice",
         "choice": "TWEENIX",
-        "confidence": 0.98
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 2.51,
-        "confidence": 0.36
+        "score": 2.5,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.69
+        "noul": 0.7
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 10:01:26 ET",
+    "stamp_et": "2026-09-22 10:01:57 ET",
     "live": true
   }
 }
