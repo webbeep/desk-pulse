@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 14:05:23 ET",
+  "updated_et": "2026-09-22 14:06:11 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 116.8576,
+  "liquid_usd": 116.383,
   "upnl_usd": 0.0,
-  "equity_usd": 116.8576,
+  "equity_usd": 116.383,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 16.8576,
-  "total_pnl_pct": 16.8576,
-  "mark_eth": 2751.615,
-  "mark": 2751.615,
+  "total_pnl_usd": 16.383,
+  "total_pnl_pct": 16.383,
+  "mark_eth": 2752.1,
+  "mark": 2752.1,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2751.615
+    "ETH": 2752.1
   },
   "holdings": {
-    "paper_cash_usd": 116.8576,
+    "paper_cash_usd": 116.383,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1437,9 +1437,32 @@
       "ticker": "TIMUR",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -5.2969
+    },
+    {
+      "t": "2026-09-22 14:05:55 ET",
+      "equity_usd": 116.383,
+      "liquid_usd": 116.383,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SI",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -0.4746
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 14:05:55 ET",
+      "kind": "PAPER",
+      "market": "SI",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -0.4746,
+      "pnl_pct": -3.9547,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-318",
+      "paper": true
+    },
     {
       "t": "2026-09-22 14:04:45 ET",
       "kind": "PAPER",
@@ -2466,42 +2489,29 @@
       "tx": "CUT_HARD_-3.0",
       "id": "PAPER-238",
       "paper": true
-    },
-    {
-      "t": "2026-09-21 10:47:38 ET",
-      "kind": "PAPER",
-      "market": "IPO",
-      "side": "LONG",
-      "size": 8.11,
-      "size_usd": 8.11,
-      "pnl_usd": 1.2046,
-      "pnl_pct": 14.8529,
-      "tx": "TP_+4.0",
-      "id": "PAPER-237",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 116.8576,
-    "mtm_equity_usd": 116.8576,
-    "realized_pnl_usd": 16.8576,
+    "paper_equity_usd": 116.383,
+    "mtm_equity_usd": 116.383,
+    "realized_pnl_usd": 16.383,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $116.86 \u00b7 curve n=140 \u00b7 2026-09-22 14:05:23 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $116.38 \u00b7 curve n=141 \u00b7 2026-09-22 14:06:11 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 139
+    "closed_n": 140
   },
-  "notes": "PAPER heartbeat \u00b7 eq $116.86 \u00b7 FLAT \u00b7 2026-09-22 14:05:23 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $116.38 \u00b7 FLAT \u00b7 2026-09-22 14:06:11 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TIMUR open_p=0.66 edge=2.34 conf=0.94",
+    "detail": "pick=TIMUR open_p=0.66 edge=2.35 conf=0.94",
     "pick": "TIMUR",
     "open_p": 0.66,
     "confidence": 0.94,
-    "edge_score": 2.34,
+    "edge_score": 2.35,
     "picks": [
       {
         "sym": "TIMUR",
@@ -2537,8 +2547,8 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.34,
-        "confidence": 0.34
+        "score": 2.35,
+        "confidence": 0.37
       },
       "open_now": {
         "type": "noul",
@@ -2546,7 +2556,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 14:04:20 ET",
+    "stamp_et": "2026-09-22 14:05:52 ET",
     "live": true
   }
 }
