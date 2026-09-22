@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 13:03:56 ET",
+  "updated_et": "2026-09-22 13:04:42 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 114.8753,
-  "upnl_usd": -0.0093,
-  "equity_usd": 114.866,
+  "liquid_usd": 115.5995,
+  "upnl_usd": 0.0,
+  "equity_usd": 115.5995,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 14.866,
-  "total_pnl_pct": 14.866,
-  "mark_eth": 2747.395,
-  "mark": 2747.395,
+  "total_pnl_usd": 15.5995,
+  "total_pnl_pct": 15.5995,
+  "mark_eth": 2748.055,
+  "mark": 2748.055,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2747.395
+    "ETH": 2748.055
   },
   "holdings": {
-    "paper_cash_usd": 102.8753,
+    "paper_cash_usd": 115.5995,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1339,14 +1339,30 @@
       "pnl_usd": -0.9922
     },
     {
-      "t": "now",
-      "equity_usd": 114.866,
-      "liquid_usd": 114.866,
+      "t": "2026-09-22 13:04:24 ET",
+      "equity_usd": 115.5995,
+      "liquid_usd": 115.5995,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "GOSSIP",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.7242
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 13:04:24 ET",
+      "kind": "PAPER",
+      "market": "GOSSIP",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 0.7242,
+      "pnl_pct": 6.0347,
+      "tx": "TP_+3.5",
+      "id": "PAPER-308",
+      "paper": true
+    },
     {
       "t": "2026-09-22 12:59:43 ET",
       "kind": "PAPER",
@@ -2373,38 +2389,21 @@
       "tx": "CUT_HARD_-3.0",
       "id": "PAPER-228",
       "paper": true
-    },
-    {
-      "t": "2026-09-21 06:01:37 ET",
-      "kind": "PAPER",
-      "market": "RSRVCAT",
-      "side": "LONG",
-      "size": 9.73,
-      "size_usd": 9.73,
-      "pnl_usd": 0.5309,
-      "pnl_pct": 5.4565,
-      "tx": "TP_+4.0",
-      "id": "PAPER-227",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 114.8753,
-    "mtm_equity_usd": 114.866,
-    "realized_pnl_usd": 14.8753,
-    "unrealized_pnl_usd": -0.0093,
-    "open": {
-      "id": "PAPER-308",
-      "ticker": "GOSSIP",
-      "usd": 12.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $114.88 \u00b7 curve n=131 \u00b7 2026-09-22 13:03:56 ET",
+    "paper_equity_usd": 115.5995,
+    "mtm_equity_usd": 115.5995,
+    "realized_pnl_usd": 15.5995,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $115.60 \u00b7 curve n=131 \u00b7 2026-09-22 13:04:42 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 129
+    "closed_n": 130
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $114.88 \u00b7 2026-09-22 13:03:56 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $115.60 \u00b7 FLAT \u00b7 2026-09-22 13:04:42 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
