@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 14:00:33 ET",
+  "updated_et": "2026-09-22 14:01:22 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 118.4306,
-  "upnl_usd": 0.0,
-  "equity_usd": 118.4306,
+  "upnl_usd": 0.0655,
+  "equity_usd": 118.4961,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 18.4306,
-  "total_pnl_pct": 18.4306,
-  "mark_eth": 2755.21,
-  "mark": 2755.21,
+  "total_pnl_usd": 18.4961,
+  "total_pnl_pct": 18.4961,
+  "mark_eth": 2752.8,
+  "mark": 2752.8,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2755.21
+    "ETH": 2752.8
   },
   "holdings": {
-    "paper_cash_usd": 118.4306,
+    "paper_cash_usd": 106.4306,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1407,6 +1407,13 @@
       "ticker": "SI",
       "reason": "TP_+3.5",
       "pnl_usd": 1.0664
+    },
+    {
+      "t": "now",
+      "equity_usd": 118.4961,
+      "liquid_usd": 118.4961,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2455,39 +2462,49 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 118.4306,
-    "mtm_equity_usd": 118.4306,
+    "mtm_equity_usd": 118.4961,
     "realized_pnl_usd": 18.4306,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $118.43 \u00b7 curve n=137 \u00b7 2026-09-22 14:00:33 ET",
+    "unrealized_pnl_usd": 0.0655,
+    "open": {
+      "id": "PAPER-315",
+      "ticker": "TIMUR",
+      "usd": 12.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $118.43 \u00b7 curve n=138 \u00b7 2026-09-22 14:01:22 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 136
   },
-  "notes": "PAPER heartbeat \u00b7 eq $118.43 \u00b7 FLAT \u00b7 2026-09-22 14:00:33 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $118.43 \u00b7 2026-09-22 14:01:22 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=POCHI open_p=0.66 edge=2.49 conf=0.97",
+    "detail": "pick=POCHI open_p=0.68 edge=2.41 conf=0.95",
     "pick": "POCHI",
-    "open_p": 0.66,
-    "confidence": 0.97,
-    "edge_score": 2.49,
+    "open_p": 0.68,
+    "confidence": 0.95,
+    "edge_score": 2.41,
     "picks": [
       {
         "sym": "POCHI",
         "lost_bps": 7,
         "selected": true,
-        "probs": 0.98
+        "probs": 0.96
       },
       {
-        "sym": "SI",
-        "lost_bps": 13,
+        "sym": "TIMUR",
+        "lost_bps": 8,
         "selected": false,
         "probs": 0.02
       },
       {
+        "sym": "SI",
+        "lost_bps": 12,
+        "selected": false,
+        "probs": 0.01
+      },
+      {
         "sym": "COMPTY",
-        "lost_bps": 55,
+        "lost_bps": 49,
         "selected": false,
         "probs": 0.0
       }
@@ -2497,20 +2514,20 @@
       "pick": {
         "type": "choice",
         "choice": "POCHI",
-        "confidence": 0.97
+        "confidence": 0.95
       },
       "edge": {
         "type": "score",
-        "score": 2.49,
-        "confidence": 0.27
+        "score": 2.41,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 13:59:43 ET",
+    "stamp_et": "2026-09-22 14:01:16 ET",
     "live": true
   }
 }
