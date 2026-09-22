@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-22 12:46:11 ET",
+  "updated_et": "2026-09-22 12:46:58 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 116.8949,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 16.8949,
   "total_pnl_pct": 16.8949,
-  "mark_eth": 2739.635,
-  "mark": 2739.635,
+  "mark_eth": 2738.505,
+  "mark": 2738.505,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2739.635
+    "ETH": 2738.505
   },
   "holdings": {
     "paper_cash_usd": 116.8949,
@@ -2359,58 +2359,52 @@
     "realized_pnl_usd": 16.8949,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $116.89 \u00b7 curve n=127 \u00b7 2026-09-22 12:46:11 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $116.89 \u00b7 curve n=127 \u00b7 2026-09-22 12:46:58 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 126
   },
-  "notes": "PAPER heartbeat \u00b7 eq $116.89 \u00b7 FLAT \u00b7 2026-09-22 12:46:11 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $116.89 \u00b7 FLAT \u00b7 2026-09-22 12:46:58 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=GROK open_p=0.66 edge=2.08 conf=0.93",
-    "pick": "GROK",
-    "open_p": 0.66,
-    "confidence": 0.93,
-    "edge_score": 2.08,
+    "detail": "pick=POCHI open_p=0.62 edge=1.9 conf=0.97",
+    "pick": "POCHI",
+    "open_p": 0.62,
+    "confidence": 0.97,
+    "edge_score": 1.9,
     "picks": [
-      {
-        "sym": "GROK",
-        "lost_bps": 6,
-        "selected": true,
-        "probs": 0.95
-      },
       {
         "sym": "POCHI",
         "lost_bps": 9,
-        "selected": false,
-        "probs": 0.04
+        "selected": true,
+        "probs": 0.98
       },
       {
         "sym": "ELEPHANT",
-        "lost_bps": 13,
+        "lost_bps": 14,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "GROK",
-        "confidence": 0.93
+        "choice": "POCHI",
+        "confidence": 0.97
       },
       "edge": {
         "type": "score",
-        "score": 2.08,
-        "confidence": 0.36
+        "score": 1.9,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 12:45:55 ET",
+    "stamp_et": "2026-09-22 12:46:27 ET",
     "live": true
   }
 }
