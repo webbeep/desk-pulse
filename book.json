@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 11:17:57 ET",
+  "updated_et": "2026-09-22 11:18:43 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 125.8607,
-  "upnl_usd": -0.0607,
-  "equity_usd": 125.8,
+  "liquid_usd": 125.0441,
+  "upnl_usd": 0.0,
+  "equity_usd": 125.0441,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 25.8,
-  "total_pnl_pct": 25.8,
-  "mark_eth": 2741.91,
-  "mark": 2741.91,
+  "total_pnl_usd": 25.0441,
+  "total_pnl_pct": 25.0441,
+  "mark_eth": 2741.415,
+  "mark": 2741.415,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2741.91
+    "ETH": 2741.415
   },
   "holdings": {
-    "paper_cash_usd": 113.8607,
+    "paper_cash_usd": 125.0441,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -1179,14 +1179,30 @@
       "pnl_usd": 1.2728
     },
     {
-      "t": "now",
-      "equity_usd": 125.8,
-      "liquid_usd": 125.8,
+      "t": "2026-09-22 11:18:21 ET",
+      "equity_usd": 125.0441,
+      "liquid_usd": 125.0441,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "COMPTY",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -0.8166
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 11:18:21 ET",
+      "kind": "PAPER",
+      "market": "COMPTY",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -0.8166,
+      "pnl_pct": -6.8053,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-292",
+      "paper": true
+    },
     {
       "t": "2026-09-22 11:16:30 ET",
       "kind": "PAPER",
@@ -2213,38 +2229,21 @@
       "tx": "CUT_HARD_-3.0",
       "id": "PAPER-212",
       "paper": true
-    },
-    {
-      "t": "2026-09-21 00:33:08 ET",
-      "kind": "PAPER",
-      "market": "NOSH",
-      "side": "LONG",
-      "size": 8.23,
-      "size_usd": 8.23,
-      "pnl_usd": 2.0108,
-      "pnl_pct": 24.4323,
-      "tx": "TP_+4.0",
-      "id": "PAPER-211",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 125.8607,
-    "mtm_equity_usd": 125.8,
-    "realized_pnl_usd": 25.8607,
-    "unrealized_pnl_usd": -0.0607,
-    "open": {
-      "id": "PAPER-292",
-      "ticker": "COMPTY",
-      "usd": 12.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $125.86 \u00b7 curve n=115 \u00b7 2026-09-22 11:17:57 ET",
+    "paper_equity_usd": 125.0441,
+    "mtm_equity_usd": 125.0441,
+    "realized_pnl_usd": 25.0441,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $125.04 \u00b7 curve n=115 \u00b7 2026-09-22 11:18:43 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 113
+    "closed_n": 114
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $125.86 \u00b7 2026-09-22 11:17:57 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $125.04 \u00b7 FLAT \u00b7 2026-09-22 11:18:43 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
