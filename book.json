@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 07:52:52 ET",
+  "updated_et": "2026-09-22 07:53:39 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 112.6568,
-  "upnl_usd": 0.0,
-  "equity_usd": 112.6568,
+  "upnl_usd": -0.0483,
+  "equity_usd": 112.6085,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 12.6568,
-  "total_pnl_pct": 12.6568,
-  "mark_eth": 2740.585,
-  "mark": 2740.585,
+  "total_pnl_usd": 12.6085,
+  "total_pnl_pct": 12.6085,
+  "mark_eth": 2740.87,
+  "mark": 2740.87,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2740.585
+    "ETH": 2740.87
   },
   "holdings": {
-    "paper_cash_usd": 112.6568,
+    "paper_cash_usd": 100.6568,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -857,6 +857,13 @@
       "ticker": "DUALITY",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -1.7296
+    },
+    {
+      "t": "now",
+      "equity_usd": 112.6085,
+      "liquid_usd": 112.6085,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -1905,23 +1912,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 112.6568,
-    "mtm_equity_usd": 112.6568,
+    "mtm_equity_usd": 112.6085,
     "realized_pnl_usd": 12.6568,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $112.66 \u00b7 curve n=82 \u00b7 2026-09-22 07:52:52 ET",
+    "unrealized_pnl_usd": -0.0483,
+    "open": {
+      "id": "PAPER-260",
+      "ticker": "SLND",
+      "usd": 12.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $112.66 \u00b7 curve n=83 \u00b7 2026-09-22 07:53:39 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 81
   },
-  "notes": "PAPER heartbeat \u00b7 eq $112.66 \u00b7 FLAT \u00b7 2026-09-22 07:52:52 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $112.66 \u00b7 2026-09-22 07:53:39 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=DUALITY open_p=0.61 edge=1.87 conf=0.96",
+    "detail": "pick=DUALITY open_p=0.60 edge=1.82 conf=0.96",
     "pick": "DUALITY",
-    "open_p": 0.61,
+    "open_p": 0.6,
     "confidence": 0.96,
-    "edge_score": 1.87,
+    "edge_score": 1.82,
     "picks": [
       {
         "sym": "DUALITY",
@@ -1951,16 +1962,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 1.87,
-        "confidence": 0.3
+        "score": 1.82,
+        "confidence": 0.26
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.61
+        "noul": 0.6
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 07:52:05 ET",
+    "stamp_et": "2026-09-22 07:53:37 ET",
     "live": true
   }
 }
