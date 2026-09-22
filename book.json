@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-22 12:37:42 ET",
+  "updated_et": "2026-09-22 12:38:29 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 114.4067,
-  "upnl_usd": -0.0186,
-  "equity_usd": 114.3881,
+  "upnl_usd": -0.1581,
+  "equity_usd": 114.2486,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 14.3881,
-  "total_pnl_pct": 14.3881,
-  "mark_eth": 2735.74,
-  "mark": 2735.74,
+  "total_pnl_usd": 14.2486,
+  "total_pnl_pct": 14.2486,
+  "mark_eth": 2735.165,
+  "mark": 2735.165,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2735.74
+    "ETH": 2735.165
   },
   "holdings": {
     "paper_cash_usd": 102.4067,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-304",
+      "market": "ELEPHANT",
+      "side": "LONG",
+      "size_usd": 12.0,
+      "entry": 3.8468725978240365e-05,
+      "mark": 3.7961900513477044e-05,
+      "uPnL": -0.1581,
+      "mtm_pct": -1.3172,
+      "sl": 3.0774980782592295e-05,
+      "tp": 5.770308896736055e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": 54773207779044021846921,
+      "held_min": 0.89
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -1300,8 +1317,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 114.3881,
-      "liquid_usd": 114.3881,
+      "equity_usd": 114.2486,
+      "liquid_usd": 114.2486,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -2352,19 +2369,20 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 114.4067,
-    "mtm_equity_usd": 114.3881,
+    "mtm_equity_usd": 114.2486,
     "realized_pnl_usd": 14.4067,
-    "unrealized_pnl_usd": -0.0186,
+    "unrealized_pnl_usd": -0.1581,
     "open": {
       "id": "PAPER-304",
       "ticker": "ELEPHANT",
-      "usd": 12.0
+      "usd": 12.0,
+      "mtm_pct": -1.3172
     },
-    "notes": "PAPER heartbeat \u00b7 eq $114.41 \u00b7 curve n=127 \u00b7 2026-09-22 12:37:42 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $114.41 \u00b7 curve n=127 \u00b7 2026-09-22 12:38:29 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 125
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $114.41 \u00b7 2026-09-22 12:37:42 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $114.41 \u00b7 2026-09-22 12:38:29 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
