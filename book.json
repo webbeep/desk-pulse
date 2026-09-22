@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 09:15:57 ET",
+  "updated_et": "2026-09-22 09:16:44 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 128.5876,
-  "upnl_usd": -0.0102,
-  "equity_usd": 128.5774,
+  "liquid_usd": 126.9482,
+  "upnl_usd": 0.0,
+  "equity_usd": 126.9482,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 28.5774,
-  "total_pnl_pct": 28.5774,
-  "mark_eth": 2752.73,
-  "mark": 2752.73,
+  "total_pnl_usd": 26.9482,
+  "total_pnl_pct": 26.9482,
+  "mark_eth": 2752.315,
+  "mark": 2752.315,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2752.73
+    "ETH": 2752.315
   },
   "holdings": {
-    "paper_cash_usd": 116.5876,
+    "paper_cash_usd": 126.9482,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -999,14 +999,30 @@
       "pnl_usd": 1.4771
     },
     {
-      "t": "now",
-      "equity_usd": 128.5774,
-      "liquid_usd": 128.5774,
+      "t": "2026-09-22 09:16:22 ET",
+      "equity_usd": 126.9482,
+      "liquid_usd": 126.9482,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "KIRKINU",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -1.6394
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 09:16:22 ET",
+      "kind": "PAPER",
+      "market": "KIRKINU",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -1.6394,
+      "pnl_pct": -13.662,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-274",
+      "paper": true
+    },
     {
       "t": "2026-09-22 09:14:42 ET",
       "kind": "PAPER",
@@ -2033,38 +2049,21 @@
       "tx": "TIME_EXIT_300s",
       "id": "PAPER-194",
       "paper": true
-    },
-    {
-      "t": "2026-09-20 21:24:23 ET",
-      "kind": "PAPER",
-      "market": "PRAY",
-      "side": "LONG",
-      "size": 8.0,
-      "size_usd": 8.0,
-      "pnl_usd": -0.0841,
-      "pnl_pct": -1.0509,
-      "tx": "TRAIL_1.0",
-      "id": "PAPER-193",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 128.5876,
-    "mtm_equity_usd": 128.5774,
-    "realized_pnl_usd": 28.5876,
-    "unrealized_pnl_usd": -0.0102,
-    "open": {
-      "id": "PAPER-274",
-      "ticker": "KIRKINU",
-      "usd": 12.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $128.59 \u00b7 curve n=97 \u00b7 2026-09-22 09:15:57 ET",
+    "paper_equity_usd": 126.9482,
+    "mtm_equity_usd": 126.9482,
+    "realized_pnl_usd": 26.9482,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $126.95 \u00b7 curve n=97 \u00b7 2026-09-22 09:16:44 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 95
+    "closed_n": 96
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $128.59 \u00b7 2026-09-22 09:15:57 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $126.95 \u00b7 FLAT \u00b7 2026-09-22 09:16:44 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
