@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 12:33:51 ET",
+  "updated_et": "2026-09-22 12:34:37 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 115.9234,
-  "upnl_usd": 0.2851,
-  "equity_usd": 116.2085,
+  "liquid_usd": 114.4067,
+  "upnl_usd": 0.0,
+  "equity_usd": 114.4067,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 16.2085,
-  "total_pnl_pct": 16.2085,
-  "mark_eth": 2731.62,
-  "mark": 2731.62,
+  "total_pnl_usd": 14.4067,
+  "total_pnl_pct": 14.4067,
+  "mark_eth": 2732.68,
+  "mark": 2732.68,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2731.62
+    "ETH": 2732.68
   },
   "holdings": {
-    "paper_cash_usd": 103.9234,
+    "paper_cash_usd": 114.4067,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-303",
-      "market": "ELEPHANT",
-      "side": "LONG",
-      "size_usd": 12.0,
-      "entry": 4.2917996901633274e-05,
-      "mark": 4.3937656978021243e-05,
-      "uPnL": 0.2851,
-      "mtm_pct": 2.3755,
-      "sl": 3.4334397521306623e-05,
-      "tp": 6.437699535244991e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 54773207779044021846921,
-      "held_min": 1.29
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -1306,14 +1289,30 @@
       "pnl_usd": -0.4791
     },
     {
-      "t": "now",
-      "equity_usd": 116.2085,
-      "liquid_usd": 116.2085,
+      "t": "2026-09-22 12:34:04 ET",
+      "equity_usd": 114.4067,
+      "liquid_usd": 114.4067,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "ELEPHANT",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -1.5167
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 12:34:04 ET",
+      "kind": "PAPER",
+      "market": "ELEPHANT",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -1.5167,
+      "pnl_pct": -12.6388,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-303",
+      "paper": true
+    },
     {
       "t": "2026-09-22 12:28:00 ET",
       "kind": "PAPER",
@@ -2340,80 +2339,68 @@
       "tx": "TP_+4.0",
       "id": "PAPER-223",
       "paper": true
-    },
-    {
-      "t": "2026-09-21 03:26:32 ET",
-      "kind": "PAPER",
-      "market": "TAPS",
-      "side": "LONG",
-      "size": 9.42,
-      "size_usd": 9.42,
-      "pnl_usd": -1.3826,
-      "pnl_pct": -14.6777,
-      "tx": "CUT_HARD_-3.0",
-      "id": "PAPER-222",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 115.9234,
-    "mtm_equity_usd": 116.2085,
-    "realized_pnl_usd": 15.9234,
-    "unrealized_pnl_usd": 0.2851,
-    "open": {
-      "id": "PAPER-303",
-      "ticker": "ELEPHANT",
-      "usd": 12.0,
-      "mtm_pct": 2.3755
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $115.92 \u00b7 curve n=126 \u00b7 2026-09-22 12:33:51 ET",
+    "paper_equity_usd": 114.4067,
+    "mtm_equity_usd": 114.4067,
+    "realized_pnl_usd": 14.4067,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $114.41 \u00b7 curve n=126 \u00b7 2026-09-22 12:34:37 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 124
+    "closed_n": 125
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $115.92 \u00b7 2026-09-22 12:33:51 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $114.41 \u00b7 FLAT \u00b7 2026-09-22 12:34:37 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=POCHI open_p=0.64 edge=2.05 conf=0.96",
-    "pick": "POCHI",
-    "open_p": 0.64,
-    "confidence": 0.96,
-    "edge_score": 2.05,
+    "detail": "pick=GROK open_p=0.67 edge=2.25 conf=0.95",
+    "pick": "GROK",
+    "open_p": 0.67,
+    "confidence": 0.95,
+    "edge_score": 2.25,
     "picks": [
       {
-        "sym": "POCHI",
-        "lost_bps": 10,
+        "sym": "GROK",
+        "lost_bps": 5,
         "selected": true,
-        "probs": 0.98
+        "probs": 0.96
+      },
+      {
+        "sym": "POCHI",
+        "lost_bps": 11,
+        "selected": false,
+        "probs": 0.03
       },
       {
         "sym": "ELEPHANT",
-        "lost_bps": 15,
+        "lost_bps": 16,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "POCHI",
-        "confidence": 0.96
+        "choice": "GROK",
+        "confidence": 0.95
       },
       "edge": {
         "type": "score",
-        "score": 2.05,
-        "confidence": 0.37
+        "score": 2.25,
+        "confidence": 0.23
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.67
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 12:32:25 ET",
+    "stamp_et": "2026-09-22 12:34:30 ET",
     "live": true
   }
 }
