@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 00:57:57 ET",
+  "updated_et": "2026-09-23 00:58:45 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 99.2607,
-  "upnl_usd": 0.0,
-  "equity_usd": 99.2607,
+  "upnl_usd": -0.0122,
+  "equity_usd": 99.2485,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -0.7393,
-  "total_pnl_pct": -0.7393,
-  "mark_eth": 2782.685,
-  "mark": 2782.685,
+  "total_pnl_usd": -0.7515,
+  "total_pnl_pct": -0.7515,
+  "mark_eth": 2780.29,
+  "mark": 2780.29,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2782.685
+    "ETH": 2780.29
   },
   "holdings": {
-    "paper_cash_usd": 99.2607,
+    "paper_cash_usd": 74.4407,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2327,6 +2327,13 @@
       "ticker": "EULER",
       "reason": "TP_+3.5",
       "pnl_usd": 0.9581
+    },
+    {
+      "t": "now",
+      "equity_usd": 99.2485,
+      "liquid_usd": 99.2485,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -3375,39 +3382,43 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 99.2607,
-    "mtm_equity_usd": 99.2607,
+    "mtm_equity_usd": 99.2485,
     "realized_pnl_usd": -0.7393,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $99.26 \u00b7 curve n=229 \u00b7 2026-09-23 00:57:57 ET",
+    "unrealized_pnl_usd": -0.0122,
+    "open": {
+      "id": "PAPER-407",
+      "ticker": "NOSH",
+      "usd": 24.82
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $99.26 \u00b7 curve n=230 \u00b7 2026-09-23 00:58:45 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 228
   },
-  "notes": "PAPER heartbeat \u00b7 eq $99.26 \u00b7 FLAT \u00b7 2026-09-23 00:57:57 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $99.26 \u00b7 2026-09-23 00:58:45 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NOSH open_p=0.62 edge=1.9 conf=0.93",
+    "detail": "pick=NOSH open_p=0.64 edge=2.03 conf=0.92",
     "pick": "NOSH",
-    "open_p": 0.62,
-    "confidence": 0.93,
-    "edge_score": 1.9,
+    "open_p": 0.64,
+    "confidence": 0.92,
+    "edge_score": 2.03,
     "picks": [
       {
         "sym": "NOSH",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.9299999999999999
       },
       {
         "sym": "EULER",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.04
       },
       {
         "sym": "CI",
-        "lost_bps": 9,
+        "lost_bps": 11,
         "selected": false,
         "probs": 0.01
       }
@@ -3417,20 +3428,20 @@
       "pick": {
         "type": "choice",
         "choice": "NOSH",
-        "confidence": 0.93
+        "confidence": 0.92
       },
       "edge": {
         "type": "score",
-        "score": 1.9,
+        "score": 2.03,
         "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.62
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 00:57:07 ET",
+    "stamp_et": "2026-09-23 00:58:38 ET",
     "live": true
   }
 }
