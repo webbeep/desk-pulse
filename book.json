@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 12:30:32 ET",
+  "updated_et": "2026-09-23 12:31:20 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 66.7999,
-  "upnl_usd": -0.0028,
-  "equity_usd": 66.7971,
+  "liquid_usd": 66.8737,
+  "upnl_usd": 0.0,
+  "equity_usd": 66.8737,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -33.2029,
-  "total_pnl_pct": -33.2029,
-  "mark_eth": 2663.615,
-  "mark": 2663.615,
+  "total_pnl_usd": -33.1263,
+  "total_pnl_pct": -33.1263,
+  "mark_eth": 2667.15,
+  "mark": 2667.15,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2663.615
+    "ETH": 2667.15
   },
   "holdings": {
-    "paper_cash_usd": 61.4599,
+    "paper_cash_usd": 66.8737,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -3429,14 +3429,53 @@
       "pnl_usd": 0.2468
     },
     {
-      "t": "now",
-      "equity_usd": 66.7971,
-      "liquid_usd": 66.7971,
+      "t": "2026-09-23 12:30:46 ET",
+      "equity_usd": 67.2223,
+      "liquid_usd": 67.2223,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "AGI",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.4224
+    },
+    {
+      "t": "2026-09-23 12:30:51 ET",
+      "equity_usd": 66.8737,
+      "liquid_usd": 66.8737,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "AGI",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -0.3486
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 12:30:51 ET",
+      "kind": "PAPER",
+      "market": "AGI",
+      "side": "LONG",
+      "size": 5.38,
+      "size_usd": 5.38,
+      "pnl_usd": -0.3486,
+      "pnl_pct": -6.4795,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-518",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 12:30:46 ET",
+      "kind": "PAPER",
+      "market": "AGI",
+      "side": "LONG",
+      "size": 5.34,
+      "size_usd": 5.34,
+      "pnl_usd": 0.4224,
+      "pnl_pct": 7.9104,
+      "tx": "TP_+3.5",
+      "id": "PAPER-517",
+      "paper": true
+    },
     {
       "t": "2026-09-23 12:30:20 ET",
       "kind": "PAPER",
@@ -4450,59 +4489,29 @@
       "tx": "TP_+3.5",
       "id": "PAPER-439",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 04:10:26 ET",
-      "kind": "PAPER",
-      "market": "LONG",
-      "side": "LONG",
-      "size": 11.43,
-      "size_usd": 11.43,
-      "pnl_usd": 0.4155,
-      "pnl_pct": 3.6352,
-      "tx": "TP_+3.5",
-      "id": "PAPER-438",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 04:09:15 ET",
-      "kind": "PAPER",
-      "market": "SHINYHUNTERS",
-      "side": "LONG",
-      "size": 23.28,
-      "size_usd": 23.28,
-      "pnl_usd": 2.1121,
-      "pnl_pct": 9.0725,
-      "tx": "TP_+3.5",
-      "id": "PAPER-437",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 66.7999,
-    "mtm_equity_usd": 66.7971,
-    "realized_pnl_usd": -33.2001,
-    "unrealized_pnl_usd": -0.0028,
-    "open": {
-      "id": "PAPER-517",
-      "ticker": "AGI",
-      "usd": 5.34
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $66.80 \u00b7 curve n=340 \u00b7 2026-09-23 12:30:32 ET",
+    "paper_equity_usd": 66.8737,
+    "mtm_equity_usd": 66.8737,
+    "realized_pnl_usd": -33.1263,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $66.87 \u00b7 curve n=341 \u00b7 2026-09-23 12:31:20 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 338
+    "closed_n": 340
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $66.80 \u00b7 2026-09-23 12:30:32 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $66.87 \u00b7 FLAT \u00b7 2026-09-23 12:31:20 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AGI open_p=0.64 edge=2.17 conf=0.94",
+    "detail": "pick=AGI open_p=0.61 edge=2.0 conf=0.94",
     "pick": "AGI",
-    "open_p": 0.64,
+    "open_p": 0.61,
     "confidence": 0.94,
-    "edge_score": 2.17,
+    "edge_score": 2.0,
     "picks": [
       {
         "sym": "AGI",
@@ -4532,16 +4541,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.17,
-        "confidence": 0.3
+        "score": 2.0,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.61
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 12:30:24 ET",
+    "stamp_et": "2026-09-23 12:31:08 ET",
     "live": true
   }
 }
