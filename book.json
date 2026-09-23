@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 16:32:06 ET",
+  "updated_et": "2026-09-23 16:32:54 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 52.6562,
+  "liquid_usd": 52.8397,
   "upnl_usd": 0.0,
-  "equity_usd": 52.6562,
+  "equity_usd": 52.8397,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -47.3438,
-  "total_pnl_pct": -47.3438,
-  "mark_eth": 2673.215,
-  "mark": 2673.215,
+  "total_pnl_usd": -47.1603,
+  "total_pnl_pct": -47.1603,
+  "mark_eth": 2673.235,
+  "mark": 2673.235,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2673.215
+    "ETH": 2673.235
   },
   "holdings": {
-    "paper_cash_usd": 52.6562,
+    "paper_cash_usd": 52.8397,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -3787,9 +3787,55 @@
       "ticker": "HYENA",
       "reason": "CUT_HARD_QUOTER",
       "pnl_usd": -4.66
+    },
+    {
+      "t": "2026-09-23 16:32:31 ET",
+      "equity_usd": 52.8208,
+      "liquid_usd": 52.8208,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "LEVERHYPPO",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.1646
+    },
+    {
+      "t": "2026-09-23 16:32:49 ET",
+      "equity_usd": 52.8397,
+      "liquid_usd": 52.8397,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "LEVERHYPPO",
+      "reason": "CUT_HARD_LIQ0",
+      "pnl_usd": 0.0189
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 16:32:49 ET",
+      "kind": "PAPER",
+      "market": "LEVERHYPPO",
+      "side": "LONG",
+      "size": 4.23,
+      "size_usd": 4.23,
+      "pnl_usd": 0.0189,
+      "pnl_pct": 0.4479,
+      "tx": "CUT_HARD_LIQ0",
+      "id": "PAPER-554",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 16:32:31 ET",
+      "kind": "PAPER",
+      "market": "LEVERHYPPO",
+      "side": "LONG",
+      "size": 4.21,
+      "size_usd": 4.21,
+      "pnl_usd": 0.1646,
+      "pnl_pct": 3.9091,
+      "tx": "TP_+3.5",
+      "id": "PAPER-553",
+      "paper": true
+    },
     {
       "t": "2026-09-23 16:26:51 ET",
       "kind": "PAPER",
@@ -4803,67 +4849,47 @@
       "tx": "TP_+3.5",
       "id": "PAPER-475",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 09:35:12 ET",
-      "kind": "PAPER",
-      "market": "GIGACAT",
-      "side": "LONG",
-      "size": 15.39,
-      "size_usd": 15.39,
-      "pnl_usd": 1.6007,
-      "pnl_pct": 10.4012,
-      "tx": "TP_+3.5",
-      "id": "PAPER-474",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 09:08:29 ET",
-      "kind": "PAPER",
-      "market": "FA1824",
-      "side": "LONG",
-      "size": 19.71,
-      "size_usd": 19.71,
-      "pnl_usd": -1.8793,
-      "pnl_pct": -9.535,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-473",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 52.6562,
-    "mtm_equity_usd": 52.6562,
-    "realized_pnl_usd": -47.3438,
+    "paper_equity_usd": 52.8397,
+    "mtm_equity_usd": 52.8397,
+    "realized_pnl_usd": -47.1603,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $52.66 \u00b7 curve n=375 \u00b7 2026-09-23 16:32:06 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $52.84 \u00b7 curve n=377 \u00b7 2026-09-23 16:32:54 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 374
+    "closed_n": 376
   },
-  "notes": "PAPER heartbeat \u00b7 eq $52.66 \u00b7 FLAT \u00b7 2026-09-23 16:32:06 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $52.84 \u00b7 FLAT \u00b7 2026-09-23 16:32:54 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=LOAN open_p=0.63 edge=1.96 conf=0.92",
+    "detail": "pick=LOAN open_p=0.65 edge=2.09 conf=0.89",
     "pick": "LOAN",
-    "open_p": 0.63,
-    "confidence": 0.92,
-    "edge_score": 1.96,
+    "open_p": 0.65,
+    "confidence": 0.89,
+    "edge_score": 2.09,
     "picks": [
       {
         "sym": "LOAN",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.91
+      },
+      {
+        "sym": "LEVERHYPPO",
+        "lost_bps": 8,
+        "selected": false,
+        "probs": 0.06
       },
       {
         "sym": "UNREAL",
-        "lost_bps": 8,
+        "lost_bps": 9,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.01
       },
       {
         "sym": "ZZZ",
@@ -4877,20 +4903,20 @@
       "pick": {
         "type": "choice",
         "choice": "LOAN",
-        "confidence": 0.92
+        "confidence": 0.89
       },
       "edge": {
         "type": "score",
-        "score": 1.96,
+        "score": 2.09,
         "confidence": 0.38
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 16:31:06 ET",
+    "stamp_et": "2026-09-23 16:32:47 ET",
     "live": true
   }
 }
