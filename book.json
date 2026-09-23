@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 09:54:52 ET",
+  "updated_et": "2026-09-23 09:55:42 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 85.7551,
+  "liquid_usd": 75.4651,
   "upnl_usd": 0.0,
-  "equity_usd": 85.7551,
+  "equity_usd": 75.4651,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -14.2449,
-  "total_pnl_pct": -14.2449,
-  "mark_eth": 2711.43,
-  "mark": 2711.43,
+  "total_pnl_usd": -24.5349,
+  "total_pnl_pct": -24.5349,
+  "mark_eth": 2713.205,
+  "mark": 2713.205,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2711.43
+    "ETH": 2713.205
   },
   "holdings": {
-    "paper_cash_usd": 85.7551,
+    "paper_cash_usd": 75.4651,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -3047,9 +3047,32 @@
       "ticker": "ORIGOO",
       "reason": "TP_+3.5",
       "pnl_usd": 1.1273
+    },
+    {
+      "t": "2026-09-23 09:55:30 ET",
+      "equity_usd": 75.4651,
+      "liquid_usd": 75.4651,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ORIGOO",
+      "reason": "CUT_HARD_QUOTER",
+      "pnl_usd": -10.29
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 09:55:30 ET",
+      "kind": "PAPER",
+      "market": "ORIGOO",
+      "side": "LONG",
+      "size": 10.29,
+      "size_usd": 10.29,
+      "pnl_usd": -10.29,
+      "pnl_pct": -100.0,
+      "tx": "CUT_HARD_QUOTER",
+      "id": "PAPER-479",
+      "paper": true
+    },
     {
       "t": "2026-09-23 09:54:05 ET",
       "kind": "PAPER",
@@ -4076,42 +4099,29 @@
       "tx": "TP_+3.5",
       "id": "PAPER-400",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 23:57:12 ET",
-      "kind": "PAPER",
-      "market": "CI",
-      "side": "LONG",
-      "size": 11.92,
-      "size_usd": 11.92,
-      "pnl_usd": 1.2794,
-      "pnl_pct": 10.7334,
-      "tx": "TP_+3.5",
-      "id": "PAPER-399",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 85.7551,
-    "mtm_equity_usd": 85.7551,
-    "realized_pnl_usd": -14.2449,
+    "paper_equity_usd": 75.4651,
+    "mtm_equity_usd": 75.4651,
+    "realized_pnl_usd": -24.5349,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $85.76 \u00b7 curve n=301 \u00b7 2026-09-23 09:54:52 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $75.47 \u00b7 curve n=302 \u00b7 2026-09-23 09:55:42 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 300
+    "closed_n": 301
   },
-  "notes": "PAPER heartbeat \u00b7 eq $85.76 \u00b7 FLAT \u00b7 2026-09-23 09:54:52 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $75.47 \u00b7 FLAT \u00b7 2026-09-23 09:55:42 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AGRIPPA open_p=0.63 edge=2.11 conf=0.98",
+    "detail": "pick=AGRIPPA open_p=0.63 edge=2.08 conf=0.98",
     "pick": "AGRIPPA",
     "open_p": 0.63,
     "confidence": 0.98,
-    "edge_score": 2.11,
+    "edge_score": 2.08,
     "picks": [
       {
         "sym": "AGRIPPA",
@@ -4135,7 +4145,7 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.11,
+        "score": 2.08,
         "confidence": 0.39
       },
       "open_now": {
@@ -4144,7 +4154,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 09:53:41 ET",
+    "stamp_et": "2026-09-23 09:55:12 ET",
     "live": true
   }
 }
