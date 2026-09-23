@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 00:57:08 ET",
+  "updated_et": "2026-09-23 00:57:57 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 98.3026,
-  "upnl_usd": -0.0052,
-  "equity_usd": 98.2974,
+  "liquid_usd": 99.2607,
+  "upnl_usd": 0.0,
+  "equity_usd": 99.2607,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -1.7026,
-  "total_pnl_pct": -1.7026,
-  "mark_eth": 2783.425,
-  "mark": 2783.425,
+  "total_pnl_usd": -0.7393,
+  "total_pnl_pct": -0.7393,
+  "mark_eth": 2782.685,
+  "mark": 2782.685,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2783.425
+    "ETH": 2782.685
   },
   "holdings": {
-    "paper_cash_usd": 86.5026,
+    "paper_cash_usd": 99.2607,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2319,14 +2319,30 @@
       "pnl_usd": 0.5219
     },
     {
-      "t": "now",
-      "equity_usd": 98.2974,
-      "liquid_usd": 98.2974,
+      "t": "2026-09-23 00:57:22 ET",
+      "equity_usd": 99.2607,
+      "liquid_usd": 99.2607,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "EULER",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.9581
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 00:57:22 ET",
+      "kind": "PAPER",
+      "market": "EULER",
+      "side": "LONG",
+      "size": 11.8,
+      "size_usd": 11.8,
+      "pnl_usd": 0.9581,
+      "pnl_pct": 8.1198,
+      "tx": "TP_+3.5",
+      "id": "PAPER-406",
+      "paper": true
+    },
     {
       "t": "2026-09-23 00:55:42 ET",
       "kind": "PAPER",
@@ -3353,38 +3369,21 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-327",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 14:34:30 ET",
-      "kind": "PAPER",
-      "market": "LUNA",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": 4.1725,
-      "pnl_pct": 34.7704,
-      "tx": "TP_+3.5",
-      "id": "PAPER-326",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 98.3026,
-    "mtm_equity_usd": 98.2974,
-    "realized_pnl_usd": -1.6974,
-    "unrealized_pnl_usd": -0.0052,
-    "open": {
-      "id": "PAPER-406",
-      "ticker": "EULER",
-      "usd": 11.8
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $98.30 \u00b7 curve n=229 \u00b7 2026-09-23 00:57:08 ET",
+    "paper_equity_usd": 99.2607,
+    "mtm_equity_usd": 99.2607,
+    "realized_pnl_usd": -0.7393,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $99.26 \u00b7 curve n=229 \u00b7 2026-09-23 00:57:57 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 227
+    "closed_n": 228
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $98.30 \u00b7 2026-09-23 00:57:08 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $99.26 \u00b7 FLAT \u00b7 2026-09-23 00:57:57 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
