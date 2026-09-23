@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-23 06:41:48 ET",
+  "updated_et": "2026-09-23 06:42:36 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 108.5946,
-  "upnl_usd": -0.0194,
-  "equity_usd": 108.5752,
+  "liquid_usd": 96.5946,
+  "upnl_usd": 0.0,
+  "equity_usd": 96.5946,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 8.5752,
-  "total_pnl_pct": 8.5752,
-  "mark_eth": 2735.01,
-  "mark": 2735.01,
+  "total_pnl_usd": -3.4054,
+  "total_pnl_pct": -3.4054,
+  "mark_eth": 2734.945,
+  "mark": 2734.945,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2735.01
+    "ETH": 2734.945
   },
   "holdings": {
     "paper_cash_usd": 96.5946,
@@ -2849,14 +2849,30 @@
       "pnl_usd": 1.345
     },
     {
-      "t": "now",
-      "equity_usd": 108.5752,
-      "liquid_usd": 108.5752,
+      "t": "2026-09-23 06:42:10 ET",
+      "equity_usd": 96.5946,
+      "liquid_usd": 96.5946,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "MONITOR",
+      "reason": "CUT_HARD_QUOTER",
+      "pnl_usd": -12.0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 06:42:10 ET",
+      "kind": "PAPER",
+      "market": "MONITOR",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -12.0,
+      "pnl_pct": -100.0,
+      "tx": "CUT_HARD_QUOTER",
+      "id": "PAPER-459",
+      "paper": true
+    },
     {
       "t": "2026-09-23 06:40:09 ET",
       "kind": "PAPER",
@@ -3883,38 +3899,21 @@
       "tx": "TP_+3.5",
       "id": "PAPER-380",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 21:59:48 ET",
-      "kind": "PAPER",
-      "market": "SIGNULL",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": 0.6195,
-      "pnl_pct": 5.1628,
-      "tx": "TP_+3.5",
-      "id": "PAPER-379",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 108.5946,
-    "mtm_equity_usd": 108.5752,
-    "realized_pnl_usd": 8.5946,
-    "unrealized_pnl_usd": -0.0194,
-    "open": {
-      "id": "PAPER-459",
-      "ticker": "MONITOR",
-      "usd": 12.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $108.59 \u00b7 curve n=282 \u00b7 2026-09-23 06:41:48 ET",
+    "paper_equity_usd": 96.5946,
+    "mtm_equity_usd": 96.5946,
+    "realized_pnl_usd": -3.4054,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $96.59 \u00b7 curve n=282 \u00b7 2026-09-23 06:42:36 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 280
+    "closed_n": 281
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $108.59 \u00b7 2026-09-23 06:41:48 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $96.59 \u00b7 FLAT \u00b7 2026-09-23 06:42:36 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
