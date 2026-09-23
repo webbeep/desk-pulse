@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-23 03:08:25 ET",
+  "updated_et": "2026-09-23 03:09:13 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 93.179,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -6.821,
   "total_pnl_pct": -6.821,
-  "mark_eth": 2749.335,
-  "mark": 2749.335,
+  "mark_eth": 2750.105,
+  "mark": 2750.105,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2749.335
+    "ETH": 2750.105
   },
   "holdings": {
     "paper_cash_usd": 93.179,
@@ -3579,43 +3579,43 @@
     "realized_pnl_usd": -6.821,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $93.18 \u00b7 curve n=249 \u00b7 2026-09-23 03:08:25 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $93.18 \u00b7 curve n=249 \u00b7 2026-09-23 03:09:13 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 248
   },
-  "notes": "PAPER heartbeat \u00b7 eq $93.18 \u00b7 FLAT \u00b7 2026-09-23 03:08:25 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $93.18 \u00b7 FLAT \u00b7 2026-09-23 03:09:13 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=EULER open_p=0.64 edge=2.17 conf=0.62",
+    "detail": "pick=EULER open_p=0.66 edge=2.27 conf=0.96",
     "pick": "EULER",
-    "open_p": 0.64,
-    "confidence": 0.62,
-    "edge_score": 2.17,
+    "open_p": 0.66,
+    "confidence": 0.96,
+    "edge_score": 2.27,
     "picks": [
       {
         "sym": "EULER",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.7
+        "probs": 0.97
       },
       {
         "sym": "NOSH",
-        "lost_bps": 5,
+        "lost_bps": 6,
         "selected": false,
-        "probs": 0.14
+        "probs": 0.01
       },
       {
         "sym": "SWBR",
-        "lost_bps": 6,
+        "lost_bps": 7,
         "selected": false,
-        "probs": 0.13
+        "probs": 0.01
       },
       {
         "sym": "NAUTILO",
-        "lost_bps": 37,
+        "lost_bps": 36,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -3623,20 +3623,20 @@
       "pick": {
         "type": "choice",
         "choice": "EULER",
-        "confidence": 0.62
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 2.17,
-        "confidence": 0.37
+        "score": 2.27,
+        "confidence": 0.3
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 03:07:40 ET",
+    "stamp_et": "2026-09-23 03:09:12 ET",
     "live": true
   }
 }
