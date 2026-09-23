@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 06:20:14 ET",
+  "updated_et": "2026-09-23 06:21:02 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 112.8651,
-  "upnl_usd": 0.0,
-  "equity_usd": 112.8651,
+  "upnl_usd": -0.0631,
+  "equity_usd": 112.802,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 12.8651,
-  "total_pnl_pct": 12.8651,
-  "mark_eth": 2731.835,
-  "mark": 2731.835,
+  "total_pnl_usd": 12.802,
+  "total_pnl_pct": 12.802,
+  "mark_eth": 2730.005,
+  "mark": 2730.005,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2731.835
+    "ETH": 2730.005
   },
   "holdings": {
-    "paper_cash_usd": 112.8651,
+    "paper_cash_usd": 100.8651,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-451",
+      "market": "ARMY",
+      "side": "LONG",
+      "size_usd": 12.0,
+      "entry": 6.770187320635603e-05,
+      "mark": 6.734587418974594e-05,
+      "uPnL": -0.0631,
+      "mtm_pct": -0.5257,
+      "sl": 5.4161498565084825e-05,
+      "tp": 0.00010155280980953404,
+      "lev": 1,
+      "paper": true,
+      "liq": 12271858696589425368886,
+      "held_min": 0.27
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -2767,6 +2784,13 @@
       "ticker": "MAU",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -0.7134
+    },
+    {
+      "t": "now",
+      "equity_usd": 112.802,
+      "liquid_usd": 112.802,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -3815,23 +3839,28 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 112.8651,
-    "mtm_equity_usd": 112.8651,
+    "mtm_equity_usd": 112.802,
     "realized_pnl_usd": 12.8651,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $112.87 \u00b7 curve n=273 \u00b7 2026-09-23 06:20:14 ET",
+    "unrealized_pnl_usd": -0.0631,
+    "open": {
+      "id": "PAPER-451",
+      "ticker": "ARMY",
+      "usd": 12.0,
+      "mtm_pct": -0.5257
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $112.87 \u00b7 curve n=274 \u00b7 2026-09-23 06:21:02 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 272
   },
-  "notes": "PAPER heartbeat \u00b7 eq $112.87 \u00b7 FLAT \u00b7 2026-09-23 06:20:14 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $112.87 \u00b7 2026-09-23 06:21:02 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SHINYHUNTERS open_p=0.64 edge=1.91 conf=0.97",
+    "detail": "pick=SHINYHUNTERS open_p=0.67 edge=2.28 conf=0.97",
     "pick": "SHINYHUNTERS",
-    "open_p": 0.64,
+    "open_p": 0.67,
     "confidence": 0.97,
-    "edge_score": 1.91,
+    "edge_score": 2.28,
     "picks": [
       {
         "sym": "SHINYHUNTERS",
@@ -3841,9 +3870,15 @@
       },
       {
         "sym": "MAU",
-        "lost_bps": 13,
+        "lost_bps": 12,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
+      },
+      {
+        "sym": "ARMY",
+        "lost_bps": 47,
+        "selected": false,
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -3855,16 +3890,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 1.91,
-        "confidence": 0.29
+        "score": 2.28,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.67
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 06:19:05 ET",
+    "stamp_et": "2026-09-23 06:20:36 ET",
     "live": true
   }
 }
