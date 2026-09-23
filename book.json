@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 14:07:23 ET",
+  "updated_et": "2026-09-23 14:08:11 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 59.5102,
+  "liquid_usd": 59.387,
   "upnl_usd": 0.0,
-  "equity_usd": 59.5102,
+  "equity_usd": 59.387,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -40.4898,
-  "total_pnl_pct": -40.4898,
-  "mark_eth": 2665.985,
-  "mark": 2665.985,
+  "total_pnl_usd": -40.613,
+  "total_pnl_pct": -40.613,
+  "mark_eth": 2667.365,
+  "mark": 2667.365,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2665.985
+    "ETH": 2667.365
   },
   "holdings": {
-    "paper_cash_usd": 59.5102,
+    "paper_cash_usd": 59.387,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -3577,9 +3577,55 @@
       "ticker": "PALLAS",
       "reason": "TIME_SOFT_90s",
       "pnl_usd": -0.0006
+    },
+    {
+      "t": "2026-09-23 14:07:41 ET",
+      "equity_usd": 60.1288,
+      "liquid_usd": 60.1288,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SSI",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.6186
+    },
+    {
+      "t": "2026-09-23 14:07:46 ET",
+      "equity_usd": 59.387,
+      "liquid_usd": 59.387,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PALLAS",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -0.7418
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 14:07:46 ET",
+      "kind": "PAPER",
+      "market": "PALLAS",
+      "side": "LONG",
+      "size": 4.76,
+      "size_usd": 4.76,
+      "pnl_usd": -0.7418,
+      "pnl_pct": -15.5834,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-533",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 14:07:41 ET",
+      "kind": "PAPER",
+      "market": "SSI",
+      "side": "LONG",
+      "size": 4.76,
+      "size_usd": 4.76,
+      "pnl_usd": 0.6186,
+      "pnl_pct": 12.9948,
+      "tx": "TP_+3.5",
+      "id": "PAPER-532",
+      "paper": true
+    },
     {
       "t": "2026-09-23 14:07:11 ET",
       "kind": "PAPER",
@@ -4593,53 +4639,27 @@
       "tx": "TP_+3.5",
       "id": "PAPER-454",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 06:25:54 ET",
-      "kind": "PAPER",
-      "market": "ARMY",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": -0.9302,
-      "pnl_pct": -7.7514,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-453",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 06:22:13 ET",
-      "kind": "PAPER",
-      "market": "ARMY",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": -1.4437,
-      "pnl_pct": -12.0307,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-452",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 59.5102,
-    "mtm_equity_usd": 59.5102,
-    "realized_pnl_usd": -40.4898,
+    "paper_equity_usd": 59.387,
+    "mtm_equity_usd": 59.387,
+    "realized_pnl_usd": -40.613,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $59.51 \u00b7 curve n=354 \u00b7 2026-09-23 14:07:23 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $59.39 \u00b7 curve n=356 \u00b7 2026-09-23 14:08:11 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 353
+    "closed_n": 355
   },
-  "notes": "PAPER heartbeat \u00b7 eq $59.51 \u00b7 FLAT \u00b7 2026-09-23 14:07:23 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $59.39 \u00b7 FLAT \u00b7 2026-09-23 14:08:11 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=LOAN open_p=0.60 edge=2.13 conf=0.92",
+    "detail": "pick=LOAN open_p=0.61 edge=2.13 conf=0.92",
     "pick": "LOAN",
-    "open_p": 0.6,
+    "open_p": 0.61,
     "confidence": 0.92,
     "edge_score": 2.13,
     "picks": [
@@ -4647,19 +4667,19 @@
         "sym": "LOAN",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.94
+        "probs": 0.9299999999999999
       },
       {
         "sym": "SSI",
-        "lost_bps": 6,
+        "lost_bps": 5,
         "selected": false,
         "probs": 0.03
       },
       {
         "sym": "PALLAS",
-        "lost_bps": 6,
+        "lost_bps": 5,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
       },
       {
         "sym": "ZZZ",
@@ -4678,15 +4698,15 @@
       "edge": {
         "type": "score",
         "score": 2.13,
-        "confidence": 0.37
+        "confidence": 0.39
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.6
+        "noul": 0.61
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 14:07:01 ET",
+    "stamp_et": "2026-09-23 14:08:00 ET",
     "live": true
   }
 }
