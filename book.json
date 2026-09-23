@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-22 22:30:08 ET",
+  "updated_et": "2026-09-22 22:30:56 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 111.2093,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 11.2093,
   "total_pnl_pct": 11.2093,
-  "mark_eth": 2759.25,
-  "mark": 2759.25,
+  "mark_eth": 2757.275,
+  "mark": 2757.275,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2759.25
+    "ETH": 2757.275
   },
   "holdings": {
     "paper_cash_usd": 111.2093,
@@ -3209,64 +3209,58 @@
     "realized_pnl_usd": 11.2093,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $111.21 \u00b7 curve n=212 \u00b7 2026-09-22 22:30:08 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $111.21 \u00b7 curve n=212 \u00b7 2026-09-22 22:30:56 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 211
   },
-  "notes": "PAPER heartbeat \u00b7 eq $111.21 \u00b7 FLAT \u00b7 2026-09-22 22:30:08 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $111.21 \u00b7 FLAT \u00b7 2026-09-22 22:30:56 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NOSH open_p=0.68 edge=2.31 conf=0.92",
-    "pick": "NOSH",
-    "open_p": 0.68,
-    "confidence": 0.92,
-    "edge_score": 2.31,
+    "detail": "pick=CHICKEN open_p=0.61 edge=1.91 conf=0.63",
+    "pick": "CHICKEN",
+    "open_p": 0.61,
+    "confidence": 0.63,
+    "edge_score": 1.91,
     "picks": [
+      {
+        "sym": "CHICKEN",
+        "lost_bps": 4,
+        "selected": true,
+        "probs": 0.71
+      },
       {
         "sym": "NOSH",
         "lost_bps": 4,
-        "selected": true,
-        "probs": 0.93
-      },
-      {
-        "sym": "CHICKEN",
-        "lost_bps": 9,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.26
       },
       {
         "sym": "EULER",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.0
-      },
-      {
-        "sym": "SIGNULL",
-        "lost_bps": 54,
-        "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "NOSH",
-        "confidence": 0.92
+        "choice": "CHICKEN",
+        "confidence": 0.63
       },
       "edge": {
         "type": "score",
-        "score": 2.31,
-        "confidence": 0.36
+        "score": 1.91,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.68
+        "noul": 0.61
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 22:29:08 ET",
+    "stamp_et": "2026-09-22 22:30:38 ET",
     "live": true
   }
 }
