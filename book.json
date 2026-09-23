@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 21:45:17 ET",
+  "updated_et": "2026-09-22 21:46:06 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 109.3405,
-  "upnl_usd": -0.0435,
-  "equity_usd": 109.297,
+  "liquid_usd": 109.2989,
+  "upnl_usd": 0.0,
+  "equity_usd": 109.2989,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 9.297,
-  "total_pnl_pct": 9.297,
-  "mark_eth": 2754.025,
-  "mark": 2754.025,
+  "total_pnl_usd": 9.2989,
+  "total_pnl_pct": 9.2989,
+  "mark_eth": 2751.51,
+  "mark": 2751.51,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2754.025
+    "ETH": 2751.51
   },
   "holdings": {
-    "paper_cash_usd": 97.3405,
+    "paper_cash_usd": 109.2989,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-376",
-      "market": "BOL",
-      "side": "LONG",
-      "size_usd": 12.0,
-      "entry": 8.529380649209484e-06,
-      "mark": 8.4984616443561e-06,
-      "uPnL": -0.0435,
-      "mtm_pct": -0.3629,
-      "sl": 6.823504519367587e-06,
-      "tp": 1.2794070973814224e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 54773207779044021846921,
-      "held_min": 1.99
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -2036,14 +2019,30 @@
       "pnl_usd": -1.9064
     },
     {
-      "t": "now",
-      "equity_usd": 109.297,
-      "liquid_usd": 109.297,
+      "t": "2026-09-22 21:45:45 ET",
+      "equity_usd": 109.2989,
+      "liquid_usd": 109.2989,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "BOL",
+      "reason": "TIME_SOFT_180s",
+      "pnl_usd": -0.0416
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 21:45:45 ET",
+      "kind": "PAPER",
+      "market": "BOL",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -0.0416,
+      "pnl_pct": -0.3466,
+      "tx": "TIME_SOFT_180s",
+      "id": "PAPER-376",
+      "paper": true
+    },
     {
       "t": "2026-09-22 21:41:46 ET",
       "kind": "PAPER",
@@ -3070,39 +3069,21 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-297",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 12:19:11 ET",
-      "kind": "PAPER",
-      "market": "POCHI",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": 0.5462,
-      "pnl_pct": 4.5521,
-      "tx": "TP_+3.5",
-      "id": "PAPER-296",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 109.3405,
-    "mtm_equity_usd": 109.297,
-    "realized_pnl_usd": 9.3405,
-    "unrealized_pnl_usd": -0.0435,
-    "open": {
-      "id": "PAPER-376",
-      "ticker": "BOL",
-      "usd": 12.0,
-      "mtm_pct": -0.3629
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $109.34 \u00b7 curve n=199 \u00b7 2026-09-22 21:45:17 ET",
+    "paper_equity_usd": 109.2989,
+    "mtm_equity_usd": 109.2989,
+    "realized_pnl_usd": 9.2989,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $109.30 \u00b7 curve n=199 \u00b7 2026-09-22 21:46:06 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 197
+    "closed_n": 198
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $109.34 \u00b7 2026-09-22 21:45:17 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $109.30 \u00b7 FLAT \u00b7 2026-09-22 21:46:06 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
