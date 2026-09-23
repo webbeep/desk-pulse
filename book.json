@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 03:02:48 ET",
+  "updated_et": "2026-09-23 03:03:36 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 92.6545,
+  "liquid_usd": 93.5748,
   "upnl_usd": 0.0,
-  "equity_usd": 92.6545,
+  "equity_usd": 93.5748,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -7.3455,
-  "total_pnl_pct": -7.3455,
-  "mark_eth": 2750.43,
-  "mark": 2750.43,
+  "total_pnl_usd": -6.4252,
+  "total_pnl_pct": -6.4252,
+  "mark_eth": 2751.685,
+  "mark": 2751.685,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2750.43
+    "ETH": 2751.685
   },
   "holdings": {
-    "paper_cash_usd": 92.6545,
+    "paper_cash_usd": 93.5748,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2487,9 +2487,32 @@
       "ticker": "NAUTILO",
       "reason": "TP_+3.5",
       "pnl_usd": 2.2312
+    },
+    {
+      "t": "2026-09-23 03:03:24 ET",
+      "equity_usd": 93.5748,
+      "liquid_usd": 93.5748,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "NAUTILO",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.9203
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 03:03:24 ET",
+      "kind": "PAPER",
+      "market": "NAUTILO",
+      "side": "LONG",
+      "size": 11.12,
+      "size_usd": 11.12,
+      "pnl_usd": 0.9203,
+      "pnl_pct": 8.2759,
+      "tx": "TP_+3.5",
+      "id": "PAPER-423",
+      "paper": true
+    },
     {
       "t": "2026-09-23 03:02:03 ET",
       "kind": "PAPER",
@@ -3516,54 +3539,41 @@
       "tx": "TP_+3.5",
       "id": "PAPER-344",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 17:17:39 ET",
-      "kind": "PAPER",
-      "market": "AGRIPPA",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": -11.3225,
-      "pnl_pct": -94.3541,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-343",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 92.6545,
-    "mtm_equity_usd": 92.6545,
-    "realized_pnl_usd": -7.3455,
+    "paper_equity_usd": 93.5748,
+    "mtm_equity_usd": 93.5748,
+    "realized_pnl_usd": -6.4252,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $92.65 \u00b7 curve n=245 \u00b7 2026-09-23 03:02:48 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $93.57 \u00b7 curve n=246 \u00b7 2026-09-23 03:03:36 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 244
+    "closed_n": 245
   },
-  "notes": "PAPER heartbeat \u00b7 eq $92.65 \u00b7 FLAT \u00b7 2026-09-23 03:02:48 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $93.57 \u00b7 FLAT \u00b7 2026-09-23 03:03:36 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=EULER open_p=0.65 edge=2.34 conf=0.91",
+    "detail": "pick=EULER open_p=0.68 edge=2.42 conf=0.93",
     "pick": "EULER",
-    "open_p": 0.65,
-    "confidence": 0.91,
-    "edge_score": 2.34,
+    "open_p": 0.68,
+    "confidence": 0.93,
+    "edge_score": 2.42,
     "picks": [
       {
         "sym": "EULER",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.93
+        "probs": 0.94
       },
       {
         "sym": "SWBR",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.06
+        "probs": 0.05
       },
       {
         "sym": "NAUTILO",
@@ -3577,20 +3587,20 @@
       "pick": {
         "type": "choice",
         "choice": "EULER",
-        "confidence": 0.91
+        "confidence": 0.93
       },
       "edge": {
         "type": "score",
-        "score": 2.34,
-        "confidence": 0.33
+        "score": 2.42,
+        "confidence": 0.3
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 03:01:34 ET",
+    "stamp_et": "2026-09-23 03:03:06 ET",
     "live": true
   }
 }
