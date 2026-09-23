@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 11:12:03 ET",
+  "updated_et": "2026-09-23 11:12:50 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 61.6901,
-  "upnl_usd": -0.0188,
-  "equity_usd": 61.6713,
+  "liquid_usd": 61.6693,
+  "upnl_usd": 0.0,
+  "equity_usd": 61.6693,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -38.3287,
-  "total_pnl_pct": -38.3287,
-  "mark_eth": 2678.065,
-  "mark": 2678.065,
+  "total_pnl_usd": -38.3307,
+  "total_pnl_pct": -38.3307,
+  "mark_eth": 2679.595,
+  "mark": 2679.595,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2678.065
+    "ETH": 2679.595
   },
   "holdings": {
-    "paper_cash_usd": 56.7501,
+    "paper_cash_usd": 61.6693,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-494",
-      "market": "ROBIN",
-      "side": "LONG",
-      "size_usd": 4.94,
-      "entry": 2.7179621701806953e-06,
-      "mark": 2.7076185084804125e-06,
-      "uPnL": -0.0188,
-      "mtm_pct": -0.3815,
-      "sl": 2.174369736144556e-06,
-      "tp": 4.076943255271043e-06,
-      "lev": 1,
-      "paper": true,
-      "liq": 31942214267140718596898,
-      "held_min": 0.11
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -3216,14 +3199,30 @@
       "pnl_usd": -0.0216
     },
     {
-      "t": "now",
-      "equity_usd": 61.6713,
-      "liquid_usd": 61.6713,
+      "t": "2026-09-23 11:12:35 ET",
+      "equity_usd": 61.6693,
+      "liquid_usd": 61.6693,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "ROBIN",
+      "reason": "CUT_HARD_LIQ0",
+      "pnl_usd": -0.0208
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 11:12:35 ET",
+      "kind": "PAPER",
+      "market": "ROBIN",
+      "side": "LONG",
+      "size": 4.94,
+      "size_usd": 4.94,
+      "pnl_usd": -0.0208,
+      "pnl_pct": -0.4209,
+      "tx": "CUT_HARD_LIQ0",
+      "id": "PAPER-494",
+      "paper": true
+    },
     {
       "t": "2026-09-23 11:11:49 ET",
       "kind": "PAPER",
@@ -4250,59 +4249,41 @@
       "tx": "TP_+3.5",
       "id": "PAPER-415",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 01:24:29 ET",
-      "kind": "PAPER",
-      "market": "SWBR",
-      "side": "LONG",
-      "size": 11.99,
-      "size_usd": 11.99,
-      "pnl_usd": -0.6523,
-      "pnl_pct": -5.4405,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-414",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 61.6901,
-    "mtm_equity_usd": 61.6713,
-    "realized_pnl_usd": -38.3099,
-    "unrealized_pnl_usd": -0.0188,
-    "open": {
-      "id": "PAPER-494",
-      "ticker": "ROBIN",
-      "usd": 4.94,
-      "mtm_pct": -0.3815
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $61.69 \u00b7 curve n=317 \u00b7 2026-09-23 11:12:03 ET",
+    "paper_equity_usd": 61.6693,
+    "mtm_equity_usd": 61.6693,
+    "realized_pnl_usd": -38.3307,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $61.67 \u00b7 curve n=317 \u00b7 2026-09-23 11:12:50 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 315
+    "closed_n": 316
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $61.69 \u00b7 2026-09-23 11:12:03 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $61.67 \u00b7 FLAT \u00b7 2026-09-23 11:12:50 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=GIGACAT open_p=0.66 edge=2.3 conf=0.79",
+    "detail": "pick=GIGACAT open_p=0.66 edge=2.34 conf=0.82",
     "pick": "GIGACAT",
     "open_p": 0.66,
-    "confidence": 0.79,
-    "edge_score": 2.3,
+    "confidence": 0.82,
+    "edge_score": 2.34,
     "picks": [
       {
         "sym": "GIGACAT",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.84
+        "probs": 0.86
       },
       {
         "sym": "CX",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.15
+        "probs": 0.13
       },
       {
         "sym": "ROBIN",
@@ -4316,12 +4297,12 @@
       "pick": {
         "type": "choice",
         "choice": "GIGACAT",
-        "confidence": 0.79
+        "confidence": 0.82
       },
       "edge": {
         "type": "score",
-        "score": 2.3,
-        "confidence": 0.35
+        "score": 2.34,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
@@ -4329,7 +4310,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 11:11:55 ET",
+    "stamp_et": "2026-09-23 11:12:36 ET",
     "live": true
   }
 }
