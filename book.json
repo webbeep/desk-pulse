@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 22:14:56 ET",
+  "updated_et": "2026-09-22 22:15:45 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 110.3934,
-  "upnl_usd": -0.0142,
-  "equity_usd": 110.3792,
+  "liquid_usd": 110.9151,
+  "upnl_usd": 0.0,
+  "equity_usd": 110.9151,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 10.3792,
-  "total_pnl_pct": 10.3792,
-  "mark_eth": 2751.105,
-  "mark": 2751.105,
+  "total_pnl_usd": 10.9151,
+  "total_pnl_pct": 10.9151,
+  "mark_eth": 2753.925,
+  "mark": 2753.925,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2751.105
+    "ETH": 2753.925
   },
   "holdings": {
-    "paper_cash_usd": 98.3934,
+    "paper_cash_usd": 110.9151,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2109,14 +2109,30 @@
       "pnl_usd": 1.1239
     },
     {
-      "t": "now",
-      "equity_usd": 110.3792,
-      "liquid_usd": 110.3792,
+      "t": "2026-09-22 22:15:23 ET",
+      "equity_usd": 110.9151,
+      "liquid_usd": 110.9151,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "CHICKEN",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.5217
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 22:15:23 ET",
+      "kind": "PAPER",
+      "market": "CHICKEN",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 0.5217,
+      "pnl_pct": 4.3475,
+      "tx": "TP_+3.5",
+      "id": "PAPER-385",
+      "paper": true
+    },
     {
       "t": "2026-09-22 22:10:02 ET",
       "kind": "PAPER",
@@ -3143,38 +3159,21 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-306",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 12:53:51 ET",
-      "kind": "PAPER",
-      "market": "GOSSIP",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": 0.4688,
-      "pnl_pct": 3.907,
-      "tx": "TP_+3.5",
-      "id": "PAPER-305",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 110.3934,
-    "mtm_equity_usd": 110.3792,
-    "realized_pnl_usd": 10.3934,
-    "unrealized_pnl_usd": -0.0142,
-    "open": {
-      "id": "PAPER-385",
-      "ticker": "CHICKEN",
-      "usd": 12.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $110.39 \u00b7 curve n=208 \u00b7 2026-09-22 22:14:56 ET",
+    "paper_equity_usd": 110.9151,
+    "mtm_equity_usd": 110.9151,
+    "realized_pnl_usd": 10.9151,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $110.92 \u00b7 curve n=208 \u00b7 2026-09-22 22:15:45 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 206
+    "closed_n": 207
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $110.39 \u00b7 2026-09-22 22:14:56 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $110.92 \u00b7 FLAT \u00b7 2026-09-22 22:15:45 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
