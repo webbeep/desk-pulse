@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 12:18:31 ET",
+  "updated_et": "2026-09-23 12:19:19 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 67.0878,
-  "upnl_usd": 0.0,
-  "equity_usd": 67.0878,
+  "upnl_usd": -0.016,
+  "equity_usd": 67.0718,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -32.9122,
-  "total_pnl_pct": -32.9122,
-  "mark_eth": 2663.36,
-  "mark": 2663.36,
+  "total_pnl_usd": -32.9282,
+  "total_pnl_pct": -32.9282,
+  "mark_eth": 2661.52,
+  "mark": 2661.52,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2663.36
+    "ETH": 2661.52
   },
   "holdings": {
-    "paper_cash_usd": 67.0878,
+    "paper_cash_usd": 61.7178,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,40 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-511",
+      "market": "LOAN",
+      "side": "LONG",
+      "size_usd": 5.37,
+      "entry": 5.3464168574143e-05,
+      "mark": 5.3368590172222746e-05,
+      "uPnL": -0.0096,
+      "mtm_pct": -0.178,
+      "sl": 4.2771334859314405e-05,
+      "tp": 8.01962528612145e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": 31942214267140718596898,
+      "held_min": 0.28
+    },
+    {
+      "id": "PAPER-510",
+      "market": "AGI",
+      "side": "LONG",
+      "size_usd": 5.37,
+      "entry": 0.00044355058625730314,
+      "mark": 0.000443021959860274,
+      "uPnL": -0.0064,
+      "mtm_pct": -0.12,
+      "sl": 0.00035484046900584256,
+      "tp": 0.0006653258793859547,
+      "lev": 1,
+      "paper": true,
+      "liq": 31942214267140718596898,
+      "held_min": 0.31
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -3357,6 +3390,13 @@
       "ticker": "CMC",
       "reason": "TP_+3.5",
       "pnl_usd": 0.2718
+    },
+    {
+      "t": "now",
+      "equity_usd": 67.0718,
+      "liquid_usd": 67.0718,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -4405,35 +4445,52 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 67.0878,
-    "mtm_equity_usd": 67.0878,
+    "mtm_equity_usd": 67.0718,
     "realized_pnl_usd": -32.9122,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $67.09 \u00b7 curve n=332 \u00b7 2026-09-23 12:18:31 ET",
+    "unrealized_pnl_usd": -0.016,
+    "open": {
+      "id": "PAPER-511",
+      "ticker": "LOAN",
+      "usd": 5.37,
+      "mtm_pct": -0.178
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $67.09 \u00b7 curve n=333 \u00b7 2026-09-23 12:19:19 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 331
   },
-  "notes": "PAPER heartbeat \u00b7 eq $67.09 \u00b7 FLAT \u00b7 2026-09-23 12:18:31 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $67.09 \u00b7 2026-09-23 12:19:19 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=CMC open_p=0.64 edge=2.26 conf=0.95",
+    "detail": "pick=CMC open_p=0.62 edge=2.24 conf=0.6",
     "pick": "CMC",
-    "open_p": 0.64,
-    "confidence": 0.95,
-    "edge_score": 2.26,
+    "open_p": 0.62,
+    "confidence": 0.6,
+    "edge_score": 2.24,
     "picks": [
       {
         "sym": "CMC",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.96
+        "probs": 0.66
+      },
+      {
+        "sym": "AGI",
+        "lost_bps": 6,
+        "selected": false,
+        "probs": 0.31
       },
       {
         "sym": "ZZZ",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.02
+      },
+      {
+        "sym": "LOAN",
+        "lost_bps": 12,
+        "selected": false,
+        "probs": 0.0
       },
       {
         "sym": "ASTOCK",
@@ -4447,20 +4504,20 @@
       "pick": {
         "type": "choice",
         "choice": "CMC",
-        "confidence": 0.95
+        "confidence": 0.6
       },
       "edge": {
         "type": "score",
-        "score": 2.26,
-        "confidence": 0.34
+        "score": 2.24,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 12:18:22 ET",
+    "stamp_et": "2026-09-23 12:18:57 ET",
     "live": true
   }
 }
