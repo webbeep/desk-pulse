@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-23 01:13:59 ET",
+  "updated_et": "2026-09-23 01:14:47 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 96.6618,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -3.3382,
   "total_pnl_pct": -3.3382,
-  "mark_eth": 2771.145,
-  "mark": 2771.145,
+  "mark_eth": 2770.95,
+  "mark": 2770.95,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2771.145
+    "ETH": 2770.95
   },
   "holdings": {
     "paper_cash_usd": 96.6618,
@@ -3429,25 +3429,25 @@
     "realized_pnl_usd": -3.3382,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $96.66 \u00b7 curve n=234 \u00b7 2026-09-23 01:13:59 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $96.66 \u00b7 curve n=234 \u00b7 2026-09-23 01:14:47 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 233
   },
-  "notes": "PAPER heartbeat \u00b7 eq $96.66 \u00b7 FLAT \u00b7 2026-09-23 01:13:59 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $96.66 \u00b7 FLAT \u00b7 2026-09-23 01:14:47 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NOSH open_p=0.60 edge=1.72 conf=0.92",
+    "detail": "pick=NOSH open_p=0.61 edge=1.7 conf=0.94",
     "pick": "NOSH",
-    "open_p": 0.6,
-    "confidence": 0.92,
-    "edge_score": 1.72,
+    "open_p": 0.61,
+    "confidence": 0.94,
+    "edge_score": 1.7,
     "picks": [
       {
         "sym": "NOSH",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.96
       },
       {
         "sym": "EULER",
@@ -3461,20 +3461,20 @@
       "pick": {
         "type": "choice",
         "choice": "NOSH",
-        "confidence": 0.92
+        "confidence": 0.94
       },
       "edge": {
         "type": "score",
-        "score": 1.72,
-        "confidence": 0.37
+        "score": 1.7,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.6
+        "noul": 0.61
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 01:13:12 ET",
+    "stamp_et": "2026-09-23 01:14:43 ET",
     "live": true
   }
 }
