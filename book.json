@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 01:18:00 ET",
+  "updated_et": "2026-09-23 01:18:48 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 101.9523,
-  "upnl_usd": -0.0119,
-  "equity_usd": 101.9404,
+  "liquid_usd": 99.8929,
+  "upnl_usd": 0.0,
+  "equity_usd": 99.8929,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 1.9404,
-  "total_pnl_pct": 1.9404,
-  "mark_eth": 2772.625,
-  "mark": 2772.625,
+  "total_pnl_usd": -0.1071,
+  "total_pnl_pct": -0.1071,
+  "mark_eth": 2771.55,
+  "mark": 2771.55,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2772.625
+    "ETH": 2771.55
   },
   "holdings": {
-    "paper_cash_usd": 89.9523,
+    "paper_cash_usd": 99.8929,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2389,14 +2389,30 @@
       "pnl_usd": 5.2905
     },
     {
-      "t": "now",
-      "equity_usd": 101.9404,
-      "liquid_usd": 101.9404,
+      "t": "2026-09-23 01:18:07 ET",
+      "equity_usd": 99.8929,
+      "liquid_usd": 99.8929,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "SWBR",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -2.0594
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 01:18:07 ET",
+      "kind": "PAPER",
+      "market": "SWBR",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -2.0594,
+      "pnl_pct": -17.162,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-413",
+      "paper": true
+    },
     {
       "t": "2026-09-23 01:16:27 ET",
       "kind": "PAPER",
@@ -3423,38 +3439,21 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-334",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 14:57:26 ET",
-      "kind": "PAPER",
-      "market": "HOOD6900",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": 3.3601,
-      "pnl_pct": 28.0007,
-      "tx": "TP_+3.5",
-      "id": "PAPER-333",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 101.9523,
-    "mtm_equity_usd": 101.9404,
-    "realized_pnl_usd": 1.9523,
-    "unrealized_pnl_usd": -0.0119,
-    "open": {
-      "id": "PAPER-413",
-      "ticker": "SWBR",
-      "usd": 12.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $101.95 \u00b7 curve n=236 \u00b7 2026-09-23 01:18:00 ET",
+    "paper_equity_usd": 99.8929,
+    "mtm_equity_usd": 99.8929,
+    "realized_pnl_usd": -0.1071,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $99.89 \u00b7 curve n=236 \u00b7 2026-09-23 01:18:48 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 234
+    "closed_n": 235
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $101.95 \u00b7 2026-09-23 01:18:00 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $99.89 \u00b7 FLAT \u00b7 2026-09-23 01:18:48 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
