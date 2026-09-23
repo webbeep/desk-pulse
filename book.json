@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 21:40:31 ET",
+  "updated_et": "2026-09-22 21:41:19 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 110.7238,
-  "upnl_usd": -0.0133,
-  "equity_usd": 110.7105,
+  "liquid_usd": 111.2469,
+  "upnl_usd": 0.0,
+  "equity_usd": 111.2469,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 10.7105,
-  "total_pnl_pct": 10.7105,
-  "mark_eth": 2757.67,
-  "mark": 2757.67,
+  "total_pnl_usd": 11.2469,
+  "total_pnl_pct": 11.2469,
+  "mark_eth": 2757.035,
+  "mark": 2757.035,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2757.67
+    "ETH": 2757.035
   },
   "holdings": {
-    "paper_cash_usd": 98.7238,
+    "paper_cash_usd": 111.2469,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-374",
-      "market": "NOSH",
-      "side": "LONG",
-      "size_usd": 12.0,
-      "entry": 0.002140425201776062,
-      "mark": 0.0021380528971774266,
-      "uPnL": -0.0133,
-      "mtm_pct": -0.1111,
-      "sl": 0.0017123401614208497,
-      "tp": 0.003210637802664093,
-      "lev": 1,
-      "paper": true,
-      "liq": 31942230398369514935678,
-      "held_min": 0.22
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -2016,14 +1999,30 @@
       "pnl_usd": 0.6492
     },
     {
-      "t": "now",
-      "equity_usd": 110.7105,
-      "liquid_usd": 110.7105,
+      "t": "2026-09-22 21:40:35 ET",
+      "equity_usd": 111.2469,
+      "liquid_usd": 111.2469,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "NOSH",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.5231
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 21:40:35 ET",
+      "kind": "PAPER",
+      "market": "NOSH",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 0.5231,
+      "pnl_pct": 4.3592,
+      "tx": "TP_+3.5",
+      "id": "PAPER-374",
+      "paper": true
+    },
     {
       "t": "2026-09-22 21:39:04 ET",
       "kind": "PAPER",
@@ -3050,39 +3049,21 @@
       "tx": "TP_+3.5",
       "id": "PAPER-295",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 12:15:21 ET",
-      "kind": "PAPER",
-      "market": "POCHI",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": 0.59,
-      "pnl_pct": 4.9167,
-      "tx": "TP_+3.5",
-      "id": "PAPER-294",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 110.7238,
-    "mtm_equity_usd": 110.7105,
-    "realized_pnl_usd": 10.7238,
-    "unrealized_pnl_usd": -0.0133,
-    "open": {
-      "id": "PAPER-374",
-      "ticker": "NOSH",
-      "usd": 12.0,
-      "mtm_pct": -0.1111
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $110.72 \u00b7 curve n=197 \u00b7 2026-09-22 21:40:31 ET",
+    "paper_equity_usd": 111.2469,
+    "mtm_equity_usd": 111.2469,
+    "realized_pnl_usd": 11.2469,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $111.25 \u00b7 curve n=197 \u00b7 2026-09-22 21:41:19 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 195
+    "closed_n": 196
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $110.72 \u00b7 2026-09-22 21:40:31 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $111.25 \u00b7 FLAT \u00b7 2026-09-22 21:41:19 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
