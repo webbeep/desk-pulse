@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 03:01:12 ET",
+  "updated_et": "2026-09-23 03:02:00 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 90.4233,
-  "upnl_usd": 0.0,
-  "equity_usd": 90.4233,
+  "upnl_usd": -0.0365,
+  "equity_usd": 90.3868,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -9.5767,
-  "total_pnl_pct": -9.5767,
-  "mark_eth": 2753.66,
-  "mark": 2753.66,
+  "total_pnl_usd": -9.6132,
+  "total_pnl_pct": -9.6132,
+  "mark_eth": 2752.345,
+  "mark": 2752.345,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2753.66
+    "ETH": 2752.345
   },
   "holdings": {
-    "paper_cash_usd": 90.4233,
+    "paper_cash_usd": 79.5733,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2477,6 +2477,13 @@
       "ticker": "NAUTILO",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -0.638
+    },
+    {
+      "t": "now",
+      "equity_usd": 90.3868,
+      "liquid_usd": 90.3868,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -3525,41 +3532,45 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 90.4233,
-    "mtm_equity_usd": 90.4233,
+    "mtm_equity_usd": 90.3868,
     "realized_pnl_usd": -9.5767,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $90.42 \u00b7 curve n=244 \u00b7 2026-09-23 03:01:12 ET",
+    "unrealized_pnl_usd": -0.0365,
+    "open": {
+      "id": "PAPER-422",
+      "ticker": "NAUTILO",
+      "usd": 10.85
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $90.42 \u00b7 curve n=245 \u00b7 2026-09-23 03:02:00 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 243
   },
-  "notes": "PAPER heartbeat \u00b7 eq $90.42 \u00b7 FLAT \u00b7 2026-09-23 03:01:12 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $90.42 \u00b7 2026-09-23 03:02:00 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=EULER open_p=0.62 edge=1.88 conf=0.92",
+    "detail": "pick=EULER open_p=0.65 edge=2.34 conf=0.91",
     "pick": "EULER",
-    "open_p": 0.62,
-    "confidence": 0.92,
-    "edge_score": 1.88,
+    "open_p": 0.65,
+    "confidence": 0.91,
+    "edge_score": 2.34,
     "picks": [
       {
         "sym": "EULER",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.94
-      },
-      {
-        "sym": "NOSH",
-        "lost_bps": 5,
-        "selected": false,
-        "probs": 0.02
+        "probs": 0.93
       },
       {
         "sym": "SWBR",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.06
+      },
+      {
+        "sym": "NAUTILO",
+        "lost_bps": 38,
+        "selected": false,
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -3567,20 +3578,20 @@
       "pick": {
         "type": "choice",
         "choice": "EULER",
-        "confidence": 0.92
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
-        "score": 1.88,
-        "confidence": 0.4
+        "score": 2.34,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.62
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 03:00:11 ET",
+    "stamp_et": "2026-09-23 03:01:34 ET",
     "live": true
   }
 }
