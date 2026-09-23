@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-23 13:11:52 ET",
+  "updated_et": "2026-09-23 13:12:41 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 62.2016,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -37.7984,
   "total_pnl_pct": -37.7984,
-  "mark_eth": 2651.505,
-  "mark": 2651.505,
+  "mark_eth": 2652.235,
+  "mark": 2652.235,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2651.505
+    "ETH": 2652.235
   },
   "holdings": {
     "paper_cash_usd": 62.2016,
@@ -4539,31 +4539,31 @@
     "realized_pnl_usd": -37.7984,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $62.20 \u00b7 curve n=345 \u00b7 2026-09-23 13:11:52 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $62.20 \u00b7 curve n=345 \u00b7 2026-09-23 13:12:41 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 344
   },
-  "notes": "PAPER heartbeat \u00b7 eq $62.20 \u00b7 FLAT \u00b7 2026-09-23 13:11:52 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $62.20 \u00b7 FLAT \u00b7 2026-09-23 13:12:41 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=CMC open_p=0.64 edge=2.37 conf=0.86",
+    "detail": "pick=CMC open_p=0.63 edge=2.28 conf=0.84",
     "pick": "CMC",
-    "open_p": 0.64,
-    "confidence": 0.86,
-    "edge_score": 2.37,
+    "open_p": 0.63,
+    "confidence": 0.84,
+    "edge_score": 2.28,
     "picks": [
       {
         "sym": "CMC",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.88
+        "probs": 0.87
       },
       {
         "sym": "LOAN",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.1
       },
       {
         "sym": "AGI",
@@ -4575,7 +4575,7 @@
         "sym": "ZZZ",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       },
       {
         "sym": "MO",
@@ -4589,20 +4589,20 @@
       "pick": {
         "type": "choice",
         "choice": "CMC",
-        "confidence": 0.86
+        "confidence": 0.84
       },
       "edge": {
         "type": "score",
-        "score": 2.37,
-        "confidence": 0.3
+        "score": 2.28,
+        "confidence": 0.21
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 13:11:44 ET",
+    "stamp_et": "2026-09-23 13:12:04 ET",
     "live": true
   }
 }
