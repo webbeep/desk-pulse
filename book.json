@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 01:23:36 ET",
+  "updated_et": "2026-09-23 01:24:24 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 99.8929,
-  "upnl_usd": 0.0,
-  "equity_usd": 99.8929,
+  "upnl_usd": -0.0082,
+  "equity_usd": 99.8847,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -0.1071,
-  "total_pnl_pct": -0.1071,
-  "mark_eth": 2765.8,
-  "mark": 2765.8,
+  "total_pnl_usd": -0.1153,
+  "total_pnl_pct": -0.1153,
+  "mark_eth": 2766.325,
+  "mark": 2766.325,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2765.8
+    "ETH": 2766.325
   },
   "holdings": {
-    "paper_cash_usd": 99.8929,
+    "paper_cash_usd": 87.9029,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-414",
+      "market": "SWBR",
+      "side": "LONG",
+      "size_usd": 11.99,
+      "entry": 3.700043416373477e-05,
+      "mark": 3.697512944645849e-05,
+      "uPnL": -0.0082,
+      "mtm_pct": -0.0688,
+      "sl": 2.9600347330987815e-05,
+      "tp": 5.550065124560215e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": 67083695638153680707333,
+      "held_min": 0.5
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -2397,6 +2414,13 @@
       "ticker": "SWBR",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -2.0594
+    },
+    {
+      "t": "now",
+      "equity_usd": 99.8847,
+      "liquid_usd": 99.8847,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -3445,35 +3469,46 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 99.8929,
-    "mtm_equity_usd": 99.8929,
+    "mtm_equity_usd": 99.8847,
     "realized_pnl_usd": -0.1071,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $99.89 \u00b7 curve n=236 \u00b7 2026-09-23 01:23:36 ET",
+    "unrealized_pnl_usd": -0.0082,
+    "open": {
+      "id": "PAPER-414",
+      "ticker": "SWBR",
+      "usd": 11.99,
+      "mtm_pct": -0.0688
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $99.89 \u00b7 curve n=237 \u00b7 2026-09-23 01:24:24 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 235
   },
-  "notes": "PAPER heartbeat \u00b7 eq $99.89 \u00b7 FLAT \u00b7 2026-09-23 01:23:36 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $99.89 \u00b7 2026-09-23 01:24:24 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NOSH open_p=0.61 edge=1.81 conf=0.93",
+    "detail": "pick=NOSH open_p=0.62 edge=1.92 conf=0.53",
     "pick": "NOSH",
-    "open_p": 0.61,
-    "confidence": 0.93,
-    "edge_score": 1.81,
+    "open_p": 0.62,
+    "confidence": 0.53,
+    "edge_score": 1.92,
     "picks": [
+      {
+        "sym": "EULER",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.33
+      },
       {
         "sym": "NOSH",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.65
       },
       {
-        "sym": "EULER",
-        "lost_bps": 5,
+        "sym": "SWBR",
+        "lost_bps": 11,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -3481,20 +3516,20 @@
       "pick": {
         "type": "choice",
         "choice": "NOSH",
-        "confidence": 0.93
+        "confidence": 0.53
       },
       "edge": {
         "type": "score",
-        "score": 1.81,
-        "confidence": 0.35
+        "score": 1.92,
+        "confidence": 0.43
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.61
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 01:22:18 ET",
+    "stamp_et": "2026-09-23 01:23:48 ET",
     "live": true
   }
 }
