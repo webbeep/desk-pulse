@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-23 09:46:03 ET",
+  "updated_et": "2026-09-23 09:46:51 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 84.2231,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -15.7769,
   "total_pnl_pct": -15.7769,
-  "mark_eth": 2716.275,
-  "mark": 2716.275,
+  "mark_eth": 2714.08,
+  "mark": 2714.08,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2716.275
+    "ETH": 2714.08
   },
   "holdings": {
     "paper_cash_usd": 84.2231,
@@ -4079,25 +4079,25 @@
     "realized_pnl_usd": -15.7769,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $84.22 \u00b7 curve n=299 \u00b7 2026-09-23 09:46:03 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $84.22 \u00b7 curve n=299 \u00b7 2026-09-23 09:46:51 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 298
   },
-  "notes": "PAPER heartbeat \u00b7 eq $84.22 \u00b7 FLAT \u00b7 2026-09-23 09:46:03 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $84.22 \u00b7 FLAT \u00b7 2026-09-23 09:46:51 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AGRIPPA open_p=0.61 edge=1.92 conf=0.87",
+    "detail": "pick=AGRIPPA open_p=0.58 edge=1.77 conf=0.85",
     "pick": "AGRIPPA",
-    "open_p": 0.61,
-    "confidence": 0.87,
-    "edge_score": 1.92,
+    "open_p": 0.58,
+    "confidence": 0.85,
+    "edge_score": 1.77,
     "picks": [
       {
         "sym": "AGRIPPA",
-        "lost_bps": 4,
+        "lost_bps": 5,
         "selected": true,
-        "probs": 0.94
+        "probs": 0.92
       }
     ],
     "model": "jev-1.13.0",
@@ -4105,20 +4105,20 @@
       "pick": {
         "type": "choice",
         "choice": "AGRIPPA",
-        "confidence": 0.87
+        "confidence": 0.85
       },
       "edge": {
         "type": "score",
-        "score": 1.92,
-        "confidence": 0.29
+        "score": 1.77,
+        "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.61
+        "noul": 0.58
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 09:44:36 ET",
+    "stamp_et": "2026-09-23 09:46:06 ET",
     "live": true
   }
 }
