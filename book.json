@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 15:19:20 ET",
+  "updated_et": "2026-09-23 15:20:08 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 56.3169,
-  "upnl_usd": -0.0271,
-  "equity_usd": 56.2898,
+  "liquid_usd": 57.2062,
+  "upnl_usd": 0.0682,
+  "equity_usd": 57.2744,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -43.7102,
-  "total_pnl_pct": -43.7102,
-  "mark_eth": 2668.965,
-  "mark": 2668.965,
+  "total_pnl_usd": -42.7256,
+  "total_pnl_pct": -42.7256,
+  "mark_eth": 2668.585,
+  "mark": 2668.585,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2668.965
+    "ETH": 2668.585
   },
   "holdings": {
-    "paper_cash_usd": 51.7969,
+    "paper_cash_usd": 52.6262,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -41,20 +41,20 @@
   },
   "positions": [
     {
-      "id": "PAPER-543",
+      "id": "PAPER-545",
       "market": "PALLAS",
       "side": "LONG",
-      "size_usd": 4.52,
-      "entry": 8.738143643356014e-05,
-      "mark": 8.685753445848283e-05,
-      "uPnL": -0.0271,
-      "mtm_pct": -0.5993,
-      "sl": 6.990514914684811e-05,
-      "tp": 0.0001310721546503402,
+      "size_usd": 4.58,
+      "entry": 9.511357467262892e-05,
+      "mark": 9.652989471469732e-05,
+      "uPnL": 0.0682,
+      "mtm_pct": 1.4881,
+      "sl": 7.609085973810315e-05,
+      "tp": 0.0001426703620089434,
       "lev": 1,
       "paper": true,
       "liq": 70713633738326896357008,
-      "held_min": 0.31
+      "held_min": 0.37
     }
   ],
   "pnl_history": [
@@ -3706,14 +3706,60 @@
       "pnl_usd": -0.1403
     },
     {
+      "t": "2026-09-23 15:19:22 ET",
+      "equity_usd": 56.7608,
+      "liquid_usd": 56.7608,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PALLAS",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.4439
+    },
+    {
+      "t": "2026-09-23 15:19:36 ET",
+      "equity_usd": 57.2062,
+      "liquid_usd": 57.2062,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PALLAS",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.4454
+    },
+    {
       "t": "now",
-      "equity_usd": 56.2898,
-      "liquid_usd": 56.2898,
+      "equity_usd": 57.2744,
+      "liquid_usd": 57.2744,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 15:19:36 ET",
+      "kind": "PAPER",
+      "market": "PALLAS",
+      "side": "LONG",
+      "size": 4.54,
+      "size_usd": 4.54,
+      "pnl_usd": 0.4454,
+      "pnl_pct": 9.8111,
+      "tx": "TP_+3.5",
+      "id": "PAPER-544",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 15:19:22 ET",
+      "kind": "PAPER",
+      "market": "PALLAS",
+      "side": "LONG",
+      "size": 4.52,
+      "size_usd": 4.52,
+      "pnl_usd": 0.4439,
+      "pnl_pct": 9.8204,
+      "tx": "TP_+3.5",
+      "id": "PAPER-543",
+      "paper": true
+    },
     {
       "t": "2026-09-23 15:19:12 ET",
       "kind": "PAPER",
@@ -4727,72 +4773,46 @@
       "tx": "TP_+3.5",
       "id": "PAPER-465",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 08:00:13 ET",
-      "kind": "PAPER",
-      "market": "AGPUB",
-      "side": "LONG",
-      "size": 11.16,
-      "size_usd": 11.16,
-      "pnl_usd": -0.9061,
-      "pnl_pct": -8.1189,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-464",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 07:58:33 ET",
-      "kind": "PAPER",
-      "market": "AGPUB",
-      "side": "LONG",
-      "size": 11.09,
-      "size_usd": 11.09,
-      "pnl_usd": 0.5852,
-      "pnl_pct": 5.2772,
-      "tx": "TP_+3.5",
-      "id": "PAPER-463",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 56.3169,
-    "mtm_equity_usd": 56.2898,
-    "realized_pnl_usd": -43.6831,
-    "unrealized_pnl_usd": -0.0271,
+    "paper_equity_usd": 57.2062,
+    "mtm_equity_usd": 57.2744,
+    "realized_pnl_usd": -42.7938,
+    "unrealized_pnl_usd": 0.0682,
     "open": {
-      "id": "PAPER-543",
+      "id": "PAPER-545",
       "ticker": "PALLAS",
-      "usd": 4.52,
-      "mtm_pct": -0.5993
+      "usd": 4.58,
+      "mtm_pct": 1.4881
     },
-    "notes": "PAPER heartbeat \u00b7 eq $56.32 \u00b7 curve n=366 \u00b7 2026-09-23 15:19:20 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $57.21 \u00b7 curve n=368 \u00b7 2026-09-23 15:20:08 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 364
+    "closed_n": 366
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $56.32 \u00b7 2026-09-23 15:19:20 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $57.21 \u00b7 2026-09-23 15:20:08 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=LOAN open_p=0.63 edge=2.12 conf=0.9",
+    "detail": "pick=LOAN open_p=0.64 edge=2.13 conf=0.9",
     "pick": "LOAN",
-    "open_p": 0.63,
+    "open_p": 0.64,
     "confidence": 0.9,
-    "edge_score": 2.12,
+    "edge_score": 2.13,
     "picks": [
       {
         "sym": "LOAN",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.93
+        "probs": 0.92
       },
       {
         "sym": "PALLAS",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.06
       },
       {
         "sym": "ZZZ",
@@ -4810,16 +4830,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.12,
-        "confidence": 0.37
+        "score": 2.13,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 15:19:18 ET",
+    "stamp_et": "2026-09-23 15:19:57 ET",
     "live": true
   }
 }
