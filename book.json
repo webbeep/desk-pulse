@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-23 03:15:38 ET",
+  "updated_et": "2026-09-23 03:16:25 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 93.179,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -6.821,
   "total_pnl_pct": -6.821,
-  "mark_eth": 2749.245,
-  "mark": 2749.245,
+  "mark_eth": 2747.09,
+  "mark": 2747.09,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2749.245
+    "ETH": 2747.09
   },
   "holdings": {
     "paper_cash_usd": 93.179,
@@ -3579,35 +3579,41 @@
     "realized_pnl_usd": -6.821,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $93.18 \u00b7 curve n=249 \u00b7 2026-09-23 03:15:38 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $93.18 \u00b7 curve n=249 \u00b7 2026-09-23 03:16:25 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 248
   },
-  "notes": "PAPER heartbeat \u00b7 eq $93.18 \u00b7 FLAT \u00b7 2026-09-23 03:15:38 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $93.18 \u00b7 FLAT \u00b7 2026-09-23 03:16:25 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=EULER open_p=0.65 edge=2.27 conf=0.9",
+    "detail": "pick=EULER open_p=0.64 edge=2.26 conf=0.91",
     "pick": "EULER",
-    "open_p": 0.65,
-    "confidence": 0.9,
-    "edge_score": 2.27,
+    "open_p": 0.64,
+    "confidence": 0.91,
+    "edge_score": 2.26,
     "picks": [
       {
         "sym": "EULER",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.92
+        "probs": 0.93
       },
       {
         "sym": "SWBR",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.07
+        "probs": 0.05
+      },
+      {
+        "sym": "NOSH",
+        "lost_bps": 6,
+        "selected": false,
+        "probs": 0.01
       },
       {
         "sym": "NAUTILO",
-        "lost_bps": 36,
+        "lost_bps": 32,
         "selected": false,
         "probs": 0.0
       }
@@ -3617,20 +3623,20 @@
       "pick": {
         "type": "choice",
         "choice": "EULER",
-        "confidence": 0.9
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
-        "score": 2.27,
-        "confidence": 0.34
+        "score": 2.26,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 03:15:14 ET",
+    "stamp_et": "2026-09-23 03:15:45 ET",
     "live": true
   }
 }
