@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 12:02:25 ET",
+  "updated_et": "2026-09-23 12:03:14 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 62.3184,
-  "upnl_usd": 0.0,
-  "equity_usd": 62.3184,
+  "liquid_usd": 65.1133,
+  "upnl_usd": -0.0029,
+  "equity_usd": 65.1104,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -37.6816,
-  "total_pnl_pct": -37.6816,
-  "mark_eth": 2640.305,
-  "mark": 2640.305,
+  "total_pnl_usd": -34.8896,
+  "total_pnl_pct": -34.8896,
+  "mark_eth": 2642.205,
+  "mark": 2642.205,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2640.305
+    "ETH": 2642.205
   },
   "holdings": {
-    "paper_cash_usd": 62.3184,
+    "paper_cash_usd": 59.9233,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,40 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-504",
+      "market": "CMC",
+      "side": "LONG",
+      "size_usd": 5.19,
+      "entry": 4.914806121481491e-05,
+      "mark": 4.911207612182526e-05,
+      "uPnL": -0.0038,
+      "mtm_pct": -0.0728,
+      "sl": 3.931844897185193e-05,
+      "tp": 7.372209182222238e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": 70713633738326896357008,
+      "held_min": 0.09
+    },
+    {
+      "id": "PAPER-502",
+      "market": "ZZZ",
+      "side": "LONG",
+      "size_usd": 4.99,
+      "entry": 0.024218631058863325,
+      "mark": 0.024222999148633458,
+      "uPnL": 0.0009,
+      "mtm_pct": 0.0172,
+      "sl": 0.01937490484709066,
+      "tp": 0.03632794658829499,
+      "lev": 1,
+      "paper": true,
+      "liq": 132543024446850270611258210,
+      "held_min": 0.53
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -3267,9 +3300,85 @@
       "ticker": "ZZZ",
       "reason": "TIME_SOFT_90s",
       "pnl_usd": -0.0053
+    },
+    {
+      "t": "2026-09-23 12:02:53 ET",
+      "equity_usd": 63.822,
+      "liquid_usd": 63.822,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "CMC",
+      "reason": "TP_+3.5",
+      "pnl_usd": 1.5036
+    },
+    {
+      "t": "2026-09-23 12:03:00 ET",
+      "equity_usd": 64.8346,
+      "liquid_usd": 64.8346,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ASTOCK",
+      "reason": "TP_+3.5",
+      "pnl_usd": 1.0126
+    },
+    {
+      "t": "2026-09-23 12:03:12 ET",
+      "equity_usd": 65.1133,
+      "liquid_usd": 65.1133,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ASTOCK",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.2787
+    },
+    {
+      "t": "now",
+      "equity_usd": 65.1104,
+      "liquid_usd": 65.1104,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 12:03:12 ET",
+      "kind": "PAPER",
+      "market": "ASTOCK",
+      "side": "LONG",
+      "size": 5.19,
+      "size_usd": 5.19,
+      "pnl_usd": 0.2787,
+      "pnl_pct": 5.369,
+      "tx": "TP_+3.5",
+      "id": "PAPER-505",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 12:03:00 ET",
+      "kind": "PAPER",
+      "market": "ASTOCK",
+      "side": "LONG",
+      "size": 4.99,
+      "size_usd": 4.99,
+      "pnl_usd": 1.0126,
+      "pnl_pct": 20.2923,
+      "tx": "TP_+3.5",
+      "id": "PAPER-503",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 12:02:53 ET",
+      "kind": "PAPER",
+      "market": "CMC",
+      "side": "LONG",
+      "size": 4.99,
+      "size_usd": 4.99,
+      "pnl_usd": 1.5036,
+      "pnl_pct": 30.1323,
+      "tx": "TP_+3.5",
+      "id": "PAPER-501",
+      "paper": true
+    },
     {
       "t": "2026-09-23 11:57:19 ET",
       "kind": "PAPER",
@@ -4270,84 +4379,56 @@
       "tx": "TP_+3.5",
       "id": "PAPER-424",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 03:03:24 ET",
-      "kind": "PAPER",
-      "market": "NAUTILO",
-      "side": "LONG",
-      "size": 11.12,
-      "size_usd": 11.12,
-      "pnl_usd": 0.9203,
-      "pnl_pct": 8.2759,
-      "tx": "TP_+3.5",
-      "id": "PAPER-423",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 03:02:03 ET",
-      "kind": "PAPER",
-      "market": "NAUTILO",
-      "side": "LONG",
-      "size": 10.85,
-      "size_usd": 10.85,
-      "pnl_usd": 2.2312,
-      "pnl_pct": 20.5642,
-      "tx": "TP_+3.5",
-      "id": "PAPER-422",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 02:55:52 ET",
-      "kind": "PAPER",
-      "market": "NAUTILO",
-      "side": "LONG",
-      "size": 10.93,
-      "size_usd": 10.93,
-      "pnl_usd": -0.638,
-      "pnl_pct": -5.8376,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-421",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 62.3184,
-    "mtm_equity_usd": 62.3184,
-    "realized_pnl_usd": -37.6816,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $62.32 \u00b7 curve n=323 \u00b7 2026-09-23 12:02:25 ET",
+    "paper_equity_usd": 65.1133,
+    "mtm_equity_usd": 65.1104,
+    "realized_pnl_usd": -34.8867,
+    "unrealized_pnl_usd": -0.0029,
+    "open": {
+      "id": "PAPER-504",
+      "ticker": "CMC",
+      "usd": 5.19,
+      "mtm_pct": -0.0728
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $65.11 \u00b7 curve n=327 \u00b7 2026-09-23 12:03:14 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 322
+    "closed_n": 325
   },
-  "notes": "PAPER heartbeat \u00b7 eq $62.32 \u00b7 FLAT \u00b7 2026-09-23 12:02:25 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $65.11 \u00b7 2026-09-23 12:03:14 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=GIGACAT open_p=0.64 edge=2.29 conf=0.96",
+    "detail": "pick=GIGACAT open_p=0.65 edge=2.4 conf=0.91",
     "pick": "GIGACAT",
-    "open_p": 0.64,
-    "confidence": 0.96,
-    "edge_score": 2.29,
+    "open_p": 0.65,
+    "confidence": 0.91,
+    "edge_score": 2.4,
     "picks": [
       {
         "sym": "GIGACAT",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.97
+        "probs": 0.93
+      },
+      {
+        "sym": "CMC",
+        "lost_bps": 8,
+        "selected": false,
+        "probs": 0.05
       },
       {
         "sym": "ZZZ",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       },
       {
         "sym": "ASTOCK",
-        "lost_bps": 28,
+        "lost_bps": 27,
         "selected": false,
         "probs": 0.0
       }
@@ -4357,20 +4438,20 @@
       "pick": {
         "type": "choice",
         "choice": "GIGACAT",
-        "confidence": 0.96
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
-        "score": 2.29,
-        "confidence": 0.23
+        "score": 2.4,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 12:01:43 ET",
+    "stamp_et": "2026-09-23 12:03:05 ET",
     "live": true
   }
 }
