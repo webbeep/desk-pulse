@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-23 09:58:58 ET",
+  "updated_et": "2026-09-23 09:59:49 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 75.4651,
-  "upnl_usd": -0.0112,
-  "equity_usd": 75.4539,
+  "liquid_usd": 66.4051,
+  "upnl_usd": 0.0,
+  "equity_usd": 66.4051,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -24.5461,
-  "total_pnl_pct": -24.5461,
-  "mark_eth": 2714.525,
-  "mark": 2714.525,
+  "total_pnl_usd": -33.5949,
+  "total_pnl_pct": -33.5949,
+  "mark_eth": 2714.445,
+  "mark": 2714.445,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2714.525
+    "ETH": 2714.445
   },
   "holdings": {
     "paper_cash_usd": 66.4051,
@@ -3059,14 +3059,30 @@
       "pnl_usd": -10.29
     },
     {
-      "t": "now",
-      "equity_usd": 75.4539,
-      "liquid_usd": 75.4539,
+      "t": "2026-09-23 09:59:11 ET",
+      "equity_usd": 66.4051,
+      "liquid_usd": 66.4051,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "KENNY",
+      "reason": "CUT_HARD_QUOTER",
+      "pnl_usd": -9.06
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 09:59:11 ET",
+      "kind": "PAPER",
+      "market": "KENNY",
+      "side": "LONG",
+      "size": 9.06,
+      "size_usd": 9.06,
+      "pnl_usd": -9.06,
+      "pnl_pct": -100.0,
+      "tx": "CUT_HARD_QUOTER",
+      "id": "PAPER-480",
+      "paper": true
+    },
     {
       "t": "2026-09-23 09:55:30 ET",
       "kind": "PAPER",
@@ -4093,38 +4109,21 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-401",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 00:48:18 ET",
-      "kind": "PAPER",
-      "market": "NOSH",
-      "side": "LONG",
-      "size": 25.0,
-      "size_usd": 25.0,
-      "pnl_usd": 0.9332,
-      "pnl_pct": 3.7326,
-      "tx": "TP_+3.5",
-      "id": "PAPER-400",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 75.4651,
-    "mtm_equity_usd": 75.4539,
-    "realized_pnl_usd": -24.5349,
-    "unrealized_pnl_usd": -0.0112,
-    "open": {
-      "id": "PAPER-480",
-      "ticker": "KENNY",
-      "usd": 9.06
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $75.47 \u00b7 curve n=303 \u00b7 2026-09-23 09:58:58 ET",
+    "paper_equity_usd": 66.4051,
+    "mtm_equity_usd": 66.4051,
+    "realized_pnl_usd": -33.5949,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $66.41 \u00b7 curve n=303 \u00b7 2026-09-23 09:59:49 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 301
+    "closed_n": 302
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $75.47 \u00b7 2026-09-23 09:58:58 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $66.41 \u00b7 FLAT \u00b7 2026-09-23 09:59:49 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
