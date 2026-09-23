@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 22:19:43 ET",
+  "updated_et": "2026-09-22 22:20:31 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 110.2859,
-  "upnl_usd": 0.0,
-  "equity_usd": 110.2859,
+  "upnl_usd": -0.279,
+  "equity_usd": 110.0069,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 10.2859,
-  "total_pnl_pct": 10.2859,
-  "mark_eth": 2754.695,
-  "mark": 2754.695,
+  "total_pnl_usd": 10.0069,
+  "total_pnl_pct": 10.0069,
+  "mark_eth": 2757.175,
+  "mark": 2757.175,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2754.695
+    "ETH": 2757.175
   },
   "holdings": {
-    "paper_cash_usd": 110.2859,
+    "paper_cash_usd": 98.2859,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-387",
+      "market": "CHICKEN",
+      "side": "LONG",
+      "size_usd": 12.0,
+      "entry": 6.150984159205102e-05,
+      "mark": 6.007973777503584e-05,
+      "uPnL": -0.279,
+      "mtm_pct": -2.3252,
+      "sl": 4.9207873273640824e-05,
+      "tp": 9.226476238807653e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": 70713633738326896357008,
+      "held_min": 0.37
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -2127,6 +2144,13 @@
       "ticker": "CHICKEN",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -0.6292
+    },
+    {
+      "t": "now",
+      "equity_usd": 110.0069,
+      "liquid_usd": 110.0069,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -3175,23 +3199,28 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 110.2859,
-    "mtm_equity_usd": 110.2859,
+    "mtm_equity_usd": 110.0069,
     "realized_pnl_usd": 10.2859,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $110.29 \u00b7 curve n=209 \u00b7 2026-09-22 22:19:43 ET",
+    "unrealized_pnl_usd": -0.279,
+    "open": {
+      "id": "PAPER-387",
+      "ticker": "CHICKEN",
+      "usd": 12.0,
+      "mtm_pct": -2.3252
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $110.29 \u00b7 curve n=210 \u00b7 2026-09-22 22:20:31 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 208
   },
-  "notes": "PAPER heartbeat \u00b7 eq $110.29 \u00b7 FLAT \u00b7 2026-09-22 22:19:43 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $110.29 \u00b7 2026-09-22 22:20:31 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NOSH open_p=0.65 edge=2.06 conf=0.95",
+    "detail": "pick=NOSH open_p=0.66 edge=2.07 conf=0.95",
     "pick": "NOSH",
-    "open_p": 0.65,
+    "open_p": 0.66,
     "confidence": 0.95,
-    "edge_score": 2.06,
+    "edge_score": 2.07,
     "picks": [
       {
         "sym": "NOSH",
@@ -3221,16 +3250,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.06,
-        "confidence": 0.31
+        "score": 2.07,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 22:18:31 ET",
+    "stamp_et": "2026-09-22 22:20:01 ET",
     "live": true
   }
 }
