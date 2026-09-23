@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 02:55:36 ET",
+  "updated_et": "2026-09-23 02:56:24 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 91.0613,
+  "liquid_usd": 90.4233,
   "upnl_usd": 0.0,
-  "equity_usd": 91.0613,
+  "equity_usd": 90.4233,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -8.9387,
-  "total_pnl_pct": -8.9387,
-  "mark_eth": 2752.17,
-  "mark": 2752.17,
+  "total_pnl_usd": -9.5767,
+  "total_pnl_pct": -9.5767,
+  "mark_eth": 2753.42,
+  "mark": 2753.42,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2752.17
+    "ETH": 2753.42
   },
   "holdings": {
-    "paper_cash_usd": 91.0613,
+    "paper_cash_usd": 90.4233,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2467,9 +2467,32 @@
       "ticker": "CREDITS",
       "reason": "CUT_HARD_QUOTER",
       "pnl_usd": -12.0
+    },
+    {
+      "t": "2026-09-23 02:55:52 ET",
+      "equity_usd": 90.4233,
+      "liquid_usd": 90.4233,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "NAUTILO",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -0.638
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 02:55:52 ET",
+      "kind": "PAPER",
+      "market": "NAUTILO",
+      "side": "LONG",
+      "size": 10.93,
+      "size_usd": 10.93,
+      "pnl_usd": -0.638,
+      "pnl_pct": -5.8376,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-421",
+      "paper": true
+    },
     {
       "t": "2026-09-23 02:46:01 ET",
       "kind": "PAPER",
@@ -3496,48 +3519,35 @@
       "tx": "TP_+3.5",
       "id": "PAPER-342",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 15:37:14 ET",
-      "kind": "PAPER",
-      "market": "SHINYHUNTERS",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": -1.2031,
-      "pnl_pct": -10.0259,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-341",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 91.0613,
-    "mtm_equity_usd": 91.0613,
-    "realized_pnl_usd": -8.9387,
+    "paper_equity_usd": 90.4233,
+    "mtm_equity_usd": 90.4233,
+    "realized_pnl_usd": -9.5767,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $91.06 \u00b7 curve n=243 \u00b7 2026-09-23 02:55:36 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $90.42 \u00b7 curve n=244 \u00b7 2026-09-23 02:56:24 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 242
+    "closed_n": 243
   },
-  "notes": "PAPER heartbeat \u00b7 eq $91.06 \u00b7 FLAT \u00b7 2026-09-23 02:55:36 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $90.42 \u00b7 FLAT \u00b7 2026-09-23 02:56:24 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=EULER open_p=0.62 edge=1.94 conf=0.94",
+    "detail": "pick=EULER open_p=0.68 edge=2.25 conf=0.93",
     "pick": "EULER",
-    "open_p": 0.62,
-    "confidence": 0.94,
-    "edge_score": 1.94,
+    "open_p": 0.68,
+    "confidence": 0.93,
+    "edge_score": 2.25,
     "picks": [
       {
         "sym": "EULER",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.94
       },
       {
         "sym": "NOSH",
@@ -3547,9 +3557,15 @@
       },
       {
         "sym": "SWBR",
-        "lost_bps": 8,
+        "lost_bps": 6,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
+      },
+      {
+        "sym": "NAUTILO",
+        "lost_bps": 55,
+        "selected": false,
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -3557,20 +3573,20 @@
       "pick": {
         "type": "choice",
         "choice": "EULER",
-        "confidence": 0.94
+        "confidence": 0.93
       },
       "edge": {
         "type": "score",
-        "score": 1.94,
-        "confidence": 0.41
+        "score": 2.25,
+        "confidence": 0.37
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.62
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 02:55:07 ET",
+    "stamp_et": "2026-09-23 02:55:38 ET",
     "live": true
   }
 }
