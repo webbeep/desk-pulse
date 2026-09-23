@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 03:02:00 ET",
+  "updated_et": "2026-09-23 03:02:48 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 90.4233,
-  "upnl_usd": -0.0365,
-  "equity_usd": 90.3868,
+  "liquid_usd": 92.6545,
+  "upnl_usd": 0.0,
+  "equity_usd": 92.6545,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -9.6132,
-  "total_pnl_pct": -9.6132,
-  "mark_eth": 2752.345,
-  "mark": 2752.345,
+  "total_pnl_usd": -7.3455,
+  "total_pnl_pct": -7.3455,
+  "mark_eth": 2750.43,
+  "mark": 2750.43,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2752.345
+    "ETH": 2750.43
   },
   "holdings": {
-    "paper_cash_usd": 79.5733,
+    "paper_cash_usd": 92.6545,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2479,14 +2479,30 @@
       "pnl_usd": -0.638
     },
     {
-      "t": "now",
-      "equity_usd": 90.3868,
-      "liquid_usd": 90.3868,
+      "t": "2026-09-23 03:02:03 ET",
+      "equity_usd": 92.6545,
+      "liquid_usd": 92.6545,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "NAUTILO",
+      "reason": "TP_+3.5",
+      "pnl_usd": 2.2312
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 03:02:03 ET",
+      "kind": "PAPER",
+      "market": "NAUTILO",
+      "side": "LONG",
+      "size": 10.85,
+      "size_usd": 10.85,
+      "pnl_usd": 2.2312,
+      "pnl_pct": 20.5642,
+      "tx": "TP_+3.5",
+      "id": "PAPER-422",
+      "paper": true
+    },
     {
       "t": "2026-09-23 02:55:52 ET",
       "kind": "PAPER",
@@ -3513,38 +3529,21 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-343",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 15:41:35 ET",
-      "kind": "PAPER",
-      "market": "SHINYHUNTERS",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": 1.3456,
-      "pnl_pct": 11.2129,
-      "tx": "TP_+3.5",
-      "id": "PAPER-342",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 90.4233,
-    "mtm_equity_usd": 90.3868,
-    "realized_pnl_usd": -9.5767,
-    "unrealized_pnl_usd": -0.0365,
-    "open": {
-      "id": "PAPER-422",
-      "ticker": "NAUTILO",
-      "usd": 10.85
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $90.42 \u00b7 curve n=245 \u00b7 2026-09-23 03:02:00 ET",
+    "paper_equity_usd": 92.6545,
+    "mtm_equity_usd": 92.6545,
+    "realized_pnl_usd": -7.3455,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $92.65 \u00b7 curve n=245 \u00b7 2026-09-23 03:02:48 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 243
+    "closed_n": 244
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $90.42 \u00b7 2026-09-23 03:02:00 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $92.65 \u00b7 FLAT \u00b7 2026-09-23 03:02:48 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
