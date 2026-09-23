@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 04:20:31 ET",
+  "updated_et": "2026-09-23 04:21:19 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 96.4816,
-  "upnl_usd": 0.0,
-  "equity_usd": 96.4816,
+  "upnl_usd": -0.0385,
+  "equity_usd": 96.4431,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -3.5184,
-  "total_pnl_pct": -3.5184,
-  "mark_eth": 2748.015,
-  "mark": 2748.015,
+  "total_pnl_usd": -3.5569,
+  "total_pnl_pct": -3.5569,
+  "mark_eth": 2748.42,
+  "mark": 2748.42,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2748.015
+    "ETH": 2748.42
   },
   "holdings": {
-    "paper_cash_usd": 96.4816,
+    "paper_cash_usd": 84.9016,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2687,6 +2687,13 @@
       "ticker": "LONG",
       "reason": "TP_+3.5",
       "pnl_usd": 0.6146
+    },
+    {
+      "t": "now",
+      "equity_usd": 96.4431,
+      "liquid_usd": 96.4431,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -3735,23 +3742,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 96.4816,
-    "mtm_equity_usd": 96.4816,
+    "mtm_equity_usd": 96.4431,
     "realized_pnl_usd": -3.5184,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $96.48 \u00b7 curve n=265 \u00b7 2026-09-23 04:20:31 ET",
+    "unrealized_pnl_usd": -0.0385,
+    "open": {
+      "id": "PAPER-443",
+      "ticker": "LONG",
+      "usd": 11.58
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $96.48 \u00b7 curve n=266 \u00b7 2026-09-23 04:21:19 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 264
   },
-  "notes": "PAPER heartbeat \u00b7 eq $96.48 \u00b7 FLAT \u00b7 2026-09-23 04:20:31 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $96.48 \u00b7 2026-09-23 04:21:19 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SHINYHUNTERS open_p=0.65 edge=2.21 conf=0.96",
+    "detail": "pick=SHINYHUNTERS open_p=0.64 edge=2.19 conf=0.96",
     "pick": "SHINYHUNTERS",
-    "open_p": 0.65,
+    "open_p": 0.64,
     "confidence": 0.96,
-    "edge_score": 2.21,
+    "edge_score": 2.19,
     "picks": [
       {
         "sym": "SHINYHUNTERS",
@@ -3781,16 +3792,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.21,
-        "confidence": 0.34
+        "score": 2.19,
+        "confidence": 0.39
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 04:19:18 ET",
+    "stamp_et": "2026-09-23 04:20:49 ET",
     "live": true
   }
 }
