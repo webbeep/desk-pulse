@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-23 12:10:30 ET",
+  "updated_et": "2026-09-23 12:11:18 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 66.816,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -33.184,
   "total_pnl_pct": -33.184,
-  "mark_eth": 2663.775,
-  "mark": 2663.775,
+  "mark_eth": 2661.735,
+  "mark": 2661.735,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2663.775
+    "ETH": 2661.735
   },
   "holdings": {
     "paper_cash_usd": 66.816,
@@ -4399,37 +4399,37 @@
     "realized_pnl_usd": -33.184,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $66.82 \u00b7 curve n=331 \u00b7 2026-09-23 12:10:30 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $66.82 \u00b7 curve n=331 \u00b7 2026-09-23 12:11:18 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 330
   },
-  "notes": "PAPER heartbeat \u00b7 eq $66.82 \u00b7 FLAT \u00b7 2026-09-23 12:10:30 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $66.82 \u00b7 FLAT \u00b7 2026-09-23 12:11:18 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=GIGACAT open_p=0.64 edge=2.27 conf=0.94",
+    "detail": "pick=GIGACAT open_p=0.65 edge=2.41 conf=0.9",
     "pick": "GIGACAT",
-    "open_p": 0.64,
-    "confidence": 0.94,
-    "edge_score": 2.27,
+    "open_p": 0.65,
+    "confidence": 0.9,
+    "edge_score": 2.41,
     "picks": [
       {
         "sym": "GIGACAT",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.92
+      },
+      {
+        "sym": "CMC",
+        "lost_bps": 6,
+        "selected": false,
+        "probs": 0.06
       },
       {
         "sym": "ZZZ",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.02
-      },
-      {
-        "sym": "CMC",
-        "lost_bps": 10,
-        "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       },
       {
         "sym": "ASTOCK",
@@ -4443,20 +4443,20 @@
       "pick": {
         "type": "choice",
         "choice": "GIGACAT",
-        "confidence": 0.94
+        "confidence": 0.9
       },
       "edge": {
         "type": "score",
-        "score": 2.27,
-        "confidence": 0.32
+        "score": 2.41,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 12:09:48 ET",
+    "stamp_et": "2026-09-23 12:10:58 ET",
     "live": true
   }
 }
