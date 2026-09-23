@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 12:20:05 ET",
+  "updated_et": "2026-09-23 12:20:53 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 67.9067,
-  "upnl_usd": -0.0057,
-  "equity_usd": 67.901,
+  "liquid_usd": 66.5531,
+  "upnl_usd": 0.0,
+  "equity_usd": 66.5531,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -32.099,
-  "total_pnl_pct": -32.099,
-  "mark_eth": 2663.135,
-  "mark": 2663.135,
+  "total_pnl_usd": -33.4469,
+  "total_pnl_pct": -33.4469,
+  "mark_eth": 2663.445,
+  "mark": 2663.445,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2663.135
+    "ETH": 2663.445
   },
   "holdings": {
-    "paper_cash_usd": 62.4767,
+    "paper_cash_usd": 66.5531,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -3389,14 +3389,76 @@
       "pnl_usd": 0.2439
     },
     {
-      "t": "now",
-      "equity_usd": 67.901,
-      "liquid_usd": 67.901,
+      "t": "2026-09-23 12:20:09 ET",
+      "equity_usd": 67.3056,
+      "liquid_usd": 67.3056,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "AGI",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -0.6011
+    },
+    {
+      "t": "2026-09-23 12:20:14 ET",
+      "equity_usd": 67.5865,
+      "liquid_usd": 67.5865,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "LOAN",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.2809
+    },
+    {
+      "t": "2026-09-23 12:20:33 ET",
+      "equity_usd": 66.5531,
+      "liquid_usd": 66.5531,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "LOAN",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -1.0334
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 12:20:33 ET",
+      "kind": "PAPER",
+      "market": "LOAN",
+      "side": "LONG",
+      "size": 5.41,
+      "size_usd": 5.41,
+      "pnl_usd": -1.0334,
+      "pnl_pct": -19.1025,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-515",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 12:20:14 ET",
+      "kind": "PAPER",
+      "market": "LOAN",
+      "side": "LONG",
+      "size": 5.43,
+      "size_usd": 5.43,
+      "pnl_usd": 0.2809,
+      "pnl_pct": 5.1734,
+      "tx": "TP_+3.5",
+      "id": "PAPER-514",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 12:20:09 ET",
+      "kind": "PAPER",
+      "market": "AGI",
+      "side": "LONG",
+      "size": 5.43,
+      "size_usd": 5.43,
+      "pnl_usd": -0.6011,
+      "pnl_pct": -11.0698,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-513",
+      "paper": true
+    },
     {
       "t": "2026-09-23 12:19:55 ET",
       "kind": "PAPER",
@@ -4397,84 +4459,41 @@
       "tx": "TP_+3.5",
       "id": "PAPER-436",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 04:07:14 ET",
-      "kind": "PAPER",
-      "market": "RATBRAIN",
-      "side": "LONG",
-      "size": 11.24,
-      "size_usd": 11.24,
-      "pnl_usd": -1.2292,
-      "pnl_pct": -10.9357,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-435",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 04:04:31 ET",
-      "kind": "PAPER",
-      "market": "SHINYHUNTERS",
-      "side": "LONG",
-      "size": 11.37,
-      "size_usd": 11.37,
-      "pnl_usd": -1.0788,
-      "pnl_pct": -9.488,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-434",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 04:03:20 ET",
-      "kind": "PAPER",
-      "market": "SHINYHUNTERS",
-      "side": "LONG",
-      "size": 11.28,
-      "size_usd": 11.28,
-      "pnl_usd": 0.7647,
-      "pnl_pct": 6.7793,
-      "tx": "TP_+3.5",
-      "id": "PAPER-433",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 67.9067,
-    "mtm_equity_usd": 67.901,
-    "realized_pnl_usd": -32.0933,
-    "unrealized_pnl_usd": -0.0057,
-    "open": {
-      "id": "PAPER-513",
-      "ticker": "AGI",
-      "usd": 5.43
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $67.91 \u00b7 curve n=336 \u00b7 2026-09-23 12:20:05 ET",
+    "paper_equity_usd": 66.5531,
+    "mtm_equity_usd": 66.5531,
+    "realized_pnl_usd": -33.4469,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $66.55 \u00b7 curve n=338 \u00b7 2026-09-23 12:20:53 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 334
+    "closed_n": 337
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $67.91 \u00b7 2026-09-23 12:20:05 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $66.55 \u00b7 FLAT \u00b7 2026-09-23 12:20:53 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=CMC open_p=0.64 edge=2.21 conf=0.59",
+    "detail": "pick=CMC open_p=0.64 edge=2.27 conf=0.55",
     "pick": "CMC",
     "open_p": 0.64,
-    "confidence": 0.59,
-    "edge_score": 2.21,
+    "confidence": 0.55,
+    "edge_score": 2.27,
     "picks": [
       {
         "sym": "CMC",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.67
+        "probs": 0.63
       },
       {
         "sym": "AGI",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.29
+        "probs": 0.33
       },
       {
         "sym": "ZZZ",
@@ -4500,11 +4519,11 @@
       "pick": {
         "type": "choice",
         "choice": "CMC",
-        "confidence": 0.59
+        "confidence": 0.55
       },
       "edge": {
         "type": "score",
-        "score": 2.21,
+        "score": 2.27,
         "confidence": 0.37
       },
       "open_now": {
@@ -4513,7 +4532,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 12:20:02 ET",
+    "stamp_et": "2026-09-23 12:20:46 ET",
     "live": true
   }
 }
