@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 04:08:30 ET",
+  "updated_et": "2026-09-23 04:09:18 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 93.1074,
+  "liquid_usd": 95.2195,
   "upnl_usd": 0.0,
-  "equity_usd": 93.1074,
+  "equity_usd": 95.2195,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -6.8926,
-  "total_pnl_pct": -6.8926,
-  "mark_eth": 2741.985,
-  "mark": 2741.985,
+  "total_pnl_usd": -4.7805,
+  "total_pnl_pct": -4.7805,
+  "mark_eth": 2743.045,
+  "mark": 2743.045,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2741.985
+    "ETH": 2743.045
   },
   "holdings": {
-    "paper_cash_usd": 93.1074,
+    "paper_cash_usd": 95.2195,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2627,9 +2627,32 @@
       "ticker": "LONG",
       "reason": "TP_+3.5",
       "pnl_usd": 0.6388
+    },
+    {
+      "t": "2026-09-23 04:09:15 ET",
+      "equity_usd": 95.2195,
+      "liquid_usd": 95.2195,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SHINYHUNTERS",
+      "reason": "TP_+3.5",
+      "pnl_usd": 2.1121
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 04:09:15 ET",
+      "kind": "PAPER",
+      "market": "SHINYHUNTERS",
+      "side": "LONG",
+      "size": 23.28,
+      "size_usd": 23.28,
+      "pnl_usd": 2.1121,
+      "pnl_pct": 9.0725,
+      "tx": "TP_+3.5",
+      "id": "PAPER-437",
+      "paper": true
+    },
     {
       "t": "2026-09-23 04:07:24 ET",
       "kind": "PAPER",
@@ -3656,70 +3679,45 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-358",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 20:00:46 ET",
-      "kind": "PAPER",
-      "market": "ROS",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": 0.9714,
-      "pnl_pct": 8.0946,
-      "tx": "TP_+3.5",
-      "id": "PAPER-357",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 93.1074,
-    "mtm_equity_usd": 93.1074,
-    "realized_pnl_usd": -6.8926,
+    "paper_equity_usd": 95.2195,
+    "mtm_equity_usd": 95.2195,
+    "realized_pnl_usd": -4.7805,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $93.11 \u00b7 curve n=259 \u00b7 2026-09-23 04:08:30 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $95.22 \u00b7 curve n=260 \u00b7 2026-09-23 04:09:18 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 258
+    "closed_n": 259
   },
-  "notes": "PAPER heartbeat \u00b7 eq $93.11 \u00b7 FLAT \u00b7 2026-09-23 04:08:30 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $95.22 \u00b7 FLAT \u00b7 2026-09-23 04:09:18 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NOSH open_p=0.67 edge=2.21 conf=0.93",
-    "pick": "NOSH",
-    "open_p": 0.67,
-    "confidence": 0.93,
-    "edge_score": 2.21,
+    "detail": "pick=SHINYHUNTERS open_p=0.65 edge=2.11 conf=0.97",
+    "pick": "SHINYHUNTERS",
+    "open_p": 0.65,
+    "confidence": 0.97,
+    "edge_score": 2.11,
     "picks": [
-      {
-        "sym": "NOSH",
-        "lost_bps": 4,
-        "selected": true,
-        "probs": 0.94
-      },
-      {
-        "sym": "EULER",
-        "lost_bps": 5,
-        "selected": false,
-        "probs": 0.03
-      },
       {
         "sym": "SHINYHUNTERS",
         "lost_bps": 7,
-        "selected": false,
-        "probs": 0.02
+        "selected": true,
+        "probs": 0.97
       },
       {
         "sym": "RATBRAIN",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.02
       },
       {
         "sym": "LONG",
-        "lost_bps": 51,
+        "lost_bps": 39,
         "selected": false,
         "probs": 0.0
       }
@@ -3728,21 +3726,21 @@
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "NOSH",
-        "confidence": 0.93
+        "choice": "SHINYHUNTERS",
+        "confidence": 0.97
       },
       "edge": {
         "type": "score",
-        "score": 2.21,
-        "confidence": 0.36
+        "score": 2.11,
+        "confidence": 0.38
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 04:07:08 ET",
+    "stamp_et": "2026-09-23 04:08:39 ET",
     "live": true
   }
 }
