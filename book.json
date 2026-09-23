@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 06:32:11 ET",
+  "updated_et": "2026-09-23 06:32:59 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 112.371,
+  "liquid_usd": 110.6936,
   "upnl_usd": 0.0,
-  "equity_usd": 112.371,
+  "equity_usd": 110.6936,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 12.371,
-  "total_pnl_pct": 12.371,
-  "mark_eth": 2730.535,
-  "mark": 2730.535,
+  "total_pnl_usd": 10.6936,
+  "total_pnl_pct": 10.6936,
+  "mark_eth": 2730.565,
+  "mark": 2730.565,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2730.535
+    "ETH": 2730.565
   },
   "holdings": {
-    "paper_cash_usd": 112.371,
+    "paper_cash_usd": 110.6936,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2817,9 +2817,32 @@
       "ticker": "ARMY",
       "reason": "TRAIL_0.9",
       "pnl_usd": 0.0393
+    },
+    {
+      "t": "2026-09-23 06:32:37 ET",
+      "equity_usd": 110.6936,
+      "liquid_usd": 110.6936,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ARMY",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -1.6774
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 06:32:37 ET",
+      "kind": "PAPER",
+      "market": "ARMY",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": -1.6774,
+      "pnl_pct": -13.9781,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-456",
+      "paper": true
+    },
     {
       "t": "2026-09-23 06:31:16 ET",
       "kind": "PAPER",
@@ -3846,54 +3869,41 @@
       "tx": "TP_+3.5",
       "id": "PAPER-377",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 21:45:45 ET",
-      "kind": "PAPER",
-      "market": "BOL",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": -0.0416,
-      "pnl_pct": -0.3466,
-      "tx": "TIME_SOFT_180s",
-      "id": "PAPER-376",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 112.371,
-    "mtm_equity_usd": 112.371,
-    "realized_pnl_usd": 12.371,
+    "paper_equity_usd": 110.6936,
+    "mtm_equity_usd": 110.6936,
+    "realized_pnl_usd": 10.6936,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $112.37 \u00b7 curve n=278 \u00b7 2026-09-23 06:32:11 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $110.69 \u00b7 curve n=279 \u00b7 2026-09-23 06:32:59 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 277
+    "closed_n": 278
   },
-  "notes": "PAPER heartbeat \u00b7 eq $112.37 \u00b7 FLAT \u00b7 2026-09-23 06:32:11 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $110.69 \u00b7 FLAT \u00b7 2026-09-23 06:32:59 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SHINYHUNTERS open_p=0.67 edge=2.16 conf=0.98",
+    "detail": "pick=SHINYHUNTERS open_p=0.66 edge=2.17 conf=0.97",
     "pick": "SHINYHUNTERS",
-    "open_p": 0.67,
-    "confidence": 0.98,
-    "edge_score": 2.16,
+    "open_p": 0.66,
+    "confidence": 0.97,
+    "edge_score": 2.17,
     "picks": [
       {
         "sym": "SHINYHUNTERS",
         "lost_bps": 7,
         "selected": true,
-        "probs": 0.99
+        "probs": 0.97
       },
       {
         "sym": "MAU",
         "lost_bps": 15,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
       },
       {
         "sym": "ARMY",
@@ -3907,20 +3917,20 @@
       "pick": {
         "type": "choice",
         "choice": "SHINYHUNTERS",
-        "confidence": 0.98
+        "confidence": 0.97
       },
       "edge": {
         "type": "score",
-        "score": 2.16,
-        "confidence": 0.26
+        "score": 2.17,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 06:30:49 ET",
+    "stamp_et": "2026-09-23 06:32:20 ET",
     "live": true
   }
 }
