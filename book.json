@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 07:50:39 ET",
+  "updated_et": "2026-09-23 07:51:25 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 96.5946,
-  "upnl_usd": 0.0,
-  "equity_usd": 96.5946,
+  "upnl_usd": -0.0151,
+  "equity_usd": 96.5795,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -3.4054,
-  "total_pnl_pct": -3.4054,
-  "mark_eth": 2724.3,
-  "mark": 2724.3,
+  "total_pnl_usd": -3.4205,
+  "total_pnl_pct": -3.4205,
+  "mark_eth": 2724.86,
+  "mark": 2724.86,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2724.3
+    "ETH": 2724.86
   },
   "holdings": {
-    "paper_cash_usd": 96.5946,
+    "paper_cash_usd": 77.2746,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2857,6 +2857,13 @@
       "ticker": "MONITOR",
       "reason": "CUT_HARD_QUOTER",
       "pnl_usd": -12.0
+    },
+    {
+      "t": "now",
+      "equity_usd": 96.5795,
+      "liquid_usd": 96.5795,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -3905,39 +3912,43 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 96.5946,
-    "mtm_equity_usd": 96.5946,
+    "mtm_equity_usd": 96.5795,
     "realized_pnl_usd": -3.4054,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $96.59 \u00b7 curve n=282 \u00b7 2026-09-23 07:50:39 ET",
+    "unrealized_pnl_usd": -0.0151,
+    "open": {
+      "id": "PAPER-460",
+      "ticker": "AGRIPPA",
+      "usd": 19.32
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $96.59 \u00b7 curve n=283 \u00b7 2026-09-23 07:51:25 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 281
   },
-  "notes": "PAPER heartbeat \u00b7 eq $96.59 \u00b7 FLAT \u00b7 2026-09-23 07:50:39 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $96.59 \u00b7 2026-09-23 07:51:25 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SHINYHUNTERS open_p=0.67 edge=2.34 conf=0.97",
-    "pick": "SHINYHUNTERS",
-    "open_p": 0.67,
-    "confidence": 0.97,
-    "edge_score": 2.34,
+    "detail": "pick=AGRIPPA open_p=0.65 edge=2.22 conf=0.89",
+    "pick": "AGRIPPA",
+    "open_p": 0.65,
+    "confidence": 0.89,
+    "edge_score": 2.22,
     "picks": [
       {
-        "sym": "SHINYHUNTERS",
+        "sym": "AGRIPPA",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.97
+        "probs": 0.92
       },
       {
-        "sym": "MAU",
-        "lost_bps": 12,
+        "sym": "SHINYHUNTERS",
+        "lost_bps": 13,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.07
       },
       {
-        "sym": "ARMY",
-        "lost_bps": 42,
+        "sym": "AGPUB",
+        "lost_bps": 46,
         "selected": false,
         "probs": 0.0
       }
@@ -3946,21 +3957,21 @@
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "SHINYHUNTERS",
-        "confidence": 0.97
+        "choice": "AGRIPPA",
+        "confidence": 0.89
       },
       "edge": {
         "type": "score",
-        "score": 2.34,
-        "confidence": 0.3
+        "score": 2.22,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 06:47:29 ET",
+    "stamp_et": "2026-09-23 07:51:10 ET",
     "live": true
   }
 }
