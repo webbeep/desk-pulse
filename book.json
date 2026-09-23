@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 08:11:29 ET",
+  "updated_et": "2026-09-23 08:12:17 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 80.9651,
-  "upnl_usd": 0.0,
-  "equity_usd": 80.9651,
+  "upnl_usd": 0.0791,
+  "equity_usd": 81.0442,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -19.0349,
-  "total_pnl_pct": -19.0349,
-  "mark_eth": 2724.62,
-  "mark": 2724.62,
+  "total_pnl_usd": -18.9558,
+  "total_pnl_pct": -18.9558,
+  "mark_eth": 2723.355,
+  "mark": 2723.355,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2724.62
+    "ETH": 2723.355
   },
   "holdings": {
-    "paper_cash_usd": 80.9651,
+    "paper_cash_usd": 71.2451,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-471",
+      "market": "AGPUB",
+      "side": "LONG",
+      "size_usd": 9.72,
+      "entry": 9.745024105800221e-05,
+      "mark": 9.824327748471908e-05,
+      "uPnL": 0.0791,
+      "mtm_pct": 0.814,
+      "sl": 7.796019284640178e-05,
+      "tp": 0.0001461753615870033,
+      "lev": 1,
+      "paper": true,
+      "liq": 12271858696589425368886,
+      "held_min": 0.48
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -2967,6 +2984,13 @@
       "ticker": "AGPUB",
       "reason": "TP_+3.5",
       "pnl_usd": 0.7175
+    },
+    {
+      "t": "now",
+      "equity_usd": 81.0442,
+      "liquid_usd": 81.0442,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -4015,23 +4039,28 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 80.9651,
-    "mtm_equity_usd": 80.9651,
+    "mtm_equity_usd": 81.0442,
     "realized_pnl_usd": -19.0349,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $80.97 \u00b7 curve n=293 \u00b7 2026-09-23 08:11:29 ET",
+    "unrealized_pnl_usd": 0.0791,
+    "open": {
+      "id": "PAPER-471",
+      "ticker": "AGPUB",
+      "usd": 9.72,
+      "mtm_pct": 0.814
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $80.97 \u00b7 curve n=294 \u00b7 2026-09-23 08:12:17 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 292
   },
-  "notes": "PAPER heartbeat \u00b7 eq $80.97 \u00b7 FLAT \u00b7 2026-09-23 08:11:29 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $80.97 \u00b7 2026-09-23 08:12:17 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AGRIPPA open_p=0.61 edge=2.01 conf=0.98",
+    "detail": "pick=AGRIPPA open_p=0.63 edge=1.97 conf=0.98",
     "pick": "AGRIPPA",
-    "open_p": 0.61,
+    "open_p": 0.63,
     "confidence": 0.98,
-    "edge_score": 2.01,
+    "edge_score": 1.97,
     "picks": [
       {
         "sym": "AGRIPPA",
@@ -4055,16 +4084,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.01,
-        "confidence": 0.33
+        "score": 1.97,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.61
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 08:10:11 ET",
+    "stamp_et": "2026-09-23 08:11:44 ET",
     "live": true
   }
 }
