@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 21:39:43 ET",
+  "updated_et": "2026-09-22 21:40:31 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 110.7238,
-  "upnl_usd": 0.0,
-  "equity_usd": 110.7238,
+  "upnl_usd": -0.0133,
+  "equity_usd": 110.7105,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 10.7238,
-  "total_pnl_pct": 10.7238,
-  "mark_eth": 2759.325,
-  "mark": 2759.325,
+  "total_pnl_usd": 10.7105,
+  "total_pnl_pct": 10.7105,
+  "mark_eth": 2757.67,
+  "mark": 2757.67,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2759.325
+    "ETH": 2757.67
   },
   "holdings": {
-    "paper_cash_usd": 110.7238,
+    "paper_cash_usd": 98.7238,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-374",
+      "market": "NOSH",
+      "side": "LONG",
+      "size_usd": 12.0,
+      "entry": 0.002140425201776062,
+      "mark": 0.0021380528971774266,
+      "uPnL": -0.0133,
+      "mtm_pct": -0.1111,
+      "sl": 0.0017123401614208497,
+      "tp": 0.003210637802664093,
+      "lev": 1,
+      "paper": true,
+      "liq": 31942230398369514935678,
+      "held_min": 0.22
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -1997,6 +2014,13 @@
       "ticker": "NOSH",
       "reason": "TP_+3.5",
       "pnl_usd": 0.6492
+    },
+    {
+      "t": "now",
+      "equity_usd": 110.7105,
+      "liquid_usd": 110.7105,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -3045,23 +3069,28 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 110.7238,
-    "mtm_equity_usd": 110.7238,
+    "mtm_equity_usd": 110.7105,
     "realized_pnl_usd": 10.7238,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $110.72 \u00b7 curve n=196 \u00b7 2026-09-22 21:39:43 ET",
+    "unrealized_pnl_usd": -0.0133,
+    "open": {
+      "id": "PAPER-374",
+      "ticker": "NOSH",
+      "usd": 12.0,
+      "mtm_pct": -0.1111
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $110.72 \u00b7 curve n=197 \u00b7 2026-09-22 21:40:31 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 195
   },
-  "notes": "PAPER heartbeat \u00b7 eq $110.72 \u00b7 FLAT \u00b7 2026-09-22 21:39:43 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $110.72 \u00b7 2026-09-22 21:40:31 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AGRIPPA open_p=0.66 edge=2.21 conf=0.94",
+    "detail": "pick=AGRIPPA open_p=0.67 edge=2.18 conf=0.93",
     "pick": "AGRIPPA",
-    "open_p": 0.66,
-    "confidence": 0.94,
-    "edge_score": 2.21,
+    "open_p": 0.67,
+    "confidence": 0.93,
+    "edge_score": 2.18,
     "picks": [
       {
         "sym": "AGRIPPA",
@@ -3093,20 +3122,20 @@
       "pick": {
         "type": "choice",
         "choice": "AGRIPPA",
-        "confidence": 0.94
+        "confidence": 0.93
       },
       "edge": {
         "type": "score",
-        "score": 2.21,
-        "confidence": 0.36
+        "score": 2.18,
+        "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.67
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 21:38:34 ET",
+    "stamp_et": "2026-09-22 21:40:06 ET",
     "live": true
   }
 }
