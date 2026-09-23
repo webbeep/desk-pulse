@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 04:02:07 ET",
+  "updated_et": "2026-09-23 04:02:55 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 94.0119,
-  "upnl_usd": 0.0,
-  "equity_usd": 94.0119,
+  "upnl_usd": -0.0067,
+  "equity_usd": 94.0052,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -5.9881,
-  "total_pnl_pct": -5.9881,
-  "mark_eth": 2746.32,
-  "mark": 2746.32,
+  "total_pnl_usd": -5.9948,
+  "total_pnl_pct": -5.9948,
+  "mark_eth": 2746.54,
+  "mark": 2746.54,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2746.32
+    "ETH": 2746.54
   },
   "holdings": {
-    "paper_cash_usd": 94.0119,
+    "paper_cash_usd": 82.7319,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2587,6 +2587,13 @@
       "ticker": "SHINYHUNTERS",
       "reason": "TP_+3.5",
       "pnl_usd": 0.4061
+    },
+    {
+      "t": "now",
+      "equity_usd": 94.0052,
+      "liquid_usd": 94.0052,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -3635,29 +3642,33 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 94.0119,
-    "mtm_equity_usd": 94.0119,
+    "mtm_equity_usd": 94.0052,
     "realized_pnl_usd": -5.9881,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $94.01 \u00b7 curve n=255 \u00b7 2026-09-23 04:02:07 ET",
+    "unrealized_pnl_usd": -0.0067,
+    "open": {
+      "id": "PAPER-433",
+      "ticker": "SHINYHUNTERS",
+      "usd": 11.28
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $94.01 \u00b7 curve n=256 \u00b7 2026-09-23 04:02:55 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 254
   },
-  "notes": "PAPER heartbeat \u00b7 eq $94.01 \u00b7 FLAT \u00b7 2026-09-23 04:02:07 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $94.01 \u00b7 2026-09-23 04:02:55 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NOSH open_p=0.66 edge=2.01 conf=0.94",
+    "detail": "pick=NOSH open_p=0.66 edge=1.99 conf=0.92",
     "pick": "NOSH",
     "open_p": 0.66,
-    "confidence": 0.94,
-    "edge_score": 2.01,
+    "confidence": 0.92,
+    "edge_score": 1.99,
     "picks": [
       {
         "sym": "NOSH",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.94
+        "probs": 0.93
       },
       {
         "sym": "EULER",
@@ -3669,11 +3680,11 @@
         "sym": "SHINYHUNTERS",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
       },
       {
         "sym": "RATBRAIN",
-        "lost_bps": 8,
+        "lost_bps": 9,
         "selected": false,
         "probs": 0.0
       }
@@ -3683,12 +3694,12 @@
       "pick": {
         "type": "choice",
         "choice": "NOSH",
-        "confidence": 0.94
+        "confidence": 0.92
       },
       "edge": {
         "type": "score",
-        "score": 2.01,
-        "confidence": 0.32
+        "score": 1.99,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
@@ -3696,7 +3707,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 04:01:02 ET",
+    "stamp_et": "2026-09-23 04:02:33 ET",
     "live": true
   }
 }
