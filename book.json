@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-23 15:17:43 ET",
+  "updated_et": "2026-09-23 15:18:31 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 56.4572,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -43.5428,
   "total_pnl_pct": -43.5428,
-  "mark_eth": 2666.955,
-  "mark": 2666.955,
+  "mark_eth": 2666.5,
+  "mark": 2666.5,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2666.955
+    "ETH": 2666.5
   },
   "holdings": {
     "paper_cash_usd": 56.4572,
@@ -4729,25 +4729,25 @@
     "realized_pnl_usd": -43.5428,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $56.46 \u00b7 curve n=364 \u00b7 2026-09-23 15:17:43 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $56.46 \u00b7 curve n=364 \u00b7 2026-09-23 15:18:31 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 363
   },
-  "notes": "PAPER heartbeat \u00b7 eq $56.46 \u00b7 FLAT \u00b7 2026-09-23 15:17:43 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $56.46 \u00b7 FLAT \u00b7 2026-09-23 15:18:31 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=LOAN open_p=0.63 edge=2.06 conf=0.92",
+    "detail": "pick=LOAN open_p=0.61 edge=2.12 conf=0.91",
     "pick": "LOAN",
-    "open_p": 0.63,
-    "confidence": 0.92,
-    "edge_score": 2.06,
+    "open_p": 0.61,
+    "confidence": 0.91,
+    "edge_score": 2.12,
     "picks": [
       {
         "sym": "LOAN",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.94
+        "probs": 0.93
       },
       {
         "sym": "PALLAS",
@@ -4759,7 +4759,7 @@
         "sym": "ZZZ",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -4767,20 +4767,20 @@
       "pick": {
         "type": "choice",
         "choice": "LOAN",
-        "confidence": 0.92
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
-        "score": 2.06,
-        "confidence": 0.37
+        "score": 2.12,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.61
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 15:17:02 ET",
+    "stamp_et": "2026-09-23 15:18:28 ET",
     "live": true
   }
 }
