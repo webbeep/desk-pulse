@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-22 22:31:44 ET",
+  "updated_et": "2026-09-22 22:32:32 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 111.2093,
+  "liquid_usd": 111.9673,
   "upnl_usd": 0.0,
-  "equity_usd": 111.2093,
+  "equity_usd": 111.9673,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 11.2093,
-  "total_pnl_pct": 11.2093,
-  "mark_eth": 2758.84,
-  "mark": 2758.84,
+  "total_pnl_usd": 11.9673,
+  "total_pnl_pct": 11.9673,
+  "mark_eth": 2758.875,
+  "mark": 2758.875,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2758.84
+    "ETH": 2758.875
   },
   "holdings": {
-    "paper_cash_usd": 111.2093,
+    "paper_cash_usd": 111.9673,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2157,9 +2157,32 @@
       "ticker": "EULER",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -0.662
+    },
+    {
+      "t": "2026-09-22 22:32:28 ET",
+      "equity_usd": 111.9673,
+      "liquid_usd": 111.9673,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "EULER",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.758
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-22 22:32:28 ET",
+      "kind": "PAPER",
+      "market": "EULER",
+      "side": "LONG",
+      "size": 12.0,
+      "size_usd": 12.0,
+      "pnl_usd": 0.758,
+      "pnl_pct": 6.3164,
+      "tx": "TP_+3.5",
+      "id": "PAPER-390",
+      "paper": true
+    },
     {
       "t": "2026-09-22 22:28:07 ET",
       "kind": "PAPER",
@@ -3186,54 +3209,41 @@
       "tx": "TP_+3.5",
       "id": "PAPER-311",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 13:10:36 ET",
-      "kind": "PAPER",
-      "market": "GOSSIP",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": 0.7716,
-      "pnl_pct": 6.4301,
-      "tx": "TP_+3.5",
-      "id": "PAPER-310",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 111.2093,
-    "mtm_equity_usd": 111.2093,
-    "realized_pnl_usd": 11.2093,
+    "paper_equity_usd": 111.9673,
+    "mtm_equity_usd": 111.9673,
+    "realized_pnl_usd": 11.9673,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $111.21 \u00b7 curve n=212 \u00b7 2026-09-22 22:31:44 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $111.97 \u00b7 curve n=213 \u00b7 2026-09-22 22:32:32 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 211
+    "closed_n": 212
   },
-  "notes": "PAPER heartbeat \u00b7 eq $111.21 \u00b7 FLAT \u00b7 2026-09-22 22:31:44 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $111.97 \u00b7 FLAT \u00b7 2026-09-22 22:32:32 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=CHICKEN open_p=0.61 edge=1.91 conf=0.63",
+    "detail": "pick=CHICKEN open_p=0.62 edge=1.87 conf=0.66",
     "pick": "CHICKEN",
-    "open_p": 0.61,
-    "confidence": 0.63,
-    "edge_score": 1.91,
+    "open_p": 0.62,
+    "confidence": 0.66,
+    "edge_score": 1.87,
     "picks": [
       {
         "sym": "CHICKEN",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.71
+        "probs": 0.74
       },
       {
         "sym": "NOSH",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.26
+        "probs": 0.24
       },
       {
         "sym": "EULER",
@@ -3247,20 +3257,20 @@
       "pick": {
         "type": "choice",
         "choice": "CHICKEN",
-        "confidence": 0.63
+        "confidence": 0.66
       },
       "edge": {
         "type": "score",
-        "score": 1.91,
-        "confidence": 0.34
+        "score": 1.87,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.61
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-22 22:30:38 ET",
+    "stamp_et": "2026-09-22 22:32:09 ET",
     "live": true
   }
 }
