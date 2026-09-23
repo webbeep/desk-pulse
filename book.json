@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 07:56:15 ET",
+  "updated_et": "2026-09-23 07:57:03 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 93.0459,
+  "liquid_usd": 92.4369,
   "upnl_usd": 0.0,
-  "equity_usd": 93.0459,
+  "equity_usd": 92.4369,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -6.9541,
-  "total_pnl_pct": -6.9541,
-  "mark_eth": 2728.01,
-  "mark": 2728.01,
+  "total_pnl_usd": -7.5631,
+  "total_pnl_pct": -7.5631,
+  "mark_eth": 2728.305,
+  "mark": 2728.305,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2728.01
+    "ETH": 2728.305
   },
   "holdings": {
-    "paper_cash_usd": 93.0459,
+    "paper_cash_usd": 92.4369,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -2877,9 +2877,32 @@
       "ticker": "AGPUB",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -0.496
+    },
+    {
+      "t": "2026-09-23 07:56:52 ET",
+      "equity_usd": 92.4369,
+      "liquid_usd": 92.4369,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "AGRIPPA",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -0.609
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 07:56:52 ET",
+      "kind": "PAPER",
+      "market": "AGRIPPA",
+      "side": "LONG",
+      "size": 23.26,
+      "size_usd": 23.26,
+      "pnl_usd": -0.609,
+      "pnl_pct": -2.6182,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-462",
+      "paper": true
+    },
     {
       "t": "2026-09-23 07:53:11 ET",
       "kind": "PAPER",
@@ -3906,54 +3929,41 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-383",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 22:05:00 ET",
-      "kind": "PAPER",
-      "market": "SIGNULL",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": -4.0063,
-      "pnl_pct": -33.3855,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-382",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 93.0459,
-    "mtm_equity_usd": 93.0459,
-    "realized_pnl_usd": -6.9541,
+    "paper_equity_usd": 92.4369,
+    "mtm_equity_usd": 92.4369,
+    "realized_pnl_usd": -7.5631,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $93.05 \u00b7 curve n=284 \u00b7 2026-09-23 07:56:15 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $92.44 \u00b7 curve n=285 \u00b7 2026-09-23 07:57:03 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 283
+    "closed_n": 284
   },
-  "notes": "PAPER heartbeat \u00b7 eq $93.05 \u00b7 FLAT \u00b7 2026-09-23 07:56:15 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $92.44 \u00b7 FLAT \u00b7 2026-09-23 07:57:03 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AGRIPPA open_p=0.64 edge=2.24 conf=0.92",
+    "detail": "pick=AGRIPPA open_p=0.66 edge=2.19 conf=0.93",
     "pick": "AGRIPPA",
-    "open_p": 0.64,
-    "confidence": 0.92,
-    "edge_score": 2.24,
+    "open_p": 0.66,
+    "confidence": 0.93,
+    "edge_score": 2.19,
     "picks": [
       {
         "sym": "AGRIPPA",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.94
+        "probs": 0.95
       },
       {
         "sym": "SHINYHUNTERS",
         "lost_bps": 13,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.04
       },
       {
         "sym": "AGPUB",
@@ -3967,20 +3977,20 @@
       "pick": {
         "type": "choice",
         "choice": "AGRIPPA",
-        "confidence": 0.92
+        "confidence": 0.93
       },
       "edge": {
         "type": "score",
-        "score": 2.24,
+        "score": 2.19,
         "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 07:55:14 ET",
+    "stamp_et": "2026-09-23 07:56:46 ET",
     "live": true
   }
 }
