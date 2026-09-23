@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 15:10:26 ET",
+  "updated_et": "2026-09-23 15:11:14 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 56.4144,
-  "upnl_usd": -0.0021,
-  "equity_usd": 56.4123,
+  "liquid_usd": 56.4724,
+  "upnl_usd": 0.0,
+  "equity_usd": 56.4724,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -43.5877,
-  "total_pnl_pct": -43.5877,
-  "mark_eth": 2667.46,
-  "mark": 2667.46,
+  "total_pnl_usd": -43.5276,
+  "total_pnl_pct": -43.5276,
+  "mark_eth": 2666.995,
+  "mark": 2666.995,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2667.46
+    "ETH": 2666.995
   },
   "holdings": {
-    "paper_cash_usd": 51.9144,
+    "paper_cash_usd": 56.4724,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-539",
-      "market": "PALLAS",
-      "side": "LONG",
-      "size_usd": 4.5,
-      "entry": 6.021023802995119e-05,
-      "mark": 6.018213991887055e-05,
-      "uPnL": -0.0021,
-      "mtm_pct": -0.0468,
-      "sl": 4.816819042396096e-05,
-      "tp": 9.031535704492679e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 70713633738326896357008,
-      "held_min": 0.26
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -3666,14 +3649,30 @@
       "pnl_usd": 0.1609
     },
     {
-      "t": "now",
-      "equity_usd": 56.4123,
-      "liquid_usd": 56.4123,
+      "t": "2026-09-23 15:11:10 ET",
+      "equity_usd": 56.4724,
+      "liquid_usd": 56.4724,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "PALLAS",
+      "reason": "TIME_EXIT_60s",
+      "pnl_usd": 0.058
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 15:11:10 ET",
+      "kind": "PAPER",
+      "market": "PALLAS",
+      "side": "LONG",
+      "size": 4.5,
+      "size_usd": 4.5,
+      "pnl_usd": 0.058,
+      "pnl_pct": 1.2887,
+      "tx": "TIME_EXIT_60s",
+      "id": "PAPER-539",
+      "paper": true
+    },
     {
       "t": "2026-09-23 15:10:13 ET",
       "kind": "PAPER",
@@ -4700,53 +4699,35 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-460",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 06:42:10 ET",
-      "kind": "PAPER",
-      "market": "MONITOR",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": -12.0,
-      "pnl_pct": -100.0,
-      "tx": "CUT_HARD_QUOTER",
-      "id": "PAPER-459",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 56.4144,
-    "mtm_equity_usd": 56.4123,
-    "realized_pnl_usd": -43.5856,
-    "unrealized_pnl_usd": -0.0021,
-    "open": {
-      "id": "PAPER-539",
-      "ticker": "PALLAS",
-      "usd": 4.5,
-      "mtm_pct": -0.0468
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $56.41 \u00b7 curve n=362 \u00b7 2026-09-23 15:10:26 ET",
+    "paper_equity_usd": 56.4724,
+    "mtm_equity_usd": 56.4724,
+    "realized_pnl_usd": -43.5276,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $56.47 \u00b7 curve n=362 \u00b7 2026-09-23 15:11:14 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 360
+    "closed_n": 361
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $56.41 \u00b7 2026-09-23 15:10:26 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $56.47 \u00b7 FLAT \u00b7 2026-09-23 15:11:14 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=LOAN open_p=0.60 edge=1.95 conf=0.91",
+    "detail": "pick=LOAN open_p=0.62 edge=1.98 conf=0.9",
     "pick": "LOAN",
-    "open_p": 0.6,
-    "confidence": 0.91,
-    "edge_score": 1.95,
+    "open_p": 0.62,
+    "confidence": 0.9,
+    "edge_score": 1.98,
     "picks": [
       {
         "sym": "LOAN",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.94
+        "probs": 0.93
       },
       {
         "sym": "PALLAS",
@@ -4760,20 +4741,20 @@
       "pick": {
         "type": "choice",
         "choice": "LOAN",
-        "confidence": 0.91
+        "confidence": 0.9
       },
       "edge": {
         "type": "score",
-        "score": 1.95,
+        "score": 1.98,
         "confidence": 0.43
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.6
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 15:10:21 ET",
+    "stamp_et": "2026-09-23 15:10:33 ET",
     "live": true
   }
 }
