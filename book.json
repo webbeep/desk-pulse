@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 03:46:07 ET",
+  "updated_et": "2026-09-23 03:46:55 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 93.179,
-  "upnl_usd": 0.0435,
-  "equity_usd": 93.2225,
+  "liquid_usd": 93.6833,
+  "upnl_usd": 0.0,
+  "equity_usd": 93.6833,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -6.7775,
-  "total_pnl_pct": -6.7775,
-  "mark_eth": 2740.7,
-  "mark": 2740.7,
+  "total_pnl_usd": -6.3167,
+  "total_pnl_pct": -6.3167,
+  "mark_eth": 2740.97,
+  "mark": 2740.97,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2740.7
+    "ETH": 2740.97
   },
   "holdings": {
-    "paper_cash_usd": 81.999,
+    "paper_cash_usd": 93.6833,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-427",
-      "market": "RATBRAIN",
-      "side": "LONG",
-      "size_usd": 11.18,
-      "entry": 4.162244859748105e-05,
-      "mark": 4.178439640731919e-05,
-      "uPnL": 0.0435,
-      "mtm_pct": 0.3893,
-      "sl": 3.329795887798484e-05,
-      "tp": 6.243367289622158e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 70713633738326896357008,
-      "held_min": 0.22
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -2546,14 +2529,30 @@
       "pnl_usd": -1.3676
     },
     {
-      "t": "now",
-      "equity_usd": 93.2225,
-      "liquid_usd": 93.2225,
+      "t": "2026-09-23 03:46:14 ET",
+      "equity_usd": 93.6833,
+      "liquid_usd": 93.6833,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "RATBRAIN",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.5043
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 03:46:14 ET",
+      "kind": "PAPER",
+      "market": "RATBRAIN",
+      "side": "LONG",
+      "size": 11.18,
+      "size_usd": 11.18,
+      "pnl_usd": 0.5043,
+      "pnl_pct": 4.5106,
+      "tx": "TP_+3.5",
+      "id": "PAPER-427",
+      "paper": true
+    },
     {
       "t": "2026-09-23 03:08:11 ET",
       "kind": "PAPER",
@@ -3580,39 +3579,21 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-348",
       "paper": true
-    },
-    {
-      "t": "2026-09-22 18:50:13 ET",
-      "kind": "PAPER",
-      "market": "OAI",
-      "side": "LONG",
-      "size": 12.0,
-      "size_usd": 12.0,
-      "pnl_usd": -0.9408,
-      "pnl_pct": -7.8398,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-347",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 93.179,
-    "mtm_equity_usd": 93.2225,
-    "realized_pnl_usd": -6.821,
-    "unrealized_pnl_usd": 0.0435,
-    "open": {
-      "id": "PAPER-427",
-      "ticker": "RATBRAIN",
-      "usd": 11.18,
-      "mtm_pct": 0.3893
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $93.18 \u00b7 curve n=250 \u00b7 2026-09-23 03:46:07 ET",
+    "paper_equity_usd": 93.6833,
+    "mtm_equity_usd": 93.6833,
+    "realized_pnl_usd": -6.3167,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $93.68 \u00b7 curve n=250 \u00b7 2026-09-23 03:46:55 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 248
+    "closed_n": 249
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $93.18 \u00b7 2026-09-23 03:46:07 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $93.68 \u00b7 FLAT \u00b7 2026-09-23 03:46:55 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
