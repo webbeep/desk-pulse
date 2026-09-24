@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 01:12:41 ET",
+  "updated_et": "2026-09-24 01:13:29 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 53.6299,
+  "liquid_usd": 53.3673,
   "upnl_usd": 0.0,
-  "equity_usd": 53.6299,
+  "equity_usd": 53.3673,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -46.3701,
-  "total_pnl_pct": -46.3701,
-  "mark_eth": 2693.255,
-  "mark": 2693.255,
+  "total_pnl_usd": -46.6327,
+  "total_pnl_pct": -46.6327,
+  "mark_eth": 2692.22,
+  "mark": 2692.22,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2693.255
+    "ETH": 2692.22
   },
   "holdings": {
-    "paper_cash_usd": 53.6299,
+    "paper_cash_usd": 53.3673,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -5487,9 +5487,32 @@
       "ticker": "FUNKOS",
       "reason": "TP_+3.0",
       "pnl_usd": 0.2322
+    },
+    {
+      "t": "2026-09-24 01:13:21 ET",
+      "equity_usd": 53.3673,
+      "liquid_usd": 53.3673,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "VORTA",
+      "reason": "CUT_HARD_-2.0",
+      "pnl_usd": -0.2626
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 01:13:21 ET",
+      "kind": "PAPER",
+      "market": "VORTA",
+      "side": "LONG",
+      "size": 3.22,
+      "size_usd": 3.22,
+      "pnl_usd": -0.2626,
+      "pnl_pct": -8.1558,
+      "tx": "CUT_HARD_-2.0",
+      "id": "PAPER-723",
+      "paper": true
+    },
     {
       "t": "2026-09-24 01:11:42 ET",
       "kind": "PAPER",
@@ -6516,42 +6539,29 @@
       "tx": "TIME_SOFT_45s",
       "id": "PAPER-645",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 21:51:45 ET",
-      "kind": "PAPER",
-      "market": "SHINYHUNTERS",
-      "side": "LONG",
-      "size": 3.03,
-      "size_usd": 3.03,
-      "pnl_usd": -0.0019,
-      "pnl_pct": -0.0638,
-      "tx": "TIME_SOFT_45s",
-      "id": "PAPER-643",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 53.6299,
-    "mtm_equity_usd": 53.6299,
-    "realized_pnl_usd": -46.3701,
+    "paper_equity_usd": 53.3673,
+    "mtm_equity_usd": 53.3673,
+    "realized_pnl_usd": -46.6327,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $53.63 \u00b7 curve n=545 \u00b7 2026-09-24 01:12:41 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $53.37 \u00b7 curve n=546 \u00b7 2026-09-24 01:13:29 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 544
+    "closed_n": 545
   },
-  "notes": "PAPER heartbeat \u00b7 eq $53.63 \u00b7 FLAT \u00b7 2026-09-24 01:12:41 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $53.37 \u00b7 FLAT \u00b7 2026-09-24 01:13:29 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.14 conf=0.94",
+    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.15 conf=0.94",
     "pick": "IMDSTRTGY",
     "open_p": 0.65,
     "confidence": 0.94,
-    "edge_score": 2.14,
+    "edge_score": 2.15,
     "picks": [
       {
         "sym": "IMDSTRTGY",
@@ -6593,8 +6603,8 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.14,
-        "confidence": 0.3
+        "score": 2.15,
+        "confidence": 0.32
       },
       "open_now": {
         "type": "noul",
@@ -6602,7 +6612,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 01:12:30 ET",
+    "stamp_et": "2026-09-24 01:13:24 ET",
     "live": true
   }
 }
