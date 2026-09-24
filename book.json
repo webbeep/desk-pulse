@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 12:50:29 ET",
+  "updated_et": "2026-09-24 12:51:15 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 45.8685,
-  "upnl_usd": -0.0041,
-  "equity_usd": 45.8644,
+  "liquid_usd": 46.351,
+  "upnl_usd": -0.0097,
+  "equity_usd": 46.3413,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -54.1356,
-  "total_pnl_pct": -54.1356,
-  "mark_eth": 2690.74,
-  "mark": 2690.74,
+  "total_pnl_usd": -53.6587,
+  "total_pnl_pct": -53.6587,
+  "mark_eth": 2687.43,
+  "mark": 2687.43,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.74
+    "ETH": 2687.43
   },
   "holdings": {
-    "paper_cash_usd": 41.2785,
+    "paper_cash_usd": 41.761,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,15 +46,15 @@
       "side": "LONG",
       "size_usd": 4.59,
       "entry": 1.223476987860206e-05,
-      "mark": 1.2223841217054726e-05,
-      "uPnL": -0.0041,
-      "mtm_pct": -0.0885,
+      "mark": 1.2208914264697389e-05,
+      "uPnL": -0.0097,
+      "mtm_pct": -0.2114,
       "sl": 9.787815902881649e-06,
       "tp": 1.835215481790309e-05,
       "lev": 1,
       "paper": true,
       "liq": 67083695638153680707333,
-      "held_min": 0.16
+      "held_min": 0.9
     }
   ],
   "pnl_history": [
@@ -9306,14 +9306,37 @@
       "pnl_usd": -0.0099
     },
     {
+      "t": "2026-09-24 12:50:43 ET",
+      "equity_usd": 46.351,
+      "liquid_usd": 46.351,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "WAGEFLOW",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.4825
+    },
+    {
       "t": "now",
-      "equity_usd": 45.8644,
-      "liquid_usd": 45.8644,
+      "equity_usd": 46.3413,
+      "liquid_usd": 46.3413,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 12:50:43 ET",
+      "kind": "PAPER",
+      "market": "WAGEFLOW",
+      "side": "LONG",
+      "size": 4.59,
+      "size_usd": 4.59,
+      "pnl_usd": 0.4825,
+      "pnl_pct": 10.5123,
+      "tx": "TP_+3.0",
+      "id": "PAPER-1104",
+      "paper": true
+    },
     {
       "t": "2026-09-24 12:50:07 ET",
       "kind": "PAPER",
@@ -10340,59 +10363,46 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-1024",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 11:25:34 ET",
-      "kind": "PAPER",
-      "market": "MYSTERY",
-      "side": "LONG",
-      "size": 7.62,
-      "size_usd": 7.62,
-      "pnl_usd": 0.8904,
-      "pnl_pct": 11.6847,
-      "tx": "TP_+3.0",
-      "id": "PAPER-1025",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 45.8685,
-    "mtm_equity_usd": 45.8644,
-    "realized_pnl_usd": -54.1315,
-    "unrealized_pnl_usd": -0.0041,
+    "paper_equity_usd": 46.351,
+    "mtm_equity_usd": 46.3413,
+    "realized_pnl_usd": -53.649,
+    "unrealized_pnl_usd": -0.0097,
     "open": {
       "id": "PAPER-1103",
       "ticker": "JIRACHI",
       "usd": 4.59,
-      "mtm_pct": -0.0885
+      "mtm_pct": -0.2114
     },
-    "notes": "PAPER heartbeat \u00b7 eq $45.87 \u00b7 curve n=926 \u00b7 2026-09-24 12:50:29 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $46.35 \u00b7 curve n=927 \u00b7 2026-09-24 12:51:15 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 924
+    "closed_n": 925
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $45.87 \u00b7 2026-09-24 12:50:29 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $46.35 \u00b7 2026-09-24 12:51:15 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SCHIFFY open_p=0.69 edge=2.31 conf=0.93",
+    "detail": "pick=SCHIFFY open_p=0.70 edge=2.33 conf=0.92",
     "pick": "SCHIFFY",
-    "open_p": 0.69,
-    "confidence": 0.93,
-    "edge_score": 2.31,
+    "open_p": 0.7,
+    "confidence": 0.92,
+    "edge_score": 2.33,
     "picks": [
       {
         "sym": "SCHIFFY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.93
       },
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.05
       },
       {
         "sym": "JIRACHI",
@@ -10412,20 +10422,20 @@
       "pick": {
         "type": "choice",
         "choice": "SCHIFFY",
-        "confidence": 0.93
+        "confidence": 0.92
       },
       "edge": {
         "type": "score",
-        "score": 2.31,
-        "confidence": 0.38
+        "score": 2.33,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.69
+        "noul": 0.7
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 12:50:15 ET",
+    "stamp_et": "2026-09-24 12:51:11 ET",
     "live": true
   }
 }
