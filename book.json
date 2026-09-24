@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 23:47:47 ET",
+  "updated_et": "2026-09-24 00:42:33 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 52.7985,
-  "upnl_usd": 0.0,
-  "equity_usd": 52.7985,
+  "upnl_usd": -0.0008,
+  "equity_usd": 52.7977,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -47.2015,
-  "total_pnl_pct": -47.2015,
-  "mark_eth": 2674.155,
-  "mark": 2674.155,
+  "total_pnl_usd": -47.2023,
+  "total_pnl_pct": -47.2023,
+  "mark_eth": 2675.425,
+  "mark": 2675.425,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2674.155
+    "ETH": 2675.425
   },
   "holdings": {
-    "paper_cash_usd": 52.7985,
+    "paper_cash_usd": 49.6285,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -5117,6 +5117,13 @@
       "ticker": "SINK",
       "reason": "TP_+3.0",
       "pnl_usd": 0.1231
+    },
+    {
+      "t": "now",
+      "equity_usd": 52.7977,
+      "liquid_usd": 52.7977,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -6165,23 +6172,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 52.7985,
-    "mtm_equity_usd": 52.7985,
+    "mtm_equity_usd": 52.7977,
     "realized_pnl_usd": -47.2015,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $52.80 \u00b7 curve n=508 \u00b7 2026-09-23 23:47:47 ET",
+    "unrealized_pnl_usd": -0.0008,
+    "open": {
+      "id": "PAPER-686",
+      "ticker": "IMDSTRTGY",
+      "usd": 3.17
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $52.80 \u00b7 curve n=509 \u00b7 2026-09-24 00:42:33 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 507
   },
-  "notes": "PAPER heartbeat \u00b7 eq $52.80 \u00b7 FLAT \u00b7 2026-09-23 23:47:47 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $52.80 \u00b7 2026-09-24 00:42:33 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.68 edge=2.31 conf=0.89",
+    "detail": "pick=IMDSTRTGY open_p=0.66 edge=2.26 conf=0.9",
     "pick": "IMDSTRTGY",
-    "open_p": 0.68,
-    "confidence": 0.89,
-    "edge_score": 2.31,
+    "open_p": 0.66,
+    "confidence": 0.9,
+    "edge_score": 2.26,
     "picks": [
       {
         "sym": "IMDSTRTGY",
@@ -6219,20 +6230,20 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.89
+        "confidence": 0.9
       },
       "edge": {
         "type": "score",
-        "score": 2.31,
-        "confidence": 0.32
+        "score": 2.26,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.68
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 23:47:46 ET",
+    "stamp_et": "2026-09-24 00:42:30 ET",
     "live": true
   }
 }
