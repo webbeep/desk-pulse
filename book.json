@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 21:05:54 ET",
+  "updated_et": "2026-09-23 21:06:42 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 48.7825,
-  "upnl_usd": -0.0009,
-  "equity_usd": 48.7816,
+  "liquid_usd": 49.1244,
+  "upnl_usd": -0.0049,
+  "equity_usd": 49.1195,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -51.2184,
-  "total_pnl_pct": -51.2184,
-  "mark_eth": 2681.205,
-  "mark": 2681.205,
+  "total_pnl_usd": -50.8805,
+  "total_pnl_pct": -50.8805,
+  "mark_eth": 2680.78,
+  "mark": 2680.78,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2681.205
+    "ETH": 2680.78
   },
   "holdings": {
-    "paper_cash_usd": 45.8525,
+    "paper_cash_usd": 46.1744,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,24 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-609",
+      "market": "BESSENT",
+      "side": "LONG",
+      "size_usd": 2.95,
+      "entry": 0.00021700722644402284,
+      "mark": 0.00021694102084951448,
+      "uPnL": -0.0009,
+      "mtm_pct": -0.0309,
+      "sl": 0.00017360578115521827,
+      "tp": 0.0003255108396660343,
+      "lev": 1,
+      "paper": true,
+      "liq": 70713633738326896357008,
+      "held_min": 0.03
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -4319,14 +4336,83 @@
       "pnl_usd": -0.2421
     },
     {
+      "t": "2026-09-23 21:06:01 ET",
+      "equity_usd": 49.4338,
+      "liquid_usd": 49.4338,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ROBIN",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.6513
+    },
+    {
+      "t": "2026-09-23 21:06:18 ET",
+      "equity_usd": 49.5575,
+      "liquid_usd": 49.5575,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "BESSENT",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.1237
+    },
+    {
+      "t": "2026-09-23 21:06:18 ET",
+      "equity_usd": 49.1244,
+      "liquid_usd": 49.1244,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ROBIN",
+      "reason": "CUT_HARD_-2.0",
+      "pnl_usd": -0.4331
+    },
+    {
       "t": "now",
-      "equity_usd": 48.7816,
-      "liquid_usd": 48.7816,
+      "equity_usd": 49.1195,
+      "liquid_usd": 49.1195,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 21:06:18 ET",
+      "kind": "PAPER",
+      "market": "ROBIN",
+      "side": "LONG",
+      "size": 2.97,
+      "size_usd": 2.97,
+      "pnl_usd": -0.4331,
+      "pnl_pct": -14.5825,
+      "tx": "CUT_HARD_-2.0",
+      "id": "PAPER-608",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 21:06:18 ET",
+      "kind": "PAPER",
+      "market": "BESSENT",
+      "side": "LONG",
+      "size": 2.93,
+      "size_usd": 2.93,
+      "pnl_usd": 0.1237,
+      "pnl_pct": 4.2232,
+      "tx": "TP_+3.0",
+      "id": "PAPER-606",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 21:06:01 ET",
+      "kind": "PAPER",
+      "market": "ROBIN",
+      "side": "LONG",
+      "size": 2.93,
+      "size_usd": 2.93,
+      "pnl_usd": 0.6513,
+      "pnl_pct": 22.2295,
+      "tx": "TP_+3.0",
+      "id": "PAPER-607",
+      "paper": true
+    },
     {
       "t": "2026-09-23 20:58:12 ET",
       "kind": "PAPER",
@@ -5327,72 +5413,34 @@
       "tx": "TP_+3.5",
       "id": "PAPER-529",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 14:04:43 ET",
-      "kind": "PAPER",
-      "market": "PALLAS",
-      "side": "LONG",
-      "size": 4.56,
-      "size_usd": 4.56,
-      "pnl_usd": 0.4047,
-      "pnl_pct": 8.876,
-      "tx": "TP_+3.5",
-      "id": "PAPER-528",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 13:59:10 ET",
-      "kind": "PAPER",
-      "market": "SSI",
-      "side": "LONG",
-      "size": 4.6,
-      "size_usd": 4.6,
-      "pnl_usd": -0.4833,
-      "pnl_pct": -10.5064,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-527",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 13:50:41 ET",
-      "kind": "PAPER",
-      "market": "SSI",
-      "side": "LONG",
-      "size": 4.61,
-      "size_usd": 4.61,
-      "pnl_usd": -0.22,
-      "pnl_pct": -4.7718,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-526",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 48.7825,
-    "mtm_equity_usd": 48.7816,
-    "realized_pnl_usd": -51.2175,
-    "unrealized_pnl_usd": -0.0009,
+    "paper_equity_usd": 49.1244,
+    "mtm_equity_usd": 49.1195,
+    "realized_pnl_usd": -50.8756,
+    "unrealized_pnl_usd": -0.0049,
     "open": {
-      "id": "PAPER-606",
+      "id": "PAPER-609",
       "ticker": "BESSENT",
-      "usd": 2.93
+      "usd": 2.95,
+      "mtm_pct": -0.0309
     },
-    "notes": "PAPER heartbeat \u00b7 eq $48.78 \u00b7 curve n=429 \u00b7 2026-09-23 21:05:54 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $49.12 \u00b7 curve n=432 \u00b7 2026-09-23 21:06:42 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 427
+    "closed_n": 430
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $48.78 \u00b7 2026-09-23 21:05:54 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $49.12 \u00b7 2026-09-23 21:06:42 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=BESSENT open_p=0.63 edge=2.21 conf=0.83",
+    "detail": "pick=BESSENT open_p=0.64 edge=2.23 conf=0.83",
     "pick": "BESSENT",
-    "open_p": 0.63,
+    "open_p": 0.64,
     "confidence": 0.83,
-    "edge_score": 2.21,
+    "edge_score": 2.23,
     "picks": [
       {
         "sym": "IMDSTRTGY",
@@ -5404,13 +5452,13 @@
         "sym": "BESSENT",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.86
+        "probs": 0.87
       },
       {
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       },
       {
         "sym": "ROBIN",
@@ -5428,16 +5476,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.21,
-        "confidence": 0.35
+        "score": 2.23,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 21:05:51 ET",
+    "stamp_et": "2026-09-23 21:06:37 ET",
     "live": true
   }
 }
