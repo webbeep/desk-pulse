@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-24 11:22:40 ET",
+  "updated_et": "2026-09-24 11:23:26 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 50.5256,
-  "upnl_usd": -0.1953,
-  "equity_usd": 50.3303,
+  "upnl_usd": 0.1112,
+  "equity_usd": 50.6368,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -49.6697,
-  "total_pnl_pct": -49.6697,
-  "mark_eth": 2666.475,
-  "mark": 2666.475,
+  "total_pnl_usd": -49.3632,
+  "total_pnl_pct": -49.3632,
+  "mark_eth": 2666.485,
+  "mark": 2666.485,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2666.475
+    "ETH": 2666.485
   },
   "holdings": {
     "paper_cash_usd": 42.9856,
@@ -46,15 +46,15 @@
       "side": "LONG",
       "size_usd": 7.54,
       "entry": 8.86178383181505e-05,
-      "mark": 8.833341501744768e-05,
-      "uPnL": -0.0242,
-      "mtm_pct": -0.321,
+      "mark": 8.787857279690228e-05,
+      "uPnL": -0.0629,
+      "mtm_pct": -0.8343,
       "sl": 7.08942706545204e-05,
       "tp": 0.00013292675747722575,
       "lev": 1,
       "paper": true,
       "liq": 100000088127620690885293,
-      "held_min": 0.4
+      "held_min": 1.19
     },
     {
       "id": "PAPER-1020",
@@ -62,15 +62,31 @@
       "side": "LONG",
       "size_usd": 7.54,
       "entry": 9.123613407300865e-05,
-      "mark": 8.91657756459673e-05,
-      "uPnL": -0.1711,
-      "mtm_pct": -2.269,
+      "mark": 9.347589646251979e-05,
+      "uPnL": 0.1851,
+      "mtm_pct": 2.4553,
       "sl": 7.298890725840692e-05,
       "tp": 0.000136854201109513,
       "lev": 1,
       "paper": true,
       "liq": 100000088127620690885293,
-      "held_min": 0.36
+      "held_min": 1.14
+    },
+    {
+      "id": "PAPER-1021",
+      "market": "JIRACHI",
+      "side": "LONG",
+      "size_usd": 7.58,
+      "entry": 1.2153727817981707e-05,
+      "mark": 1.2136090482098092e-05,
+      "uPnL": -0.011,
+      "mtm_pct": -0.145,
+      "sl": 9.722982254385365e-06,
+      "tp": 1.823059172697256e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": 67083695638153680707333,
+      "held_min": 0.71
     }
   ],
   "pnl_history": [
@@ -8483,8 +8499,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 50.3303,
-      "liquid_usd": 50.3303,
+      "equity_usd": 50.6368,
+      "liquid_usd": 50.6368,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -9535,28 +9551,28 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 50.5256,
-    "mtm_equity_usd": 50.3303,
+    "mtm_equity_usd": 50.6368,
     "realized_pnl_usd": -49.4744,
-    "unrealized_pnl_usd": -0.1953,
+    "unrealized_pnl_usd": 0.1112,
     "open": {
       "id": "PAPER-1018",
       "ticker": "MASASO",
       "usd": 7.54,
-      "mtm_pct": -0.321
+      "mtm_pct": -0.8343
     },
-    "notes": "PAPER heartbeat \u00b7 eq $50.53 \u00b7 curve n=842 \u00b7 2026-09-24 11:22:40 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $50.53 \u00b7 curve n=842 \u00b7 2026-09-24 11:23:26 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 840
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $50.53 \u00b7 2026-09-24 11:22:40 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $50.53 \u00b7 2026-09-24 11:23:26 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SCHIFFY open_p=0.71 edge=2.22 conf=0.93",
+    "detail": "pick=SCHIFFY open_p=0.71 edge=2.11 conf=0.93",
     "pick": "SCHIFFY",
     "open_p": 0.71,
     "confidence": 0.93,
-    "edge_score": 2.22,
+    "edge_score": 2.11,
     "picks": [
       {
         "sym": "SCHIFFY",
@@ -9598,8 +9614,8 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.22,
-        "confidence": 0.32
+        "score": 2.11,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
@@ -9607,7 +9623,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 11:22:11 ET",
+    "stamp_et": "2026-09-24 11:23:22 ET",
     "live": true
   }
 }
