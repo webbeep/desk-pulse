@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 15:17:55 ET",
+  "updated_et": "2026-09-24 15:18:43 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 46.5779,
-  "upnl_usd": -0.004,
-  "equity_usd": 46.5739,
+  "liquid_usd": 47.0807,
+  "upnl_usd": 0.0,
+  "equity_usd": 47.0807,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -53.4261,
-  "total_pnl_pct": -53.4261,
-  "mark_eth": 2694.015,
-  "mark": 2694.015,
+  "total_pnl_usd": -52.9193,
+  "total_pnl_pct": -52.9193,
+  "mark_eth": 2692.31,
+  "mark": 2692.31,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2694.015
+    "ETH": 2692.31
   },
   "holdings": {
-    "paper_cash_usd": 41.0579,
+    "paper_cash_usd": 47.0807,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -10749,14 +10749,30 @@
       "pnl_usd": 0.556
     },
     {
-      "t": "now",
-      "equity_usd": 46.5739,
-      "liquid_usd": 46.5739,
+      "t": "2026-09-24 15:17:59 ET",
+      "equity_usd": 47.0807,
+      "liquid_usd": 47.0807,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "JOLLY",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.5028
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 15:17:59 ET",
+      "kind": "PAPER",
+      "market": "JOLLY",
+      "side": "LONG",
+      "size": 5.52,
+      "size_usd": 5.52,
+      "pnl_usd": 0.5028,
+      "pnl_pct": 9.1083,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1249",
+      "paper": true
+    },
     {
       "t": "2026-09-24 15:17:53 ET",
       "kind": "PAPER",
@@ -11783,70 +11799,53 @@
       "tx": "TIME_SOFT_180s",
       "id": "PAPER-1165",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 13:25:14 ET",
-      "kind": "PAPER",
-      "market": "WAGEFLOW",
-      "side": "LONG",
-      "size": 4.63,
-      "size_usd": 4.63,
-      "pnl_usd": 0.386,
-      "pnl_pct": 8.3361,
-      "tx": "TP_+5.0",
-      "id": "PAPER-1170",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 46.5779,
-    "mtm_equity_usd": 46.5739,
-    "realized_pnl_usd": -53.4221,
-    "unrealized_pnl_usd": -0.004,
-    "open": {
-      "id": "PAPER-1249",
-      "ticker": "JOLLY",
-      "usd": 5.52
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $46.58 \u00b7 curve n=1072 \u00b7 2026-09-24 15:17:55 ET",
+    "paper_equity_usd": 47.0807,
+    "mtm_equity_usd": 47.0807,
+    "realized_pnl_usd": -52.9193,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $47.08 \u00b7 curve n=1072 \u00b7 2026-09-24 15:18:43 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1070
+    "closed_n": 1071
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $46.58 \u00b7 2026-09-24 15:17:55 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $47.08 \u00b7 FLAT \u00b7 2026-09-24 15:18:43 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=MUSEGOD open_p=0.65 edge=1.94 conf=0.91",
+    "detail": "pick=MUSEGOD open_p=0.65 edge=2.24 conf=0.92",
     "pick": "MUSEGOD",
     "open_p": 0.65,
-    "confidence": 0.91,
-    "edge_score": 1.94,
+    "confidence": 0.92,
+    "edge_score": 2.24,
     "picks": [
+      {
+        "sym": "JOLLY",
+        "lost_bps": 6,
+        "selected": false,
+        "probs": 0.03
+      },
       {
         "sym": "MUSEGOD",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.93
-      },
-      {
-        "sym": "F IN THE CHAT",
-        "lost_bps": 8,
-        "selected": false,
-        "probs": 0.01
-      },
-      {
-        "sym": "JOLLY",
-        "lost_bps": 9,
-        "selected": false,
-        "probs": 0.0
+        "probs": 0.94
       },
       {
         "sym": "FOOMS",
-        "lost_bps": 10,
+        "lost_bps": 7,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.02
+      },
+      {
+        "sym": "JOLLY",
+        "lost_bps": 11,
+        "selected": false,
+        "probs": 0.03
       }
     ],
     "model": "jev-1.13.0",
@@ -11854,12 +11853,12 @@
       "pick": {
         "type": "choice",
         "choice": "MUSEGOD",
-        "confidence": 0.91
+        "confidence": 0.92
       },
       "edge": {
         "type": "score",
-        "score": 1.94,
-        "confidence": 0.3
+        "score": 2.24,
+        "confidence": 0.32
       },
       "open_now": {
         "type": "noul",
@@ -11867,7 +11866,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 15:17:46 ET",
+    "stamp_et": "2026-09-24 15:18:41 ET",
     "live": true
   }
 }
