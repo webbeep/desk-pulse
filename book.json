@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 00:57:35 ET",
+  "updated_et": "2026-09-24 00:58:23 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 53.4405,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -46.5595,
   "total_pnl_pct": -46.5595,
-  "mark_eth": 2682.495,
-  "mark": 2682.495,
+  "mark_eth": 2682.725,
+  "mark": 2682.725,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2682.495
+    "ETH": 2682.725
   },
   "holdings": {
     "paper_cash_usd": 53.4405,
@@ -6329,37 +6329,31 @@
     "realized_pnl_usd": -46.5595,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $53.44 \u00b7 curve n=524 \u00b7 2026-09-24 00:57:35 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $53.44 \u00b7 curve n=524 \u00b7 2026-09-24 00:58:23 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 523
   },
-  "notes": "PAPER heartbeat \u00b7 eq $53.44 \u00b7 FLAT \u00b7 2026-09-24 00:57:35 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $53.44 \u00b7 FLAT \u00b7 2026-09-24 00:58:23 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.05 conf=0.93",
+    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.1 conf=0.9",
     "pick": "IMDSTRTGY",
     "open_p": 0.65,
-    "confidence": 0.93,
-    "edge_score": 2.05,
+    "confidence": 0.9,
+    "edge_score": 2.1,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.9299999999999999
+        "probs": 0.93
       },
       {
         "sym": "VORTA",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.03
-      },
-      {
-        "sym": "UP",
-        "lost_bps": 9,
-        "selected": false,
-        "probs": 0.01
+        "probs": 0.04
       },
       {
         "sym": "SHINYHUNTERS",
@@ -6372,6 +6366,12 @@
         "lost_bps": 10,
         "selected": false,
         "probs": 0.01
+      },
+      {
+        "sym": "UP",
+        "lost_bps": 11,
+        "selected": false,
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -6379,12 +6379,12 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.93
+        "confidence": 0.9
       },
       "edge": {
         "type": "score",
-        "score": 2.05,
-        "confidence": 0.32
+        "score": 2.1,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
@@ -6392,7 +6392,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 00:57:24 ET",
+    "stamp_et": "2026-09-24 00:58:17 ET",
     "live": true
   }
 }
