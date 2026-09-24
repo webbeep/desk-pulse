@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-23 23:12:04 ET",
+  "updated_et": "2026-09-23 23:12:52 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 52.5739,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -47.4261,
   "total_pnl_pct": -47.4261,
-  "mark_eth": 2680.11,
-  "mark": 2680.11,
+  "mark_eth": 2679.53,
+  "mark": 2679.53,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2680.11
+    "ETH": 2679.53
   },
   "holdings": {
     "paper_cash_usd": 52.5739,
@@ -6039,43 +6039,43 @@
     "realized_pnl_usd": -47.4261,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $52.57 \u00b7 curve n=495 \u00b7 2026-09-23 23:12:04 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $52.57 \u00b7 curve n=495 \u00b7 2026-09-23 23:12:52 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 494
   },
-  "notes": "PAPER heartbeat \u00b7 eq $52.57 \u00b7 FLAT \u00b7 2026-09-23 23:12:04 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $52.57 \u00b7 FLAT \u00b7 2026-09-23 23:12:52 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.64 edge=2.09 conf=0.9",
+    "detail": "pick=IMDSTRTGY open_p=0.64 edge=2.07 conf=0.93",
     "pick": "IMDSTRTGY",
     "open_p": 0.64,
-    "confidence": 0.9,
-    "edge_score": 2.09,
+    "confidence": 0.93,
+    "edge_score": 2.07,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.92
-      },
-      {
-        "sym": "UP",
-        "lost_bps": 5,
-        "selected": false,
-        "probs": 0.01
+        "probs": 0.94
       },
       {
         "sym": "SINK",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.04
       },
       {
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
         "probs": 0.01
+      },
+      {
+        "sym": "UP",
+        "lost_bps": 6,
+        "selected": false,
+        "probs": 0.0
       },
       {
         "sym": "SHINYHUNTERS",
@@ -6089,12 +6089,12 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.9
+        "confidence": 0.93
       },
       "edge": {
         "type": "score",
-        "score": 2.09,
-        "confidence": 0.32
+        "score": 2.07,
+        "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
@@ -6102,7 +6102,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 23:12:03 ET",
+    "stamp_et": "2026-09-23 23:12:43 ET",
     "live": true
   }
 }
