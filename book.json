@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 13:10:14 ET",
+  "updated_et": "2026-09-24 13:11:00 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 48.8719,
-  "upnl_usd": -0.1566,
-  "equity_usd": 48.7153,
+  "liquid_usd": 48.7387,
+  "upnl_usd": 0.0,
+  "equity_usd": 48.7387,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -51.2847,
-  "total_pnl_pct": -51.2847,
-  "mark_eth": 2684.305,
-  "mark": 2684.305,
+  "total_pnl_usd": -51.2613,
+  "total_pnl_pct": -51.2613,
+  "mark_eth": 2683.75,
+  "mark": 2683.75,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2684.305
+    "ETH": 2683.75
   },
   "holdings": {
-    "paper_cash_usd": 44.0619,
+    "paper_cash_usd": 48.7387,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,40 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-1135",
-      "market": "MUSEPAD",
-      "side": "LONG",
-      "size_usd": 4.81,
-      "entry": 3.0675751812103095e-06,
-      "mark": 3.0379198286268837e-06,
-      "uPnL": -0.0465,
-      "mtm_pct": -0.9674,
-      "sl": 2.454060144968248e-06,
-      "tp": 4.601362771815464e-06,
-      "lev": 1,
-      "paper": true,
-      "liq": 31942214267140718596898,
-      "held_min": 0.41
-    },
-    {
-      "id": "PAPER-1136",
-      "market": "IMDSTRTGY",
-      "side": "LONG",
-      "size_usd": 4.86,
-      "entry": 0.004261456273300832,
-      "mark": 0.004164915875010622,
-      "uPnL": -0.1101,
-      "mtm_pct": -2.2651,
-      "sl": 0.003409165018640666,
-      "tp": 0.006392184409951248,
-      "lev": 1,
-      "paper": true,
-      "liq": 31955552739096822844211,
-      "held_min": 0.18
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -9652,14 +9619,122 @@
       "pnl_usd": 0.2399
     },
     {
-      "t": "now",
-      "equity_usd": 48.7153,
-      "liquid_usd": 48.7153,
+      "t": "2026-09-24 13:10:23 ET",
+      "equity_usd": 48.6926,
+      "liquid_usd": 48.6926,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "IMDSTRTGY",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -0.1793
+    },
+    {
+      "t": "2026-09-24 13:10:37 ET",
+      "equity_usd": 48.1926,
+      "liquid_usd": 48.1926,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "WAGEFLOW",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -0.5
+    },
+    {
+      "t": "2026-09-24 13:10:57 ET",
+      "equity_usd": 48.6196,
+      "liquid_usd": 48.6196,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "WAGEFLOW",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.427
+    },
+    {
+      "t": "2026-09-24 13:10:57 ET",
+      "equity_usd": 48.5708,
+      "liquid_usd": 48.5708,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "MUSEPAD",
+      "reason": "TIME_SOFT_90s",
+      "pnl_usd": -0.0488
+    },
+    {
+      "t": "2026-09-24 13:10:58 ET",
+      "equity_usd": 48.7387,
+      "liquid_usd": 48.7387,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "IMDSTRTGY",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.1679
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 13:10:58 ET",
+      "kind": "PAPER",
+      "market": "IMDSTRTGY",
+      "side": "LONG",
+      "size": 4.87,
+      "size_usd": 4.87,
+      "pnl_usd": 0.1679,
+      "pnl_pct": 3.4469,
+      "tx": "TP_+3.0",
+      "id": "PAPER-1139",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 13:10:57 ET",
+      "kind": "PAPER",
+      "market": "MUSEPAD",
+      "side": "LONG",
+      "size": 4.81,
+      "size_usd": 4.81,
+      "pnl_usd": -0.0488,
+      "pnl_pct": -1.0156,
+      "tx": "TIME_SOFT_90s",
+      "id": "PAPER-1135",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 13:10:57 ET",
+      "kind": "PAPER",
+      "market": "WAGEFLOW",
+      "side": "LONG",
+      "size": 4.82,
+      "size_usd": 4.82,
+      "pnl_usd": 0.427,
+      "pnl_pct": 8.858,
+      "tx": "TP_+3.0",
+      "id": "PAPER-1140",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 13:10:37 ET",
+      "kind": "PAPER",
+      "market": "WAGEFLOW",
+      "side": "LONG",
+      "size": 4.89,
+      "size_usd": 4.89,
+      "pnl_usd": -0.5,
+      "pnl_pct": -10.2245,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-1138",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 13:10:23 ET",
+      "kind": "PAPER",
+      "market": "IMDSTRTGY",
+      "side": "LONG",
+      "size": 4.86,
+      "size_usd": 4.86,
+      "pnl_usd": -0.1793,
+      "pnl_pct": -3.6901,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-1136",
+      "paper": true
+    },
     {
       "t": "2026-09-24 13:10:05 ET",
       "kind": "PAPER",
@@ -10634,99 +10709,29 @@
       "tx": "TP_+3.0",
       "id": "PAPER-1062",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 11:54:14 ET",
-      "kind": "PAPER",
-      "market": "LILY",
-      "side": "LONG",
-      "size": 4.66,
-      "size_usd": 4.66,
-      "pnl_usd": -0.1618,
-      "pnl_pct": -3.4721,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-1061",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 11:53:28 ET",
-      "kind": "PAPER",
-      "market": "MASASO",
-      "side": "LONG",
-      "size": 4.66,
-      "size_usd": 4.66,
-      "pnl_usd": 0.1485,
-      "pnl_pct": 3.1861,
-      "tx": "TP_+3.0",
-      "id": "PAPER-1059",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 11:53:16 ET",
-      "kind": "PAPER",
-      "market": "SCHIFFY",
-      "side": "LONG",
-      "size": 4.66,
-      "size_usd": 4.66,
-      "pnl_usd": -0.1676,
-      "pnl_pct": -3.5976,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-1058",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 11:53:04 ET",
-      "kind": "PAPER",
-      "market": "JIRACHI",
-      "side": "LONG",
-      "size": 4.67,
-      "size_usd": 4.67,
-      "pnl_usd": -0.0101,
-      "pnl_pct": -0.2168,
-      "tx": "TIME_EXIT_90s",
-      "id": "PAPER-1056",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 11:52:09 ET",
-      "kind": "PAPER",
-      "market": "IMDSTRTGY",
-      "side": "LONG",
-      "size": 4.67,
-      "size_usd": 4.67,
-      "pnl_usd": -0.1545,
-      "pnl_pct": -3.3089,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-1057",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 48.8719,
-    "mtm_equity_usd": 48.7153,
-    "realized_pnl_usd": -51.1281,
-    "unrealized_pnl_usd": -0.1566,
-    "open": {
-      "id": "PAPER-1135",
-      "ticker": "MUSEPAD",
-      "usd": 4.81,
-      "mtm_pct": -0.9674
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $48.87 \u00b7 curve n=959 \u00b7 2026-09-24 13:10:14 ET",
+    "paper_equity_usd": 48.7387,
+    "mtm_equity_usd": 48.7387,
+    "realized_pnl_usd": -51.2613,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $48.74 \u00b7 curve n=963 \u00b7 2026-09-24 13:11:00 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 957
+    "closed_n": 962
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $48.87 \u00b7 2026-09-24 13:10:14 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $48.74 \u00b7 FLAT \u00b7 2026-09-24 13:11:00 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SCHIFFY open_p=0.70 edge=2.43 conf=0.92",
+    "detail": "pick=SCHIFFY open_p=0.70 edge=2.38 conf=0.93",
     "pick": "SCHIFFY",
     "open_p": 0.7,
-    "confidence": 0.92,
-    "edge_score": 2.43,
+    "confidence": 0.93,
+    "edge_score": 2.38,
     "picks": [
       {
         "sym": "SCHIFFY",
@@ -10758,12 +10763,12 @@
       "pick": {
         "type": "choice",
         "choice": "SCHIFFY",
-        "confidence": 0.92
+        "confidence": 0.93
       },
       "edge": {
         "type": "score",
-        "score": 2.43,
-        "confidence": 0.32
+        "score": 2.38,
+        "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
@@ -10771,7 +10776,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 13:10:13 ET",
+    "stamp_et": "2026-09-24 13:10:46 ET",
     "live": true
   }
 }
