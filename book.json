@@ -12253,15 +12253,13 @@
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1115
   },
-  "notes": "PAPER heartbeat \u00b7 eq $49.89 \u00b7 FLAT \u00b7 2026-09-24 19:01:13 ET",
+  "notes": "JEV OPEN \u00b7 pick=JOLLY open_p=0.70 edge=2.57 conf=0.86 \u00b7 PAPER heartbeat \u00b7 eq $49.89 \u00b7 FLAT \u00b7 2026-09-24 19:01:13 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-24 19:01:13 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=JOLLY open_p=0.70 edge=2.55 conf=0.85",
-    "pick": "JOLLY",
-    "open_p": 0.7,
-    "confidence": 0.85,
-    "edge_score": 2.55,
+    "detail": "pick=JOLLY open_p=0.70 edge=2.57 conf=0.86",
     "picks": [
       {
         "sym": "JOLLY",
@@ -12273,13 +12271,13 @@
         "sym": "HAT",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.12
+        "probs": 0.1
       },
       {
         "sym": "FOOMS",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "SCHIFFY",
@@ -12289,30 +12287,15 @@
       },
       {
         "sym": "WAGEFLOW",
-        "lost_bps": 43,
+        "lost_bps": 46,
         "selected": false,
         "probs": 0.0
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "JOLLY",
-        "confidence": 0.85
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.55,
-        "confidence": 0.35
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.7
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-24 19:01:00 ET",
+    "open_p": 0.7,
+    "risk": null,
+    "confidence": 0.86,
     "live": true
   }
 }
