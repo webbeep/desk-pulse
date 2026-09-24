@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 14:44:54 ET",
+  "updated_et": "2026-09-24 14:45:42 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 45.7412,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -54.2588,
   "total_pnl_pct": -54.2588,
-  "mark_eth": 2686.715,
-  "mark": 2686.715,
+  "mark_eth": 2687.355,
+  "mark": 2687.355,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2686.715
+    "ETH": 2687.355
   },
   "holdings": {
     "paper_cash_usd": 45.7412,
@@ -11749,37 +11749,37 @@
     "realized_pnl_usd": -54.2588,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $45.74 \u00b7 curve n=1066 \u00b7 2026-09-24 14:44:54 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $45.74 \u00b7 curve n=1066 \u00b7 2026-09-24 14:45:42 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1065
   },
-  "notes": "PAPER heartbeat \u00b7 eq $45.74 \u00b7 FLAT \u00b7 2026-09-24 14:44:54 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $45.74 \u00b7 FLAT \u00b7 2026-09-24 14:45:42 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=JOLLY open_p=0.61 edge=2.03 conf=0.9",
+    "detail": "pick=JOLLY open_p=0.61 edge=1.88 conf=0.83",
     "pick": "JOLLY",
     "open_p": 0.61,
-    "confidence": 0.9,
-    "edge_score": 2.03,
+    "confidence": 0.83,
+    "edge_score": 1.88,
     "picks": [
       {
         "sym": "MUSEGOD",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.06
       },
       {
         "sym": "F IN THE CHAT",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.05
       },
       {
         "sym": "JOLLY",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.93
+        "probs": 0.87
       }
     ],
     "model": "jev-1.13.0",
@@ -11787,12 +11787,12 @@
       "pick": {
         "type": "choice",
         "choice": "JOLLY",
-        "confidence": 0.9
+        "confidence": 0.83
       },
       "edge": {
         "type": "score",
-        "score": 2.03,
-        "confidence": 0.34
+        "score": 1.88,
+        "confidence": 0.25
       },
       "open_now": {
         "type": "noul",
@@ -11800,7 +11800,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 14:44:49 ET",
+    "stamp_et": "2026-09-24 14:45:42 ET",
     "live": true
   }
 }
