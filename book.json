@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 19:01:13 ET",
+  "updated_et": "2026-09-24 19:01:59 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 49.8899,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -50.1101,
   "total_pnl_pct": -50.1101,
-  "mark_eth": 2685.145,
-  "mark": 2685.145,
+  "mark_eth": 2685.025,
+  "mark": 2685.025,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2685.145
+    "ETH": 2685.025
   },
   "holdings": {
     "paper_cash_usd": 49.8899,
@@ -12249,35 +12249,37 @@
     "realized_pnl_usd": -50.1101,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $49.89 \u00b7 curve n=1116 \u00b7 2026-09-24 19:01:13 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $49.89 \u00b7 curve n=1116 \u00b7 2026-09-24 19:01:59 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1115
   },
-  "notes": "JEV OPEN \u00b7 pick=JOLLY open_p=0.70 edge=2.57 conf=0.86 \u00b7 PAPER heartbeat \u00b7 eq $49.89 \u00b7 FLAT \u00b7 2026-09-24 19:01:13 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $49.89 \u00b7 FLAT \u00b7 2026-09-24 19:01:59 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
-    "stamp_et": "2026-09-24 19:01:13 ET",
-    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=JOLLY open_p=0.70 edge=2.57 conf=0.86",
+    "detail": "pick=JOLLY open_p=0.69 edge=2.49 conf=0.89",
+    "pick": "JOLLY",
+    "open_p": 0.69,
+    "confidence": 0.89,
+    "edge_score": 2.49,
     "picks": [
       {
         "sym": "JOLLY",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.88
+        "probs": 0.91
       },
       {
         "sym": "HAT",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.1
+        "probs": 0.09
       },
       {
         "sym": "FOOMS",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "SCHIFFY",
@@ -12292,10 +12294,25 @@
         "probs": 0.0
       }
     ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "JOLLY",
+        "confidence": 0.89
+      },
+      "edge": {
+        "type": "score",
+        "score": 2.49,
+        "confidence": 0.33
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.69
+      }
+    },
     "idle": null,
-    "open_p": 0.7,
-    "risk": null,
-    "confidence": 0.86,
+    "stamp_et": "2026-09-24 19:01:53 ET",
     "live": true
   }
 }
