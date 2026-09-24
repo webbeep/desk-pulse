@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 19:22:33 ET",
+  "updated_et": "2026-09-24 19:23:20 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 50.0646,
-  "upnl_usd": 0.0903,
-  "equity_usd": 50.1549,
+  "liquid_usd": 50.0828,
+  "upnl_usd": -0.0309,
+  "equity_usd": 50.0519,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -49.8451,
-  "total_pnl_pct": -49.8451,
-  "mark_eth": 2688.905,
-  "mark": 2688.905,
+  "total_pnl_usd": -49.9481,
+  "total_pnl_pct": -49.9481,
+  "mark_eth": 2689.27,
+  "mark": 2689.27,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2688.905
+    "ETH": 2689.27
   },
   "holdings": {
-    "paper_cash_usd": 44.0546,
+    "paper_cash_usd": 44.0728,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -11279,14 +11279,37 @@
       "pnl_usd": -0.8322
     },
     {
+      "t": "2026-09-24 19:22:56 ET",
+      "equity_usd": 50.0828,
+      "liquid_usd": 50.0828,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JOLLY",
+      "reason": "TRAIL_2.0",
+      "pnl_usd": 0.0182
+    },
+    {
       "t": "now",
-      "equity_usd": 50.1549,
-      "liquid_usd": 50.1549,
+      "equity_usd": 50.0519,
+      "liquid_usd": 50.0519,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 19:22:56 ET",
+      "kind": "PAPER",
+      "market": "JOLLY",
+      "side": "LONG",
+      "size": 6.01,
+      "size_usd": 6.01,
+      "pnl_usd": 0.0182,
+      "pnl_pct": 0.302,
+      "tx": "TRAIL_2.0",
+      "id": "PAPER-1302",
+      "paper": true
+    },
     {
       "t": "2026-09-24 19:20:20 ET",
       "kind": "PAPER",
@@ -12313,64 +12336,51 @@
       "tx": "TP_+5.0",
       "id": "PAPER-1224",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 13:52:44 ET",
-      "kind": "PAPER",
-      "market": "OPENMUSE",
-      "side": "LONG",
-      "size": 5.57,
-      "size_usd": 5.57,
-      "pnl_usd": 0.9798,
-      "pnl_pct": 17.5902,
-      "tx": "TP_+5.0",
-      "id": "PAPER-1223",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 50.0646,
-    "mtm_equity_usd": 50.1549,
-    "realized_pnl_usd": -49.9354,
-    "unrealized_pnl_usd": 0.0903,
+    "paper_equity_usd": 50.0828,
+    "mtm_equity_usd": 50.0519,
+    "realized_pnl_usd": -49.9172,
+    "unrealized_pnl_usd": -0.0309,
     "open": {
-      "id": "PAPER-1302",
+      "id": "PAPER-1303",
       "ticker": "JOLLY",
       "usd": 6.01
     },
-    "notes": "PAPER heartbeat \u00b7 eq $50.06 \u00b7 curve n=1125 \u00b7 2026-09-24 19:22:33 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $50.08 \u00b7 curve n=1126 \u00b7 2026-09-24 19:23:20 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1123
+    "closed_n": 1124
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $50.06 \u00b7 2026-09-24 19:22:33 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $50.08 \u00b7 2026-09-24 19:23:20 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=HAT open_p=0.67 edge=2.64 conf=0.76",
+    "detail": "pick=HAT open_p=0.66 edge=2.47 conf=0.72",
     "pick": "HAT",
-    "open_p": 0.67,
-    "confidence": 0.76,
-    "edge_score": 2.64,
+    "open_p": 0.66,
+    "confidence": 0.72,
+    "edge_score": 2.47,
     "picks": [
       {
         "sym": "HAT",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.81
+        "probs": 0.78
       },
       {
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.17
+        "probs": 0.19
       },
       {
         "sym": "FOOMS",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
       },
       {
         "sym": "WAGEFLOW",
@@ -12384,20 +12394,20 @@
       "pick": {
         "type": "choice",
         "choice": "HAT",
-        "confidence": 0.76
+        "confidence": 0.72
       },
       "edge": {
         "type": "score",
-        "score": 2.64,
-        "confidence": 0.38
+        "score": 2.47,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 19:22:28 ET",
+    "stamp_et": "2026-09-24 19:23:20 ET",
     "live": true
   }
 }
