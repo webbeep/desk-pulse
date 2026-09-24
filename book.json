@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 11:54:37 ET",
+  "updated_et": "2026-09-24 11:55:26 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 46.394,
-  "upnl_usd": 0.1161,
-  "equity_usd": 46.5101,
+  "liquid_usd": 46.5681,
+  "upnl_usd": 0.0,
+  "equity_usd": 46.5681,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -53.4899,
-  "total_pnl_pct": -53.4899,
-  "mark_eth": 2681.425,
-  "mark": 2681.425,
+  "total_pnl_usd": -53.4319,
+  "total_pnl_pct": -53.4319,
+  "mark_eth": 2682.98,
+  "mark": 2682.98,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2681.425
+    "ETH": 2682.98
   },
   "holdings": {
-    "paper_cash_usd": 41.734,
+    "paper_cash_usd": 46.5681,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,40 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-1060",
-      "market": "JIRACHI",
-      "side": "LONG",
-      "size_usd": 4.66,
-      "entry": 1.2186429704898847e-05,
-      "mark": 1.2181460988924746e-05,
-      "uPnL": -0.0019,
-      "mtm_pct": -0.0401,
-      "sl": 9.749143763919078e-06,
-      "tp": 1.827964455734827e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 67083695638153680707333,
-      "held_min": 1.44
-    },
-    {
-      "id": "PAPER-1062",
-      "market": "3C934E",
-      "side": "LONG",
-      "size_usd": 4.64,
-      "entry": 0.01634022750711723,
-      "mark": 0.01675577639630685,
-      "uPnL": 0.118,
-      "mtm_pct": 2.5437,
-      "sl": 0.013072182005693784,
-      "tp": 0.024510341260675843,
-      "lev": 1,
-      "paper": true,
-      "liq": 31942214267140718596898,
-      "held_min": 0.29
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -8902,14 +8869,53 @@
       "pnl_usd": -0.1618
     },
     {
-      "t": "now",
-      "equity_usd": 46.5101,
-      "liquid_usd": 46.5101,
+      "t": "2026-09-24 11:54:43 ET",
+      "equity_usd": 46.57,
+      "liquid_usd": 46.57,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "3C934E",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.176
+    },
+    {
+      "t": "2026-09-24 11:54:43 ET",
+      "equity_usd": 46.5681,
+      "liquid_usd": 46.5681,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JIRACHI",
+      "reason": "TIME_EXIT_90s",
+      "pnl_usd": -0.0019
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 11:54:43 ET",
+      "kind": "PAPER",
+      "market": "JIRACHI",
+      "side": "LONG",
+      "size": 4.66,
+      "size_usd": 4.66,
+      "pnl_usd": -0.0019,
+      "pnl_pct": -0.0401,
+      "tx": "TIME_EXIT_90s",
+      "id": "PAPER-1060",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 11:54:43 ET",
+      "kind": "PAPER",
+      "market": "3C934E",
+      "side": "LONG",
+      "size": 4.64,
+      "size_usd": 4.64,
+      "pnl_usd": 0.176,
+      "pnl_pct": 3.7941,
+      "tx": "TP_+3.0",
+      "id": "PAPER-1062",
+      "paper": true
+    },
     {
       "t": "2026-09-24 11:54:14 ET",
       "kind": "PAPER",
@@ -9923,66 +9929,35 @@
       "tx": "TIME_SOFT_45s",
       "id": "PAPER-983",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 10:15:30 ET",
-      "kind": "PAPER",
-      "market": "BORN",
-      "side": "LONG",
-      "size": 3.66,
-      "size_usd": 3.66,
-      "pnl_usd": -0.3197,
-      "pnl_pct": -8.7361,
-      "tx": "CUT_HARD_-2.0",
-      "id": "PAPER-982",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 10:14:44 ET",
-      "kind": "PAPER",
-      "market": "3C934E",
-      "side": "LONG",
-      "size": 3.65,
-      "size_usd": 3.65,
-      "pnl_usd": 0.1129,
-      "pnl_pct": 3.0936,
-      "tx": "TP_+3.0",
-      "id": "PAPER-981",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 46.394,
-    "mtm_equity_usd": 46.5101,
-    "realized_pnl_usd": -53.606,
-    "unrealized_pnl_usd": 0.1161,
-    "open": {
-      "id": "PAPER-1060",
-      "ticker": "JIRACHI",
-      "usd": 4.66,
-      "mtm_pct": -0.0401
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $46.39 \u00b7 curve n=884 \u00b7 2026-09-24 11:54:37 ET",
+    "paper_equity_usd": 46.5681,
+    "mtm_equity_usd": 46.5681,
+    "realized_pnl_usd": -53.4319,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $46.57 \u00b7 curve n=885 \u00b7 2026-09-24 11:55:26 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 882
+    "closed_n": 884
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $46.39 \u00b7 2026-09-24 11:54:37 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $46.57 \u00b7 FLAT \u00b7 2026-09-24 11:55:26 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SCHIFFY open_p=0.72 edge=2.12 conf=0.91",
+    "detail": "pick=SCHIFFY open_p=0.70 edge=2.15 conf=0.91",
     "pick": "SCHIFFY",
-    "open_p": 0.72,
+    "open_p": 0.7,
     "confidence": 0.91,
-    "edge_score": 2.12,
+    "edge_score": 2.15,
     "picks": [
       {
         "sym": "SCHIFFY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.92
+        "probs": 0.93
       },
       {
         "sym": "IMDSTRTGY",
@@ -10000,7 +9975,7 @@
         "sym": "LILY",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "MUSEPAD",
@@ -10018,16 +9993,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.12,
-        "confidence": 0.32
+        "score": 2.15,
+        "confidence": 0.27
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.72
+        "noul": 0.7
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 11:54:33 ET",
+    "stamp_et": "2026-09-24 11:55:25 ET",
     "live": true
   }
 }
