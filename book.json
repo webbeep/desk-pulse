@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-24 18:43:06 ET",
+  "updated_et": "2026-09-24 18:43:53 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 50.3094,
-  "upnl_usd": -0.0217,
-  "equity_usd": 50.2877,
+  "upnl_usd": -0.0183,
+  "equity_usd": 50.2911,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -49.7123,
-  "total_pnl_pct": -49.7123,
-  "mark_eth": 2679.73,
-  "mark": 2679.73,
+  "total_pnl_usd": -49.7089,
+  "total_pnl_pct": -49.7089,
+  "mark_eth": 2681.085,
+  "mark": 2681.085,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2679.73
+    "ETH": 2681.085
   },
   "holdings": {
     "paper_cash_usd": 44.1394,
@@ -11160,8 +11160,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 50.2877,
-      "liquid_usd": 50.2877,
+      "equity_usd": 50.2911,
+      "liquid_usd": 50.2911,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -12212,39 +12212,39 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 50.3094,
-    "mtm_equity_usd": 50.2877,
+    "mtm_equity_usd": 50.2911,
     "realized_pnl_usd": -49.6906,
-    "unrealized_pnl_usd": -0.0217,
+    "unrealized_pnl_usd": -0.0183,
     "open": {
       "id": "PAPER-1287",
       "ticker": "SCHIFFY",
       "usd": 6.17
     },
-    "notes": "PAPER heartbeat \u00b7 eq $50.31 \u00b7 curve n=1113 \u00b7 2026-09-24 18:43:06 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $50.31 \u00b7 curve n=1113 \u00b7 2026-09-24 18:43:53 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1111
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $50.31 \u00b7 2026-09-24 18:43:06 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $50.31 \u00b7 2026-09-24 18:43:53 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=JOLLY open_p=0.69 edge=2.58 conf=0.95",
+    "detail": "pick=JOLLY open_p=0.69 edge=2.61 conf=0.9",
     "pick": "JOLLY",
     "open_p": 0.69,
-    "confidence": 0.95,
-    "edge_score": 2.58,
+    "confidence": 0.9,
+    "edge_score": 2.61,
     "picks": [
       {
         "sym": "JOLLY",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.96
+        "probs": 0.92
       },
       {
         "sym": "HAT",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.07
       },
       {
         "sym": "WAGEFLOW",
@@ -12264,12 +12264,12 @@
       "pick": {
         "type": "choice",
         "choice": "JOLLY",
-        "confidence": 0.95
+        "confidence": 0.9
       },
       "edge": {
         "type": "score",
-        "score": 2.58,
-        "confidence": 0.4
+        "score": 2.61,
+        "confidence": 0.44
       },
       "open_now": {
         "type": "noul",
@@ -12277,7 +12277,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 18:42:58 ET",
+    "stamp_et": "2026-09-24 18:43:50 ET",
     "live": true
   }
 }
