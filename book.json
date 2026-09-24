@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 22:45:41 ET",
+  "updated_et": "2026-09-23 22:46:29 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 51.6785,
+  "liquid_usd": 51.6765,
   "upnl_usd": 0.0,
-  "equity_usd": 51.6785,
+  "equity_usd": 51.6765,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -48.3215,
-  "total_pnl_pct": -48.3215,
-  "mark_eth": 2685.615,
-  "mark": 2685.615,
+  "total_pnl_usd": -48.3235,
+  "total_pnl_pct": -48.3235,
+  "mark_eth": 2685.945,
+  "mark": 2685.945,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2685.615
+    "ETH": 2685.945
   },
   "holdings": {
-    "paper_cash_usd": 51.6785,
+    "paper_cash_usd": 51.6765,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -4827,9 +4827,32 @@
       "ticker": "GIGACAT",
       "reason": "TIME_SOFT_45s",
       "pnl_usd": -0.0023
+    },
+    {
+      "t": "2026-09-23 22:46:28 ET",
+      "equity_usd": 51.6765,
+      "liquid_usd": 51.6765,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "9D2A08",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.002
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 22:46:28 ET",
+      "kind": "PAPER",
+      "market": "9D2A08",
+      "side": "LONG",
+      "size": 3.1,
+      "size_usd": 3.1,
+      "pnl_usd": -0.002,
+      "pnl_pct": -0.0659,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-657",
+      "paper": true
+    },
     {
       "t": "2026-09-23 22:45:37 ET",
       "kind": "PAPER",
@@ -5856,48 +5879,35 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-578",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 20:00:56 ET",
-      "kind": "PAPER",
-      "market": "IMDSTRTGY",
-      "side": "LONG",
-      "size": 4.1,
-      "size_usd": 4.1,
-      "pnl_usd": -0.6243,
-      "pnl_pct": -15.2264,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-577",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 51.6785,
-    "mtm_equity_usd": 51.6785,
-    "realized_pnl_usd": -48.3215,
+    "paper_equity_usd": 51.6765,
+    "mtm_equity_usd": 51.6765,
+    "realized_pnl_usd": -48.3235,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $51.68 \u00b7 curve n=479 \u00b7 2026-09-23 22:45:41 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $51.68 \u00b7 curve n=480 \u00b7 2026-09-23 22:46:29 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 478
+    "closed_n": 479
   },
-  "notes": "PAPER heartbeat \u00b7 eq $51.68 \u00b7 FLAT \u00b7 2026-09-23 22:45:41 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $51.68 \u00b7 FLAT \u00b7 2026-09-23 22:46:29 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.1 conf=0.91",
+    "detail": "pick=IMDSTRTGY open_p=0.64 edge=2.12 conf=0.89",
     "pick": "IMDSTRTGY",
-    "open_p": 0.65,
-    "confidence": 0.91,
-    "edge_score": 2.1,
+    "open_p": 0.64,
+    "confidence": 0.89,
+    "edge_score": 2.12,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.92
+        "probs": 0.91
       },
       {
         "sym": "PARAFACTUAL",
@@ -5909,7 +5919,7 @@
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
       },
       {
         "sym": "SHINYHUNTERS",
@@ -5929,20 +5939,20 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.91
+        "confidence": 0.89
       },
       "edge": {
         "type": "score",
-        "score": 2.1,
-        "confidence": 0.36
+        "score": 2.12,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 22:45:35 ET",
+    "stamp_et": "2026-09-23 22:46:29 ET",
     "live": true
   }
 }
