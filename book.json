@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 12:04:08 ET",
+  "updated_et": "2026-09-24 12:04:54 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 45.7111,
-  "upnl_usd": 0.0573,
-  "equity_usd": 45.7684,
+  "liquid_usd": 45.7955,
+  "upnl_usd": 0.0,
+  "equity_usd": 45.7955,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -54.2316,
-  "total_pnl_pct": -54.2316,
-  "mark_eth": 2674.005,
-  "mark": 2674.005,
+  "total_pnl_usd": -54.2045,
+  "total_pnl_pct": -54.2045,
+  "mark_eth": 2673.835,
+  "mark": 2673.835,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2674.005
+    "ETH": 2673.835
   },
   "holdings": {
-    "paper_cash_usd": 41.1411,
+    "paper_cash_usd": 45.7955,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-1068",
-      "market": "MASASO",
-      "side": "LONG",
-      "size_usd": 4.57,
-      "entry": 0.0001327699130314993,
-      "mark": 0.00013443462113143476,
-      "uPnL": 0.0573,
-      "mtm_pct": 1.2536,
-      "sl": 0.00010621593042519945,
-      "tp": 0.00019915486954724898,
-      "lev": 1,
-      "paper": true,
-      "liq": 100000088127620690885293,
-      "held_min": 0.14
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -8956,14 +8939,30 @@
       "pnl_usd": -1.1436
     },
     {
-      "t": "now",
-      "equity_usd": 45.7684,
-      "liquid_usd": 45.7684,
+      "t": "2026-09-24 12:04:20 ET",
+      "equity_usd": 45.7955,
+      "liquid_usd": 45.7955,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "MASASO",
+      "reason": "CUT_HARD_LIQ0",
+      "pnl_usd": 0.0844
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 12:04:20 ET",
+      "kind": "PAPER",
+      "market": "MASASO",
+      "side": "LONG",
+      "size": 4.57,
+      "size_usd": 4.57,
+      "pnl_usd": 0.0844,
+      "pnl_pct": 1.8463,
+      "tx": "CUT_HARD_LIQ0",
+      "id": "PAPER-1068",
+      "paper": true
+    },
     {
       "t": "2026-09-24 12:02:15 ET",
       "kind": "PAPER",
@@ -9990,53 +9989,35 @@
       "tx": "TIME_SOFT_45s",
       "id": "PAPER-989",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 10:25:11 ET",
-      "kind": "PAPER",
-      "market": "JIRACHI",
-      "side": "LONG",
-      "size": 3.66,
-      "size_usd": 3.66,
-      "pnl_usd": -0.0009,
-      "pnl_pct": -0.024,
-      "tx": "TIME_SOFT_45s",
-      "id": "PAPER-988",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 45.7111,
-    "mtm_equity_usd": 45.7684,
-    "realized_pnl_usd": -54.2889,
-    "unrealized_pnl_usd": 0.0573,
-    "open": {
-      "id": "PAPER-1068",
-      "ticker": "MASASO",
-      "usd": 4.57,
-      "mtm_pct": 1.2536
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $45.71 \u00b7 curve n=891 \u00b7 2026-09-24 12:04:08 ET",
+    "paper_equity_usd": 45.7955,
+    "mtm_equity_usd": 45.7955,
+    "realized_pnl_usd": -54.2045,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $45.80 \u00b7 curve n=891 \u00b7 2026-09-24 12:04:54 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 889
+    "closed_n": 890
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $45.71 \u00b7 2026-09-24 12:04:08 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $45.80 \u00b7 FLAT \u00b7 2026-09-24 12:04:54 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SCHIFFY open_p=0.70 edge=2.15 conf=0.89",
+    "detail": "pick=SCHIFFY open_p=0.70 edge=2.16 conf=0.89",
     "pick": "SCHIFFY",
     "open_p": 0.7,
     "confidence": 0.89,
-    "edge_score": 2.15,
+    "edge_score": 2.16,
     "picks": [
       {
         "sym": "SCHIFFY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.9
+        "probs": 0.91
       },
       {
         "sym": "IMDSTRTGY",
@@ -10054,7 +10035,7 @@
         "sym": "LILY",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "MUSEPAD",
@@ -10072,7 +10053,7 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.15,
+        "score": 2.16,
         "confidence": 0.3
       },
       "open_now": {
@@ -10081,7 +10062,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 12:04:08 ET",
+    "stamp_et": "2026-09-24 12:04:48 ET",
     "live": true
   }
 }
