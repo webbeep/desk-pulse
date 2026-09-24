@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-24 13:22:59 ET",
+  "updated_et": "2026-09-24 13:23:00 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 47.8025,
-  "upnl_usd": -0.0114,
+  "liquid_usd": 47.7911,
+  "upnl_usd": 0.0,
   "equity_usd": 47.7911,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "Paper start $100 \u00b7 curve from closed[]",
+  "funding_note": "PAPER \u00b7 script MTM loop \u00b7 NO LIVE",
   "total_pnl_usd": -52.2089,
   "total_pnl_pct": -52.2089,
   "mark_eth": 2682.025,
@@ -17,7 +17,7 @@
     "ETH": 2682.025
   },
   "holdings": {
-    "paper_cash_usd": 43.0125,
+    "paper_cash_usd": 47.7911,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-1163",
-      "market": "MUSEPAD",
-      "side": "LONG",
-      "size_usd": 4.79,
-      "entry": 2.9740181107444696e-06,
-      "mark": 2.9669400718170193e-06,
-      "uPnL": -0.0114,
-      "mtm_pct": -0.237,
-      "sl": 2.91453774852958e-06,
-      "tp": 3.1227190162816932e-06,
-      "lev": 1,
-      "paper": true,
-      "liq": 31942214267140718596898,
-      "held_min": 2.35
-    }
-  ],
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "session_start",
@@ -9906,14 +9890,30 @@
       "pnl_usd": -0.083
     },
     {
-      "t": "now",
+      "t": "2026-09-24 13:22:59 ET",
       "equity_usd": 47.7911,
       "liquid_usd": 47.7911,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "MUSEPAD",
+      "reason": "TIME_SOFT_180s",
+      "pnl_usd": -0.0114
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 13:22:59 ET",
+      "kind": "PAPER",
+      "market": "MUSEPAD",
+      "side": "LONG",
+      "size": 4.79,
+      "size_usd": 4.79,
+      "pnl_usd": -0.0114,
+      "pnl_pct": -0.237,
+      "tx": "TIME_SOFT_180s",
+      "id": "PAPER-1163",
+      "paper": true
+    },
     {
       "t": "2026-09-24 13:20:35 ET",
       "kind": "PAPER",
@@ -10940,40 +10940,21 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-1084",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 12:24:43 ET",
-      "kind": "PAPER",
-      "market": "WAGEFLOW",
-      "side": "LONG",
-      "size": 4.66,
-      "size_usd": 4.66,
-      "pnl_usd": -0.765,
-      "pnl_pct": -16.4157,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-1083",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 47.8025,
+    "paper_equity_usd": 47.7911,
     "mtm_equity_usd": 47.7911,
-    "realized_pnl_usd": -52.1975,
-    "unrealized_pnl_usd": -0.0114,
-    "open": {
-      "id": "PAPER-1163",
-      "ticker": "MUSEPAD",
-      "usd": 4.79,
-      "mtm_pct": -0.237
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $47.80 \u00b7 curve n=986 \u00b7 2026-09-24 13:22:59 ET",
-    "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 984
+    "realized_pnl_usd": -52.2089,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "script MTM multi n=0",
+    "mtm_poll_sec": 10.0,
+    "mtm_max_sec": 60
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.80 \u00b7 2026-09-24 13:22:59 ET",
-  "strategy": "MEME_V6_YOLO_JEV",
+  "notes": "CLOSED MUSEPAD TIME_SOFT_180s pnl $-0.0114 \u00b7 FLAT \u00b7 NO LIVE",
   "jev": {
     "action": "OPEN",
     "detail": "pick=SCHIFFY open_p=0.67 edge=2.32 conf=0.92",
