@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 03:17:38 ET",
+  "updated_et": "2026-09-24 03:18:26 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 53.3624,
-  "upnl_usd": -0.001,
-  "equity_usd": 53.3614,
+  "liquid_usd": 53.6733,
+  "upnl_usd": 0.0,
+  "equity_usd": 53.6733,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -46.6386,
-  "total_pnl_pct": -46.6386,
-  "mark_eth": 2685.245,
-  "mark": 2685.245,
+  "total_pnl_usd": -46.3267,
+  "total_pnl_pct": -46.3267,
+  "mark_eth": 2683.605,
+  "mark": 2683.605,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2685.245
+    "ETH": 2683.605
   },
   "holdings": {
-    "paper_cash_usd": 50.1624,
+    "paper_cash_usd": 53.6733,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -6419,14 +6419,53 @@
       "pnl_usd": -0.5
     },
     {
-      "t": "now",
-      "equity_usd": 53.3614,
-      "liquid_usd": 53.3614,
+      "t": "2026-09-24 03:17:53 ET",
+      "equity_usd": 53.529,
+      "liquid_usd": 53.529,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "MUSEPAD",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.1666
+    },
+    {
+      "t": "2026-09-24 03:18:09 ET",
+      "equity_usd": 53.6733,
+      "liquid_usd": 53.6733,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "IMDSTRTGY",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.1443
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 03:18:09 ET",
+      "kind": "PAPER",
+      "market": "IMDSTRTGY",
+      "side": "LONG",
+      "size": 3.2,
+      "size_usd": 3.2,
+      "pnl_usd": 0.1443,
+      "pnl_pct": 4.5108,
+      "tx": "TP_+3.0",
+      "id": "PAPER-817",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 03:17:53 ET",
+      "kind": "PAPER",
+      "market": "MUSEPAD",
+      "side": "LONG",
+      "size": 3.2,
+      "size_usd": 3.2,
+      "pnl_usd": 0.1666,
+      "pnl_pct": 5.207,
+      "tx": "TP_+3.0",
+      "id": "PAPER-816",
+      "paper": true
+    },
     {
       "t": "2026-09-24 03:15:28 ET",
       "kind": "PAPER",
@@ -7440,65 +7479,35 @@
       "tx": "TIME_SOFT_45s",
       "id": "PAPER-738",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 01:21:55 ET",
-      "kind": "PAPER",
-      "market": "SI",
-      "side": "LONG",
-      "size": 3.23,
-      "size_usd": 3.23,
-      "pnl_usd": -0.0064,
-      "pnl_pct": -0.1991,
-      "tx": "TIME_SOFT_45s",
-      "id": "PAPER-736",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 01:21:33 ET",
-      "kind": "PAPER",
-      "market": "VORTA",
-      "side": "LONG",
-      "size": 3.23,
-      "size_usd": 3.23,
-      "pnl_usd": 0.1696,
-      "pnl_pct": 5.2523,
-      "tx": "TP_+3.0",
-      "id": "PAPER-737",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 53.3624,
-    "mtm_equity_usd": 53.3614,
-    "realized_pnl_usd": -46.6376,
-    "unrealized_pnl_usd": -0.001,
-    "open": {
-      "id": "PAPER-816",
-      "ticker": "MUSEPAD",
-      "usd": 3.2
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $53.36 \u00b7 curve n=639 \u00b7 2026-09-24 03:17:38 ET",
+    "paper_equity_usd": 53.6733,
+    "mtm_equity_usd": 53.6733,
+    "realized_pnl_usd": -46.3267,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $53.67 \u00b7 curve n=640 \u00b7 2026-09-24 03:18:26 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 637
+    "closed_n": 639
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $53.36 \u00b7 2026-09-24 03:17:38 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $53.67 \u00b7 FLAT \u00b7 2026-09-24 03:18:26 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.64 edge=1.97 conf=0.91",
+    "detail": "pick=IMDSTRTGY open_p=0.64 edge=2.05 conf=0.93",
     "pick": "IMDSTRTGY",
     "open_p": 0.64,
-    "confidence": 0.91,
-    "edge_score": 1.97,
+    "confidence": 0.93,
+    "edge_score": 2.05,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.93
+        "probs": 0.94
       },
       {
         "sym": "MUSEPAD",
@@ -7530,11 +7539,11 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.91
+        "confidence": 0.93
       },
       "edge": {
         "type": "score",
-        "score": 1.97,
+        "score": 2.05,
         "confidence": 0.36
       },
       "open_now": {
@@ -7543,7 +7552,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 03:17:36 ET",
+    "stamp_et": "2026-09-24 03:18:18 ET",
     "live": true
   }
 }
