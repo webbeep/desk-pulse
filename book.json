@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-23 21:56:12 ET",
+  "updated_et": "2026-09-23 21:57:00 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 50.4307,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -49.5693,
   "total_pnl_pct": -49.5693,
-  "mark_eth": 2675.805,
-  "mark": 2675.805,
+  "mark_eth": 2675.855,
+  "mark": 2675.855,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2675.805
+    "ETH": 2675.855
   },
   "holdings": {
     "paper_cash_usd": 50.4307,
@@ -5769,37 +5769,37 @@
     "realized_pnl_usd": -49.5693,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $50.43 \u00b7 curve n=468 \u00b7 2026-09-23 21:56:12 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $50.43 \u00b7 curve n=468 \u00b7 2026-09-23 21:57:00 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 467
   },
-  "notes": "PAPER heartbeat \u00b7 eq $50.43 \u00b7 FLAT \u00b7 2026-09-23 21:56:12 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $50.43 \u00b7 FLAT \u00b7 2026-09-23 21:57:00 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.64 edge=2.1 conf=0.83",
+    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.12 conf=0.87",
     "pick": "IMDSTRTGY",
-    "open_p": 0.64,
-    "confidence": 0.83,
-    "edge_score": 2.1,
+    "open_p": 0.65,
+    "confidence": 0.87,
+    "edge_score": 2.12,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.86
+        "probs": 0.89
       },
       {
         "sym": "JOLLY",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.03
       },
       {
         "sym": "PARAFACTUAL",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.06
       },
       {
         "sym": "ZZZ",
@@ -5819,20 +5819,20 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.83
+        "confidence": 0.87
       },
       "edge": {
         "type": "score",
-        "score": 2.1,
-        "confidence": 0.38
+        "score": 2.12,
+        "confidence": 0.39
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 21:56:06 ET",
+    "stamp_et": "2026-09-23 21:56:59 ET",
     "live": true
   }
 }
