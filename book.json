@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 21:51:23 ET",
+  "updated_et": "2026-09-23 21:52:11 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 50.4522,
-  "upnl_usd": -0.0123,
-  "equity_usd": 50.4399,
+  "liquid_usd": 50.4307,
+  "upnl_usd": 0.0,
+  "equity_usd": 50.4307,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -49.5601,
-  "total_pnl_pct": -49.5601,
-  "mark_eth": 2674.575,
-  "mark": 2674.575,
+  "total_pnl_usd": -49.5693,
+  "total_pnl_pct": -49.5693,
+  "mark_eth": 2674.955,
+  "mark": 2674.955,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2674.575
+    "ETH": 2674.955
   },
   "holdings": {
-    "paper_cash_usd": 47.4222,
+    "paper_cash_usd": 50.4307,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,56 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-641",
-      "market": "GIGACAT",
-      "side": "LONG",
-      "size_usd": 3.03,
-      "entry": 2.7911823401247323e-06,
-      "mark": 2.7844577094043e-06,
-      "uPnL": -0.0073,
-      "mtm_pct": -0.2416,
-      "sl": 2.2329458720997858e-06,
-      "tp": 4.186773510187099e-06,
-      "lev": 1,
-      "paper": true,
-      "liq": 31942214267140718596898,
-      "held_min": 0.55
-    },
-    {
-      "id": "PAPER-643",
-      "market": "SHINYHUNTERS",
-      "side": "LONG",
-      "size_usd": 3.03,
-      "entry": 1.3480240413322647e-05,
-      "mark": 1.3471787457287889e-05,
-      "uPnL": -0.0019,
-      "mtm_pct": -0.0627,
-      "sl": 1.0784192330658117e-05,
-      "tp": 2.022036061998397e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 70713633738326896357008,
-      "held_min": 0.3
-    },
-    {
-      "id": "PAPER-642",
-      "market": "ZZZ",
-      "side": "LONG",
-      "size_usd": 3.03,
-      "entry": 0.024542911470841255,
-      "mark": 0.024517801561415642,
-      "uPnL": -0.0031,
-      "mtm_pct": -0.1024,
-      "sl": 0.019634329176673005,
-      "tp": 0.03681436720626188,
-      "lev": 1,
-      "paper": true,
-      "liq": 132543024446850270611258210,
-      "held_min": 0.54
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -4718,14 +4669,122 @@
       "pnl_usd": -0.0037
     },
     {
-      "t": "now",
-      "equity_usd": 50.4399,
-      "liquid_usd": 50.4399,
+      "t": "2026-09-23 21:51:27 ET",
+      "equity_usd": 50.4492,
+      "liquid_usd": 50.4492,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "ZZZ",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.003
+    },
+    {
+      "t": "2026-09-23 21:51:28 ET",
+      "equity_usd": 50.442,
+      "liquid_usd": 50.442,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "GIGACAT",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0072
+    },
+    {
+      "t": "2026-09-23 21:51:45 ET",
+      "equity_usd": 50.4401,
+      "liquid_usd": 50.4401,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SHINYHUNTERS",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0019
+    },
+    {
+      "t": "2026-09-23 21:52:08 ET",
+      "equity_usd": 50.4375,
+      "liquid_usd": 50.4375,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ZZZ",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0026
+    },
+    {
+      "t": "2026-09-23 21:52:08 ET",
+      "equity_usd": 50.4307,
+      "liquid_usd": 50.4307,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "GIGACAT",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0068
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 21:52:08 ET",
+      "kind": "PAPER",
+      "market": "GIGACAT",
+      "side": "LONG",
+      "size": 3.03,
+      "size_usd": 3.03,
+      "pnl_usd": -0.0068,
+      "pnl_pct": -0.2253,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-644",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 21:52:08 ET",
+      "kind": "PAPER",
+      "market": "ZZZ",
+      "side": "LONG",
+      "size": 3.03,
+      "size_usd": 3.03,
+      "pnl_usd": -0.0026,
+      "pnl_pct": -0.0862,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-645",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 21:51:45 ET",
+      "kind": "PAPER",
+      "market": "SHINYHUNTERS",
+      "side": "LONG",
+      "size": 3.03,
+      "size_usd": 3.03,
+      "pnl_usd": -0.0019,
+      "pnl_pct": -0.0638,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-643",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 21:51:28 ET",
+      "kind": "PAPER",
+      "market": "GIGACAT",
+      "side": "LONG",
+      "size": 3.03,
+      "size_usd": 3.03,
+      "pnl_usd": -0.0072,
+      "pnl_pct": -0.239,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-641",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 21:51:27 ET",
+      "kind": "PAPER",
+      "market": "ZZZ",
+      "side": "LONG",
+      "size": 3.03,
+      "size_usd": 3.03,
+      "pnl_usd": -0.003,
+      "pnl_pct": -0.0998,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-642",
+      "paper": true
+    },
     {
       "t": "2026-09-23 21:50:47 ET",
       "kind": "PAPER",
@@ -5700,99 +5759,29 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-566",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 18:42:18 ET",
-      "kind": "PAPER",
-      "market": "TI",
-      "side": "LONG",
-      "size": 3.99,
-      "size_usd": 3.99,
-      "pnl_usd": 0.2374,
-      "pnl_pct": 5.9509,
-      "tx": "TP_+3.5",
-      "id": "PAPER-565",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 18:41:08 ET",
-      "kind": "PAPER",
-      "market": "TI",
-      "side": "LONG",
-      "size": 3.97,
-      "size_usd": 3.97,
-      "pnl_usd": 0.3056,
-      "pnl_pct": 7.6976,
-      "tx": "TP_+3.5",
-      "id": "PAPER-564",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 18:40:47 ET",
-      "kind": "PAPER",
-      "market": "TI",
-      "side": "LONG",
-      "size": 3.95,
-      "size_usd": 3.95,
-      "pnl_usd": 0.2588,
-      "pnl_pct": 6.5509,
-      "tx": "TP_+3.5",
-      "id": "PAPER-563",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 18:40:23 ET",
-      "kind": "PAPER",
-      "market": "TI",
-      "side": "LONG",
-      "size": 3.92,
-      "size_usd": 3.92,
-      "pnl_usd": 0.348,
-      "pnl_pct": 8.8781,
-      "tx": "TP_+3.5",
-      "id": "PAPER-562",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 18:39:08 ET",
-      "kind": "PAPER",
-      "market": "TI",
-      "side": "LONG",
-      "size": 3.92,
-      "size_usd": 3.92,
-      "pnl_usd": -0.0249,
-      "pnl_pct": -0.6348,
-      "tx": "TRAIL_0.9",
-      "id": "PAPER-561",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 50.4522,
-    "mtm_equity_usd": 50.4399,
-    "realized_pnl_usd": -49.5478,
-    "unrealized_pnl_usd": -0.0123,
-    "open": {
-      "id": "PAPER-641",
-      "ticker": "GIGACAT",
-      "usd": 3.03,
-      "mtm_pct": -0.2416
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $50.45 \u00b7 curve n=464 \u00b7 2026-09-23 21:51:23 ET",
+    "paper_equity_usd": 50.4307,
+    "mtm_equity_usd": 50.4307,
+    "realized_pnl_usd": -49.5693,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $50.43 \u00b7 curve n=468 \u00b7 2026-09-23 21:52:11 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 462
+    "closed_n": 467
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $50.45 \u00b7 2026-09-23 21:51:23 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $50.43 \u00b7 FLAT \u00b7 2026-09-23 21:52:11 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.14 conf=0.89",
+    "detail": "pick=IMDSTRTGY open_p=0.64 edge=1.98 conf=0.89",
     "pick": "IMDSTRTGY",
-    "open_p": 0.65,
+    "open_p": 0.64,
     "confidence": 0.89,
-    "edge_score": 2.14,
+    "edge_score": 1.98,
     "picks": [
       {
         "sym": "IMDSTRTGY",
@@ -5802,24 +5791,24 @@
       },
       {
         "sym": "JOLLY",
-        "lost_bps": 4,
+        "lost_bps": 5,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.02
       },
       {
         "sym": "PARAFACTUAL",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.03
-      },
-      {
-        "sym": "SHINYHUNTERS",
-        "lost_bps": 10,
-        "selected": false,
-        "probs": 0.0
+        "probs": 0.04
       },
       {
         "sym": "ZZZ",
+        "lost_bps": 10,
+        "selected": false,
+        "probs": 0.01
+      },
+      {
+        "sym": "SHINYHUNTERS",
         "lost_bps": 10,
         "selected": false,
         "probs": 0.01
@@ -5834,16 +5823,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.14,
-        "confidence": 0.35
+        "score": 1.98,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 21:51:03 ET",
+    "stamp_et": "2026-09-23 21:52:10 ET",
     "live": true
   }
 }
