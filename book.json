@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 16:10:32 ET",
+  "updated_et": "2026-09-24 16:11:20 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 47.6548,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -52.3452,
   "total_pnl_pct": -52.3452,
-  "mark_eth": 2692.93,
-  "mark": 2692.93,
+  "mark_eth": 2693.03,
+  "mark": 2693.03,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.93
+    "ETH": 2693.03
   },
   "holdings": {
     "paper_cash_usd": 47.6548,
@@ -11869,47 +11869,47 @@
     "realized_pnl_usd": -52.3452,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $47.65 \u00b7 curve n=1078 \u00b7 2026-09-24 16:10:32 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $47.65 \u00b7 curve n=1078 \u00b7 2026-09-24 16:11:20 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1077
   },
-  "notes": "PAPER heartbeat \u00b7 eq $47.65 \u00b7 FLAT \u00b7 2026-09-24 16:10:32 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $47.65 \u00b7 FLAT \u00b7 2026-09-24 16:11:20 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=MUSEGOD open_p=0.68 edge=2.33 conf=0.89",
-    "pick": "MUSEGOD",
+    "detail": "pick=JOLLY open_p=0.68 edge=2.57 conf=0.79",
+    "pick": "JOLLY",
     "open_p": 0.68,
-    "confidence": 0.89,
-    "edge_score": 2.33,
+    "confidence": 0.79,
+    "edge_score": 2.57,
     "picks": [
       {
         "sym": "JOLLY",
-        "lost_bps": 5,
-        "selected": false,
-        "probs": 0.07
-      },
-      {
-        "sym": "MUSEGOD",
-        "lost_bps": 5,
+        "lost_bps": 6,
         "selected": true,
-        "probs": 0.92
+        "probs": 0.83
       },
       {
         "sym": "JOLLY",
         "lost_bps": 7,
-        "selected": false,
-        "probs": 0.07
+        "selected": true,
+        "probs": 0.83
       },
       {
         "sym": "SCHIFFY",
-        "lost_bps": 8,
+        "lost_bps": 7,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.14
       },
       {
         "sym": "F IN THE CHAT",
-        "lost_bps": 10,
+        "lost_bps": 12,
+        "selected": false,
+        "probs": 0.01
+      },
+      {
+        "sym": "WAGEFLOW",
+        "lost_bps": 43,
         "selected": false,
         "probs": 0.0
       }
@@ -11918,13 +11918,13 @@
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "MUSEGOD",
-        "confidence": 0.89
+        "choice": "JOLLY",
+        "confidence": 0.79
       },
       "edge": {
         "type": "score",
-        "score": 2.33,
-        "confidence": 0.23
+        "score": 2.57,
+        "confidence": 0.38
       },
       "open_now": {
         "type": "noul",
@@ -11932,7 +11932,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 16:10:22 ET",
+    "stamp_et": "2026-09-24 16:11:09 ET",
     "live": true
   }
 }
