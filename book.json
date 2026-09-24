@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 01:38:05 ET",
+  "updated_et": "2026-09-24 01:38:53 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 55.8829,
+  "liquid_usd": 55.8703,
   "upnl_usd": -0.0066,
-  "equity_usd": 55.8763,
+  "equity_usd": 55.8637,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -44.1237,
-  "total_pnl_pct": -44.1237,
-  "mark_eth": 2689.295,
-  "mark": 2689.295,
+  "total_pnl_usd": -44.1363,
+  "total_pnl_pct": -44.1363,
+  "mark_eth": 2691.72,
+  "mark": 2691.72,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.295
+    "ETH": 2691.72
   },
   "holdings": {
-    "paper_cash_usd": 52.5529,
+    "paper_cash_usd": 52.5203,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -41,36 +41,20 @@
   },
   "positions": [
     {
-      "id": "PAPER-759",
-      "market": "ZZZ",
+      "id": "PAPER-761",
+      "market": "SI",
       "side": "LONG",
-      "size_usd": 3.33,
-      "entry": 0.024666191277402987,
-      "mark": 0.02465137674810725,
-      "uPnL": -0.002,
-      "mtm_pct": -0.0606,
-      "sl": 0.019732953021922392,
-      "tp": 0.036999286916104476,
+      "size_usd": 3.35,
+      "entry": 3.873592993204222e-06,
+      "mark": 3.865961436859402e-06,
+      "uPnL": -0.0066,
+      "mtm_pct": -0.1979,
+      "sl": 3.098874394563378e-06,
+      "tp": 5.810389489806334e-06,
       "lev": 1,
       "paper": true,
-      "liq": 132543024446850270611258210,
-      "held_min": 0.23
-    },
-    {
-      "id": "PAPER-757",
-      "market": "JOLLY",
-      "side": "LONG",
-      "size_usd": 3.33,
-      "entry": 2.8161336619765973e-06,
-      "mark": 2.8099601557506425e-06,
-      "uPnL": -0.0073,
-      "mtm_pct": -0.2198,
-      "sl": 2.2529069295812777e-06,
-      "tp": 4.224200492964896e-06,
-      "lev": 1,
-      "paper": true,
-      "liq": 31942214267140718596898,
-      "held_min": 0.5
+      "liq": 36819258015569838458222,
+      "held_min": 0.14
     }
   ],
   "pnl_history": [
@@ -5872,14 +5856,83 @@
       "pnl_usd": 0.4194
     },
     {
+      "t": "2026-09-24 01:38:14 ET",
+      "equity_usd": 55.8757,
+      "liquid_usd": 55.8757,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JOLLY",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0072
+    },
+    {
+      "t": "2026-09-24 01:38:26 ET",
+      "equity_usd": 55.8738,
+      "liquid_usd": 55.8738,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ZZZ",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0019
+    },
+    {
+      "t": "2026-09-24 01:38:42 ET",
+      "equity_usd": 55.8703,
+      "liquid_usd": 55.8703,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SI",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0035
+    },
+    {
       "t": "now",
-      "equity_usd": 55.8763,
-      "liquid_usd": 55.8763,
+      "equity_usd": 55.8637,
+      "liquid_usd": 55.8637,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 01:38:42 ET",
+      "kind": "PAPER",
+      "market": "SI",
+      "side": "LONG",
+      "size": 3.35,
+      "size_usd": 3.35,
+      "pnl_usd": -0.0035,
+      "pnl_pct": -0.1046,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-760",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 01:38:26 ET",
+      "kind": "PAPER",
+      "market": "ZZZ",
+      "side": "LONG",
+      "size": 3.33,
+      "size_usd": 3.33,
+      "pnl_usd": -0.0019,
+      "pnl_pct": -0.0561,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-759",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 01:38:14 ET",
+      "kind": "PAPER",
+      "market": "JOLLY",
+      "side": "LONG",
+      "size": 3.33,
+      "size_usd": 3.33,
+      "pnl_usd": -0.0072,
+      "pnl_pct": -0.2154,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-757",
+      "paper": true
+    },
     {
       "t": "2026-09-24 01:37:57 ET",
       "kind": "PAPER",
@@ -6880,73 +6933,34 @@
       "tx": "TIME_SOFT_45s",
       "id": "PAPER-681",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 23:34:45 ET",
-      "kind": "PAPER",
-      "market": "UP",
-      "side": "LONG",
-      "size": 3.17,
-      "size_usd": 3.17,
-      "pnl_usd": 0.1924,
-      "pnl_pct": 6.0685,
-      "tx": "TP_+3.0",
-      "id": "PAPER-680",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 23:26:50 ET",
-      "kind": "PAPER",
-      "market": "PERCH",
-      "side": "LONG",
-      "size": 3.18,
-      "size_usd": 3.18,
-      "pnl_usd": -0.2443,
-      "pnl_pct": -7.6833,
-      "tx": "CUT_HARD_-2.0",
-      "id": "PAPER-679",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 23:26:12 ET",
-      "kind": "PAPER",
-      "market": "UP",
-      "side": "LONG",
-      "size": 3.17,
-      "size_usd": 3.17,
-      "pnl_usd": 0.3097,
-      "pnl_pct": 9.7688,
-      "tx": "TP_+3.0",
-      "id": "PAPER-678",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 55.8829,
-    "mtm_equity_usd": 55.8763,
-    "realized_pnl_usd": -44.1171,
+    "paper_equity_usd": 55.8703,
+    "mtm_equity_usd": 55.8637,
+    "realized_pnl_usd": -44.1297,
     "unrealized_pnl_usd": -0.0066,
     "open": {
-      "id": "PAPER-759",
-      "ticker": "ZZZ",
-      "usd": 3.33,
-      "mtm_pct": -0.0606
+      "id": "PAPER-761",
+      "ticker": "SI",
+      "usd": 3.35,
+      "mtm_pct": -0.1979
     },
-    "notes": "PAPER heartbeat \u00b7 eq $55.88 \u00b7 curve n=581 \u00b7 2026-09-24 01:38:05 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $55.87 \u00b7 curve n=584 \u00b7 2026-09-24 01:38:53 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 579
+    "closed_n": 582
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $55.88 \u00b7 2026-09-24 01:38:05 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $55.87 \u00b7 2026-09-24 01:38:53 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.16 conf=0.95",
+    "detail": "pick=IMDSTRTGY open_p=0.64 edge=2.04 conf=0.96",
     "pick": "IMDSTRTGY",
-    "open_p": 0.65,
-    "confidence": 0.95,
-    "edge_score": 2.16,
+    "open_p": 0.64,
+    "confidence": 0.96,
+    "edge_score": 2.04,
     "picks": [
       {
         "sym": "IMDSTRTGY",
@@ -6956,13 +6970,13 @@
       },
       {
         "sym": "VORTA",
-        "lost_bps": 5,
+        "lost_bps": 6,
         "selected": false,
         "probs": 0.01
       },
       {
         "sym": "MUSEPAD",
-        "lost_bps": 5,
+        "lost_bps": 6,
         "selected": false,
         "probs": 0.01
       },
@@ -6970,13 +6984,13 @@
         "sym": "GOOD",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
-        "sym": "SHINYHUNTERS",
+        "sym": "ZZZ",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -6984,20 +6998,20 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.95
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 2.16,
-        "confidence": 0.28
+        "score": 2.04,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 01:38:02 ET",
+    "stamp_et": "2026-09-24 01:38:43 ET",
     "live": true
   }
 }
