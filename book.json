@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 12:08:07 ET",
+  "updated_et": "2026-09-24 12:08:53 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 45.2949,
+  "liquid_usd": 45.4316,
   "upnl_usd": 0.0,
-  "equity_usd": 45.2949,
+  "equity_usd": 45.4316,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -54.7051,
-  "total_pnl_pct": -54.7051,
-  "mark_eth": 2672.115,
-  "mark": 2672.115,
+  "total_pnl_usd": -54.5684,
+  "total_pnl_pct": -54.5684,
+  "mark_eth": 2673.27,
+  "mark": 2673.27,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2672.115
+    "ETH": 2673.27
   },
   "holdings": {
-    "paper_cash_usd": 45.2949,
+    "paper_cash_usd": 45.4316,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -8977,9 +8977,32 @@
       "ticker": "IMDSTRTGY",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -0.2368
+    },
+    {
+      "t": "2026-09-24 12:08:32 ET",
+      "equity_usd": 45.4316,
+      "liquid_usd": 45.4316,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SCHIFFY",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.1367
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 12:08:32 ET",
+      "kind": "PAPER",
+      "market": "SCHIFFY",
+      "side": "LONG",
+      "size": 4.53,
+      "size_usd": 4.53,
+      "pnl_usd": 0.1367,
+      "pnl_pct": 3.0172,
+      "tx": "TP_+3.0",
+      "id": "PAPER-1072",
+      "paper": true
+    },
     {
       "t": "2026-09-24 12:07:25 ET",
       "kind": "PAPER",
@@ -10006,40 +10029,27 @@
       "tx": "TP_+3.0",
       "id": "PAPER-993",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 10:42:36 ET",
-      "kind": "PAPER",
-      "market": "JIRACHI",
-      "side": "LONG",
-      "size": 3.64,
-      "size_usd": 3.64,
-      "pnl_usd": -0.0026,
-      "pnl_pct": -0.0704,
-      "tx": "TIME_SOFT_45s",
-      "id": "PAPER-992",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 45.2949,
-    "mtm_equity_usd": 45.2949,
-    "realized_pnl_usd": -54.7051,
+    "paper_equity_usd": 45.4316,
+    "mtm_equity_usd": 45.4316,
+    "realized_pnl_usd": -54.5684,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $45.29 \u00b7 curve n=894 \u00b7 2026-09-24 12:08:07 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $45.43 \u00b7 curve n=895 \u00b7 2026-09-24 12:08:53 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 893
+    "closed_n": 894
   },
-  "notes": "PAPER heartbeat \u00b7 eq $45.29 \u00b7 FLAT \u00b7 2026-09-24 12:08:07 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $45.43 \u00b7 FLAT \u00b7 2026-09-24 12:08:53 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SCHIFFY open_p=0.71 edge=2.27 conf=0.92",
+    "detail": "pick=SCHIFFY open_p=0.70 edge=2.27 conf=0.92",
     "pick": "SCHIFFY",
-    "open_p": 0.71,
+    "open_p": 0.7,
     "confidence": 0.92,
     "edge_score": 2.27,
     "picks": [
@@ -10047,7 +10057,7 @@
         "sym": "SCHIFFY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.9299999999999999
+        "probs": 0.93
       },
       {
         "sym": "IMDSTRTGY",
@@ -10084,15 +10094,15 @@
       "edge": {
         "type": "score",
         "score": 2.27,
-        "confidence": 0.35
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.71
+        "noul": 0.7
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 12:07:55 ET",
+    "stamp_et": "2026-09-24 12:08:49 ET",
     "live": true
   }
 }
