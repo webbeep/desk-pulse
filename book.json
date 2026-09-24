@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 03:27:08 ET",
+  "updated_et": "2026-09-24 03:27:57 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 54.4714,
-  "upnl_usd": 0.0,
-  "equity_usd": 54.4714,
+  "upnl_usd": -0.0079,
+  "equity_usd": 54.4635,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -45.5286,
-  "total_pnl_pct": -45.5286,
-  "mark_eth": 2688.945,
-  "mark": 2688.945,
+  "total_pnl_usd": -45.5365,
+  "total_pnl_pct": -45.5365,
+  "mark_eth": 2688.785,
+  "mark": 2688.785,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2688.945
+    "ETH": 2688.785
   },
   "holdings": {
-    "paper_cash_usd": 54.4714,
+    "paper_cash_usd": 51.2014,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,7 +39,40 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "PAPER-832",
+      "market": "TENLABS",
+      "side": "LONG",
+      "size_usd": 3.27,
+      "entry": 4.785138094521031e-05,
+      "mark": 4.777089697114345e-05,
+      "uPnL": -0.0055,
+      "mtm_pct": -0.1684,
+      "sl": 3.828110475616825e-05,
+      "tp": 7.177707141781547e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": 12271858696589425368886,
+      "held_min": 0.09
+    },
+    {
+      "id": "PAPER-831",
+      "market": "9D2A08",
+      "side": "LONG",
+      "size_usd": 3.27,
+      "entry": 1.359263304680414e-05,
+      "mark": 1.3582656802366117e-05,
+      "uPnL": -0.0024,
+      "mtm_pct": -0.0743,
+      "sl": 1.0874106437443313e-05,
+      "tp": 2.038894957020621e-05,
+      "lev": 1,
+      "paper": true,
+      "liq": 70713633738326896357008,
+      "held_min": 0.6
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -6567,6 +6600,13 @@
       "ticker": "GIGACAT",
       "reason": "TIME_SOFT_45s",
       "pnl_usd": -0.0071
+    },
+    {
+      "t": "now",
+      "equity_usd": 54.4635,
+      "liquid_usd": 54.4635,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -7615,35 +7655,40 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 54.4714,
-    "mtm_equity_usd": 54.4714,
+    "mtm_equity_usd": 54.4635,
     "realized_pnl_usd": -45.5286,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $54.47 \u00b7 curve n=653 \u00b7 2026-09-24 03:27:08 ET",
+    "unrealized_pnl_usd": -0.0079,
+    "open": {
+      "id": "PAPER-832",
+      "ticker": "TENLABS",
+      "usd": 3.27,
+      "mtm_pct": -0.1684
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $54.47 \u00b7 curve n=654 \u00b7 2026-09-24 03:27:57 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 652
   },
-  "notes": "PAPER heartbeat \u00b7 eq $54.47 \u00b7 FLAT \u00b7 2026-09-24 03:27:08 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $54.47 \u00b7 2026-09-24 03:27:57 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.66 edge=1.99 conf=0.89",
+    "detail": "pick=IMDSTRTGY open_p=0.66 edge=2.07 conf=0.89",
     "pick": "IMDSTRTGY",
     "open_p": 0.66,
     "confidence": 0.89,
-    "edge_score": 1.99,
+    "edge_score": 2.07,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.9
+        "probs": 0.91
       },
       {
         "sym": "MUSEPAD",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.02
       },
       {
         "sym": "SI",
@@ -7673,7 +7718,7 @@
       },
       "edge": {
         "type": "score",
-        "score": 1.99,
+        "score": 2.07,
         "confidence": 0.38
       },
       "open_now": {
@@ -7682,7 +7727,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 03:27:05 ET",
+    "stamp_et": "2026-09-24 03:27:47 ET",
     "live": true
   }
 }
