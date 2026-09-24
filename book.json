@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 15:00:12 ET",
+  "updated_et": "2026-09-24 15:01:02 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 45.1847,
-  "upnl_usd": 0.1859,
-  "equity_usd": 45.3706,
+  "liquid_usd": 46.4026,
+  "upnl_usd": 0.0,
+  "equity_usd": 46.4026,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -54.6294,
-  "total_pnl_pct": -54.6294,
-  "mark_eth": 2689.295,
-  "mark": 2689.295,
+  "total_pnl_usd": -53.5974,
+  "total_pnl_pct": -53.5974,
+  "mark_eth": 2688.085,
+  "mark": 2688.085,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.295
+    "ETH": 2688.085
   },
   "holdings": {
-    "paper_cash_usd": 39.7647,
+    "paper_cash_usd": 46.4026,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -10709,14 +10709,53 @@
       "pnl_usd": -0.5565
     },
     {
-      "t": "now",
-      "equity_usd": 45.3706,
-      "liquid_usd": 45.3706,
+      "t": "2026-09-24 15:00:13 ET",
+      "equity_usd": 45.7605,
+      "liquid_usd": 45.7605,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "F IN THE CHAT",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.5758
+    },
+    {
+      "t": "2026-09-24 15:00:13 ET",
+      "equity_usd": 46.4026,
+      "liquid_usd": 46.4026,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JOLLY",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.6421
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 15:00:13 ET",
+      "kind": "PAPER",
+      "market": "JOLLY",
+      "side": "LONG",
+      "size": 5.42,
+      "size_usd": 5.42,
+      "pnl_usd": 0.6421,
+      "pnl_pct": 11.8471,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1245",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 15:00:13 ET",
+      "kind": "PAPER",
+      "market": "F IN THE CHAT",
+      "side": "LONG",
+      "size": 5.42,
+      "size_usd": 5.42,
+      "pnl_usd": 0.5758,
+      "pnl_pct": 10.623,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1246",
+      "paper": true
+    },
     {
       "t": "2026-09-24 14:57:54 ET",
       "kind": "PAPER",
@@ -11730,104 +11769,62 @@
       "tx": "CUT_HARD_-2.0",
       "id": "PAPER-1169",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 13:24:02 ET",
-      "kind": "PAPER",
-      "market": "SCHIFFY",
-      "side": "LONG",
-      "size": 4.78,
-      "size_usd": 4.78,
-      "pnl_usd": -0.1841,
-      "pnl_pct": -3.8506,
-      "tx": "CUT_HARD_-2.0",
-      "id": "PAPER-1167",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 13:23:54 ET",
-      "kind": "PAPER",
-      "market": "3C934E",
-      "side": "LONG",
-      "size": 4.78,
-      "size_usd": 4.78,
-      "pnl_usd": -0.1198,
-      "pnl_pct": -2.5058,
-      "tx": "CUT_HARD_-2.0",
-      "id": "PAPER-1164",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 45.1847,
-    "mtm_equity_usd": 45.3706,
-    "realized_pnl_usd": -54.8153,
-    "unrealized_pnl_usd": 0.1859,
-    "open": {
-      "id": "PAPER-1245",
-      "ticker": "JOLLY",
-      "usd": 5.42
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $45.18 \u00b7 curve n=1068 \u00b7 2026-09-24 15:00:12 ET",
+    "paper_equity_usd": 46.4026,
+    "mtm_equity_usd": 46.4026,
+    "realized_pnl_usd": -53.5974,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $46.40 \u00b7 curve n=1069 \u00b7 2026-09-24 15:01:02 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1066
+    "closed_n": 1068
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $45.18 \u00b7 2026-09-24 15:00:12 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $46.40 \u00b7 FLAT \u00b7 2026-09-24 15:01:02 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=MUSEGOD open_p=0.67 edge=2.49 conf=0.92",
-    "pick": "MUSEGOD",
-    "open_p": 0.67,
-    "confidence": 0.92,
-    "edge_score": 2.49,
+    "detail": "pick=F IN THE CHAT open_p=0.58 edge=1.71 conf=0.38",
+    "pick": "F IN THE CHAT",
+    "open_p": 0.58,
+    "confidence": 0.38,
+    "edge_score": 1.71,
     "picks": [
       {
-        "sym": "JOLLY",
+        "sym": "F IN THE CHAT",
         "lost_bps": 6,
-        "selected": false,
-        "probs": 0.02
+        "selected": true,
+        "probs": 0.58
       },
       {
         "sym": "MUSEGOD",
         "lost_bps": 6,
-        "selected": true,
-        "probs": 0.95
-      },
-      {
-        "sym": "F IN THE CHAT",
-        "lost_bps": 7,
         "selected": false,
-        "probs": 0.02
-      },
-      {
-        "sym": "JOLLY",
-        "lost_bps": 18,
-        "selected": false,
-        "probs": 0.02
+        "probs": 0.28
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "MUSEGOD",
-        "confidence": 0.92
+        "choice": "F IN THE CHAT",
+        "confidence": 0.38
       },
       "edge": {
         "type": "score",
-        "score": 2.49,
-        "confidence": 0.31
+        "score": 1.71,
+        "confidence": 0.26
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.58
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 14:59:53 ET",
+    "stamp_et": "2026-09-24 15:01:01 ET",
     "live": true
   }
 }
