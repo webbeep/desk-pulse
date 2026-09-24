@@ -12354,33 +12354,31 @@
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1124
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $50.08 \u00b7 2026-09-24 19:23:20 ET",
+  "notes": "JEV OPEN \u00b7 pick=HAT open_p=0.66 edge=2.48 conf=0.78 \u00b7 PAPER \u00b7 OPEN \u00b7 eq $50.08 \u00b7 2026-09-24 19:23:20 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-24 19:23:21 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=HAT open_p=0.66 edge=2.47 conf=0.72",
-    "pick": "HAT",
-    "open_p": 0.66,
-    "confidence": 0.72,
-    "edge_score": 2.47,
+    "detail": "pick=HAT open_p=0.66 edge=2.48 conf=0.78",
     "picks": [
       {
         "sym": "HAT",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.78
+        "probs": 0.83
       },
       {
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.19
+        "probs": 0.15
       },
       {
         "sym": "FOOMS",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       },
       {
         "sym": "WAGEFLOW",
@@ -12389,25 +12387,10 @@
         "probs": 0.0
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "HAT",
-        "confidence": 0.72
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.47,
-        "confidence": 0.29
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.66
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-24 19:23:20 ET",
+    "open_p": 0.66,
+    "risk": null,
+    "confidence": 0.78,
     "live": true
   }
 }
