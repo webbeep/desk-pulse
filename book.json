@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 03:07:19 ET",
+  "updated_et": "2026-09-24 03:08:07 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 53.5387,
-  "upnl_usd": 0.0,
-  "equity_usd": 53.5387,
+  "upnl_usd": -0.0022,
+  "equity_usd": 53.5365,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -46.4613,
-  "total_pnl_pct": -46.4613,
-  "mark_eth": 2683.855,
-  "mark": 2683.855,
+  "total_pnl_usd": -46.4635,
+  "total_pnl_pct": -46.4635,
+  "mark_eth": 2684.675,
+  "mark": 2684.675,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2683.855
+    "ETH": 2684.675
   },
   "holdings": {
-    "paper_cash_usd": 53.5387,
+    "paper_cash_usd": 50.3287,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -6337,6 +6337,13 @@
       "ticker": "RUFO",
       "reason": "TP_+3.0",
       "pnl_usd": 0.6985
+    },
+    {
+      "t": "now",
+      "equity_usd": 53.5365,
+      "liquid_usd": 53.5365,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -7385,29 +7392,33 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 53.5387,
-    "mtm_equity_usd": 53.5387,
+    "mtm_equity_usd": 53.5365,
     "realized_pnl_usd": -46.4613,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $53.54 \u00b7 curve n=630 \u00b7 2026-09-24 03:07:19 ET",
+    "unrealized_pnl_usd": -0.0022,
+    "open": {
+      "id": "PAPER-808",
+      "ticker": "9D2A08",
+      "usd": 3.21
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $53.54 \u00b7 curve n=631 \u00b7 2026-09-24 03:08:07 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 629
   },
-  "notes": "PAPER heartbeat \u00b7 eq $53.54 \u00b7 FLAT \u00b7 2026-09-24 03:07:19 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $53.54 \u00b7 2026-09-24 03:08:07 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.64 edge=1.92 conf=0.87",
+    "detail": "pick=IMDSTRTGY open_p=0.62 edge=1.96 conf=0.85",
     "pick": "IMDSTRTGY",
-    "open_p": 0.64,
-    "confidence": 0.87,
-    "edge_score": 1.92,
+    "open_p": 0.62,
+    "confidence": 0.85,
+    "edge_score": 1.96,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.89
+        "probs": 0.87
       },
       {
         "sym": "MUSEPAD",
@@ -7419,13 +7430,13 @@
         "sym": "RUFO",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.07
+        "probs": 0.08
       },
       {
         "sym": "SI",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.03
       },
       {
         "sym": "VORTA",
@@ -7439,20 +7450,20 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.87
+        "confidence": 0.85
       },
       "edge": {
         "type": "score",
-        "score": 1.92,
-        "confidence": 0.38
+        "score": 1.96,
+        "confidence": 0.42
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 03:07:19 ET",
+    "stamp_et": "2026-09-24 03:08:04 ET",
     "live": true
   }
 }
