@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 14:13:29 ET",
+  "updated_et": "2026-09-24 14:14:17 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 44.3093,
+  "liquid_usd": 45.094,
   "upnl_usd": 0.0,
-  "equity_usd": 44.3093,
+  "equity_usd": 45.094,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -55.6907,
-  "total_pnl_pct": -55.6907,
-  "mark_eth": 2671.81,
-  "mark": 2671.81,
+  "total_pnl_usd": -54.906,
+  "total_pnl_pct": -54.906,
+  "mark_eth": 2672.225,
+  "mark": 2672.225,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2671.81
+    "ETH": 2672.225
   },
   "holdings": {
-    "paper_cash_usd": 44.3093,
+    "paper_cash_usd": 45.094,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -10677,9 +10677,32 @@
       "ticker": "F IN THE CHAT",
       "reason": "CUT_HARD_-2.0",
       "pnl_usd": -0.1779
+    },
+    {
+      "t": "2026-09-24 14:13:42 ET",
+      "equity_usd": 45.094,
+      "liquid_usd": 45.094,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "MUSEGOD",
+      "reason": "TP_+5.0",
+      "pnl_usd": 0.7847
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 14:13:42 ET",
+      "kind": "PAPER",
+      "market": "MUSEGOD",
+      "side": "LONG",
+      "size": 5.32,
+      "size_usd": 5.32,
+      "pnl_usd": 0.7847,
+      "pnl_pct": 14.7496,
+      "tx": "TP_+5.0",
+      "id": "PAPER-1242",
+      "paper": true
+    },
     {
       "t": "2026-09-24 13:57:23 ET",
       "kind": "PAPER",
@@ -11706,54 +11729,41 @@
       "tx": "TIME_SOFT_180s",
       "id": "PAPER-1163",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 13:20:35 ET",
-      "kind": "PAPER",
-      "market": "IMDSTRTGY",
-      "side": "LONG",
-      "size": 4.79,
-      "size_usd": 4.79,
-      "pnl_usd": -0.083,
-      "pnl_pct": -1.7322,
-      "tx": "TRAIL_1.2",
-      "id": "PAPER-1162",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 44.3093,
-    "mtm_equity_usd": 44.3093,
-    "realized_pnl_usd": -55.6907,
+    "paper_equity_usd": 45.094,
+    "mtm_equity_usd": 45.094,
+    "realized_pnl_usd": -54.906,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $44.31 \u00b7 curve n=1064 \u00b7 2026-09-24 14:13:29 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $45.09 \u00b7 curve n=1065 \u00b7 2026-09-24 14:14:17 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1063
+    "closed_n": 1064
   },
-  "notes": "PAPER heartbeat \u00b7 eq $44.31 \u00b7 FLAT \u00b7 2026-09-24 14:13:29 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $45.09 \u00b7 FLAT \u00b7 2026-09-24 14:14:17 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=MUSEGOD open_p=0.64 edge=1.7 conf=0.95",
+    "detail": "pick=MUSEGOD open_p=0.64 edge=1.76 conf=0.95",
     "pick": "MUSEGOD",
     "open_p": 0.64,
     "confidence": 0.95,
-    "edge_score": 1.7,
+    "edge_score": 1.76,
     "picks": [
       {
         "sym": "MUSEGOD",
-        "lost_bps": 7,
+        "lost_bps": 6,
         "selected": true,
-        "probs": 0.96
+        "probs": 0.97
       },
       {
         "sym": "F IN THE CHAT",
         "lost_bps": 9,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -11765,8 +11775,8 @@
       },
       "edge": {
         "type": "score",
-        "score": 1.7,
-        "confidence": 0.29
+        "score": 1.76,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
@@ -11774,7 +11784,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 14:13:23 ET",
+    "stamp_et": "2026-09-24 14:14:16 ET",
     "live": true
   }
 }
