@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 20:18:53 ET",
+  "updated_et": "2026-09-23 20:19:42 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 49.737,
+  "liquid_usd": 50.7203,
   "upnl_usd": 0.0,
-  "equity_usd": 49.737,
+  "equity_usd": 50.7203,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -50.263,
-  "total_pnl_pct": -50.263,
-  "mark_eth": 2689.34,
-  "mark": 2689.34,
+  "total_pnl_usd": -49.2797,
+  "total_pnl_pct": -49.2797,
+  "mark_eth": 2689.035,
+  "mark": 2689.035,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.34
+    "ETH": 2689.035
   },
   "holdings": {
-    "paper_cash_usd": 49.737,
+    "paper_cash_usd": 50.7203,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -4157,9 +4157,32 @@
       "ticker": "IMDSTRTGY",
       "reason": "TP_+3.5",
       "pnl_usd": 0.1734
+    },
+    {
+      "t": "2026-09-23 20:19:28 ET",
+      "equity_usd": 50.7203,
+      "liquid_usd": 50.7203,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "METACAT",
+      "reason": "TP_+3.5",
+      "pnl_usd": 0.9833
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 20:19:28 ET",
+      "kind": "PAPER",
+      "market": "METACAT",
+      "side": "LONG",
+      "size": 3.98,
+      "size_usd": 3.98,
+      "pnl_usd": 0.9833,
+      "pnl_pct": 24.7068,
+      "tx": "TP_+3.5",
+      "id": "PAPER-590",
+      "paper": true
+    },
     {
       "t": "2026-09-23 20:17:41 ET",
       "kind": "PAPER",
@@ -5186,60 +5209,53 @@
       "tx": "TP_+3.5",
       "id": "PAPER-512",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 12:19:38 ET",
-      "kind": "PAPER",
-      "market": "LOAN",
-      "side": "LONG",
-      "size": 5.37,
-      "size_usd": 5.37,
-      "pnl_usd": 0.3578,
-      "pnl_pct": 6.663,
-      "tx": "TP_+3.5",
-      "id": "PAPER-511",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 49.737,
-    "mtm_equity_usd": 49.737,
-    "realized_pnl_usd": -50.263,
+    "paper_equity_usd": 50.7203,
+    "mtm_equity_usd": 50.7203,
+    "realized_pnl_usd": -49.2797,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $49.74 \u00b7 curve n=412 \u00b7 2026-09-23 20:18:53 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $50.72 \u00b7 curve n=413 \u00b7 2026-09-23 20:19:42 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 411
+    "closed_n": 412
   },
-  "notes": "PAPER heartbeat \u00b7 eq $49.74 \u00b7 FLAT \u00b7 2026-09-23 20:18:53 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $50.72 \u00b7 FLAT \u00b7 2026-09-23 20:19:42 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.62 edge=2.08 conf=0.53",
+    "detail": "pick=IMDSTRTGY open_p=0.63 edge=2.13 conf=0.6",
     "pick": "IMDSTRTGY",
-    "open_p": 0.62,
-    "confidence": 0.53,
-    "edge_score": 2.08,
+    "open_p": 0.63,
+    "confidence": 0.6,
+    "edge_score": 2.13,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.65
+        "probs": 0.68
       },
       {
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.33
+        "probs": 0.2
+      },
+      {
+        "sym": "METACAT",
+        "lost_bps": 8,
+        "selected": false,
+        "probs": 0.1
       },
       {
         "sym": "STEALTH",
-        "lost_bps": 29,
+        "lost_bps": 33,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -5247,20 +5263,20 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.53
+        "confidence": 0.6
       },
       "edge": {
         "type": "score",
-        "score": 2.08,
-        "confidence": 0.29
+        "score": 2.13,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.62
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 20:18:47 ET",
+    "stamp_et": "2026-09-23 20:19:41 ET",
     "live": true
   }
 }
