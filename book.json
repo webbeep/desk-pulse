@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 15:24:20 ET",
+  "updated_et": "2026-09-24 15:25:08 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 47.5049,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -52.4951,
   "total_pnl_pct": -52.4951,
-  "mark_eth": 2692.995,
-  "mark": 2692.995,
+  "mark_eth": 2693.515,
+  "mark": 2693.515,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.995
+    "ETH": 2693.515
   },
   "holdings": {
     "paper_cash_usd": 47.5049,
@@ -11819,20 +11819,26 @@
     "realized_pnl_usd": -52.4951,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $47.50 \u00b7 curve n=1073 \u00b7 2026-09-24 15:24:20 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $47.50 \u00b7 curve n=1073 \u00b7 2026-09-24 15:25:08 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1072
   },
-  "notes": "PAPER heartbeat \u00b7 eq $47.50 \u00b7 FLAT \u00b7 2026-09-24 15:24:20 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $47.50 \u00b7 FLAT \u00b7 2026-09-24 15:25:08 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=MUSEGOD open_p=0.67 edge=2.3 conf=0.91",
+    "detail": "pick=MUSEGOD open_p=0.68 edge=2.33 conf=0.94",
     "pick": "MUSEGOD",
-    "open_p": 0.67,
-    "confidence": 0.91,
-    "edge_score": 2.3,
+    "open_p": 0.68,
+    "confidence": 0.94,
+    "edge_score": 2.33,
     "picks": [
+      {
+        "sym": "MUSEGOD",
+        "lost_bps": 5,
+        "selected": true,
+        "probs": 0.96
+      },
       {
         "sym": "JOLLY",
         "lost_bps": 6,
@@ -11840,16 +11846,10 @@
         "probs": 0.03
       },
       {
-        "sym": "MUSEGOD",
-        "lost_bps": 6,
-        "selected": true,
-        "probs": 0.93
-      },
-      {
         "sym": "F IN THE CHAT",
-        "lost_bps": 7,
+        "lost_bps": 8,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.0
       },
       {
         "sym": "JOLLY",
@@ -11863,20 +11863,20 @@
       "pick": {
         "type": "choice",
         "choice": "MUSEGOD",
-        "confidence": 0.91
+        "confidence": 0.94
       },
       "edge": {
         "type": "score",
-        "score": 2.3,
-        "confidence": 0.32
+        "score": 2.33,
+        "confidence": 0.27
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 15:24:13 ET",
+    "stamp_et": "2026-09-24 15:25:06 ET",
     "live": true
   }
 }
