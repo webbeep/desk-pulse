@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 01:08:43 ET",
+  "updated_et": "2026-09-24 01:09:31 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 53.3977,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -46.6023,
   "total_pnl_pct": -46.6023,
-  "mark_eth": 2700.41,
-  "mark": 2700.41,
+  "mark_eth": 2696.955,
+  "mark": 2696.955,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2700.41
+    "ETH": 2696.955
   },
   "holdings": {
     "paper_cash_usd": 53.3977,
@@ -6529,49 +6529,49 @@
     "realized_pnl_usd": -46.6023,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $53.40 \u00b7 curve n=544 \u00b7 2026-09-24 01:08:43 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $53.40 \u00b7 curve n=544 \u00b7 2026-09-24 01:09:31 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 543
   },
-  "notes": "PAPER heartbeat \u00b7 eq $53.40 \u00b7 FLAT \u00b7 2026-09-24 01:08:43 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $53.40 \u00b7 FLAT \u00b7 2026-09-24 01:09:31 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.1 conf=0.91",
+    "detail": "pick=IMDSTRTGY open_p=0.66 edge=2.21 conf=0.89",
     "pick": "IMDSTRTGY",
-    "open_p": 0.65,
-    "confidence": 0.91,
-    "edge_score": 2.1,
+    "open_p": 0.66,
+    "confidence": 0.89,
+    "edge_score": 2.21,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.93
+        "probs": 0.91
       },
       {
         "sym": "VORTA",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.03
       },
       {
         "sym": "RUFO",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.03
+      },
+      {
+        "sym": "UP",
+        "lost_bps": 10,
+        "selected": false,
+        "probs": 0.0
       },
       {
         "sym": "SHINYHUNTERS",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.01
-      },
-      {
-        "sym": "ZZZ",
-        "lost_bps": 10,
-        "selected": false,
-        "probs": 0.01
+        "probs": 0.02
       }
     ],
     "model": "jev-1.13.0",
@@ -6579,20 +6579,20 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.91
+        "confidence": 0.89
       },
       "edge": {
         "type": "score",
-        "score": 2.1,
-        "confidence": 0.3
+        "score": 2.21,
+        "confidence": 0.15
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 01:08:39 ET",
+    "stamp_et": "2026-09-24 01:09:20 ET",
     "live": true
   }
 }
