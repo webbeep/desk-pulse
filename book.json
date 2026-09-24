@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 21:06:42 ET",
+  "updated_et": "2026-09-23 21:07:30 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 49.1244,
-  "upnl_usd": -0.0049,
-  "equity_usd": 49.1195,
+  "liquid_usd": 49.281,
+  "upnl_usd": 0.0,
+  "equity_usd": 49.281,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -50.8805,
-  "total_pnl_pct": -50.8805,
-  "mark_eth": 2680.78,
-  "mark": 2680.78,
+  "total_pnl_usd": -50.719,
+  "total_pnl_pct": -50.719,
+  "mark_eth": 2682.17,
+  "mark": 2682.17,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2680.78
+    "ETH": 2682.17
   },
   "holdings": {
-    "paper_cash_usd": 46.1744,
+    "paper_cash_usd": 49.281,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-609",
-      "market": "BESSENT",
-      "side": "LONG",
-      "size_usd": 2.95,
-      "entry": 0.00021700722644402284,
-      "mark": 0.00021694102084951448,
-      "uPnL": -0.0009,
-      "mtm_pct": -0.0309,
-      "sl": 0.00017360578115521827,
-      "tp": 0.0003255108396660343,
-      "lev": 1,
-      "paper": true,
-      "liq": 70713633738326896357008,
-      "held_min": 0.03
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -4366,14 +4349,122 @@
       "pnl_usd": -0.4331
     },
     {
-      "t": "now",
-      "equity_usd": 49.1195,
-      "liquid_usd": 49.1195,
+      "t": "2026-09-23 21:06:59 ET",
+      "equity_usd": 48.8938,
+      "liquid_usd": 48.8938,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "ROBIN",
+      "reason": "CUT_HARD_-2.0",
+      "pnl_usd": -0.2306
+    },
+    {
+      "t": "2026-09-23 21:06:59 ET",
+      "equity_usd": 48.7962,
+      "liquid_usd": 48.7962,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "BESSENT",
+      "reason": "CUT_HARD_-2.0",
+      "pnl_usd": -0.0976
+    },
+    {
+      "t": "2026-09-23 21:07:10 ET",
+      "equity_usd": 49.432,
+      "liquid_usd": 49.432,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ROBIN",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.6358
+    },
+    {
+      "t": "2026-09-23 21:07:11 ET",
+      "equity_usd": 49.5296,
+      "liquid_usd": 49.5296,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "BESSENT",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.0976
+    },
+    {
+      "t": "2026-09-23 21:07:29 ET",
+      "equity_usd": 49.281,
+      "liquid_usd": 49.281,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "BESSENT",
+      "reason": "CUT_HARD_-2.0",
+      "pnl_usd": -0.2486
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 21:07:29 ET",
+      "kind": "PAPER",
+      "market": "BESSENT",
+      "side": "LONG",
+      "size": 2.97,
+      "size_usd": 2.97,
+      "pnl_usd": -0.2486,
+      "pnl_pct": -8.3717,
+      "tx": "CUT_HARD_-2.0",
+      "id": "PAPER-613",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 21:07:11 ET",
+      "kind": "PAPER",
+      "market": "BESSENT",
+      "side": "LONG",
+      "size": 2.93,
+      "size_usd": 2.93,
+      "pnl_usd": 0.0976,
+      "pnl_pct": 3.3299,
+      "tx": "TP_+3.0",
+      "id": "PAPER-611",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 21:07:10 ET",
+      "kind": "PAPER",
+      "market": "ROBIN",
+      "side": "LONG",
+      "size": 2.93,
+      "size_usd": 2.93,
+      "pnl_usd": 0.6358,
+      "pnl_pct": 21.6982,
+      "tx": "TP_+3.0",
+      "id": "PAPER-612",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 21:06:59 ET",
+      "kind": "PAPER",
+      "market": "BESSENT",
+      "side": "LONG",
+      "size": 2.95,
+      "size_usd": 2.95,
+      "pnl_usd": -0.0976,
+      "pnl_pct": -3.3085,
+      "tx": "CUT_HARD_-2.0",
+      "id": "PAPER-609",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 21:06:59 ET",
+      "kind": "PAPER",
+      "market": "ROBIN",
+      "side": "LONG",
+      "size": 2.95,
+      "size_usd": 2.95,
+      "pnl_usd": -0.2306,
+      "pnl_pct": -7.816,
+      "tx": "CUT_HARD_-2.0",
+      "id": "PAPER-610",
+      "paper": true
+    },
     {
       "t": "2026-09-23 21:06:18 ET",
       "kind": "PAPER",
@@ -5348,111 +5439,41 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-534",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 14:07:46 ET",
-      "kind": "PAPER",
-      "market": "PALLAS",
-      "side": "LONG",
-      "size": 4.76,
-      "size_usd": 4.76,
-      "pnl_usd": -0.7418,
-      "pnl_pct": -15.5834,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-533",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 14:07:41 ET",
-      "kind": "PAPER",
-      "market": "SSI",
-      "side": "LONG",
-      "size": 4.76,
-      "size_usd": 4.76,
-      "pnl_usd": 0.6186,
-      "pnl_pct": 12.9948,
-      "tx": "TP_+3.5",
-      "id": "PAPER-532",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 14:07:11 ET",
-      "kind": "PAPER",
-      "market": "PALLAS",
-      "side": "LONG",
-      "size": 4.76,
-      "size_usd": 4.76,
-      "pnl_usd": -0.0006,
-      "pnl_pct": -0.0122,
-      "tx": "TIME_SOFT_90s",
-      "id": "PAPER-531",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 14:05:45 ET",
-      "kind": "PAPER",
-      "market": "PALLAS",
-      "side": "LONG",
-      "size": 4.69,
-      "size_usd": 4.69,
-      "pnl_usd": 0.8404,
-      "pnl_pct": 17.9194,
-      "tx": "TP_+3.5",
-      "id": "PAPER-530",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 14:05:33 ET",
-      "kind": "PAPER",
-      "market": "PALLAS",
-      "side": "LONG",
-      "size": 4.59,
-      "size_usd": 4.59,
-      "pnl_usd": 1.2961,
-      "pnl_pct": 28.2364,
-      "tx": "TP_+3.5",
-      "id": "PAPER-529",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 49.1244,
-    "mtm_equity_usd": 49.1195,
-    "realized_pnl_usd": -50.8756,
-    "unrealized_pnl_usd": -0.0049,
-    "open": {
-      "id": "PAPER-609",
-      "ticker": "BESSENT",
-      "usd": 2.95,
-      "mtm_pct": -0.0309
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $49.12 \u00b7 curve n=432 \u00b7 2026-09-23 21:06:42 ET",
+    "paper_equity_usd": 49.281,
+    "mtm_equity_usd": 49.281,
+    "realized_pnl_usd": -50.719,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $49.28 \u00b7 curve n=436 \u00b7 2026-09-23 21:07:30 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 430
+    "closed_n": 435
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $49.12 \u00b7 2026-09-23 21:06:42 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $49.28 \u00b7 FLAT \u00b7 2026-09-23 21:07:30 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=BESSENT open_p=0.64 edge=2.23 conf=0.83",
+    "detail": "pick=BESSENT open_p=0.64 edge=2.23 conf=0.86",
     "pick": "BESSENT",
     "open_p": 0.64,
-    "confidence": 0.83,
+    "confidence": 0.86,
     "edge_score": 2.23,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.09
       },
       {
         "sym": "BESSENT",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.87
+        "probs": 0.89
       },
       {
         "sym": "JOLLY",
@@ -5472,7 +5493,7 @@
       "pick": {
         "type": "choice",
         "choice": "BESSENT",
-        "confidence": 0.83
+        "confidence": 0.86
       },
       "edge": {
         "type": "score",
@@ -5485,7 +5506,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 21:06:37 ET",
+    "stamp_et": "2026-09-23 21:07:18 ET",
     "live": true
   }
 }
