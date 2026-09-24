@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 01:21:26 ET",
+  "updated_et": "2026-09-24 01:22:12 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 53.8964,
-  "upnl_usd": -0.0062,
-  "equity_usd": 53.8902,
+  "liquid_usd": 54.0596,
+  "upnl_usd": -0.0022,
+  "equity_usd": 54.0574,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -46.1098,
-  "total_pnl_pct": -46.1098,
-  "mark_eth": 2689.905,
-  "mark": 2689.905,
+  "total_pnl_usd": -45.9426,
+  "total_pnl_pct": -45.9426,
+  "mark_eth": 2689.205,
+  "mark": 2689.205,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.905
+    "ETH": 2689.205
   },
   "holdings": {
-    "paper_cash_usd": 50.6664,
+    "paper_cash_usd": 50.8196,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-736",
-      "market": "SI",
-      "side": "LONG",
-      "size_usd": 3.23,
-      "entry": 3.872515178362869e-06,
-      "mark": 3.865081867494185e-06,
-      "uPnL": -0.0062,
-      "mtm_pct": -0.1916,
-      "sl": 3.0980121426902955e-06,
-      "tp": 5.8087727675443036e-06,
-      "lev": 1,
-      "paper": true,
-      "liq": 36819258015569838458222,
-      "held_min": 0.14
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -5636,14 +5619,60 @@
       "pnl_usd": -0.0049
     },
     {
+      "t": "2026-09-24 01:21:33 ET",
+      "equity_usd": 54.066,
+      "liquid_usd": 54.066,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "VORTA",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.1696
+    },
+    {
+      "t": "2026-09-24 01:21:55 ET",
+      "equity_usd": 54.0596,
+      "liquid_usd": 54.0596,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SI",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0064
+    },
+    {
       "t": "now",
-      "equity_usd": 53.8902,
-      "liquid_usd": 53.8902,
+      "equity_usd": 54.0574,
+      "liquid_usd": 54.0574,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 01:21:55 ET",
+      "kind": "PAPER",
+      "market": "SI",
+      "side": "LONG",
+      "size": 3.23,
+      "size_usd": 3.23,
+      "pnl_usd": -0.0064,
+      "pnl_pct": -0.1991,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-736",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 01:21:33 ET",
+      "kind": "PAPER",
+      "market": "VORTA",
+      "side": "LONG",
+      "size": 3.23,
+      "size_usd": 3.23,
+      "pnl_usd": 0.1696,
+      "pnl_pct": 5.2523,
+      "tx": "TP_+3.0",
+      "id": "PAPER-737",
+      "paper": true
+    },
     {
       "t": "2026-09-24 01:21:00 ET",
       "kind": "PAPER",
@@ -6657,78 +6686,51 @@
       "tx": "TIME_SOFT_45s",
       "id": "PAPER-658",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 22:46:28 ET",
-      "kind": "PAPER",
-      "market": "9D2A08",
-      "side": "LONG",
-      "size": 3.1,
-      "size_usd": 3.1,
-      "pnl_usd": -0.002,
-      "pnl_pct": -0.0659,
-      "tx": "TIME_SOFT_45s",
-      "id": "PAPER-657",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 22:45:37 ET",
-      "kind": "PAPER",
-      "market": "GIGACAT",
-      "side": "LONG",
-      "size": 3.08,
-      "size_usd": 3.08,
-      "pnl_usd": -0.0023,
-      "pnl_pct": -0.0762,
-      "tx": "TIME_SOFT_45s",
-      "id": "PAPER-656",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 53.8964,
-    "mtm_equity_usd": 53.8902,
-    "realized_pnl_usd": -46.1036,
-    "unrealized_pnl_usd": -0.0062,
+    "paper_equity_usd": 54.0596,
+    "mtm_equity_usd": 54.0574,
+    "realized_pnl_usd": -45.9404,
+    "unrealized_pnl_usd": -0.0022,
     "open": {
-      "id": "PAPER-736",
-      "ticker": "SI",
-      "usd": 3.23,
-      "mtm_pct": -0.1916
+      "id": "PAPER-738",
+      "ticker": "9D2A08",
+      "usd": 3.24
     },
-    "notes": "PAPER heartbeat \u00b7 eq $53.90 \u00b7 curve n=559 \u00b7 2026-09-24 01:21:26 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $54.06 \u00b7 curve n=561 \u00b7 2026-09-24 01:22:12 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 557
+    "closed_n": 559
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $53.90 \u00b7 2026-09-24 01:21:26 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $54.06 \u00b7 2026-09-24 01:22:12 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=VORTA open_p=0.64 edge=2.29 conf=0.91",
+    "detail": "pick=VORTA open_p=0.63 edge=2.19 conf=0.93",
     "pick": "VORTA",
-    "open_p": 0.64,
-    "confidence": 0.91,
-    "edge_score": 2.29,
+    "open_p": 0.63,
+    "confidence": 0.93,
+    "edge_score": 2.19,
     "picks": [
       {
         "sym": "VORTA",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.93
+        "probs": 0.95
       },
       {
         "sym": "UP",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.02
       },
       {
         "sym": "SHINYHUNTERS",
         "lost_bps": 10,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.02
       },
       {
         "sym": "ZZZ",
@@ -6748,20 +6750,20 @@
       "pick": {
         "type": "choice",
         "choice": "VORTA",
-        "confidence": 0.91
+        "confidence": 0.93
       },
       "edge": {
         "type": "score",
-        "score": 2.29,
-        "confidence": 0.26
+        "score": 2.19,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 01:21:12 ET",
+    "stamp_et": "2026-09-24 01:22:08 ET",
     "live": true
   }
 }
