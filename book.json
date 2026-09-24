@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 12:43:20 ET",
+  "updated_et": "2026-09-24 12:44:08 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 44.6095,
-  "upnl_usd": 0.0751,
-  "equity_usd": 44.6846,
+  "liquid_usd": 44.8752,
+  "upnl_usd": -0.0083,
+  "equity_usd": 44.8669,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -55.3154,
-  "total_pnl_pct": -55.3154,
-  "mark_eth": 2701.655,
-  "mark": 2701.655,
+  "total_pnl_usd": -55.1331,
+  "total_pnl_pct": -55.1331,
+  "mark_eth": 2696.865,
+  "mark": 2696.865,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2701.655
+    "ETH": 2696.865
   },
   "holdings": {
-    "paper_cash_usd": 40.1495,
+    "paper_cash_usd": 40.3852,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -41,36 +41,20 @@
   },
   "positions": [
     {
-      "id": "PAPER-1095",
-      "market": "LILY",
-      "side": "LONG",
-      "size_usd": 4.46,
-      "entry": 1.9695839380788647e-05,
-      "mark": 2.002616422062788e-05,
-      "uPnL": 0.0748,
-      "mtm_pct": 1.6778,
-      "sl": 1.575667150463092e-05,
-      "tp": 2.954375907118297e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 70713633738326896357008,
-      "held_min": 0.3
-    },
-    {
-      "id": "PAPER-1094",
+      "id": "PAPER-1096",
       "market": "JIRACHI",
       "side": "LONG",
-      "size_usd": 4.46,
-      "entry": 1.227270853882662e-05,
-      "mark": 1.22735340573382e-05,
-      "uPnL": 0.0003,
-      "mtm_pct": 0.0075,
-      "sl": 9.818166831061296e-06,
-      "tp": 1.840906280823993e-05,
+      "size_usd": 4.49,
+      "entry": 1.2274988754676548e-05,
+      "mark": 1.225229779550866e-05,
+      "uPnL": -0.0083,
+      "mtm_pct": -0.1858,
+      "sl": 9.819991003741239e-06,
+      "tp": 1.8412483132014822e-05,
       "lev": 1,
       "paper": true,
       "liq": 67083695638153680707333,
-      "held_min": 0.99
+      "held_min": 0.25
     }
   ],
   "pnl_history": [
@@ -9232,14 +9216,60 @@
       "pnl_usd": 0.0339
     },
     {
+      "t": "2026-09-24 12:43:40 ET",
+      "equity_usd": 44.8785,
+      "liquid_usd": 44.8785,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "LILY",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.269
+    },
+    {
+      "t": "2026-09-24 12:43:51 ET",
+      "equity_usd": 44.8752,
+      "liquid_usd": 44.8752,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JIRACHI",
+      "reason": "TIME_EXIT_90s",
+      "pnl_usd": -0.0033
+    },
+    {
       "t": "now",
-      "equity_usd": 44.6846,
-      "liquid_usd": 44.6846,
+      "equity_usd": 44.8669,
+      "liquid_usd": 44.8669,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 12:43:51 ET",
+      "kind": "PAPER",
+      "market": "JIRACHI",
+      "side": "LONG",
+      "size": 4.46,
+      "size_usd": 4.46,
+      "pnl_usd": -0.0033,
+      "pnl_pct": -0.0747,
+      "tx": "TIME_EXIT_90s",
+      "id": "PAPER-1094",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 12:43:40 ET",
+      "kind": "PAPER",
+      "market": "LILY",
+      "side": "LONG",
+      "size": 4.46,
+      "size_usd": 4.46,
+      "pnl_usd": 0.269,
+      "pnl_pct": 6.0318,
+      "tx": "TP_+3.0",
+      "id": "PAPER-1095",
+      "paper": true
+    },
     {
       "t": "2026-09-24 12:43:11 ET",
       "kind": "PAPER",
@@ -10253,60 +10283,34 @@
       "tx": "CUT_HARD_LIQ0",
       "id": "PAPER-1017",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 11:21:05 ET",
-      "kind": "PAPER",
-      "market": "AI",
-      "side": "LONG",
-      "size": 7.48,
-      "size_usd": 7.48,
-      "pnl_usd": -0.0015,
-      "pnl_pct": -0.0206,
-      "tx": "TIME_EXIT_90s",
-      "id": "PAPER-1014",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 11:20:54 ET",
-      "kind": "PAPER",
-      "market": "JIRACHI",
-      "side": "LONG",
-      "size": 8.8,
-      "size_usd": 8.8,
-      "pnl_usd": -0.0066,
-      "pnl_pct": -0.0748,
-      "tx": "TIME_EXIT_90s",
-      "id": "PAPER-1013",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 44.6095,
-    "mtm_equity_usd": 44.6846,
-    "realized_pnl_usd": -55.3905,
-    "unrealized_pnl_usd": 0.0751,
+    "paper_equity_usd": 44.8752,
+    "mtm_equity_usd": 44.8669,
+    "realized_pnl_usd": -55.1248,
+    "unrealized_pnl_usd": -0.0083,
     "open": {
-      "id": "PAPER-1095",
-      "ticker": "LILY",
-      "usd": 4.46,
-      "mtm_pct": 1.6778
+      "id": "PAPER-1096",
+      "ticker": "JIRACHI",
+      "usd": 4.49,
+      "mtm_pct": -0.1858
     },
-    "notes": "PAPER heartbeat \u00b7 eq $44.61 \u00b7 curve n=917 \u00b7 2026-09-24 12:43:20 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $44.88 \u00b7 curve n=919 \u00b7 2026-09-24 12:44:08 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 915
+    "closed_n": 917
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $44.61 \u00b7 2026-09-24 12:43:20 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $44.88 \u00b7 2026-09-24 12:44:08 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SCHIFFY open_p=0.69 edge=2.38 conf=0.93",
+    "detail": "pick=SCHIFFY open_p=0.73 edge=2.5 conf=0.93",
     "pick": "SCHIFFY",
-    "open_p": 0.69,
+    "open_p": 0.73,
     "confidence": 0.93,
-    "edge_score": 2.38,
+    "edge_score": 2.5,
     "picks": [
       {
         "sym": "SCHIFFY",
@@ -10348,16 +10352,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.38,
-        "confidence": 0.27
+        "score": 2.5,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.69
+        "noul": 0.73
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 12:43:12 ET",
+    "stamp_et": "2026-09-24 12:44:06 ET",
     "live": true
   }
 }
