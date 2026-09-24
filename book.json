@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 21:05:06 ET",
+  "updated_et": "2026-09-23 21:05:54 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 48.7825,
-  "upnl_usd": 0.0,
-  "equity_usd": 48.7825,
+  "upnl_usd": -0.0009,
+  "equity_usd": 48.7816,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -51.2175,
-  "total_pnl_pct": -51.2175,
-  "mark_eth": 2681.14,
-  "mark": 2681.14,
+  "total_pnl_usd": -51.2184,
+  "total_pnl_pct": -51.2184,
+  "mark_eth": 2681.205,
+  "mark": 2681.205,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2681.14
+    "ETH": 2681.205
   },
   "holdings": {
-    "paper_cash_usd": 48.7825,
+    "paper_cash_usd": 45.8525,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -4317,6 +4317,13 @@
       "ticker": "BESSENT",
       "reason": "CUT_HARD_-2.5",
       "pnl_usd": -0.2421
+    },
+    {
+      "t": "now",
+      "equity_usd": 48.7816,
+      "liquid_usd": 48.7816,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -5365,45 +5372,49 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 48.7825,
-    "mtm_equity_usd": 48.7825,
+    "mtm_equity_usd": 48.7816,
     "realized_pnl_usd": -51.2175,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $48.78 \u00b7 curve n=428 \u00b7 2026-09-23 21:05:06 ET",
+    "unrealized_pnl_usd": -0.0009,
+    "open": {
+      "id": "PAPER-606",
+      "ticker": "BESSENT",
+      "usd": 2.93
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $48.78 \u00b7 curve n=429 \u00b7 2026-09-23 21:05:54 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 427
   },
-  "notes": "PAPER heartbeat \u00b7 eq $48.78 \u00b7 FLAT \u00b7 2026-09-23 21:05:06 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $48.78 \u00b7 2026-09-23 21:05:54 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.29 conf=0.86",
-    "pick": "IMDSTRTGY",
-    "open_p": 0.65,
-    "confidence": 0.86,
-    "edge_score": 2.29,
+    "detail": "pick=BESSENT open_p=0.63 edge=2.21 conf=0.83",
+    "pick": "BESSENT",
+    "open_p": 0.63,
+    "confidence": 0.83,
+    "edge_score": 2.21,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 4,
-        "selected": true,
-        "probs": 0.89
+        "selected": false,
+        "probs": 0.11
       },
       {
         "sym": "BESSENT",
-        "lost_bps": 5,
-        "selected": false,
-        "probs": 0.1
+        "lost_bps": 4,
+        "selected": true,
+        "probs": 0.86
       },
       {
         "sym": "JOLLY",
-        "lost_bps": 6,
+        "lost_bps": 5,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.02
       },
       {
         "sym": "ROBIN",
-        "lost_bps": 41,
+        "lost_bps": 28,
         "selected": false,
         "probs": 0.0
       }
@@ -5412,21 +5423,21 @@
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "IMDSTRTGY",
-        "confidence": 0.86
+        "choice": "BESSENT",
+        "confidence": 0.83
       },
       "edge": {
         "type": "score",
-        "score": 2.29,
-        "confidence": 0.25
+        "score": 2.21,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 21:04:38 ET",
+    "stamp_et": "2026-09-23 21:05:51 ET",
     "live": true
   }
 }
