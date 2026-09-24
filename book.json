@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-23 21:55:23 ET",
+  "updated_et": "2026-09-23 21:56:12 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 50.4307,
@@ -5769,31 +5769,37 @@
     "realized_pnl_usd": -49.5693,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $50.43 \u00b7 curve n=468 \u00b7 2026-09-23 21:55:23 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $50.43 \u00b7 curve n=468 \u00b7 2026-09-23 21:56:12 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 467
   },
-  "notes": "PAPER heartbeat \u00b7 eq $50.43 \u00b7 FLAT \u00b7 2026-09-23 21:55:23 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $50.43 \u00b7 FLAT \u00b7 2026-09-23 21:56:12 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=PARAFACTUAL open_p=0.66 edge=2.32 conf=0.94",
-    "pick": "PARAFACTUAL",
-    "open_p": 0.66,
-    "confidence": 0.94,
-    "edge_score": 2.32,
+    "detail": "pick=IMDSTRTGY open_p=0.64 edge=2.1 conf=0.83",
+    "pick": "IMDSTRTGY",
+    "open_p": 0.64,
+    "confidence": 0.83,
+    "edge_score": 2.1,
     "picks": [
       {
-        "sym": "PARAFACTUAL",
-        "lost_bps": 4,
+        "sym": "IMDSTRTGY",
+        "lost_bps": 3,
         "selected": true,
-        "probs": 0.96
+        "probs": 0.86
       },
       {
         "sym": "JOLLY",
-        "lost_bps": 5,
+        "lost_bps": 4,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.04
+      },
+      {
+        "sym": "PARAFACTUAL",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.08
       },
       {
         "sym": "ZZZ",
@@ -5806,33 +5812,27 @@
         "lost_bps": 10,
         "selected": false,
         "probs": 0.0
-      },
-      {
-        "sym": "PERCH",
-        "lost_bps": 28,
-        "selected": false,
-        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "PARAFACTUAL",
-        "confidence": 0.94
+        "choice": "IMDSTRTGY",
+        "confidence": 0.83
       },
       "edge": {
         "type": "score",
-        "score": 2.32,
-        "confidence": 0.25
+        "score": 2.1,
+        "confidence": 0.38
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 21:55:14 ET",
+    "stamp_et": "2026-09-23 21:56:06 ET",
     "live": true
   }
 }
