@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-23 22:44:53 ET",
+  "updated_et": "2026-09-23 22:45:41 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 51.3599,
-  "upnl_usd": -0.002,
-  "equity_usd": 51.3579,
+  "liquid_usd": 51.6785,
+  "upnl_usd": 0.0,
+  "equity_usd": 51.6785,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -48.6421,
-  "total_pnl_pct": -48.6421,
-  "mark_eth": 2685.545,
-  "mark": 2685.545,
+  "total_pnl_usd": -48.3215,
+  "total_pnl_pct": -48.3215,
+  "mark_eth": 2685.615,
+  "mark": 2685.615,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2685.545
+    "ETH": 2685.615
   },
   "holdings": {
-    "paper_cash_usd": 48.2799,
+    "paper_cash_usd": 51.6785,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-654",
-      "market": "SHINYHUNTERS",
-      "side": "LONG",
-      "size_usd": 3.08,
-      "entry": 1.3535291865794301e-05,
-      "mark": 1.3526502715232097e-05,
-      "uPnL": -0.002,
-      "mtm_pct": -0.0657,
-      "sl": 1.0828233492635442e-05,
-      "tp": 2.0302937798691452e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 70713633738326896357008,
-      "held_min": 0.14
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -4816,14 +4799,76 @@
       "pnl_usd": 0.0513
     },
     {
-      "t": "now",
-      "equity_usd": 51.3579,
-      "liquid_usd": 51.3579,
+      "t": "2026-09-23 22:45:21 ET",
+      "equity_usd": 51.3577,
+      "liquid_usd": 51.3577,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "SHINYHUNTERS",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0022
+    },
+    {
+      "t": "2026-09-23 22:45:21 ET",
+      "equity_usd": 51.6808,
+      "liquid_usd": 51.6808,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PERCH",
+      "reason": "TP_+3.0",
+      "pnl_usd": 0.3231
+    },
+    {
+      "t": "2026-09-23 22:45:37 ET",
+      "equity_usd": 51.6785,
+      "liquid_usd": 51.6785,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "GIGACAT",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0023
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-23 22:45:37 ET",
+      "kind": "PAPER",
+      "market": "GIGACAT",
+      "side": "LONG",
+      "size": 3.08,
+      "size_usd": 3.08,
+      "pnl_usd": -0.0023,
+      "pnl_pct": -0.0762,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-656",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 22:45:21 ET",
+      "kind": "PAPER",
+      "market": "PERCH",
+      "side": "LONG",
+      "size": 3.08,
+      "size_usd": 3.08,
+      "pnl_usd": 0.3231,
+      "pnl_pct": 10.4911,
+      "tx": "TP_+3.0",
+      "id": "PAPER-655",
+      "paper": true
+    },
+    {
+      "t": "2026-09-23 22:45:21 ET",
+      "kind": "PAPER",
+      "market": "SHINYHUNTERS",
+      "side": "LONG",
+      "size": 3.08,
+      "size_usd": 3.08,
+      "pnl_usd": -0.0022,
+      "pnl_pct": -0.0709,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-654",
+      "paper": true
+    },
     {
       "t": "2026-09-23 22:44:49 ET",
       "kind": "PAPER",
@@ -5824,73 +5869,29 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-577",
       "paper": true
-    },
-    {
-      "t": "2026-09-23 19:55:21 ET",
-      "kind": "PAPER",
-      "market": "STEALTH",
-      "side": "LONG",
-      "size": 4.15,
-      "size_usd": 4.15,
-      "pnl_usd": -0.5588,
-      "pnl_pct": -13.4657,
-      "tx": "CUT_HARD_-2.5",
-      "id": "PAPER-576",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 19:53:55 ET",
-      "kind": "PAPER",
-      "market": "STEALTH",
-      "side": "LONG",
-      "size": 4.11,
-      "size_usd": 4.11,
-      "pnl_usd": 0.4723,
-      "pnl_pct": 11.4914,
-      "tx": "TP_+3.5",
-      "id": "PAPER-575",
-      "paper": true
-    },
-    {
-      "t": "2026-09-23 19:53:36 ET",
-      "kind": "PAPER",
-      "market": "STEALTH",
-      "side": "LONG",
-      "size": 4.07,
-      "size_usd": 4.07,
-      "pnl_usd": 0.5337,
-      "pnl_pct": 13.1129,
-      "tx": "TP_+3.5",
-      "id": "PAPER-574",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 51.3599,
-    "mtm_equity_usd": 51.3579,
-    "realized_pnl_usd": -48.6401,
-    "unrealized_pnl_usd": -0.002,
-    "open": {
-      "id": "PAPER-654",
-      "ticker": "SHINYHUNTERS",
-      "usd": 3.08,
-      "mtm_pct": -0.0657
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $51.36 \u00b7 curve n=477 \u00b7 2026-09-23 22:44:53 ET",
+    "paper_equity_usd": 51.6785,
+    "mtm_equity_usd": 51.6785,
+    "realized_pnl_usd": -48.3215,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $51.68 \u00b7 curve n=479 \u00b7 2026-09-23 22:45:41 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 475
+    "closed_n": 478
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $51.36 \u00b7 2026-09-23 22:44:53 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $51.68 \u00b7 FLAT \u00b7 2026-09-23 22:45:41 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.05 conf=0.91",
+    "detail": "pick=IMDSTRTGY open_p=0.65 edge=2.1 conf=0.91",
     "pick": "IMDSTRTGY",
     "open_p": 0.65,
     "confidence": 0.91,
-    "edge_score": 2.05,
+    "edge_score": 2.1,
     "picks": [
       {
         "sym": "IMDSTRTGY",
@@ -5902,13 +5903,13 @@
         "sym": "PARAFACTUAL",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.05
       },
       {
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       },
       {
         "sym": "SHINYHUNTERS",
@@ -5932,8 +5933,8 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.05,
-        "confidence": 0.34
+        "score": 2.1,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
@@ -5941,7 +5942,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-23 22:44:40 ET",
+    "stamp_et": "2026-09-23 22:45:35 ET",
     "live": true
   }
 }
