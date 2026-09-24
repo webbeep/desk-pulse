@@ -11753,60 +11753,43 @@
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1065
   },
-  "notes": "PAPER heartbeat \u00b7 eq $45.74 \u00b7 FLAT \u00b7 2026-09-24 14:48:06 ET",
+  "notes": "JEV OPEN \u00b7 pick=F IN THE CHAT open_p=0.63 edge=1.96 conf=0.56 \u00b7 pick=F IN THE CHAT open_p=0.62 edge=1.94 conf=0.55 \u00b7 PAPER heartbeat \u00b7 eq $45.74 \u00b7 FLAT \u00b7 2026-09-24 14:48:06 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-24 14:48:07 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=F IN THE CHAT open_p=0.63 edge=1.94 conf=0.63",
-    "pick": "F IN THE CHAT",
-    "open_p": 0.63,
-    "confidence": 0.63,
-    "edge_score": 1.94,
+    "detail": "pick=F IN THE CHAT open_p=0.63 edge=1.96 conf=0.56",
     "picks": [
       {
         "sym": "F IN THE CHAT",
         "lost_bps": 6,
         "selected": true,
-        "probs": 0.71
+        "probs": 0.67
       },
       {
         "sym": "JOLLY",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.07
       },
       {
         "sym": "MUSEGOD",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.21
+        "probs": 0.23
       },
       {
         "sym": "JOLLY",
         "lost_bps": 18,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.07
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "F IN THE CHAT",
-        "confidence": 0.63
-      },
-      "edge": {
-        "type": "score",
-        "score": 1.94,
-        "confidence": 0.3
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.63
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-24 14:47:54 ET",
+    "open_p": 0.63,
+    "risk": null,
+    "confidence": 0.56,
     "live": true
   }
 }
