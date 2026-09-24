@@ -11993,15 +11993,13 @@
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1089
   },
-  "notes": "PAPER heartbeat \u00b7 eq $50.68 \u00b7 FLAT \u00b7 2026-09-24 16:51:07 ET",
+  "notes": "JEV OPEN \u00b7 pick=SWAP open_p=0.71 edge=2.86 conf=0.97 \u00b7 PAPER heartbeat \u00b7 eq $50.68 \u00b7 FLAT \u00b7 2026-09-24 16:51:07 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-24 16:51:08 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=SWAP open_p=0.73 edge=2.86 conf=0.97",
-    "pick": "SWAP",
-    "open_p": 0.73,
-    "confidence": 0.97,
-    "edge_score": 2.86,
+    "detail": "pick=SWAP open_p=0.71 edge=2.86 conf=0.97",
     "picks": [
       {
         "sym": "SWAP",
@@ -12034,25 +12032,10 @@
         "probs": 0.0
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "SWAP",
-        "confidence": 0.97
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.86,
-        "confidence": 0.45
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.73
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-24 16:51:07 ET",
+    "open_p": 0.71,
+    "risk": null,
+    "confidence": 0.97,
     "live": true
   }
 }
