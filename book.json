@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 03:24:44 ET",
+  "updated_et": "2026-09-24 03:25:32 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 54.4601,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -45.5399,
   "total_pnl_pct": -45.5399,
-  "mark_eth": 2686.775,
-  "mark": 2686.775,
+  "mark_eth": 2687.05,
+  "mark": 2687.05,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2686.775
+    "ETH": 2687.05
   },
   "holdings": {
     "paper_cash_usd": 54.4601,
@@ -7579,25 +7579,25 @@
     "realized_pnl_usd": -45.5399,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $54.46 \u00b7 curve n=649 \u00b7 2026-09-24 03:24:44 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $54.46 \u00b7 curve n=649 \u00b7 2026-09-24 03:25:32 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 648
   },
-  "notes": "PAPER heartbeat \u00b7 eq $54.46 \u00b7 FLAT \u00b7 2026-09-24 03:24:44 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $54.46 \u00b7 FLAT \u00b7 2026-09-24 03:25:32 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.66 edge=1.99 conf=0.87",
+    "detail": "pick=IMDSTRTGY open_p=0.66 edge=2.02 conf=0.91",
     "pick": "IMDSTRTGY",
     "open_p": 0.66,
-    "confidence": 0.87,
-    "edge_score": 1.99,
+    "confidence": 0.91,
+    "edge_score": 2.02,
     "picks": [
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.9
+        "probs": 0.92
       },
       {
         "sym": "MUSEPAD",
@@ -7606,16 +7606,16 @@
         "probs": 0.02
       },
       {
+        "sym": "SI",
+        "lost_bps": 5,
+        "selected": false,
+        "probs": 0.03
+      },
+      {
         "sym": "RUFO",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.04
-      },
-      {
-        "sym": "SI",
-        "lost_bps": 6,
-        "selected": false,
-        "probs": 0.03
+        "probs": 0.02
       },
       {
         "sym": "VORTA",
@@ -7629,12 +7629,12 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.87
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
-        "score": 1.99,
-        "confidence": 0.37
+        "score": 2.02,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
@@ -7642,7 +7642,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 03:24:41 ET",
+    "stamp_et": "2026-09-24 03:25:27 ET",
     "live": true
   }
 }
