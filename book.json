@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 13:27:49 ET",
+  "updated_et": "2026-09-24 13:28:37 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 48.8502,
-  "upnl_usd": 0.1812,
-  "equity_usd": 49.0314,
+  "liquid_usd": 48.1192,
+  "upnl_usd": 0.0,
+  "equity_usd": 48.1192,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -50.9686,
-  "total_pnl_pct": -50.9686,
-  "mark_eth": 2678.11,
-  "mark": 2678.11,
+  "total_pnl_usd": -51.8808,
+  "total_pnl_pct": -51.8808,
+  "mark_eth": 2680.355,
+  "mark": 2680.355,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2678.11
+    "ETH": 2680.355
   },
   "holdings": {
-    "paper_cash_usd": 43.9602,
+    "paper_cash_usd": 48.1192,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -10049,14 +10049,30 @@
       "pnl_usd": 0.6096
     },
     {
-      "t": "now",
-      "equity_usd": 49.0314,
-      "liquid_usd": 49.0314,
+      "t": "2026-09-24 13:28:00 ET",
+      "equity_usd": 48.1192,
+      "liquid_usd": 48.1192,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "MUSEGOD",
+      "reason": "CUT_HARD_-2.0",
+      "pnl_usd": -0.731
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 13:28:00 ET",
+      "kind": "PAPER",
+      "market": "MUSEGOD",
+      "side": "LONG",
+      "size": 4.89,
+      "size_usd": 4.89,
+      "pnl_usd": -0.731,
+      "pnl_pct": -14.9491,
+      "tx": "CUT_HARD_-2.0",
+      "id": "PAPER-1179",
+      "paper": true
+    },
     {
       "t": "2026-09-24 13:27:32 ET",
       "kind": "PAPER",
@@ -11083,58 +11099,41 @@
       "tx": "TP_+3.0",
       "id": "PAPER-1102",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 12:48:35 ET",
-      "kind": "PAPER",
-      "market": "JIRACHI",
-      "side": "LONG",
-      "size": 4.55,
-      "size_usd": 4.55,
-      "pnl_usd": 0.0005,
-      "pnl_pct": 0.0107,
-      "tx": "TIME_EXIT_90s",
-      "id": "PAPER-1099",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 48.8502,
-    "mtm_equity_usd": 49.0314,
-    "realized_pnl_usd": -51.1498,
-    "unrealized_pnl_usd": 0.1812,
-    "open": {
-      "id": "PAPER-1179",
-      "ticker": "MUSEGOD",
-      "usd": 4.89
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $48.85 \u00b7 curve n=1002 \u00b7 2026-09-24 13:27:49 ET",
+    "paper_equity_usd": 48.1192,
+    "mtm_equity_usd": 48.1192,
+    "realized_pnl_usd": -51.8808,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $48.12 \u00b7 curve n=1002 \u00b7 2026-09-24 13:28:37 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1000
+    "closed_n": 1001
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $48.85 \u00b7 2026-09-24 13:27:49 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $48.12 \u00b7 FLAT \u00b7 2026-09-24 13:28:37 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SCHIFFY open_p=0.66 edge=2.26 conf=0.93",
+    "detail": "pick=SCHIFFY open_p=0.66 edge=2.25 conf=0.94",
     "pick": "SCHIFFY",
     "open_p": 0.66,
-    "confidence": 0.93,
-    "edge_score": 2.26,
+    "confidence": 0.94,
+    "edge_score": 2.25,
     "picks": [
       {
         "sym": "SCHIFFY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.96
       },
       {
         "sym": "IMDSTRTGY",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.03
       },
       {
         "sym": "MUSEGOD",
@@ -11154,12 +11153,12 @@
       "pick": {
         "type": "choice",
         "choice": "SCHIFFY",
-        "confidence": 0.93
+        "confidence": 0.94
       },
       "edge": {
         "type": "score",
-        "score": 2.26,
-        "confidence": 0.34
+        "score": 2.25,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
@@ -11167,7 +11166,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 13:27:44 ET",
+    "stamp_et": "2026-09-24 13:28:27 ET",
     "live": true
   }
 }
