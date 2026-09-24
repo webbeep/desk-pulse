@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 03:28:45 ET",
+  "updated_et": "2026-09-24 03:29:33 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 54.0939,
-  "upnl_usd": -0.0001,
-  "equity_usd": 54.0938,
+  "liquid_usd": 54.0925,
+  "upnl_usd": 0.0,
+  "equity_usd": 54.0925,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -45.9062,
-  "total_pnl_pct": -45.9062,
-  "mark_eth": 2690.495,
-  "mark": 2690.495,
+  "total_pnl_usd": -45.9075,
+  "total_pnl_pct": -45.9075,
+  "mark_eth": 2690.015,
+  "mark": 2690.015,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.495
+    "ETH": 2690.015
   },
   "holdings": {
-    "paper_cash_usd": 50.8439,
+    "paper_cash_usd": 54.0925,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-833",
-      "market": "9D2A08",
-      "side": "LONG",
-      "size_usd": 3.25,
-      "entry": 1.3591804336014555e-05,
-      "mark": 1.3591386126650369e-05,
-      "uPnL": -0.0001,
-      "mtm_pct": -0.0045,
-      "sl": 1.0873443468811644e-05,
-      "tp": 2.0387706504021833e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 70713633738326896357008,
-      "held_min": 0.42
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -6604,9 +6587,32 @@
       "ticker": "TENLABS",
       "reason": "CUT_HARD_-2.0",
       "pnl_usd": -0.3751
+    },
+    {
+      "t": "2026-09-24 03:28:57 ET",
+      "equity_usd": 54.0925,
+      "liquid_usd": 54.0925,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "9D2A08",
+      "reason": "TIME_SOFT_45s",
+      "pnl_usd": -0.0014
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 03:28:57 ET",
+      "kind": "PAPER",
+      "market": "9D2A08",
+      "side": "LONG",
+      "size": 3.25,
+      "size_usd": 3.25,
+      "pnl_usd": -0.0014,
+      "pnl_pct": -0.042,
+      "tx": "TIME_SOFT_45s",
+      "id": "PAPER-833",
+      "paper": true
+    },
     {
       "t": "2026-09-24 03:28:05 ET",
       "kind": "PAPER",
@@ -7633,47 +7639,29 @@
       "tx": "TIME_SOFT_45s",
       "id": "PAPER-754",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 01:36:59 ET",
-      "kind": "PAPER",
-      "market": "FUNKOS",
-      "side": "LONG",
-      "size": 3.32,
-      "size_usd": 3.32,
-      "pnl_usd": 0.1982,
-      "pnl_pct": 5.9707,
-      "tx": "TP_+3.0",
-      "id": "PAPER-753",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 54.0939,
-    "mtm_equity_usd": 54.0938,
-    "realized_pnl_usd": -45.9061,
-    "unrealized_pnl_usd": -0.0001,
-    "open": {
-      "id": "PAPER-833",
-      "ticker": "9D2A08",
-      "usd": 3.25,
-      "mtm_pct": -0.0045
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $54.09 \u00b7 curve n=655 \u00b7 2026-09-24 03:28:45 ET",
+    "paper_equity_usd": 54.0925,
+    "mtm_equity_usd": 54.0925,
+    "realized_pnl_usd": -45.9075,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $54.09 \u00b7 curve n=656 \u00b7 2026-09-24 03:29:33 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 654
+    "closed_n": 655
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $54.09 \u00b7 2026-09-24 03:28:45 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $54.09 \u00b7 FLAT \u00b7 2026-09-24 03:29:33 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=IMDSTRTGY open_p=0.66 edge=2.05 conf=0.9",
+    "detail": "pick=IMDSTRTGY open_p=0.65 edge=1.97 conf=0.91",
     "pick": "IMDSTRTGY",
-    "open_p": 0.66,
-    "confidence": 0.9,
-    "edge_score": 2.05,
+    "open_p": 0.65,
+    "confidence": 0.91,
+    "edge_score": 1.97,
     "picks": [
       {
         "sym": "IMDSTRTGY",
@@ -7711,20 +7699,20 @@
       "pick": {
         "type": "choice",
         "choice": "IMDSTRTGY",
-        "confidence": 0.9
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
-        "score": 2.05,
-        "confidence": 0.37
+        "score": 1.97,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 03:28:45 ET",
+    "stamp_et": "2026-09-24 03:29:32 ET",
     "live": true
   }
 }
