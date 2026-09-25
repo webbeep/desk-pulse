@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 21:22:35 ET",
+  "updated_et": "2026-09-24 21:23:22 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 51.4305,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -48.5695,
   "total_pnl_pct": -48.5695,
-  "mark_eth": 2693.145,
-  "mark": 2693.145,
+  "mark_eth": 2692.395,
+  "mark": 2692.395,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2693.145
+    "ETH": 2692.395
   },
   "holdings": {
     "paper_cash_usd": 51.4305,
@@ -12619,25 +12619,25 @@
     "realized_pnl_usd": -48.5695,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $51.43 \u00b7 curve n=1153 \u00b7 2026-09-24 21:22:35 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $51.43 \u00b7 curve n=1153 \u00b7 2026-09-24 21:23:22 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1152
   },
-  "notes": "PAPER heartbeat \u00b7 eq $51.43 \u00b7 FLAT \u00b7 2026-09-24 21:22:35 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $51.43 \u00b7 FLAT \u00b7 2026-09-24 21:23:22 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=WUMPUS open_p=0.60 edge=1.92 conf=0.76",
+    "detail": "pick=WUMPUS open_p=0.62 edge=1.99 conf=0.78",
     "pick": "WUMPUS",
-    "open_p": 0.6,
-    "confidence": 0.76,
-    "edge_score": 1.92,
+    "open_p": 0.62,
+    "confidence": 0.78,
+    "edge_score": 1.99,
     "picks": [
       {
         "sym": "FOOMS",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       },
       {
         "sym": "FELS",
@@ -12649,7 +12649,7 @@
         "sym": "WUMPUS",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.8
+        "probs": 0.81
       },
       {
         "sym": "SI",
@@ -12669,20 +12669,20 @@
       "pick": {
         "type": "choice",
         "choice": "WUMPUS",
-        "confidence": 0.76
+        "confidence": 0.78
       },
       "edge": {
         "type": "score",
-        "score": 1.92,
-        "confidence": 0.27
+        "score": 1.99,
+        "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.6
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 21:22:35 ET",
+    "stamp_et": "2026-09-24 21:23:14 ET",
     "live": true
   }
 }
