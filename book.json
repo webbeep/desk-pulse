@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 11:27:40 ET",
+  "updated_et": "2026-09-25 11:28:27 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 44.2026,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -55.7974,
   "total_pnl_pct": -55.7974,
-  "mark_eth": 2689.74,
-  "mark": 2689.74,
+  "mark_eth": 2688.585,
+  "mark": 2688.585,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.74
+    "ETH": 2688.585
   },
   "holdings": {
     "paper_cash_usd": 44.2026,
@@ -14259,43 +14259,37 @@
     "realized_pnl_usd": -55.7974,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $44.20 \u00b7 curve n=1317 \u00b7 2026-09-25 11:27:40 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $44.20 \u00b7 curve n=1317 \u00b7 2026-09-25 11:28:27 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1316
   },
-  "notes": "PAPER heartbeat \u00b7 eq $44.20 \u00b7 FLAT \u00b7 2026-09-25 11:27:40 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $44.20 \u00b7 FLAT \u00b7 2026-09-25 11:28:27 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=MIC open_p=0.67 edge=2.21 conf=0.75",
-    "pick": "MIC",
-    "open_p": 0.67,
-    "confidence": 0.75,
-    "edge_score": 2.21,
+    "detail": "pick=PEAR open_p=0.70 edge=2.45 conf=0.8",
+    "pick": "PEAR",
+    "open_p": 0.7,
+    "confidence": 0.8,
+    "edge_score": 2.45,
     "picks": [
-      {
-        "sym": "MIC",
-        "lost_bps": 3,
-        "selected": true,
-        "probs": 0.79
-      },
       {
         "sym": "PEAR",
         "lost_bps": 3,
+        "selected": true,
+        "probs": 0.85
+      },
+      {
+        "sym": "MIC",
+        "lost_bps": 4,
         "selected": false,
-        "probs": 0.13
+        "probs": 0.02
       },
       {
         "sym": "BACKCAT",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.07
-      },
-      {
-        "sym": "QUANTA",
-        "lost_bps": 6,
-        "selected": false,
-        "probs": 0.0
+        "probs": 0.12
       },
       {
         "sym": "TAOTAO",
@@ -14308,21 +14302,21 @@
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "MIC",
-        "confidence": 0.75
+        "choice": "PEAR",
+        "confidence": 0.8
       },
       "edge": {
         "type": "score",
-        "score": 2.21,
+        "score": 2.45,
         "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.7
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 11:27:36 ET",
+    "stamp_et": "2026-09-25 11:28:15 ET",
     "live": true
   }
 }
