@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 21:36:46 ET",
+  "updated_et": "2026-09-24 21:37:33 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 50.9026,
-  "upnl_usd": 0.0,
-  "equity_usd": 50.9026,
+  "upnl_usd": -0.0022,
+  "equity_usd": 50.9004,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -49.0974,
-  "total_pnl_pct": -49.0974,
-  "mark_eth": 2683.61,
-  "mark": 2683.61,
+  "total_pnl_usd": -49.0996,
+  "total_pnl_pct": -49.0996,
+  "mark_eth": 2682.495,
+  "mark": 2682.495,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2683.61
+    "ETH": 2682.495
   },
   "holdings": {
-    "paper_cash_usd": 50.9026,
+    "paper_cash_usd": 44.7926,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -11617,6 +11617,13 @@
       "ticker": "SI",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.1807
+    },
+    {
+      "t": "now",
+      "equity_usd": 50.9004,
+      "liquid_usd": 50.9004,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -12665,23 +12672,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 50.9026,
-    "mtm_equity_usd": 50.9026,
+    "mtm_equity_usd": 50.9004,
     "realized_pnl_usd": -49.0974,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $50.90 \u00b7 curve n=1158 \u00b7 2026-09-24 21:36:46 ET",
+    "unrealized_pnl_usd": -0.0022,
+    "open": {
+      "id": "PAPER-1336",
+      "ticker": "WUMPUS",
+      "usd": 6.11
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $50.90 \u00b7 curve n=1159 \u00b7 2026-09-24 21:37:33 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1157
   },
-  "notes": "PAPER heartbeat \u00b7 eq $50.90 \u00b7 FLAT \u00b7 2026-09-24 21:36:46 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $50.90 \u00b7 2026-09-24 21:37:33 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FOOMS open_p=0.64 edge=1.89 conf=0.84",
+    "detail": "pick=FOOMS open_p=0.62 edge=1.84 conf=0.83",
     "pick": "FOOMS",
-    "open_p": 0.64,
-    "confidence": 0.84,
-    "edge_score": 1.89,
+    "open_p": 0.62,
+    "confidence": 0.83,
+    "edge_score": 1.84,
     "picks": [
       {
         "sym": "FOOMS",
@@ -12705,7 +12716,7 @@
         "sym": "WUMPUS",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.12
       },
       {
         "sym": "SI",
@@ -12719,20 +12730,20 @@
       "pick": {
         "type": "choice",
         "choice": "FOOMS",
-        "confidence": 0.84
+        "confidence": 0.83
       },
       "edge": {
         "type": "score",
-        "score": 1.89,
-        "confidence": 0.26
+        "score": 1.84,
+        "confidence": 0.28
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 21:36:39 ET",
+    "stamp_et": "2026-09-24 21:37:31 ET",
     "live": true
   }
 }
