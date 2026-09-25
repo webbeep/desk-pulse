@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 01:24:06 ET",
+  "updated_et": "2026-09-25 01:24:54 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 47.8114,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -52.1886,
   "total_pnl_pct": -52.1886,
-  "mark_eth": 2675.37,
-  "mark": 2675.37,
+  "mark_eth": 2676.985,
+  "mark": 2676.985,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2675.37
+    "ETH": 2676.985
   },
   "holdings": {
     "paper_cash_usd": 47.8114,
@@ -12989,37 +12989,37 @@
     "realized_pnl_usd": -52.1886,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $47.81 \u00b7 curve n=1190 \u00b7 2026-09-25 01:24:06 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $47.81 \u00b7 curve n=1190 \u00b7 2026-09-25 01:24:54 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1189
   },
-  "notes": "PAPER heartbeat \u00b7 eq $47.81 \u00b7 FLAT \u00b7 2026-09-25 01:24:06 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $47.81 \u00b7 FLAT \u00b7 2026-09-25 01:24:54 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FELS open_p=0.63 edge=1.95 conf=0.49",
+    "detail": "pick=FELS open_p=0.64 edge=2.0 conf=0.54",
     "pick": "FELS",
-    "open_p": 0.63,
-    "confidence": 0.49,
-    "edge_score": 1.95,
+    "open_p": 0.64,
+    "confidence": 0.54,
+    "edge_score": 2.0,
     "picks": [
       {
         "sym": "FELS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.57
+        "probs": 0.61
       },
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.21
+        "probs": 0.22
       },
       {
         "sym": "COW",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.17
+        "probs": 0.13
       },
       {
         "sym": "FOOMS",
@@ -13039,20 +13039,20 @@
       "pick": {
         "type": "choice",
         "choice": "FELS",
-        "confidence": 0.49
+        "confidence": 0.54
       },
       "edge": {
         "type": "score",
-        "score": 1.95,
-        "confidence": 0.33
+        "score": 2.0,
+        "confidence": 0.3
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 01:24:00 ET",
+    "stamp_et": "2026-09-25 01:24:53 ET",
     "live": true
   }
 }
