@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 03:57:28 ET",
+  "updated_et": "2026-09-25 03:58:16 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 49.2887,
-  "upnl_usd": -0.0007,
-  "equity_usd": 49.288,
+  "liquid_usd": 49.5995,
+  "upnl_usd": -0.0045,
+  "equity_usd": 49.595,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -50.712,
-  "total_pnl_pct": -50.712,
-  "mark_eth": 2671.335,
-  "mark": 2671.335,
+  "total_pnl_usd": -50.405,
+  "total_pnl_pct": -50.405,
+  "mark_eth": 2671.155,
+  "mark": 2671.155,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2671.335
+    "ETH": 2671.155
   },
   "holdings": {
-    "paper_cash_usd": 45.3487,
+    "paper_cash_usd": 45.6495,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12449,14 +12449,37 @@
       "pnl_usd": -0.0714
     },
     {
+      "t": "2026-09-25 03:57:50 ET",
+      "equity_usd": 49.5995,
+      "liquid_usd": 49.5995,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "GPU",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.3108
+    },
+    {
       "t": "now",
-      "equity_usd": 49.288,
-      "liquid_usd": 49.288,
+      "equity_usd": 49.595,
+      "liquid_usd": 49.595,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 03:57:50 ET",
+      "kind": "PAPER",
+      "market": "GPU",
+      "side": "LONG",
+      "size": 3.94,
+      "size_usd": 3.94,
+      "pnl_usd": 0.3108,
+      "pnl_pct": 7.8888,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1420",
+      "paper": true
+    },
     {
       "t": "2026-09-25 03:56:43 ET",
       "kind": "PAPER",
@@ -13483,52 +13506,39 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1340",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 21:51:37 ET",
-      "kind": "PAPER",
-      "market": "PARAFACTUAL",
-      "side": "LONG",
-      "size": 6.06,
-      "size_usd": 6.06,
-      "pnl_usd": -0.1145,
-      "pnl_pct": -1.8902,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1339",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 49.2887,
-    "mtm_equity_usd": 49.288,
-    "realized_pnl_usd": -50.7113,
-    "unrealized_pnl_usd": -0.0007,
+    "paper_equity_usd": 49.5995,
+    "mtm_equity_usd": 49.595,
+    "realized_pnl_usd": -50.4005,
+    "unrealized_pnl_usd": -0.0045,
     "open": {
-      "id": "PAPER-1420",
-      "ticker": "GPU",
-      "usd": 3.94
+      "id": "PAPER-1418",
+      "ticker": "\u5bcc\u8d35",
+      "usd": 3.95
     },
-    "notes": "PAPER heartbeat \u00b7 eq $49.29 \u00b7 curve n=1242 \u00b7 2026-09-25 03:57:28 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $49.60 \u00b7 curve n=1243 \u00b7 2026-09-25 03:58:16 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1240
+    "closed_n": 1241
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $49.29 \u00b7 2026-09-25 03:57:28 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $49.60 \u00b7 2026-09-25 03:58:16 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.67 edge=2.23 conf=0.91",
+    "detail": "pick=SI open_p=0.67 edge=2.2 conf=0.92",
     "pick": "SI",
     "open_p": 0.67,
-    "confidence": 0.91,
-    "edge_score": 2.23,
+    "confidence": 0.92,
+    "edge_score": 2.2,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.93
+        "probs": 0.94
       },
       {
         "sym": "\u5bcc\u8d35",
@@ -13560,12 +13570,12 @@
       "pick": {
         "type": "choice",
         "choice": "SI",
-        "confidence": 0.91
+        "confidence": 0.92
       },
       "edge": {
         "type": "score",
-        "score": 2.23,
-        "confidence": 0.34
+        "score": 2.2,
+        "confidence": 0.38
       },
       "open_now": {
         "type": "noul",
@@ -13573,7 +13583,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 03:57:22 ET",
+    "stamp_et": "2026-09-25 03:58:15 ET",
     "live": true
   }
 }
