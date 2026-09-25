@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 19:21:24 ET",
+  "updated_et": "2026-09-25 19:22:12 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.8037,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -60.1963,
   "total_pnl_pct": -60.1963,
-  "mark_eth": 2692.47,
-  "mark": 2692.47,
+  "mark_eth": 2692.925,
+  "mark": 2692.925,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.47
+    "ETH": 2692.925
   },
   "holdings": {
     "paper_cash_usd": 39.8037,
@@ -14589,43 +14589,43 @@
     "realized_pnl_usd": -60.1963,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 curve n=1350 \u00b7 2026-09-25 19:21:24 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 curve n=1350 \u00b7 2026-09-25 19:22:12 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1349
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 FLAT \u00b7 2026-09-25 19:21:24 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 FLAT \u00b7 2026-09-25 19:22:12 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=E/ACC open_p=0.64 edge=2.15 conf=0.51",
+    "detail": "pick=E/ACC open_p=0.63 edge=2.2 conf=0.43",
     "pick": "E/ACC",
-    "open_p": 0.64,
-    "confidence": 0.51,
-    "edge_score": 2.15,
+    "open_p": 0.63,
+    "confidence": 0.43,
+    "edge_score": 2.2,
     "picks": [
       {
         "sym": "E/ACC",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.59
+        "probs": 0.52
       },
       {
         "sym": "YOLO",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.24
+        "probs": 0.29
       },
       {
         "sym": "TALIS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.1
+        "probs": 0.12
       },
       {
         "sym": "BLACKCAT",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.05
       },
       {
         "sym": "PIZZLY",
@@ -14639,20 +14639,20 @@
       "pick": {
         "type": "choice",
         "choice": "E/ACC",
-        "confidence": 0.51
+        "confidence": 0.43
       },
       "edge": {
         "type": "score",
-        "score": 2.15,
-        "confidence": 0.32
+        "score": 2.2,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 19:21:16 ET",
+    "stamp_et": "2026-09-25 19:22:07 ET",
     "live": true
   }
 }
