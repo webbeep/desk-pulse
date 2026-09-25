@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 01:50:56 ET",
+  "updated_et": "2026-09-25 01:51:43 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 47.5114,
-  "upnl_usd": 0.1813,
-  "equity_usd": 47.6927,
+  "liquid_usd": 47.4362,
+  "upnl_usd": -0.003,
+  "equity_usd": 47.4332,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -52.3073,
-  "total_pnl_pct": -52.3073,
-  "mark_eth": 2681.31,
-  "mark": 2681.31,
+  "total_pnl_usd": -52.5668,
+  "total_pnl_pct": -52.5668,
+  "mark_eth": 2681.05,
+  "mark": 2681.05,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2681.31
+    "ETH": 2681.05
   },
   "holdings": {
-    "paper_cash_usd": 43.7014,
+    "paper_cash_usd": 43.6262,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12019,14 +12019,37 @@
       "pnl_usd": -0.1124
     },
     {
+      "t": "2026-09-25 01:51:17 ET",
+      "equity_usd": 47.4362,
+      "liquid_usd": 47.4362,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "COW",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.0752
+    },
+    {
       "t": "now",
-      "equity_usd": 47.6927,
-      "liquid_usd": 47.6927,
+      "equity_usd": 47.4332,
+      "liquid_usd": 47.4332,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 01:51:17 ET",
+      "kind": "PAPER",
+      "market": "COW",
+      "side": "LONG",
+      "size": 3.8,
+      "size_usd": 3.8,
+      "pnl_usd": -0.0752,
+      "pnl_pct": -1.9795,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1377",
+      "paper": true
+    },
     {
       "t": "2026-09-25 01:50:12 ET",
       "kind": "PAPER",
@@ -13053,58 +13076,45 @@
       "tx": "TRAIL_2.0",
       "id": "PAPER-1297",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 19:05:09 ET",
-      "kind": "PAPER",
-      "market": "JOLLY",
-      "side": "LONG",
-      "size": 5.99,
-      "size_usd": 5.99,
-      "pnl_usd": 0.0512,
-      "pnl_pct": 0.8555,
-      "tx": "TRAIL_2.0",
-      "id": "PAPER-1295",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 47.5114,
-    "mtm_equity_usd": 47.6927,
-    "realized_pnl_usd": -52.4886,
-    "unrealized_pnl_usd": 0.1813,
+    "paper_equity_usd": 47.4362,
+    "mtm_equity_usd": 47.4332,
+    "realized_pnl_usd": -52.5638,
+    "unrealized_pnl_usd": -0.003,
     "open": {
       "id": "PAPER-1375",
       "ticker": "GROK",
       "usd": 3.81
     },
-    "notes": "PAPER heartbeat \u00b7 eq $47.51 \u00b7 curve n=1199 \u00b7 2026-09-25 01:50:56 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $47.44 \u00b7 curve n=1200 \u00b7 2026-09-25 01:51:43 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1197
+    "closed_n": 1198
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.51 \u00b7 2026-09-25 01:50:56 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.44 \u00b7 2026-09-25 01:51:43 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.66 edge=2.43 conf=0.85",
+    "detail": "pick=SI open_p=0.69 edge=2.54 conf=0.85",
     "pick": "SI",
-    "open_p": 0.66,
+    "open_p": 0.69,
     "confidence": 0.85,
-    "edge_score": 2.43,
+    "edge_score": 2.54,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.88
+        "probs": 0.87
       },
       {
         "sym": "COW",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.09
+        "probs": 0.1
       },
       {
         "sym": "FELS",
@@ -13134,16 +13144,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.43,
-        "confidence": 0.33
+        "score": 2.54,
+        "confidence": 0.39
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.69
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 01:50:47 ET",
+    "stamp_et": "2026-09-25 01:51:38 ET",
     "live": true
   }
 }
