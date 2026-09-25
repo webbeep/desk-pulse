@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 22:07:33 ET",
+  "updated_et": "2026-09-24 22:08:20 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 52.4437,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -47.5563,
   "total_pnl_pct": -47.5563,
-  "mark_eth": 2697.435,
-  "mark": 2697.435,
+  "mark_eth": 2696.255,
+  "mark": 2696.255,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2697.435
+    "ETH": 2696.255
   },
   "holdings": {
     "paper_cash_usd": 52.4437,
@@ -12719,49 +12719,49 @@
     "realized_pnl_usd": -47.5563,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $52.44 \u00b7 curve n=1163 \u00b7 2026-09-24 22:07:33 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $52.44 \u00b7 curve n=1163 \u00b7 2026-09-24 22:08:20 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1162
   },
-  "notes": "PAPER heartbeat \u00b7 eq $52.44 \u00b7 FLAT \u00b7 2026-09-24 22:07:33 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $52.44 \u00b7 FLAT \u00b7 2026-09-24 22:08:20 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=MACCA open_p=0.62 edge=1.8 conf=0.91",
+    "detail": "pick=MACCA open_p=0.65 edge=2.32 conf=0.84",
     "pick": "MACCA",
-    "open_p": 0.62,
-    "confidence": 0.91,
-    "edge_score": 1.8,
+    "open_p": 0.65,
+    "confidence": 0.84,
+    "edge_score": 2.32,
     "picks": [
       {
         "sym": "FELS",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.02
-      },
-      {
-        "sym": "SI",
-        "lost_bps": 5,
-        "selected": false,
-        "probs": 0.01
+        "probs": 0.03
       },
       {
         "sym": "MACCA",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.93
+        "probs": 0.87
       },
       {
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.09
       },
       {
-        "sym": "FOOMS",
-        "lost_bps": 5,
+        "sym": "SI",
+        "lost_bps": 6,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
+      },
+      {
+        "sym": "CJO",
+        "lost_bps": 19,
+        "selected": false,
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -12769,20 +12769,20 @@
       "pick": {
         "type": "choice",
         "choice": "MACCA",
-        "confidence": 0.91
+        "confidence": 0.84
       },
       "edge": {
         "type": "score",
-        "score": 1.8,
-        "confidence": 0.25
+        "score": 2.32,
+        "confidence": 0.23
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.62
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 22:07:24 ET",
+    "stamp_et": "2026-09-24 22:08:16 ET",
     "live": true
   }
 }
