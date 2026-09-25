@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 19:36:24 ET",
+  "updated_et": "2026-09-25 19:37:11 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.8037,
-  "upnl_usd": 0.0,
-  "equity_usd": 39.8037,
+  "upnl_usd": -0.0012,
+  "equity_usd": 39.8025,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -60.1963,
-  "total_pnl_pct": -60.1963,
-  "mark_eth": 2692.72,
-  "mark": 2692.72,
+  "total_pnl_usd": -60.1975,
+  "total_pnl_pct": -60.1975,
+  "mark_eth": 2692.65,
+  "mark": 2692.65,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.72
+    "ETH": 2692.65
   },
   "holdings": {
-    "paper_cash_usd": 39.8037,
+    "paper_cash_usd": 36.8037,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13537,6 +13537,13 @@
       "ticker": "E/ACC",
       "reason": "TP_+6.0",
       "pnl_usd": 0.3231
+    },
+    {
+      "t": "now",
+      "equity_usd": 39.8025,
+      "liquid_usd": 39.8025,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -14585,29 +14592,33 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 39.8037,
-    "mtm_equity_usd": 39.8037,
+    "mtm_equity_usd": 39.8025,
     "realized_pnl_usd": -60.1963,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 curve n=1350 \u00b7 2026-09-25 19:36:24 ET",
+    "unrealized_pnl_usd": -0.0012,
+    "open": {
+      "id": "PAPER-1528",
+      "ticker": "E/ACC",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 curve n=1351 \u00b7 2026-09-25 19:37:11 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1349
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 FLAT \u00b7 2026-09-25 19:36:24 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $39.80 \u00b7 2026-09-25 19:37:11 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=HO open_p=0.67 edge=2.33 conf=0.95",
+    "detail": "pick=HO open_p=0.68 edge=2.34 conf=0.96",
     "pick": "HO",
-    "open_p": 0.67,
-    "confidence": 0.95,
-    "edge_score": 2.33,
+    "open_p": 0.68,
+    "confidence": 0.96,
+    "edge_score": 2.34,
     "picks": [
       {
         "sym": "HO",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.96
       },
       {
         "sym": "E/ACC",
@@ -14619,7 +14630,7 @@
         "sym": "YOLO",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       },
       {
         "sym": "TALIS",
@@ -14639,20 +14650,20 @@
       "pick": {
         "type": "choice",
         "choice": "HO",
-        "confidence": 0.95
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 2.33,
-        "confidence": 0.3
+        "score": 2.34,
+        "confidence": 0.27
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 19:36:12 ET",
+    "stamp_et": "2026-09-25 19:37:02 ET",
     "live": true
   }
 }
