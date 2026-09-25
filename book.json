@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 23:11:31 ET",
+  "updated_et": "2026-09-24 23:12:19 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 48.2465,
-  "upnl_usd": 0.0,
-  "equity_usd": 48.2465,
+  "upnl_usd": 0.0037,
+  "equity_usd": 48.2502,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -51.7535,
-  "total_pnl_pct": -51.7535,
-  "mark_eth": 2677.82,
-  "mark": 2677.82,
+  "total_pnl_usd": -51.7498,
+  "total_pnl_pct": -51.7498,
+  "mark_eth": 2678.905,
+  "mark": 2678.905,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2677.82
+    "ETH": 2678.905
   },
   "holdings": {
-    "paper_cash_usd": 48.2465,
+    "paper_cash_usd": 44.3865,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -11817,6 +11817,13 @@
       "ticker": "FELS",
       "reason": "TP_+6.0",
       "pnl_usd": 0.3636
+    },
+    {
+      "t": "now",
+      "equity_usd": 48.2502,
+      "liquid_usd": 48.2502,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -12865,41 +12872,45 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 48.2465,
-    "mtm_equity_usd": 48.2465,
+    "mtm_equity_usd": 48.2502,
     "realized_pnl_usd": -51.7535,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $48.25 \u00b7 curve n=1178 \u00b7 2026-09-24 23:11:31 ET",
+    "unrealized_pnl_usd": 0.0037,
+    "open": {
+      "id": "PAPER-1356",
+      "ticker": "MACCA",
+      "usd": 3.86
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $48.25 \u00b7 curve n=1179 \u00b7 2026-09-24 23:12:19 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1177
   },
-  "notes": "PAPER heartbeat \u00b7 eq $48.25 \u00b7 FLAT \u00b7 2026-09-24 23:11:31 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $48.25 \u00b7 2026-09-24 23:12:19 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FELS open_p=0.67 edge=2.14 conf=0.85",
+    "detail": "pick=FELS open_p=0.66 edge=2.14 conf=0.91",
     "pick": "FELS",
-    "open_p": 0.67,
-    "confidence": 0.85,
+    "open_p": 0.66,
+    "confidence": 0.91,
     "edge_score": 2.14,
     "picks": [
       {
         "sym": "FELS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.88
+        "probs": 0.92
       },
       {
         "sym": "SI",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "MACCA",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.1
+        "probs": 0.049999999999999996
       },
       {
         "sym": "FOOMS",
@@ -12919,20 +12930,20 @@
       "pick": {
         "type": "choice",
         "choice": "FELS",
-        "confidence": 0.85
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
         "score": 2.14,
-        "confidence": 0.39
+        "confidence": 0.37
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 23:11:14 ET",
+    "stamp_et": "2026-09-24 23:12:10 ET",
     "live": true
   }
 }
