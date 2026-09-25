@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 20:59:38 ET",
+  "updated_et": "2026-09-24 21:00:26 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 53.8825,
-  "upnl_usd": 0.2333,
-  "equity_usd": 54.1158,
+  "liquid_usd": 54.7556,
+  "upnl_usd": -0.0223,
+  "equity_usd": 54.7333,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -45.8842,
-  "total_pnl_pct": -45.8842,
-  "mark_eth": 2689.255,
-  "mark": 2689.255,
+  "total_pnl_usd": -45.2667,
+  "total_pnl_pct": -45.2667,
+  "mark_eth": 2689.925,
+  "mark": 2689.925,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.255
+    "ETH": 2689.925
   },
   "holdings": {
-    "paper_cash_usd": 47.4125,
+    "paper_cash_usd": 48.1856,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -11459,14 +11459,83 @@
       "pnl_usd": 0.115
     },
     {
+      "t": "2026-09-24 20:59:50 ET",
+      "equity_usd": 54.2948,
+      "liquid_usd": 54.2948,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "FOOMS",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.4123
+    },
+    {
+      "t": "2026-09-24 21:00:01 ET",
+      "equity_usd": 54.3313,
+      "liquid_usd": 54.3313,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "CJO",
+      "reason": "TRAIL_2.0",
+      "pnl_usd": 0.0365
+    },
+    {
+      "t": "2026-09-24 21:00:07 ET",
+      "equity_usd": 54.7556,
+      "liquid_usd": 54.7556,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "FELS",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.4243
+    },
+    {
       "t": "now",
-      "equity_usd": 54.1158,
-      "liquid_usd": 54.1158,
+      "equity_usd": 54.7333,
+      "liquid_usd": 54.7333,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 21:00:07 ET",
+      "kind": "PAPER",
+      "market": "FELS",
+      "side": "LONG",
+      "size": 6.52,
+      "size_usd": 6.52,
+      "pnl_usd": 0.4243,
+      "pnl_pct": 6.5079,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1322",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 21:00:01 ET",
+      "kind": "PAPER",
+      "market": "CJO",
+      "side": "LONG",
+      "size": 6.47,
+      "size_usd": 6.47,
+      "pnl_usd": 0.0365,
+      "pnl_pct": 0.5649,
+      "tx": "TRAIL_2.0",
+      "id": "PAPER-1321",
+      "paper": true
+    },
+    {
+      "t": "2026-09-24 20:59:50 ET",
+      "kind": "PAPER",
+      "market": "FOOMS",
+      "side": "LONG",
+      "size": 6.49,
+      "size_usd": 6.49,
+      "pnl_usd": 0.4123,
+      "pnl_pct": 6.3523,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1318",
+      "paper": true
+    },
     {
       "t": "2026-09-24 20:59:32 ET",
       "kind": "PAPER",
@@ -12467,72 +12536,33 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1243",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 14:13:42 ET",
-      "kind": "PAPER",
-      "market": "MUSEGOD",
-      "side": "LONG",
-      "size": 5.32,
-      "size_usd": 5.32,
-      "pnl_usd": 0.7847,
-      "pnl_pct": 14.7496,
-      "tx": "TP_+5.0",
-      "id": "PAPER-1242",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 13:57:23 ET",
-      "kind": "PAPER",
-      "market": "F IN THE CHAT",
-      "side": "LONG",
-      "size": 5.34,
-      "size_usd": 5.34,
-      "pnl_usd": -0.1779,
-      "pnl_pct": -3.3324,
-      "tx": "CUT_HARD_-2.0",
-      "id": "PAPER-1241",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 13:57:09 ET",
-      "kind": "PAPER",
-      "market": "F IN THE CHAT",
-      "side": "LONG",
-      "size": 5.37,
-      "size_usd": 5.37,
-      "pnl_usd": -0.2423,
-      "pnl_pct": -4.5128,
-      "tx": "CUT_HARD_-2.0",
-      "id": "PAPER-1240",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 53.8825,
-    "mtm_equity_usd": 54.1158,
-    "realized_pnl_usd": -46.1175,
-    "unrealized_pnl_usd": 0.2333,
+    "paper_equity_usd": 54.7556,
+    "mtm_equity_usd": 54.7333,
+    "realized_pnl_usd": -45.2444,
+    "unrealized_pnl_usd": -0.0223,
     "open": {
-      "id": "PAPER-1321",
+      "id": "PAPER-1323",
       "ticker": "CJO",
-      "usd": 6.47
+      "usd": 6.57
     },
-    "notes": "PAPER heartbeat \u00b7 eq $53.88 \u00b7 curve n=1143 \u00b7 2026-09-24 20:59:38 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $54.76 \u00b7 curve n=1146 \u00b7 2026-09-24 21:00:26 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1141
+    "closed_n": 1144
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $53.88 \u00b7 2026-09-24 20:59:38 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $54.76 \u00b7 2026-09-24 21:00:26 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FOOMS open_p=0.65 edge=2.14 conf=0.95",
+    "detail": "pick=FOOMS open_p=0.66 edge=2.23 conf=0.94",
     "pick": "FOOMS",
-    "open_p": 0.65,
-    "confidence": 0.95,
-    "edge_score": 2.14,
+    "open_p": 0.66,
+    "confidence": 0.94,
+    "edge_score": 2.23,
     "picks": [
       {
         "sym": "FOOMS",
@@ -12570,20 +12600,20 @@
       "pick": {
         "type": "choice",
         "choice": "FOOMS",
-        "confidence": 0.95
+        "confidence": 0.94
       },
       "edge": {
         "type": "score",
-        "score": 2.14,
-        "confidence": 0.3
+        "score": 2.23,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 20:59:33 ET",
+    "stamp_et": "2026-09-24 21:00:12 ET",
     "live": true
   }
 }
