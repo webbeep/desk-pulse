@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 19:39:33 ET",
+  "updated_et": "2026-09-25 19:40:21 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 39.9213,
+  "liquid_usd": 39.8495,
   "upnl_usd": 0.0,
-  "equity_usd": 39.9213,
+  "equity_usd": 39.8495,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -60.0787,
-  "total_pnl_pct": -60.0787,
-  "mark_eth": 2692.99,
-  "mark": 2692.99,
+  "total_pnl_usd": -60.1505,
+  "total_pnl_pct": -60.1505,
+  "mark_eth": 2692.52,
+  "mark": 2692.52,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.99
+    "ETH": 2692.52
   },
   "holdings": {
-    "paper_cash_usd": 39.9213,
+    "paper_cash_usd": 39.8495,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13557,9 +13557,32 @@
       "ticker": "TALIS",
       "reason": "TP_+6.0",
       "pnl_usd": 0.1832
+    },
+    {
+      "t": "2026-09-25 19:39:56 ET",
+      "equity_usd": 39.8495,
+      "liquid_usd": 39.8495,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "HO",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.0718
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 19:39:56 ET",
+      "kind": "PAPER",
+      "market": "HO",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0718,
+      "pnl_pct": -2.3946,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1530",
+      "paper": true
+    },
     {
       "t": "2026-09-25 19:39:02 ET",
       "kind": "PAPER",
@@ -14586,40 +14609,29 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1451",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 07:35:21 ET",
-      "kind": "PAPER",
-      "market": "GPU",
-      "side": "LONG",
-      "size": 3.64,
-      "size_usd": 3.64,
-      "pnl_usd": 0.1756,
-      "pnl_pct": 4.8235,
-      "tx": "TIME_TAKE_600s",
-      "id": "PAPER-1442",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 39.9213,
-    "mtm_equity_usd": 39.9213,
-    "realized_pnl_usd": -60.0787,
+    "paper_equity_usd": 39.8495,
+    "mtm_equity_usd": 39.8495,
+    "realized_pnl_usd": -60.1505,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.92 \u00b7 curve n=1352 \u00b7 2026-09-25 19:39:33 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.85 \u00b7 curve n=1353 \u00b7 2026-09-25 19:40:21 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1351
+    "closed_n": 1352
   },
-  "notes": "JEV OPEN \u00b7 pick=HO open_p=0.68 edge=2.31 conf=0.97 \u00b7 PAPER heartbeat \u00b7 eq $39.92 \u00b7 FLAT \u00b7 2026-09-25 19:39:33 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $39.85 \u00b7 FLAT \u00b7 2026-09-25 19:40:21 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
-    "stamp_et": "2026-09-25 19:39:33 ET",
-    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=HO open_p=0.68 edge=2.31 conf=0.97",
+    "detail": "pick=HO open_p=0.67 edge=2.38 conf=0.97",
+    "pick": "HO",
+    "open_p": 0.67,
+    "confidence": 0.97,
+    "edge_score": 2.38,
     "picks": [
       {
         "sym": "HO",
@@ -14652,10 +14664,25 @@
         "probs": 0.0
       }
     ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "HO",
+        "confidence": 0.97
+      },
+      "edge": {
+        "type": "score",
+        "score": 2.38,
+        "confidence": 0.27
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.67
+      }
+    },
     "idle": null,
-    "open_p": 0.68,
-    "risk": null,
-    "confidence": 0.97,
+    "stamp_et": "2026-09-25 19:40:11 ET",
     "live": true
   }
 }
