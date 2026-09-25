@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 20:08:14 ET",
+  "updated_et": "2026-09-24 20:09:02 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 52.928,
+  "liquid_usd": 53.896,
   "upnl_usd": 0.0,
-  "equity_usd": 52.928,
+  "equity_usd": 53.896,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -47.072,
-  "total_pnl_pct": -47.072,
-  "mark_eth": 2690.365,
-  "mark": 2690.365,
+  "total_pnl_usd": -46.104,
+  "total_pnl_pct": -46.104,
+  "mark_eth": 2692.725,
+  "mark": 2692.725,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.365
+    "ETH": 2692.725
   },
   "holdings": {
-    "paper_cash_usd": 52.928,
+    "paper_cash_usd": 53.896,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -11387,9 +11387,32 @@
       "ticker": "CJO",
       "reason": "TP_+6.0",
       "pnl_usd": 0.4058
+    },
+    {
+      "t": "2026-09-24 20:08:40 ET",
+      "equity_usd": 53.896,
+      "liquid_usd": 53.896,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "STONK",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.968
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 20:08:40 ET",
+      "kind": "PAPER",
+      "market": "STONK",
+      "side": "LONG",
+      "size": 6.35,
+      "size_usd": 6.35,
+      "pnl_usd": 0.968,
+      "pnl_pct": 15.2433,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1313",
+      "paper": true
+    },
     {
       "t": "2026-09-24 20:07:32 ET",
       "kind": "PAPER",
@@ -12416,42 +12439,29 @@
       "tx": "CUT_HARD_-2.0",
       "id": "PAPER-1235",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 13:55:15 ET",
-      "kind": "PAPER",
-      "market": "OPENMUSE",
-      "side": "LONG",
-      "size": 5.67,
-      "size_usd": 5.67,
-      "pnl_usd": -1.5285,
-      "pnl_pct": -26.9578,
-      "tx": "CUT_HARD_-2.0",
-      "id": "PAPER-1234",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 52.928,
-    "mtm_equity_usd": 52.928,
-    "realized_pnl_usd": -47.072,
+    "paper_equity_usd": 53.896,
+    "mtm_equity_usd": 53.896,
+    "realized_pnl_usd": -46.104,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $52.93 \u00b7 curve n=1135 \u00b7 2026-09-24 20:08:14 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $53.90 \u00b7 curve n=1136 \u00b7 2026-09-24 20:09:02 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1134
+    "closed_n": 1135
   },
-  "notes": "PAPER heartbeat \u00b7 eq $52.93 \u00b7 FLAT \u00b7 2026-09-24 20:08:14 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $53.90 \u00b7 FLAT \u00b7 2026-09-24 20:09:02 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=JOLLY open_p=0.68 edge=2.51 conf=0.93",
+    "detail": "pick=JOLLY open_p=0.68 edge=2.39 conf=0.92",
     "pick": "JOLLY",
     "open_p": 0.68,
-    "confidence": 0.93,
-    "edge_score": 2.51,
+    "confidence": 0.92,
+    "edge_score": 2.39,
     "picks": [
       {
         "sym": "FOOMS",
@@ -12463,13 +12473,13 @@
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.94
+        "probs": 0.93
       },
       {
         "sym": "CJO",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.05
       },
       {
         "sym": "FOOMS",
@@ -12489,12 +12499,12 @@
       "pick": {
         "type": "choice",
         "choice": "JOLLY",
-        "confidence": 0.93
+        "confidence": 0.92
       },
       "edge": {
         "type": "score",
-        "score": 2.51,
-        "confidence": 0.34
+        "score": 2.39,
+        "confidence": 0.24
       },
       "open_now": {
         "type": "noul",
@@ -12502,7 +12512,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 20:08:06 ET",
+    "stamp_et": "2026-09-24 20:09:00 ET",
     "live": true
   }
 }
