@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 09:25:32 ET",
+  "updated_et": "2026-09-25 09:26:20 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 43.9734,
-  "upnl_usd": 0.0,
-  "equity_usd": 43.9734,
+  "upnl_usd": -0.0012,
+  "equity_usd": 43.9722,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -56.0266,
-  "total_pnl_pct": -56.0266,
-  "mark_eth": 2703.11,
-  "mark": 2703.11,
+  "total_pnl_usd": -56.0278,
+  "total_pnl_pct": -56.0278,
+  "mark_eth": 2703.22,
+  "mark": 2703.22,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2703.11
+    "ETH": 2703.22
   },
   "holdings": {
-    "paper_cash_usd": 43.9734,
+    "paper_cash_usd": 40.4534,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12927,6 +12927,13 @@
       "ticker": "TAOTAO",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.0687
+    },
+    {
+      "t": "now",
+      "equity_usd": 43.9722,
+      "liquid_usd": 43.9722,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -13975,29 +13982,33 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 43.9734,
-    "mtm_equity_usd": 43.9734,
+    "mtm_equity_usd": 43.9722,
     "realized_pnl_usd": -56.0266,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $43.97 \u00b7 curve n=1289 \u00b7 2026-09-25 09:25:32 ET",
+    "unrealized_pnl_usd": -0.0012,
+    "open": {
+      "id": "PAPER-1467",
+      "ticker": "0XQUIT",
+      "usd": 3.52
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $43.97 \u00b7 curve n=1290 \u00b7 2026-09-25 09:26:20 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1288
   },
-  "notes": "PAPER heartbeat \u00b7 eq $43.97 \u00b7 FLAT \u00b7 2026-09-25 09:25:32 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $43.97 \u00b7 2026-09-25 09:26:20 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.66 edge=2.23 conf=0.93",
+    "detail": "pick=SI open_p=0.68 edge=2.18 conf=0.86",
     "pick": "SI",
-    "open_p": 0.66,
-    "confidence": 0.93,
-    "edge_score": 2.23,
+    "open_p": 0.68,
+    "confidence": 0.86,
+    "edge_score": 2.18,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.9299999999999999
+        "probs": 0.89
       },
       {
         "sym": "PEAR",
@@ -14006,22 +14017,22 @@
         "probs": 0.01
       },
       {
-        "sym": "ARVO",
-        "lost_bps": 4,
-        "selected": false,
-        "probs": 0.02
-      },
-      {
         "sym": "0XQUIT",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.08
       },
       {
-        "sym": "TAOTAO",
+        "sym": "\u5bcc\u8d35",
         "lost_bps": 5,
         "selected": false,
         "probs": 0.01
+      },
+      {
+        "sym": "BACKCAT",
+        "lost_bps": 6,
+        "selected": false,
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -14029,20 +14040,20 @@
       "pick": {
         "type": "choice",
         "choice": "SI",
-        "confidence": 0.93
+        "confidence": 0.86
       },
       "edge": {
         "type": "score",
-        "score": 2.23,
-        "confidence": 0.35
+        "score": 2.18,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 09:25:24 ET",
+    "stamp_et": "2026-09-25 09:26:17 ET",
     "live": true
   }
 }
