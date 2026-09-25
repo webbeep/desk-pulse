@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 14:36:50 ET",
+  "updated_et": "2026-09-25 14:37:38 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 42.1305,
+  "liquid_usd": 41.902,
   "upnl_usd": 0.0,
-  "equity_usd": 42.1305,
+  "equity_usd": 41.902,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -57.8695,
-  "total_pnl_pct": -57.8695,
-  "mark_eth": 2694.645,
-  "mark": 2694.645,
+  "total_pnl_usd": -58.098,
+  "total_pnl_pct": -58.098,
+  "mark_eth": 2693.185,
+  "mark": 2693.185,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2694.645
+    "ETH": 2693.185
   },
   "holdings": {
-    "paper_cash_usd": 42.1305,
+    "paper_cash_usd": 41.902,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13317,9 +13317,32 @@
       "ticker": "YASHMODE",
       "reason": "TP_+6.0",
       "pnl_usd": 0.2135
+    },
+    {
+      "t": "2026-09-25 14:37:18 ET",
+      "equity_usd": 41.902,
+      "liquid_usd": 41.902,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PIZZLY",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.2285
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 14:37:18 ET",
+      "kind": "PAPER",
+      "market": "PIZZLY",
+      "side": "LONG",
+      "size": 3.37,
+      "size_usd": 3.37,
+      "pnl_usd": -0.2285,
+      "pnl_pct": -6.7809,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1506",
+      "paper": true
+    },
     {
       "t": "2026-09-25 14:32:45 ET",
       "kind": "PAPER",
@@ -14346,42 +14369,29 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1428",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 04:33:38 ET",
-      "kind": "PAPER",
-      "market": "SI",
-      "side": "LONG",
-      "size": 3.86,
-      "size_usd": 3.86,
-      "pnl_usd": -0.117,
-      "pnl_pct": -3.0309,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1425",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 42.1305,
-    "mtm_equity_usd": 42.1305,
-    "realized_pnl_usd": -57.8695,
+    "paper_equity_usd": 41.902,
+    "mtm_equity_usd": 41.902,
+    "realized_pnl_usd": -58.098,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $42.13 \u00b7 curve n=1328 \u00b7 2026-09-25 14:36:50 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $41.90 \u00b7 curve n=1329 \u00b7 2026-09-25 14:37:38 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1327
+    "closed_n": 1328
   },
-  "notes": "PAPER heartbeat \u00b7 eq $42.13 \u00b7 FLAT \u00b7 2026-09-25 14:36:50 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $41.90 \u00b7 FLAT \u00b7 2026-09-25 14:37:38 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=PEAR open_p=0.67 edge=2.4 conf=0.84",
+    "detail": "pick=PEAR open_p=0.68 edge=2.43 conf=0.83",
     "pick": "PEAR",
-    "open_p": 0.67,
-    "confidence": 0.84,
-    "edge_score": 2.4,
+    "open_p": 0.68,
+    "confidence": 0.83,
+    "edge_score": 2.43,
     "picks": [
       {
         "sym": "PEAR",
@@ -14413,20 +14423,20 @@
       "pick": {
         "type": "choice",
         "choice": "PEAR",
-        "confidence": 0.84
+        "confidence": 0.83
       },
       "edge": {
         "type": "score",
-        "score": 2.4,
-        "confidence": 0.36
+        "score": 2.43,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 14:36:44 ET",
+    "stamp_et": "2026-09-25 14:37:37 ET",
     "live": true
   }
 }
