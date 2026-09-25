@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 23:53:18 ET",
+  "updated_et": "2026-09-24 23:54:06 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 48.4881,
-  "upnl_usd": 0.0,
-  "equity_usd": 48.4881,
+  "upnl_usd": 0.007,
+  "equity_usd": 48.4951,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -51.5119,
-  "total_pnl_pct": -51.5119,
-  "mark_eth": 2676.325,
-  "mark": 2676.325,
+  "total_pnl_usd": -51.5049,
+  "total_pnl_pct": -51.5049,
+  "mark_eth": 2676.45,
+  "mark": 2676.45,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2676.325
+    "ETH": 2676.45
   },
   "holdings": {
-    "paper_cash_usd": 48.4881,
+    "paper_cash_usd": 44.6081,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -11857,6 +11857,13 @@
       "ticker": "COLLECT",
       "reason": "TP_+6.0",
       "pnl_usd": 0.3314
+    },
+    {
+      "t": "now",
+      "equity_usd": 48.4951,
+      "liquid_usd": 48.4951,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -12905,57 +12912,60 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 48.4881,
-    "mtm_equity_usd": 48.4881,
+    "mtm_equity_usd": 48.4951,
     "realized_pnl_usd": -51.5119,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $48.49 \u00b7 curve n=1182 \u00b7 2026-09-24 23:53:18 ET",
+    "unrealized_pnl_usd": 0.007,
+    "open": {
+      "id": "PAPER-1360",
+      "ticker": "0F3E82",
+      "usd": 3.88
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $48.49 \u00b7 curve n=1183 \u00b7 2026-09-24 23:54:06 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1181
   },
-  "notes": "JEV OPEN \u00b7 pick=FELS open_p=0.67 edge=2.09 conf=0.72 \u00b7 PAPER heartbeat \u00b7 eq $48.49 \u00b7 FLAT \u00b7 2026-09-24 23:53:18 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $48.49 \u00b7 2026-09-24 23:54:06 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
-    "stamp_et": "2026-09-24 23:53:18 ET",
-    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=FELS open_p=0.67 edge=2.09 conf=0.72",
+    "detail": "pick=FOOMS open_p=0.63 edge=2.05 conf=0.97",
+    "pick": "FOOMS",
+    "open_p": 0.63,
+    "confidence": 0.97,
+    "edge_score": 2.05,
     "picks": [
       {
-        "sym": "FELS",
+        "sym": "FOOMS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.77
+        "probs": 0.98
       },
       {
-        "sym": "SI",
-        "lost_bps": 3,
-        "selected": false,
-        "probs": 0.16
-      },
-      {
-        "sym": "FOOMS",
-        "lost_bps": 4,
-        "selected": false,
-        "probs": 0.05
-      },
-      {
-        "sym": "JOLLY",
-        "lost_bps": 6,
-        "selected": false,
-        "probs": 0.0
-      },
-      {
-        "sym": "COLLECT",
-        "lost_bps": 11,
+        "sym": "0F3E82",
+        "lost_bps": 7,
         "selected": false,
         "probs": 0.01
       }
     ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "FOOMS",
+        "confidence": 0.97
+      },
+      "edge": {
+        "type": "score",
+        "score": 2.05,
+        "confidence": 0.35
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.63
+      }
+    },
     "idle": null,
-    "open_p": 0.67,
-    "risk": null,
-    "confidence": 0.72,
+    "stamp_et": "2026-09-24 23:53:59 ET",
     "live": true
   }
 }
