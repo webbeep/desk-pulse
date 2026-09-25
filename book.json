@@ -14383,27 +14383,25 @@
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1328
   },
-  "notes": "PAPER heartbeat \u00b7 eq $41.90 \u00b7 FLAT \u00b7 2026-09-25 15:11:38 ET",
+  "notes": "JEV OPEN \u00b7 pick=PIZZLY open_p=0.63 edge=2.2 conf=0.64 \u00b7 PAPER heartbeat \u00b7 eq $41.90 \u00b7 FLAT \u00b7 2026-09-25 15:11:38 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-25 15:11:39 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=PIZZLY open_p=0.63 edge=2.24 conf=0.6",
-    "pick": "PIZZLY",
-    "open_p": 0.63,
-    "confidence": 0.6,
-    "edge_score": 2.24,
+    "detail": "pick=PIZZLY open_p=0.63 edge=2.2 conf=0.64",
     "picks": [
       {
         "sym": "PIZZLY",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.7
+        "probs": 0.73
       },
       {
         "sym": "YASHMODE",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.28
+        "probs": 0.25
       },
       {
         "sym": "TAOTAO",
@@ -14412,25 +14410,10 @@
         "probs": 0.01
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "PIZZLY",
-        "confidence": 0.6
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.24,
-        "confidence": 0.37
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.63
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-25 15:11:38 ET",
+    "open_p": 0.63,
+    "risk": null,
+    "confidence": 0.64,
     "live": true
   }
 }
