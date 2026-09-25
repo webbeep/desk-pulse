@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 10:32:06 ET",
+  "updated_et": "2026-09-25 10:32:54 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 43.9367,
-  "upnl_usd": 0.0,
-  "equity_usd": 43.9367,
+  "liquid_usd": 43.854,
+  "upnl_usd": -0.003,
+  "equity_usd": 43.851,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -56.0633,
-  "total_pnl_pct": -56.0633,
-  "mark_eth": 2692.625,
-  "mark": 2692.625,
+  "total_pnl_usd": -56.149,
+  "total_pnl_pct": -56.149,
+  "mark_eth": 2690.46,
+  "mark": 2690.46,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.625
+    "ETH": 2690.46
   },
   "holdings": {
-    "paper_cash_usd": 43.9367,
+    "paper_cash_usd": 40.344,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13067,9 +13067,39 @@
       "ticker": "TAOTAO",
       "reason": "TIME_SOFT_600s",
       "pnl_usd": -0.0007
+    },
+    {
+      "t": "2026-09-25 10:32:19 ET",
+      "equity_usd": 43.854,
+      "liquid_usd": 43.854,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PEAR",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.0827
+    },
+    {
+      "t": "now",
+      "equity_usd": 43.851,
+      "liquid_usd": 43.851,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 10:32:19 ET",
+      "kind": "PAPER",
+      "market": "PEAR",
+      "side": "LONG",
+      "size": 3.51,
+      "size_usd": 3.51,
+      "pnl_usd": -0.0827,
+      "pnl_pct": -2.355,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1481",
+      "paper": true
+    },
     {
       "t": "2026-09-25 10:32:05 ET",
       "kind": "PAPER",
@@ -14096,54 +14126,45 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1402",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 02:53:59 ET",
-      "kind": "PAPER",
-      "market": "SI",
-      "side": "LONG",
-      "size": 3.87,
-      "size_usd": 3.87,
-      "pnl_usd": 0.2661,
-      "pnl_pct": 6.8757,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1401",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 43.9367,
-    "mtm_equity_usd": 43.9367,
-    "realized_pnl_usd": -56.0633,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $43.94 \u00b7 curve n=1303 \u00b7 2026-09-25 10:32:06 ET",
+    "paper_equity_usd": 43.854,
+    "mtm_equity_usd": 43.851,
+    "realized_pnl_usd": -56.146,
+    "unrealized_pnl_usd": -0.003,
+    "open": {
+      "id": "PAPER-1482",
+      "ticker": "TAOTAO",
+      "usd": 3.51
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $43.85 \u00b7 curve n=1305 \u00b7 2026-09-25 10:32:54 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1302
+    "closed_n": 1303
   },
-  "notes": "PAPER heartbeat \u00b7 eq $43.94 \u00b7 FLAT \u00b7 2026-09-25 10:32:06 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $43.85 \u00b7 2026-09-25 10:32:54 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=BACKCAT open_p=0.65 edge=2.26 conf=0.85",
+    "detail": "pick=BACKCAT open_p=0.65 edge=2.33 conf=0.91",
     "pick": "BACKCAT",
     "open_p": 0.65,
-    "confidence": 0.85,
-    "edge_score": 2.26,
+    "confidence": 0.91,
+    "edge_score": 2.33,
     "picks": [
       {
         "sym": "BACKCAT",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.88
+        "probs": 0.92
       },
       {
         "sym": "PEAR",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.04
       },
       {
         "sym": "MIC",
@@ -14152,14 +14173,14 @@
         "probs": 0.03
       },
       {
-        "sym": "JOLLY",
-        "lost_bps": 6,
+        "sym": "TAOTAO",
+        "lost_bps": 9,
         "selected": false,
         "probs": 0.0
       },
       {
-        "sym": "TAOTAO",
-        "lost_bps": 9,
+        "sym": "JOLLY",
+        "lost_bps": 11,
         "selected": false,
         "probs": 0.0
       }
@@ -14169,12 +14190,12 @@
       "pick": {
         "type": "choice",
         "choice": "BACKCAT",
-        "confidence": 0.85
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
-        "score": 2.26,
-        "confidence": 0.28
+        "score": 2.33,
+        "confidence": 0.21
       },
       "open_now": {
         "type": "noul",
@@ -14182,7 +14203,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 10:24:01 ET",
+    "stamp_et": "2026-09-25 10:32:30 ET",
     "live": true
   }
 }
