@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 20:37:30 ET",
+  "updated_et": "2026-09-24 20:38:17 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 54.1018,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -45.8982,
   "total_pnl_pct": -45.8982,
-  "mark_eth": 2691.215,
-  "mark": 2691.215,
+  "mark_eth": 2689.935,
+  "mark": 2689.935,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2691.215
+    "ETH": 2689.935
   },
   "holdings": {
     "paper_cash_usd": 54.1018,
@@ -12469,31 +12469,31 @@
     "realized_pnl_usd": -45.8982,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $54.10 \u00b7 curve n=1138 \u00b7 2026-09-24 20:37:30 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $54.10 \u00b7 curve n=1138 \u00b7 2026-09-24 20:38:17 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1137
   },
-  "notes": "PAPER heartbeat \u00b7 eq $54.10 \u00b7 FLAT \u00b7 2026-09-24 20:37:30 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $54.10 \u00b7 FLAT \u00b7 2026-09-24 20:38:17 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FOOMS open_p=0.64 edge=2.07 conf=0.61",
+    "detail": "pick=FOOMS open_p=0.64 edge=2.06 conf=0.6",
     "pick": "FOOMS",
     "open_p": 0.64,
-    "confidence": 0.61,
-    "edge_score": 2.07,
+    "confidence": 0.6,
+    "edge_score": 2.06,
     "picks": [
       {
         "sym": "FOOMS",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.68
+        "probs": 0.66
       },
       {
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.2
+        "probs": 0.21
       },
       {
         "sym": "CJO",
@@ -12505,13 +12505,13 @@
         "sym": "FELS",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "PARAFACTUAL",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -12519,12 +12519,12 @@
       "pick": {
         "type": "choice",
         "choice": "FOOMS",
-        "confidence": 0.61
+        "confidence": 0.6
       },
       "edge": {
         "type": "score",
-        "score": 2.07,
-        "confidence": 0.34
+        "score": 2.06,
+        "confidence": 0.32
       },
       "open_now": {
         "type": "noul",
@@ -12532,7 +12532,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 20:37:20 ET",
+    "stamp_et": "2026-09-24 20:38:13 ET",
     "live": true
   }
 }
