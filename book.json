@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 11:00:37 ET",
+  "updated_et": "2026-09-25 11:01:25 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 43.3109,
-  "upnl_usd": -0.0018,
-  "equity_usd": 43.3091,
+  "liquid_usd": 44.1879,
+  "upnl_usd": 0.0,
+  "equity_usd": 44.1879,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -56.6909,
-  "total_pnl_pct": -56.6909,
-  "mark_eth": 2694.295,
-  "mark": 2694.295,
+  "total_pnl_usd": -55.8121,
+  "total_pnl_pct": -55.8121,
+  "mark_eth": 2695.61,
+  "mark": 2695.61,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2694.295
+    "ETH": 2695.61
   },
   "holdings": {
-    "paper_cash_usd": 39.8509,
+    "paper_cash_usd": 44.1879,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13139,14 +13139,53 @@
       "pnl_usd": -0.0791
     },
     {
-      "t": "now",
-      "equity_usd": 43.3091,
-      "liquid_usd": 43.3091,
+      "t": "2026-09-25 11:00:50 ET",
+      "equity_usd": 43.7517,
+      "liquid_usd": 43.7517,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "QUANTA",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.4408
+    },
+    {
+      "t": "2026-09-25 11:01:15 ET",
+      "equity_usd": 44.1879,
+      "liquid_usd": 44.1879,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "MIC",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.4362
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 11:01:15 ET",
+      "kind": "PAPER",
+      "market": "MIC",
+      "side": "LONG",
+      "size": 3.5,
+      "size_usd": 3.5,
+      "pnl_usd": 0.4362,
+      "pnl_pct": 12.4642,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1489",
+      "paper": true
+    },
+    {
+      "t": "2026-09-25 11:00:50 ET",
+      "kind": "PAPER",
+      "market": "QUANTA",
+      "side": "LONG",
+      "size": 3.46,
+      "size_usd": 3.46,
+      "pnl_usd": 0.4408,
+      "pnl_pct": 12.74,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1488",
+      "paper": true
+    },
     {
       "t": "2026-09-25 10:57:59 ET",
       "kind": "PAPER",
@@ -14160,71 +14199,41 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1410",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 03:15:11 ET",
-      "kind": "PAPER",
-      "market": "E0CD4E",
-      "side": "LONG",
-      "size": 3.85,
-      "size_usd": 3.85,
-      "pnl_usd": -0.0158,
-      "pnl_pct": -0.4104,
-      "tx": "TRAIL_2.0",
-      "id": "PAPER-1409",
-      "paper": true
-    },
-    {
-      "t": "2026-09-25 03:13:18 ET",
-      "kind": "PAPER",
-      "market": "COW",
-      "side": "LONG",
-      "size": 3.85,
-      "size_usd": 3.85,
-      "pnl_usd": 0.6078,
-      "pnl_pct": 15.7882,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1408",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 43.3109,
-    "mtm_equity_usd": 43.3091,
-    "realized_pnl_usd": -56.6891,
-    "unrealized_pnl_usd": -0.0018,
-    "open": {
-      "id": "PAPER-1488",
-      "ticker": "QUANTA",
-      "usd": 3.46
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $43.31 \u00b7 curve n=1311 \u00b7 2026-09-25 11:00:37 ET",
+    "paper_equity_usd": 44.1879,
+    "mtm_equity_usd": 44.1879,
+    "realized_pnl_usd": -55.8121,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $44.19 \u00b7 curve n=1312 \u00b7 2026-09-25 11:01:25 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1309
+    "closed_n": 1311
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $43.31 \u00b7 2026-09-25 11:00:37 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $44.19 \u00b7 FLAT \u00b7 2026-09-25 11:01:25 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=PEAR open_p=0.69 edge=2.47 conf=0.88",
+    "detail": "pick=PEAR open_p=0.68 edge=2.48 conf=0.89",
     "pick": "PEAR",
-    "open_p": 0.69,
-    "confidence": 0.88,
-    "edge_score": 2.47,
+    "open_p": 0.68,
+    "confidence": 0.89,
+    "edge_score": 2.48,
     "picks": [
       {
         "sym": "PEAR",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.9
+        "probs": 0.91
       },
       {
         "sym": "MIC",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.06
+        "probs": 0.05
       },
       {
         "sym": "QUANTA",
@@ -14250,20 +14259,20 @@
       "pick": {
         "type": "choice",
         "choice": "PEAR",
-        "confidence": 0.88
+        "confidence": 0.89
       },
       "edge": {
         "type": "score",
-        "score": 2.47,
-        "confidence": 0.33
+        "score": 2.48,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.69
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 11:00:11 ET",
+    "stamp_et": "2026-09-25 11:01:00 ET",
     "live": true
   }
 }
