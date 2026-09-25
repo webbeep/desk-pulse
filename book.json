@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 09:22:22 ET",
+  "updated_et": "2026-09-25 09:23:09 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 43.7515,
+  "liquid_usd": 43.9734,
   "upnl_usd": 0.0,
-  "equity_usd": 43.7515,
+  "equity_usd": 43.9734,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -56.2485,
-  "total_pnl_pct": -56.2485,
-  "mark_eth": 2706.16,
-  "mark": 2706.16,
+  "total_pnl_usd": -56.0266,
+  "total_pnl_pct": -56.0266,
+  "mark_eth": 2706.05,
+  "mark": 2706.05,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2706.16
+    "ETH": 2706.05
   },
   "holdings": {
-    "paper_cash_usd": 43.7515,
+    "paper_cash_usd": 43.9734,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12907,9 +12907,55 @@
       "ticker": "PEAR",
       "reason": "TP_+6.0",
       "pnl_usd": 0.2475
+    },
+    {
+      "t": "2026-09-25 09:22:51 ET",
+      "equity_usd": 44.0421,
+      "liquid_usd": 44.0421,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ARVO",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.2906
+    },
+    {
+      "t": "2026-09-25 09:23:05 ET",
+      "equity_usd": 43.9734,
+      "liquid_usd": 43.9734,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TAOTAO",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.0687
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 09:23:05 ET",
+      "kind": "PAPER",
+      "market": "TAOTAO",
+      "side": "LONG",
+      "size": 3.52,
+      "size_usd": 3.52,
+      "pnl_usd": -0.0687,
+      "pnl_pct": -1.953,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1466",
+      "paper": true
+    },
+    {
+      "t": "2026-09-25 09:22:51 ET",
+      "kind": "PAPER",
+      "market": "ARVO",
+      "side": "LONG",
+      "size": 3.5,
+      "size_usd": 3.5,
+      "pnl_usd": 0.2906,
+      "pnl_pct": 8.3031,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1465",
+      "paper": true
+    },
     {
       "t": "2026-09-25 09:22:16 ET",
       "kind": "PAPER",
@@ -13923,59 +13969,35 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1388",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 02:19:58 ET",
-      "kind": "PAPER",
-      "market": "GROK",
-      "side": "LONG",
-      "size": 3.81,
-      "size_usd": 3.81,
-      "pnl_usd": 0.0133,
-      "pnl_pct": 0.3478,
-      "tx": "TIME_SOFT_600s",
-      "id": "PAPER-1383",
-      "paper": true
-    },
-    {
-      "t": "2026-09-25 02:18:14 ET",
-      "kind": "PAPER",
-      "market": "SHROOM",
-      "side": "LONG",
-      "size": 3.8,
-      "size_usd": 3.8,
-      "pnl_usd": 0.2338,
-      "pnl_pct": 6.1517,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1386",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 43.7515,
-    "mtm_equity_usd": 43.7515,
-    "realized_pnl_usd": -56.2485,
+    "paper_equity_usd": 43.9734,
+    "mtm_equity_usd": 43.9734,
+    "realized_pnl_usd": -56.0266,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $43.75 \u00b7 curve n=1287 \u00b7 2026-09-25 09:22:22 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $43.97 \u00b7 curve n=1289 \u00b7 2026-09-25 09:23:09 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1286
+    "closed_n": 1288
   },
-  "notes": "JEV OPEN \u00b7 pick=SI open_p=0.67 edge=2.28 conf=0.92 \u00b7 PAPER heartbeat \u00b7 eq $43.75 \u00b7 FLAT \u00b7 2026-09-25 09:22:22 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $43.97 \u00b7 FLAT \u00b7 2026-09-25 09:23:09 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
-    "stamp_et": "2026-09-25 09:22:22 ET",
-    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.67 edge=2.28 conf=0.92",
+    "detail": "pick=SI open_p=0.67 edge=2.33 conf=0.93",
+    "pick": "SI",
+    "open_p": 0.67,
+    "confidence": 0.93,
+    "edge_score": 2.33,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.93
+        "probs": 0.94
       },
       {
         "sym": "PEAR",
@@ -13999,13 +14021,28 @@
         "sym": "TAOTAO",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "SI",
+        "confidence": 0.93
+      },
+      "edge": {
+        "type": "score",
+        "score": 2.33,
+        "confidence": 0.27
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.67
+      }
+    },
     "idle": null,
-    "open_p": 0.67,
-    "risk": null,
-    "confidence": 0.92,
+    "stamp_et": "2026-09-25 09:22:59 ET",
     "live": true
   }
 }
