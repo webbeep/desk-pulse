@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 05:50:34 ET",
+  "updated_et": "2026-09-25 05:51:22 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 44.7934,
-  "upnl_usd": 0.1431,
-  "equity_usd": 44.9365,
+  "liquid_usd": 44.4499,
+  "upnl_usd": 0.1424,
+  "equity_usd": 44.5923,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -55.0635,
-  "total_pnl_pct": -55.0635,
-  "mark_eth": 2702.79,
-  "mark": 2702.79,
+  "total_pnl_usd": -55.4077,
+  "total_pnl_pct": -55.4077,
+  "mark_eth": 2702.715,
+  "mark": 2702.715,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2702.79
+    "ETH": 2702.715
   },
   "holdings": {
-    "paper_cash_usd": 41.1534,
+    "paper_cash_usd": 40.8099,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12719,14 +12719,37 @@
       "pnl_usd": 0.0706
     },
     {
+      "t": "2026-09-25 05:51:01 ET",
+      "equity_usd": 44.4499,
+      "liquid_usd": 44.4499,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "YENAI",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.3435
+    },
+    {
       "t": "now",
-      "equity_usd": 44.9365,
-      "liquid_usd": 44.9365,
+      "equity_usd": 44.5923,
+      "liquid_usd": 44.5923,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 05:51:01 ET",
+      "kind": "PAPER",
+      "market": "YENAI",
+      "side": "LONG",
+      "size": 3.58,
+      "size_usd": 3.58,
+      "pnl_usd": -0.3435,
+      "pnl_pct": -9.5952,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1447",
+      "paper": true
+    },
     {
       "t": "2026-09-25 05:46:47 ET",
       "kind": "PAPER",
@@ -13753,68 +13776,61 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1367",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 00:17:00 ET",
-      "kind": "PAPER",
-      "market": "JOLLY",
-      "side": "LONG",
-      "size": 3.84,
-      "size_usd": 3.84,
-      "pnl_usd": 0.0408,
-      "pnl_pct": 1.063,
-      "tx": "TIME_SOFT_600s",
-      "id": "PAPER-1364",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 44.7934,
-    "mtm_equity_usd": 44.9365,
-    "realized_pnl_usd": -55.2066,
-    "unrealized_pnl_usd": 0.1431,
+    "paper_equity_usd": 44.4499,
+    "mtm_equity_usd": 44.5923,
+    "realized_pnl_usd": -55.5501,
+    "unrealized_pnl_usd": 0.1424,
     "open": {
       "id": "PAPER-1442",
       "ticker": "GPU",
       "usd": 3.64
     },
-    "notes": "PAPER heartbeat \u00b7 eq $44.79 \u00b7 curve n=1269 \u00b7 2026-09-25 05:50:34 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $44.45 \u00b7 curve n=1270 \u00b7 2026-09-25 05:51:22 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1267
+    "closed_n": 1268
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $44.79 \u00b7 2026-09-25 05:50:34 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $44.45 \u00b7 2026-09-25 05:51:22 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.66 edge=2.49 conf=0.94",
+    "detail": "pick=SI open_p=0.69 edge=2.55 conf=0.9",
     "pick": "SI",
-    "open_p": 0.66,
-    "confidence": 0.94,
-    "edge_score": 2.49,
+    "open_p": 0.69,
+    "confidence": 0.9,
+    "edge_score": 2.55,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.92
+      },
+      {
+        "sym": "POKESTRTGY",
+        "lost_bps": 5,
+        "selected": false,
+        "probs": 0.07
       },
       {
         "sym": "\u5bcc\u8d35",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
+      },
+      {
+        "sym": "YENAI",
+        "lost_bps": 7,
+        "selected": false,
+        "probs": 0.0
       },
       {
         "sym": "GPU",
         "lost_bps": 9,
-        "selected": false,
-        "probs": 0.02
-      },
-      {
-        "sym": "COMO",
-        "lost_bps": 16,
         "selected": false,
         "probs": 0.0
       }
@@ -13824,20 +13840,20 @@
       "pick": {
         "type": "choice",
         "choice": "SI",
-        "confidence": 0.94
+        "confidence": 0.9
       },
       "edge": {
         "type": "score",
-        "score": 2.49,
-        "confidence": 0.33
+        "score": 2.55,
+        "confidence": 0.37
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.69
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 05:50:34 ET",
+    "stamp_et": "2026-09-25 05:51:12 ET",
     "live": true
   }
 }
