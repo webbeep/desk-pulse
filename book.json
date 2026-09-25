@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 08:29:03 ET",
+  "updated_et": "2026-09-25 08:29:50 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 44.0726,
-  "upnl_usd": -0.0147,
-  "equity_usd": 44.0579,
+  "liquid_usd": 44.2879,
+  "upnl_usd": 0.0,
+  "equity_usd": 44.2879,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -55.9421,
-  "total_pnl_pct": -55.9421,
-  "mark_eth": 2709.505,
-  "mark": 2709.505,
+  "total_pnl_usd": -55.7121,
+  "total_pnl_pct": -55.7121,
+  "mark_eth": 2710.235,
+  "mark": 2710.235,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2709.505
+    "ETH": 2710.235
   },
   "holdings": {
-    "paper_cash_usd": 40.5426,
+    "paper_cash_usd": 44.2879,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12779,14 +12779,30 @@
       "pnl_usd": -1.0512
     },
     {
-      "t": "now",
-      "equity_usd": 44.0579,
-      "liquid_usd": 44.0579,
+      "t": "2026-09-25 08:29:08 ET",
+      "equity_usd": 44.2879,
+      "liquid_usd": 44.2879,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "GOYBEAM",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.2153
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 08:29:08 ET",
+      "kind": "PAPER",
+      "market": "GOYBEAM",
+      "side": "LONG",
+      "size": 3.53,
+      "size_usd": 3.53,
+      "pnl_usd": 0.2153,
+      "pnl_pct": 6.0999,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1452",
+      "paper": true
+    },
     {
       "t": "2026-09-25 08:28:46 ET",
       "kind": "PAPER",
@@ -13813,52 +13829,35 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1374",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 01:36:30 ET",
-      "kind": "PAPER",
-      "market": "SHROOM",
-      "side": "LONG",
-      "size": 3.85,
-      "size_usd": 3.85,
-      "pnl_usd": -0.0645,
-      "pnl_pct": -1.6741,
-      "tx": "TRAIL_2.0",
-      "id": "PAPER-1373",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 44.0726,
-    "mtm_equity_usd": 44.0579,
-    "realized_pnl_usd": -55.9274,
-    "unrealized_pnl_usd": -0.0147,
-    "open": {
-      "id": "PAPER-1452",
-      "ticker": "GOYBEAM",
-      "usd": 3.53
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $44.07 \u00b7 curve n=1275 \u00b7 2026-09-25 08:29:03 ET",
+    "paper_equity_usd": 44.2879,
+    "mtm_equity_usd": 44.2879,
+    "realized_pnl_usd": -55.7121,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $44.29 \u00b7 curve n=1275 \u00b7 2026-09-25 08:29:50 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1273
+    "closed_n": 1274
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $44.07 \u00b7 2026-09-25 08:29:03 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $44.29 \u00b7 FLAT \u00b7 2026-09-25 08:29:50 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.66 edge=2.16 conf=0.85",
+    "detail": "pick=SI open_p=0.66 edge=2.21 conf=0.85",
     "pick": "SI",
     "open_p": 0.66,
     "confidence": 0.85,
-    "edge_score": 2.16,
+    "edge_score": 2.21,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.88
+        "probs": 0.87
       },
       {
         "sym": "0XQUIT",
@@ -13870,7 +13869,7 @@
         "sym": "GOYBEAM",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.04
       },
       {
         "sym": "\u5bcc\u8d35",
@@ -13894,8 +13893,8 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.16,
-        "confidence": 0.11
+        "score": 2.21,
+        "confidence": 0.22
       },
       "open_now": {
         "type": "noul",
@@ -13903,7 +13902,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 08:28:51 ET",
+    "stamp_et": "2026-09-25 08:29:43 ET",
     "live": true
   }
 }
