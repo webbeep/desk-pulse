@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-25 00:11:27 ET",
+  "updated_et": "2026-09-25 00:12:15 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 47.979,
-  "upnl_usd": 0.0145,
-  "equity_usd": 47.9935,
+  "upnl_usd": 0.0446,
+  "equity_usd": 48.0236,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -52.0065,
-  "total_pnl_pct": -52.0065,
-  "mark_eth": 2676.825,
-  "mark": 2676.825,
+  "total_pnl_usd": -51.9764,
+  "total_pnl_pct": -51.9764,
+  "mark_eth": 2675.35,
+  "mark": 2675.35,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2676.825
+    "ETH": 2675.35
   },
   "holdings": {
     "paper_cash_usd": 44.139,
@@ -11900,8 +11900,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 47.9935,
-      "liquid_usd": 47.9935,
+      "equity_usd": 48.0236,
+      "liquid_usd": 48.0236,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -12952,33 +12952,33 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 47.979,
-    "mtm_equity_usd": 47.9935,
+    "mtm_equity_usd": 48.0236,
     "realized_pnl_usd": -52.021,
-    "unrealized_pnl_usd": 0.0145,
+    "unrealized_pnl_usd": 0.0446,
     "open": {
       "id": "PAPER-1364",
       "ticker": "JOLLY",
       "usd": 3.84
     },
-    "notes": "PAPER heartbeat \u00b7 eq $47.98 \u00b7 curve n=1187 \u00b7 2026-09-25 00:11:27 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $47.98 \u00b7 curve n=1187 \u00b7 2026-09-25 00:12:15 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1185
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.98 \u00b7 2026-09-25 00:11:27 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.98 \u00b7 2026-09-25 00:12:15 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.68 edge=2.3 conf=0.96",
+    "detail": "pick=SI open_p=0.67 edge=2.19 conf=0.96",
     "pick": "SI",
-    "open_p": 0.68,
+    "open_p": 0.67,
     "confidence": 0.96,
-    "edge_score": 2.3,
+    "edge_score": 2.19,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.97
+        "probs": 0.96
       },
       {
         "sym": "FOOMS",
@@ -13002,16 +13002,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.3,
-        "confidence": 0.33
+        "score": 2.19,
+        "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.68
+        "noul": 0.67
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 00:11:24 ET",
+    "stamp_et": "2026-09-25 00:12:03 ET",
     "live": true
   }
 }
