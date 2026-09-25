@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 03:50:19 ET",
+  "updated_et": "2026-09-25 03:51:07 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 49.3601,
-  "upnl_usd": 0.0,
-  "equity_usd": 49.3601,
+  "upnl_usd": -0.0036,
+  "equity_usd": 49.3565,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -50.6399,
-  "total_pnl_pct": -50.6399,
-  "mark_eth": 2671.365,
-  "mark": 2671.365,
+  "total_pnl_usd": -50.6435,
+  "total_pnl_pct": -50.6435,
+  "mark_eth": 2671.885,
+  "mark": 2671.885,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2671.365
+    "ETH": 2671.885
   },
   "holdings": {
-    "paper_cash_usd": 49.3601,
+    "paper_cash_usd": 45.4101,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12437,6 +12437,13 @@
       "ticker": "SHROOM",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.1595
+    },
+    {
+      "t": "now",
+      "equity_usd": 49.3565,
+      "liquid_usd": 49.3565,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -13485,15 +13492,19 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 49.3601,
-    "mtm_equity_usd": 49.3601,
+    "mtm_equity_usd": 49.3565,
     "realized_pnl_usd": -50.6399,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $49.36 \u00b7 curve n=1240 \u00b7 2026-09-25 03:50:19 ET",
+    "unrealized_pnl_usd": -0.0036,
+    "open": {
+      "id": "PAPER-1418",
+      "ticker": "\u5bcc\u8d35",
+      "usd": 3.95
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $49.36 \u00b7 curve n=1241 \u00b7 2026-09-25 03:51:07 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1239
   },
-  "notes": "PAPER heartbeat \u00b7 eq $49.36 \u00b7 FLAT \u00b7 2026-09-25 03:50:19 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $49.36 \u00b7 2026-09-25 03:51:07 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
@@ -13507,13 +13518,13 @@
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.92
+        "probs": 0.93
       },
       {
         "sym": "\u5bcc\u8d35",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "SHROOM",
@@ -13531,7 +13542,7 @@
         "sym": "\u5bcc\u8d35",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -13544,7 +13555,7 @@
       "edge": {
         "type": "score",
         "score": 2.18,
-        "confidence": 0.33
+        "confidence": 0.37
       },
       "open_now": {
         "type": "noul",
@@ -13552,7 +13563,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 03:50:10 ET",
+    "stamp_et": "2026-09-25 03:51:02 ET",
     "live": true
   }
 }
