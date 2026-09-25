@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 22:37:34 ET",
+  "updated_et": "2026-09-24 22:38:22 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 51.9573,
-  "upnl_usd": 0.0,
-  "equity_usd": 51.9573,
+  "upnl_usd": -0.0285,
+  "equity_usd": 51.9288,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -48.0427,
-  "total_pnl_pct": -48.0427,
-  "mark_eth": 2684.665,
-  "mark": 2684.665,
+  "total_pnl_usd": -48.0712,
+  "total_pnl_pct": -48.0712,
+  "mark_eth": 2683.685,
+  "mark": 2683.685,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2684.665
+    "ETH": 2683.685
   },
   "holdings": {
-    "paper_cash_usd": 51.9573,
+    "paper_cash_usd": 45.7273,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -11737,6 +11737,13 @@
       "ticker": "6A23D6",
       "reason": "TIME_SOFT_600s",
       "pnl_usd": 0.001
+    },
+    {
+      "t": "now",
+      "equity_usd": 51.9288,
+      "liquid_usd": 51.9288,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -12785,35 +12792,39 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 51.9573,
-    "mtm_equity_usd": 51.9573,
+    "mtm_equity_usd": 51.9288,
     "realized_pnl_usd": -48.0427,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $51.96 \u00b7 curve n=1170 \u00b7 2026-09-24 22:37:34 ET",
+    "unrealized_pnl_usd": -0.0285,
+    "open": {
+      "id": "PAPER-1348",
+      "ticker": "MACCA",
+      "usd": 6.23
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $51.96 \u00b7 curve n=1171 \u00b7 2026-09-24 22:38:22 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1169
   },
-  "notes": "PAPER heartbeat \u00b7 eq $51.96 \u00b7 FLAT \u00b7 2026-09-24 22:37:34 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $51.96 \u00b7 2026-09-24 22:38:22 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FOOMS open_p=0.67 edge=2.1 conf=0.87",
+    "detail": "pick=FOOMS open_p=0.66 edge=2.2 conf=0.83",
     "pick": "FOOMS",
-    "open_p": 0.67,
-    "confidence": 0.87,
-    "edge_score": 2.1,
+    "open_p": 0.66,
+    "confidence": 0.83,
+    "edge_score": 2.2,
     "picks": [
       {
         "sym": "FOOMS",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.9
+        "probs": 0.86
       },
       {
         "sym": "8E1523",
         "lost_bps": 6,
         "selected": false,
-        "probs": 0.09
+        "probs": 0.13
       },
       {
         "sym": "SI",
@@ -12839,20 +12850,20 @@
       "pick": {
         "type": "choice",
         "choice": "FOOMS",
-        "confidence": 0.87
+        "confidence": 0.83
       },
       "edge": {
         "type": "score",
-        "score": 2.1,
-        "confidence": 0.35
+        "score": 2.2,
+        "confidence": 0.32
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 22:37:33 ET",
+    "stamp_et": "2026-09-24 22:38:14 ET",
     "live": true
   }
 }
