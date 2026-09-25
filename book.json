@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 18:26:07 ET",
+  "updated_et": "2026-09-25 18:26:55 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.5125,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -60.4875,
   "total_pnl_pct": -60.4875,
-  "mark_eth": 2688.03,
-  "mark": 2688.03,
+  "mark_eth": 2688.185,
+  "mark": 2688.185,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2688.03
+    "ETH": 2688.185
   },
   "holdings": {
     "paper_cash_usd": 39.5125,
@@ -14559,17 +14559,19 @@
     "realized_pnl_usd": -60.4875,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.51 \u00b7 curve n=1347 \u00b7 2026-09-25 18:26:07 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.51 \u00b7 curve n=1347 \u00b7 2026-09-25 18:26:55 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1346
   },
-  "notes": "JEV OPEN \u00b7 pick=TALIS open_p=0.64 edge=2.16 conf=0.9 \u00b7 PAPER heartbeat \u00b7 eq $39.51 \u00b7 FLAT \u00b7 2026-09-25 18:26:07 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $39.51 \u00b7 FLAT \u00b7 2026-09-25 18:26:55 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
-    "stamp_et": "2026-09-25 18:26:07 ET",
-    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=TALIS open_p=0.64 edge=2.16 conf=0.9",
+    "detail": "pick=TALIS open_p=0.62 edge=2.24 conf=0.89",
+    "pick": "TALIS",
+    "open_p": 0.62,
+    "confidence": 0.89,
+    "edge_score": 2.24,
     "picks": [
       {
         "sym": "TALIS",
@@ -14584,10 +14586,25 @@
         "probs": 0.06
       }
     ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "TALIS",
+        "confidence": 0.89
+      },
+      "edge": {
+        "type": "score",
+        "score": 2.24,
+        "confidence": 0.35
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.62
+      }
+    },
     "idle": null,
-    "open_p": 0.64,
-    "risk": null,
-    "confidence": 0.9,
+    "stamp_et": "2026-09-25 18:26:45 ET",
     "live": true
   }
 }
