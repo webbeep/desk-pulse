@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 00:14:36 ET",
+  "updated_et": "2026-09-25 00:15:24 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 47.7679,
-  "upnl_usd": 0.1383,
-  "equity_usd": 47.9062,
+  "liquid_usd": 47.5096,
+  "upnl_usd": 0.0295,
+  "equity_usd": 47.5391,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -52.0938,
-  "total_pnl_pct": -52.0938,
-  "mark_eth": 2674.835,
-  "mark": 2674.835,
+  "total_pnl_usd": -52.4609,
+  "total_pnl_pct": -52.4609,
+  "mark_eth": 2671.225,
+  "mark": 2671.225,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2674.835
+    "ETH": 2671.225
   },
   "holdings": {
-    "paper_cash_usd": 43.9279,
+    "paper_cash_usd": 43.6696,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -11909,14 +11909,37 @@
       "pnl_usd": -0.2111
     },
     {
+      "t": "2026-09-25 00:14:45 ET",
+      "equity_usd": 47.5096,
+      "liquid_usd": 47.5096,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "8A60CB",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.2583
+    },
+    {
       "t": "now",
-      "equity_usd": 47.9062,
-      "liquid_usd": 47.9062,
+      "equity_usd": 47.5391,
+      "liquid_usd": 47.5391,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 00:14:45 ET",
+      "kind": "PAPER",
+      "market": "8A60CB",
+      "side": "LONG",
+      "size": 3.82,
+      "size_usd": 3.82,
+      "pnl_usd": -0.2583,
+      "pnl_pct": -6.7626,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1366",
+      "paper": true
+    },
     {
       "t": "2026-09-25 00:12:39 ET",
       "kind": "PAPER",
@@ -12943,58 +12966,45 @@
       "tx": "TRAIL_2.0",
       "id": "PAPER-1284",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 18:37:22 ET",
-      "kind": "PAPER",
-      "market": "HAT",
-      "side": "LONG",
-      "size": 6.11,
-      "size_usd": 6.11,
-      "pnl_usd": 0.4749,
-      "pnl_pct": 7.7727,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1286",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 47.7679,
-    "mtm_equity_usd": 47.9062,
-    "realized_pnl_usd": -52.2321,
-    "unrealized_pnl_usd": 0.1383,
+    "paper_equity_usd": 47.5096,
+    "mtm_equity_usd": 47.5391,
+    "realized_pnl_usd": -52.4904,
+    "unrealized_pnl_usd": 0.0295,
     "open": {
       "id": "PAPER-1364",
       "ticker": "JOLLY",
       "usd": 3.84
     },
-    "notes": "PAPER heartbeat \u00b7 eq $47.77 \u00b7 curve n=1188 \u00b7 2026-09-25 00:14:36 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $47.51 \u00b7 curve n=1189 \u00b7 2026-09-25 00:15:24 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1186
+    "closed_n": 1187
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.77 \u00b7 2026-09-25 00:14:36 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.51 \u00b7 2026-09-25 00:15:24 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FELS open_p=0.65 edge=2.24 conf=0.96",
+    "detail": "pick=FELS open_p=0.66 edge=2.16 conf=0.96",
     "pick": "FELS",
-    "open_p": 0.65,
+    "open_p": 0.66,
     "confidence": 0.96,
-    "edge_score": 2.24,
+    "edge_score": 2.16,
     "picks": [
       {
         "sym": "FELS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.97
+        "probs": 0.96
       },
       {
         "sym": "8A60CB",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
       },
       {
         "sym": "JOLLY",
@@ -13012,16 +13022,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.24,
-        "confidence": 0.31
+        "score": 2.16,
+        "confidence": 0.3
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 00:13:05 ET",
+    "stamp_et": "2026-09-25 00:15:23 ET",
     "live": true
   }
 }
