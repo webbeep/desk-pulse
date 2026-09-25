@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 19:13:31 ET",
+  "updated_et": "2026-09-25 19:14:18 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.8037,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -60.1963,
   "total_pnl_pct": -60.1963,
-  "mark_eth": 2693.565,
-  "mark": 2693.565,
+  "mark_eth": 2692.955,
+  "mark": 2692.955,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2693.565
+    "ETH": 2692.955
   },
   "holdings": {
     "paper_cash_usd": 39.8037,
@@ -14589,43 +14589,43 @@
     "realized_pnl_usd": -60.1963,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 curve n=1350 \u00b7 2026-09-25 19:13:31 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 curve n=1350 \u00b7 2026-09-25 19:14:18 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1349
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 FLAT \u00b7 2026-09-25 19:13:31 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $39.80 \u00b7 FLAT \u00b7 2026-09-25 19:14:18 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=YOLO open_p=0.66 edge=2.24 conf=0.63",
+    "detail": "pick=YOLO open_p=0.64 edge=2.23 conf=0.61",
     "pick": "YOLO",
-    "open_p": 0.66,
-    "confidence": 0.63,
-    "edge_score": 2.24,
+    "open_p": 0.64,
+    "confidence": 0.61,
+    "edge_score": 2.23,
     "picks": [
       {
         "sym": "YOLO",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.71
+        "probs": 0.69
       },
       {
         "sym": "TALIS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.2
+        "probs": 0.19
       },
       {
         "sym": "E/ACC",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.04
       },
       {
         "sym": "PIZZLY",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.07
       }
     ],
     "model": "jev-1.13.0",
@@ -14633,20 +14633,20 @@
       "pick": {
         "type": "choice",
         "choice": "YOLO",
-        "confidence": 0.63
+        "confidence": 0.61
       },
       "edge": {
         "type": "score",
-        "score": 2.24,
-        "confidence": 0.35
+        "score": 2.23,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 19:13:29 ET",
+    "stamp_et": "2026-09-25 19:14:06 ET",
     "live": true
   }
 }
