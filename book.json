@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 05:28:25 ET",
+  "updated_et": "2026-09-25 05:29:12 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 45.5058,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -54.4942,
   "total_pnl_pct": -54.4942,
-  "mark_eth": 2712.65,
-  "mark": 2712.65,
+  "mark_eth": 2710.74,
+  "mark": 2710.74,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2712.65
+    "ETH": 2710.74
   },
   "holdings": {
     "paper_cash_usd": 45.5058,
@@ -13729,19 +13729,19 @@
     "realized_pnl_usd": -54.4942,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $45.51 \u00b7 curve n=1264 \u00b7 2026-09-25 05:28:25 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $45.51 \u00b7 curve n=1264 \u00b7 2026-09-25 05:29:12 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1263
   },
-  "notes": "PAPER heartbeat \u00b7 eq $45.51 \u00b7 FLAT \u00b7 2026-09-25 05:28:25 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $45.51 \u00b7 FLAT \u00b7 2026-09-25 05:29:12 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.66 edge=2.26 conf=0.94",
+    "detail": "pick=SI open_p=0.68 edge=2.25 conf=0.93",
     "pick": "SI",
-    "open_p": 0.66,
-    "confidence": 0.94,
-    "edge_score": 2.26,
+    "open_p": 0.68,
+    "confidence": 0.93,
+    "edge_score": 2.25,
     "picks": [
       {
         "sym": "SI",
@@ -13753,13 +13753,13 @@
         "sym": "\u5bcc\u8d35",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "SHROOM",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       },
       {
         "sym": "POKESTRTGY",
@@ -13771,7 +13771,7 @@
         "sym": "\u5bcc\u8d35",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -13779,20 +13779,20 @@
       "pick": {
         "type": "choice",
         "choice": "SI",
-        "confidence": 0.94
+        "confidence": 0.93
       },
       "edge": {
         "type": "score",
-        "score": 2.26,
-        "confidence": 0.28
+        "score": 2.25,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 05:28:15 ET",
+    "stamp_et": "2026-09-25 05:29:08 ET",
     "live": true
   }
 }
