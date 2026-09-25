@@ -12993,39 +12993,37 @@
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1189
   },
-  "notes": "PAPER heartbeat \u00b7 eq $47.81 \u00b7 FLAT \u00b7 2026-09-25 01:17:00 ET",
+  "notes": "JEV OPEN \u00b7 pick=SI open_p=0.59 edge=1.89 conf=0.17 \u00b7 PAPER heartbeat \u00b7 eq $47.81 \u00b7 FLAT \u00b7 2026-09-25 01:17:00 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-25 01:17:01 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=FOOMS open_p=0.59 edge=1.9 conf=0.13",
-    "pick": "FOOMS",
-    "open_p": 0.59,
-    "confidence": 0.13,
-    "edge_score": 1.9,
+    "detail": "pick=SI open_p=0.59 edge=1.89 conf=0.17",
     "picks": [
       {
         "sym": "FOOMS",
         "lost_bps": 3,
-        "selected": true,
-        "probs": 0.27
+        "selected": false,
+        "probs": 0.19
       },
       {
         "sym": "FELS",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.18
+        "probs": 0.25
       },
       {
         "sym": "SI",
         "lost_bps": 3,
-        "selected": false,
-        "probs": 0.27
+        "selected": true,
+        "probs": 0.31
       },
       {
         "sym": "COW",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.23
+        "probs": 0.2
       },
       {
         "sym": "MUSECLUB",
@@ -13034,25 +13032,10 @@
         "probs": 0.02
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "FOOMS",
-        "confidence": 0.13
-      },
-      "edge": {
-        "type": "score",
-        "score": 1.9,
-        "confidence": 0.3
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.59
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-25 01:16:48 ET",
+    "open_p": 0.59,
+    "risk": null,
+    "confidence": 0.17,
     "live": true
   }
 }
