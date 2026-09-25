@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-24 20:31:58 ET",
+  "updated_et": "2026-09-24 20:32:46 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 54.1018,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -45.8982,
   "total_pnl_pct": -45.8982,
-  "mark_eth": 2688.075,
-  "mark": 2688.075,
+  "mark_eth": 2689.405,
+  "mark": 2689.405,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2688.075
+    "ETH": 2689.405
   },
   "holdings": {
     "paper_cash_usd": 54.1018,
@@ -12469,37 +12469,37 @@
     "realized_pnl_usd": -45.8982,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $54.10 \u00b7 curve n=1138 \u00b7 2026-09-24 20:31:58 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $54.10 \u00b7 curve n=1138 \u00b7 2026-09-24 20:32:46 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1137
   },
-  "notes": "PAPER heartbeat \u00b7 eq $54.10 \u00b7 FLAT \u00b7 2026-09-24 20:31:58 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $54.10 \u00b7 FLAT \u00b7 2026-09-24 20:32:46 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FOOMS open_p=0.63 edge=2.01 conf=0.64",
+    "detail": "pick=FOOMS open_p=0.64 edge=2.06 conf=0.62",
     "pick": "FOOMS",
-    "open_p": 0.63,
-    "confidence": 0.64,
-    "edge_score": 2.01,
+    "open_p": 0.64,
+    "confidence": 0.62,
+    "edge_score": 2.06,
     "picks": [
       {
         "sym": "FOOMS",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.7
+        "probs": 0.68
       },
       {
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.19
+        "probs": 0.21
       },
       {
         "sym": "CJO",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.07
       },
       {
         "sym": "FELS",
@@ -12519,20 +12519,20 @@
       "pick": {
         "type": "choice",
         "choice": "FOOMS",
-        "confidence": 0.64
+        "confidence": 0.62
       },
       "edge": {
         "type": "score",
-        "score": 2.01,
-        "confidence": 0.33
+        "score": 2.06,
+        "confidence": 0.32
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 20:31:54 ET",
+    "stamp_et": "2026-09-24 20:32:45 ET",
     "live": true
   }
 }
