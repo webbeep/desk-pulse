@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 05:58:29 ET",
+  "updated_et": "2026-09-25 05:59:16 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 44.4499,
-  "upnl_usd": 0.2016,
-  "equity_usd": 44.6515,
+  "liquid_usd": 44.3341,
+  "upnl_usd": 0.1477,
+  "equity_usd": 44.4818,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -55.3485,
-  "total_pnl_pct": -55.3485,
-  "mark_eth": 2704.565,
-  "mark": 2704.565,
+  "total_pnl_usd": -55.5182,
+  "total_pnl_pct": -55.5182,
+  "mark_eth": 2704.675,
+  "mark": 2704.675,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2704.565
+    "ETH": 2704.675
   },
   "holdings": {
-    "paper_cash_usd": 40.8899,
+    "paper_cash_usd": 40.6941,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12729,14 +12729,60 @@
       "pnl_usd": -0.3435
     },
     {
+      "t": "2026-09-25 05:58:55 ET",
+      "equity_usd": 44.4495,
+      "liquid_usd": 44.4495,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "POKESTRTGY",
+      "reason": "TRAIL_2.0",
+      "pnl_usd": -0.0004
+    },
+    {
+      "t": "2026-09-25 05:59:07 ET",
+      "equity_usd": 44.3341,
+      "liquid_usd": 44.3341,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "POKESTRTGY",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.1154
+    },
+    {
       "t": "now",
-      "equity_usd": 44.6515,
-      "liquid_usd": 44.6515,
+      "equity_usd": 44.4818,
+      "liquid_usd": 44.4818,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 05:59:07 ET",
+      "kind": "PAPER",
+      "market": "POKESTRTGY",
+      "side": "LONG",
+      "size": 3.56,
+      "size_usd": 3.56,
+      "pnl_usd": -0.1154,
+      "pnl_pct": -3.243,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1449",
+      "paper": true
+    },
+    {
+      "t": "2026-09-25 05:58:55 ET",
+      "kind": "PAPER",
+      "market": "POKESTRTGY",
+      "side": "LONG",
+      "size": 3.56,
+      "size_usd": 3.56,
+      "pnl_usd": -0.0004,
+      "pnl_pct": -0.0102,
+      "tx": "TRAIL_2.0",
+      "id": "PAPER-1448",
+      "paper": true
+    },
     {
       "t": "2026-09-25 05:51:01 ET",
       "kind": "PAPER",
@@ -13750,65 +13796,39 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1368",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 01:35:06 ET",
-      "kind": "PAPER",
-      "market": "FELS",
-      "side": "LONG",
-      "size": 3.82,
-      "size_usd": 3.82,
-      "pnl_usd": 0.4208,
-      "pnl_pct": 11.015,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1369",
-      "paper": true
-    },
-    {
-      "t": "2026-09-25 00:33:03 ET",
-      "kind": "PAPER",
-      "market": "FOOMS",
-      "side": "LONG",
-      "size": 3.8,
-      "size_usd": 3.8,
-      "pnl_usd": 0.261,
-      "pnl_pct": 6.8682,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1367",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 44.4499,
-    "mtm_equity_usd": 44.6515,
-    "realized_pnl_usd": -55.5501,
-    "unrealized_pnl_usd": 0.2016,
+    "paper_equity_usd": 44.3341,
+    "mtm_equity_usd": 44.4818,
+    "realized_pnl_usd": -55.6659,
+    "unrealized_pnl_usd": 0.1477,
     "open": {
-      "id": "PAPER-1448",
-      "ticker": "POKESTRTGY",
-      "usd": 3.56
+      "id": "PAPER-1442",
+      "ticker": "GPU",
+      "usd": 3.64
     },
-    "notes": "PAPER heartbeat \u00b7 eq $44.45 \u00b7 curve n=1270 \u00b7 2026-09-25 05:58:29 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $44.33 \u00b7 curve n=1272 \u00b7 2026-09-25 05:59:16 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1268
+    "closed_n": 1270
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $44.45 \u00b7 2026-09-25 05:58:29 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $44.33 \u00b7 2026-09-25 05:59:16 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.68 edge=2.37 conf=0.83",
+    "detail": "pick=SI open_p=0.68 edge=2.43 conf=0.86",
     "pick": "SI",
     "open_p": 0.68,
-    "confidence": 0.83,
-    "edge_score": 2.37,
+    "confidence": 0.86,
+    "edge_score": 2.43,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.85
+        "probs": 0.88
       },
       {
         "sym": "YENAI",
@@ -13820,13 +13840,13 @@
         "sym": "POKESTRTGY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.09
       },
       {
         "sym": "\u5bcc\u8d35",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "GPU",
@@ -13840,12 +13860,12 @@
       "pick": {
         "type": "choice",
         "choice": "SI",
-        "confidence": 0.83
+        "confidence": 0.86
       },
       "edge": {
         "type": "score",
-        "score": 2.37,
-        "confidence": 0.35
+        "score": 2.43,
+        "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
@@ -13853,7 +13873,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 05:57:57 ET",
+    "stamp_et": "2026-09-25 05:59:14 ET",
     "live": true
   }
 }
