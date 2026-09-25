@@ -13883,39 +13883,37 @@
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1278
   },
-  "notes": "PAPER heartbeat \u00b7 eq $43.37 \u00b7 FLAT \u00b7 2026-09-25 08:50:44 ET",
+  "notes": "JEV OPEN \u00b7 pick=SI open_p=0.67 edge=2.22 conf=0.77 \u00b7 PAPER heartbeat \u00b7 eq $43.37 \u00b7 FLAT \u00b7 2026-09-25 08:50:44 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-25 08:50:44 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.68 edge=2.23 conf=0.8",
-    "pick": "SI",
-    "open_p": 0.68,
-    "confidence": 0.8,
-    "edge_score": 2.23,
+    "detail": "pick=SI open_p=0.67 edge=2.22 conf=0.77",
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.83
+        "probs": 0.81
       },
       {
         "sym": "0XQUIT",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.13
+        "probs": 0.15
       },
       {
         "sym": "PEAR",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
       },
       {
         "sym": "TAOTAO",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "GOYBEAM",
@@ -13924,25 +13922,10 @@
         "probs": 0.01
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "SI",
-        "confidence": 0.8
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.23,
-        "confidence": 0.36
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.68
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-25 08:50:32 ET",
+    "open_p": 0.67,
+    "risk": null,
+    "confidence": 0.77,
     "live": true
   }
 }
