@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 02:33:33 ET",
+  "updated_et": "2026-09-25 02:34:20 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 47.1083,
-  "upnl_usd": 0.1017,
-  "equity_usd": 47.21,
+  "liquid_usd": 47.1232,
+  "upnl_usd": 0.1126,
+  "equity_usd": 47.2358,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -52.79,
-  "total_pnl_pct": -52.79,
-  "mark_eth": 2674.98,
-  "mark": 2674.98,
+  "total_pnl_usd": -52.7642,
+  "total_pnl_pct": -52.7642,
+  "mark_eth": 2674.84,
+  "mark": 2674.84,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2674.98
+    "ETH": 2674.84
   },
   "holdings": {
-    "paper_cash_usd": 43.3383,
+    "paper_cash_usd": 43.3532,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12179,14 +12179,60 @@
       "pnl_usd": -0.0731
     },
     {
+      "t": "2026-09-25 02:33:35 ET",
+      "equity_usd": 47.1147,
+      "liquid_usd": 47.1147,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SHROOM",
+      "reason": "TRAIL_2.0",
+      "pnl_usd": 0.0064
+    },
+    {
+      "t": "2026-09-25 02:34:02 ET",
+      "equity_usd": 47.1232,
+      "liquid_usd": 47.1232,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SHROOM",
+      "reason": "TRAIL_2.0",
+      "pnl_usd": 0.0085
+    },
+    {
       "t": "now",
-      "equity_usd": 47.21,
-      "liquid_usd": 47.21,
+      "equity_usd": 47.2358,
+      "liquid_usd": 47.2358,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 02:34:02 ET",
+      "kind": "PAPER",
+      "market": "SHROOM",
+      "side": "LONG",
+      "size": 3.77,
+      "size_usd": 3.77,
+      "pnl_usd": 0.0085,
+      "pnl_pct": 0.2242,
+      "tx": "TRAIL_2.0",
+      "id": "PAPER-1393",
+      "paper": true
+    },
+    {
+      "t": "2026-09-25 02:33:35 ET",
+      "kind": "PAPER",
+      "market": "SHROOM",
+      "side": "LONG",
+      "size": 3.77,
+      "size_usd": 3.77,
+      "pnl_usd": 0.0064,
+      "pnl_pct": 0.1687,
+      "tx": "TRAIL_2.0",
+      "id": "PAPER-1392",
+      "paper": true
+    },
     {
       "t": "2026-09-25 02:30:58 ET",
       "kind": "PAPER",
@@ -13200,65 +13246,39 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1314",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 20:08:40 ET",
-      "kind": "PAPER",
-      "market": "STONK",
-      "side": "LONG",
-      "size": 6.35,
-      "size_usd": 6.35,
-      "pnl_usd": 0.968,
-      "pnl_pct": 15.2433,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1313",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 20:07:32 ET",
-      "kind": "PAPER",
-      "market": "CJO",
-      "side": "LONG",
-      "size": 6.3,
-      "size_usd": 6.3,
-      "pnl_usd": 0.4058,
-      "pnl_pct": 6.4405,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1312",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 47.1083,
-    "mtm_equity_usd": 47.21,
-    "realized_pnl_usd": -52.8917,
-    "unrealized_pnl_usd": 0.1017,
+    "paper_equity_usd": 47.1232,
+    "mtm_equity_usd": 47.2358,
+    "realized_pnl_usd": -52.8768,
+    "unrealized_pnl_usd": 0.1126,
     "open": {
-      "id": "PAPER-1392",
+      "id": "PAPER-1394",
       "ticker": "SHROOM",
       "usd": 3.77
     },
-    "notes": "PAPER heartbeat \u00b7 eq $47.11 \u00b7 curve n=1215 \u00b7 2026-09-25 02:33:33 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $47.12 \u00b7 curve n=1217 \u00b7 2026-09-25 02:34:20 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1213
+    "closed_n": 1215
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.11 \u00b7 2026-09-25 02:33:33 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.12 \u00b7 2026-09-25 02:34:20 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.64 edge=2.34 conf=0.91",
+    "detail": "pick=SI open_p=0.64 edge=2.37 conf=0.9",
     "pick": "SI",
     "open_p": 0.64,
-    "confidence": 0.91,
-    "edge_score": 2.34,
+    "confidence": 0.9,
+    "edge_score": 2.37,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.92
+        "probs": 0.91
       },
       {
         "sym": "LUNA",
@@ -13280,9 +13300,9 @@
       },
       {
         "sym": "GPU",
-        "lost_bps": 6,
+        "lost_bps": 5,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -13290,12 +13310,12 @@
       "pick": {
         "type": "choice",
         "choice": "SI",
-        "confidence": 0.91
+        "confidence": 0.9
       },
       "edge": {
         "type": "score",
-        "score": 2.34,
-        "confidence": 0.34
+        "score": 2.37,
+        "confidence": 0.27
       },
       "open_now": {
         "type": "noul",
@@ -13303,7 +13323,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 02:33:26 ET",
+    "stamp_et": "2026-09-25 02:34:20 ET",
     "live": true
   }
 }
