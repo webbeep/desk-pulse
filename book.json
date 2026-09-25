@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 10:20:14 ET",
+  "updated_et": "2026-09-25 10:21:02 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 44.4051,
+  "liquid_usd": 43.9374,
   "upnl_usd": 0.0,
-  "equity_usd": 44.4051,
+  "equity_usd": 43.9374,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -55.5949,
-  "total_pnl_pct": -55.5949,
-  "mark_eth": 2685.775,
-  "mark": 2685.775,
+  "total_pnl_usd": -56.0626,
+  "total_pnl_pct": -56.0626,
+  "mark_eth": 2684.305,
+  "mark": 2684.305,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2685.775
+    "ETH": 2684.305
   },
   "holdings": {
-    "paper_cash_usd": 44.4051,
+    "paper_cash_usd": 43.9374,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13047,9 +13047,32 @@
       "ticker": "JOLLY",
       "reason": "TP_+6.0",
       "pnl_usd": 0.5275
+    },
+    {
+      "t": "2026-09-25 10:20:31 ET",
+      "equity_usd": 43.9374,
+      "liquid_usd": 43.9374,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "MIC",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.4677
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 10:20:31 ET",
+      "kind": "PAPER",
+      "market": "MIC",
+      "side": "LONG",
+      "size": 3.55,
+      "size_usd": 3.55,
+      "pnl_usd": -0.4677,
+      "pnl_pct": -13.1734,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1479",
+      "paper": true
+    },
     {
       "t": "2026-09-25 10:18:46 ET",
       "kind": "PAPER",
@@ -14076,70 +14099,57 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1400",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 02:47:08 ET",
-      "kind": "PAPER",
-      "market": "LUNA",
-      "side": "LONG",
-      "size": 3.84,
-      "size_usd": 3.84,
-      "pnl_usd": 0.0691,
-      "pnl_pct": 1.8002,
-      "tx": "TRAIL_2.0",
-      "id": "PAPER-1399",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 44.4051,
-    "mtm_equity_usd": 44.4051,
-    "realized_pnl_usd": -55.5949,
+    "paper_equity_usd": 43.9374,
+    "mtm_equity_usd": 43.9374,
+    "realized_pnl_usd": -56.0626,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $44.41 \u00b7 curve n=1301 \u00b7 2026-09-25 10:20:14 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $43.94 \u00b7 curve n=1302 \u00b7 2026-09-25 10:21:02 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1300
+    "closed_n": 1301
   },
-  "notes": "PAPER heartbeat \u00b7 eq $44.41 \u00b7 FLAT \u00b7 2026-09-25 10:20:14 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $43.94 \u00b7 FLAT \u00b7 2026-09-25 10:21:02 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=BACKCAT open_p=0.66 edge=2.42 conf=0.87",
+    "detail": "pick=BACKCAT open_p=0.64 edge=2.19 conf=0.87",
     "pick": "BACKCAT",
-    "open_p": 0.66,
+    "open_p": 0.64,
     "confidence": 0.87,
-    "edge_score": 2.42,
+    "edge_score": 2.19,
     "picks": [
       {
         "sym": "BACKCAT",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.89
+        "probs": 0.9
       },
       {
         "sym": "PEAR",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.07
       },
       {
         "sym": "JOLLY",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
+      },
+      {
+        "sym": "MIC",
+        "lost_bps": 5,
+        "selected": false,
+        "probs": 0.02
       },
       {
         "sym": "TAOTAO",
         "lost_bps": 9,
-        "selected": false,
-        "probs": 0.01
-      },
-      {
-        "sym": "GSTOCK",
-        "lost_bps": 22,
         "selected": false,
         "probs": 0.0
       }
@@ -14153,16 +14163,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.42,
-        "confidence": 0.28
+        "score": 2.19,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 10:20:06 ET",
+    "stamp_et": "2026-09-25 10:20:57 ET",
     "live": true
   }
 }
