@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 02:40:41 ET",
+  "updated_et": "2026-09-25 02:41:29 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 47.3839,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -52.6161,
   "total_pnl_pct": -52.6161,
-  "mark_eth": 2671.965,
-  "mark": 2671.965,
+  "mark_eth": 2672.495,
+  "mark": 2672.495,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2671.965
+    "ETH": 2672.495
   },
   "holdings": {
     "paper_cash_usd": 47.3839,
@@ -13259,19 +13259,19 @@
     "realized_pnl_usd": -52.6161,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $47.38 \u00b7 curve n=1217 \u00b7 2026-09-25 02:40:41 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $47.38 \u00b7 curve n=1217 \u00b7 2026-09-25 02:41:29 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1216
   },
-  "notes": "PAPER heartbeat \u00b7 eq $47.38 \u00b7 FLAT \u00b7 2026-09-25 02:40:41 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $47.38 \u00b7 FLAT \u00b7 2026-09-25 02:41:29 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.62 edge=2.21 conf=0.9",
+    "detail": "pick=SI open_p=0.64 edge=2.36 conf=0.91",
     "pick": "SI",
-    "open_p": 0.62,
-    "confidence": 0.9,
-    "edge_score": 2.21,
+    "open_p": 0.64,
+    "confidence": 0.91,
+    "edge_score": 2.36,
     "picks": [
       {
         "sym": "SI",
@@ -13292,16 +13292,16 @@
         "probs": 0.01
       },
       {
-        "sym": "SHROOM",
-        "lost_bps": 4,
-        "selected": false,
-        "probs": 0.0
-      },
-      {
         "sym": "COW",
         "lost_bps": 4,
         "selected": false,
         "probs": 0.02
+      },
+      {
+        "sym": "SHROOM",
+        "lost_bps": 5,
+        "selected": false,
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -13309,20 +13309,20 @@
       "pick": {
         "type": "choice",
         "choice": "SI",
-        "confidence": 0.9
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
-        "score": 2.21,
-        "confidence": 0.35
+        "score": 2.36,
+        "confidence": 0.26
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.62
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 02:40:29 ET",
+    "stamp_et": "2026-09-25 02:41:22 ET",
     "live": true
   }
 }
