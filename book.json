@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 02:43:51 ET",
+  "updated_et": "2026-09-25 02:44:38 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 48.0626,
-  "upnl_usd": 0.0,
-  "equity_usd": 48.0626,
+  "upnl_usd": 0.0558,
+  "equity_usd": 48.1184,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -51.9374,
-  "total_pnl_pct": -51.9374,
-  "mark_eth": 2672.765,
-  "mark": 2672.765,
+  "total_pnl_usd": -51.8816,
+  "total_pnl_pct": -51.8816,
+  "mark_eth": 2673.565,
+  "mark": 2673.565,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2672.765
+    "ETH": 2673.565
   },
   "holdings": {
-    "paper_cash_usd": 48.0626,
+    "paper_cash_usd": 44.2126,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12217,6 +12217,13 @@
       "ticker": "COW",
       "reason": "TP_+6.0",
       "pnl_usd": 0.6787
+    },
+    {
+      "t": "now",
+      "equity_usd": 48.1184,
+      "liquid_usd": 48.1184,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -13265,35 +13272,39 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 48.0626,
-    "mtm_equity_usd": 48.0626,
+    "mtm_equity_usd": 48.1184,
     "realized_pnl_usd": -51.9374,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $48.06 \u00b7 curve n=1218 \u00b7 2026-09-25 02:43:51 ET",
+    "unrealized_pnl_usd": 0.0558,
+    "open": {
+      "id": "PAPER-1396",
+      "ticker": "\u5bcc\u8d35",
+      "usd": 3.85
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $48.06 \u00b7 curve n=1219 \u00b7 2026-09-25 02:44:38 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1217
   },
-  "notes": "PAPER heartbeat \u00b7 eq $48.06 \u00b7 FLAT \u00b7 2026-09-25 02:43:51 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $48.06 \u00b7 2026-09-25 02:44:38 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.63 edge=2.19 conf=0.89",
+    "detail": "pick=SI open_p=0.63 edge=2.26 conf=0.91",
     "pick": "SI",
     "open_p": 0.63,
-    "confidence": 0.89,
-    "edge_score": 2.19,
+    "confidence": 0.91,
+    "edge_score": 2.26,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.92
+        "probs": 0.93
       },
       {
         "sym": "LUNA",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.03
       },
       {
         "sym": "GPU",
@@ -13308,7 +13319,7 @@
         "probs": 0.02
       },
       {
-        "sym": "SHROOM",
+        "sym": "\u5bcc\u8d35",
         "lost_bps": 5,
         "selected": false,
         "probs": 0.0
@@ -13319,12 +13330,12 @@
       "pick": {
         "type": "choice",
         "choice": "SI",
-        "confidence": 0.89
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
-        "score": 2.19,
-        "confidence": 0.37
+        "score": 2.26,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
@@ -13332,7 +13343,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 02:43:46 ET",
+    "stamp_et": "2026-09-25 02:44:26 ET",
     "live": true
   }
 }
