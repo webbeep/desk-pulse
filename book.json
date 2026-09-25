@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 11:48:15 ET",
+  "updated_et": "2026-09-25 11:49:03 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 43.5293,
+  "liquid_usd": 41.2064,
   "upnl_usd": 0.0,
-  "equity_usd": 43.5293,
+  "equity_usd": 41.2064,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -56.4707,
-  "total_pnl_pct": -56.4707,
-  "mark_eth": 2673.25,
-  "mark": 2673.25,
+  "total_pnl_usd": -58.7936,
+  "total_pnl_pct": -58.7936,
+  "mark_eth": 2673.09,
+  "mark": 2673.09,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2673.25
+    "ETH": 2673.09
   },
   "holdings": {
-    "paper_cash_usd": 43.5293,
+    "paper_cash_usd": 41.2064,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13247,9 +13247,32 @@
       "ticker": "MIC",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.8333
+    },
+    {
+      "t": "2026-09-25 11:48:50 ET",
+      "equity_usd": 41.2064,
+      "liquid_usd": 41.2064,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "PROTOCOL",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -2.3229
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 11:48:50 ET",
+      "kind": "PAPER",
+      "market": "PROTOCOL",
+      "side": "LONG",
+      "size": 3.48,
+      "size_usd": 3.48,
+      "pnl_usd": -2.3229,
+      "pnl_pct": -66.7495,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1499",
+      "paper": true
+    },
     {
       "t": "2026-09-25 11:47:47 ET",
       "kind": "PAPER",
@@ -14276,48 +14299,35 @@
       "tx": "TIME_SOFT_600s",
       "id": "PAPER-1418",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 03:57:50 ET",
-      "kind": "PAPER",
-      "market": "GPU",
-      "side": "LONG",
-      "size": 3.94,
-      "size_usd": 3.94,
-      "pnl_usd": 0.3108,
-      "pnl_pct": 7.8888,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1420",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 43.5293,
-    "mtm_equity_usd": 43.5293,
-    "realized_pnl_usd": -56.4707,
+    "paper_equity_usd": 41.2064,
+    "mtm_equity_usd": 41.2064,
+    "realized_pnl_usd": -58.7936,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $43.53 \u00b7 curve n=1321 \u00b7 2026-09-25 11:48:15 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $41.21 \u00b7 curve n=1322 \u00b7 2026-09-25 11:49:03 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1320
+    "closed_n": 1321
   },
-  "notes": "PAPER heartbeat \u00b7 eq $43.53 \u00b7 FLAT \u00b7 2026-09-25 11:48:15 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $41.21 \u00b7 FLAT \u00b7 2026-09-25 11:49:03 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=PEAR open_p=0.70 edge=2.44 conf=0.88",
+    "detail": "pick=PEAR open_p=0.69 edge=2.37 conf=0.89",
     "pick": "PEAR",
-    "open_p": 0.7,
-    "confidence": 0.88,
-    "edge_score": 2.44,
+    "open_p": 0.69,
+    "confidence": 0.89,
+    "edge_score": 2.37,
     "picks": [
       {
         "sym": "PEAR",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.9
+        "probs": 0.91
       },
       {
         "sym": "MIC",
@@ -14329,7 +14339,7 @@
         "sym": "BACKCAT",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.04
       },
       {
         "sym": "PROTOCOL",
@@ -14349,20 +14359,20 @@
       "pick": {
         "type": "choice",
         "choice": "PEAR",
-        "confidence": 0.88
+        "confidence": 0.89
       },
       "edge": {
         "type": "score",
-        "score": 2.44,
-        "confidence": 0.25
+        "score": 2.37,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.7
+        "noul": 0.69
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 11:48:15 ET",
+    "stamp_et": "2026-09-25 11:48:41 ET",
     "live": true
   }
 }
