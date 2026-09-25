@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-24 21:40:43 ET",
+  "updated_et": "2026-09-24 21:41:30 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 50.3174,
+  "liquid_usd": 50.7933,
   "upnl_usd": 0.0,
-  "equity_usd": 50.3174,
+  "equity_usd": 50.7933,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -49.6826,
-  "total_pnl_pct": -49.6826,
-  "mark_eth": 2683.495,
-  "mark": 2683.495,
+  "total_pnl_usd": -49.2067,
+  "total_pnl_pct": -49.2067,
+  "mark_eth": 2684.835,
+  "mark": 2684.835,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2683.495
+    "ETH": 2684.835
   },
   "holdings": {
-    "paper_cash_usd": 50.3174,
+    "paper_cash_usd": 50.7933,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -11627,9 +11627,32 @@
       "ticker": "WUMPUS",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.5852
+    },
+    {
+      "t": "2026-09-24 21:41:10 ET",
+      "equity_usd": 50.7933,
+      "liquid_usd": 50.7933,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "FOOMS",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.4759
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-24 21:41:10 ET",
+      "kind": "PAPER",
+      "market": "FOOMS",
+      "side": "LONG",
+      "size": 6.04,
+      "size_usd": 6.04,
+      "pnl_usd": 0.4759,
+      "pnl_pct": 7.8799,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1337",
+      "paper": true
+    },
     {
       "t": "2026-09-24 21:37:50 ET",
       "kind": "PAPER",
@@ -12656,48 +12679,35 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1259",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 16:17:12 ET",
-      "kind": "PAPER",
-      "market": "SCHIFFY",
-      "side": "LONG",
-      "size": 5.79,
-      "size_usd": 5.79,
-      "pnl_usd": -0.5636,
-      "pnl_pct": -9.7339,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1258",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 50.3174,
-    "mtm_equity_usd": 50.3174,
-    "realized_pnl_usd": -49.6826,
+    "paper_equity_usd": 50.7933,
+    "mtm_equity_usd": 50.7933,
+    "realized_pnl_usd": -49.2067,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $50.32 \u00b7 curve n=1159 \u00b7 2026-09-24 21:40:43 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $50.79 \u00b7 curve n=1160 \u00b7 2026-09-24 21:41:30 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1158
+    "closed_n": 1159
   },
-  "notes": "PAPER heartbeat \u00b7 eq $50.32 \u00b7 FLAT \u00b7 2026-09-24 21:40:43 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $50.79 \u00b7 FLAT \u00b7 2026-09-24 21:41:30 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FOOMS open_p=0.65 edge=1.97 conf=0.86",
+    "detail": "pick=FOOMS open_p=0.64 edge=1.92 conf=0.82",
     "pick": "FOOMS",
-    "open_p": 0.65,
-    "confidence": 0.86,
-    "edge_score": 1.97,
+    "open_p": 0.64,
+    "confidence": 0.82,
+    "edge_score": 1.92,
     "picks": [
       {
         "sym": "FOOMS",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.89
+        "probs": 0.86
       },
       {
         "sym": "PARAFACTUAL",
@@ -12715,7 +12725,7 @@
         "sym": "WUMPUS",
         "lost_bps": 5,
         "selected": false,
-        "probs": 0.1
+        "probs": 0.13
       },
       {
         "sym": "SI",
@@ -12729,20 +12739,20 @@
       "pick": {
         "type": "choice",
         "choice": "FOOMS",
-        "confidence": 0.86
+        "confidence": 0.82
       },
       "edge": {
         "type": "score",
-        "score": 1.97,
+        "score": 1.92,
         "confidence": 0.32
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-24 21:40:35 ET",
+    "stamp_et": "2026-09-24 21:41:27 ET",
     "live": true
   }
 }
