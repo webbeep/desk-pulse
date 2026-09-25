@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 14:56:37 ET",
+  "updated_et": "2026-09-25 14:57:25 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 41.902,
@@ -14379,29 +14379,31 @@
     "realized_pnl_usd": -58.098,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $41.90 \u00b7 curve n=1329 \u00b7 2026-09-25 14:56:37 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $41.90 \u00b7 curve n=1329 \u00b7 2026-09-25 14:57:25 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1328
   },
-  "notes": "JEV OPEN \u00b7 pick=PIZZLY open_p=0.63 edge=2.1 conf=0.67 \u00b7 pick=PIZZLY open_p=0.62 edge=2.26 conf=0.61 \u00b7 PAPER heartbeat \u00b7 eq $41.90 \u00b7 FLAT \u00b7 2026-09-25 14:56:37 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $41.90 \u00b7 FLAT \u00b7 2026-09-25 14:57:25 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
-    "stamp_et": "2026-09-25 14:56:38 ET",
-    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=PIZZLY open_p=0.63 edge=2.1 conf=0.67",
+    "detail": "pick=PIZZLY open_p=0.62 edge=2.18 conf=0.69",
+    "pick": "PIZZLY",
+    "open_p": 0.62,
+    "confidence": 0.69,
+    "edge_score": 2.18,
     "picks": [
       {
         "sym": "PIZZLY",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.75
+        "probs": 0.77
       },
       {
         "sym": "YASHMODE",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.23
+        "probs": 0.21
       },
       {
         "sym": "TAOTAO",
@@ -14410,10 +14412,25 @@
         "probs": 0.01
       }
     ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "PIZZLY",
+        "confidence": 0.69
+      },
+      "edge": {
+        "type": "score",
+        "score": 2.18,
+        "confidence": 0.39
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.62
+      }
+    },
     "idle": null,
-    "open_p": 0.63,
-    "risk": null,
-    "confidence": 0.67,
+    "stamp_et": "2026-09-25 14:57:17 ET",
     "live": true
   }
 }
