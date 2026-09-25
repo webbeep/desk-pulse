@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-25 02:24:06 ET",
+  "updated_et": "2026-09-25 02:24:54 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 47.7179,
-  "upnl_usd": -0.0007,
-  "equity_usd": 47.7172,
+  "upnl_usd": -0.0012,
+  "equity_usd": 47.7167,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -52.2828,
-  "total_pnl_pct": -52.2828,
-  "mark_eth": 2680.69,
-  "mark": 2680.69,
+  "total_pnl_usd": -52.2833,
+  "total_pnl_pct": -52.2833,
+  "mark_eth": 2680.475,
+  "mark": 2680.475,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2680.69
+    "ETH": 2680.475
   },
   "holdings": {
     "paper_cash_usd": 43.8979,
@@ -12130,8 +12130,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 47.7172,
-      "liquid_usd": 47.7172,
+      "equity_usd": 47.7167,
+      "liquid_usd": 47.7167,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -13182,39 +13182,39 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 47.7179,
-    "mtm_equity_usd": 47.7172,
+    "mtm_equity_usd": 47.7167,
     "realized_pnl_usd": -52.2821,
-    "unrealized_pnl_usd": -0.0007,
+    "unrealized_pnl_usd": -0.0012,
     "open": {
       "id": "PAPER-1387",
       "ticker": "GROK",
       "usd": 3.82
     },
-    "notes": "PAPER heartbeat \u00b7 eq $47.72 \u00b7 curve n=1210 \u00b7 2026-09-25 02:24:06 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $47.72 \u00b7 curve n=1210 \u00b7 2026-09-25 02:24:54 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1208
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.72 \u00b7 2026-09-25 02:24:06 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.72 \u00b7 2026-09-25 02:24:54 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.64 edge=2.42 conf=0.87",
+    "detail": "pick=SI open_p=0.64 edge=2.48 conf=0.87",
     "pick": "SI",
     "open_p": 0.64,
     "confidence": 0.87,
-    "edge_score": 2.42,
+    "edge_score": 2.48,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.9
+        "probs": 0.89
       },
       {
         "sym": "LUNA",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.09
       },
       {
         "sym": "SHROOM",
@@ -13244,8 +13244,8 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.42,
-        "confidence": 0.29
+        "score": 2.48,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
@@ -13253,7 +13253,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 02:24:05 ET",
+    "stamp_et": "2026-09-25 02:24:44 ET",
     "live": true
   }
 }
