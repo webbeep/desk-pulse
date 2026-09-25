@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 00:33:34 ET",
+  "updated_et": "2026-09-25 00:34:22 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 47.8114,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -52.1886,
   "total_pnl_pct": -52.1886,
-  "mark_eth": 2677.5,
-  "mark": 2677.5,
+  "mark_eth": 2677.825,
+  "mark": 2677.825,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2677.5
+    "ETH": 2677.825
   },
   "holdings": {
     "paper_cash_usd": 47.8114,
@@ -12989,25 +12989,25 @@
     "realized_pnl_usd": -52.1886,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $47.81 \u00b7 curve n=1190 \u00b7 2026-09-25 00:33:34 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $47.81 \u00b7 curve n=1190 \u00b7 2026-09-25 00:34:22 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1189
   },
-  "notes": "PAPER heartbeat \u00b7 eq $47.81 \u00b7 FLAT \u00b7 2026-09-25 00:33:34 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $47.81 \u00b7 FLAT \u00b7 2026-09-25 00:34:22 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "HOLD",
-    "detail": "pick=SKIP_ALL open_p=0.40 edge=0.84 conf=0.32",
+    "detail": "pick=SKIP_ALL open_p=0.43 edge=1.04 conf=0.26",
     "pick": "SKIP_ALL",
-    "open_p": 0.4,
-    "confidence": 0.32,
-    "edge_score": 0.84,
+    "open_p": 0.43,
+    "confidence": 0.26,
+    "edge_score": 1.04,
     "picks": [
       {
         "sym": "FOOMS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.34
+        "probs": 0.37
       }
     ],
     "model": "jev-1.13.0",
@@ -13015,20 +13015,20 @@
       "pick": {
         "type": "choice",
         "choice": "SKIP_ALL",
-        "confidence": 0.32
+        "confidence": 0.26
       },
       "edge": {
         "type": "score",
-        "score": 0.84,
-        "confidence": 0.3
+        "score": 1.04,
+        "confidence": 0.14
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.4
+        "noul": 0.43
       }
     },
     "idle": "jev_hold",
-    "stamp_et": "2026-09-25 00:33:28 ET",
+    "stamp_et": "2026-09-25 00:34:20 ET",
     "live": true
   }
 }
