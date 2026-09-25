@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 14:19:26 ET",
+  "updated_et": "2026-09-25 14:20:14 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 42.1041,
@@ -14349,31 +14349,31 @@
     "realized_pnl_usd": -57.8959,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $42.10 \u00b7 curve n=1326 \u00b7 2026-09-25 14:19:26 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $42.10 \u00b7 curve n=1326 \u00b7 2026-09-25 14:20:14 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1325
   },
-  "notes": "PAPER heartbeat \u00b7 eq $42.10 \u00b7 FLAT \u00b7 2026-09-25 14:19:26 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $42.10 \u00b7 FLAT \u00b7 2026-09-25 14:20:14 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=PIZZLY open_p=0.64 edge=2.34 conf=0.64",
+    "detail": "pick=PIZZLY open_p=0.63 edge=2.32 conf=0.69",
     "pick": "PIZZLY",
-    "open_p": 0.64,
-    "confidence": 0.64,
-    "edge_score": 2.34,
+    "open_p": 0.63,
+    "confidence": 0.69,
+    "edge_score": 2.32,
     "picks": [
       {
         "sym": "PIZZLY",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.73
+        "probs": 0.77
       },
       {
         "sym": "PEAR",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.25
+        "probs": 0.21
       },
       {
         "sym": "TAOTAO",
@@ -14387,20 +14387,20 @@
       "pick": {
         "type": "choice",
         "choice": "PIZZLY",
-        "confidence": 0.64
+        "confidence": 0.69
       },
       "edge": {
         "type": "score",
-        "score": 2.34,
-        "confidence": 0.33
+        "score": 2.32,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 14:19:18 ET",
+    "stamp_et": "2026-09-25 14:20:10 ET",
     "live": true
   }
 }
