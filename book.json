@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 01:51:43 ET",
+  "updated_et": "2026-09-25 01:52:31 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 47.4362,
-  "upnl_usd": -0.003,
-  "equity_usd": 47.4332,
+  "liquid_usd": 47.2325,
+  "upnl_usd": 0.0,
+  "equity_usd": 47.2325,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -52.5668,
-  "total_pnl_pct": -52.5668,
-  "mark_eth": 2681.05,
-  "mark": 2681.05,
+  "total_pnl_usd": -52.7675,
+  "total_pnl_pct": -52.7675,
+  "mark_eth": 2681.635,
+  "mark": 2681.635,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2681.05
+    "ETH": 2681.635
   },
   "holdings": {
-    "paper_cash_usd": 43.6262,
+    "paper_cash_usd": 47.2325,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -12029,14 +12029,76 @@
       "pnl_usd": -0.0752
     },
     {
-      "t": "now",
+      "t": "2026-09-25 01:51:49 ET",
       "equity_usd": 47.4332,
       "liquid_usd": 47.4332,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "GROK",
+      "reason": "TIME_SOFT_600s",
+      "pnl_usd": -0.003
+    },
+    {
+      "t": "2026-09-25 01:52:11 ET",
+      "equity_usd": 47.4645,
+      "liquid_usd": 47.4645,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SHROOM",
+      "reason": "TRAIL_2.0",
+      "pnl_usd": 0.0313
+    },
+    {
+      "t": "2026-09-25 01:52:24 ET",
+      "equity_usd": 47.2325,
+      "liquid_usd": 47.2325,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "SHROOM",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.232
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 01:52:24 ET",
+      "kind": "PAPER",
+      "market": "SHROOM",
+      "side": "LONG",
+      "size": 3.8,
+      "size_usd": 3.8,
+      "pnl_usd": -0.232,
+      "pnl_pct": -6.1047,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1379",
+      "paper": true
+    },
+    {
+      "t": "2026-09-25 01:52:11 ET",
+      "kind": "PAPER",
+      "market": "SHROOM",
+      "side": "LONG",
+      "size": 3.79,
+      "size_usd": 3.79,
+      "pnl_usd": 0.0313,
+      "pnl_pct": 0.8257,
+      "tx": "TRAIL_2.0",
+      "id": "PAPER-1378",
+      "paper": true
+    },
+    {
+      "t": "2026-09-25 01:51:49 ET",
+      "kind": "PAPER",
+      "market": "GROK",
+      "side": "LONG",
+      "size": 3.81,
+      "size_usd": 3.81,
+      "pnl_usd": -0.003,
+      "pnl_pct": -0.0777,
+      "tx": "TIME_SOFT_600s",
+      "id": "PAPER-1375",
+      "paper": true
+    },
     {
       "t": "2026-09-25 01:51:17 ET",
       "kind": "PAPER",
@@ -13037,84 +13099,41 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1300",
       "paper": true
-    },
-    {
-      "t": "2026-09-24 19:08:31 ET",
-      "kind": "PAPER",
-      "market": "HAT",
-      "side": "LONG",
-      "size": 6.16,
-      "size_usd": 6.16,
-      "pnl_usd": -0.8084,
-      "pnl_pct": -13.1238,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1299",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 19:06:05 ET",
-      "kind": "PAPER",
-      "market": "JOLLY",
-      "side": "LONG",
-      "size": 6.11,
-      "size_usd": 6.11,
-      "pnl_usd": 0.3688,
-      "pnl_pct": 6.036,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1298",
-      "paper": true
-    },
-    {
-      "t": "2026-09-24 19:05:25 ET",
-      "kind": "PAPER",
-      "market": "JOLLY",
-      "side": "LONG",
-      "size": 6.12,
-      "size_usd": 6.12,
-      "pnl_usd": -0.0474,
-      "pnl_pct": -0.7743,
-      "tx": "TRAIL_2.0",
-      "id": "PAPER-1297",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 47.4362,
-    "mtm_equity_usd": 47.4332,
-    "realized_pnl_usd": -52.5638,
-    "unrealized_pnl_usd": -0.003,
-    "open": {
-      "id": "PAPER-1375",
-      "ticker": "GROK",
-      "usd": 3.81
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $47.44 \u00b7 curve n=1200 \u00b7 2026-09-25 01:51:43 ET",
+    "paper_equity_usd": 47.2325,
+    "mtm_equity_usd": 47.2325,
+    "realized_pnl_usd": -52.7675,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $47.23 \u00b7 curve n=1202 \u00b7 2026-09-25 01:52:31 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1198
+    "closed_n": 1201
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $47.44 \u00b7 2026-09-25 01:51:43 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $47.23 \u00b7 FLAT \u00b7 2026-09-25 01:52:31 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=SI open_p=0.69 edge=2.54 conf=0.85",
+    "detail": "pick=SI open_p=0.67 edge=2.5 conf=0.83",
     "pick": "SI",
-    "open_p": 0.69,
-    "confidence": 0.85,
-    "edge_score": 2.54,
+    "open_p": 0.67,
+    "confidence": 0.83,
+    "edge_score": 2.5,
     "picks": [
       {
         "sym": "SI",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.87
+        "probs": 0.86
       },
       {
         "sym": "COW",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.1
+        "probs": 0.11
       },
       {
         "sym": "FELS",
@@ -13140,20 +13159,20 @@
       "pick": {
         "type": "choice",
         "choice": "SI",
-        "confidence": 0.85
+        "confidence": 0.83
       },
       "edge": {
         "type": "score",
-        "score": 2.54,
-        "confidence": 0.39
+        "score": 2.5,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.69
+        "noul": 0.67
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 01:51:38 ET",
+    "stamp_et": "2026-09-25 01:52:30 ET",
     "live": true
   }
 }
