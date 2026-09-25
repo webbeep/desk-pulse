@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 19:09:34 ET",
+  "updated_et": "2026-09-25 19:10:21 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.5125,
-  "upnl_usd": 0.0,
-  "equity_usd": 39.5125,
+  "upnl_usd": 0.0754,
+  "equity_usd": 39.5879,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -60.4875,
-  "total_pnl_pct": -60.4875,
-  "mark_eth": 2692.715,
-  "mark": 2692.715,
+  "total_pnl_usd": -60.4121,
+  "total_pnl_pct": -60.4121,
+  "mark_eth": 2694.15,
+  "mark": 2694.15,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.715
+    "ETH": 2694.15
   },
   "holdings": {
-    "paper_cash_usd": 39.5125,
+    "paper_cash_usd": 36.5125,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13507,6 +13507,13 @@
       "ticker": "GUD",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -1.2036
+    },
+    {
+      "t": "now",
+      "equity_usd": 39.5879,
+      "liquid_usd": 39.5879,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -14555,35 +14562,51 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 39.5125,
-    "mtm_equity_usd": 39.5125,
+    "mtm_equity_usd": 39.5879,
     "realized_pnl_usd": -60.4875,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.51 \u00b7 curve n=1347 \u00b7 2026-09-25 19:09:34 ET",
+    "unrealized_pnl_usd": 0.0754,
+    "open": {
+      "id": "PAPER-1525",
+      "ticker": "TALIS",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $39.51 \u00b7 curve n=1348 \u00b7 2026-09-25 19:10:21 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1346
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.51 \u00b7 FLAT \u00b7 2026-09-25 19:09:34 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $39.51 \u00b7 2026-09-25 19:10:21 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TALIS open_p=0.64 edge=2.2 conf=0.92",
+    "detail": "pick=TALIS open_p=0.68 edge=2.27 conf=0.96",
     "pick": "TALIS",
-    "open_p": 0.64,
-    "confidence": 0.92,
-    "edge_score": 2.2,
+    "open_p": 0.68,
+    "confidence": 0.96,
+    "edge_score": 2.27,
     "picks": [
       {
         "sym": "TALIS",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.96
+      },
+      {
+        "sym": "E/ACC",
+        "lost_bps": 5,
+        "selected": false,
+        "probs": 0.01
+      },
+      {
+        "sym": "YOLO",
+        "lost_bps": 5,
+        "selected": false,
+        "probs": 0.01
       },
       {
         "sym": "PIZZLY",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -14591,20 +14614,20 @@
       "pick": {
         "type": "choice",
         "choice": "TALIS",
-        "confidence": 0.92
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 2.2,
-        "confidence": 0.39
+        "score": 2.27,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 19:09:30 ET",
+    "stamp_et": "2026-09-25 19:10:08 ET",
     "live": true
   }
 }
