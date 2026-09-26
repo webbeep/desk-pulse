@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 08:28:56 ET",
+  "updated_et": "2026-09-26 08:29:44 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.8061,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -59.1939,
   "total_pnl_pct": -59.1939,
-  "mark_eth": 2690.1,
-  "mark": 2690.1,
+  "mark_eth": 2689.835,
+  "mark": 2689.835,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.1
+    "ETH": 2689.835
   },
   "holdings": {
     "paper_cash_usd": 40.8061,
@@ -15799,23 +15799,25 @@
     "realized_pnl_usd": -59.1939,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.81 \u00b7 curve n=1471 \u00b7 2026-09-26 08:28:56 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.81 \u00b7 curve n=1471 \u00b7 2026-09-26 08:29:44 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1470
   },
-  "notes": "JEV OPEN \u00b7 pick=CASHED open_p=0.65 edge=2.36 conf=0.9 \u00b7 PAPER heartbeat \u00b7 eq $40.81 \u00b7 FLAT \u00b7 2026-09-26 08:28:56 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.81 \u00b7 FLAT \u00b7 2026-09-26 08:29:44 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
-    "stamp_et": "2026-09-26 08:28:57 ET",
-    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=CASHED open_p=0.65 edge=2.36 conf=0.9",
+    "detail": "pick=CASHED open_p=0.65 edge=2.38 conf=0.89",
+    "pick": "CASHED",
+    "open_p": 0.65,
+    "confidence": 0.89,
+    "edge_score": 2.38,
     "picks": [
       {
         "sym": "CASHED",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.92
+        "probs": 0.91
       },
       {
         "sym": "E/CAT",
@@ -15827,7 +15829,7 @@
         "sym": "GAS",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.02
       },
       {
         "sym": "XGAS.\u200bDEV",
@@ -15836,10 +15838,25 @@
         "probs": 0.0
       }
     ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "CASHED",
+        "confidence": 0.89
+      },
+      "edge": {
+        "type": "score",
+        "score": 2.38,
+        "confidence": 0.3
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.65
+      }
+    },
     "idle": null,
-    "open_p": 0.65,
-    "risk": null,
-    "confidence": 0.9,
+    "stamp_et": "2026-09-26 08:29:35 ET",
     "live": true
   }
 }
