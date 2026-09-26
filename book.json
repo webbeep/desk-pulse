@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 13:49:21 ET",
+  "updated_et": "2026-09-26 13:50:10 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.2458,
+  "liquid_usd": 41.0833,
   "upnl_usd": 0.0,
-  "equity_usd": 40.2458,
+  "equity_usd": 41.0833,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.7542,
-  "total_pnl_pct": -59.7542,
-  "mark_eth": 2690.245,
-  "mark": 2690.245,
+  "total_pnl_usd": -58.9167,
+  "total_pnl_pct": -58.9167,
+  "mark_eth": 2689.065,
+  "mark": 2689.065,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.245
+    "ETH": 2689.065
   },
   "holdings": {
-    "paper_cash_usd": 40.2458,
+    "paper_cash_usd": 41.0833,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14937,9 +14937,32 @@
       "ticker": "BUBBLES",
       "reason": "TP_+6.0",
       "pnl_usd": 0.232
+    },
+    {
+      "t": "2026-09-26 13:49:27 ET",
+      "equity_usd": 41.0833,
+      "liquid_usd": 41.0833,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "T/ACC",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.8375
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 13:49:27 ET",
+      "kind": "PAPER",
+      "market": "T/ACC",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.8375,
+      "pnl_pct": 27.9175,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1668",
+      "paper": true
+    },
     {
       "t": "2026-09-26 13:43:39 ET",
       "kind": "PAPER",
@@ -15966,69 +15989,56 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1589",
       "paper": true
-    },
-    {
-      "t": "2026-09-26 01:42:10 ET",
-      "kind": "PAPER",
-      "market": "AEVA",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": 0.1863,
-      "pnl_pct": 6.2105,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1588",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.2458,
-    "mtm_equity_usd": 40.2458,
-    "realized_pnl_usd": -59.7542,
+    "paper_equity_usd": 41.0833,
+    "mtm_equity_usd": 41.0833,
+    "realized_pnl_usd": -58.9167,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.25 \u00b7 curve n=1490 \u00b7 2026-09-26 13:49:21 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $41.08 \u00b7 curve n=1491 \u00b7 2026-09-26 13:50:10 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1489
+    "closed_n": 1490
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.25 \u00b7 FLAT \u00b7 2026-09-26 13:49:21 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $41.08 \u00b7 FLAT \u00b7 2026-09-26 13:50:10 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=CASHED open_p=0.67 edge=2.42 conf=0.81",
-    "pick": "CASHED",
-    "open_p": 0.67,
-    "confidence": 0.81,
-    "edge_score": 2.42,
+    "detail": "pick=TINYCAT open_p=0.64 edge=2.33 conf=0.7",
+    "pick": "TINYCAT",
+    "open_p": 0.64,
+    "confidence": 0.7,
+    "edge_score": 2.33,
     "picks": [
-      {
-        "sym": "CASHED",
-        "lost_bps": 3,
-        "selected": true,
-        "probs": 0.84
-      },
       {
         "sym": "TINYCAT",
         "lost_bps": 4,
-        "selected": false,
-        "probs": 0.13
+        "selected": true,
+        "probs": 0.76
       },
       {
         "sym": "BUBBLES",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.09
       },
       {
-        "sym": "TECH/OPT",
+        "sym": "CASHED",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.13
+      },
+      {
+        "sym": "T/ACC",
         "lost_bps": 7,
         "selected": false,
         "probs": 0.0
       },
       {
-        "sym": "E/CAT",
+        "sym": "TECH/OPT",
         "lost_bps": 7,
         "selected": false,
         "probs": 0.0
@@ -16038,21 +16048,21 @@
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "CASHED",
-        "confidence": 0.81
+        "choice": "TINYCAT",
+        "confidence": 0.7
       },
       "edge": {
         "type": "score",
-        "score": 2.42,
-        "confidence": 0.28
+        "score": 2.33,
+        "confidence": 0.21
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 13:49:03 ET",
+    "stamp_et": "2026-09-26 13:50:06 ET",
     "live": true
   }
 }
