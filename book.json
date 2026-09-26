@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 04:35:06 ET",
+  "updated_et": "2026-09-26 04:35:54 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.4085,
-  "upnl_usd": 0.0,
-  "equity_usd": 40.4085,
+  "upnl_usd": -0.0376,
+  "equity_usd": 40.3709,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.5915,
-  "total_pnl_pct": -59.5915,
-  "mark_eth": 2695.685,
-  "mark": 2695.685,
+  "total_pnl_usd": -59.6291,
+  "total_pnl_pct": -59.6291,
+  "mark_eth": 2695.835,
+  "mark": 2695.835,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2695.685
+    "ETH": 2695.835
   },
   "holdings": {
-    "paper_cash_usd": 40.4085,
+    "paper_cash_usd": 37.4085,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14437,6 +14437,13 @@
       "ticker": "XGAS.DEV",
       "reason": "TP_+6.0",
       "pnl_usd": 0.2721
+    },
+    {
+      "t": "now",
+      "equity_usd": 40.3709,
+      "liquid_usd": 40.3709,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -15485,50 +15492,54 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 40.4085,
-    "mtm_equity_usd": 40.4085,
+    "mtm_equity_usd": 40.3709,
     "realized_pnl_usd": -59.5915,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.41 \u00b7 curve n=1440 \u00b7 2026-09-26 04:35:06 ET",
+    "unrealized_pnl_usd": -0.0376,
+    "open": {
+      "id": "PAPER-1618",
+      "ticker": "E/CAT",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $40.41 \u00b7 curve n=1441 \u00b7 2026-09-26 04:35:54 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1439
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.41 \u00b7 FLAT \u00b7 2026-09-26 04:35:06 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.41 \u00b7 2026-09-26 04:35:54 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TALIS open_p=0.62 edge=1.96 conf=0.8",
+    "detail": "pick=TALIS open_p=0.62 edge=2.21 conf=0.87",
     "pick": "TALIS",
     "open_p": 0.62,
-    "confidence": 0.8,
-    "edge_score": 1.96,
+    "confidence": 0.87,
+    "edge_score": 2.21,
     "picks": [
       {
         "sym": "TALIS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.84
+        "probs": 0.9
       },
       {
         "sym": "E/ACC",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.03
+      },
+      {
+        "sym": "E/CAT",
+        "lost_bps": 3,
+        "selected": false,
+        "probs": 0.02
       },
       {
         "sym": "DDOS",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.02
       },
       {
         "sym": "ORBIO",
-        "lost_bps": 3,
-        "selected": false,
-        "probs": 0.01
-      },
-      {
-        "sym": "AEVA",
         "lost_bps": 3,
         "selected": false,
         "probs": 0.01
@@ -15539,12 +15550,12 @@
       "pick": {
         "type": "choice",
         "choice": "TALIS",
-        "confidence": 0.8
+        "confidence": 0.87
       },
       "edge": {
         "type": "score",
-        "score": 1.96,
-        "confidence": 0.2
+        "score": 2.21,
+        "confidence": 0.22
       },
       "open_now": {
         "type": "noul",
@@ -15552,7 +15563,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 04:34:59 ET",
+    "stamp_et": "2026-09-26 04:35:50 ET",
     "live": true
   }
 }
