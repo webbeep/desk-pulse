@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 07:03:39 ET",
+  "updated_et": "2026-09-26 07:04:27 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.5027,
-  "upnl_usd": -0.0072,
-  "equity_usd": 40.4955,
+  "liquid_usd": 40.6956,
+  "upnl_usd": 0.0023,
+  "equity_usd": 40.6979,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.5045,
-  "total_pnl_pct": -59.5045,
-  "mark_eth": 2685.995,
-  "mark": 2685.995,
+  "total_pnl_usd": -59.3021,
+  "total_pnl_pct": -59.3021,
+  "mark_eth": 2686.14,
+  "mark": 2686.14,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2685.995
+    "ETH": 2686.14
   },
   "holdings": {
-    "paper_cash_usd": 37.5027,
+    "paper_cash_usd": 37.6956,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14639,14 +14639,60 @@
       "pnl_usd": -0.009
     },
     {
+      "t": "2026-09-26 07:03:40 ET",
+      "equity_usd": 40.4969,
+      "liquid_usd": 40.4969,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "XGAS.DEV",
+      "reason": "TIME_SOFT_600s",
+      "pnl_usd": -0.0058
+    },
+    {
+      "t": "2026-09-26 07:04:05 ET",
+      "equity_usd": 40.6956,
+      "liquid_usd": 40.6956,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "CASHED",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.1987
+    },
+    {
       "t": "now",
-      "equity_usd": 40.4955,
-      "liquid_usd": 40.4955,
+      "equity_usd": 40.6979,
+      "liquid_usd": 40.6979,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 07:04:05 ET",
+      "kind": "PAPER",
+      "market": "CASHED",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.1987,
+      "pnl_pct": 6.6228,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1639",
+      "paper": true
+    },
+    {
+      "t": "2026-09-26 07:03:40 ET",
+      "kind": "PAPER",
+      "market": "XGAS.DEV",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0058,
+      "pnl_pct": -0.1947,
+      "tx": "TIME_SOFT_600s",
+      "id": "PAPER-1638",
+      "paper": true
+    },
     {
       "t": "2026-09-26 06:55:24 ET",
       "kind": "PAPER",
@@ -15660,65 +15706,39 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1560",
       "paper": true
-    },
-    {
-      "t": "2026-09-26 00:03:40 ET",
-      "kind": "PAPER",
-      "market": "YOLO",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": 0.0006,
-      "pnl_pct": 0.02,
-      "tx": "TIME_SOFT_600s",
-      "id": "PAPER-1559",
-      "paper": true
-    },
-    {
-      "t": "2026-09-25 23:55:39 ET",
-      "kind": "PAPER",
-      "market": "AEVA",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": -0.0839,
-      "pnl_pct": -2.7977,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1558",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.5027,
-    "mtm_equity_usd": 40.4955,
-    "realized_pnl_usd": -59.4973,
-    "unrealized_pnl_usd": -0.0072,
+    "paper_equity_usd": 40.6956,
+    "mtm_equity_usd": 40.6979,
+    "realized_pnl_usd": -59.3044,
+    "unrealized_pnl_usd": 0.0023,
     "open": {
-      "id": "PAPER-1638",
-      "ticker": "XGAS.DEV",
+      "id": "PAPER-1640",
+      "ticker": "E/CAT",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $40.50 \u00b7 curve n=1461 \u00b7 2026-09-26 07:03:39 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.70 \u00b7 curve n=1463 \u00b7 2026-09-26 07:04:27 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1459
+    "closed_n": 1461
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.50 \u00b7 2026-09-26 07:03:39 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.70 \u00b7 2026-09-26 07:04:27 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=DDOS open_p=0.65 edge=2.32 conf=0.83",
+    "detail": "pick=DDOS open_p=0.66 edge=2.39 conf=0.91",
     "pick": "DDOS",
-    "open_p": 0.65,
-    "confidence": 0.83,
-    "edge_score": 2.32,
+    "open_p": 0.66,
+    "confidence": 0.91,
+    "edge_score": 2.39,
     "picks": [
       {
         "sym": "DDOS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.86
+        "probs": 0.93
       },
       {
         "sym": "CASHED",
@@ -15730,13 +15750,13 @@
         "sym": "E/CAT",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.06
       },
       {
         "sym": "GAS",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "XGAS.\u200bDEV",
@@ -15750,20 +15770,20 @@
       "pick": {
         "type": "choice",
         "choice": "DDOS",
-        "confidence": 0.83
+        "confidence": 0.91
       },
       "edge": {
         "type": "score",
-        "score": 2.32,
-        "confidence": 0.33
+        "score": 2.39,
+        "confidence": 0.26
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 06:55:36 ET",
+    "stamp_et": "2026-09-26 07:04:15 ET",
     "live": true
   }
 }
