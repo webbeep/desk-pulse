@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 14:21:30 ET",
+  "updated_et": "2026-09-26 14:22:18 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 41.3803,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -58.6197,
   "total_pnl_pct": -58.6197,
-  "mark_eth": 2687.56,
-  "mark": 2687.56,
+  "mark_eth": 2687.945,
+  "mark": 2687.945,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2687.56
+    "ETH": 2687.945
   },
   "holdings": {
     "paper_cash_usd": 41.3803,
@@ -16049,43 +16049,43 @@
     "realized_pnl_usd": -58.6197,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $41.38 \u00b7 curve n=1496 \u00b7 2026-09-26 14:21:30 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $41.38 \u00b7 curve n=1496 \u00b7 2026-09-26 14:22:18 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1495
   },
-  "notes": "PAPER heartbeat \u00b7 eq $41.38 \u00b7 FLAT \u00b7 2026-09-26 14:21:30 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $41.38 \u00b7 FLAT \u00b7 2026-09-26 14:22:18 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=T/ACC open_p=0.65 edge=2.34 conf=0.5",
+    "detail": "pick=T/ACC open_p=0.65 edge=2.41 conf=0.51",
     "pick": "T/ACC",
     "open_p": 0.65,
-    "confidence": 0.5,
-    "edge_score": 2.34,
+    "confidence": 0.51,
+    "edge_score": 2.41,
     "picks": [
       {
         "sym": "BUBBLES",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.27
+        "probs": 0.26
       },
       {
         "sym": "T/ACC",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.6
+        "probs": 0.59
       },
       {
         "sym": "CASHED",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.07
+        "probs": 0.06
       },
       {
         "sym": "TINYCAT",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.08
       },
       {
         "sym": "TECH/OPT",
@@ -16099,12 +16099,12 @@
       "pick": {
         "type": "choice",
         "choice": "T/ACC",
-        "confidence": 0.5
+        "confidence": 0.51
       },
       "edge": {
         "type": "score",
-        "score": 2.34,
-        "confidence": 0.31
+        "score": 2.41,
+        "confidence": 0.26
       },
       "open_now": {
         "type": "noul",
@@ -16112,7 +16112,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 14:21:28 ET",
+    "stamp_et": "2026-09-26 14:22:09 ET",
     "live": true
   }
 }
