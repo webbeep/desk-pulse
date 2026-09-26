@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 02:39:52 ET",
+  "updated_et": "2026-09-26 02:40:39 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 39.8692,
-  "upnl_usd": 0.0,
-  "equity_usd": 39.8692,
+  "liquid_usd": 40.1842,
+  "upnl_usd": -0.001,
+  "equity_usd": 40.1832,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -60.1308,
-  "total_pnl_pct": -60.1308,
-  "mark_eth": 2684.76,
-  "mark": 2684.76,
+  "total_pnl_usd": -59.8168,
+  "total_pnl_pct": -59.8168,
+  "mark_eth": 2685.525,
+  "mark": 2685.525,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2684.76
+    "ETH": 2685.525
   },
   "holdings": {
-    "paper_cash_usd": 39.8692,
+    "paper_cash_usd": 37.1842,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14267,9 +14267,39 @@
       "ticker": "DDOS",
       "reason": "TP_+6.0",
       "pnl_usd": 0.6026
+    },
+    {
+      "t": "2026-09-26 02:40:23 ET",
+      "equity_usd": 40.1842,
+      "liquid_usd": 40.1842,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "GAS",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.315
+    },
+    {
+      "t": "now",
+      "equity_usd": 40.1832,
+      "liquid_usd": 40.1832,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 02:40:23 ET",
+      "kind": "PAPER",
+      "market": "GAS",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.315,
+      "pnl_pct": 10.4997,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1601",
+      "paper": true
+    },
     {
       "t": "2026-09-26 02:29:58 ET",
       "kind": "PAPER",
@@ -15296,41 +15326,84 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1522",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 18:10:50 ET",
-      "kind": "PAPER",
-      "market": "CASSIE",
-      "side": "LONG",
-      "size": 3.25,
-      "size_usd": 3.25,
-      "pnl_usd": 0.0017,
-      "pnl_pct": 0.0509,
-      "tx": "TIME_SOFT_600s",
-      "id": "PAPER-1521",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 39.8692,
-    "mtm_equity_usd": 39.8692,
-    "realized_pnl_usd": -60.1308,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.87 \u00b7 curve n=1423 \u00b7 2026-09-26 02:39:52 ET",
+    "paper_equity_usd": 40.1842,
+    "mtm_equity_usd": 40.1832,
+    "realized_pnl_usd": -59.8158,
+    "unrealized_pnl_usd": -0.001,
+    "open": {
+      "id": "PAPER-1602",
+      "ticker": "ORBIO",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $40.18 \u00b7 curve n=1425 \u00b7 2026-09-26 02:40:39 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1422
+    "closed_n": 1423
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.87 \u00b7 FLAT \u00b7 2026-09-26 02:39:52 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.18 \u00b7 2026-09-26 02:40:39 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
-    "action": "ERROR",
-    "detail": "Jev HTTP 403: RBAC: access denied",
-    "picks": [],
-    "stamp_et": "2026-09-26 02:39:44 ET",
-    "model": "jev-latest",
+    "action": "OPEN",
+    "detail": "pick=AEVA open_p=0.63 edge=1.96 conf=0.84",
+    "pick": "AEVA",
+    "open_p": 0.63,
+    "confidence": 0.84,
+    "edge_score": 1.96,
+    "picks": [
+      {
+        "sym": "AEVA",
+        "lost_bps": 3,
+        "selected": true,
+        "probs": 0.88
+      },
+      {
+        "sym": "DDOS",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.07
+      },
+      {
+        "sym": "ORBIO",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.0
+      },
+      {
+        "sym": "GAS",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.04
+      },
+      {
+        "sym": "DDOS",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.07
+      }
+    ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "AEVA",
+        "confidence": 0.84
+      },
+      "edge": {
+        "type": "score",
+        "score": 1.96,
+        "confidence": 0.34
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.63
+      }
+    },
+    "idle": null,
+    "stamp_et": "2026-09-26 02:40:34 ET",
     "live": true
   }
 }
