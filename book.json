@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 02:28:49 ET",
+  "updated_et": "2026-09-26 02:29:36 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.2666,
-  "upnl_usd": 0.0,
-  "equity_usd": 39.2666,
+  "upnl_usd": 0.1649,
+  "equity_usd": 39.4315,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -60.7334,
-  "total_pnl_pct": -60.7334,
-  "mark_eth": 2683.555,
-  "mark": 2683.555,
+  "total_pnl_usd": -60.5685,
+  "total_pnl_pct": -60.5685,
+  "mark_eth": 2684.465,
+  "mark": 2684.465,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2683.555
+    "ETH": 2684.465
   },
   "holdings": {
-    "paper_cash_usd": 39.2666,
+    "paper_cash_usd": 36.2666,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14257,6 +14257,13 @@
       "ticker": "GAS",
       "reason": "TP_+6.0",
       "pnl_usd": 0.1951
+    },
+    {
+      "t": "now",
+      "equity_usd": 39.4315,
+      "liquid_usd": 39.4315,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -15305,23 +15312,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 39.2666,
-    "mtm_equity_usd": 39.2666,
+    "mtm_equity_usd": 39.4315,
     "realized_pnl_usd": -60.7334,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.27 \u00b7 curve n=1422 \u00b7 2026-09-26 02:28:49 ET",
+    "unrealized_pnl_usd": 0.1649,
+    "open": {
+      "id": "PAPER-1600",
+      "ticker": "DDOS",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $39.27 \u00b7 curve n=1423 \u00b7 2026-09-26 02:29:36 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1421
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.27 \u00b7 FLAT \u00b7 2026-09-26 02:28:49 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $39.27 \u00b7 2026-09-26 02:29:36 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AEVA open_p=0.64 edge=1.93 conf=0.88",
+    "detail": "pick=AEVA open_p=0.64 edge=2.02 conf=0.88",
     "pick": "AEVA",
     "open_p": 0.64,
     "confidence": 0.88,
-    "edge_score": 1.93,
+    "edge_score": 2.02,
     "picks": [
       {
         "sym": "DDOS",
@@ -15333,7 +15344,7 @@
         "sym": "AEVA",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.9
+        "probs": 0.91
       },
       {
         "sym": "DDOS",
@@ -15351,7 +15362,7 @@
         "sym": "GAS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.07
+        "probs": 0.06
       }
     ],
     "model": "jev-1.13.0",
@@ -15363,8 +15374,8 @@
       },
       "edge": {
         "type": "score",
-        "score": 1.93,
-        "confidence": 0.3
+        "score": 2.02,
+        "confidence": 0.37
       },
       "open_now": {
         "type": "noul",
@@ -15372,7 +15383,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 02:28:39 ET",
+    "stamp_et": "2026-09-26 02:28:51 ET",
     "live": true
   }
 }
