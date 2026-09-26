@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 17:15:45 ET",
+  "updated_et": "2026-09-26 17:16:33 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.5581,
-  "upnl_usd": 0.0,
-  "equity_usd": 40.5581,
+  "upnl_usd": -0.0005,
+  "equity_usd": 40.5576,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.4419,
-  "total_pnl_pct": -59.4419,
-  "mark_eth": 2680.65,
-  "mark": 2680.65,
+  "total_pnl_usd": -59.4424,
+  "total_pnl_pct": -59.4424,
+  "mark_eth": 2680.87,
+  "mark": 2680.87,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2680.65
+    "ETH": 2680.87
   },
   "holdings": {
-    "paper_cash_usd": 40.5581,
+    "paper_cash_usd": 37.5581,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -15237,6 +15237,13 @@
       "ticker": "BILLIONS",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.3675
+    },
+    {
+      "t": "now",
+      "equity_usd": 40.5576,
+      "liquid_usd": 40.5576,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -16285,41 +16292,45 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 40.5581,
-    "mtm_equity_usd": 40.5581,
+    "mtm_equity_usd": 40.5576,
     "realized_pnl_usd": -59.4419,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.56 \u00b7 curve n=1520 \u00b7 2026-09-26 17:15:45 ET",
+    "unrealized_pnl_usd": -0.0005,
+    "open": {
+      "id": "PAPER-1698",
+      "ticker": "FILR",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $40.56 \u00b7 curve n=1521 \u00b7 2026-09-26 17:16:33 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1519
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.56 \u00b7 FLAT \u00b7 2026-09-26 17:15:45 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.56 \u00b7 2026-09-26 17:16:33 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FILR open_p=0.62 edge=2.19 conf=0.7",
+    "detail": "pick=FILR open_p=0.65 edge=2.31 conf=0.96",
     "pick": "FILR",
-    "open_p": 0.62,
-    "confidence": 0.7,
-    "edge_score": 2.19,
+    "open_p": 0.65,
+    "confidence": 0.96,
+    "edge_score": 2.31,
     "picks": [
-      {
-        "sym": "BILLIONS",
-        "lost_bps": 3,
-        "selected": false,
-        "probs": 0.22
-      },
       {
         "sym": "FILR",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.75
+        "probs": 0.96
+      },
+      {
+        "sym": "BILLIONS",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.01
       },
       {
         "sym": "O",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "HYDX",
@@ -16328,10 +16339,10 @@
         "probs": 0.01
       },
       {
-        "sym": "SIFT",
-        "lost_bps": 4,
+        "sym": "T/ACC",
+        "lost_bps": 7,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -16339,20 +16350,20 @@
       "pick": {
         "type": "choice",
         "choice": "FILR",
-        "confidence": 0.7
+        "confidence": 0.96
       },
       "edge": {
         "type": "score",
-        "score": 2.19,
-        "confidence": 0.35
+        "score": 2.31,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.62
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 17:15:27 ET",
+    "stamp_et": "2026-09-26 17:16:08 ET",
     "live": true
   }
 }
