@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 01:41:27 ET",
+  "updated_et": "2026-09-26 01:42:15 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 38.3769,
-  "upnl_usd": 0.1113,
-  "equity_usd": 38.4882,
+  "liquid_usd": 38.5632,
+  "upnl_usd": 0.0,
+  "equity_usd": 38.5632,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -61.5118,
-  "total_pnl_pct": -61.5118,
-  "mark_eth": 2688.375,
-  "mark": 2688.375,
+  "total_pnl_usd": -61.4368,
+  "total_pnl_pct": -61.4368,
+  "mark_eth": 2687.915,
+  "mark": 2687.915,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2688.375
+    "ETH": 2687.915
   },
   "holdings": {
-    "paper_cash_usd": 35.3769,
+    "paper_cash_usd": 38.5632,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14139,14 +14139,30 @@
       "pnl_usd": -0.0004
     },
     {
-      "t": "now",
-      "equity_usd": 38.4882,
-      "liquid_usd": 38.4882,
+      "t": "2026-09-26 01:42:10 ET",
+      "equity_usd": 38.5632,
+      "liquid_usd": 38.5632,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "AEVA",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.1863
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 01:42:10 ET",
+      "kind": "PAPER",
+      "market": "AEVA",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.1863,
+      "pnl_pct": 6.2105,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1588",
+      "paper": true
+    },
     {
       "t": "2026-09-26 01:40:33 ET",
       "kind": "PAPER",
@@ -15173,38 +15189,21 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1509",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 15:21:07 ET",
-      "kind": "PAPER",
-      "market": "PIZZLY",
-      "side": "LONG",
-      "size": 3.39,
-      "size_usd": 3.39,
-      "pnl_usd": 0.447,
-      "pnl_pct": 13.1858,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1508",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 38.3769,
-    "mtm_equity_usd": 38.4882,
-    "realized_pnl_usd": -61.6231,
-    "unrealized_pnl_usd": 0.1113,
-    "open": {
-      "id": "PAPER-1588",
-      "ticker": "AEVA",
-      "usd": 3.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $38.38 \u00b7 curve n=1411 \u00b7 2026-09-26 01:41:27 ET",
+    "paper_equity_usd": 38.5632,
+    "mtm_equity_usd": 38.5632,
+    "realized_pnl_usd": -61.4368,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $38.56 \u00b7 curve n=1411 \u00b7 2026-09-26 01:42:15 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1409
+    "closed_n": 1410
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $38.38 \u00b7 2026-09-26 01:41:27 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $38.56 \u00b7 FLAT \u00b7 2026-09-26 01:42:15 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
