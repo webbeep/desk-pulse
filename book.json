@@ -14693,15 +14693,13 @@
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1359
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.63 \u00b7 FLAT \u00b7 2026-09-25 21:50:06 ET",
+  "notes": "JEV OPEN \u00b7 pick=GRACE open_p=0.65 edge=2.08 conf=0.96 \u00b7 PAPER heartbeat \u00b7 eq $39.63 \u00b7 FLAT \u00b7 2026-09-25 21:50:06 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-25 21:50:06 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=GRACE open_p=0.61 edge=2.08 conf=0.95",
-    "pick": "GRACE",
-    "open_p": 0.61,
-    "confidence": 0.95,
-    "edge_score": 2.08,
+    "detail": "pick=GRACE open_p=0.65 edge=2.08 conf=0.96",
     "picks": [
       {
         "sym": "GRACE",
@@ -14734,25 +14732,10 @@
         "probs": 0.01
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "GRACE",
-        "confidence": 0.95
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.08,
-        "confidence": 0.25
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.61
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-25 21:49:54 ET",
+    "open_p": 0.65,
+    "risk": null,
+    "confidence": 0.96,
     "live": true
   }
 }
