@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 16:58:03 ET",
+  "updated_et": "2026-09-26 16:58:51 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.162,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -59.838,
   "total_pnl_pct": -59.838,
-  "mark_eth": 2676.325,
-  "mark": 2676.325,
+  "mark_eth": 2676.685,
+  "mark": 2676.685,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2676.325
+    "ETH": 2676.685
   },
   "holdings": {
     "paper_cash_usd": 40.162,
@@ -16249,17 +16249,17 @@
     "realized_pnl_usd": -59.838,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.16 \u00b7 curve n=1516 \u00b7 2026-09-26 16:58:03 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.16 \u00b7 curve n=1516 \u00b7 2026-09-26 16:58:51 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1515
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.16 \u00b7 FLAT \u00b7 2026-09-26 16:58:03 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.16 \u00b7 FLAT \u00b7 2026-09-26 16:58:51 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=FILR open_p=0.63 edge=2.31 conf=0.62",
+    "detail": "pick=FILR open_p=0.65 edge=2.31 conf=0.62",
     "pick": "FILR",
-    "open_p": 0.63,
+    "open_p": 0.65,
     "confidence": 0.62,
     "edge_score": 2.31,
     "picks": [
@@ -16267,13 +16267,13 @@
         "sym": "BILLIONS",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.28
+        "probs": 0.26
       },
       {
         "sym": "FILR",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.68
+        "probs": 0.69
       },
       {
         "sym": "HYDX",
@@ -16291,7 +16291,7 @@
         "sym": "BUBBLES",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -16304,15 +16304,15 @@
       "edge": {
         "type": "score",
         "score": 2.31,
-        "confidence": 0.2
+        "confidence": 0.28
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 16:57:44 ET",
+    "stamp_et": "2026-09-26 16:58:46 ET",
     "live": true
   }
 }
