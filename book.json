@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 11:18:57 ET",
+  "updated_et": "2026-09-26 11:19:45 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 41.0028,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -58.9972,
   "total_pnl_pct": -58.9972,
-  "mark_eth": 2689.71,
-  "mark": 2689.71,
+  "mark_eth": 2689.265,
+  "mark": 2689.265,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.71
+    "ETH": 2689.265
   },
   "holdings": {
     "paper_cash_usd": 41.0028,
@@ -15839,43 +15839,43 @@
     "realized_pnl_usd": -58.9972,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $41.00 \u00b7 curve n=1475 \u00b7 2026-09-26 11:18:57 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $41.00 \u00b7 curve n=1475 \u00b7 2026-09-26 11:19:45 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1474
   },
-  "notes": "PAPER heartbeat \u00b7 eq $41.00 \u00b7 FLAT \u00b7 2026-09-26 11:18:57 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $41.00 \u00b7 FLAT \u00b7 2026-09-26 11:19:45 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TECH/OPT open_p=0.62 edge=2.33 conf=0.8",
-    "pick": "TECH/OPT",
-    "open_p": 0.62,
-    "confidence": 0.8,
-    "edge_score": 2.33,
+    "detail": "pick=CASHED open_p=0.67 edge=2.43 conf=0.87",
+    "pick": "CASHED",
+    "open_p": 0.67,
+    "confidence": 0.87,
+    "edge_score": 2.43,
     "picks": [
-      {
-        "sym": "TECH/OPT",
-        "lost_bps": 3,
-        "selected": true,
-        "probs": 0.84
-      },
       {
         "sym": "CASHED",
         "lost_bps": 3,
+        "selected": true,
+        "probs": 0.89
+      },
+      {
+        "sym": "TECH/OPT",
+        "lost_bps": 4,
         "selected": false,
-        "probs": 0.12
+        "probs": 0.1
       },
       {
         "sym": "E/CAT",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.0
       },
       {
         "sym": "GAS",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "XGAS.\u200bDEV",
@@ -15888,21 +15888,21 @@
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "TECH/OPT",
-        "confidence": 0.8
+        "choice": "CASHED",
+        "confidence": 0.87
       },
       "edge": {
         "type": "score",
-        "score": 2.33,
-        "confidence": 0.22
+        "score": 2.43,
+        "confidence": 0.28
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.62
+        "noul": 0.67
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 11:18:56 ET",
+    "stamp_et": "2026-09-26 11:19:38 ET",
     "live": true
   }
 }
