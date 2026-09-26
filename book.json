@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 05:33:32 ET",
+  "updated_et": "2026-09-26 05:34:19 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.2764,
-  "upnl_usd": -0.0026,
-  "equity_usd": 40.2738,
+  "liquid_usd": 40.2743,
+  "upnl_usd": -0.0004,
+  "equity_usd": 40.2739,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.7262,
-  "total_pnl_pct": -59.7262,
-  "mark_eth": 2680.345,
-  "mark": 2680.345,
+  "total_pnl_usd": -59.7261,
+  "total_pnl_pct": -59.7261,
+  "mark_eth": 2681.235,
+  "mark": 2681.235,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2680.345
+    "ETH": 2681.235
   },
   "holdings": {
-    "paper_cash_usd": 37.2764,
+    "paper_cash_usd": 37.2743,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14489,14 +14489,30 @@
       "pnl_usd": 0.0017
     },
     {
-      "t": "now",
-      "equity_usd": 40.2738,
-      "liquid_usd": 40.2738,
+      "t": "2026-09-26 05:34:01 ET",
+      "equity_usd": 40.2743,
+      "liquid_usd": 40.2743,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "TALIS",
+      "reason": "TIME_SOFT_600s",
+      "pnl_usd": -0.0021
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 05:34:01 ET",
+      "kind": "PAPER",
+      "market": "TALIS",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0021,
+      "pnl_pct": -0.0706,
+      "tx": "TIME_SOFT_600s",
+      "id": "PAPER-1623",
+      "paper": true
+    },
     {
       "t": "2026-09-26 05:25:48 ET",
       "kind": "PAPER",
@@ -15523,64 +15539,51 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1544",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 22:50:50 ET",
-      "kind": "PAPER",
-      "market": "OPENPAD",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": 0.1914,
-      "pnl_pct": 6.3799,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1543",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.2764,
-    "mtm_equity_usd": 40.2738,
-    "realized_pnl_usd": -59.7236,
-    "unrealized_pnl_usd": -0.0026,
+    "paper_equity_usd": 40.2743,
+    "mtm_equity_usd": 40.2739,
+    "realized_pnl_usd": -59.7257,
+    "unrealized_pnl_usd": -0.0004,
     "open": {
-      "id": "PAPER-1623",
-      "ticker": "TALIS",
+      "id": "PAPER-1624",
+      "ticker": "XGAS.DEV",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $40.28 \u00b7 curve n=1446 \u00b7 2026-09-26 05:33:32 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.27 \u00b7 curve n=1446 \u00b7 2026-09-26 05:34:19 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1444
+    "closed_n": 1445
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.28 \u00b7 2026-09-26 05:33:32 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.27 \u00b7 2026-09-26 05:34:19 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TALIS open_p=0.63 edge=2.12 conf=0.81",
+    "detail": "pick=TALIS open_p=0.63 edge=2.12 conf=0.79",
     "pick": "TALIS",
     "open_p": 0.63,
-    "confidence": 0.81,
+    "confidence": 0.79,
     "edge_score": 2.12,
     "picks": [
       {
         "sym": "TALIS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.84
+        "probs": 0.82
       },
       {
         "sym": "E/ACC",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.1
+        "probs": 0.11
       },
       {
         "sym": "ORBIO",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.05
       },
       {
         "sym": "XGAS.\u200bDEV",
@@ -15600,12 +15603,12 @@
       "pick": {
         "type": "choice",
         "choice": "TALIS",
-        "confidence": 0.81
+        "confidence": 0.79
       },
       "edge": {
         "type": "score",
         "score": 2.12,
-        "confidence": 0.24
+        "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
@@ -15613,7 +15616,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 05:26:00 ET",
+    "stamp_et": "2026-09-26 05:34:02 ET",
     "live": true
   }
 }
