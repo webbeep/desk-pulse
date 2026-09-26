@@ -15913,21 +15913,19 @@
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1481
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.36 \u00b7 FLAT \u00b7 2026-09-26 12:30:23 ET",
+  "notes": "JEV OPEN \u00b7 pick=TECH/OPT open_p=0.64 edge=2.21 conf=0.93 \u00b7 pick=TECH/OPT open_p=0.62 edge=2.19 conf=0.92 \u00b7 PAPER heartbeat \u00b7 eq $40.36 \u00b7 FLAT \u00b7 2026-09-26 12:30:23 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-26 12:30:24 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=TECH/OPT open_p=0.64 edge=2.31 conf=0.94",
-    "pick": "TECH/OPT",
-    "open_p": 0.64,
-    "confidence": 0.94,
-    "edge_score": 2.31,
+    "detail": "pick=TECH/OPT open_p=0.64 edge=2.21 conf=0.93",
     "picks": [
       {
         "sym": "TECH/OPT",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.95
+        "probs": 0.9299999999999999
       },
       {
         "sym": "DEBT",
@@ -15939,13 +15937,13 @@
         "sym": "TINYCAT",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.04
       },
       {
         "sym": "CASHED",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "E/CAT",
@@ -15954,25 +15952,10 @@
         "probs": 0.0
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "TECH/OPT",
-        "confidence": 0.94
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.31,
-        "confidence": 0.2
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.64
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-26 12:30:03 ET",
+    "open_p": 0.64,
+    "risk": null,
+    "confidence": 0.93,
     "live": true
   }
 }
