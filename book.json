@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 22:40:37 ET",
+  "updated_et": "2026-09-25 22:41:24 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 39.551,
+  "liquid_usd": 39.6041,
   "upnl_usd": 0.0,
-  "equity_usd": 39.551,
+  "equity_usd": 39.6041,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -60.449,
-  "total_pnl_pct": -60.449,
-  "mark_eth": 2692.125,
-  "mark": 2692.125,
+  "total_pnl_usd": -60.3959,
+  "total_pnl_pct": -60.3959,
+  "mark_eth": 2691.575,
+  "mark": 2691.575,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.125
+    "ETH": 2691.575
   },
   "holdings": {
-    "paper_cash_usd": 39.551,
+    "paper_cash_usd": 39.6041,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13647,9 +13647,32 @@
       "ticker": "E/ACC",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.0805
+    },
+    {
+      "t": "2026-09-25 22:41:12 ET",
+      "equity_usd": 39.6041,
+      "liquid_usd": 39.6041,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TALIS",
+      "reason": "TRAIL_2.0",
+      "pnl_usd": 0.0531
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 22:41:12 ET",
+      "kind": "PAPER",
+      "market": "TALIS",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.0531,
+      "pnl_pct": 1.7695,
+      "tx": "TRAIL_2.0",
+      "id": "PAPER-1539",
+      "paper": true
+    },
     {
       "t": "2026-09-25 22:40:35 ET",
       "kind": "PAPER",
@@ -14676,70 +14699,57 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1460",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 09:04:58 ET",
-      "kind": "PAPER",
-      "market": "TAOTAO",
-      "side": "LONG",
-      "size": 3.52,
-      "size_usd": 3.52,
-      "pnl_usd": 0.4366,
-      "pnl_pct": 12.4025,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1459",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 39.551,
-    "mtm_equity_usd": 39.551,
-    "realized_pnl_usd": -60.449,
+    "paper_equity_usd": 39.6041,
+    "mtm_equity_usd": 39.6041,
+    "realized_pnl_usd": -60.3959,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.55 \u00b7 curve n=1361 \u00b7 2026-09-25 22:40:37 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.60 \u00b7 curve n=1362 \u00b7 2026-09-25 22:41:24 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1360
+    "closed_n": 1361
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.55 \u00b7 FLAT \u00b7 2026-09-25 22:40:37 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $39.60 \u00b7 FLAT \u00b7 2026-09-25 22:41:24 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AEVA open_p=0.63 edge=1.84 conf=0.61",
-    "pick": "AEVA",
-    "open_p": 0.63,
-    "confidence": 0.61,
-    "edge_score": 1.84,
+    "detail": "pick=E/ACC open_p=0.66 edge=2.17 conf=0.42",
+    "pick": "E/ACC",
+    "open_p": 0.66,
+    "confidence": 0.42,
+    "edge_score": 2.17,
     "picks": [
       {
-        "sym": "AEVA",
-        "lost_bps": 3,
+        "sym": "E/ACC",
+        "lost_bps": 4,
         "selected": true,
-        "probs": 0.67
+        "probs": 0.52
       },
       {
-        "sym": "OPENPAD",
-        "lost_bps": 3,
+        "sym": "TALIS",
+        "lost_bps": 4,
         "selected": false,
-        "probs": 0.27
+        "probs": 0.23
       },
       {
         "sym": "YOLO",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.11
       },
       {
-        "sym": "E/ACC",
-        "lost_bps": 4,
+        "sym": "CREAM",
+        "lost_bps": 5,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.11
       },
       {
-        "sym": "TALIS",
-        "lost_bps": 4,
+        "sym": "HO",
+        "lost_bps": 7,
         "selected": false,
         "probs": 0.01
       }
@@ -14748,21 +14758,21 @@
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "AEVA",
-        "confidence": 0.61
+        "choice": "E/ACC",
+        "confidence": 0.42
       },
       "edge": {
         "type": "score",
-        "score": 1.84,
-        "confidence": 0.39
+        "score": 2.17,
+        "confidence": 0.3
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 22:40:32 ET",
+    "stamp_et": "2026-09-25 22:41:23 ET",
     "live": true
   }
 }
