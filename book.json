@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-25 23:55:39 ET",
+  "updated_et": "2026-09-25 23:56:27 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.1647,
-  "upnl_usd": -0.0078,
-  "equity_usd": 40.1569,
+  "liquid_usd": 40.0808,
+  "upnl_usd": -0.0014,
+  "equity_usd": 40.0794,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.8431,
-  "total_pnl_pct": -59.8431,
-  "mark_eth": 2687.535,
-  "mark": 2687.535,
+  "total_pnl_usd": -59.9206,
+  "total_pnl_pct": -59.9206,
+  "mark_eth": 2687.335,
+  "mark": 2687.335,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2687.535
+    "ETH": 2687.335
   },
   "holdings": {
-    "paper_cash_usd": 37.1647,
+    "paper_cash_usd": 37.0808,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13839,14 +13839,37 @@
       "pnl_usd": 0.0104
     },
     {
+      "t": "2026-09-25 23:55:39 ET",
+      "equity_usd": 40.0808,
+      "liquid_usd": 40.0808,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "AEVA",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.0839
+    },
+    {
       "t": "now",
-      "equity_usd": 40.1569,
-      "liquid_usd": 40.1569,
+      "equity_usd": 40.0794,
+      "liquid_usd": 40.0794,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-25 23:55:39 ET",
+      "kind": "PAPER",
+      "market": "AEVA",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0839,
+      "pnl_pct": -2.7977,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1558",
+      "paper": true
+    },
     {
       "t": "2026-09-25 23:55:12 ET",
       "kind": "PAPER",
@@ -14873,44 +14896,33 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1479",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 10:18:46 ET",
-      "kind": "PAPER",
-      "market": "JOLLY",
-      "side": "LONG",
-      "size": 3.51,
-      "size_usd": 3.51,
-      "pnl_usd": 0.5275,
-      "pnl_pct": 15.0292,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1478",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.1647,
-    "mtm_equity_usd": 40.1569,
-    "realized_pnl_usd": -59.8353,
-    "unrealized_pnl_usd": -0.0078,
+    "paper_equity_usd": 40.0808,
+    "mtm_equity_usd": 40.0794,
+    "realized_pnl_usd": -59.9192,
+    "unrealized_pnl_usd": -0.0014,
     "open": {
-      "id": "PAPER-1558",
-      "ticker": "AEVA",
+      "id": "PAPER-1559",
+      "ticker": "YOLO",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $40.16 \u00b7 curve n=1381 \u00b7 2026-09-25 23:55:39 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.08 \u00b7 curve n=1382 \u00b7 2026-09-25 23:56:27 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1379
+    "closed_n": 1380
   },
-  "notes": "JEV OPEN \u00b7 pick=OPENPAD open_p=0.64 edge=2.0 conf=0.6 \u00b7 PAPER \u00b7 OPEN \u00b7 eq $40.16 \u00b7 2026-09-25 23:55:39 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.08 \u00b7 2026-09-25 23:56:27 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
-    "stamp_et": "2026-09-25 23:55:40 ET",
-    "model": "jev-1.13.0",
     "action": "OPEN",
     "detail": "pick=OPENPAD open_p=0.64 edge=2.0 conf=0.6",
+    "pick": "OPENPAD",
+    "open_p": 0.64,
+    "confidence": 0.6,
+    "edge_score": 2.0,
     "picks": [
       {
         "sym": "OPENPAD",
@@ -14943,10 +14955,25 @@
         "probs": 0.01
       }
     ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "OPENPAD",
+        "confidence": 0.6
+      },
+      "edge": {
+        "type": "score",
+        "score": 2.0,
+        "confidence": 0.39
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.64
+      }
+    },
     "idle": null,
-    "open_p": 0.64,
-    "risk": null,
-    "confidence": 0.6,
+    "stamp_et": "2026-09-25 23:55:40 ET",
     "live": true
   }
 }
