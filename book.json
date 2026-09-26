@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 03:01:14 ET",
+  "updated_et": "2026-09-26 03:03:30 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.1855,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -60.8145,
   "total_pnl_pct": -60.8145,
-  "mark_eth": 2685.69,
-  "mark": 2685.69,
+  "mark_eth": 2686.395,
+  "mark": 2686.395,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2685.69
+    "ETH": 2686.395
   },
   "holdings": {
     "paper_cash_usd": 39.1855,
@@ -15369,31 +15369,31 @@
     "realized_pnl_usd": -60.8145,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.19 \u00b7 curve n=1428 \u00b7 2026-09-26 03:01:14 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.19 \u00b7 curve n=1428 \u00b7 2026-09-26 03:03:30 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1427
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.19 \u00b7 FLAT \u00b7 2026-09-26 03:01:14 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $39.19 \u00b7 FLAT \u00b7 2026-09-26 03:03:30 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AEVA open_p=0.63 edge=1.88 conf=0.8",
+    "detail": "pick=AEVA open_p=0.62 edge=1.87 conf=0.76",
     "pick": "AEVA",
-    "open_p": 0.63,
-    "confidence": 0.8,
-    "edge_score": 1.88,
+    "open_p": 0.62,
+    "confidence": 0.76,
+    "edge_score": 1.87,
     "picks": [
       {
         "sym": "AEVA",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.84
+        "probs": 0.8200000000000001
       },
       {
         "sym": "DDOS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.14
+        "probs": 0.16
       },
       {
         "sym": "ORBIO",
@@ -15405,13 +15405,13 @@
         "sym": "DDOS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.14
+        "probs": 0.16
       },
       {
         "sym": "E/ACC",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -15419,20 +15419,20 @@
       "pick": {
         "type": "choice",
         "choice": "AEVA",
-        "confidence": 0.8
+        "confidence": 0.76
       },
       "edge": {
         "type": "score",
-        "score": 1.88,
-        "confidence": 0.34
+        "score": 1.87,
+        "confidence": 0.3
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 03:01:02 ET",
+    "stamp_et": "2026-09-26 03:03:22 ET",
     "live": true
   }
 }
