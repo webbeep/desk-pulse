@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 05:36:41 ET",
+  "updated_et": "2026-09-26 05:37:29 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.2743,
-  "upnl_usd": 0.0759,
-  "equity_usd": 40.3502,
+  "liquid_usd": 40.499,
+  "upnl_usd": 0.06,
+  "equity_usd": 40.559,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.6498,
-  "total_pnl_pct": -59.6498,
-  "mark_eth": 2680.995,
-  "mark": 2680.995,
+  "total_pnl_usd": -59.441,
+  "total_pnl_pct": -59.441,
+  "mark_eth": 2681.38,
+  "mark": 2681.38,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2680.995
+    "ETH": 2681.38
   },
   "holdings": {
-    "paper_cash_usd": 37.2743,
+    "paper_cash_usd": 37.499,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14499,14 +14499,37 @@
       "pnl_usd": -0.0021
     },
     {
+      "t": "2026-09-26 05:36:52 ET",
+      "equity_usd": 40.499,
+      "liquid_usd": 40.499,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "XGAS.DEV",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.2247
+    },
+    {
       "t": "now",
-      "equity_usd": 40.3502,
-      "liquid_usd": 40.3502,
+      "equity_usd": 40.559,
+      "liquid_usd": 40.559,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 05:36:52 ET",
+      "kind": "PAPER",
+      "market": "XGAS.DEV",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.2247,
+      "pnl_pct": 7.4886,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1624",
+      "paper": true
+    },
     {
       "t": "2026-09-26 05:34:01 ET",
       "kind": "PAPER",
@@ -15533,64 +15556,51 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1545",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 23:05:26 ET",
-      "kind": "PAPER",
-      "market": "JAN",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": -0.3657,
-      "pnl_pct": -12.1897,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1544",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.2743,
-    "mtm_equity_usd": 40.3502,
-    "realized_pnl_usd": -59.7257,
-    "unrealized_pnl_usd": 0.0759,
+    "paper_equity_usd": 40.499,
+    "mtm_equity_usd": 40.559,
+    "realized_pnl_usd": -59.501,
+    "unrealized_pnl_usd": 0.06,
     "open": {
-      "id": "PAPER-1624",
-      "ticker": "XGAS.DEV",
+      "id": "PAPER-1625",
+      "ticker": "E/CAT",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $40.27 \u00b7 curve n=1447 \u00b7 2026-09-26 05:36:41 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.50 \u00b7 curve n=1448 \u00b7 2026-09-26 05:37:29 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1445
+    "closed_n": 1446
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.27 \u00b7 2026-09-26 05:36:41 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.50 \u00b7 2026-09-26 05:37:29 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TALIS open_p=0.63 edge=2.12 conf=0.79",
+    "detail": "pick=TALIS open_p=0.62 edge=2.2 conf=0.74",
     "pick": "TALIS",
-    "open_p": 0.63,
-    "confidence": 0.79,
-    "edge_score": 2.12,
+    "open_p": 0.62,
+    "confidence": 0.74,
+    "edge_score": 2.2,
     "picks": [
       {
         "sym": "TALIS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.82
+        "probs": 0.78
       },
       {
         "sym": "E/ACC",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.12
       },
       {
         "sym": "ORBIO",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.08
       },
       {
         "sym": "XGAS.\u200bDEV",
@@ -15610,20 +15620,20 @@
       "pick": {
         "type": "choice",
         "choice": "TALIS",
-        "confidence": 0.79
+        "confidence": 0.74
       },
       "edge": {
         "type": "score",
-        "score": 2.12,
-        "confidence": 0.31
+        "score": 2.2,
+        "confidence": 0.24
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 05:34:02 ET",
+    "stamp_et": "2026-09-26 05:36:53 ET",
     "live": true
   }
 }
