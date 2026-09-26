@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 02:40:39 ET",
+  "updated_et": "2026-09-26 02:41:27 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.1842,
-  "upnl_usd": -0.001,
-  "equity_usd": 40.1832,
+  "liquid_usd": 40.1438,
+  "upnl_usd": 0.0,
+  "equity_usd": 40.1438,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.8168,
-  "total_pnl_pct": -59.8168,
-  "mark_eth": 2685.525,
-  "mark": 2685.525,
+  "total_pnl_usd": -59.8562,
+  "total_pnl_pct": -59.8562,
+  "mark_eth": 2685.47,
+  "mark": 2685.47,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2685.525
+    "ETH": 2685.47
   },
   "holdings": {
-    "paper_cash_usd": 37.1842,
+    "paper_cash_usd": 40.1438,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14279,14 +14279,53 @@
       "pnl_usd": 0.315
     },
     {
-      "t": "now",
-      "equity_usd": 40.1832,
-      "liquid_usd": 40.1832,
+      "t": "2026-09-26 02:40:50 ET",
+      "equity_usd": 40.2361,
+      "liquid_usd": 40.2361,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "ORBIO",
+      "reason": "TRAIL_2.0",
+      "pnl_usd": 0.0519
+    },
+    {
+      "t": "2026-09-26 02:41:14 ET",
+      "equity_usd": 40.1438,
+      "liquid_usd": 40.1438,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "ORBIO",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.0923
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 02:41:14 ET",
+      "kind": "PAPER",
+      "market": "ORBIO",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0923,
+      "pnl_pct": -3.0783,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1603",
+      "paper": true
+    },
+    {
+      "t": "2026-09-26 02:40:50 ET",
+      "kind": "PAPER",
+      "market": "ORBIO",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.0519,
+      "pnl_pct": 1.7312,
+      "tx": "TRAIL_2.0",
+      "id": "PAPER-1602",
+      "paper": true
+    },
     {
       "t": "2026-09-26 02:40:23 ET",
       "kind": "PAPER",
@@ -15300,65 +15339,35 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1524",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 18:11:30 ET",
-      "kind": "PAPER",
-      "market": "TALIS",
-      "side": "LONG",
-      "size": 3.23,
-      "size_usd": 3.23,
-      "pnl_usd": 0.3019,
-      "pnl_pct": 9.3478,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1523",
-      "paper": true
-    },
-    {
-      "t": "2026-09-25 18:11:11 ET",
-      "kind": "PAPER",
-      "market": "ROBINCAT",
-      "side": "LONG",
-      "size": 3.25,
-      "size_usd": 3.25,
-      "pnl_usd": -0.2156,
-      "pnl_pct": -6.6328,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1522",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.1842,
-    "mtm_equity_usd": 40.1832,
-    "realized_pnl_usd": -59.8158,
-    "unrealized_pnl_usd": -0.001,
-    "open": {
-      "id": "PAPER-1602",
-      "ticker": "ORBIO",
-      "usd": 3.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $40.18 \u00b7 curve n=1425 \u00b7 2026-09-26 02:40:39 ET",
+    "paper_equity_usd": 40.1438,
+    "mtm_equity_usd": 40.1438,
+    "realized_pnl_usd": -59.8562,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $40.14 \u00b7 curve n=1426 \u00b7 2026-09-26 02:41:27 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1423
+    "closed_n": 1425
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.18 \u00b7 2026-09-26 02:40:39 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.14 \u00b7 FLAT \u00b7 2026-09-26 02:41:27 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AEVA open_p=0.63 edge=1.96 conf=0.84",
+    "detail": "pick=AEVA open_p=0.62 edge=1.88 conf=0.84",
     "pick": "AEVA",
-    "open_p": 0.63,
+    "open_p": 0.62,
     "confidence": 0.84,
-    "edge_score": 1.96,
+    "edge_score": 1.88,
     "picks": [
       {
         "sym": "AEVA",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.88
+        "probs": 0.87
       },
       {
         "sym": "DDOS",
@@ -15376,7 +15385,7 @@
         "sym": "GAS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.05
       },
       {
         "sym": "DDOS",
@@ -15394,16 +15403,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 1.96,
-        "confidence": 0.34
+        "score": 1.88,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 02:40:34 ET",
+    "stamp_et": "2026-09-26 02:41:24 ET",
     "live": true
   }
 }
