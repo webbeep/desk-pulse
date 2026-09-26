@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 13:42:05 ET",
+  "updated_et": "2026-09-26 13:42:54 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.6004,
-  "upnl_usd": -0.0116,
-  "equity_usd": 40.5888,
+  "liquid_usd": 40.0138,
+  "upnl_usd": 0.0,
+  "equity_usd": 40.0138,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.4112,
-  "total_pnl_pct": -59.4112,
-  "mark_eth": 2687.4,
-  "mark": 2687.4,
+  "total_pnl_usd": -59.9862,
+  "total_pnl_pct": -59.9862,
+  "mark_eth": 2687.495,
+  "mark": 2687.495,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2687.4
+    "ETH": 2687.495
   },
   "holdings": {
-    "paper_cash_usd": 37.6004,
+    "paper_cash_usd": 40.0138,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14919,14 +14919,30 @@
       "pnl_usd": -0.0007
     },
     {
-      "t": "now",
-      "equity_usd": 40.5888,
-      "liquid_usd": 40.5888,
+      "t": "2026-09-26 13:42:23 ET",
+      "equity_usd": 40.0138,
+      "liquid_usd": 40.0138,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "TINYCAT",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.5866
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 13:42:23 ET",
+      "kind": "PAPER",
+      "market": "TINYCAT",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.5866,
+      "pnl_pct": -19.554,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1666",
+      "paper": true
+    },
     {
       "t": "2026-09-26 13:38:01 ET",
       "kind": "PAPER",
@@ -15953,58 +15969,41 @@
       "tx": "TIME_SOFT_600s",
       "id": "PAPER-1587",
       "paper": true
-    },
-    {
-      "t": "2026-09-26 01:32:19 ET",
-      "kind": "PAPER",
-      "market": "JAN",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": -0.0056,
-      "pnl_pct": -0.1868,
-      "tx": "TIME_SOFT_600s",
-      "id": "PAPER-1586",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.6004,
-    "mtm_equity_usd": 40.5888,
-    "realized_pnl_usd": -59.3996,
-    "unrealized_pnl_usd": -0.0116,
-    "open": {
-      "id": "PAPER-1666",
-      "ticker": "TINYCAT",
-      "usd": 3.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $40.60 \u00b7 curve n=1489 \u00b7 2026-09-26 13:42:05 ET",
+    "paper_equity_usd": 40.0138,
+    "mtm_equity_usd": 40.0138,
+    "realized_pnl_usd": -59.9862,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $40.01 \u00b7 curve n=1489 \u00b7 2026-09-26 13:42:54 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1487
+    "closed_n": 1488
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.60 \u00b7 2026-09-26 13:42:05 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.01 \u00b7 FLAT \u00b7 2026-09-26 13:42:54 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TINYCAT open_p=0.64 edge=2.38 conf=0.83",
+    "detail": "pick=TINYCAT open_p=0.65 edge=2.51 conf=0.83",
     "pick": "TINYCAT",
-    "open_p": 0.64,
+    "open_p": 0.65,
     "confidence": 0.83,
-    "edge_score": 2.38,
+    "edge_score": 2.51,
     "picks": [
       {
         "sym": "TINYCAT",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.86
+        "probs": 0.85
       },
       {
         "sym": "CASHED",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.12
       },
       {
         "sym": "TECH/OPT",
@@ -16034,16 +16033,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.38,
-        "confidence": 0.24
+        "score": 2.51,
+        "confidence": 0.28
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 13:41:48 ET",
+    "stamp_et": "2026-09-26 13:42:50 ET",
     "live": true
   }
 }
