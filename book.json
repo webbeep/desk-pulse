@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 03:06:40 ET",
+  "updated_et": "2026-09-26 03:07:27 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 39.1855,
-  "upnl_usd": 0.0762,
-  "equity_usd": 39.2617,
+  "liquid_usd": 39.4382,
+  "upnl_usd": 0.0,
+  "equity_usd": 39.4382,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -60.7383,
-  "total_pnl_pct": -60.7383,
-  "mark_eth": 2689.485,
-  "mark": 2689.485,
+  "total_pnl_usd": -60.5618,
+  "total_pnl_pct": -60.5618,
+  "mark_eth": 2689.735,
+  "mark": 2689.735,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.485
+    "ETH": 2689.735
   },
   "holdings": {
-    "paper_cash_usd": 36.1855,
+    "paper_cash_usd": 39.4382,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14319,14 +14319,30 @@
       "pnl_usd": -1.1518
     },
     {
-      "t": "now",
-      "equity_usd": 39.2617,
-      "liquid_usd": 39.2617,
+      "t": "2026-09-26 03:06:46 ET",
+      "equity_usd": 39.4382,
+      "liquid_usd": 39.4382,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "ORBIO",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.2527
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 03:06:46 ET",
+      "kind": "PAPER",
+      "market": "ORBIO",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.2527,
+      "pnl_pct": 8.4244,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1606",
+      "paper": true
+    },
     {
       "t": "2026-09-26 03:00:20 ET",
       "kind": "PAPER",
@@ -15353,58 +15369,41 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1527",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 19:11:33 ET",
-      "kind": "PAPER",
-      "market": "TALIS",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": -0.0751,
-      "pnl_pct": -2.5045,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1526",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 39.1855,
-    "mtm_equity_usd": 39.2617,
-    "realized_pnl_usd": -60.8145,
-    "unrealized_pnl_usd": 0.0762,
-    "open": {
-      "id": "PAPER-1606",
-      "ticker": "ORBIO",
-      "usd": 3.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $39.19 \u00b7 curve n=1429 \u00b7 2026-09-26 03:06:40 ET",
+    "paper_equity_usd": 39.4382,
+    "mtm_equity_usd": 39.4382,
+    "realized_pnl_usd": -60.5618,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $39.44 \u00b7 curve n=1429 \u00b7 2026-09-26 03:07:27 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1427
+    "closed_n": 1428
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $39.19 \u00b7 2026-09-26 03:06:40 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $39.44 \u00b7 FLAT \u00b7 2026-09-26 03:07:27 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AEVA open_p=0.61 edge=1.93 conf=0.8",
+    "detail": "pick=AEVA open_p=0.63 edge=1.98 conf=0.76",
     "pick": "AEVA",
-    "open_p": 0.61,
-    "confidence": 0.8,
-    "edge_score": 1.93,
+    "open_p": 0.63,
+    "confidence": 0.76,
+    "edge_score": 1.98,
     "picks": [
       {
         "sym": "AEVA",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.84
+        "probs": 0.8
       },
       {
         "sym": "DDOS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.14
+        "probs": 0.18
       },
       {
         "sym": "ORBIO",
@@ -15416,7 +15415,7 @@
         "sym": "DDOS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.14
+        "probs": 0.18
       },
       {
         "sym": "E/ACC",
@@ -15430,20 +15429,20 @@
       "pick": {
         "type": "choice",
         "choice": "AEVA",
-        "confidence": 0.8
+        "confidence": 0.76
       },
       "edge": {
         "type": "score",
-        "score": 1.93,
-        "confidence": 0.33
+        "score": 1.98,
+        "confidence": 0.32
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.61
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 03:06:19 ET",
+    "stamp_et": "2026-09-26 03:07:23 ET",
     "live": true
   }
 }
