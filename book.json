@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 13:59:00 ET",
+  "updated_et": "2026-09-26 13:59:48 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 41.0833,
-  "upnl_usd": 0.0568,
-  "equity_usd": 41.1401,
+  "liquid_usd": 40.5695,
+  "upnl_usd": 0.0,
+  "equity_usd": 40.5695,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -58.8599,
-  "total_pnl_pct": -58.8599,
-  "mark_eth": 2689.375,
-  "mark": 2689.375,
+  "total_pnl_usd": -59.4305,
+  "total_pnl_pct": -59.4305,
+  "mark_eth": 2689.99,
+  "mark": 2689.99,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.375
+    "ETH": 2689.99
   },
   "holdings": {
-    "paper_cash_usd": 38.0833,
+    "paper_cash_usd": 40.5695,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14949,14 +14949,30 @@
       "pnl_usd": 0.8375
     },
     {
-      "t": "now",
-      "equity_usd": 41.1401,
-      "liquid_usd": 41.1401,
+      "t": "2026-09-26 13:59:15 ET",
+      "equity_usd": 40.5695,
+      "liquid_usd": 40.5695,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "BUBBLES",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.5138
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 13:59:15 ET",
+      "kind": "PAPER",
+      "market": "BUBBLES",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.5138,
+      "pnl_pct": -17.1274,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1669",
+      "paper": true
+    },
     {
       "t": "2026-09-26 13:49:27 ET",
       "kind": "PAPER",
@@ -15983,58 +15999,41 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1590",
       "paper": true
-    },
-    {
-      "t": "2026-09-26 01:42:55 ET",
-      "kind": "PAPER",
-      "market": "DDOS",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": 0.2513,
-      "pnl_pct": 8.3766,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1589",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 41.0833,
-    "mtm_equity_usd": 41.1401,
-    "realized_pnl_usd": -58.9167,
-    "unrealized_pnl_usd": 0.0568,
-    "open": {
-      "id": "PAPER-1669",
-      "ticker": "BUBBLES",
-      "usd": 3.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $41.08 \u00b7 curve n=1492 \u00b7 2026-09-26 13:59:00 ET",
+    "paper_equity_usd": 40.5695,
+    "mtm_equity_usd": 40.5695,
+    "realized_pnl_usd": -59.4305,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $40.57 \u00b7 curve n=1492 \u00b7 2026-09-26 13:59:48 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1490
+    "closed_n": 1491
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $41.08 \u00b7 2026-09-26 13:59:00 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.57 \u00b7 FLAT \u00b7 2026-09-26 13:59:48 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=CASHED open_p=0.68 edge=2.36 conf=0.85",
+    "detail": "pick=CASHED open_p=0.68 edge=2.47 conf=0.83",
     "pick": "CASHED",
     "open_p": 0.68,
-    "confidence": 0.85,
-    "edge_score": 2.36,
+    "confidence": 0.83,
+    "edge_score": 2.47,
     "picks": [
       {
         "sym": "CASHED",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.87
+        "probs": 0.86
       },
       {
         "sym": "TINYCAT",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.09
       },
       {
         "sym": "BUBBLES",
@@ -16060,11 +16059,11 @@
       "pick": {
         "type": "choice",
         "choice": "CASHED",
-        "confidence": 0.85
+        "confidence": 0.83
       },
       "edge": {
         "type": "score",
-        "score": 2.36,
+        "score": 2.47,
         "confidence": 0.26
       },
       "open_now": {
@@ -16073,7 +16072,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 13:58:42 ET",
+    "stamp_et": "2026-09-26 13:59:45 ET",
     "live": true
   }
 }
