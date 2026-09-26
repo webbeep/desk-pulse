@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 15:57:48 ET",
+  "updated_et": "2026-09-26 15:58:36 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.183,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -59.817,
   "total_pnl_pct": -59.817,
-  "mark_eth": 2683.465,
-  "mark": 2683.465,
+  "mark_eth": 2683.845,
+  "mark": 2683.845,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2683.465
+    "ETH": 2683.845
   },
   "holdings": {
     "paper_cash_usd": 40.183,
@@ -16159,58 +16159,64 @@
     "realized_pnl_usd": -59.817,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.18 \u00b7 curve n=1507 \u00b7 2026-09-26 15:57:48 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.18 \u00b7 curve n=1507 \u00b7 2026-09-26 15:58:36 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1506
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.18 \u00b7 FLAT \u00b7 2026-09-26 15:57:48 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.18 \u00b7 FLAT \u00b7 2026-09-26 15:58:36 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TECH/OPT open_p=0.60 edge=2.05 conf=0.7",
-    "pick": "TECH/OPT",
-    "open_p": 0.6,
-    "confidence": 0.7,
-    "edge_score": 2.05,
+    "detail": "pick=BILLIONS open_p=0.61 edge=2.04 conf=0.35",
+    "pick": "BILLIONS",
+    "open_p": 0.61,
+    "confidence": 0.35,
+    "edge_score": 2.04,
     "picks": [
       {
         "sym": "T/ACC",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.17
+        "probs": 0.34
+      },
+      {
+        "sym": "BILLIONS",
+        "lost_bps": 7,
+        "selected": true,
+        "probs": 0.49
       },
       {
         "sym": "TECH/OPT",
         "lost_bps": 7,
-        "selected": true,
-        "probs": 0.78
+        "selected": false,
+        "probs": 0.12
       },
       {
         "sym": "BUBBLES",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.02
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "TECH/OPT",
-        "confidence": 0.7
+        "choice": "BILLIONS",
+        "confidence": 0.35
       },
       "edge": {
         "type": "score",
-        "score": 2.05,
-        "confidence": 0.38
+        "score": 2.04,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.6
+        "noul": 0.61
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 15:57:33 ET",
+    "stamp_et": "2026-09-26 15:58:35 ET",
     "live": true
   }
 }
