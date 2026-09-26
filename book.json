@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-26 18:59:25 ET",
+  "updated_et": "2026-09-26 19:00:14 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 37.2844,
-  "upnl_usd": -0.0034,
-  "equity_usd": 37.281,
+  "upnl_usd": -0.003,
+  "equity_usd": 37.2814,
   "status": "PAPER",
   "funding_usd": 100,
-  "funding_note": "PAPER \u00b7 script MTM loop \u00b7 NO LIVE",
-  "total_pnl_usd": -62.719,
-  "total_pnl_pct": -62.719,
-  "mark_eth": 2687.735,
-  "mark": 2687.735,
+  "funding_note": "Paper start $100 \u00b7 curve from closed[]",
+  "total_pnl_usd": -62.7186,
+  "total_pnl_pct": -62.7186,
+  "mark_eth": 2688.155,
+  "mark": 2688.155,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2687.735
+    "ETH": 2688.155
   },
   "holdings": {
     "paper_cash_usd": 34.3044,
@@ -57,22 +57,6 @@
       "held_min": 4.32
     }
   ],
-  "position": {
-    "id": "PAPER-1718",
-    "market": "O",
-    "side": "LONG",
-    "size_usd": 2.98,
-    "entry": 9.819214525605513e-06,
-    "mark": 9.808011394938715e-06,
-    "uPnL": -0.0034,
-    "mtm_pct": -0.1149,
-    "sl": 9.642468664144614e-06,
-    "tp": 1.0408367397141845e-05,
-    "lev": 1,
-    "paper": true,
-    "liq": 60000122750471782056407,
-    "held_min": 4.32
-  },
   "pnl_history": [
     {
       "t": "session_start",
@@ -15473,8 +15457,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 37.281,
-      "liquid_usd": 37.281,
+      "equity_usd": 37.2814,
+      "liquid_usd": 37.2814,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -16525,20 +16509,21 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 37.2844,
-    "mtm_equity_usd": 37.281,
+    "mtm_equity_usd": 37.2814,
     "realized_pnl_usd": -62.7156,
-    "unrealized_pnl_usd": -0.0034,
+    "unrealized_pnl_usd": -0.003,
     "open": {
       "id": "PAPER-1718",
       "ticker": "O",
       "usd": 2.98,
       "mtm_pct": -0.1149
     },
-    "notes": "script MTM multi n=1",
-    "mtm_poll_sec": 10.0,
-    "mtm_max_sec": 60
+    "notes": "PAPER heartbeat \u00b7 eq $37.28 \u00b7 curve n=1541 \u00b7 2026-09-26 19:00:14 ET",
+    "strategy": "MEME_V6_YOLO_JEV",
+    "closed_n": 1539
   },
-  "notes": "OPEN x1 ['O'] upnl $-0.00 \u00b7 script MTM",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $37.28 \u00b7 2026-09-26 19:00:14 ET",
+  "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
     "detail": "pick=FILR open_p=0.64 edge=2.3 conf=0.45",
