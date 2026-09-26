@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 04:00:22 ET",
+  "updated_et": "2026-09-26 04:01:09 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 39.9129,
-  "upnl_usd": 0.0792,
-  "equity_usd": 39.9921,
+  "liquid_usd": 40.1385,
+  "upnl_usd": 0.0,
+  "equity_usd": 40.1385,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -60.0079,
-  "total_pnl_pct": -60.0079,
-  "mark_eth": 2690.645,
-  "mark": 2690.645,
+  "total_pnl_usd": -59.8615,
+  "total_pnl_pct": -59.8615,
+  "mark_eth": 2690.415,
+  "mark": 2690.415,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.645
+    "ETH": 2690.415
   },
   "holdings": {
-    "paper_cash_usd": 36.9129,
+    "paper_cash_usd": 40.1385,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -39,24 +39,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "PAPER-1612",
-      "market": "GAS",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 1.23203331540515e-05,
-      "mark": 1.2315815698561681e-05,
-      "uPnL": -0.0011,
-      "mtm_pct": -0.0368,
-      "sl": 1.2098567157278573e-05,
-      "tp": 1.305955314329459e-05,
-      "lev": 1,
-      "paper": true,
-      "liq": 67083695638153680707333,
-      "held_min": 7.2
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -14416,14 +14399,30 @@
       "pnl_usd": -0.0013
     },
     {
-      "t": "now",
-      "equity_usd": 39.9921,
-      "liquid_usd": 39.9921,
+      "t": "2026-09-26 04:00:42 ET",
+      "equity_usd": 40.1385,
+      "liquid_usd": 40.1385,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "DDOS",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.2256
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 04:00:42 ET",
+      "kind": "PAPER",
+      "market": "DDOS",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.2256,
+      "pnl_pct": 7.5192,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1614",
+      "paper": true
+    },
     {
       "t": "2026-09-26 03:59:48 ET",
       "kind": "PAPER",
@@ -15450,47 +15449,29 @@
       "tx": "TRAIL_2.0",
       "id": "PAPER-1535",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 20:06:53 ET",
-      "kind": "PAPER",
-      "market": "TALIS",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": -0.1641,
-      "pnl_pct": -5.4716,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1534",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 39.9129,
-    "mtm_equity_usd": 39.9921,
-    "realized_pnl_usd": -60.0871,
-    "unrealized_pnl_usd": 0.0792,
-    "open": {
-      "id": "PAPER-1612",
-      "ticker": "GAS",
-      "usd": 3.0,
-      "mtm_pct": -0.0368
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $39.91 \u00b7 curve n=1437 \u00b7 2026-09-26 04:00:22 ET",
+    "paper_equity_usd": 40.1385,
+    "mtm_equity_usd": 40.1385,
+    "realized_pnl_usd": -59.8615,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $40.14 \u00b7 curve n=1437 \u00b7 2026-09-26 04:01:09 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1435
+    "closed_n": 1436
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $39.91 \u00b7 2026-09-26 04:00:22 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.14 \u00b7 FLAT \u00b7 2026-09-26 04:01:09 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AEVA open_p=0.64 edge=2.02 conf=0.85",
+    "detail": "pick=AEVA open_p=0.66 edge=2.07 conf=0.86",
     "pick": "AEVA",
-    "open_p": 0.64,
-    "confidence": 0.85,
-    "edge_score": 2.02,
+    "open_p": 0.66,
+    "confidence": 0.86,
+    "edge_score": 2.07,
     "picks": [
       {
         "sym": "DDOS",
@@ -15528,20 +15509,20 @@
       "pick": {
         "type": "choice",
         "choice": "AEVA",
-        "confidence": 0.85
+        "confidence": 0.86
       },
       "edge": {
         "type": "score",
-        "score": 2.02,
-        "confidence": 0.37
+        "score": 2.07,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 03:59:59 ET",
+    "stamp_et": "2026-09-26 04:01:01 ET",
     "live": true
   }
 }
