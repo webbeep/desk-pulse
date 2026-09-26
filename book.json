@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 14:22:18 ET",
+  "updated_et": "2026-09-26 14:23:06 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 41.3803,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -58.6197,
   "total_pnl_pct": -58.6197,
-  "mark_eth": 2687.945,
-  "mark": 2687.945,
+  "mark_eth": 2688.085,
+  "mark": 2688.085,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2687.945
+    "ETH": 2688.085
   },
   "holdings": {
     "paper_cash_usd": 41.3803,
@@ -16049,49 +16049,43 @@
     "realized_pnl_usd": -58.6197,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $41.38 \u00b7 curve n=1496 \u00b7 2026-09-26 14:22:18 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $41.38 \u00b7 curve n=1496 \u00b7 2026-09-26 14:23:06 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1495
   },
-  "notes": "PAPER heartbeat \u00b7 eq $41.38 \u00b7 FLAT \u00b7 2026-09-26 14:22:18 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $41.38 \u00b7 FLAT \u00b7 2026-09-26 14:23:06 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=T/ACC open_p=0.65 edge=2.41 conf=0.51",
+    "detail": "pick=T/ACC open_p=0.64 edge=2.29 conf=0.78",
     "pick": "T/ACC",
-    "open_p": 0.65,
-    "confidence": 0.51,
-    "edge_score": 2.41,
+    "open_p": 0.64,
+    "confidence": 0.78,
+    "edge_score": 2.29,
     "picks": [
-      {
-        "sym": "BUBBLES",
-        "lost_bps": 3,
-        "selected": false,
-        "probs": 0.26
-      },
       {
         "sym": "T/ACC",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.59
+        "probs": 0.82
       },
       {
         "sym": "CASHED",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.06
+        "probs": 0.13
       },
       {
-        "sym": "TINYCAT",
+        "sym": "BUBBLES",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.02
       },
       {
         "sym": "TECH/OPT",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -16099,20 +16093,20 @@
       "pick": {
         "type": "choice",
         "choice": "T/ACC",
-        "confidence": 0.51
+        "confidence": 0.78
       },
       "edge": {
         "type": "score",
-        "score": 2.41,
-        "confidence": 0.26
+        "score": 2.29,
+        "confidence": 0.3
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 14:22:09 ET",
+    "stamp_et": "2026-09-26 14:22:50 ET",
     "live": true
   }
 }
