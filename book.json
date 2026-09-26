@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 04:59:35 ET",
+  "updated_et": "2026-09-26 05:00:23 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.2747,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -59.7253,
   "total_pnl_pct": -59.7253,
-  "mark_eth": 2690.695,
-  "mark": 2690.695,
+  "mark_eth": 2690.335,
+  "mark": 2690.335,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.695
+    "ETH": 2690.335
   },
   "holdings": {
     "paper_cash_usd": 40.2747,
@@ -15529,37 +15529,37 @@
     "realized_pnl_usd": -59.7253,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.27 \u00b7 curve n=1444 \u00b7 2026-09-26 04:59:35 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.27 \u00b7 curve n=1444 \u00b7 2026-09-26 05:00:23 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1443
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.27 \u00b7 FLAT \u00b7 2026-09-26 04:59:35 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.27 \u00b7 FLAT \u00b7 2026-09-26 05:00:23 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TALIS open_p=0.63 edge=2.2 conf=0.77",
+    "detail": "pick=TALIS open_p=0.62 edge=2.07 conf=0.79",
     "pick": "TALIS",
-    "open_p": 0.63,
-    "confidence": 0.77,
-    "edge_score": 2.2,
+    "open_p": 0.62,
+    "confidence": 0.79,
+    "edge_score": 2.07,
     "picks": [
       {
         "sym": "TALIS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.81
+        "probs": 0.82
       },
       {
         "sym": "E/ACC",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.12
+        "probs": 0.11
       },
       {
         "sym": "DDOS",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.02
       },
       {
         "sym": "ORBIO",
@@ -15579,20 +15579,20 @@
       "pick": {
         "type": "choice",
         "choice": "TALIS",
-        "confidence": 0.77
+        "confidence": 0.79
       },
       "edge": {
         "type": "score",
-        "score": 2.2,
-        "confidence": 0.19
+        "score": 2.07,
+        "confidence": 0.2
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 04:59:27 ET",
+    "stamp_et": "2026-09-26 05:00:18 ET",
     "live": true
   }
 }
