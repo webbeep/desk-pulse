@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 02:42:14 ET",
+  "updated_et": "2026-09-26 02:43:02 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.1438,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -59.8562,
   "total_pnl_pct": -59.8562,
-  "mark_eth": 2684.96,
-  "mark": 2684.96,
+  "mark_eth": 2684.31,
+  "mark": 2684.31,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2684.96
+    "ETH": 2684.31
   },
   "holdings": {
     "paper_cash_usd": 40.1438,
@@ -15349,29 +15349,31 @@
     "realized_pnl_usd": -59.8562,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.14 \u00b7 curve n=1426 \u00b7 2026-09-26 02:42:14 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.14 \u00b7 curve n=1426 \u00b7 2026-09-26 02:43:02 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1425
   },
-  "notes": "JEV OPEN \u00b7 pick=AEVA open_p=0.61 edge=1.85 conf=0.82 \u00b7 PAPER heartbeat \u00b7 eq $40.14 \u00b7 FLAT \u00b7 2026-09-26 02:42:14 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.14 \u00b7 FLAT \u00b7 2026-09-26 02:43:02 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
-    "stamp_et": "2026-09-26 02:42:14 ET",
-    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=AEVA open_p=0.61 edge=1.85 conf=0.82",
+    "detail": "pick=AEVA open_p=0.61 edge=1.93 conf=0.84",
+    "pick": "AEVA",
+    "open_p": 0.61,
+    "confidence": 0.84,
+    "edge_score": 1.93,
     "picks": [
       {
         "sym": "AEVA",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.85
+        "probs": 0.88
       },
       {
         "sym": "DDOS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.07
       },
       {
         "sym": "ORBIO",
@@ -15383,19 +15385,34 @@
         "sym": "GAS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.06
+        "probs": 0.04
       },
       {
         "sym": "DDOS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.07
       }
     ],
+    "model": "jev-1.13.0",
+    "raw_answers": {
+      "pick": {
+        "type": "choice",
+        "choice": "AEVA",
+        "confidence": 0.84
+      },
+      "edge": {
+        "type": "score",
+        "score": 1.93,
+        "confidence": 0.37
+      },
+      "open_now": {
+        "type": "noul",
+        "noul": 0.61
+      }
+    },
     "idle": null,
-    "open_p": 0.61,
-    "risk": null,
-    "confidence": 0.82,
+    "stamp_et": "2026-09-26 02:42:52 ET",
     "live": true
   }
 }
