@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 05:25:38 ET",
+  "updated_et": "2026-09-26 05:26:25 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.2747,
-  "upnl_usd": 0.0017,
-  "equity_usd": 40.2764,
+  "liquid_usd": 40.2764,
+  "upnl_usd": -0.0009,
+  "equity_usd": 40.2755,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.7236,
-  "total_pnl_pct": -59.7236,
-  "mark_eth": 2682.115,
-  "mark": 2682.115,
+  "total_pnl_usd": -59.7245,
+  "total_pnl_pct": -59.7245,
+  "mark_eth": 2681.845,
+  "mark": 2681.845,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2682.115
+    "ETH": 2681.845
   },
   "holdings": {
-    "paper_cash_usd": 37.2747,
+    "paper_cash_usd": 37.2764,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14479,14 +14479,37 @@
       "pnl_usd": -0.0017
     },
     {
-      "t": "now",
+      "t": "2026-09-26 05:25:48 ET",
       "equity_usd": 40.2764,
       "liquid_usd": 40.2764,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TALIS",
+      "reason": "TIME_SOFT_600s",
+      "pnl_usd": 0.0017
+    },
+    {
+      "t": "now",
+      "equity_usd": 40.2755,
+      "liquid_usd": 40.2755,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 05:25:48 ET",
+      "kind": "PAPER",
+      "market": "TALIS",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.0017,
+      "pnl_pct": 0.055,
+      "tx": "TIME_SOFT_600s",
+      "id": "PAPER-1622",
+      "paper": true
+    },
     {
       "t": "2026-09-26 04:57:35 ET",
       "kind": "PAPER",
@@ -15513,52 +15536,39 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1543",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 22:50:39 ET",
-      "kind": "PAPER",
-      "market": "AEVA",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": 0.2818,
-      "pnl_pct": 9.3935,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1542",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.2747,
-    "mtm_equity_usd": 40.2764,
-    "realized_pnl_usd": -59.7253,
-    "unrealized_pnl_usd": 0.0017,
+    "paper_equity_usd": 40.2764,
+    "mtm_equity_usd": 40.2755,
+    "realized_pnl_usd": -59.7236,
+    "unrealized_pnl_usd": -0.0009,
     "open": {
-      "id": "PAPER-1622",
+      "id": "PAPER-1623",
       "ticker": "TALIS",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $40.27 \u00b7 curve n=1445 \u00b7 2026-09-26 05:25:38 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.28 \u00b7 curve n=1446 \u00b7 2026-09-26 05:26:25 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1443
+    "closed_n": 1444
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.27 \u00b7 2026-09-26 05:25:38 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.28 \u00b7 2026-09-26 05:26:25 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TALIS open_p=0.61 edge=1.93 conf=0.79",
+    "detail": "pick=TALIS open_p=0.63 edge=2.12 conf=0.81",
     "pick": "TALIS",
-    "open_p": 0.61,
-    "confidence": 0.79,
-    "edge_score": 1.93,
+    "open_p": 0.63,
+    "confidence": 0.81,
+    "edge_score": 2.12,
     "picks": [
       {
         "sym": "TALIS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.83
+        "probs": 0.84
       },
       {
         "sym": "E/ACC",
@@ -15567,20 +15577,20 @@
         "probs": 0.1
       },
       {
-        "sym": "DDOS",
-        "lost_bps": 3,
-        "selected": false,
-        "probs": 0.02
-      },
-      {
         "sym": "ORBIO",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.04
       },
       {
-        "sym": "AEVA",
-        "lost_bps": 3,
+        "sym": "XGAS.\u200bDEV",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.0
+      },
+      {
+        "sym": "E/CAT",
+        "lost_bps": 4,
         "selected": false,
         "probs": 0.01
       }
@@ -15590,20 +15600,20 @@
       "pick": {
         "type": "choice",
         "choice": "TALIS",
-        "confidence": 0.79
+        "confidence": 0.81
       },
       "edge": {
         "type": "score",
-        "score": 1.93,
-        "confidence": 0.23
+        "score": 2.12,
+        "confidence": 0.24
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.61
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 05:17:46 ET",
+    "stamp_et": "2026-09-26 05:26:00 ET",
     "live": true
   }
 }
