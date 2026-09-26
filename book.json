@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 12:27:58 ET",
+  "updated_et": "2026-09-26 12:28:46 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.7865,
+  "liquid_usd": 40.6731,
   "upnl_usd": 0.0,
-  "equity_usd": 40.7865,
+  "equity_usd": 40.6731,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.2135,
-  "total_pnl_pct": -59.2135,
-  "mark_eth": 2689.145,
-  "mark": 2689.145,
+  "total_pnl_usd": -59.3269,
+  "total_pnl_pct": -59.3269,
+  "mark_eth": 2689.335,
+  "mark": 2689.335,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.145
+    "ETH": 2689.335
   },
   "holdings": {
-    "paper_cash_usd": 40.7865,
+    "paper_cash_usd": 40.6731,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14837,9 +14837,32 @@
       "ticker": "DEBT",
       "reason": "TP_+6.0",
       "pnl_usd": 0.2757
+    },
+    {
+      "t": "2026-09-26 12:28:44 ET",
+      "equity_usd": 40.6731,
+      "liquid_usd": 40.6731,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TECH/OPT",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.1134
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 12:28:44 ET",
+      "kind": "PAPER",
+      "market": "TECH/OPT",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.1134,
+      "pnl_pct": -3.7798,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1658",
+      "paper": true
+    },
     {
       "t": "2026-09-26 12:20:29 ET",
       "kind": "PAPER",
@@ -15866,60 +15889,47 @@
       "tx": "TP_+6.0",
       "id": "PAPER-1579",
       "paper": true
-    },
-    {
-      "t": "2026-09-26 01:04:10 ET",
-      "kind": "PAPER",
-      "market": "JAN",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": -0.0026,
-      "pnl_pct": -0.0868,
-      "tx": "TIME_SOFT_600s",
-      "id": "PAPER-1578",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.7865,
-    "mtm_equity_usd": 40.7865,
-    "realized_pnl_usd": -59.2135,
+    "paper_equity_usd": 40.6731,
+    "mtm_equity_usd": 40.6731,
+    "realized_pnl_usd": -59.3269,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.79 \u00b7 curve n=1480 \u00b7 2026-09-26 12:27:58 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.67 \u00b7 curve n=1481 \u00b7 2026-09-26 12:28:46 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1479
+    "closed_n": 1480
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.79 \u00b7 FLAT \u00b7 2026-09-26 12:27:58 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.67 \u00b7 FLAT \u00b7 2026-09-26 12:28:46 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TECH/OPT open_p=0.64 edge=2.45 conf=0.84",
+    "detail": "pick=TECH/OPT open_p=0.64 edge=2.44 conf=0.87",
     "pick": "TECH/OPT",
     "open_p": 0.64,
-    "confidence": 0.84,
-    "edge_score": 2.45,
+    "confidence": 0.87,
+    "edge_score": 2.44,
     "picks": [
       {
         "sym": "TECH/OPT",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.87
+        "probs": 0.9
       },
       {
         "sym": "CASHED",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.1
+        "probs": 0.08
       },
       {
         "sym": "DEBT",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "E/CAT",
@@ -15939,12 +15949,12 @@
       "pick": {
         "type": "choice",
         "choice": "TECH/OPT",
-        "confidence": 0.84
+        "confidence": 0.87
       },
       "edge": {
         "type": "score",
-        "score": 2.45,
-        "confidence": 0.26
+        "score": 2.44,
+        "confidence": 0.27
       },
       "open_now": {
         "type": "noul",
@@ -15952,7 +15962,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 12:27:58 ET",
+    "stamp_et": "2026-09-26 12:28:39 ET",
     "live": true
   }
 }
