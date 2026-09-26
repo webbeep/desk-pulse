@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 12:03:11 ET",
+  "updated_et": "2026-09-26 12:03:59 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 41.2375,
-  "upnl_usd": -0.0145,
-  "equity_usd": 41.223,
+  "liquid_usd": 40.7265,
+  "upnl_usd": 0.0,
+  "equity_usd": 40.7265,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -58.777,
-  "total_pnl_pct": -58.777,
-  "mark_eth": 2690.635,
-  "mark": 2690.635,
+  "total_pnl_usd": -59.2735,
+  "total_pnl_pct": -59.2735,
+  "mark_eth": 2690.595,
+  "mark": 2690.595,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.635
+    "ETH": 2690.595
   },
   "holdings": {
-    "paper_cash_usd": 38.2375,
+    "paper_cash_usd": 40.7265,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14809,14 +14809,30 @@
       "pnl_usd": 0.3119
     },
     {
-      "t": "now",
-      "equity_usd": 41.223,
-      "liquid_usd": 41.223,
+      "t": "2026-09-26 12:03:19 ET",
+      "equity_usd": 40.7265,
+      "liquid_usd": 40.7265,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "TECH/OPT",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.511
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 12:03:19 ET",
+      "kind": "PAPER",
+      "market": "TECH/OPT",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.511,
+      "pnl_pct": -17.0341,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1655",
+      "paper": true
+    },
     {
       "t": "2026-09-26 11:47:49 ET",
       "kind": "PAPER",
@@ -15843,58 +15859,41 @@
       "tx": "TRAIL_2.0",
       "id": "PAPER-1576",
       "paper": true
-    },
-    {
-      "t": "2026-09-26 00:55:09 ET",
-      "kind": "PAPER",
-      "market": "E/ACC",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": 0.0108,
-      "pnl_pct": 0.3598,
-      "tx": "TRAIL_2.0",
-      "id": "PAPER-1575",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 41.2375,
-    "mtm_equity_usd": 41.223,
-    "realized_pnl_usd": -58.7625,
-    "unrealized_pnl_usd": -0.0145,
-    "open": {
-      "id": "PAPER-1655",
-      "ticker": "TECH/OPT",
-      "usd": 3.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $41.24 \u00b7 curve n=1478 \u00b7 2026-09-26 12:03:11 ET",
+    "paper_equity_usd": 40.7265,
+    "mtm_equity_usd": 40.7265,
+    "realized_pnl_usd": -59.2735,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $40.73 \u00b7 curve n=1478 \u00b7 2026-09-26 12:03:59 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1476
+    "closed_n": 1477
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $41.24 \u00b7 2026-09-26 12:03:11 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.73 \u00b7 FLAT \u00b7 2026-09-26 12:03:59 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TECH/OPT open_p=0.64 edge=2.43 conf=0.82",
+    "detail": "pick=TECH/OPT open_p=0.65 edge=2.38 conf=0.82",
     "pick": "TECH/OPT",
-    "open_p": 0.64,
+    "open_p": 0.65,
     "confidence": 0.82,
-    "edge_score": 2.43,
+    "edge_score": 2.38,
     "picks": [
       {
         "sym": "TECH/OPT",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.85
+        "probs": 0.86
       },
       {
         "sym": "CASHED",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.12
+        "probs": 0.11
       },
       {
         "sym": "E/CAT",
@@ -15924,16 +15923,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.43,
-        "confidence": 0.27
+        "score": 2.38,
+        "confidence": 0.26
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 12:03:04 ET",
+    "stamp_et": "2026-09-26 12:03:46 ET",
     "live": true
   }
 }
