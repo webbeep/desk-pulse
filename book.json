@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 11:47:05 ET",
+  "updated_et": "2026-09-26 11:47:53 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.9256,
+  "liquid_usd": 41.2375,
   "upnl_usd": 0.0,
-  "equity_usd": 40.9256,
+  "equity_usd": 41.2375,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.0744,
-  "total_pnl_pct": -59.0744,
-  "mark_eth": 2690.485,
-  "mark": 2690.485,
+  "total_pnl_usd": -58.7625,
+  "total_pnl_pct": -58.7625,
+  "mark_eth": 2689.875,
+  "mark": 2689.875,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.485
+    "ETH": 2689.875
   },
   "holdings": {
-    "paper_cash_usd": 40.9256,
+    "paper_cash_usd": 41.2375,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14797,9 +14797,32 @@
       "ticker": "TECH/OPT",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.0772
+    },
+    {
+      "t": "2026-09-26 11:47:49 ET",
+      "equity_usd": 41.2375,
+      "liquid_usd": 41.2375,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TECH/OPT",
+      "reason": "TP_+6.0",
+      "pnl_usd": 0.3119
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 11:47:49 ET",
+      "kind": "PAPER",
+      "market": "TECH/OPT",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.3119,
+      "pnl_pct": 10.3966,
+      "tx": "TP_+6.0",
+      "id": "PAPER-1654",
+      "paper": true
+    },
     {
       "t": "2026-09-26 11:22:16 ET",
       "kind": "PAPER",
@@ -15826,42 +15849,29 @@
       "tx": "TRAIL_2.0",
       "id": "PAPER-1575",
       "paper": true
-    },
-    {
-      "t": "2026-09-26 00:51:27 ET",
-      "kind": "PAPER",
-      "market": "JAN",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": -0.0008,
-      "pnl_pct": -0.0275,
-      "tx": "TIME_SOFT_600s",
-      "id": "PAPER-1574",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.9256,
-    "mtm_equity_usd": 40.9256,
-    "realized_pnl_usd": -59.0744,
+    "paper_equity_usd": 41.2375,
+    "mtm_equity_usd": 41.2375,
+    "realized_pnl_usd": -58.7625,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.93 \u00b7 curve n=1476 \u00b7 2026-09-26 11:47:05 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $41.24 \u00b7 curve n=1477 \u00b7 2026-09-26 11:47:53 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1475
+    "closed_n": 1476
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.93 \u00b7 FLAT \u00b7 2026-09-26 11:47:05 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $41.24 \u00b7 FLAT \u00b7 2026-09-26 11:47:53 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TECH/OPT open_p=0.65 edge=2.43 conf=0.96",
+    "detail": "pick=TECH/OPT open_p=0.64 edge=2.42 conf=0.95",
     "pick": "TECH/OPT",
-    "open_p": 0.65,
-    "confidence": 0.96,
-    "edge_score": 2.43,
+    "open_p": 0.64,
+    "confidence": 0.95,
+    "edge_score": 2.42,
     "picks": [
       {
         "sym": "TECH/OPT",
@@ -15899,20 +15909,20 @@
       "pick": {
         "type": "choice",
         "choice": "TECH/OPT",
-        "confidence": 0.96
+        "confidence": 0.95
       },
       "edge": {
         "type": "score",
-        "score": 2.43,
-        "confidence": 0.25
+        "score": 2.42,
+        "confidence": 0.28
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 11:46:51 ET",
+    "stamp_et": "2026-09-26 11:47:32 ET",
     "live": true
   }
 }
