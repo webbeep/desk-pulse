@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 23:40:39 ET",
+  "updated_et": "2026-09-25 23:41:26 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.7393,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -60.2607,
   "total_pnl_pct": -60.2607,
-  "mark_eth": 2689.065,
-  "mark": 2689.065,
+  "mark_eth": 2688.845,
+  "mark": 2688.845,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.065
+    "ETH": 2688.845
   },
   "holdings": {
     "paper_cash_usd": 39.7393,
@@ -14849,70 +14849,70 @@
     "realized_pnl_usd": -60.2607,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.74 \u00b7 curve n=1376 \u00b7 2026-09-25 23:40:39 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.74 \u00b7 curve n=1376 \u00b7 2026-09-25 23:41:26 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1375
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.74 \u00b7 FLAT \u00b7 2026-09-25 23:40:39 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $39.74 \u00b7 FLAT \u00b7 2026-09-25 23:41:26 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=OPENPAD open_p=0.64 edge=2.09 conf=0.64",
-    "pick": "OPENPAD",
-    "open_p": 0.64,
-    "confidence": 0.64,
-    "edge_score": 2.09,
+    "detail": "pick=E/ACC open_p=0.62 edge=1.98 conf=0.36",
+    "pick": "E/ACC",
+    "open_p": 0.62,
+    "confidence": 0.36,
+    "edge_score": 1.98,
     "picks": [
       {
         "sym": "E/ACC",
         "lost_bps": 3,
-        "selected": false,
-        "probs": 0.28
+        "selected": true,
+        "probs": 0.47
       },
       {
         "sym": "OPENPAD",
         "lost_bps": 3,
-        "selected": true,
-        "probs": 0.71
+        "selected": false,
+        "probs": 0.45
+      },
+      {
+        "sym": "JAN",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.06
+      },
+      {
+        "sym": "AEVA",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.0
       },
       {
         "sym": "YOLO",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.0
-      },
-      {
-        "sym": "TALIS",
-        "lost_bps": 4,
-        "selected": false,
-        "probs": 0.0
-      },
-      {
-        "sym": "AEVA",
-        "lost_bps": 5,
-        "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "OPENPAD",
-        "confidence": 0.64
+        "choice": "E/ACC",
+        "confidence": 0.36
       },
       "edge": {
         "type": "score",
-        "score": 2.09,
-        "confidence": 0.3
+        "score": 1.98,
+        "confidence": 0.37
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.64
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 23:40:39 ET",
+    "stamp_et": "2026-09-25 23:41:16 ET",
     "live": true
   }
 }
