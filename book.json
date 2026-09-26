@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-26 15:47:21 ET",
+  "updated_et": "2026-09-26 15:48:09 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.1841,
-  "upnl_usd": 0.0,
-  "equity_usd": 40.1841,
+  "upnl_usd": -0.0024,
+  "equity_usd": 40.1817,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.8159,
-  "total_pnl_pct": -59.8159,
+  "total_pnl_usd": -59.8183,
+  "total_pnl_pct": -59.8183,
   "mark_eth": 2682.295,
   "mark": 2682.295,
   "mark_src": "coinbase",
@@ -17,7 +17,7 @@
     "ETH": 2682.295
   },
   "holdings": {
-    "paper_cash_usd": 40.1841,
+    "paper_cash_usd": 37.1841,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -15097,6 +15097,13 @@
       "ticker": "DEBT",
       "reason": "CUT_HARD_LIQ0",
       "pnl_usd": -0.0025
+    },
+    {
+      "t": "now",
+      "equity_usd": 40.1817,
+      "liquid_usd": 40.1817,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -16145,41 +16152,45 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 40.1841,
-    "mtm_equity_usd": 40.1841,
+    "mtm_equity_usd": 40.1817,
     "realized_pnl_usd": -59.8159,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.18 \u00b7 curve n=1506 \u00b7 2026-09-26 15:47:21 ET",
+    "unrealized_pnl_usd": -0.0024,
+    "open": {
+      "id": "PAPER-1684",
+      "ticker": "BUBBLES",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $40.18 \u00b7 curve n=1507 \u00b7 2026-09-26 15:48:09 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1505
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.18 \u00b7 FLAT \u00b7 2026-09-26 15:47:21 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.18 \u00b7 2026-09-26 15:48:09 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TECH/OPT open_p=0.63 edge=2.07 conf=0.68",
+    "detail": "pick=TECH/OPT open_p=0.63 edge=2.14 conf=0.77",
     "pick": "TECH/OPT",
     "open_p": 0.63,
-    "confidence": 0.68,
-    "edge_score": 2.07,
+    "confidence": 0.77,
+    "edge_score": 2.14,
     "picks": [
       {
         "sym": "T/ACC",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.21
+        "probs": 0.13
       },
       {
         "sym": "TECH/OPT",
         "lost_bps": 7,
         "selected": true,
-        "probs": 0.75
+        "probs": 0.82
       },
       {
         "sym": "BUBBLES",
         "lost_bps": 8,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.03
       },
       {
         "sym": "DEBT",
@@ -16193,12 +16204,12 @@
       "pick": {
         "type": "choice",
         "choice": "TECH/OPT",
-        "confidence": 0.68
+        "confidence": 0.77
       },
       "edge": {
         "type": "score",
-        "score": 2.07,
-        "confidence": 0.36
+        "score": 2.14,
+        "confidence": 0.39
       },
       "open_now": {
         "type": "noul",
@@ -16206,7 +16217,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 15:47:06 ET",
+    "stamp_et": "2026-09-26 15:48:07 ET",
     "live": true
   }
 }
