@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 02:12:14 ET",
+  "updated_et": "2026-09-26 02:13:02 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 38.6816,
-  "upnl_usd": 0.0,
-  "equity_usd": 38.6816,
+  "upnl_usd": 0.1238,
+  "equity_usd": 38.8054,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -61.3184,
-  "total_pnl_pct": -61.3184,
-  "mark_eth": 2686.0,
-  "mark": 2686.0,
+  "total_pnl_usd": -61.1946,
+  "total_pnl_pct": -61.1946,
+  "mark_eth": 2685.775,
+  "mark": 2685.775,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2686.0
+    "ETH": 2685.775
   },
   "holdings": {
-    "paper_cash_usd": 38.6816,
+    "paper_cash_usd": 35.6816,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14227,6 +14227,13 @@
       "ticker": "ORBIO",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.1171
+    },
+    {
+      "t": "now",
+      "equity_usd": 38.8054,
+      "liquid_usd": 38.8054,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -15275,23 +15282,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 38.6816,
-    "mtm_equity_usd": 38.6816,
+    "mtm_equity_usd": 38.8054,
     "realized_pnl_usd": -61.3184,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $38.68 \u00b7 curve n=1419 \u00b7 2026-09-26 02:12:14 ET",
+    "unrealized_pnl_usd": 0.1238,
+    "open": {
+      "id": "PAPER-1597",
+      "ticker": "AEVA",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $38.68 \u00b7 curve n=1420 \u00b7 2026-09-26 02:13:02 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1418
   },
-  "notes": "PAPER heartbeat \u00b7 eq $38.68 \u00b7 FLAT \u00b7 2026-09-26 02:12:14 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $38.68 \u00b7 2026-09-26 02:13:02 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AEVA open_p=0.67 edge=2.2 conf=0.91",
+    "detail": "pick=AEVA open_p=0.66 edge=2.11 conf=0.91",
     "pick": "AEVA",
-    "open_p": 0.67,
+    "open_p": 0.66,
     "confidence": 0.91,
-    "edge_score": 2.2,
+    "edge_score": 2.11,
     "picks": [
       {
         "sym": "AEVA",
@@ -15333,16 +15344,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.2,
+        "score": 2.11,
         "confidence": 0.4
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 02:12:03 ET",
+    "stamp_et": "2026-09-26 02:12:41 ET",
     "live": true
   }
 }
