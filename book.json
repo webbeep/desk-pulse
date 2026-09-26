@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 20:31:40 ET",
+  "updated_et": "2026-09-25 20:32:27 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.7441,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -60.2559,
   "total_pnl_pct": -60.2559,
-  "mark_eth": 2686.005,
-  "mark": 2686.005,
+  "mark_eth": 2682.36,
+  "mark": 2682.36,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2686.005
+    "ETH": 2682.36
   },
   "holdings": {
     "paper_cash_usd": 39.7441,
@@ -14679,31 +14679,29 @@
     "realized_pnl_usd": -60.2559,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.74 \u00b7 curve n=1359 \u00b7 2026-09-25 20:31:40 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.74 \u00b7 curve n=1359 \u00b7 2026-09-25 20:32:27 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1358
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.74 \u00b7 FLAT \u00b7 2026-09-25 20:31:40 ET",
+  "notes": "JEV OPEN \u00b7 pick=GRACE open_p=0.68 edge=2.2 conf=0.96 \u00b7 PAPER heartbeat \u00b7 eq $39.74 \u00b7 FLAT \u00b7 2026-09-25 20:32:27 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
+    "stamp_et": "2026-09-25 20:32:28 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=GRACE open_p=0.63 edge=2.1 conf=0.96",
-    "pick": "GRACE",
-    "open_p": 0.63,
-    "confidence": 0.96,
-    "edge_score": 2.1,
+    "detail": "pick=GRACE open_p=0.68 edge=2.2 conf=0.96",
     "picks": [
       {
         "sym": "GRACE",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.96
+        "probs": 0.97
       },
       {
         "sym": "E/ACC",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "YOLO",
@@ -14724,25 +14722,10 @@
         "probs": 0.0
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "GRACE",
-        "confidence": 0.96
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.1,
-        "confidence": 0.27
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.63
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-25 20:31:37 ET",
+    "open_p": 0.68,
+    "risk": null,
+    "confidence": 0.96,
     "live": true
   }
 }
