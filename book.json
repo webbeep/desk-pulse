@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 22:36:40 ET",
+  "updated_et": "2026-09-25 22:37:28 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.6315,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -60.3685,
   "total_pnl_pct": -60.3685,
-  "mark_eth": 2692.535,
-  "mark": 2692.535,
+  "mark_eth": 2691.835,
+  "mark": 2691.835,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.535
+    "ETH": 2691.835
   },
   "holdings": {
     "paper_cash_usd": 39.6315,
@@ -14689,46 +14689,46 @@
     "realized_pnl_usd": -60.3685,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.63 \u00b7 curve n=1360 \u00b7 2026-09-25 22:36:40 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.63 \u00b7 curve n=1360 \u00b7 2026-09-25 22:37:28 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1359
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.63 \u00b7 FLAT \u00b7 2026-09-25 22:36:40 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $39.63 \u00b7 FLAT \u00b7 2026-09-25 22:37:28 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=JAN open_p=0.63 edge=2.02 conf=0.81",
-    "pick": "JAN",
-    "open_p": 0.63,
-    "confidence": 0.81,
-    "edge_score": 2.02,
+    "detail": "pick=AEVA open_p=0.64 edge=1.88 conf=0.6",
+    "pick": "AEVA",
+    "open_p": 0.64,
+    "confidence": 0.6,
+    "edge_score": 1.88,
     "picks": [
-      {
-        "sym": "JAN",
-        "lost_bps": 3,
-        "selected": true,
-        "probs": 0.85
-      },
       {
         "sym": "AEVA",
         "lost_bps": 3,
-        "selected": false,
-        "probs": 0.07
+        "selected": true,
+        "probs": 0.66
       },
       {
         "sym": "OPENPAD",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.05
+        "probs": 0.29
       },
       {
         "sym": "YOLO",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "E/ACC",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.01
+      },
+      {
+        "sym": "TALIS",
         "lost_bps": 4,
         "selected": false,
         "probs": 0.01
@@ -14738,21 +14738,21 @@
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "JAN",
-        "confidence": 0.81
+        "choice": "AEVA",
+        "confidence": 0.6
       },
       "edge": {
         "type": "score",
-        "score": 2.02,
-        "confidence": 0.29
+        "score": 1.88,
+        "confidence": 0.4
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 22:36:32 ET",
+    "stamp_et": "2026-09-25 22:37:23 ET",
     "live": true
   }
 }
