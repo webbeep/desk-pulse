@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 12:03:59 ET",
+  "updated_et": "2026-09-26 12:07:03 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.7265,
+  "liquid_usd": 40.5108,
   "upnl_usd": 0.0,
-  "equity_usd": 40.7265,
+  "equity_usd": 40.5108,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.2735,
-  "total_pnl_pct": -59.2735,
-  "mark_eth": 2690.595,
-  "mark": 2690.595,
+  "total_pnl_usd": -59.4892,
+  "total_pnl_pct": -59.4892,
+  "mark_eth": 2690.905,
+  "mark": 2690.905,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.595
+    "ETH": 2690.905
   },
   "holdings": {
-    "paper_cash_usd": 40.7265,
+    "paper_cash_usd": 40.5108,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14817,9 +14817,32 @@
       "ticker": "TECH/OPT",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.511
+    },
+    {
+      "t": "2026-09-26 12:05:19 ET",
+      "equity_usd": 40.5108,
+      "liquid_usd": 40.5108,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "DEBT",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.2157
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 12:05:19 ET",
+      "kind": "PAPER",
+      "market": "DEBT",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.2157,
+      "pnl_pct": -7.1885,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1656",
+      "paper": true
+    },
     {
       "t": "2026-09-26 12:03:19 ET",
       "kind": "PAPER",
@@ -15846,70 +15869,57 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1577",
       "paper": true
-    },
-    {
-      "t": "2026-09-26 00:55:38 ET",
-      "kind": "PAPER",
-      "market": "E/ACC",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": 0.0275,
-      "pnl_pct": 0.9164,
-      "tx": "TRAIL_2.0",
-      "id": "PAPER-1576",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.7265,
-    "mtm_equity_usd": 40.7265,
-    "realized_pnl_usd": -59.2735,
+    "paper_equity_usd": 40.5108,
+    "mtm_equity_usd": 40.5108,
+    "realized_pnl_usd": -59.4892,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.73 \u00b7 curve n=1478 \u00b7 2026-09-26 12:03:59 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.51 \u00b7 curve n=1479 \u00b7 2026-09-26 12:07:03 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1477
+    "closed_n": 1478
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.73 \u00b7 FLAT \u00b7 2026-09-26 12:03:59 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.51 \u00b7 FLAT \u00b7 2026-09-26 12:07:03 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TECH/OPT open_p=0.65 edge=2.38 conf=0.82",
+    "detail": "pick=TECH/OPT open_p=0.63 edge=2.28 conf=0.79",
     "pick": "TECH/OPT",
-    "open_p": 0.65,
-    "confidence": 0.82,
-    "edge_score": 2.38,
+    "open_p": 0.63,
+    "confidence": 0.79,
+    "edge_score": 2.28,
     "picks": [
       {
         "sym": "TECH/OPT",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.86
+        "probs": 0.83
       },
       {
         "sym": "CASHED",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.15
+      },
+      {
+        "sym": "DEBT",
+        "lost_bps": 4,
+        "selected": false,
+        "probs": 0.01
       },
       {
         "sym": "E/CAT",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.0
       },
       {
         "sym": "GAS",
         "lost_bps": 7,
-        "selected": false,
-        "probs": 0.01
-      },
-      {
-        "sym": "XGAS.\u200bDEV",
-        "lost_bps": 24,
         "selected": false,
         "probs": 0.0
       }
@@ -15919,20 +15929,20 @@
       "pick": {
         "type": "choice",
         "choice": "TECH/OPT",
-        "confidence": 0.82
+        "confidence": 0.79
       },
       "edge": {
         "type": "score",
-        "score": 2.38,
-        "confidence": 0.26
+        "score": 2.28,
+        "confidence": 0.21
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.63
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 12:03:46 ET",
+    "stamp_et": "2026-09-26 12:06:54 ET",
     "live": true
   }
 }
