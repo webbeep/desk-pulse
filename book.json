@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 13:44:32 ET",
+  "updated_et": "2026-09-26 13:45:20 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.2458,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -59.7542,
   "total_pnl_pct": -59.7542,
-  "mark_eth": 2687.955,
-  "mark": 2687.955,
+  "mark_eth": 2688.975,
+  "mark": 2688.975,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2687.955
+    "ETH": 2688.975
   },
   "holdings": {
     "paper_cash_usd": 40.2458,
@@ -15989,37 +15989,37 @@
     "realized_pnl_usd": -59.7542,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.25 \u00b7 curve n=1490 \u00b7 2026-09-26 13:44:32 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.25 \u00b7 curve n=1490 \u00b7 2026-09-26 13:45:20 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1489
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.25 \u00b7 FLAT \u00b7 2026-09-26 13:44:32 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $40.25 \u00b7 FLAT \u00b7 2026-09-26 13:45:20 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TINYCAT open_p=0.62 edge=2.3 conf=0.74",
+    "detail": "pick=TINYCAT open_p=0.64 edge=2.25 conf=0.66",
     "pick": "TINYCAT",
-    "open_p": 0.62,
-    "confidence": 0.74,
-    "edge_score": 2.3,
+    "open_p": 0.64,
+    "confidence": 0.66,
+    "edge_score": 2.25,
     "picks": [
       {
         "sym": "TINYCAT",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.8
+        "probs": 0.73
       },
       {
         "sym": "BUBBLES",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.14
       },
       {
         "sym": "CASHED",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.12
       },
       {
         "sym": "TECH/OPT",
@@ -16039,20 +16039,20 @@
       "pick": {
         "type": "choice",
         "choice": "TINYCAT",
-        "confidence": 0.74
+        "confidence": 0.66
       },
       "edge": {
         "type": "score",
-        "score": 2.3,
-        "confidence": 0.31
+        "score": 2.25,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.62
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 13:44:14 ET",
+    "stamp_et": "2026-09-26 13:45:16 ET",
     "live": true
   }
 }
