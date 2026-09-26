@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 15:36:06 ET",
+  "updated_et": "2026-09-26 15:36:54 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.19,
-  "upnl_usd": 0.0,
-  "equity_usd": 40.19,
+  "upnl_usd": -0.0028,
+  "equity_usd": 40.1872,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.81,
-  "total_pnl_pct": -59.81,
-  "mark_eth": 2683.615,
-  "mark": 2683.615,
+  "total_pnl_usd": -59.8128,
+  "total_pnl_pct": -59.8128,
+  "mark_eth": 2682.795,
+  "mark": 2682.795,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2683.615
+    "ETH": 2682.795
   },
   "holdings": {
-    "paper_cash_usd": 40.19,
+    "paper_cash_usd": 37.19,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -15077,6 +15077,13 @@
       "ticker": "T/ACC",
       "reason": "TIME_SOFT_600s",
       "pnl_usd": -0.0018
+    },
+    {
+      "t": "now",
+      "equity_usd": 40.1872,
+      "liquid_usd": 40.1872,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -16125,23 +16132,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 40.19,
-    "mtm_equity_usd": 40.19,
+    "mtm_equity_usd": 40.1872,
     "realized_pnl_usd": -59.81,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.19 \u00b7 curve n=1504 \u00b7 2026-09-26 15:36:06 ET",
+    "unrealized_pnl_usd": -0.0028,
+    "open": {
+      "id": "PAPER-1682",
+      "ticker": "T/ACC",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $40.19 \u00b7 curve n=1505 \u00b7 2026-09-26 15:36:54 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1503
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.19 \u00b7 FLAT \u00b7 2026-09-26 15:36:06 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.19 \u00b7 2026-09-26 15:36:54 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=T/ACC open_p=0.65 edge=2.21 conf=0.96",
+    "detail": "pick=T/ACC open_p=0.64 edge=2.17 conf=0.96",
     "pick": "T/ACC",
-    "open_p": 0.65,
+    "open_p": 0.64,
     "confidence": 0.96,
-    "edge_score": 2.21,
+    "edge_score": 2.17,
     "picks": [
       {
         "sym": "T/ACC",
@@ -16171,16 +16182,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.21,
+        "score": 2.17,
         "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 15:27:54 ET",
+    "stamp_et": "2026-09-26 15:36:16 ET",
     "live": true
   }
 }
