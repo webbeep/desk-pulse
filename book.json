@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 00:43:03 ET",
+  "updated_et": "2026-09-26 00:43:51 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.1565,
-  "upnl_usd": 0.0,
-  "equity_usd": 40.1565,
+  "upnl_usd": -0.0021,
+  "equity_usd": 40.1544,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.8435,
-  "total_pnl_pct": -59.8435,
-  "mark_eth": 2687.855,
-  "mark": 2687.855,
+  "total_pnl_usd": -59.8456,
+  "total_pnl_pct": -59.8456,
+  "mark_eth": 2688.345,
+  "mark": 2688.345,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2687.855
+    "ETH": 2688.345
   },
   "holdings": {
-    "paper_cash_usd": 40.1565,
+    "paper_cash_usd": 37.1565,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -13997,6 +13997,13 @@
       "ticker": "AEVA",
       "reason": "CUT_HARD_-1.8",
       "pnl_usd": -0.1234
+    },
+    {
+      "t": "now",
+      "equity_usd": 40.1544,
+      "liquid_usd": 40.1544,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -15045,29 +15052,33 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 40.1565,
-    "mtm_equity_usd": 40.1565,
+    "mtm_equity_usd": 40.1544,
     "realized_pnl_usd": -59.8435,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.16 \u00b7 curve n=1396 \u00b7 2026-09-26 00:43:03 ET",
+    "unrealized_pnl_usd": -0.0021,
+    "open": {
+      "id": "PAPER-1574",
+      "ticker": "JAN",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $40.16 \u00b7 curve n=1397 \u00b7 2026-09-26 00:43:51 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1395
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.16 \u00b7 FLAT \u00b7 2026-09-26 00:43:03 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.16 \u00b7 2026-09-26 00:43:51 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=OPENPAD open_p=0.63 edge=2.0 conf=0.56",
+    "detail": "pick=OPENPAD open_p=0.62 edge=2.04 conf=0.52",
     "pick": "OPENPAD",
-    "open_p": 0.63,
-    "confidence": 0.56,
-    "edge_score": 2.0,
+    "open_p": 0.62,
+    "confidence": 0.52,
+    "edge_score": 2.04,
     "picks": [
       {
         "sym": "OPENPAD",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.63
+        "probs": 0.61
       },
       {
         "sym": "E/ACC",
@@ -15079,7 +15090,7 @@
         "sym": "JAN",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.09
+        "probs": 0.11
       },
       {
         "sym": "AEVA",
@@ -15099,20 +15110,20 @@
       "pick": {
         "type": "choice",
         "choice": "OPENPAD",
-        "confidence": 0.56
+        "confidence": 0.52
       },
       "edge": {
         "type": "score",
-        "score": 2.0,
-        "confidence": 0.37
+        "score": 2.04,
+        "confidence": 0.39
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 00:42:59 ET",
+    "stamp_et": "2026-09-26 00:43:24 ET",
     "live": true
   }
 }
