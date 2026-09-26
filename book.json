@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 07:23:23 ET",
+  "updated_et": "2026-09-26 07:24:11 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 40.9059,
-  "upnl_usd": 0.0,
-  "equity_usd": 40.9059,
+  "upnl_usd": -0.0072,
+  "equity_usd": 40.8987,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.0941,
-  "total_pnl_pct": -59.0941,
-  "mark_eth": 2688.065,
-  "mark": 2688.065,
+  "total_pnl_usd": -59.1013,
+  "total_pnl_pct": -59.1013,
+  "mark_eth": 2688.185,
+  "mark": 2688.185,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2688.065
+    "ETH": 2688.185
   },
   "holdings": {
-    "paper_cash_usd": 40.9059,
+    "paper_cash_usd": 37.9059,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14677,6 +14677,13 @@
       "ticker": "CASHED",
       "reason": "TP_+6.0",
       "pnl_usd": 0.2692
+    },
+    {
+      "t": "now",
+      "equity_usd": 40.8987,
+      "liquid_usd": 40.8987,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -15725,35 +15732,39 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 40.9059,
-    "mtm_equity_usd": 40.9059,
+    "mtm_equity_usd": 40.8987,
     "realized_pnl_usd": -59.0941,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $40.91 \u00b7 curve n=1464 \u00b7 2026-09-26 07:23:23 ET",
+    "unrealized_pnl_usd": -0.0072,
+    "open": {
+      "id": "PAPER-1642",
+      "ticker": "XGAS.DEV",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $40.91 \u00b7 curve n=1465 \u00b7 2026-09-26 07:24:11 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1463
   },
-  "notes": "PAPER heartbeat \u00b7 eq $40.91 \u00b7 FLAT \u00b7 2026-09-26 07:23:23 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.91 \u00b7 2026-09-26 07:24:11 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=E/CAT open_p=0.64 edge=2.45 conf=0.83",
+    "detail": "pick=E/CAT open_p=0.64 edge=2.53 conf=0.82",
     "pick": "E/CAT",
     "open_p": 0.64,
-    "confidence": 0.83,
-    "edge_score": 2.45,
+    "confidence": 0.82,
+    "edge_score": 2.53,
     "picks": [
       {
         "sym": "CASHED",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.13
       },
       {
         "sym": "E/CAT",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.87
+        "probs": 0.85
       },
       {
         "sym": "GAS",
@@ -15773,12 +15784,12 @@
       "pick": {
         "type": "choice",
         "choice": "E/CAT",
-        "confidence": 0.83
+        "confidence": 0.82
       },
       "edge": {
         "type": "score",
-        "score": 2.45,
-        "confidence": 0.32
+        "score": 2.53,
+        "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
@@ -15786,7 +15797,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 07:23:17 ET",
+    "stamp_et": "2026-09-26 07:23:42 ET",
     "live": true
   }
 }
