@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 01:03:36 ET",
+  "updated_et": "2026-09-26 01:04:23 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 40.1136,
-  "upnl_usd": -0.0027,
-  "equity_usd": 40.1109,
+  "liquid_usd": 40.111,
+  "upnl_usd": 0.06,
+  "equity_usd": 40.171,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -59.8891,
-  "total_pnl_pct": -59.8891,
-  "mark_eth": 2688.925,
-  "mark": 2688.925,
+  "total_pnl_usd": -59.829,
+  "total_pnl_pct": -59.829,
+  "mark_eth": 2689.005,
+  "mark": 2689.005,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2688.925
+    "ETH": 2689.005
   },
   "holdings": {
-    "paper_cash_usd": 37.1136,
+    "paper_cash_usd": 37.111,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14039,14 +14039,37 @@
       "pnl_usd": -0.0804
     },
     {
+      "t": "2026-09-26 01:04:10 ET",
+      "equity_usd": 40.111,
+      "liquid_usd": 40.111,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JAN",
+      "reason": "TIME_SOFT_600s",
+      "pnl_usd": -0.0026
+    },
+    {
       "t": "now",
-      "equity_usd": 40.1109,
-      "liquid_usd": 40.1109,
+      "equity_usd": 40.171,
+      "liquid_usd": 40.171,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 01:04:10 ET",
+      "kind": "PAPER",
+      "market": "JAN",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0026,
+      "pnl_pct": -0.0868,
+      "tx": "TIME_SOFT_600s",
+      "id": "PAPER-1578",
+      "paper": true
+    },
     {
       "t": "2026-09-26 00:55:55 ET",
       "kind": "PAPER",
@@ -15073,58 +15096,45 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1499",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 11:47:47 ET",
-      "kind": "PAPER",
-      "market": "MIC",
-      "side": "LONG",
-      "size": 3.55,
-      "size_usd": 3.55,
-      "pnl_usd": -0.8333,
-      "pnl_pct": -23.4728,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1498",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 40.1136,
-    "mtm_equity_usd": 40.1109,
-    "realized_pnl_usd": -59.8864,
-    "unrealized_pnl_usd": -0.0027,
+    "paper_equity_usd": 40.111,
+    "mtm_equity_usd": 40.171,
+    "realized_pnl_usd": -59.889,
+    "unrealized_pnl_usd": 0.06,
     "open": {
-      "id": "PAPER-1578",
-      "ticker": "JAN",
+      "id": "PAPER-1579",
+      "ticker": "AEVA",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $40.11 \u00b7 curve n=1401 \u00b7 2026-09-26 01:03:36 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $40.11 \u00b7 curve n=1402 \u00b7 2026-09-26 01:04:23 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1399
+    "closed_n": 1400
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.11 \u00b7 2026-09-26 01:03:36 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $40.11 \u00b7 2026-09-26 01:04:23 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AEVA open_p=0.65 edge=2.04 conf=0.71",
+    "detail": "pick=AEVA open_p=0.65 edge=2.01 conf=0.63",
     "pick": "AEVA",
     "open_p": 0.65,
-    "confidence": 0.71,
-    "edge_score": 2.04,
+    "confidence": 0.63,
+    "edge_score": 2.01,
     "picks": [
       {
         "sym": "AEVA",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.75
+        "probs": 0.6799999999999999
       },
       {
         "sym": "OPENPAD",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.17
+        "probs": 0.19
       },
       {
         "sym": "YOLO",
@@ -15136,13 +15146,13 @@
         "sym": "E/ACC",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.06
       },
       {
         "sym": "JAN",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.04
       }
     ],
     "model": "jev-1.13.0",
@@ -15150,11 +15160,11 @@
       "pick": {
         "type": "choice",
         "choice": "AEVA",
-        "confidence": 0.71
+        "confidence": 0.63
       },
       "edge": {
         "type": "score",
-        "score": 2.04,
+        "score": 2.01,
         "confidence": 0.37
       },
       "open_now": {
@@ -15163,7 +15173,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 00:56:07 ET",
+    "stamp_et": "2026-09-26 01:04:11 ET",
     "live": true
   }
 }
