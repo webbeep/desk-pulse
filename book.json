@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 03:27:12 ET",
+  "updated_et": "2026-09-26 03:27:59 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 39.4385,
-  "upnl_usd": -0.0012,
-  "equity_usd": 39.4373,
+  "liquid_usd": 39.3234,
+  "upnl_usd": 0.1111,
+  "equity_usd": 39.4345,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -60.5627,
-  "total_pnl_pct": -60.5627,
-  "mark_eth": 2689.615,
-  "mark": 2689.615,
+  "total_pnl_usd": -60.5655,
+  "total_pnl_pct": -60.5655,
+  "mark_eth": 2689.68,
+  "mark": 2689.68,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2689.615
+    "ETH": 2689.68
   },
   "holdings": {
-    "paper_cash_usd": 36.4385,
+    "paper_cash_usd": 36.3234,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -14339,14 +14339,60 @@
       "pnl_usd": 0.0003
     },
     {
+      "t": "2026-09-26 03:27:27 ET",
+      "equity_usd": 39.4374,
+      "liquid_usd": 39.4374,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "TALIS",
+      "reason": "TIME_SOFT_600s",
+      "pnl_usd": -0.0011
+    },
+    {
+      "t": "2026-09-26 03:27:51 ET",
+      "equity_usd": 39.3234,
+      "liquid_usd": 39.3234,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "DDOS",
+      "reason": "CUT_HARD_-1.8",
+      "pnl_usd": -0.114
+    },
+    {
       "t": "now",
-      "equity_usd": 39.4373,
-      "liquid_usd": 39.4373,
+      "equity_usd": 39.4345,
+      "liquid_usd": 39.4345,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 03:27:51 ET",
+      "kind": "PAPER",
+      "market": "DDOS",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.114,
+      "pnl_pct": -3.7992,
+      "tx": "CUT_HARD_-1.8",
+      "id": "PAPER-1609",
+      "paper": true
+    },
+    {
+      "t": "2026-09-26 03:27:27 ET",
+      "kind": "PAPER",
+      "market": "TALIS",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0011,
+      "pnl_pct": -0.0372,
+      "tx": "TIME_SOFT_600s",
+      "id": "PAPER-1608",
+      "paper": true
+    },
     {
       "t": "2026-09-26 03:19:13 ET",
       "kind": "PAPER",
@@ -15360,77 +15406,51 @@
       "tx": "CUT_HARD_-1.8",
       "id": "PAPER-1530",
       "paper": true
-    },
-    {
-      "t": "2026-09-25 19:39:02 ET",
-      "kind": "PAPER",
-      "market": "TALIS",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": 0.1832,
-      "pnl_pct": 6.1053,
-      "tx": "TP_+6.0",
-      "id": "PAPER-1529",
-      "paper": true
-    },
-    {
-      "t": "2026-09-25 19:37:27 ET",
-      "kind": "PAPER",
-      "market": "E/ACC",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": -0.0656,
-      "pnl_pct": -2.1856,
-      "tx": "CUT_HARD_-1.8",
-      "id": "PAPER-1528",
-      "paper": true
     }
   ],
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 39.4385,
-    "mtm_equity_usd": 39.4373,
-    "realized_pnl_usd": -60.5615,
-    "unrealized_pnl_usd": -0.0012,
+    "paper_equity_usd": 39.3234,
+    "mtm_equity_usd": 39.4345,
+    "realized_pnl_usd": -60.6766,
+    "unrealized_pnl_usd": 0.1111,
     "open": {
-      "id": "PAPER-1608",
-      "ticker": "TALIS",
+      "id": "PAPER-1610",
+      "ticker": "ORBIO",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $39.44 \u00b7 curve n=1431 \u00b7 2026-09-26 03:27:12 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.32 \u00b7 curve n=1433 \u00b7 2026-09-26 03:27:59 ET",
     "strategy": "MEME_V6_YOLO_JEV",
-    "closed_n": 1429
+    "closed_n": 1431
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $39.44 \u00b7 2026-09-26 03:27:12 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $39.32 \u00b7 2026-09-26 03:27:59 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=TALIS open_p=0.64 edge=2.11 conf=0.75",
+    "detail": "pick=TALIS open_p=0.64 edge=2.13 conf=0.76",
     "pick": "TALIS",
     "open_p": 0.64,
-    "confidence": 0.75,
-    "edge_score": 2.11,
+    "confidence": 0.76,
+    "edge_score": 2.13,
     "picks": [
       {
         "sym": "TALIS",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.8
+        "probs": 0.81
       },
       {
         "sym": "AEVA",
         "lost_bps": 3,
         "selected": false,
-        "probs": 0.16
+        "probs": 0.15
       },
       {
         "sym": "DDOS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.03
       },
       {
         "sym": "ORBIO",
@@ -15442,7 +15462,7 @@
         "sym": "DDOS",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.03
       }
     ],
     "model": "jev-1.13.0",
@@ -15450,12 +15470,12 @@
       "pick": {
         "type": "choice",
         "choice": "TALIS",
-        "confidence": 0.75
+        "confidence": 0.76
       },
       "edge": {
         "type": "score",
-        "score": 2.11,
-        "confidence": 0.21
+        "score": 2.13,
+        "confidence": 0.27
       },
       "open_now": {
         "type": "noul",
@@ -15463,7 +15483,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 03:19:25 ET",
+    "stamp_et": "2026-09-26 03:27:52 ET",
     "live": true
   }
 }
