@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-25 21:47:43 ET",
+  "updated_et": "2026-09-25 21:48:31 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 39.6315,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -60.3685,
   "total_pnl_pct": -60.3685,
-  "mark_eth": 2694.03,
-  "mark": 2694.03,
+  "mark_eth": 2693.15,
+  "mark": 2693.15,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2694.03
+    "ETH": 2693.15
   },
   "holdings": {
     "paper_cash_usd": 39.6315,
@@ -14689,43 +14689,43 @@
     "realized_pnl_usd": -60.3685,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $39.63 \u00b7 curve n=1360 \u00b7 2026-09-25 21:47:43 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $39.63 \u00b7 curve n=1360 \u00b7 2026-09-25 21:48:31 ET",
     "strategy": "MEME_V6_YOLO_JEV",
     "closed_n": 1359
   },
-  "notes": "PAPER heartbeat \u00b7 eq $39.63 \u00b7 FLAT \u00b7 2026-09-25 21:47:43 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $39.63 \u00b7 FLAT \u00b7 2026-09-25 21:48:31 ET",
   "strategy": "MEME_V6_YOLO_JEV",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=GRACE open_p=0.59 edge=1.92 conf=0.37",
+    "detail": "pick=GRACE open_p=0.62 edge=1.94 conf=0.44",
     "pick": "GRACE",
-    "open_p": 0.59,
-    "confidence": 0.37,
-    "edge_score": 1.92,
+    "open_p": 0.62,
+    "confidence": 0.44,
+    "edge_score": 1.94,
     "picks": [
       {
         "sym": "YOLO",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.06
+        "probs": 0.05
       },
       {
         "sym": "GRACE",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.48
+        "probs": 0.53
       },
       {
         "sym": "JAN",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.35
+        "probs": 0.31
       },
       {
         "sym": "AEVA",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.01
       },
       {
         "sym": "OPENPAD",
@@ -14739,20 +14739,20 @@
       "pick": {
         "type": "choice",
         "choice": "GRACE",
-        "confidence": 0.37
+        "confidence": 0.44
       },
       "edge": {
         "type": "score",
-        "score": 1.92,
-        "confidence": 0.34
+        "score": 1.94,
+        "confidence": 0.29
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.59
+        "noul": 0.62
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-25 21:47:35 ET",
+    "stamp_et": "2026-09-25 21:48:25 ET",
     "live": true
   }
 }
