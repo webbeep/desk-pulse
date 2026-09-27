@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-27 05:09:57 ET",
+  "updated_et": "2026-09-27 05:10:45 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 99.9612,
-  "upnl_usd": -0.0072,
-  "equity_usd": 99.954,
+  "upnl_usd": -0.0085,
+  "equity_usd": 99.9527,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -0.046,
-  "total_pnl_pct": -0.046,
-  "mark_eth": 2706.855,
-  "mark": 2706.855,
+  "total_pnl_usd": -0.0473,
+  "total_pnl_pct": -0.0473,
+  "mark_eth": 2705.735,
+  "mark": 2705.735,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2706.855
+    "ETH": 2705.735
   },
   "holdings": {
     "paper_cash_usd": 96.9612,
@@ -260,8 +260,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 99.954,
-      "liquid_usd": 99.954,
+      "equity_usd": 99.9527,
+      "liquid_usd": 99.9527,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -545,33 +545,33 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 99.9612,
-    "mtm_equity_usd": 99.954,
+    "mtm_equity_usd": 99.9527,
     "realized_pnl_usd": -0.0388,
-    "unrealized_pnl_usd": -0.0072,
+    "unrealized_pnl_usd": -0.0085,
     "open": {
       "id": "PAPER-1579",
       "ticker": "STONK",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $99.96 \u00b7 curve n=23 \u00b7 2026-09-27 05:09:57 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $99.96 \u00b7 curve n=23 \u00b7 2026-09-27 05:10:45 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 21
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $99.96 \u00b7 2026-09-27 05:09:57 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $99.96 \u00b7 2026-09-27 05:10:45 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=ROBINCAT open_p=0.70 edge=2.43 conf=0.91",
+    "detail": "pick=ROBINCAT open_p=0.69 edge=2.41 conf=0.87",
     "pick": "ROBINCAT",
-    "open_p": 0.7,
-    "confidence": 0.91,
-    "edge_score": 2.43,
+    "open_p": 0.69,
+    "confidence": 0.87,
+    "edge_score": 2.41,
     "picks": [
       {
         "sym": "ROBINCAT",
         "lost_bps": 5,
         "selected": true,
-        "probs": 0.93
+        "probs": 0.9
       },
       {
         "sym": "CAKE",
@@ -583,13 +583,13 @@
         "sym": "AURA",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.04
+        "probs": 0.05
       },
       {
         "sym": "JAN",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.03
       },
       {
         "sym": "STONK",
@@ -603,20 +603,20 @@
       "pick": {
         "type": "choice",
         "choice": "ROBINCAT",
-        "confidence": 0.91
+        "confidence": 0.87
       },
       "edge": {
         "type": "score",
-        "score": 2.43,
-        "confidence": 0.36
+        "score": 2.41,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.7
+        "noul": 0.69
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 05:09:38 ET",
+    "stamp_et": "2026-09-27 05:10:40 ET",
     "live": true
   }
 }
