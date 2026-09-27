@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-27 07:55:50 ET",
+  "updated_et": "2026-09-27 07:56:38 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 99.7873,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -0.2127,
   "total_pnl_pct": -0.2127,
-  "mark_eth": 2709.995,
-  "mark": 2709.995,
+  "mark_eth": 2710.19,
+  "mark": 2710.19,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2709.995
+    "ETH": 2710.19
   },
   "holdings": {
     "paper_cash_usd": 99.7873,
@@ -703,31 +703,25 @@
     "realized_pnl_usd": -0.2127,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 curve n=29 \u00b7 2026-09-27 07:55:50 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 curve n=29 \u00b7 2026-09-27 07:56:38 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 28
   },
-  "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 FLAT \u00b7 2026-09-27 07:55:50 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 FLAT \u00b7 2026-09-27 07:56:38 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NIVI open_p=0.66 edge=1.88 conf=0.55",
-    "pick": "NIVI",
-    "open_p": 0.66,
-    "confidence": 0.55,
-    "edge_score": 1.88,
+    "detail": "pick=NAMI open_p=0.65 edge=2.06 conf=0.68",
+    "pick": "NAMI",
+    "open_p": 0.65,
+    "confidence": 0.68,
+    "edge_score": 2.06,
     "picks": [
-      {
-        "sym": "NIVI",
-        "lost_bps": 4,
-        "selected": true,
-        "probs": 0.63
-      },
       {
         "sym": "ERRAND",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.06
+        "probs": 0.16
       },
       {
         "sym": "VORTA",
@@ -736,37 +730,43 @@
         "probs": 0.06
       },
       {
-        "sym": "CPU",
+        "sym": "NAMI",
         "lost_bps": 4,
-        "selected": false,
-        "probs": 0.13
+        "selected": true,
+        "probs": 0.75
       },
       {
-        "sym": "NAMI",
+        "sym": "NIVI",
+        "lost_bps": 5,
+        "selected": false,
+        "probs": 0.01
+      },
+      {
+        "sym": "CAKE",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.09
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "NIVI",
-        "confidence": 0.55
+        "choice": "NAMI",
+        "confidence": 0.68
       },
       "edge": {
         "type": "score",
-        "score": 1.88,
-        "confidence": 0.36
+        "score": 2.06,
+        "confidence": 0.38
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 07:55:43 ET",
+    "stamp_et": "2026-09-27 07:56:24 ET",
     "live": true
   }
 }
