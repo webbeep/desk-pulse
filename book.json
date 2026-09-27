@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 23:35:57 ET",
+  "updated_et": "2026-09-26 23:36:45 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.3937,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 0.3937,
   "total_pnl_pct": 0.3937,
-  "mark_eth": 2696.72,
-  "mark": 2696.72,
+  "mark_eth": 2696.255,
+  "mark": 2696.255,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2696.72
+    "ETH": 2696.255
   },
   "holdings": {
     "paper_cash_usd": 100.3937,
@@ -289,31 +289,31 @@
     "realized_pnl_usd": 0.3937,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $100.39 \u00b7 curve n=11 \u00b7 2026-09-26 23:35:57 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.39 \u00b7 curve n=11 \u00b7 2026-09-26 23:36:45 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 10
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.39 \u00b7 FLAT \u00b7 2026-09-26 23:35:57 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $100.39 \u00b7 FLAT \u00b7 2026-09-26 23:36:45 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AURA open_p=0.71 edge=2.32 conf=0.98",
+    "detail": "pick=AURA open_p=0.71 edge=2.32 conf=0.97",
     "pick": "AURA",
     "open_p": 0.71,
-    "confidence": 0.98,
+    "confidence": 0.97,
     "edge_score": 2.32,
     "picks": [
       {
         "sym": "AURA",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.99
+        "probs": 0.98
       },
       {
         "sym": "CAKE",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "JAN",
@@ -339,7 +339,7 @@
       "pick": {
         "type": "choice",
         "choice": "AURA",
-        "confidence": 0.98
+        "confidence": 0.97
       },
       "edge": {
         "type": "score",
@@ -352,7 +352,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 23:35:56 ET",
+    "stamp_et": "2026-09-26 23:36:37 ET",
     "live": true
   }
 }
