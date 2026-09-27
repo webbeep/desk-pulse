@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-27 08:49:32 ET",
+  "updated_et": "2026-09-27 08:50:20 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.2576,
-  "upnl_usd": 0.0,
-  "equity_usd": 100.2576,
+  "upnl_usd": 0.1742,
+  "equity_usd": 100.4318,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 0.2576,
-  "total_pnl_pct": 0.2576,
-  "mark_eth": 2713.275,
-  "mark": 2713.275,
+  "total_pnl_usd": 0.4318,
+  "total_pnl_pct": 0.4318,
+  "mark_eth": 2713.285,
+  "mark": 2713.285,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2713.275
+    "ETH": 2713.285
   },
   "holdings": {
-    "paper_cash_usd": 100.2576,
+    "paper_cash_usd": 97.2576,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -347,6 +347,13 @@
       "ticker": "NAMI",
       "reason": "TP_+4.5",
       "pnl_usd": 0.2101
+    },
+    {
+      "t": "now",
+      "equity_usd": 100.4318,
+      "liquid_usd": 100.4318,
+      "upnl_usd": 0.0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -745,23 +752,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 100.2576,
-    "mtm_equity_usd": 100.2576,
+    "mtm_equity_usd": 100.4318,
     "realized_pnl_usd": 0.2576,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 curve n=31 \u00b7 2026-09-27 08:49:32 ET",
+    "unrealized_pnl_usd": 0.1742,
+    "open": {
+      "id": "PAPER-1590",
+      "ticker": "STENKS",
+      "usd": 3.0
+    },
+    "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 curve n=32 \u00b7 2026-09-27 08:50:20 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 30
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 FLAT \u00b7 2026-09-27 08:49:32 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.26 \u00b7 2026-09-27 08:50:20 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NAMI open_p=0.66 edge=2.05 conf=0.97",
+    "detail": "pick=NAMI open_p=0.67 edge=2.19 conf=0.98",
     "pick": "NAMI",
-    "open_p": 0.66,
-    "confidence": 0.97,
-    "edge_score": 2.05,
+    "open_p": 0.67,
+    "confidence": 0.98,
+    "edge_score": 2.19,
     "picks": [
       {
         "sym": "NAMI",
@@ -799,20 +810,20 @@
       "pick": {
         "type": "choice",
         "choice": "NAMI",
-        "confidence": 0.97
+        "confidence": 0.98
       },
       "edge": {
         "type": "score",
-        "score": 2.05,
-        "confidence": 0.37
+        "score": 2.19,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.66
+        "noul": 0.67
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 08:49:13 ET",
+    "stamp_et": "2026-09-27 08:50:18 ET",
     "live": true
   }
 }
