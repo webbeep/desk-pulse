@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-27 10:19:01 ET",
+  "updated_et": "2026-09-27 10:19:08 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 291.2044,
+  "liquid_usd": 291.2018,
   "upnl_usd": 0.0,
-  "equity_usd": 291.2044,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 291.2018,
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-4.1995 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": 0.5744,
-  "total_pnl_pct": 0.1976,
+  "total_pnl_usd": 0.5718,
+  "total_pnl_pct": 0.1967,
   "mark_eth": 2705.04,
   "mark": 2705.04,
   "mark_src": "coinbase",
@@ -21,13 +21,13 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.08542825725212924,
+      "eth": 0.08542732958532925,
       "weth": 0.02081719603591261
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.08542825725212924,
+    "rh_eth": 0.08542732958532925,
     "rh_weth": 0.02081719603591261,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,13 +42,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 09:42:07 ET",
-      "equity_usd": 294.4233,
-      "liquid_usd": 294.43,
-      "upnl_usd": -0.0067,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 09:42:14 ET",
       "equity_usd": 294.4233,
@@ -1441,9 +1434,28 @@
       "liquid_usd": 291.2044,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 10:19:08 ET",
+      "equity_usd": 291.2044,
+      "liquid_usd": 291.2018,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-75-EXIT",
+      "market": "STENKS",
+      "side": "SELL",
+      "size_usd": 5.0,
+      "pnl_usd": -5.0,
+      "mtm_pct": -100.0,
+      "tx": null,
+      "reason": "TP_V7_+4.5",
+      "stamp_et": "2026-09-27 10:19:08 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-74-EXIT",
       "market": "JAN",
@@ -2001,7 +2013,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM STENKS uPnL $0.3894 (7.7879%) \u00b7 held 45s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 10:18:58 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT STENKS \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-09-27 10:19:08 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -2053,13 +2065,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x0ea6119e2d7dc67654db15af109cb8db397b43359af32d411ec44c43c9218928",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 45,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": -5.0
   },
   "realized_pnl_usd": -4.1995
 }
