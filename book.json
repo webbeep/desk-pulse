@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-27 00:12:00 ET",
+  "updated_et": "2026-09-27 00:12:48 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 100.3969,
-  "upnl_usd": -0.006,
-  "equity_usd": 100.3909,
+  "liquid_usd": 100.1928,
+  "upnl_usd": -0.0011,
+  "equity_usd": 100.1917,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 0.3909,
-  "total_pnl_pct": 0.3909,
-  "mark_eth": 2697.895,
-  "mark": 2697.895,
+  "total_pnl_usd": 0.1917,
+  "total_pnl_pct": 0.1917,
+  "mark_eth": 2699.235,
+  "mark": 2699.235,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2697.895
+    "ETH": 2699.235
   },
   "holdings": {
-    "paper_cash_usd": 97.3969,
+    "paper_cash_usd": 97.1928,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -179,14 +179,106 @@
       "pnl_usd": 0.0008
     },
     {
+      "t": "2026-09-27 00:12:07 ET",
+      "equity_usd": 100.396,
+      "liquid_usd": 100.396,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JAN",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0009
+    },
+    {
+      "t": "2026-09-27 00:12:07 ET",
+      "equity_usd": 100.3951,
+      "liquid_usd": 100.3951,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "AURA",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0009
+    },
+    {
+      "t": "2026-09-27 00:12:13 ET",
+      "equity_usd": 100.3908,
+      "liquid_usd": 100.3908,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "E/ACC",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0043
+    },
+    {
+      "t": "2026-09-27 00:12:19 ET",
+      "equity_usd": 100.1928,
+      "liquid_usd": 100.1928,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "DKILL",
+      "reason": "CUT_HARD_-2.5",
+      "pnl_usd": -0.198
+    },
+    {
       "t": "now",
-      "equity_usd": 100.3909,
-      "liquid_usd": 100.3909,
+      "equity_usd": 100.1917,
+      "liquid_usd": 100.1917,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-27 00:12:19 ET",
+      "kind": "PAPER",
+      "market": "DKILL",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.198,
+      "pnl_pct": -6.5992,
+      "tx": "CUT_HARD_-2.5",
+      "id": "PAPER-1576",
+      "paper": true
+    },
+    {
+      "t": "2026-09-27 00:12:13 ET",
+      "kind": "PAPER",
+      "market": "E/ACC",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0043,
+      "pnl_pct": -0.1429,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-1574",
+      "paper": true
+    },
+    {
+      "t": "2026-09-27 00:12:07 ET",
+      "kind": "PAPER",
+      "market": "AURA",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0009,
+      "pnl_pct": -0.0291,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-1572",
+      "paper": true
+    },
+    {
+      "t": "2026-09-27 00:12:07 ET",
+      "kind": "PAPER",
+      "market": "JAN",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0009,
+      "pnl_pct": -0.0294,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-1573",
+      "paper": true
+    },
     {
       "t": "2026-09-27 00:08:03 ET",
       "kind": "PAPER",
@@ -360,28 +452,28 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 100.3969,
-    "mtm_equity_usd": 100.3909,
-    "realized_pnl_usd": 0.3969,
-    "unrealized_pnl_usd": -0.006,
+    "paper_equity_usd": 100.1928,
+    "mtm_equity_usd": 100.1917,
+    "realized_pnl_usd": 0.1928,
+    "unrealized_pnl_usd": -0.0011,
     "open": {
-      "id": "PAPER-1573",
-      "ticker": "JAN",
+      "id": "PAPER-1575",
+      "ticker": "CAKE",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $100.40 \u00b7 curve n=15 \u00b7 2026-09-27 00:12:00 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.19 \u00b7 curve n=19 \u00b7 2026-09-27 00:12:48 ET",
     "strategy": "MEME_V7_SELECT",
-    "closed_n": 13
+    "closed_n": 17
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.40 \u00b7 2026-09-27 00:12:00 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.19 \u00b7 2026-09-27 00:12:48 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=DKILL open_p=0.70 edge=2.18 conf=0.98",
+    "detail": "pick=DKILL open_p=0.68 edge=2.25 conf=0.98",
     "pick": "DKILL",
-    "open_p": 0.7,
+    "open_p": 0.68,
     "confidence": 0.98,
-    "edge_score": 2.18,
+    "edge_score": 2.25,
     "picks": [
       {
         "sym": "DKILL",
@@ -423,16 +515,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.18,
-        "confidence": 0.37
+        "score": 2.25,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.7
+        "noul": 0.68
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 00:08:03 ET",
+    "stamp_et": "2026-09-27 00:12:32 ET",
     "live": true
   }
 }
