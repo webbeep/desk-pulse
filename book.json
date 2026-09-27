@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-27 09:44:39 ET",
+  "updated_et": "2026-09-27 09:44:47 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 294.43,
   "upnl_usd": 0.0,
   "equity_usd": 294.8223,
-  "status": "EXITING:TP_V7_+4.5",
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-32.8082 \u00b7 SoT ledger sum",
   "total_pnl_usd": -32.8082,
@@ -1292,9 +1292,28 @@
       "liquid_usd": 294.43,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 09:44:47 ET",
+      "equity_usd": 294.8223,
+      "liquid_usd": 294.43,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-68-EXIT",
+      "market": "NAMI",
+      "side": "SELL",
+      "size_usd": 5.0,
+      "pnl_usd": 0.3927,
+      "mtm_pct": 7.8537,
+      "tx": "0x77c3075b4e582eba9ada289ed3b72a45e08e0d42c8c8f7b31f5a8ec692aa7b30",
+      "reason": "TP_V7_+4.5",
+      "stamp_et": "2026-09-27 09:44:47 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-67-EXIT",
       "market": "CAKE",
@@ -1768,7 +1787,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM NAMI uPnL $0.3923 (7.8457%) \u00b7 held 64s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 09:44:37 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT NAMI \u00b7 TP_V7_+4.5 \u00b7 tx 0x77c3075b4e582eba9ada289ed3b72a45e08e0d42c8c8f7b31f5a8ec692aa7b30 \u00b7 2026-09-27 09:44:47 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -1820,12 +1839,8 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x80d1a8ea587d9999ff1e95d5622a2e5ed6b11c6d9617c8c66a76f5953d774f98",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 63,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x77c3075b4e582eba9ada289ed3b72a45e08e0d42c8c8f7b31f5a8ec692aa7b30",
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": 0.3927
   }
 }
