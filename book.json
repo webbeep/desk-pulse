@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-27 08:35:53 ET",
+  "updated_et": "2026-09-27 08:36:41 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.2576,
@@ -749,25 +749,31 @@
     "realized_pnl_usd": 0.2576,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 curve n=31 \u00b7 2026-09-27 08:35:53 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 curve n=31 \u00b7 2026-09-27 08:36:41 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 30
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 FLAT \u00b7 2026-09-27 08:35:53 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 FLAT \u00b7 2026-09-27 08:36:41 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NAMI open_p=0.68 edge=2.18 conf=0.98",
+    "detail": "pick=NAMI open_p=0.68 edge=2.17 conf=0.95",
     "pick": "NAMI",
     "open_p": 0.68,
-    "confidence": 0.98,
-    "edge_score": 2.18,
+    "confidence": 0.95,
+    "edge_score": 2.17,
     "picks": [
       {
         "sym": "NAMI",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.99
+        "probs": 0.97
+      },
+      {
+        "sym": "CPU",
+        "lost_bps": 6,
+        "selected": false,
+        "probs": 0.02
       },
       {
         "sym": "CAKE",
@@ -786,12 +792,6 @@
         "lost_bps": 7,
         "selected": false,
         "probs": 0.0
-      },
-      {
-        "sym": "STENKS",
-        "lost_bps": 11,
-        "selected": false,
-        "probs": 0.0
       }
     ],
     "model": "jev-1.13.0",
@@ -799,12 +799,12 @@
       "pick": {
         "type": "choice",
         "choice": "NAMI",
-        "confidence": 0.98
+        "confidence": 0.95
       },
       "edge": {
         "type": "score",
-        "score": 2.18,
-        "confidence": 0.36
+        "score": 2.17,
+        "confidence": 0.33
       },
       "open_now": {
         "type": "noul",
@@ -812,7 +812,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 08:35:52 ET",
+    "stamp_et": "2026-09-27 08:36:33 ET",
     "live": true
   }
 }
