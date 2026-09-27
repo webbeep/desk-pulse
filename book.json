@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-27 11:14:43 ET",
+  "updated_et": "2026-09-27 11:14:46 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 284.2206,
-  "upnl_usd": -5.0,
+  "upnl_usd": 0.0,
   "equity_usd": 284.2206,
-  "status": "LIVE_OPEN",
+  "status": "EXITING:CUT_HARD_QUOTER",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-14.2021 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -6.4094,
@@ -40,33 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-82",
-      "market": "MONEROPAD",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 7.742690864838233e-06,
-      "mark": 7.742690864838233e-06,
-      "uPnL": -5.0,
-      "mtm_pct": -100.0,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x00edf756b5132d910a00eb59f447ddf1c39e919fbe26519e4913bbe38eacd64e",
-      "token": "0x55d281b2daD0C2427857CeE0552F35735D617322",
-      "held_sec": 6,
-      "weth_out": 0.0,
-      "usd_out": 0.0
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 10:19:01 ET",
-      "equity_usd": 296.5938,
-      "liquid_usd": 291.2044,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-09-27 10:19:08 ET",
       "equity_usd": 291.2044,
@@ -1459,6 +1434,13 @@
       "liquid_usd": 284.2206,
       "upnl_usd": -5.0,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 11:14:46 ET",
+      "equity_usd": 284.2206,
+      "liquid_usd": 284.2206,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2103,7 +2085,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM MONEROPAD uPnL $-5.0 (-100.0%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 11:14:43 ET",
+  "notes": "LIVE MTM MONEROPAD uPnL $-5.0 (-100.0%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 11:14:43 ET \u00b7 CUT CUT_HARD_QUOTER",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -2151,31 +2133,15 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-82",
-    "market": "MONEROPAD",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 7.742690864838233e-06,
-    "mark": 7.742690864838233e-06,
-    "uPnL": -5.0,
-    "mtm_pct": -100.0,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x00edf756b5132d910a00eb59f447ddf1c39e919fbe26519e4913bbe38eacd64e",
-    "token": "0x55d281b2daD0C2427857CeE0552F35735D617322",
-    "held_sec": 6,
-    "weth_out": 0.0,
-    "usd_out": 0.0
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "MONEROPAD",
+    "open": false,
+    "ticker": null,
     "tx": "0x00edf756b5132d910a00eb59f447ddf1c39e919fbe26519e4913bbe38eacd64e",
-    "size_usd": 5.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -100.0,
-    "upnl_usd": -5.0,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 6,
     "watcher": "rh_live_mtm_loop"
   },
