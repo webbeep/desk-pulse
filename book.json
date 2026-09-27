@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-26 20:21:18 ET",
+  "updated_et": "2026-09-26 20:22:06 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 99.9969,
-  "upnl_usd": -0.0021,
-  "equity_usd": 99.9948,
+  "liquid_usd": 99.9948,
+  "upnl_usd": -0.0055,
+  "equity_usd": 99.9893,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -0.0052,
-  "total_pnl_pct": -0.0052,
-  "mark_eth": 2690.4,
-  "mark": 2690.4,
+  "total_pnl_usd": -0.0107,
+  "total_pnl_pct": -0.0107,
+  "mark_eth": 2690.375,
+  "mark": 2690.375,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2690.4
+    "ETH": 2690.375
   },
   "holdings": {
-    "paper_cash_usd": 96.9969,
+    "paper_cash_usd": 96.9948,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -59,14 +59,37 @@
       "pnl_usd": -0.0031
     },
     {
-      "t": "now",
+      "t": "2026-09-26 20:21:20 ET",
       "equity_usd": 99.9948,
       "liquid_usd": 99.9948,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JAN",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0021
+    },
+    {
+      "t": "now",
+      "equity_usd": 99.9893,
+      "liquid_usd": 99.9893,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-26 20:21:20 ET",
+      "kind": "PAPER",
+      "market": "JAN",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0021,
+      "pnl_pct": -0.069,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-1560",
+      "paper": true
+    },
     {
       "t": "2026-09-26 20:16:59 ET",
       "kind": "PAPER",
@@ -84,28 +107,28 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 99.9969,
-    "mtm_equity_usd": 99.9948,
-    "realized_pnl_usd": -0.0031,
-    "unrealized_pnl_usd": -0.0021,
+    "paper_equity_usd": 99.9948,
+    "mtm_equity_usd": 99.9893,
+    "realized_pnl_usd": -0.0052,
+    "unrealized_pnl_usd": -0.0055,
     "open": {
-      "id": "PAPER-1560",
-      "ticker": "JAN",
+      "id": "PAPER-1561",
+      "ticker": "E/ACC",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $100.00 \u00b7 curve n=3 \u00b7 2026-09-26 20:21:18 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $99.99 \u00b7 curve n=4 \u00b7 2026-09-26 20:22:06 ET",
     "strategy": "MEME_V7_SELECT",
-    "closed_n": 1
+    "closed_n": 2
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.00 \u00b7 2026-09-26 20:21:18 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $99.99 \u00b7 2026-09-26 20:22:06 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AURA open_p=0.70 edge=2.37 conf=0.96",
+    "detail": "pick=AURA open_p=0.71 edge=2.36 conf=0.95",
     "pick": "AURA",
-    "open_p": 0.7,
-    "confidence": 0.96,
-    "edge_score": 2.37,
+    "open_p": 0.71,
+    "confidence": 0.95,
+    "edge_score": 2.36,
     "picks": [
       {
         "sym": "AURA",
@@ -137,20 +160,20 @@
       "pick": {
         "type": "choice",
         "choice": "AURA",
-        "confidence": 0.96
+        "confidence": 0.95
       },
       "edge": {
         "type": "score",
-        "score": 2.37,
-        "confidence": 0.25
+        "score": 2.36,
+        "confidence": 0.23
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.7
+        "noul": 0.71
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 20:17:17 ET",
+    "stamp_et": "2026-09-26 20:21:39 ET",
     "live": true
   }
 }
