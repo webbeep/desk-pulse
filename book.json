@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-27 07:21:24 ET",
+  "updated_et": "2026-09-27 07:22:13 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.0643,
-  "upnl_usd": -0.0015,
-  "equity_usd": 100.0628,
+  "upnl_usd": -0.0013,
+  "equity_usd": 100.063,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 0.0628,
-  "total_pnl_pct": 0.0628,
-  "mark_eth": 2708.095,
-  "mark": 2708.095,
+  "total_pnl_usd": 0.063,
+  "total_pnl_pct": 0.063,
+  "mark_eth": 2707.735,
+  "mark": 2707.735,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2708.095
+    "ETH": 2707.735
   },
   "holdings": {
     "paper_cash_usd": 97.0643,
@@ -310,8 +310,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 100.0628,
-      "liquid_usd": 100.0628,
+      "equity_usd": 100.063,
+      "liquid_usd": 100.063,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -660,25 +660,25 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 100.0643,
-    "mtm_equity_usd": 100.0628,
+    "mtm_equity_usd": 100.063,
     "realized_pnl_usd": 0.0643,
-    "unrealized_pnl_usd": -0.0015,
+    "unrealized_pnl_usd": -0.0013,
     "open": {
       "id": "PAPER-1584",
       "ticker": "CPU",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $100.06 \u00b7 curve n=28 \u00b7 2026-09-27 07:21:24 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.06 \u00b7 curve n=28 \u00b7 2026-09-27 07:22:13 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 26
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.06 \u00b7 2026-09-27 07:21:24 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.06 \u00b7 2026-09-27 07:22:13 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=CPU open_p=0.68 edge=2.23 conf=0.93",
+    "detail": "pick=CPU open_p=0.69 edge=2.23 conf=0.93",
     "pick": "CPU",
-    "open_p": 0.68,
+    "open_p": 0.69,
     "confidence": 0.93,
     "edge_score": 2.23,
     "picks": [
@@ -723,15 +723,15 @@
       "edge": {
         "type": "score",
         "score": 2.23,
-        "confidence": 0.2
+        "confidence": 0.18
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.68
+        "noul": 0.69
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 07:21:09 ET",
+    "stamp_et": "2026-09-27 07:22:11 ET",
     "live": true
   }
 }
