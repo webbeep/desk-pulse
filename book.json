@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-27 09:42:23 ET",
+  "updated_et": "2026-09-27 09:43:36 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 294.43,
   "upnl_usd": 0.0,
   "equity_usd": 294.4233,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-32.8015 \u00b7 SoT ledger sum",
-  "total_pnl_usd": -32.8015,
-  "total_pnl_pct": -97.1321,
+  "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-32.8082 \u00b7 SoT ledger sum",
+  "total_pnl_usd": -32.8082,
+  "total_pnl_pct": -97.1519,
   "mark_eth": 2704.23,
   "mark": 2704.23,
   "mark_src": "coinbase",
@@ -34,7 +34,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-68",
+      "market": "NAMI",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x80d1a8ea587d9999ff1e95d5622a2e5ed6b11c6d9617c8c66a76f5953d774f98",
+      "token": "0x966d7154f102D8c820d779522cC31E81795570cb",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -1695,7 +1706,7 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
   "notes": "LIVE EXIT CAKE \u00b7 TIME_FLAT_240s \u00b7 tx 0x539fc695e2dbc9c0c2dcd7ccd39bf4102930273151fbbe4f45735d169d614fc9 \u00b7 2026-09-27 09:42:23 ET",
@@ -1746,12 +1757,26 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-68",
+    "market": "NAMI",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x80d1a8ea587d9999ff1e95d5622a2e5ed6b11c6d9617c8c66a76f5953d774f98",
+    "token": "0x966d7154f102D8c820d779522cC31E81795570cb",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x539fc695e2dbc9c0c2dcd7ccd39bf4102930273151fbbe4f45735d169d614fc9",
-    "last_exit_reason": "TIME_FLAT_240s",
-    "last_exit_upnl": -0.0067
+    "open": true,
+    "flat": false,
+    "ticker": "NAMI",
+    "tx": "0x80d1a8ea587d9999ff1e95d5622a2e5ed6b11c6d9617c8c66a76f5953d774f98",
+    "size_usd": 5.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-68",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   }
 }
