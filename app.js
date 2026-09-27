@@ -944,16 +944,153 @@
     }
   }
 
+
+  const FLEET_MS = 15000;
+  const FLEET_SOURCES = [
+    "./fleet.json",
+    "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/fleet.json",
+    "https://raw.githubusercontent.com/webbeep/desk-pulse/main/fleet.json",
+  ];
+  let fleetRaw = null;
+  let fleetSrc = "";
+  let fleetAt = 0;
+  let activeTab = "pulse";
+
+  function setTab(tab) {
+    activeTab = tab === "fleet" ? "fleet" : "pulse";
+    const pulse = $("view-pulse");
+    const fleet = $("view-fleet");
+    const tp = $("tab-pulse");
+    const tf = $("tab-fleet");
+    if (pulse) pulse.hidden = activeTab !== "pulse";
+    if (fleet) fleet.hidden = activeTab !== "fleet";
+    if (tp) tp.classList.toggle("is-on", activeTab === "pulse");
+    if (tf) tf.classList.toggle("is-on", activeTab === "fleet");
+    try {
+      if (location.hash.replace("#", "") !== activeTab) {
+        history.replaceState(null, "", "#" + activeTab);
+      }
+    } catch (e) {}
+    if (activeTab === "fleet") paintFleet();
+    else if (bookRaw) render();
+  }
+
+  function pillClass(state) {
+    const s = String(state || "").toUpperCase();
+    if (s === "WORKING") return "pill pill-working";
+    if (s === "LIVE") return "pill pill-live";
+    if (s === "BLOCKED") return "pill pill-blocked";
+    if (s === "FROZEN" || s === "STANDBY" || s === "PARKED") return "pill pill-frozen";
+    if (s === "DEMOTED" || s === "ORPHAN") return "pill pill-demoted";
+    return "pill pill-idle";
+  }
+
+  function pillLabel(state) {
+    const s = String(state || "").toUpperCase();
+    if (!s) return "Idle";
+    return s.charAt(0) + s.slice(1).toLowerCase();
+  }
+
+  function paintFleet() {
+    if (!fleetRaw) return;
+    const w = $("fleet-working");
+    const i = $("fleet-idle");
+    const s = $("fleet-standby");
+    if (w) w.textContent = fleetRaw.working != null ? String(fleetRaw.working) : "—";
+    const badge = $("fleet-badge");
+    if (badge) badge.textContent = fleetRaw.working != null ? String(fleetRaw.working) : "0";
+    if (i) i.textContent = fleetRaw.idle != null ? String(fleetRaw.idle) : "—";
+    if (s) s.textContent = fleetRaw.standby != null ? String(fleetRaw.standby) : "—";
+    const lu = $("last-updated");
+    if (lu && activeTab === "fleet") lu.textContent = compactTime(fleetRaw.updated_et);
+    const list = $("fleet-list");
+    if (!list) return;
+    const bots = Array.isArray(fleetRaw.bots) ? fleetRaw.bots : [];
+    list.innerHTML = "";
+    bots.forEach(function (b) {
+      const card = document.createElement("article");
+      card.className = "fleet-card";
+      const nowTxt = b.now || b.task || "—";
+      const lastTxt = b.last_did || "—";
+      const lastEt = b.last_et || (b.age_min != null ? "~" + Math.round(Number(b.age_min)) + "m ago" : "—");
+      card.innerHTML =
+        '<div class="fleet-row">' +
+        '<p class="fleet-name"></p>' +
+        '<span class="' + pillClass(b.state) + '"></span>' +
+        "</div>" +
+        '<p class="fleet-role"></p>' +
+        '<p class="fleet-task"><span class="fleet-doing-k">Now</span> <span class="fleet-doing-v fleet-now"></span></p>' +
+        '<p class="fleet-task"><span class="fleet-doing-k">Last</span> <span class="fleet-doing-v fleet-last"></span></p>' +
+        '<p class="fleet-meta"></p>';
+      card.querySelector(".fleet-name").textContent = b.name || "—";
+      card.querySelector(".pill").textContent = pillLabel(b.state);
+      card.querySelector(".fleet-role").textContent = b.role || "—";
+      card.querySelector(".fleet-now").textContent = nowTxt;
+      card.querySelector(".fleet-last").textContent = lastEt + " · " + lastTxt;
+      card.querySelector(".fleet-meta").textContent = b.proof && b.proof !== "—" ? "proof " + b.proof : "";
+      list.appendChild(card);
+    });
+    const fs = $("fleet-src");
+    const fa = $("fleet-age");
+    if (fs) fs.textContent = fleetSrc || "fleet.json";
+    if (fa) {
+      const sec = fleetAt ? Math.max(0, Math.round((Date.now() - fleetAt) / 1000)) : null;
+      fa.textContent = sec == null ? "—" : "fleet " + sec + "s ago";
+    }
+  }
+
+  async function refreshFleet() {
+    let lastErr = null;
+    const bust = "?t=" + Date.now();
+    for (const base of FLEET_SOURCES) {
+      const url = base.indexOf("?") >= 0 ? base : base + bust;
+      try {
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const j = await res.json();
+        if (!j || !Array.isArray(j.bots)) throw new Error("bad fleet");
+        fleetRaw = j;
+        fleetSrc = base;
+        fleetAt = Date.now();
+        if (activeTab === "fleet") paintFleet();
+        else {
+          const badge = $("fleet-badge");
+          if (badge) badge.textContent = j.working != null ? String(j.working) : "0";
+        }
+        return;
+      } catch (e) {
+        lastErr = e;
+      }
+    }
+    if (activeTab === "fleet" && $("err")) {
+      $("err").hidden = false;
+      $("err").textContent = "Fleet load failed" + (lastErr ? ": " + lastErr.message : "");
+    }
+  }
+
   if (typeof document !== "undefined") {
     (async function boot() {
+      const hash = (location.hash || "").replace("#", "").toLowerCase();
+      setTab(hash === "fleet" ? "fleet" : "pulse");
+      const tp = $("tab-pulse");
+      const tf = $("tab-fleet");
+      if (tp) tp.addEventListener("click", function () { setTab("pulse"); });
+      if (tf) tf.addEventListener("click", function () { setTab("fleet"); refreshFleet(); });
+      window.addEventListener("hashchange", function () {
+        const h = (location.hash || "").replace("#", "").toLowerCase();
+        setTab(h === "fleet" ? "fleet" : "pulse");
+      });
       await refreshBook();
       await refreshMark();
+      await refreshFleet();
     })();
     setInterval(refreshBook, BOOK_MS);
     setInterval(refreshMark, MARK_MS);
+    setInterval(refreshFleet, FLEET_MS);
     setInterval(function () {
       paintAge();
       paintStale();
+      if (activeTab === "fleet") paintFleet();
     }, 1000);
   }
 })(typeof window !== "undefined" ? window : (typeof globalThis !== "undefined" ? globalThis : this));

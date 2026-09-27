@@ -10,7 +10,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Desk Pulse</title>
-  <link rel="stylesheet" href="styles.css?v=v2pulse5">
+  <link rel="stylesheet" href="styles.css?v=fleet1">
 </head>
 <body>
   <header class="top">
@@ -25,8 +25,13 @@
   </header>
 
   <main>
+    <nav class="seg" aria-label="Views">
+      <button type="button" class="seg-btn is-on" id="tab-pulse" data-tab="pulse">Pulse</button>
+      <button type="button" class="seg-btn" id="tab-fleet" data-tab="fleet">Fleet <span id="fleet-badge" class="badge">0</span></button>
+    </nav>
     <div id="err" class="err" hidden role="alert"></div>
 
+    <div id="view-pulse">
     <section class="hero" aria-label="Equity">
       <p class="hero-k" id="hero-label">Equity</p>
       <p id="equity" class="hero-n">—</p>
@@ -135,7 +140,22 @@
       <span id="src">—</span>
       <span>webbeep · auto 30s</span>
     </footer>
+    </div>
+
+    <div id="view-fleet" hidden>
+      <section class="fleet-sum" aria-label="Fleet summary">
+        <div><span class="k">Working</span> <span id="fleet-working" class="num">—</span></div>
+        <div><span class="k">Idle</span> <span id="fleet-idle" class="num">—</span></div>
+        <div><span class="k">Other</span> <span id="fleet-standby" class="num">—</span></div>
+      </section>
+      <p class="fleet-hint">What each bot is doing / last did. File-proof — not chat.</p>
+      <div id="fleet-list" class="fleet-list"></div>
+      <footer>
+        <span id="fleet-src">fleet.json</span>
+        <span id="fleet-age">—</span>
+      </footer>
+    </div>
   </main>
-  <script src="app.js?v=v2pulse5"></script>
+  <script src="app.js?v=fleet1"></script>
 </body>
 </html>

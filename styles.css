@@ -485,3 +485,86 @@ footer {
 .range-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}
 .range-btn{appearance:none;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#c8cdd6;border-radius:999px;padding:6px 12px;font:600 12px/1.2 system-ui,sans-serif}
 .range-btn.active{background:#fff;color:#0b0d12;border-color:#fff}
+
+/* —— Fleet / Bots tab —— */
+.seg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem;
+  padding: 0.15rem;
+  margin: 0 0 1rem;
+  border-radius: 12px;
+  background: #0f1319;
+  border: 1px solid var(--line);
+}
+.seg-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--mut);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 650;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+.seg-btn.is-on {
+  color: var(--fg);
+  background: #1c2330;
+  box-shadow: 0 0 0 1px #2c3545 inset;
+}
+.badge {
+  display: inline-flex;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.35rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(0, 200, 5, 0.18);
+  color: var(--ok);
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.fleet-sum {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0.15rem 0 0.85rem;
+}
+.fleet-sum > div {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.55rem 0.65rem;
+}
+.fleet-sum .k { display: block; color: var(--mut); font-size: 11px; margin-bottom: 0.15rem; }
+.fleet-sum .num { font-size: 18px; font-weight: 700; }
+.fleet-hint { margin: 0 0 0.85rem; color: var(--mut); font-size: 12px; }
+.fleet-list { display: flex; flex-direction: column; gap: 0.55rem; }
+.fleet-card {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.75rem 0.85rem;
+}
+.fleet-row { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+.fleet-name { margin: 0; font-size: 14px; font-weight: 700; }
+.fleet-role { margin: 0.25rem 0 0; color: var(--mut); font-size: 12px; }
+.fleet-task { margin: 0.45rem 0 0; font-size: 12.5px; line-height: 1.4; word-break: break-word; color: #d7dde6; }
+.fleet-doing-k { color: var(--mut); font-size: 11px; font-weight: 650; margin-right: 0.25rem; }
+.fleet-doing-v { color: #d7dde6; }
+.fleet-meta { margin: 0.35rem 0 0; color: var(--mut); font-size: 11px; }
+.fleet-proof { word-break: break-all; }
+.pill-working { color: var(--ok); background: var(--pill-long); }
+.pill-idle { color: var(--mut); background: rgba(139,147,160,0.14); }
+.pill-standby, .pill-parked, .pill-frozen { color: var(--warn); background: rgba(201,162,39,0.14); }
+.pill-orphan, .pill-blocked { color: var(--bad); background: rgba(255,80,0,0.14); }
+.pill-room, .pill-live { color: #7aa2ff; background: rgba(122,162,255,0.14); }
+.pill-demoted { color: var(--mut); background: rgba(139,147,160,0.1); text-decoration: line-through; }
