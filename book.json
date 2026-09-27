@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-27 09:26:20 ET",
+  "updated_et": "2026-09-27 09:26:22 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 294.43,
-  "upnl_usd": 0.413,
+  "upnl_usd": 0.0,
   "equity_usd": 294.843,
-  "status": "LIVE_OPEN",
+  "status": "EXITING:TP_V7_+4.5",
   "funding_usd": 290.63,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-33.2095 \u00b7 SoT ledger sum",
   "total_pnl_usd": -33.2095,
@@ -34,25 +34,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-64",
-      "market": "NAMI",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 0.00025034819952624124,
-      "mark": 0.00027102845573607245,
-      "uPnL": 0.413,
-      "mtm_pct": 8.2606,
-      "lev": 1,
-      "paper": false,
-      "tx": "0xe6eff09e694cb2114f8778ab78ee0065f9f17739dd5fea88094b82d09bdccc39",
-      "token": "0x966d7154f102D8c820d779522cC31E81795570cb",
-      "held_sec": 70,
-      "weth_out": 0.002000070150602829,
-      "usd_out": 5.41303
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "session_start",
@@ -456,6 +438,13 @@
       "liquid_usd": 294.43,
       "upnl_usd": 0.413,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 09:26:22 ET",
+      "equity_usd": 294.843,
+      "liquid_usd": 294.43,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -884,7 +873,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM NAMI uPnL $0.413 (8.2606%) \u00b7 held 70s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 09:26:20 ET",
+  "notes": "LIVE MTM NAMI uPnL $0.413 (8.2606%) \u00b7 held 70s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 09:26:20 ET \u00b7 CUT TP_V7_+4.5",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -932,31 +921,15 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-64",
-    "market": "NAMI",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 0.00025034819952624124,
-    "mark": 0.00027102845573607245,
-    "uPnL": 0.413,
-    "mtm_pct": 8.2606,
-    "lev": 1,
-    "paper": false,
-    "tx": "0xe6eff09e694cb2114f8778ab78ee0065f9f17739dd5fea88094b82d09bdccc39",
-    "token": "0x966d7154f102D8c820d779522cC31E81795570cb",
-    "held_sec": 70,
-    "weth_out": 0.002000070150602829,
-    "usd_out": 5.41303
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "NAMI",
+    "open": false,
+    "ticker": null,
     "tx": "0xe6eff09e694cb2114f8778ab78ee0065f9f17739dd5fea88094b82d09bdccc39",
-    "size_usd": 5.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 8.2606,
-    "upnl_usd": 0.413,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 70,
     "watcher": "rh_live_mtm_loop"
   }
