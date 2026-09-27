@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-27 08:15:52 ET",
+  "updated_et": "2026-09-27 08:16:40 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.2576,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 0.2576,
   "total_pnl_pct": 0.2576,
-  "mark_eth": 2714.715,
-  "mark": 2714.715,
+  "mark_eth": 2716.115,
+  "mark": 2716.115,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2714.715
+    "ETH": 2716.115
   },
   "holdings": {
     "paper_cash_usd": 100.2576,
@@ -749,31 +749,31 @@
     "realized_pnl_usd": 0.2576,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 curve n=31 \u00b7 2026-09-27 08:15:52 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 curve n=31 \u00b7 2026-09-27 08:16:40 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 30
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 FLAT \u00b7 2026-09-27 08:15:52 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 FLAT \u00b7 2026-09-27 08:16:40 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=CPU open_p=0.71 edge=2.29 conf=0.85",
+    "detail": "pick=CPU open_p=0.71 edge=2.34 conf=0.79",
     "pick": "CPU",
     "open_p": 0.71,
-    "confidence": 0.85,
-    "edge_score": 2.29,
+    "confidence": 0.79,
+    "edge_score": 2.34,
     "picks": [
       {
         "sym": "CPU",
         "lost_bps": 3,
         "selected": true,
-        "probs": 0.88
+        "probs": 0.83
       },
       {
         "sym": "NAMI",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.11
+        "probs": 0.15
       },
       {
         "sym": "CAKE",
@@ -791,7 +791,7 @@
         "sym": "JAN",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
@@ -799,12 +799,12 @@
       "pick": {
         "type": "choice",
         "choice": "CPU",
-        "confidence": 0.85
+        "confidence": 0.79
       },
       "edge": {
         "type": "score",
-        "score": 2.29,
-        "confidence": 0.21
+        "score": 2.34,
+        "confidence": 0.2
       },
       "open_now": {
         "type": "noul",
@@ -812,7 +812,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 08:15:36 ET",
+    "stamp_et": "2026-09-27 08:16:37 ET",
     "live": true
   }
 }
