@@ -358,7 +358,7 @@
     const s = String(status || "FLAT").toUpperCase();
     el.textContent = s;
     el.className = "status";
-    if (s === "LIVE" || s === "MIXED") el.classList.add("live");
+    if (s === "LIVE" || s === "MIXED" || s.indexOf("LIVE") === 0 || s.indexOf("OPEN") >= 0) el.classList.add("live");
     else if (s === "RISK") el.classList.add("risk");
     else el.classList.add("flat");
   }
