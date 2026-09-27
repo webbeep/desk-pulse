@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-27 07:23:49 ET",
+  "updated_et": "2026-09-27 07:24:37 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 100.0643,
-  "upnl_usd": 0.0003,
-  "equity_usd": 100.0646,
+  "liquid_usd": 100.0652,
+  "upnl_usd": 0.0,
+  "equity_usd": 100.0652,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 0.0646,
-  "total_pnl_pct": 0.0646,
-  "mark_eth": 2709.2,
-  "mark": 2709.2,
+  "total_pnl_usd": 0.0652,
+  "total_pnl_pct": 0.0652,
+  "mark_eth": 2709.555,
+  "mark": 2709.555,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2709.2
+    "ETH": 2709.555
   },
   "holdings": {
-    "paper_cash_usd": 97.0643,
+    "paper_cash_usd": 100.0652,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -307,9 +307,32 @@
       "ticker": "NIVI",
       "reason": "TP_+4.5",
       "pnl_usd": 0.3796
+    },
+    {
+      "t": "2026-09-27 07:24:28 ET",
+      "equity_usd": 100.0652,
+      "liquid_usd": 100.0652,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "CPU",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": 0.0009
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-27 07:24:28 ET",
+      "kind": "PAPER",
+      "market": "CPU",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.0009,
+      "pnl_pct": 0.0304,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-1584",
+      "paper": true
+    },
     {
       "t": "2026-09-27 07:20:32 ET",
       "kind": "PAPER",
@@ -652,28 +675,24 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 100.0643,
-    "mtm_equity_usd": 100.0646,
-    "realized_pnl_usd": 0.0643,
-    "unrealized_pnl_usd": 0.0003,
-    "open": {
-      "id": "PAPER-1584",
-      "ticker": "CPU",
-      "usd": 3.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $100.06 \u00b7 curve n=27 \u00b7 2026-09-27 07:23:49 ET",
+    "paper_equity_usd": 100.0652,
+    "mtm_equity_usd": 100.0652,
+    "realized_pnl_usd": 0.0652,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $100.07 \u00b7 curve n=28 \u00b7 2026-09-27 07:24:37 ET",
     "strategy": "MEME_V7_SELECT",
-    "closed_n": 26
+    "closed_n": 27
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.06 \u00b7 2026-09-27 07:23:49 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $100.07 \u00b7 FLAT \u00b7 2026-09-27 07:24:37 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=CPU open_p=0.68 edge=2.26 conf=0.94",
+    "detail": "pick=CPU open_p=0.68 edge=2.21 conf=0.93",
     "pick": "CPU",
     "open_p": 0.68,
-    "confidence": 0.94,
-    "edge_score": 2.26,
+    "confidence": 0.93,
+    "edge_score": 2.21,
     "picks": [
       {
         "sym": "CPU",
@@ -711,12 +730,12 @@
       "pick": {
         "type": "choice",
         "choice": "CPU",
-        "confidence": 0.94
+        "confidence": 0.93
       },
       "edge": {
         "type": "score",
-        "score": 2.26,
-        "confidence": 0.34
+        "score": 2.21,
+        "confidence": 0.31
       },
       "open_now": {
         "type": "noul",
@@ -724,7 +743,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 07:23:32 ET",
+    "stamp_et": "2026-09-27 07:24:34 ET",
     "live": true
   }
 }
