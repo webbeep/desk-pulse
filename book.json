@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-27 07:54:13 ET",
+  "updated_et": "2026-09-27 07:55:01 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 99.7873,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -0.2127,
   "total_pnl_pct": -0.2127,
-  "mark_eth": 2709.63,
-  "mark": 2709.63,
+  "mark_eth": 2709.675,
+  "mark": 2709.675,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2709.63
+    "ETH": 2709.675
   },
   "holdings": {
     "paper_cash_usd": 99.7873,
@@ -703,25 +703,25 @@
     "realized_pnl_usd": -0.2127,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 curve n=29 \u00b7 2026-09-27 07:54:13 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 curve n=29 \u00b7 2026-09-27 07:55:01 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 28
   },
-  "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 FLAT \u00b7 2026-09-27 07:54:13 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 FLAT \u00b7 2026-09-27 07:55:01 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NIVI open_p=0.63 edge=1.93 conf=0.57",
+    "detail": "pick=NIVI open_p=0.64 edge=1.79 conf=0.53",
     "pick": "NIVI",
-    "open_p": 0.63,
-    "confidence": 0.57,
-    "edge_score": 1.93,
+    "open_p": 0.64,
+    "confidence": 0.53,
+    "edge_score": 1.79,
     "picks": [
       {
         "sym": "NIVI",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.64
+        "probs": 0.61
       },
       {
         "sym": "ERRAND",
@@ -739,13 +739,13 @@
         "sym": "CPU",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.14
+        "probs": 0.16
       },
       {
         "sym": "NAMI",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.07
+        "probs": 0.08
       }
     ],
     "model": "jev-1.13.0",
@@ -753,20 +753,20 @@
       "pick": {
         "type": "choice",
         "choice": "NIVI",
-        "confidence": 0.57
+        "confidence": 0.53
       },
       "edge": {
         "type": "score",
-        "score": 1.93,
-        "confidence": 0.34
+        "score": 1.79,
+        "confidence": 0.36
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.63
+        "noul": 0.64
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 07:54:00 ET",
+    "stamp_et": "2026-09-27 07:54:41 ET",
     "live": true
   }
 }
