@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-27 18:44:04 ET",
+  "updated_et": "2026-09-27 18:44:09 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 269.5795,
-  "upnl_usd": 0.0,
-  "equity_usd": 269.5795,
+  "liquid_usd": 266.514,
+  "upnl_usd": -0.0006,
+  "equity_usd": 269.5134,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.0302 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -21.0505,
-  "total_pnl_pct": -7.2431,
-  "mark_eth": 2671.58,
-  "mark": 2671.58,
+  "total_pnl_usd": -21.1166,
+  "total_pnl_pct": -7.2658,
+  "mark_eth": 2671.01,
+  "mark": 2671.01,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2671.58
+    "ETH": 2671.01
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.05256357308916936,
+      "eth": 0.05143744927325426,
       "weth": 0.04693574216071953
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.05256357308916936,
+    "rh_eth": 0.05143744927325426,
     "rh_weth": 0.04693574216071953,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,20 +46,20 @@
       "market": "CAKE",
       "side": "LONG",
       "size_usd": 3.0,
+      "entry": 1.2064236844263338e-05,
+      "mark": 1.2061643787516884e-05,
+      "uPnL": -0.0006,
+      "mtm_pct": -0.0215,
+      "lev": 1,
+      "paper": false,
       "tx": "0xe02c7350845c3a3b493c1152ef12d28b802d499eace59eb46f3c6d87eb133cde",
       "token": "0xf0c34a09178Da8d29255fc47C62225354c2d2046",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 6,
+      "weth_out": 0.001122929224353279,
+      "usd_out": 2.999355
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-27 12:21:19 ET",
-      "equity_usd": 281.8902,
-      "liquid_usd": 278.8884,
-      "upnl_usd": 0.0018,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 12:21:26 ET",
       "equity_usd": 281.8358,
@@ -1452,6 +1452,13 @@
       "liquid_usd": 269.5795,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 18:44:09 ET",
+      "equity_usd": 269.5134,
+      "liquid_usd": 266.514,
+      "upnl_usd": -0.0006,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2309,10 +2316,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-27 18:42:49 ET",
+  "notes": "LIVE MTM CAKE uPnL $-0.0006 (-0.0215%) \u00b7 held 7s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 18:44:08 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2365,22 +2372,28 @@
     "market": "CAKE",
     "side": "LONG",
     "size_usd": 3.0,
+    "entry": 1.2064236844263338e-05,
+    "mark": 1.2061643787516884e-05,
+    "uPnL": -0.0006,
+    "mtm_pct": -0.0215,
+    "lev": 1,
+    "paper": false,
     "tx": "0xe02c7350845c3a3b493c1152ef12d28b802d499eace59eb46f3c6d87eb133cde",
     "token": "0xf0c34a09178Da8d29255fc47C62225354c2d2046",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 6,
+    "weth_out": 0.001122929224353279,
+    "usd_out": 2.999355
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "CAKE",
     "tx": "0xe02c7350845c3a3b493c1152ef12d28b802d499eace59eb46f3c6d87eb133cde",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-100",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.0215,
+    "upnl_usd": -0.0006,
+    "held_sec": 6,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.0302
 }
