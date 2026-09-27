@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-27 09:44:47 ET",
+  "updated_et": "2026-09-27 09:46:09 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 294.43,
   "upnl_usd": 0.0,
   "equity_usd": 294.8223,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-32.8082 \u00b7 SoT ledger sum",
-  "total_pnl_usd": -32.8082,
-  "total_pnl_pct": -97.1519,
+  "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-32.4155 \u00b7 SoT ledger sum",
+  "total_pnl_usd": -32.4155,
+  "total_pnl_pct": -95.989,
   "mark_eth": 2703.22,
   "mark": 2703.22,
   "mark_src": "coinbase",
@@ -34,7 +34,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-69",
+      "market": "AURA",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0xd3df57ed51a49f5faa1e3232ff28e0993c1b6b7d18646d2499e43e4e67f32aa7",
+      "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "session_start",
@@ -1784,7 +1795,7 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
   "notes": "LIVE EXIT NAMI \u00b7 TP_V7_+4.5 \u00b7 tx 0x77c3075b4e582eba9ada289ed3b72a45e08e0d42c8c8f7b31f5a8ec692aa7b30 \u00b7 2026-09-27 09:44:47 ET",
@@ -1835,12 +1846,26 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-69",
+    "market": "AURA",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0xd3df57ed51a49f5faa1e3232ff28e0993c1b6b7d18646d2499e43e4e67f32aa7",
+    "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x77c3075b4e582eba9ada289ed3b72a45e08e0d42c8c8f7b31f5a8ec692aa7b30",
-    "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": 0.3927
+    "open": true,
+    "flat": false,
+    "ticker": "AURA",
+    "tx": "0xd3df57ed51a49f5faa1e3232ff28e0993c1b6b7d18646d2499e43e4e67f32aa7",
+    "size_usd": 5.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-69",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   }
 }
