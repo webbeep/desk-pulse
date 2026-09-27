@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-27 10:18:14 ET",
+  "updated_et": "2026-09-27 10:18:18 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 296.3219,
-  "upnl_usd": 0.0,
-  "equity_usd": 296.3219,
+  "liquid_usd": 291.3831,
+  "upnl_usd": -0.0004,
+  "equity_usd": 296.3827,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-4.1995 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": 5.6919,
-  "total_pnl_pct": 1.9585,
-  "mark_eth": 2706.06,
-  "mark": 2706.06,
+  "total_pnl_usd": 5.7527,
+  "total_pnl_pct": 1.9794,
+  "mark_eth": 2706.7,
+  "mark": 2706.7,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2706.06
+    "ETH": 2706.7
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.0872788086700539,
+      "eth": 0.08542825725212924,
       "weth": 0.02081719603591261
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.0872788086700539,
+    "rh_eth": 0.08542825725212924,
     "rh_weth": 0.02081719603591261,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,20 +46,20 @@
       "market": "STENKS",
       "side": "LONG",
       "size_usd": 5.0,
+      "entry": 4.7623008648100114e-05,
+      "mark": 4.761876510045796e-05,
+      "uPnL": -0.0004,
+      "mtm_pct": -0.0089,
+      "lev": 1,
+      "paper": false,
       "tx": "0x0ea6119e2d7dc67654db15af109cb8db397b43359af32d411ec44c43c9218928",
       "token": "0xa0C340F5F520f899e3a8C4F41eC4f28663af2C7B",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 5,
+      "weth_out": 0.001847103286126253,
+      "usd_out": 4.999554
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-27 09:41:19 ET",
-      "equity_usd": 294.4227,
-      "liquid_usd": 294.43,
-      "upnl_usd": -0.0073,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 09:41:26 ET",
       "equity_usd": 294.4218,
@@ -1452,6 +1452,13 @@
       "liquid_usd": 296.3219,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 10:18:18 ET",
+      "equity_usd": 296.3827,
+      "liquid_usd": 291.3831,
+      "upnl_usd": -0.0004,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2009,10 +2016,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT JAN \u00b7 TIME_FLAT_240s \u00b7 tx 0x7db8f69df09ec915e80c5c2b71d0ff151a1258e30f1c77aa766c2595729e1b60 \u00b7 2026-09-27 10:16:53 ET",
+  "notes": "LIVE MTM STENKS uPnL $-0.0004 (-0.0089%) \u00b7 held 5s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 10:18:18 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -2065,22 +2072,28 @@
     "market": "STENKS",
     "side": "LONG",
     "size_usd": 5.0,
+    "entry": 4.7623008648100114e-05,
+    "mark": 4.761876510045796e-05,
+    "uPnL": -0.0004,
+    "mtm_pct": -0.0089,
+    "lev": 1,
+    "paper": false,
     "tx": "0x0ea6119e2d7dc67654db15af109cb8db397b43359af32d411ec44c43c9218928",
     "token": "0xa0C340F5F520f899e3a8C4F41eC4f28663af2C7B",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 5,
+    "weth_out": 0.001847103286126253,
+    "usd_out": 4.999554
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "STENKS",
     "tx": "0x0ea6119e2d7dc67654db15af109cb8db397b43359af32d411ec44c43c9218928",
     "size_usd": 5.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-75",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.0089,
+    "upnl_usd": -0.0004,
+    "held_sec": 5,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -4.1995
 }
