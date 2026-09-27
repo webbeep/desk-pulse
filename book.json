@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-27 12:46:14 ET",
+  "updated_et": "2026-09-27 12:51:42 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 271.2851,
   "upnl_usd": 0.0,
   "equity_usd": 271.2851,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-17.2081 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-14.7982 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -19.3449,
   "total_pnl_pct": -6.6562,
   "mark_eth": 2685.42,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-95",
+      "market": "CAKE",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x16a6eba6d47d2d7b9fec2b347bea2277ea19c80d104cf7afe2b55e9949b00ee8",
+      "token": "0xf0c34a09178Da8d29255fc47C62225354c2d2046",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-27 12:11:21 ET",
@@ -2238,7 +2249,7 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
   "notes": "LIVE EXIT UNDERPANTSGNOME \u00b7 TP_V7_+4.5 \u00b7 tx 0xc0e839ad6d8b6a2371cbcbde6edbb3cbec8506a917c58e841ce725262e638cdc \u00b7 2026-09-27 12:46:14 ET",
@@ -2289,13 +2300,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0xc0e839ad6d8b6a2371cbcbde6edbb3cbec8506a917c58e841ce725262e638cdc",
-    "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": 2.4099
+  "position": {
+    "id": "LIVE-SCALP-95",
+    "market": "CAKE",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x16a6eba6d47d2d7b9fec2b347bea2277ea19c80d104cf7afe2b55e9949b00ee8",
+    "token": "0xf0c34a09178Da8d29255fc47C62225354c2d2046",
+    "paper": false,
+    "uPnL": 0.0
   },
-  "realized_pnl_usd": -17.2081
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "CAKE",
+    "tx": "0x16a6eba6d47d2d7b9fec2b347bea2277ea19c80d104cf7afe2b55e9949b00ee8",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-95",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "realized_pnl_usd": -14.7982
 }
