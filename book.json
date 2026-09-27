@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-27 12:25:54 ET",
+  "updated_et": "2026-09-27 12:26:36 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 278.6737,
-  "upnl_usd": -0.0004,
-  "equity_usd": 281.6733,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 278.6105,
+  "upnl_usd": 0.0,
+  "equity_usd": 278.6105,
+  "status": "EXITING:TP_V7_+4.5",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-17.2003 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -8.9567,
-  "total_pnl_pct": -3.0818,
-  "mark_eth": 2692.6,
-  "mark": 2692.6,
+  "total_pnl_usd": -12.0195,
+  "total_pnl_pct": -4.1357,
+  "mark_eth": 2691.99,
+  "mark": 2691.99,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.6
+    "ETH": 2691.99
   },
   "holdings": {
     "L1": {
@@ -40,68 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-88",
-      "market": "CULTCAT",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 2.7646315936883588e-05,
-      "mark": 2.7643046362134044e-05,
-      "uPnL": -0.0004,
-      "mtm_pct": -0.0118,
-      "lev": 1,
-      "paper": false,
-      "tx": "0xf02e76fda76a85d772d333f6279b727d2d5e491669387c72f7ec69e29f6489d0",
-      "token": "0xc7046c9bE5C0458561Ea830a8b833Ebfc594899D",
-      "held_sec": 5,
-      "weth_out": 0.001114032981810719,
-      "usd_out": 2.999645
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 12:03:28 ET",
-      "equity_usd": 281.2889,
-      "liquid_usd": 278.2903,
-      "upnl_usd": -0.0014,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:03:36 ET",
-      "equity_usd": 281.3056,
-      "liquid_usd": 278.3069,
-      "upnl_usd": -0.0013,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:03:43 ET",
-      "equity_usd": 281.3653,
-      "liquid_usd": 278.3659,
-      "upnl_usd": -0.0006,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:03:51 ET",
-      "equity_usd": 281.3788,
-      "liquid_usd": 278.3793,
-      "upnl_usd": -0.0005,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:03:58 ET",
-      "equity_usd": 281.3799,
-      "liquid_usd": 278.3804,
-      "upnl_usd": -0.0005,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:04:06 ET",
-      "equity_usd": 281.405,
-      "liquid_usd": 278.4052,
-      "upnl_usd": -0.0002,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 12:04:14 ET",
       "equity_usd": 281.5075,
@@ -1459,6 +1399,48 @@
       "liquid_usd": 278.6737,
       "upnl_usd": -0.0004,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 12:26:05 ET",
+      "equity_usd": 281.5617,
+      "liquid_usd": 278.6022,
+      "upnl_usd": -0.0405,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 12:26:12 ET",
+      "equity_usd": 281.6703,
+      "liquid_usd": 278.6105,
+      "upnl_usd": 0.0598,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 12:26:20 ET",
+      "equity_usd": 281.6703,
+      "liquid_usd": 278.6105,
+      "upnl_usd": 0.0598,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 12:26:28 ET",
+      "equity_usd": 281.6507,
+      "liquid_usd": 278.6105,
+      "upnl_usd": 0.0402,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 12:26:35 ET",
+      "equity_usd": 281.8277,
+      "liquid_usd": 278.6105,
+      "upnl_usd": 0.2172,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 12:26:36 ET",
+      "equity_usd": 281.8277,
+      "liquid_usd": 278.6105,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2175,7 +2157,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM CULTCAT uPnL $-0.0004 (-0.0118%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 12:25:53 ET",
+  "notes": "LIVE MTM CULTCAT uPnL $0.2172 (7.2399%) \u00b7 held 47s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 12:26:34 ET \u00b7 CUT TP_V7_+4.5",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -2223,32 +2205,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-88",
-    "market": "CULTCAT",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 2.7646315936883588e-05,
-    "mark": 2.7643046362134044e-05,
-    "uPnL": -0.0004,
-    "mtm_pct": -0.0118,
-    "lev": 1,
-    "paper": false,
-    "tx": "0xf02e76fda76a85d772d333f6279b727d2d5e491669387c72f7ec69e29f6489d0",
-    "token": "0xc7046c9bE5C0458561Ea830a8b833Ebfc594899D",
-    "held_sec": 5,
-    "weth_out": 0.001114032981810719,
-    "usd_out": 2.999645
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "CULTCAT",
+    "open": false,
+    "ticker": null,
     "tx": "0xf02e76fda76a85d772d333f6279b727d2d5e491669387c72f7ec69e29f6489d0",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -0.0118,
-    "upnl_usd": -0.0004,
-    "held_sec": 5,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 46,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -17.2003
