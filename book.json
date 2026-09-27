@@ -1,29 +1,24 @@
 {
-  "updated_et": "2026-09-27 09:14:21 ET",
-  "mode": "PAPER",
+  "updated_et": "2026-09-27 09:24:22 ET",
+  "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 101.4319,
+  "liquid_usd": 294.43,
   "upnl_usd": 0.0,
-  "equity_usd": 101.4319,
-  "status": "PAPER",
-  "funding_usd": 100,
-  "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 1.4319,
-  "total_pnl_pct": 1.4319,
-  "mark_eth": 2700.575,
-  "mark": 2700.575,
+  "equity_usd": 294.43,
+  "status": "LIVE",
+  "funding_usd": 290.63,
+  "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-33.2095 \u00b7 SoT ledger sum",
+  "total_pnl_usd": -33.2095,
+  "total_pnl_pct": -98.3402,
+  "mark_eth": 2699.405,
+  "mark": 2699.405,
   "mark_src": "coinbase",
   "marks": {
     "ETH": 2700.575
   },
   "holdings": {
-    "paper_cash_usd": 101.4319,
-    "l1_eth": 0,
-    "arb_eth": 0,
-    "arb_usdc": 0,
-    "base_eth": 0,
-    "base_usdc": 0,
-    "rh_eth": 0
+    "rh_eth": 0.10766449604539383,
+    "l1_eth": 0.001407059032801532
   },
   "residuals": {
     "l1_eth": 0,
@@ -367,6 +362,12 @@
       "ticker": "STENKS",
       "reason": "TP_+4.5",
       "pnl_usd": 0.2476
+    },
+    {
+      "t": "2026-09-27 09:24:17 ET",
+      "equity_usd": 294.43,
+      "event": "LIVE_FUND_RH_V7",
+      "rh_eth": 0.10766449604539383
     }
   ],
   "trades": [
@@ -788,26 +789,20 @@
     }
   ],
   "paper": {
-    "active": true,
+    "active": false,
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
-    "mtm_equity_usd": 101.4319,
-    "realized_pnl_usd": 1.4319,
-    "unrealized_pnl_usd": 0.0,
-    "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $101.43 \u00b7 curve n=33 \u00b7 2026-09-27 09:14:21 ET",
-    "strategy": "MEME_V7_SELECT",
-    "closed_n": 32
+    "archived_et": "2026-09-27 09:24:17 ET",
+    "notes": "PAPER OFF \u00b7 VERIFY_V7 PASS archived",
+    "strategy": "MEME_V7_SELECT"
   },
-  "notes": "PAPER heartbeat \u00b7 eq $101.43 \u00b7 FLAT \u00b7 2026-09-27 09:14:21 ET",
-  "strategy": "MEME_V7_SELECT",
+  "notes": "LIVE ON 2026-09-27 09:24:17 ET \u00b7 RH funded \u00b7 first ticket pending scout under V7 caps",
+  "strategy": "MEME_V7_SELECT+HYBRID",
   "jev": {
+    "stamp_et": "2026-09-27 09:14:37 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=NAMI open_p=0.67 edge=2.23 conf=0.98",
-    "pick": "NAMI",
-    "open_p": 0.67,
-    "confidence": 0.98,
-    "edge_score": 2.23,
+    "detail": "pick=NAMI open_p=0.68 edge=2.19 conf=0.98",
     "picks": [
       {
         "sym": "NAMI",
@@ -840,25 +835,10 @@
         "probs": 0.0
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "NAMI",
-        "confidence": 0.98
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.23,
-        "confidence": 0.33
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.67
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-27 09:14:17 ET",
+    "open_p": 0.68,
+    "risk": null,
+    "confidence": 0.98,
     "live": true
   }
 }
