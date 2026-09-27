@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-27 07:57:26 ET",
+  "updated_et": "2026-09-27 07:58:14 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 99.7873,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -0.2127,
   "total_pnl_pct": -0.2127,
-  "mark_eth": 2710.125,
-  "mark": 2710.125,
+  "mark_eth": 2709.915,
+  "mark": 2709.915,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2710.125
+    "ETH": 2709.915
   },
   "holdings": {
     "paper_cash_usd": 99.7873,
@@ -703,19 +703,19 @@
     "realized_pnl_usd": -0.2127,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 curve n=29 \u00b7 2026-09-27 07:57:26 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 curve n=29 \u00b7 2026-09-27 07:58:14 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 28
   },
-  "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 FLAT \u00b7 2026-09-27 07:57:26 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 FLAT \u00b7 2026-09-27 07:58:14 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NAMI open_p=0.65 edge=1.94 conf=0.7",
+    "detail": "pick=NAMI open_p=0.66 edge=2.0 conf=0.71",
     "pick": "NAMI",
-    "open_p": 0.65,
-    "confidence": 0.7,
-    "edge_score": 1.94,
+    "open_p": 0.66,
+    "confidence": 0.71,
+    "edge_score": 2.0,
     "picks": [
       {
         "sym": "ERRAND",
@@ -727,13 +727,13 @@
         "sym": "VORTA",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.06
+        "probs": 0.05
       },
       {
         "sym": "NAMI",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.75
+        "probs": 0.76
       },
       {
         "sym": "NIVI",
@@ -753,20 +753,20 @@
       "pick": {
         "type": "choice",
         "choice": "NAMI",
-        "confidence": 0.7
+        "confidence": 0.71
       },
       "edge": {
         "type": "score",
-        "score": 1.94,
+        "score": 2.0,
         "confidence": 0.4
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 07:57:26 ET",
+    "stamp_et": "2026-09-27 07:58:07 ET",
     "live": true
   }
 }
