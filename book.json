@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-27 04:57:07 ET",
+  "updated_et": "2026-09-27 04:57:55 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.0912,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 0.0912,
   "total_pnl_pct": 0.0912,
-  "mark_eth": 2714.015,
-  "mark": 2714.015,
+  "mark_eth": 2713.195,
+  "mark": 2713.195,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2714.015
+    "ETH": 2713.195
   },
   "holdings": {
     "paper_cash_usd": 100.0912,
@@ -519,41 +519,41 @@
     "realized_pnl_usd": 0.0912,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $100.09 \u00b7 curve n=21 \u00b7 2026-09-27 04:57:07 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.09 \u00b7 curve n=21 \u00b7 2026-09-27 04:57:55 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 20
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.09 \u00b7 FLAT \u00b7 2026-09-27 04:57:07 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $100.09 \u00b7 FLAT \u00b7 2026-09-27 04:57:55 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AURA open_p=0.65 edge=2.22 conf=0.31",
+    "detail": "pick=AURA open_p=0.66 edge=2.2 conf=0.29",
     "pick": "AURA",
-    "open_p": 0.65,
-    "confidence": 0.31,
-    "edge_score": 2.22,
+    "open_p": 0.66,
+    "confidence": 0.29,
+    "edge_score": 2.2,
     "picks": [
       {
         "sym": "CAKE",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.33
+        "probs": 0.32
       },
       {
         "sym": "AURA",
         "lost_bps": 7,
         "selected": true,
-        "probs": 0.43
+        "probs": 0.39999999999999997
       },
       {
         "sym": "JAN",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.2
+        "probs": 0.24
       },
       {
         "sym": "STONK",
-        "lost_bps": 20,
+        "lost_bps": 19,
         "selected": false,
         "probs": 0.01
       },
@@ -569,20 +569,20 @@
       "pick": {
         "type": "choice",
         "choice": "AURA",
-        "confidence": 0.31
+        "confidence": 0.29
       },
       "edge": {
         "type": "score",
-        "score": 2.22,
-        "confidence": 0.38
+        "score": 2.2,
+        "confidence": 0.42
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.65
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 04:56:51 ET",
+    "stamp_et": "2026-09-27 04:57:53 ET",
     "live": true
   }
 }
