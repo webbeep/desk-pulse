@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-27 06:32:31 ET",
+  "updated_et": "2026-09-27 06:33:19 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 99.4506,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": -0.5494,
   "total_pnl_pct": -0.5494,
-  "mark_eth": 2710.335,
-  "mark": 2710.335,
+  "mark_eth": 2710.15,
+  "mark": 2710.15,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2710.335
+    "ETH": 2710.15
   },
   "holdings": {
     "paper_cash_usd": 99.4506,
@@ -611,31 +611,31 @@
     "realized_pnl_usd": -0.5494,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $99.45 \u00b7 curve n=25 \u00b7 2026-09-27 06:32:31 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $99.45 \u00b7 curve n=25 \u00b7 2026-09-27 06:33:19 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 24
   },
-  "notes": "PAPER heartbeat \u00b7 eq $99.45 \u00b7 FLAT \u00b7 2026-09-27 06:32:31 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $99.45 \u00b7 FLAT \u00b7 2026-09-27 06:33:19 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AURA open_p=0.66 edge=2.21 conf=0.26",
+    "detail": "pick=AURA open_p=0.66 edge=2.21 conf=0.3",
     "pick": "AURA",
     "open_p": 0.66,
-    "confidence": 0.26,
+    "confidence": 0.3,
     "edge_score": 2.21,
     "picks": [
       {
         "sym": "CAKE",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.35
+        "probs": 0.32
       },
       {
         "sym": "AURA",
         "lost_bps": 7,
         "selected": true,
-        "probs": 0.38
+        "probs": 0.41
       },
       {
         "sym": "JAN",
@@ -661,12 +661,12 @@
       "pick": {
         "type": "choice",
         "choice": "AURA",
-        "confidence": 0.26
+        "confidence": 0.3
       },
       "edge": {
         "type": "score",
         "score": 2.21,
-        "confidence": 0.38
+        "confidence": 0.37
       },
       "open_now": {
         "type": "noul",
@@ -674,7 +674,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 06:32:26 ET",
+    "stamp_et": "2026-09-27 06:33:07 ET",
     "live": true
   }
 }
