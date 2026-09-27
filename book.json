@@ -707,27 +707,25 @@
     "strategy": "MEME_V7_SELECT",
     "closed_n": 28
   },
-  "notes": "PAPER heartbeat \u00b7 eq $99.79 \u00b7 FLAT \u00b7 2026-09-27 07:55:01 ET",
+  "notes": "JEV OPEN \u00b7 pick=NIVI open_p=0.64 edge=1.87 conf=0.57 \u00b7 pick=NIVI open_p=0.66 edge=1.98 conf=0.59 \u00b7 PAPER heartbeat \u00b7 eq $99.79 \u00b7 FLAT \u00b7 2026-09-27 07:55:01 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
+    "stamp_et": "2026-09-27 07:55:02 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=NIVI open_p=0.64 edge=1.79 conf=0.53",
-    "pick": "NIVI",
-    "open_p": 0.64,
-    "confidence": 0.53,
-    "edge_score": 1.79,
+    "detail": "pick=NIVI open_p=0.64 edge=1.87 conf=0.57",
     "picks": [
       {
         "sym": "NIVI",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.61
+        "probs": 0.64
       },
       {
         "sym": "ERRAND",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.06
+        "probs": 0.07
       },
       {
         "sym": "VORTA",
@@ -739,34 +737,19 @@
         "sym": "CPU",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.16
+        "probs": 0.13
       },
       {
         "sym": "NAMI",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.08
+        "probs": 0.07
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "NIVI",
-        "confidence": 0.53
-      },
-      "edge": {
-        "type": "score",
-        "score": 1.79,
-        "confidence": 0.36
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.64
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-27 07:54:41 ET",
+    "open_p": 0.64,
+    "risk": null,
+    "confidence": 0.57,
     "live": true
   }
 }
