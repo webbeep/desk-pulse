@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-27 11:13:10 ET",
+  "updated_et": "2026-09-27 11:14:39 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 289.176,
   "upnl_usd": 0.0,
   "equity_usd": 289.176,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-9.2021 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-14.2021 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -1.454,
   "total_pnl_pct": -0.5003,
   "mark_eth": 2687.24,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-82",
+      "market": "MONEROPAD",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x00edf756b5132d910a00eb59f447ddf1c39e919fbe26519e4913bbe38eacd64e",
+      "token": "0x55d281b2daD0C2427857CeE0552F35735D617322",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-27 10:18:58 ET",
@@ -2082,7 +2093,7 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
   "notes": "LIVE EXIT JAN \u00b7 CUT_HARD_QUOTER \u00b7 tx 0x1372f6ad2b38cc2c1bc1503437e8ab01b73ed0eb2849c116e27c68c448a7b386 \u00b7 2026-09-27 11:13:10 ET",
@@ -2133,13 +2144,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x1372f6ad2b38cc2c1bc1503437e8ab01b73ed0eb2849c116e27c68c448a7b386",
-    "last_exit_reason": "CUT_HARD_QUOTER",
-    "last_exit_upnl": -5.0
+  "position": {
+    "id": "LIVE-SCALP-82",
+    "market": "MONEROPAD",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x00edf756b5132d910a00eb59f447ddf1c39e919fbe26519e4913bbe38eacd64e",
+    "token": "0x55d281b2daD0C2427857CeE0552F35735D617322",
+    "paper": false,
+    "uPnL": 0.0
   },
-  "realized_pnl_usd": -9.2021
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "MONEROPAD",
+    "tx": "0x00edf756b5132d910a00eb59f447ddf1c39e919fbe26519e4913bbe38eacd64e",
+    "size_usd": 5.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-82",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "realized_pnl_usd": -14.2021
 }
