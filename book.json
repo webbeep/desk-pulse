@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-27 00:55:16 ET",
+  "updated_et": "2026-09-27 00:56:04 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.0912,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 0.0912,
   "total_pnl_pct": 0.0912,
-  "mark_eth": 2692.02,
-  "mark": 2692.02,
+  "mark_eth": 2691.995,
+  "mark": 2691.995,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2692.02
+    "ETH": 2691.995
   },
   "holdings": {
     "paper_cash_usd": 100.0912,
@@ -519,19 +519,19 @@
     "realized_pnl_usd": 0.0912,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $100.09 \u00b7 curve n=21 \u00b7 2026-09-27 00:55:16 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.09 \u00b7 curve n=21 \u00b7 2026-09-27 00:56:04 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 20
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.09 \u00b7 FLAT \u00b7 2026-09-27 00:55:16 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $100.09 \u00b7 FLAT \u00b7 2026-09-27 00:56:04 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AURA open_p=0.67 edge=2.21 conf=0.29",
+    "detail": "pick=AURA open_p=0.67 edge=2.25 conf=0.27",
     "pick": "AURA",
     "open_p": 0.67,
-    "confidence": 0.29,
-    "edge_score": 2.21,
+    "confidence": 0.27,
+    "edge_score": 2.25,
     "picks": [
       {
         "sym": "CAKE",
@@ -543,13 +543,13 @@
         "sym": "AURA",
         "lost_bps": 7,
         "selected": true,
-        "probs": 0.4
+        "probs": 0.39
       },
       {
         "sym": "JAN",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.26
+        "probs": 0.27
       },
       {
         "sym": "E/ACC",
@@ -569,12 +569,12 @@
       "pick": {
         "type": "choice",
         "choice": "AURA",
-        "confidence": 0.29
+        "confidence": 0.27
       },
       "edge": {
         "type": "score",
-        "score": 2.21,
-        "confidence": 0.4
+        "score": 2.25,
+        "confidence": 0.39
       },
       "open_now": {
         "type": "noul",
@@ -582,7 +582,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 00:54:59 ET",
+    "stamp_et": "2026-09-27 00:56:01 ET",
     "live": true
   }
 }
