@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-27 19:17:13 ET",
+  "updated_et": "2026-09-27 19:19:09 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 264.3428,
-  "upnl_usd": 0.0005,
-  "equity_usd": 267.3433,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 264.2787,
+  "upnl_usd": 0.0,
+  "equity_usd": 264.2787,
+  "status": "EXITING:TIME_FLAT_120s",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.0321 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -23.2867,
-  "total_pnl_pct": -8.0125,
-  "mark_eth": 2679.67,
-  "mark": 2679.67,
+  "total_pnl_usd": -26.3513,
+  "total_pnl_pct": -9.067,
+  "mark_eth": 2679.02,
+  "mark": 2679.02,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2679.67
+    "ETH": 2679.02
   },
   "holdings": {
     "L1": {
@@ -40,131 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-103",
-      "market": "CAKE",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 1.2098781324394911e-05,
-      "mark": 1.2100742275187615e-05,
-      "uPnL": 0.0005,
-      "mtm_pct": 0.0162,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x6ba062707a5f2b2796664478b968862463a7dc3721e5853fdc0cdb9c29e9c2ec",
-      "token": "0xf0c34a09178Da8d29255fc47C62225354c2d2046",
-      "held_sec": 5,
-      "weth_out": 0.001119722292341628,
-      "usd_out": 3.000486
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 12:35:05 ET",
-      "equity_usd": 269.1771,
-      "liquid_usd": 266.1791,
-      "upnl_usd": -0.002,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:35:12 ET",
-      "equity_usd": 269.1821,
-      "liquid_usd": 266.184,
-      "upnl_usd": -0.0019,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:35:19 ET",
-      "equity_usd": 269.1992,
-      "liquid_usd": 266.2009,
-      "upnl_usd": -0.0017,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:35:27 ET",
-      "equity_usd": 269.2603,
-      "liquid_usd": 266.2613,
-      "upnl_usd": -0.001,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:35:35 ET",
-      "equity_usd": 269.2742,
-      "liquid_usd": 266.2751,
-      "upnl_usd": -0.0009,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:35:42 ET",
-      "equity_usd": 268.9819,
-      "liquid_usd": 265.986,
-      "upnl_usd": -0.0041,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:35:49 ET",
-      "equity_usd": 268.9978,
-      "liquid_usd": 266.0018,
-      "upnl_usd": -0.004,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:35:57 ET",
-      "equity_usd": 268.9758,
-      "liquid_usd": 265.98,
-      "upnl_usd": -0.0042,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:36:05 ET",
-      "equity_usd": 268.9528,
-      "liquid_usd": 265.9573,
-      "upnl_usd": -0.0045,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:36:14 ET",
-      "equity_usd": 268.8857,
-      "liquid_usd": 265.8909,
-      "upnl_usd": -0.0052,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:36:22 ET",
-      "equity_usd": 268.9528,
-      "liquid_usd": 265.9573,
-      "upnl_usd": -0.0045,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:36:30 ET",
-      "equity_usd": 269.0019,
-      "liquid_usd": 266.0058,
-      "upnl_usd": -0.0039,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:36:37 ET",
-      "equity_usd": 269.0009,
-      "liquid_usd": 266.0048,
-      "upnl_usd": -0.0039,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:36:44 ET",
-      "equity_usd": 268.8416,
-      "liquid_usd": 265.8473,
-      "upnl_usd": -0.0057,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 12:36:52 ET",
-      "equity_usd": 268.8717,
-      "liquid_usd": 265.8771,
-      "upnl_usd": -0.0054,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 12:37:00 ET",
       "equity_usd": 268.9708,
@@ -1459,6 +1336,111 @@
       "liquid_usd": 264.3428,
       "upnl_usd": 0.0005,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:17:23 ET",
+      "equity_usd": 267.2705,
+      "liquid_usd": 264.2708,
+      "upnl_usd": -0.0003,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:17:30 ET",
+      "equity_usd": 267.1897,
+      "liquid_usd": 264.1909,
+      "upnl_usd": -0.0012,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:17:38 ET",
+      "equity_usd": 267.1876,
+      "liquid_usd": 264.1889,
+      "upnl_usd": -0.0013,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:17:45 ET",
+      "equity_usd": 267.1946,
+      "liquid_usd": 264.1958,
+      "upnl_usd": -0.0012,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:17:58 ET",
+      "equity_usd": 267.2395,
+      "liquid_usd": 264.2402,
+      "upnl_usd": -0.0007,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:18:06 ET",
+      "equity_usd": 267.1677,
+      "liquid_usd": 264.1692,
+      "upnl_usd": -0.0015,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:18:13 ET",
+      "equity_usd": 267.2415,
+      "liquid_usd": 264.2422,
+      "upnl_usd": -0.0007,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:18:21 ET",
+      "equity_usd": 267.2625,
+      "liquid_usd": 264.2629,
+      "upnl_usd": -0.0004,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:18:28 ET",
+      "equity_usd": 267.2525,
+      "liquid_usd": 264.253,
+      "upnl_usd": -0.0005,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:18:37 ET",
+      "equity_usd": 267.3562,
+      "liquid_usd": 264.3556,
+      "upnl_usd": 0.0006,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:18:45 ET",
+      "equity_usd": 267.3762,
+      "liquid_usd": 264.3753,
+      "upnl_usd": 0.0009,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:18:53 ET",
+      "equity_usd": 267.1977,
+      "liquid_usd": 264.1988,
+      "upnl_usd": -0.0011,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:19:01 ET",
+      "equity_usd": 267.2126,
+      "liquid_usd": 264.2136,
+      "upnl_usd": -0.001,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:19:09 ET",
+      "equity_usd": 267.2785,
+      "liquid_usd": 264.2787,
+      "upnl_usd": -0.0002,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 19:19:09 ET",
+      "equity_usd": 267.2785,
+      "liquid_usd": 264.2787,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2355,7 +2337,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM CAKE uPnL $0.0005 (0.0162%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 19:17:12 ET",
+  "notes": "LIVE MTM CAKE uPnL $-0.0002 (-0.0081%) \u00b7 held 121s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 19:19:07 ET \u00b7 CUT TIME_FLAT_120s",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2403,32 +2385,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-103",
-    "market": "CAKE",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 1.2098781324394911e-05,
-    "mark": 1.2100742275187615e-05,
-    "uPnL": 0.0005,
-    "mtm_pct": 0.0162,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x6ba062707a5f2b2796664478b968862463a7dc3721e5853fdc0cdb9c29e9c2ec",
-    "token": "0xf0c34a09178Da8d29255fc47C62225354c2d2046",
-    "held_sec": 5,
-    "weth_out": 0.001119722292341628,
-    "usd_out": 3.000486
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "CAKE",
+    "open": false,
+    "ticker": null,
     "tx": "0x6ba062707a5f2b2796664478b968862463a7dc3721e5853fdc0cdb9c29e9c2ec",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 0.0162,
-    "upnl_usd": 0.0005,
-    "held_sec": 5,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 120,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.0321
