@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-27 09:27:47 ET",
+  "updated_et": "2026-09-27 09:27:51 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 294.43,
-  "upnl_usd": 0.0,
-  "equity_usd": 294.843,
+  "upnl_usd": -0.0005,
+  "equity_usd": 294.4295,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-32.7968 \u00b7 SoT ledger sum",
   "total_pnl_usd": -32.7968,
   "total_pnl_pct": -97.1182,
-  "mark_eth": 2706.42,
-  "mark": 2706.42,
+  "mark_eth": 2707.29,
+  "mark": 2707.29,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2706.42
+    "ETH": 2707.29
   },
   "holdings": {
     "rh_eth": 0.10766449604539383,
@@ -40,10 +40,17 @@
       "market": "AURA",
       "side": "LONG",
       "size_usd": 5.0,
+      "entry": 1.3614284278095385e-05,
+      "mark": 1.3612819110775684e-05,
+      "uPnL": -0.0005,
+      "mtm_pct": -0.0108,
+      "lev": 1,
+      "paper": false,
       "tx": "0x33d2af5bc85789a25b1b1acfad3817dd423b3b117ceeeb980a1c5c6780bd617b",
       "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 5,
+      "weth_out": 0.001846666556119862,
+      "usd_out": 4.999462
     }
   ],
   "pnl_history": [
@@ -463,6 +470,13 @@
       "liquid_usd": 294.43,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 09:27:51 ET",
+      "equity_usd": 294.4295,
+      "liquid_usd": 294.43,
+      "upnl_usd": -0.0005,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -900,10 +914,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT NAMI \u00b7 TP_V7_+4.5 \u00b7 tx 0xbf73c0934c46f824cf9ed266ef4fcc37a8c1ce49021af82f2a4498e6d02ab4c2 \u00b7 2026-09-27 09:26:31 ET",
+  "notes": "LIVE MTM AURA uPnL $-0.0005 (-0.0108%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 09:27:51 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -956,21 +970,27 @@
     "market": "AURA",
     "side": "LONG",
     "size_usd": 5.0,
+    "entry": 1.3614284278095385e-05,
+    "mark": 1.3612819110775684e-05,
+    "uPnL": -0.0005,
+    "mtm_pct": -0.0108,
+    "lev": 1,
+    "paper": false,
     "tx": "0x33d2af5bc85789a25b1b1acfad3817dd423b3b117ceeeb980a1c5c6780bd617b",
     "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 5,
+    "weth_out": 0.001846666556119862,
+    "usd_out": 4.999462
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "AURA",
     "tx": "0x33d2af5bc85789a25b1b1acfad3817dd423b3b117ceeeb980a1c5c6780bd617b",
     "size_usd": 5.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-65",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.0108,
+    "upnl_usd": -0.0005,
+    "held_sec": 5,
+    "watcher": "rh_live_mtm_loop"
   }
 }
