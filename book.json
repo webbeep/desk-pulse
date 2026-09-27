@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-27 12:13:06 ET",
+  "updated_et": "2026-09-27 12:13:18 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 278.6112,
+  "liquid_usd": 278.6122,
   "upnl_usd": 0.0,
-  "equity_usd": 278.6112,
+  "equity_usd": 278.6122,
   "status": "EXITING:TIME_FLAT_240s",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-17.2018 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -12.0188,
-  "total_pnl_pct": -4.1354,
-  "mark_eth": 2691.77,
-  "mark": 2691.77,
+  "total_pnl_usd": -12.0178,
+  "total_pnl_pct": -4.1351,
+  "mark_eth": 2691.78,
+  "mark": 2691.78,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2691.77
+    "ETH": 2691.78
   },
   "holdings": {
     "L1": {
@@ -42,20 +42,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 11:16:37 ET",
-      "equity_usd": 284.606,
-      "liquid_usd": 279.6016,
-      "upnl_usd": 0.0044,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 11:16:45 ET",
-      "equity_usd": 284.6768,
-      "liquid_usd": 279.6712,
-      "upnl_usd": 0.0056,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 11:16:53 ET",
       "equity_usd": 284.7043,
@@ -1441,6 +1427,20 @@
       "liquid_usd": 278.6112,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 12:13:17 ET",
+      "equity_usd": 281.6142,
+      "liquid_usd": 278.6122,
+      "upnl_usd": 0.002,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 12:13:18 ET",
+      "equity_usd": 281.6142,
+      "liquid_usd": 278.6122,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2133,7 +2133,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM CAKE uPnL $0.002 (0.0674%) \u00b7 held 756s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 12:13:05 ET \u00b7 CUT TIME_FLAT_240s",
+  "notes": "LIVE MTM CAKE uPnL $0.002 (0.0677%) \u00b7 held 768s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 12:13:17 ET \u00b7 CUT TIME_FLAT_240s",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -2190,7 +2190,7 @@
     "max_loss_usd": 1.5,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 756,
+    "held_sec": 768,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -17.2018
