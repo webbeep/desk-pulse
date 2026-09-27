@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 22:58:19 ET",
+  "updated_et": "2026-09-26 22:59:07 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.1765,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 0.1765,
   "total_pnl_pct": 0.1765,
-  "mark_eth": 2696.815,
-  "mark": 2696.815,
+  "mark_eth": 2697.085,
+  "mark": 2697.085,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2696.815
+    "ETH": 2697.085
   },
   "holdings": {
     "paper_cash_usd": 100.1765,
@@ -266,37 +266,37 @@
     "realized_pnl_usd": 0.1765,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $100.18 \u00b7 curve n=10 \u00b7 2026-09-26 22:58:19 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.18 \u00b7 curve n=10 \u00b7 2026-09-26 22:59:07 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 9
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.18 \u00b7 FLAT \u00b7 2026-09-26 22:58:19 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $100.18 \u00b7 FLAT \u00b7 2026-09-26 22:59:07 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=AURA open_p=0.67 edge=2.18 conf=0.84",
+    "detail": "pick=AURA open_p=0.67 edge=2.25 conf=0.86",
     "pick": "AURA",
     "open_p": 0.67,
-    "confidence": 0.84,
-    "edge_score": 2.18,
+    "confidence": 0.86,
+    "edge_score": 2.25,
     "picks": [
       {
         "sym": "AURA",
         "lost_bps": 4,
         "selected": true,
-        "probs": 0.87
+        "probs": 0.89
       },
       {
         "sym": "CAKE",
         "lost_bps": 4,
         "selected": false,
-        "probs": 0.09999999999999999
+        "probs": 0.07
       },
       {
         "sym": "JAN",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.03
       },
       {
         "sym": "E/ACC",
@@ -316,11 +316,11 @@
       "pick": {
         "type": "choice",
         "choice": "AURA",
-        "confidence": 0.84
+        "confidence": 0.86
       },
       "edge": {
         "type": "score",
-        "score": 2.18,
+        "score": 2.25,
         "confidence": 0.4
       },
       "open_now": {
@@ -329,7 +329,7 @@
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 22:58:17 ET",
+    "stamp_et": "2026-09-26 22:58:58 ET",
     "live": true
   }
 }
