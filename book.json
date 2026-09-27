@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-27 10:11:31 ET",
+  "updated_et": "2026-09-27 10:12:45 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 296.3416,
   "upnl_usd": 0.0,
   "equity_usd": 296.3416,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-4.1958 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-4.1981 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": 5.7116,
   "total_pnl_pct": 1.9652,
   "mark_eth": 2706.1,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-74",
+      "market": "JAN",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x2940ce01dda04f77e9baa231f9b408eaa9bf5ddacfd6e4935c2a9c1aaf8627b5",
+      "token": "0x70967C315d512396575daD69B2480d44C87D2B90",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-27 09:36:25 ET",
@@ -1986,7 +1997,7 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
   "notes": "LIVE EXIT AURA \u00b7 TIME_FLAT_240s \u00b7 tx 0xe411a4100d2948c75b60d12689294ac110516d33180243c729b7ce4d3f747dc2 \u00b7 2026-09-27 10:11:30 ET",
@@ -2037,13 +2048,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0xe411a4100d2948c75b60d12689294ac110516d33180243c729b7ce4d3f747dc2",
-    "last_exit_reason": "TIME_FLAT_240s",
-    "last_exit_upnl": -0.0023
+  "position": {
+    "id": "LIVE-SCALP-74",
+    "market": "JAN",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x2940ce01dda04f77e9baa231f9b408eaa9bf5ddacfd6e4935c2a9c1aaf8627b5",
+    "token": "0x70967C315d512396575daD69B2480d44C87D2B90",
+    "paper": false,
+    "uPnL": 0.0
   },
-  "realized_pnl_usd": -4.1958
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "JAN",
+    "tx": "0x2940ce01dda04f77e9baa231f9b408eaa9bf5ddacfd6e4935c2a9c1aaf8627b5",
+    "size_usd": 5.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-74",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "realized_pnl_usd": -4.1981
 }
