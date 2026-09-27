@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-27 11:35:28 ET",
+  "updated_et": "2026-09-27 11:35:33 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 281.1659,
   "upnl_usd": 0.0,
   "equity_usd": 281.1659,
-  "status": "EXITING:CUT_HARD_QUOTER",
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-14.2018 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -9.4641,
@@ -42,13 +42,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 10:54:26 ET",
-      "equity_usd": 289.2945,
-      "liquid_usd": 284.2955,
-      "upnl_usd": -0.001,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 10:54:33 ET",
       "equity_usd": 289.3182,
@@ -1441,9 +1434,28 @@
       "liquid_usd": 281.1659,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 11:35:33 ET",
+      "equity_usd": 281.1659,
+      "liquid_usd": 281.1659,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-85-EXIT",
+      "market": "EXCATLIBUR",
+      "side": "SELL",
+      "size_usd": 3.0,
+      "pnl_usd": -3.0,
+      "mtm_pct": -100.0,
+      "tx": null,
+      "reason": "CUT_HARD_QUOTER",
+      "stamp_et": "2026-09-27 11:35:33 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-84-EXIT",
       "market": "AURA",
@@ -2121,7 +2133,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM EXCATLIBUR uPnL $-3.0 (-100.0%) \u00b7 held 56s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 11:35:25 ET \u00b7 CUT CUT_HARD_QUOTER",
+  "notes": "LIVE EXIT EXCATLIBUR \u00b7 CUT_HARD_QUOTER \u00b7 tx None \u00b7 2026-09-27 11:35:33 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -2173,13 +2185,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x03ab59e5b1ed16e0db86738bb391b7a102aa70cfe44a97fb92e9e954e8a8836d",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 55,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "CUT_HARD_QUOTER",
+    "last_exit_upnl": -3.0
   },
   "realized_pnl_usd": -14.2018
 }
