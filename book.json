@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-27 12:26:42 ET",
+  "updated_et": "2026-09-27 12:28:17 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 278.608,
   "upnl_usd": 0.0,
   "equity_usd": 278.608,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-17.2003 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -12.022,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-89",
+      "market": "CULTCAT",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x1de613fd73ce25ea6f6acf3135c0a60ad5fbfabd1067ad0b4f34748a8aea7efd",
+      "token": "0xc7046c9bE5C0458561Ea830a8b833Ebfc594899D",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-27 12:04:21 ET",
@@ -2166,7 +2177,7 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
   "notes": "LIVE EXIT CULTCAT \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-09-27 12:26:42 ET",
@@ -2217,13 +2228,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-89",
+    "market": "CULTCAT",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x1de613fd73ce25ea6f6acf3135c0a60ad5fbfabd1067ad0b4f34748a8aea7efd",
+    "token": "0xc7046c9bE5C0458561Ea830a8b833Ebfc594899D",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": -3.0
+    "open": true,
+    "flat": false,
+    "ticker": "CULTCAT",
+    "tx": "0x1de613fd73ce25ea6f6acf3135c0a60ad5fbfabd1067ad0b4f34748a8aea7efd",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-89",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "realized_pnl_usd": -17.2003
 }
