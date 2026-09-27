@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-27 00:13:36 ET",
+  "updated_et": "2026-09-27 00:14:24 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.1928,
-  "upnl_usd": -0.0006,
-  "equity_usd": 100.1922,
+  "upnl_usd": -0.0012,
+  "equity_usd": 100.1916,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 0.1922,
-  "total_pnl_pct": 0.1922,
-  "mark_eth": 2699.355,
-  "mark": 2699.355,
+  "total_pnl_usd": 0.1916,
+  "total_pnl_pct": 0.1916,
+  "mark_eth": 2698.845,
+  "mark": 2698.845,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2699.355
+    "ETH": 2698.845
   },
   "holdings": {
     "paper_cash_usd": 97.1928,
@@ -220,8 +220,8 @@
     },
     {
       "t": "now",
-      "equity_usd": 100.1922,
-      "liquid_usd": 100.1922,
+      "equity_usd": 100.1916,
+      "liquid_usd": 100.1916,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
@@ -453,27 +453,27 @@
     "active": true,
     "start_equity_usd": 100,
     "paper_equity_usd": 100.1928,
-    "mtm_equity_usd": 100.1922,
+    "mtm_equity_usd": 100.1916,
     "realized_pnl_usd": 0.1928,
-    "unrealized_pnl_usd": -0.0006,
+    "unrealized_pnl_usd": -0.0012,
     "open": {
       "id": "PAPER-1575",
       "ticker": "CAKE",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $100.19 \u00b7 curve n=19 \u00b7 2026-09-27 00:13:36 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.19 \u00b7 curve n=19 \u00b7 2026-09-27 00:14:24 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 17
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.19 \u00b7 2026-09-27 00:13:36 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.19 \u00b7 2026-09-27 00:14:24 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=DKILL open_p=0.69 edge=2.17 conf=0.98",
+    "detail": "pick=DKILL open_p=0.66 edge=2.11 conf=0.98",
     "pick": "DKILL",
-    "open_p": 0.69,
+    "open_p": 0.66,
     "confidence": 0.98,
-    "edge_score": 2.17,
+    "edge_score": 2.11,
     "picks": [
       {
         "sym": "DKILL",
@@ -515,16 +515,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.17,
+        "score": 2.11,
         "confidence": 0.35
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.69
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 00:13:34 ET",
+    "stamp_et": "2026-09-27 00:14:15 ET",
     "live": true
   }
 }
