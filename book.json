@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-27 05:12:21 ET",
+  "updated_et": "2026-09-27 05:13:09 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 99.9612,
-  "upnl_usd": -0.0066,
-  "equity_usd": 99.9546,
+  "liquid_usd": 99.9558,
+  "upnl_usd": 0.0,
+  "equity_usd": 99.9558,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": -0.0454,
-  "total_pnl_pct": -0.0454,
-  "mark_eth": 2707.35,
-  "mark": 2707.35,
+  "total_pnl_usd": -0.0442,
+  "total_pnl_pct": -0.0442,
+  "mark_eth": 2708.16,
+  "mark": 2708.16,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2707.35
+    "ETH": 2708.16
   },
   "holdings": {
-    "paper_cash_usd": 96.9612,
+    "paper_cash_usd": 99.9558,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -259,14 +259,30 @@
       "pnl_usd": -0.13
     },
     {
-      "t": "now",
-      "equity_usd": 99.9546,
-      "liquid_usd": 99.9546,
+      "t": "2026-09-27 05:12:59 ET",
+      "equity_usd": 99.9558,
+      "liquid_usd": 99.9558,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "STONK",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": -0.0054
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-27 05:12:59 ET",
+      "kind": "PAPER",
+      "market": "STONK",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": -0.0054,
+      "pnl_pct": -0.1796,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-1579",
+      "paper": true
+    },
     {
       "t": "2026-09-27 05:09:20 ET",
       "kind": "PAPER",
@@ -544,79 +560,75 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 99.9612,
-    "mtm_equity_usd": 99.9546,
-    "realized_pnl_usd": -0.0388,
-    "unrealized_pnl_usd": -0.0066,
-    "open": {
-      "id": "PAPER-1579",
-      "ticker": "STONK",
-      "usd": 3.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $99.96 \u00b7 curve n=23 \u00b7 2026-09-27 05:12:21 ET",
+    "paper_equity_usd": 99.9558,
+    "mtm_equity_usd": 99.9558,
+    "realized_pnl_usd": -0.0442,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $99.96 \u00b7 curve n=23 \u00b7 2026-09-27 05:13:09 ET",
     "strategy": "MEME_V7_SELECT",
-    "closed_n": 21
+    "closed_n": 22
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $99.96 \u00b7 2026-09-27 05:12:21 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $99.96 \u00b7 FLAT \u00b7 2026-09-27 05:13:09 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=ROBINCAT open_p=0.70 edge=2.49 conf=0.92",
-    "pick": "ROBINCAT",
-    "open_p": 0.7,
-    "confidence": 0.92,
-    "edge_score": 2.49,
+    "detail": "pick=AURA open_p=0.65 edge=2.28 conf=0.3",
+    "pick": "AURA",
+    "open_p": 0.65,
+    "confidence": 0.3,
+    "edge_score": 2.28,
     "picks": [
-      {
-        "sym": "ROBINCAT",
-        "lost_bps": 5,
-        "selected": true,
-        "probs": 0.93
-      },
       {
         "sym": "CAKE",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.01
+        "probs": 0.37
       },
       {
         "sym": "AURA",
         "lost_bps": 7,
-        "selected": false,
-        "probs": 0.03
+        "selected": true,
+        "probs": 0.41
       },
       {
         "sym": "JAN",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.02
+        "probs": 0.18
       },
       {
         "sym": "STONK",
         "lost_bps": 18,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
+      },
+      {
+        "sym": "E/ACC",
+        "lost_bps": 20,
+        "selected": false,
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "ROBINCAT",
-        "confidence": 0.92
+        "choice": "AURA",
+        "confidence": 0.3
       },
       "edge": {
         "type": "score",
-        "score": 2.49,
-        "confidence": 0.37
+        "score": 2.28,
+        "confidence": 0.34
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.7
+        "noul": 0.65
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 05:11:41 ET",
+    "stamp_et": "2026-09-27 05:12:52 ET",
     "live": true
   }
 }
