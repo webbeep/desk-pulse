@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-27 12:16:34 ET",
+  "updated_et": "2026-09-27 12:16:44 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 278.6743,
@@ -42,20 +42,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 11:22:54 ET",
-      "equity_usd": 284.5459,
-      "liquid_usd": 281.5453,
-      "upnl_usd": 0.0006,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 11:23:02 ET",
-      "equity_usd": 284.5258,
-      "liquid_usd": 281.5254,
-      "upnl_usd": 0.0004,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 11:23:09 ET",
       "equity_usd": 284.5258,
@@ -1441,6 +1427,20 @@
       "liquid_usd": 278.6743,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 12:16:44 ET",
+      "equity_usd": 281.677,
+      "liquid_usd": 278.6743,
+      "upnl_usd": 0.0027,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 12:16:44 ET",
+      "equity_usd": 281.677,
+      "liquid_usd": 278.6743,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2133,7 +2133,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM CAKE uPnL $0.0027 (0.09%) \u00b7 held 965s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 12:16:33 ET \u00b7 CUT TIME_FLAT_240s",
+  "notes": "LIVE MTM CAKE uPnL $0.0027 (0.09%) \u00b7 held 975s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 12:16:43 ET \u00b7 CUT TIME_FLAT_240s",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -2190,7 +2190,7 @@
     "max_loss_usd": 1.5,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 964,
+    "held_sec": 974,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -17.2018
