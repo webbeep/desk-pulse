@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-27 12:31:58 ET",
+  "updated_et": "2026-09-27 12:32:03 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 269.2979,
   "upnl_usd": 0.0,
   "equity_usd": 269.2979,
-  "status": "EXITING:TP_V7_+4.5",
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-17.2003 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -21.3321,
@@ -42,13 +42,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 12:05:08 ET",
-      "equity_usd": 281.6111,
-      "liquid_usd": 278.6091,
-      "upnl_usd": 0.002,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 12:05:09 ET",
       "equity_usd": 281.6111,
@@ -1441,9 +1434,28 @@
       "liquid_usd": 269.2979,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 12:32:03 ET",
+      "equity_usd": 269.2979,
+      "liquid_usd": 269.2979,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-91-EXIT",
+      "market": "CULTCAT",
+      "side": "SELL",
+      "size_usd": 3.0,
+      "pnl_usd": -3.0,
+      "mtm_pct": -100.0,
+      "tx": null,
+      "reason": "TP_V7_+4.5",
+      "stamp_et": "2026-09-27 12:32:03 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-90-EXIT",
       "market": "CULTCAT",
@@ -2193,7 +2205,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM CULTCAT uPnL $7.5359 (251.1956%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 12:31:55 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT CULTCAT \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-09-27 12:32:03 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -2245,13 +2257,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x0484874bc67bbe5b78a9a220b28b302748fcd8a7dc55573f62f3bf23fd9e3d25",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 6,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": -3.0
   },
   "realized_pnl_usd": -17.2003
 }
