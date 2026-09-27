@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-27 09:42:14 ET",
+  "updated_et": "2026-09-27 09:42:23 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 294.43,
   "upnl_usd": 0.0,
   "equity_usd": 294.4233,
-  "status": "EXITING:TIME_FLAT_240s",
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-32.8015 \u00b7 SoT ledger sum",
   "total_pnl_usd": -32.8015,
@@ -1215,9 +1215,28 @@
       "liquid_usd": 294.43,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 09:42:23 ET",
+      "equity_usd": 294.4233,
+      "liquid_usd": 294.43,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-67-EXIT",
+      "market": "CAKE",
+      "side": "SELL",
+      "size_usd": 5.0,
+      "pnl_usd": -0.0067,
+      "mtm_pct": -0.1337,
+      "tx": "0x539fc695e2dbc9c0c2dcd7ccd39bf4102930273151fbbe4f45735d169d614fc9",
+      "reason": "TIME_FLAT_240s",
+      "stamp_et": "2026-09-27 09:42:23 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-66-EXIT",
       "market": "JAN",
@@ -1679,7 +1698,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM CAKE uPnL $-0.0067 (-0.1337%) \u00b7 held 242s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 09:42:14 ET \u00b7 CUT TIME_FLAT_240s",
+  "notes": "LIVE EXIT CAKE \u00b7 TIME_FLAT_240s \u00b7 tx 0x539fc695e2dbc9c0c2dcd7ccd39bf4102930273151fbbe4f45735d169d614fc9 \u00b7 2026-09-27 09:42:23 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -1731,12 +1750,8 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x123a6f99d220197831811ea1541b0b150a18965df3046b5929ac5d8300446920",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 241,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x539fc695e2dbc9c0c2dcd7ccd39bf4102930273151fbbe4f45735d169d614fc9",
+    "last_exit_reason": "TIME_FLAT_240s",
+    "last_exit_upnl": -0.0067
   }
 }
