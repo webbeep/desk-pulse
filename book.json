@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-26 23:48:45 ET",
+  "updated_et": "2026-09-26 23:49:33 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 100.3937,
@@ -10,11 +10,11 @@
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
   "total_pnl_usd": 0.3937,
   "total_pnl_pct": 0.3937,
-  "mark_eth": 2696.395,
-  "mark": 2696.395,
+  "mark_eth": 2695.885,
+  "mark": 2695.885,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2696.395
+    "ETH": 2695.885
   },
   "holdings": {
     "paper_cash_usd": 100.3937,
@@ -289,70 +289,70 @@
     "realized_pnl_usd": 0.3937,
     "unrealized_pnl_usd": 0.0,
     "open": null,
-    "notes": "PAPER heartbeat \u00b7 eq $100.39 \u00b7 curve n=11 \u00b7 2026-09-26 23:48:45 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.39 \u00b7 curve n=11 \u00b7 2026-09-26 23:49:33 ET",
     "strategy": "MEME_V7_SELECT",
     "closed_n": 10
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.39 \u00b7 FLAT \u00b7 2026-09-26 23:48:45 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $100.39 \u00b7 FLAT \u00b7 2026-09-26 23:49:33 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=JAN open_p=0.68 edge=2.19 conf=0.65",
-    "pick": "JAN",
-    "open_p": 0.68,
-    "confidence": 0.65,
-    "edge_score": 2.19,
+    "detail": "pick=CAKE open_p=0.66 edge=2.24 conf=0.26",
+    "pick": "CAKE",
+    "open_p": 0.66,
+    "confidence": 0.26,
+    "edge_score": 2.24,
     "picks": [
       {
         "sym": "CAKE",
         "lost_bps": 7,
+        "selected": true,
+        "probs": 0.38
+      },
+      {
+        "sym": "AURA",
+        "lost_bps": 7,
         "selected": false,
-        "probs": 0.25
+        "probs": 0.37
       },
       {
         "sym": "JAN",
         "lost_bps": 7,
-        "selected": true,
-        "probs": 0.71
-      },
-      {
-        "sym": "AURA",
-        "lost_bps": 8,
         "selected": false,
-        "probs": 0.03
+        "probs": 0.21
       },
       {
         "sym": "E/ACC",
         "lost_bps": 19,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       },
       {
         "sym": "AEVA",
         "lost_bps": 24,
         "selected": false,
-        "probs": 0.0
+        "probs": 0.01
       }
     ],
     "model": "jev-1.13.0",
     "raw_answers": {
       "pick": {
         "type": "choice",
-        "choice": "JAN",
-        "confidence": 0.65
+        "choice": "CAKE",
+        "confidence": 0.26
       },
       "edge": {
         "type": "score",
-        "score": 2.19,
-        "confidence": 0.42
+        "score": 2.24,
+        "confidence": 0.4
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.68
+        "noul": 0.66
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-26 23:48:35 ET",
+    "stamp_et": "2026-09-26 23:49:16 ET",
     "live": true
   }
 }
