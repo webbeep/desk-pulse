@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-27 19:10:51 ET",
+  "updated_et": "2026-09-27 19:10:55 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 269.3881,
-  "upnl_usd": 0.0,
-  "equity_usd": 269.3881,
+  "liquid_usd": 266.8907,
+  "upnl_usd": 0.0003,
+  "equity_usd": 269.891,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.0323 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -21.2419,
-  "total_pnl_pct": -7.3089,
-  "mark_eth": 2669.83,
-  "mark": 2669.83,
+  "total_pnl_usd": -20.739,
+  "total_pnl_pct": -7.1359,
+  "mark_eth": 2674.9,
+  "mark": 2674.9,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2669.83
+    "ETH": 2674.9
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.05143510144618226,
+      "eth": 0.05031022323929467,
       "weth": 0.04805867138507281
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.05143510144618226,
+    "rh_eth": 0.05031022323929467,
     "rh_weth": 0.04805867138507281,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,20 +46,20 @@
       "market": "TILLY",
       "side": "LONG",
       "size_usd": 3.0,
+      "entry": 4.6912765885326406e-05,
+      "mark": 4.69181180537267e-05,
+      "uPnL": 0.0003,
+      "mtm_pct": 0.0114,
+      "lev": 1,
+      "paper": false,
       "tx": "0xcdf96504cb5fd9ba35a9b93f9fd5c4aae057b757557600746f68bdb0b0b7422f",
       "token": "0xF6B2e92704082AB0a175A9b97da69C0695C7B0d9",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 5,
+      "weth_out": 0.001121665207307117,
+      "usd_out": 3.000342
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-27 12:26:05 ET",
-      "equity_usd": 281.5617,
-      "liquid_usd": 278.6022,
-      "upnl_usd": -0.0405,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 12:26:12 ET",
       "equity_usd": 281.6703,
@@ -1452,6 +1452,13 @@
       "liquid_usd": 269.3881,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 19:10:55 ET",
+      "equity_usd": 269.891,
+      "liquid_usd": 266.8907,
+      "upnl_usd": 0.0003,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2321,10 +2328,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-27 18:47:13 ET",
+  "notes": "LIVE MTM TILLY uPnL $0.0003 (0.0114%) \u00b7 held 5s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 19:10:55 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2377,22 +2384,28 @@
     "market": "TILLY",
     "side": "LONG",
     "size_usd": 3.0,
+    "entry": 4.6912765885326406e-05,
+    "mark": 4.69181180537267e-05,
+    "uPnL": 0.0003,
+    "mtm_pct": 0.0114,
+    "lev": 1,
+    "paper": false,
     "tx": "0xcdf96504cb5fd9ba35a9b93f9fd5c4aae057b757557600746f68bdb0b0b7422f",
     "token": "0xF6B2e92704082AB0a175A9b97da69C0695C7B0d9",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 5,
+    "weth_out": 0.001121665207307117,
+    "usd_out": 3.000342
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "TILLY",
     "tx": "0xcdf96504cb5fd9ba35a9b93f9fd5c4aae057b757557600746f68bdb0b0b7422f",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-101",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": 0.0114,
+    "upnl_usd": 0.0003,
+    "held_sec": 5,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.0323
 }
