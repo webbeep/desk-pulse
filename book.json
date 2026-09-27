@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-27 09:59:13 ET",
+  "updated_et": "2026-09-27 09:59:18 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 296.2204,
-  "upnl_usd": 0.0,
-  "equity_usd": 296.2204,
+  "liquid_usd": 291.3329,
+  "upnl_usd": 0.0023,
+  "equity_usd": 296.3352,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $0.8004 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": 5.5904,
-  "total_pnl_pct": 1.9235,
-  "mark_eth": 2708.3,
-  "mark": 2708.3,
+  "total_pnl_usd": 5.7052,
+  "total_pnl_pct": 1.963,
+  "mark_eth": 2709.4,
+  "mark": 2709.4,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2708.3
+    "ETH": 2709.4
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.09468785458826397,
+      "eth": 0.09283953750878465,
       "weth": 0.0132801324478455
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.09468785458826397,
+    "rh_eth": 0.09283953750878465,
     "rh_weth": 0.0132801324478455,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,23 +46,20 @@
       "market": "NAMI",
       "side": "LONG",
       "size_usd": 5.0,
+      "entry": 0.00032085081323153053,
+      "mark": 0.0003209958777397995,
+      "uPnL": 0.0023,
+      "mtm_pct": 0.0452,
+      "lev": 1,
+      "paper": false,
       "tx": "0x35ae8f6c1ffadaf84fd1c55327b6c877de47bae2467f0382338ec846c47e7e76",
       "token": "0x966d7154f102D8c820d779522cC31E81795570cb",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 5,
+      "weth_out": 0.001846261394559081,
+      "usd_out": 5.002261
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-27 08:50:32 ET",
-      "equity_usd": 101.4319,
-      "liquid_usd": 101.4319,
-      "upnl_usd": 0.0,
-      "n_pos": 0,
-      "ticker": "STENKS",
-      "reason": "TP_+4.5",
-      "pnl_usd": 0.2476
-    },
     {
       "t": "2026-09-27 09:24:17 ET",
       "equity_usd": 294.43,
@@ -1454,6 +1451,13 @@
       "liquid_usd": 296.2204,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 09:59:18 ET",
+      "equity_usd": 296.3352,
+      "liquid_usd": 291.3329,
+      "upnl_usd": 0.0023,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -1963,10 +1967,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT JAN \u00b7 TIME_FLAT_240s \u00b7 tx 0x0112f1e0840b3011701f0d27b439eefa5bc34883451aa7136d91239dde61abae \u00b7 2026-09-27 09:57:49 ET",
+  "notes": "LIVE MTM NAMI uPnL $0.0023 (0.0452%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 09:59:17 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -2019,22 +2023,28 @@
     "market": "NAMI",
     "side": "LONG",
     "size_usd": 5.0,
+    "entry": 0.00032085081323153053,
+    "mark": 0.0003209958777397995,
+    "uPnL": 0.0023,
+    "mtm_pct": 0.0452,
+    "lev": 1,
+    "paper": false,
     "tx": "0x35ae8f6c1ffadaf84fd1c55327b6c877de47bae2467f0382338ec846c47e7e76",
     "token": "0x966d7154f102D8c820d779522cC31E81795570cb",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 5,
+    "weth_out": 0.001846261394559081,
+    "usd_out": 5.002261
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "NAMI",
     "tx": "0x35ae8f6c1ffadaf84fd1c55327b6c877de47bae2467f0382338ec846c47e7e76",
     "size_usd": 5.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-71",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": 0.0452,
+    "upnl_usd": 0.0023,
+    "held_sec": 5,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": 0.8004
 }
