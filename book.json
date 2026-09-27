@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-27 00:08:00 ET",
+  "updated_et": "2026-09-27 00:08:48 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 100.3937,
-  "upnl_usd": 0.0011,
-  "equity_usd": 100.3948,
+  "liquid_usd": 100.3969,
+  "upnl_usd": -0.012,
+  "equity_usd": 100.3849,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 0.3948,
-  "total_pnl_pct": 0.3948,
-  "mark_eth": 2696.91,
-  "mark": 2696.91,
+  "total_pnl_usd": 0.3849,
+  "total_pnl_pct": 0.3849,
+  "mark_eth": 2696.125,
+  "mark": 2696.125,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2696.91
+    "ETH": 2696.125
   },
   "holdings": {
-    "paper_cash_usd": 97.3937,
+    "paper_cash_usd": 97.3969,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -149,14 +149,83 @@
       "pnl_usd": 0.2172
     },
     {
+      "t": "2026-09-27 00:08:02 ET",
+      "equity_usd": 100.3949,
+      "liquid_usd": 100.3949,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "JAN",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": 0.0012
+    },
+    {
+      "t": "2026-09-27 00:08:03 ET",
+      "equity_usd": 100.3961,
+      "liquid_usd": 100.3961,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "AURA",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": 0.0012
+    },
+    {
+      "t": "2026-09-27 00:08:03 ET",
+      "equity_usd": 100.3969,
+      "liquid_usd": 100.3969,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "CAKE",
+      "reason": "TIME_SOFT_300s",
+      "pnl_usd": 0.0008
+    },
+    {
       "t": "now",
-      "equity_usd": 100.3948,
-      "liquid_usd": 100.3948,
+      "equity_usd": 100.3849,
+      "liquid_usd": 100.3849,
       "upnl_usd": 0.0,
       "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-27 00:08:03 ET",
+      "kind": "PAPER",
+      "market": "CAKE",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.0008,
+      "pnl_pct": 0.027,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-1569",
+      "paper": true
+    },
+    {
+      "t": "2026-09-27 00:08:03 ET",
+      "kind": "PAPER",
+      "market": "AURA",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.0012,
+      "pnl_pct": 0.0414,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-1570",
+      "paper": true
+    },
+    {
+      "t": "2026-09-27 00:08:02 ET",
+      "kind": "PAPER",
+      "market": "JAN",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.0012,
+      "pnl_pct": 0.0411,
+      "tx": "TIME_SOFT_300s",
+      "id": "PAPER-1571",
+      "paper": true
+    },
     {
       "t": "2026-09-26 23:02:03 ET",
       "kind": "PAPER",
@@ -291,28 +360,28 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 100.3937,
-    "mtm_equity_usd": 100.3948,
-    "realized_pnl_usd": 0.3937,
-    "unrealized_pnl_usd": 0.0011,
+    "paper_equity_usd": 100.3969,
+    "mtm_equity_usd": 100.3849,
+    "realized_pnl_usd": 0.3969,
+    "unrealized_pnl_usd": -0.012,
     "open": {
-      "id": "PAPER-1569",
-      "ticker": "CAKE",
+      "id": "PAPER-1573",
+      "ticker": "JAN",
       "usd": 3.0
     },
-    "notes": "PAPER heartbeat \u00b7 eq $100.39 \u00b7 curve n=12 \u00b7 2026-09-27 00:08:00 ET",
+    "notes": "PAPER heartbeat \u00b7 eq $100.40 \u00b7 curve n=15 \u00b7 2026-09-27 00:08:48 ET",
     "strategy": "MEME_V7_SELECT",
-    "closed_n": 10
+    "closed_n": 13
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.39 \u00b7 2026-09-27 00:08:00 ET",
+  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.40 \u00b7 2026-09-27 00:08:48 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=DKILL open_p=0.68 edge=2.12 conf=0.98",
+    "detail": "pick=DKILL open_p=0.70 edge=2.18 conf=0.98",
     "pick": "DKILL",
-    "open_p": 0.68,
+    "open_p": 0.7,
     "confidence": 0.98,
-    "edge_score": 2.12,
+    "edge_score": 2.18,
     "picks": [
       {
         "sym": "DKILL",
@@ -354,16 +423,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.12,
-        "confidence": 0.34
+        "score": 2.18,
+        "confidence": 0.37
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.68
+        "noul": 0.7
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 00:03:58 ET",
+    "stamp_et": "2026-09-27 00:08:03 ET",
     "live": true
   }
 }
