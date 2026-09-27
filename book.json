@@ -1,23 +1,23 @@
 {
-  "updated_et": "2026-09-27 08:50:20 ET",
+  "updated_et": "2026-09-27 08:51:08 ET",
   "mode": "PAPER",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 100.2576,
-  "upnl_usd": 0.1742,
-  "equity_usd": 100.4318,
+  "liquid_usd": 101.4319,
+  "upnl_usd": 0.0,
+  "equity_usd": 101.4319,
   "status": "PAPER",
   "funding_usd": 100,
   "funding_note": "Paper start $100 \u00b7 curve from closed[]",
-  "total_pnl_usd": 0.4318,
-  "total_pnl_pct": 0.4318,
-  "mark_eth": 2713.285,
-  "mark": 2713.285,
+  "total_pnl_usd": 1.4319,
+  "total_pnl_pct": 1.4319,
+  "mark_eth": 2713.395,
+  "mark": 2713.395,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2713.285
+    "ETH": 2713.395
   },
   "holdings": {
-    "paper_cash_usd": 97.2576,
+    "paper_cash_usd": 101.4319,
     "l1_eth": 0,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -349,14 +349,53 @@
       "pnl_usd": 0.2101
     },
     {
-      "t": "now",
-      "equity_usd": 100.4318,
-      "liquid_usd": 100.4318,
+      "t": "2026-09-27 08:50:21 ET",
+      "equity_usd": 101.1843,
+      "liquid_usd": 101.1843,
       "upnl_usd": 0.0,
-      "n_pos": 0
+      "n_pos": 0,
+      "ticker": "NAMI",
+      "reason": "TP_+4.5",
+      "pnl_usd": 0.9267
+    },
+    {
+      "t": "2026-09-27 08:50:32 ET",
+      "equity_usd": 101.4319,
+      "liquid_usd": 101.4319,
+      "upnl_usd": 0.0,
+      "n_pos": 0,
+      "ticker": "STENKS",
+      "reason": "TP_+4.5",
+      "pnl_usd": 0.2476
     }
   ],
   "trades": [
+    {
+      "t": "2026-09-27 08:50:32 ET",
+      "kind": "PAPER",
+      "market": "STENKS",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.2476,
+      "pnl_pct": 8.2527,
+      "tx": "TP_+4.5",
+      "id": "PAPER-1590",
+      "paper": true
+    },
+    {
+      "t": "2026-09-27 08:50:21 ET",
+      "kind": "PAPER",
+      "market": "NAMI",
+      "side": "LONG",
+      "size": 3.0,
+      "size_usd": 3.0,
+      "pnl_usd": 0.9267,
+      "pnl_pct": 30.8914,
+      "tx": "TP_+4.5",
+      "id": "PAPER-1589",
+      "paper": true
+    },
     {
       "t": "2026-09-27 08:04:45 ET",
       "kind": "PAPER",
@@ -751,28 +790,24 @@
   "paper": {
     "active": true,
     "start_equity_usd": 100,
-    "paper_equity_usd": 100.2576,
-    "mtm_equity_usd": 100.4318,
-    "realized_pnl_usd": 0.2576,
-    "unrealized_pnl_usd": 0.1742,
-    "open": {
-      "id": "PAPER-1590",
-      "ticker": "STENKS",
-      "usd": 3.0
-    },
-    "notes": "PAPER heartbeat \u00b7 eq $100.26 \u00b7 curve n=32 \u00b7 2026-09-27 08:50:20 ET",
+    "paper_equity_usd": 101.4319,
+    "mtm_equity_usd": 101.4319,
+    "realized_pnl_usd": 1.4319,
+    "unrealized_pnl_usd": 0.0,
+    "open": null,
+    "notes": "PAPER heartbeat \u00b7 eq $101.43 \u00b7 curve n=33 \u00b7 2026-09-27 08:51:08 ET",
     "strategy": "MEME_V7_SELECT",
-    "closed_n": 30
+    "closed_n": 32
   },
-  "notes": "PAPER \u00b7 OPEN \u00b7 eq $100.26 \u00b7 2026-09-27 08:50:20 ET",
+  "notes": "PAPER heartbeat \u00b7 eq $101.43 \u00b7 FLAT \u00b7 2026-09-27 08:51:08 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
     "action": "OPEN",
-    "detail": "pick=NAMI open_p=0.67 edge=2.19 conf=0.98",
+    "detail": "pick=NAMI open_p=0.69 edge=2.03 conf=0.98",
     "pick": "NAMI",
-    "open_p": 0.67,
+    "open_p": 0.69,
     "confidence": 0.98,
-    "edge_score": 2.19,
+    "edge_score": 2.03,
     "picks": [
       {
         "sym": "NAMI",
@@ -814,16 +849,16 @@
       },
       "edge": {
         "type": "score",
-        "score": 2.19,
-        "confidence": 0.33
+        "score": 2.03,
+        "confidence": 0.41
       },
       "open_now": {
         "type": "noul",
-        "noul": 0.67
+        "noul": 0.69
       }
     },
     "idle": null,
-    "stamp_et": "2026-09-27 08:50:18 ET",
+    "stamp_et": "2026-09-27 08:50:59 ET",
     "live": true
   }
 }
