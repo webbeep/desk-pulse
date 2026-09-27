@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-27 09:36:59 ET",
+  "updated_et": "2026-09-27 09:37:07 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 294.43,
   "upnl_usd": 0.0,
   "equity_usd": 294.4204,
-  "status": "EXITING:TIME_FLAT_240s",
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE start $33.77 L1\u2192RH \u00b7 realized PnL $-32.7912 \u00b7 SoT ledger sum",
   "total_pnl_usd": -32.7912,
@@ -956,9 +956,28 @@
       "liquid_usd": 294.43,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 09:37:07 ET",
+      "equity_usd": 294.4204,
+      "liquid_usd": 294.43,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-66-EXIT",
+      "market": "JAN",
+      "side": "SELL",
+      "size_usd": 5.0,
+      "pnl_usd": -0.0103,
+      "mtm_pct": -0.2061,
+      "tx": "0x647b5af8ad020db20838d848e0e7a03123e9ef082b3b7c88d7eefbf9ead4da4c",
+      "reason": "TIME_FLAT_240s",
+      "stamp_et": "2026-09-27 09:37:07 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-65-EXIT",
       "market": "AURA",
@@ -1408,7 +1427,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM JAN uPnL $-0.0096 (-0.1918%) \u00b7 held 241s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 09:36:59 ET \u00b7 CUT TIME_FLAT_240s",
+  "notes": "LIVE EXIT JAN \u00b7 TIME_FLAT_240s \u00b7 tx 0x647b5af8ad020db20838d848e0e7a03123e9ef082b3b7c88d7eefbf9ead4da4c \u00b7 2026-09-27 09:37:07 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -1460,12 +1479,8 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x1c633fe28a6fb515136a6b1a593a36f5b773ec45a02f96c5c6c59564888a7f47",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 241,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x647b5af8ad020db20838d848e0e7a03123e9ef082b3b7c88d7eefbf9ead4da4c",
+    "last_exit_reason": "TIME_FLAT_240s",
+    "last_exit_upnl": -0.0103
   }
 }
