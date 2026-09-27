@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-27 12:46:02 ET",
+  "updated_et": "2026-09-27 12:46:05 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 265.885,
-  "upnl_usd": 2.2104,
-  "equity_usd": 271.0954,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 265.885,
+  "status": "EXITING:TP_V7_+4.5",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-17.2081 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -19.5346,
-  "total_pnl_pct": -6.7215,
+  "total_pnl_usd": -24.745,
+  "total_pnl_pct": -8.5143,
   "mark_eth": 2685.42,
   "mark": 2685.42,
   "mark_src": "coinbase",
@@ -40,33 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-94",
-      "market": "UNDERPANTSGNOME",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 6.198788292309718e-05,
-      "mark": 0.00010765981445639765,
-      "uPnL": 2.2104,
-      "mtm_pct": 73.6788,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x0a6c7171c3884eaf1f596a0484d78a385a4f83241464674ef93bea3f6d9ae3d2",
-      "token": "0x6808af3407ad3F81a24F77080F4146a31EDd84Fe",
-      "held_sec": 39,
-      "weth_out": 0.001940241808468109,
-      "usd_out": 5.210364
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 12:11:10 ET",
-      "equity_usd": 281.5693,
-      "liquid_usd": 278.5677,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-09-27 12:11:20 ET",
       "equity_usd": 281.5588,
@@ -1459,6 +1434,13 @@
       "liquid_usd": 265.885,
       "upnl_usd": 2.2104,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 12:46:05 ET",
+      "equity_usd": 271.0954,
+      "liquid_usd": 265.885,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2247,7 +2229,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM UNDERPANTSGNOME uPnL $2.2104 (73.6788%) \u00b7 held 39s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 12:46:02 ET",
+  "notes": "LIVE MTM UNDERPANTSGNOME uPnL $2.2104 (73.6788%) \u00b7 held 39s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 12:46:02 ET \u00b7 CUT TP_V7_+4.5",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264300s \u00b7 V7"
@@ -2295,31 +2277,15 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-94",
-    "market": "UNDERPANTSGNOME",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 6.198788292309718e-05,
-    "mark": 0.00010765981445639765,
-    "uPnL": 2.2104,
-    "mtm_pct": 73.6788,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x0a6c7171c3884eaf1f596a0484d78a385a4f83241464674ef93bea3f6d9ae3d2",
-    "token": "0x6808af3407ad3F81a24F77080F4146a31EDd84Fe",
-    "held_sec": 39,
-    "weth_out": 0.001940241808468109,
-    "usd_out": 5.210364
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "UNDERPANTSGNOME",
+    "open": false,
+    "ticker": null,
     "tx": "0x0a6c7171c3884eaf1f596a0484d78a385a4f83241464674ef93bea3f6d9ae3d2",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 73.6788,
-    "upnl_usd": 2.2104,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 39,
     "watcher": "rh_live_mtm_loop"
   },
