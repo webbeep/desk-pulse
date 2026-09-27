@@ -523,33 +523,31 @@
     "strategy": "MEME_V7_SELECT",
     "closed_n": 20
   },
-  "notes": "PAPER heartbeat \u00b7 eq $100.09 \u00b7 FLAT \u00b7 2026-09-27 00:44:02 ET",
+  "notes": "JEV OPEN \u00b7 pick=CAKE open_p=0.67 edge=2.22 conf=0.28 \u00b7 pick=AURA open_p=0.65 edge=2.24 conf=0.24 \u00b7 PAPER heartbeat \u00b7 eq $100.09 \u00b7 FLAT \u00b7 2026-09-27 00:44:02 ET",
   "strategy": "MEME_V7_SELECT",
   "jev": {
+    "stamp_et": "2026-09-27 00:44:03 ET",
+    "model": "jev-1.13.0",
     "action": "OPEN",
-    "detail": "pick=AURA open_p=0.67 edge=2.24 conf=0.26",
-    "pick": "AURA",
-    "open_p": 0.67,
-    "confidence": 0.26,
-    "edge_score": 2.24,
+    "detail": "pick=CAKE open_p=0.67 edge=2.22 conf=0.28",
     "picks": [
       {
         "sym": "CAKE",
         "lost_bps": 7,
-        "selected": false,
-        "probs": 0.3
+        "selected": true,
+        "probs": 0.39
       },
       {
         "sym": "AURA",
         "lost_bps": 7,
-        "selected": true,
-        "probs": 0.38
+        "selected": false,
+        "probs": 0.37
       },
       {
         "sym": "JAN",
         "lost_bps": 7,
         "selected": false,
-        "probs": 0.28
+        "probs": 0.2
       },
       {
         "sym": "E/ACC",
@@ -564,25 +562,10 @@
         "probs": 0.01
       }
     ],
-    "model": "jev-1.13.0",
-    "raw_answers": {
-      "pick": {
-        "type": "choice",
-        "choice": "AURA",
-        "confidence": 0.26
-      },
-      "edge": {
-        "type": "score",
-        "score": 2.24,
-        "confidence": 0.4
-      },
-      "open_now": {
-        "type": "noul",
-        "noul": 0.67
-      }
-    },
     "idle": null,
-    "stamp_et": "2026-09-27 00:43:42 ET",
+    "open_p": 0.67,
+    "risk": null,
+    "confidence": 0.28,
     "live": true
   }
 }
