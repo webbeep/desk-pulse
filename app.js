@@ -1,41 +1,19 @@
 (function (root) {
   "use strict";
 
-  const BOOK_MS = 10000;
-  const MARK_MS = 15000;
+  const BOOK_MS = 5000;
+  const MARK_MS = 5000;
   const SPOT = {
     ETH: "https://api.coinbase.com/v2/prices/ETH-USD/spot",
     BTC: "https://api.coinbase.com/v2/prices/BTC-USD/spot",
     LINK: "https://api.coinbase.com/v2/prices/LINK-USD/spot",
   };
-  // jsDelivr first — GH Pages status=errored was serving stale PAPER book.
   const SOURCES = [
-    "https://raw.githubusercontent.com/webbeep/desk-pulse/main/book.json",
-    "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/book.json",
     "./book.json",
+    "https://cdn.jsdelivr.net/gh/webby-box/desk-pulse@main/book.json",
+    "https://raw.githubusercontent.com/webby-box/desk-pulse/main/book.json",
+    "../scans/book.json",
   ];
-  async function loadVersionPinned() {
-    try {
-      const v = await loadOne("./version.json");
-      if (v && v.sha) {
-        return "https://raw.githubusercontent.com/webbeep/desk-pulse/main/book.json";
-      }
-    } catch (e) {}
-    return null;
-  }
-
-  const CHAIN_LABELS = {
-    L1: "Ethereum L1",
-    Arb: "Arbitrum",
-    Base: "Base",
-    RH: "Robinhood Chain",
-    l1_eth: "L1 ETH",
-    arb_eth: "Arb ETH",
-    arb_usdc: "Arb USDC",
-    base_eth: "Base ETH",
-    base_usdc: "Base USDC",
-    rh_eth: "RH ETH",
-  };
 
   const $ = (id) => document.getElementById(id);
 
@@ -81,7 +59,7 @@
   function truncAddr(a) {
     if (!a || typeof a !== "string") return "—";
     if (!a.startsWith("0x") || a.length < 10) return a;
-    return a.slice(0, 6) + "…" + a.slice(-4);
+    return "0x…" + a.slice(-4);
   }
 
   function truncTx(a) {
@@ -112,6 +90,16 @@
     return s;
   }
 
+  function residualRows(raw) {
+    const resObj = raw.residuals;
+    if (resObj && typeof resObj === "object" && !Array.isArray(resObj)) {
+      return Object.entries(resObj)
+        .filter(([, v]) => v != null)
+        .map(([k, v]) => ({ key: String(k).replace(/_/g, " "), val: v }));
+    }
+    return [];
+  }
+
   function normalizePos(p) {
     if (!p || typeof p !== "object") return null;
     return {
@@ -126,9 +114,11 @@
       mark: num(pick(p, ["mark"])),
       sl: num(pick(p, ["sl"])),
       tp: num(pick(p, ["tp"])),
+      slOnChain: pick(p, ["slOnChain", "sl_on_chain"]),
+      tpOnChain: pick(p, ["tpOnChain", "tp_on_chain"]),
       venue: pick(p, ["venue"]),
       status: pick(p, ["status"]),
-      upnlUsd: num(pick(p, ["upnlUsd", "upnl_usd", "uPnL", "upnl"])),
+      upnlUsd: num(pick(p, ["upnlUsd", "upnl_usd"])),
     };
   }
 
@@ -173,87 +163,47 @@
     return st === "FLAT" || open.length === 0;
   }
 
-
-  let histRange = "session";
-  let lastFullHist = [];
-
-  function parseEtMs(s) {
-    if (!s || s === "session_start" || s === "now") return null;
-    const m = String(s).match(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2}):(\d{2})/);
-    if (!m) return null;
-    return Date.UTC(+m[1], +m[2]-1, +m[3], +m[4]+4, +m[5], +m[6]);
-  }
-
-  function filterHistRange(hist, range) {
-    const arr = Array.isArray(hist) ? hist.slice() : [];
-    if (!arr.length || range === "all" || range === "session") return arr;
-    const now = Date.now();
-    const win = range === "1h" ? 3600e3 : range === "6h" ? 6*3600e3 : null;
-    if (!win) return arr;
-    const cut = now - win;
-    const kept = arr.filter(function (h) {
-      const ms = parseEtMs(pick(h, ["t", "updated_et"]));
-      return ms == null || ms >= cut;
-    });
-    return kept.length >= 2 ? kept : arr;
-  }
-
-  function wireHistRange() {
-    const row = $("hist-range");
-    if (!row || row.dataset.wired) return;
-    row.dataset.wired = "1";
-    row.addEventListener("click", function (ev) {
-      const btn = ev.target && ev.target.closest ? ev.target.closest("[data-range]") : null;
-      if (!btn) return;
-      histRange = btn.getAttribute("data-range") || "session";
-      row.querySelectorAll(".range-btn").forEach(function (b) { b.classList.toggle("active", b === btn); });
-      renderHist(filterHistRange(lastFullHist, histRange));
-    });
-  }
-
   function normalize(raw) {
     const positions = positionsFrom(raw);
+    const rows = residualRows(raw);
     const open = positions.filter(isOpen);
     const rawSt = String(pick(raw, ["status"]) || "").toUpperCase();
+    // FLAT book or no open positions: never keep stale LIVE from raw.status
     let status;
-    if (rawSt === "FLAT" || open.length === 0) status = "FLAT";
-    else status = rawSt || "LIVE";
-
+    if (rawSt === "FLAT" || open.length === 0) {
+      status = "FLAT";
+    } else {
+      status = rawSt || "LIVE";
+    }
     const histRaw = raw.pnl_history || raw.history || [];
     const hist = (Array.isArray(histRaw) ? histRaw : []).filter(function (h) {
       if (!h || typeof h !== "object") return false;
       const e = num(pick(h, ["equity_usd", "equityUsd"]));
       const l = num(pick(h, ["liquid_usd", "liquidUsd"]));
+      // drop corrupt/null equity points so spark/table do not break
       return e != null && l != null;
     });
-
-    const funding = num(pick(raw, ["fundingUsd", "funding_usd"]));
-    // V2 cutover: never invent legacy $107 — missing funding means 0
-    const fundingUsd = funding != null ? funding : 0;
-
+    const trades = raw.trades || [];
     return {
       updatedEt: pick(raw, ["updatedEt", "updated_et", "updatedAt", "updated_at"]),
       status: String(status).toUpperCase(),
       liquidUsd: num(pick(raw, ["liquidUsd", "liquid_usd"])),
       bookUpnl: num(pick(raw, ["openUpnlUsd", "upnl_usd", "open_upnl_usd"])),
       bookEquity: num(pick(raw, ["equityUsd", "equity_usd"])),
-      fundingUsd: fundingUsd,
+      fundingUsd: num(pick(raw, ["fundingUsd", "funding_usd"])),
       fundingNote: pick(raw, ["fundingNote", "funding_note"]),
       totalPnlUsd: num(pick(raw, ["totalPnlUsd", "total_pnl_usd"])),
       totalPnlPct: num(pick(raw, ["totalPnlPct", "total_pnl_pct"])),
-      residuals: (raw.residuals && typeof raw.residuals === "object") ? raw.residuals : {},
-      holdings: (raw.holdings && typeof raw.holdings === "object") ? raw.holdings : null,
+      residualRows: rows,
       wallet: pick(raw, ["wallet", "account"]),
       walletUrls: pick(raw, ["walletUrls", "wallet_urls"]),
       notes: pick(raw, ["notes"]),
       positions: positions,
-      pnlHistory: hist,
-      trades: Array.isArray(raw.trades) ? raw.trades : [],
-      mode: pick(raw, ["mode", "display_mode", "displayMode"]),
-      paper: (raw.paper && typeof raw.paper === "object") ? raw.paper : null,
-      markSrc: pick(raw, ["mark_src", "markSrc"]),
+      pnlHistory: Array.isArray(hist) ? hist : [],
+      trades: Array.isArray(trades) ? trades : [],
       marks: (function () {
         const src = raw.marks || raw.spot || {};
+        // Prefer nested marks/spot; also accept top-level mark_eth / mark_btc / mark_link (never cross-seed ETH into LINK).
         const eth = num(pick(src, ["ETH", "eth", "ETH-USD", "eth_usd"])) ?? num(pick(raw, ["mark_eth", "markEth"]));
         const btc = num(pick(src, ["BTC", "btc", "BTC-USD", "btc_usd"])) ?? num(pick(raw, ["mark_btc", "markBtc"]));
         const link = num(pick(src, ["LINK", "link", "LINK-USD", "link_usd"])) ?? num(pick(raw, ["mark_link", "markLink"]));
@@ -267,16 +217,20 @@
     if (m.indexOf("LINK") >= 0) return "LINK";
     if (m.indexOf("BTC") >= 0 || m.indexOf("WBTC") >= 0) return "BTC";
     if (m.indexOf("ETH") >= 0) return "ETH";
+    // Market set but unknown: return recognizable token symbol, else null (use p.mark).
+    // Never default unknown-with-market to ETH — that cross-filled LINK with ETH (~2505).
     if (m) {
       const tok = (m.split(/[\/:\-\s]/)[0] || "").replace(/[^A-Z0-9]/g, "");
       if (tok && tok !== "GMX" && tok !== "USD" && tok !== "USDC") return tok;
       return null;
     }
+    // Only fall back to markAsset when market empty.
     return markAsset || "ETH";
   }
 
   function markFor(p) {
     const a = assetOf(p);
+    // Prefer marks.LINK / marks.BTC / marks.ETH then p.mark. Never cross-fill LINK↔ETH (or ETH≠BTC).
     if (marks[a] != null) return marks[a];
     if (bookMarks[a] != null) return bookMarks[a];
     if (p && p.mark != null) return p.mark;
@@ -284,11 +238,10 @@
   }
 
   function liveNumbers(book) {
-    const st0 = String(book.status || "").toUpperCase();
-    if (st0 === "FLAT" && !(book.positions && book.positions.length)) {
+    if (String(book.status || "").toUpperCase() === "FLAT") {
       const liquid = book.liquidUsd != null ? book.liquidUsd : 0;
       const equity = book.bookEquity != null ? book.bookEquity : liquid;
-      return { mark: (book.marks && book.marks.ETH) || null, asset: "ETH", upnl: book.bookUpnl != null ? book.bookUpnl : 0, equity: equity, cards: [], open: [] };
+      return { mark: null, asset: markAsset, upnl: book.bookUpnl, equity: equity, cards: [], open: [] };
     }
     const open = book.positions.filter(isOpen);
     let upnl = 0;
@@ -299,6 +252,8 @@
       const m = markFor(p);
       let u = 0;
       if (isOpen(p)) {
+        // Prefer writer uPnL until live same-asset Coinbase spot is in marks[a].
+        // Do not compute from bookMarks / p.mark alone (stale book.marks can zero out first paint).
         if (marks[a] != null) {
           u = upnlOf(p, marks[a]);
         } else if (p.upnlUsd != null) {
@@ -316,6 +271,7 @@
       return { p: p, mark: m, upnl: u };
     });
     const primary = open.length ? assetOf(open[0]) : markAsset;
+    // marks.ASSET → bookMarks.ASSET → p.mark only; never cross-asset liveMark
     const mark = marks[primary] != null
       ? marks[primary]
       : (bookMarks[primary] != null
@@ -324,41 +280,33 @@
     const liquid = book.liquidUsd != null ? book.liquidUsd : 0;
     let totalUpnl;
     if (!open.length) {
-      totalUpnl = book.bookUpnl != null ? book.bookUpnl : 0;
-    } else if (usedWriter && open.every(function (p) { return marks[assetOf(p)] == null; }) && book.bookUpnl != null) {
       totalUpnl = book.bookUpnl;
+    } else if (usedWriter && open.every(function (p) { return marks[assetOf(p)] == null; }) && book.bookUpnl != null) {
+      // single writer book-level upnl is authoritative when no live spots yet
+      totalUpnl = book.bookUpnl;
+      // keep per-card writer values; sync sum for equity
       upnl = book.bookUpnl;
     } else {
       totalUpnl = upnl;
     }
-    // Paper sleeve: liquid_usd is already full paper equity (not idle cash). Do not add collateral.
-    const paperMode = String(bookRaw && (bookRaw.mode || bookRaw.display_mode) || "").toUpperCase() === "PAPER"
-      || !!(bookRaw && bookRaw.paper && bookRaw.paper.active);
-    let equity;
-    if (paperMode) {
-      if (book.bookEquity != null) equity = book.bookEquity;
-      else equity = liquid + (totalUpnl || 0);
-    } else {
-      equity = open.length ? liquid + coll + (totalUpnl || 0) : (book.bookEquity != null ? book.bookEquity : liquid);
-    }
-    return { mark: mark, asset: primary, upnl: totalUpnl, equity: equity, cards: cards, open: open, paperMode: paperMode };
+    const equity = open.length ? liquid + coll + (totalUpnl || 0) : (book.bookEquity != null ? book.bookEquity : liquid);
+    return { mark: mark, asset: primary, upnl: totalUpnl, equity: equity, cards: cards, open: open };
   }
 
   function setTone(el, n) {
-    if (!el) return;
     el.classList.remove("up", "down");
     if (n == null || Number.isNaN(Number(n))) return;
     if (Number(n) > 0) el.classList.add("up");
     if (Number(n) < 0) el.classList.add("down");
   }
 
-  function setStatus(status) {
-    const el = $("status");
-    if (!el) return;
+  function setBadge(status) {
+    const el = $("badge");
+    if (!el) return; // badge removed from UI
     const s = String(status || "FLAT").toUpperCase();
     el.textContent = s;
-    el.className = "status";
-    if (s === "LIVE" || s === "MIXED" || s.indexOf("LIVE") === 0 || s.indexOf("OPEN") >= 0) el.classList.add("live");
+    el.className = "badge";
+    if (s === "LIVE" || s === "MIXED") el.classList.add("live");
     else if (s === "RISK") el.classList.add("risk");
     else el.classList.add("flat");
   }
@@ -370,6 +318,38 @@
     return Math.floor(s / 60) + "m" + (s % 60) + "s";
   }
 
+
+  function bookStaleSec() {
+    if (!bookAt) return null;
+    return Math.floor((Date.now() - bookAt) / 1000);
+  }
+
+  function paintStale() {
+    const el = $("err");
+    if (!el) return;
+    const age = bookStaleSec();
+    // only show stale when we have a book but it is older than 90s wall vs updatedEt parse hard —
+    // use fetch age: if last successful refresh got a book whose updated_et is >3 min behind wall clock, warn.
+    if (!bookRaw) return;
+    const et = (normalize(bookRaw).updatedEt || "");
+    // parse "2026-09-07 10:49:02 ET" loosely as local ET wall
+    const m = String(et).match(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})(?::(\d{2}))?/);
+    if (!m) return;
+    const y=+m[1], mo=+m[2]-1, d=+m[3], hh=+m[4], mm=+m[5], ss=+(m[6]||0);
+    // treat as America/New_York by constructing UTC-4/-5 roughly via Date with offset -4 for Sep
+    const approx = Date.UTC(y, mo, d, hh+4, mm, ss); // EDT
+    const lagMin = (Date.now() - approx) / 60000;
+    if (lagMin > 3) {
+      el.hidden = false;
+      el.textContent = "Book stale · " + et + " · lag ~" + Math.round(lagMin) + "m — waiting for next push";
+      el.className = "err stale";
+    } else if (el.className === "err stale") {
+      el.hidden = true;
+      el.textContent = "";
+      el.className = "err";
+    }
+  }
+
   function paintAge() {
     const el = $("mark-age");
     if (el) {
@@ -377,37 +357,12 @@
       el.className = "age";
       if (markAt) {
         const s = (Date.now() - markAt) / 1000;
-        if (s > 45) el.classList.add("dead");
-        else if (s > 20) el.classList.add("stale");
+        if (s > 30) el.classList.add("dead");
+        else if (s > 12) el.classList.add("stale");
       }
     }
     const ba = $("book-age");
     if (ba) ba.textContent = "book " + ageText(bookAt);
-  }
-
-  function paintStale() {
-    const el = $("err");
-    if (!el || !bookRaw) return;
-    // Prefer time since we successfully fetched book (CDN lag ≠ writer lag).
-    const fetchLagMin = bookAt ? (Date.now() - bookAt) / 60000 : 99;
-    const et = normalize(bookRaw).updatedEt || "";
-    const m = String(et).match(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})(?::(\d{2}))?/);
-    let stampLagMin = 0;
-    if (m) {
-      // ET ≈ UTC-4 in Sep (EDT)
-      const approx = Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4] + 4, +m[5], +(m[6] || 0));
-      stampLagMin = (Date.now() - approx) / 60000;
-    }
-    // Warn only if BOTH fetch is old and stamp is old (avoid false stale from one CDN hop)
-    if (fetchLagMin > 3 && stampLagMin > 12) {
-      el.hidden = false;
-      el.textContent = "Book stale · " + et + " · stamp lag ~" + Math.round(stampLagMin) + "m";
-      el.className = "err stale";
-    } else if (el.className === "err stale") {
-      el.hidden = true;
-      el.textContent = "";
-      el.className = "err";
-    }
   }
 
   function el(tag, cls, text) {
@@ -424,7 +379,9 @@
   }
 
   function renderTherm(host, pos, mark) {
-    if (pos.sl == null || pos.tp == null || mark == null) return;
+    if (pos.sl == null || pos.tp == null || mark == null) {
+      return;
+    }
     const sl = Number(pos.sl);
     const tp = Number(pos.tp);
     const m = Number(mark);
@@ -432,6 +389,15 @@
     const hi = Math.max(sl, tp);
     const span = hi - lo || 1;
     const pct = Math.min(1, Math.max(0, (m - lo) / span));
+
+    const levels = el("div", "levels");
+    const a = el("div");
+    a.append(el("span", "k", "SL"), el("span", "v sl", px(sl)));
+    const b = el("div", "mk");
+    b.append(el("span", "k", "MARK"), el("span", "v", px(m)));
+    const c = el("div", "tp");
+    c.append(el("span", "k", "TP"), el("span", "v tp", px(tp)));
+    levels.append(a, b, c);
 
     const therm = el("div", "therm");
     const fill = el("div", "therm-fill");
@@ -447,11 +413,10 @@
     const toSl = ((m - sl) / m) * 100;
     const toTp = ((tp - m) / m) * 100;
     const dist = el("div", "dist");
-    dist.append(
-      el("span", toSl < 0 ? "down" : "", "SL " + (toSl >= 0 ? "+" : "") + toSl.toFixed(2) + "%"),
-      el("span", toTp < 0 ? "down" : "up", "TP " + (toTp >= 0 ? "+" : "") + toTp.toFixed(2) + "%")
-    );
-    host.append(therm, dist);
+    const d1 = el("span", toSl < 0 ? "down" : "", "SL " + (toSl >= 0 ? "+" : "") + toSl.toFixed(2) + "%");
+    const d2 = el("span", toTp < 0 ? "down" : "up", "TP " + (toTp >= 0 ? "+" : "") + toTp.toFixed(2) + "%");
+    dist.append(d1, d2);
+    host.append(levels, therm, dist);
   }
 
   function renderPositions(cards) {
@@ -467,9 +432,10 @@
       const card = el("article", "card");
       const head = el("div", "card-head");
       const side = String(p.side || "").toUpperCase();
+      const pill = el("span", "pill " + (side === "SHORT" ? "short" : "long"), side || "—");
       head.append(
         el("span", "mkt", [p.venue, p.market].filter(Boolean).join(" ") || "Position"),
-        el("span", "pill " + (side === "SHORT" ? "short" : "long"), side || "—")
+        pill
       );
       const grid = el("div", "grid");
       kv(grid, "Lev", p.leverage != null ? Number(p.leverage).toFixed(2) + "×" : "—");
@@ -488,9 +454,12 @@
   }
 
   function pathFrom(vals, w, h, pad) {
-    const pts = vals.map(function (v, i) { return { i: i, v: v }; }).filter(function (p) { return p.v != null; });
+    const pts = vals.map(function (v, i) {
+      return { i: i, v: v };
+    }).filter(function (p) { return p.v != null; });
     if (pts.length < 2) return "";
-    let lo = pts[0].v, hi = pts[0].v;
+    let lo = pts[0].v;
+    let hi = pts[0].v;
     for (const p of pts) {
       if (p.v < lo) lo = p.v;
       if (p.v > hi) hi = p.v;
@@ -508,11 +477,14 @@
 
   function renderSpark(hist) {
     const svg = $("spark");
-    if (!svg) return;
     svg.replaceChildren();
-    const w = 320, h = 64, pad = 4;
-    const pe = pathFrom(series(hist, "equity_usd"), w, h, pad);
-    const pu = pathFrom(series(hist, "upnl_usd"), w, h, pad);
+    const w = 320;
+    const h = 64;
+    const pad = 4;
+    const eq = series(hist, "equity_usd");
+    const up = series(hist, "upnl_usd");
+    const pe = pathFrom(eq, w, h, pad);
+    const pu = pathFrom(up, w, h, pad);
     function line(d, color) {
       if (!d) return;
       const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
@@ -523,22 +495,23 @@
       svg.appendChild(p);
     }
     line(pe, "#ffffff");
-    line(pu, "#00c805");
-    const wrap = $("spark-wrap");
-    if (wrap) wrap.hidden = !pe && !pu;
+    line(pu, "#19c37d");
+    $("spark-wrap").hidden = !pe && !pu;
   }
 
   function renderHist(hist) {
     const body = $("hist-body");
     body.replaceChildren();
     $("hist-empty").hidden = hist.length > 0;
-    for (const h of hist.slice().reverse()) {
+    const rows = hist.slice().reverse();
+    for (const h of rows) {
+      const tr = el("tr");
       const u = num(pick(h, ["upnl_usd", "upnlUsd"]));
       const e = num(pick(h, ["equity_usd", "equityUsd"]));
-      const tr = el("tr");
+      const tdU = el("td", u > 0 ? "up" : u < 0 ? "down" : "", money(u));
       tr.append(
         el("td", "", compactTime(pick(h, ["t", "updated_et"]))),
-        el("td", u > 0 ? "up" : u < 0 ? "down" : "", money(u)),
+        tdU,
         el("td", "", money(e)),
         el("td", "", String(pick(h, ["n_pos", "n"]) != null ? pick(h, ["n_pos", "n"]) : "—"))
       );
@@ -552,12 +525,12 @@
     body.replaceChildren();
     $("trades-empty").hidden = trades.length > 0;
     for (const t of trades) {
+      const tr = el("tr");
       const pnl = num(pick(t, ["pnl_usd", "pnlUsd"]));
       const size = num(pick(t, ["size_usd", "sizeUsd"]));
-      const tr = el("tr");
       tr.append(
-        el("td", "", compactTime(pick(t, ["t"]))),
-        el("td", "", String(pick(t, ["kind", "k"]) || "—")),
+        el("td", "", compactTime(pick(t, ["t", "stamp_et", "closed_et"]))),
+        el("td", "", String(pick(t, ["kind", "k"]) || (String(t.id || "").startsWith("LIVE") ? "LIVE" : (t.paper ? "PAPER" : "—")))),
         el("td", "", String(pick(t, ["market"]) || "—")),
         el("td", "", String(pick(t, ["side"]) || "—")),
         el("td", "", size != null ? money(size) : "—"),
@@ -568,61 +541,15 @@
     }
   }
 
-  function holdingsFrom(book) {
-    if (book.holdings) {
-      const order = ["L1", "Arb", "Base", "RH"];
-      const cards = [];
-      for (const key of order) {
-        if (book.holdings[key]) cards.push({ key: key, assets: book.holdings[key] });
-      }
-      for (const key of Object.keys(book.holdings)) {
-        if (order.indexOf(key) < 0) cards.push({ key: key, assets: book.holdings[key] });
-      }
-      return cards;
-    }
-    const r = book.residuals || {};
-    return [
-      { key: "L1", assets: { eth: r.l1_eth } },
-      { key: "Arb", assets: { eth: r.arb_eth, usdc: r.arb_usdc } },
-      { key: "Base", assets: { eth: r.base_eth, usdc: r.base_usdc } },
-      { key: "RH", assets: { eth: r.rh_eth } },
-    ];
-  }
-
-  function renderHoldings(book) {
-    const grid = $("holdings-grid");
-    if (!grid) return;
-    grid.replaceChildren();
-    for (const card of holdingsFrom(book)) {
-      const node = el("div", "hold-card");
-      node.append(el("p", "chain", CHAIN_LABELS[card.key] || card.key));
-      const assets = card.assets || {};
-      const keys = Object.keys(assets);
-      if (!keys.length) {
-        const row = el("div", "row");
-        row.append(el("span", "k", "—"), el("span", "v", "0"));
-        node.append(row);
-      } else {
-        for (const k of keys) {
-          const row = el("div", "row");
-          row.append(el("span", "k", String(k).toUpperCase()), el("span", "v", qty(assets[k], k)));
-          node.append(row);
-        }
-      }
-      grid.append(node);
-    }
-  }
-
   function walletUrlsFrom(book) {
     const urls = book.walletUrls;
     if (urls && typeof urls === "object") return urls;
     const w = book.wallet;
     if (!w) return null;
     return {
-      ethereum: "https://etherscan.io/address/" + w,
       arbitrum: "https://arbiscan.io/address/" + w,
       base: "https://basescan.org/address/" + w,
-      robinhood: "https://explorer.mainnet.chain.robinhood.com/address/" + w,
+      ethereum: "https://etherscan.io/address/" + w,
     };
   }
 
@@ -633,10 +560,9 @@
     const urls = walletUrlsFrom(book);
     if (!urls) return;
     const items = [
-      { key: "ethereum", label: "Ethereum" },
       { key: "arbitrum", label: "Arbitrum" },
       { key: "base", label: "Base" },
-      { key: "robinhood", label: "Robinhood" },
+      { key: "ethereum", label: "Ethereum" },
     ];
     for (const item of items) {
       const href = urls[item.key];
@@ -650,186 +576,75 @@
     }
   }
 
+  function renderFundingNote(note) {
+    const el = $("funding-note");
+    if (!el) return;
+    if (note) {
+      el.textContent = note;
+      el.hidden = false;
+    } else {
+      el.textContent = "";
+      el.hidden = true;
+    }
+  }
+
+  function renderResiduals(book) {
+    const list = $("residuals-list");
+    list.replaceChildren();
+    for (const row of book.residualRows) {
+      const li = el("li");
+      li.append(el("span", "k", row.key), el("span", "mono", qty(row.val, row.key)));
+      list.append(li);
+    }
+  }
+
   function render() {
     if (!bookRaw) return;
     const book = normalize(bookRaw);
-    const err = $("err");
-    if (err && err.className !== "err stale") {
-      err.hidden = true;
-    }
-    setStatus(book.status);
+    $("err").hidden = true;
+    setBadge(book.status);
     const live = liveNumbers(book);
     markAsset = live.asset || markAsset;
     if ($("mark-label")) $("mark-label").textContent = markAsset;
-    const paperMode = !!(bookRaw && bookRaw.paper && bookRaw.paper.active)
-      || String(bookRaw && (bookRaw.mode || "") || "").toUpperCase() === "PAPER";
-    if (paperMode && live.open && live.open.length) {
-      const pm = live.open[0];
-      $("live-mark").textContent = pm.mark != null ? px(pm.mark) : (live.mark != null ? px(live.mark) : "—");
-      if ($("mark-label")) $("mark-label").textContent = String(pm.market || live.asset || "PAPER");
-      if ($("mark-age")) $("mark-age").textContent = "paper mark";
-    } else {
-      const ethMark = (book.marks && book.marks.ETH != null) ? book.marks.ETH : live.mark;
-      $("live-mark").textContent = ethMark != null ? px(ethMark) : "—";
-      if ($("mark-label")) $("mark-label").textContent = "ETH";
-      if ($("mark-age") && book.markSrc) $("mark-age").textContent = String(book.markSrc);
-    }
-    // Paper: Liquid row = realized paper equity; Funding row = start bankroll
+    $("live-mark").textContent = live.mark != null ? px(live.mark) : (live.cards[0] && live.cards[0].mark != null ? px(live.cards[0].mark) : "—");
     $("liquid").textContent = money(book.liquidUsd);
-
-    const fund = book.fundingUsd != null ? book.fundingUsd : 0;
-    let tp = book.totalPnlUsd;
-    if (tp == null && live.equity != null) tp = live.equity - fund;
-    let pct = book.totalPnlPct;
-    if (pct == null && fund > 0 && tp != null) pct = (tp / fund) * 100;
-    else if (pct == null && fund === 0) pct = 0;
-
-    $("funding").textContent = money(fund, fund === 0 ? 0 : 2);
+    $("upnl").textContent = money(live.upnl);
+    const fund = book.fundingUsd != null ? book.fundingUsd : 107;
+    const tp = book.totalPnlUsd != null ? book.totalPnlUsd : (live.equity != null ? live.equity - fund : null);
+    const pct = book.totalPnlPct != null ? book.totalPnlPct : (fund && tp != null ? (tp / fund) * 100 : null);
+    const fundEl = $("funding");
+    if (fundEl) fundEl.textContent = money(fund, 0);
     const tpEl = $("total-pnl");
     if (tpEl) {
       if (tp == null) {
         tpEl.textContent = "—";
       } else {
-        const pctS = fund === 0 ? "" : (pct == null ? "" : " (" + (pct >= 0 ? "+" : "") + Number(pct).toFixed(2) + "%)");
+        const pctS = pct == null ? "" : " (" + (pct >= 0 ? "+" : "") + Number(pct).toFixed(2) + "%)";
         tpEl.textContent = money(tp) + pctS;
       }
       setTone(tpEl, tp);
     }
+    renderFundingNote(book.fundingNote);
 
-    const note = $("funding-note");
-    if (note) {
-      if (book.fundingNote) {
-        note.textContent = book.fundingNote;
-        note.hidden = false;
-      } else {
-        note.hidden = true;
-      }
-    }
-
-    $("upnl").textContent = money(live.upnl);
     setTone($("upnl"), live.upnl);
     $("equity").textContent = money(live.equity);
     if ($("last-updated")) $("last-updated").textContent = book.updatedEt || "—";
-
-    renderHoldings(book);
     renderPositions(live.cards);
-    lastFullHist = book.pnlHistory || [];
-    renderHist(filterHistRange(lastFullHist, histRange));
-    wireHistRange();
+    renderHist(book.pnlHistory);
     renderTrades(book.trades);
-    const fullW = book.wallet || "—";
-    $("wallet").textContent = fullW;
-    wireWalletCopy(fullW);
-    renderPaper(book);
+    renderResiduals(book);
+    $("wallet").textContent = truncAddr(book.wallet);
     renderWalletLinks(book);
     $("notes").textContent = book.notes || "—";
-    $("src").textContent = bookSrc.replace(/^https?:\/\//, "").slice(0, 42);
+    $("src").textContent = bookSrc;
     paintAge();
-    paintStale();
-  }
-
-
-  function wireWalletCopy(addr) {
-    async function copy() {
-      if (!addr || addr === "—") return;
-      try {
-        await navigator.clipboard.writeText(addr);
-      } catch (e) {
-        const ta = document.createElement("textarea");
-        ta.value = addr;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand("copy");
-        ta.remove();
-      }
-      const tip = $("wallet-copied");
-      if (tip) {
-        tip.hidden = false;
-        clearTimeout(wireWalletCopy._t);
-        wireWalletCopy._t = setTimeout(function () { tip.hidden = true; }, 1500);
-      }
-      ["wallet-copy"].forEach(function (id) {
-        const b = $(id);
-        if (!b) return;
-        const prev = b.textContent;
-        b.textContent = "Copied";
-        setTimeout(function () { b.textContent = prev; }, 1200);
-      });
-    }
-    ["wallet-copy"].forEach(function (id) {
-      const b = $(id);
-      if (!b || b.dataset.wired) return;
-      b.dataset.wired = "1";
-      b.addEventListener("click", copy);
-    });
-  }
-
-
-  function renderPaper(book) {
-    const panel = $("paper-panel");
-    if (!panel) return;
-    const paper = book.paper;
-    const mode = (book.mode || book.display_mode || "").toString().toUpperCase();
-    const active = paper && (paper.active || mode === "PAPER");
-    panel.hidden = !active;
-    if (!active) return;
-    if ($("hero-label")) $("hero-label").textContent = "Paper equity";
-    const st = $("status");
-    if (st) {
-      st.textContent = "PAPER";
-      st.className = "status paper";
-    }
-    const grid = $("paper-grid");
-    if (grid) {
-      grid.innerHTML = "";
-      const cells = [
-        ["Start", money(paper.start_equity_usd)],
-        ["Equity", money(paper.mtm_equity_usd != null ? paper.mtm_equity_usd : paper.paper_equity_usd)],
-        ["Realized", money(paper.realized_pnl_usd)],
-        ["uPnL", money(paper.unrealized_pnl_usd)],
-        ["Sleeve max", money(paper.sleeve_usd_max)],
-        ["Ticket max", money(paper.ticket_usd_max)]
-      ];
-      cells.forEach(function (c) {
-        const d = document.createElement("div");
-        d.className = "hold-card";
-        d.innerHTML = '<div class="hold-k">' + c[0] + '</div><div class="hold-v">' + c[1] + "</div>";
-        grid.appendChild(d);
-      });
-    }
-    const openEl = $("paper-open");
-    if (openEl) {
-      const o = paper.open;
-      if (o) {
-        openEl.innerHTML =
-          "<strong>" + (o.id || "OPEN") + "</strong> · " +
-          (o.side || "") + " " + (o.ticker || "") + " · $" +
-          (o.size_usd != null ? o.size_usd : "—") +
-          "<br>entry " + (o.entry != null ? Number(o.entry).toFixed(2) : "—") +
-          " · MTM " + money(o.mtm_pnl_usd) +
-          (o.mtm_pnl_pct != null ? " (" + Number(o.mtm_pnl_pct).toFixed(2) + "%)" : "") +
-          "<br>cut " + (o.cut != null ? Number(o.cut).toFixed(2) : "—") +
-          " · TP " + (o.tp != null ? Number(o.tp).toFixed(2) : "—") +
-          " · " + (o.status || "");
-      } else {
-        openEl.textContent = "No open paper ticket";
-      }
-    }
-    const q = $("paper-queued");
-    if (q) {
-      const list = paper.queued || [];
-      q.textContent = list.length
-        ? "Queued: " + list.map(function (x) { return (x.id || "") + " " + (x.ticker || ""); }).join(", ")
-        : "No queued paper";
-    }
   }
 
   function showError(msg) {
     const el = $("err");
     el.hidden = false;
     el.textContent = msg;
-    el.className = "err";
-    setStatus("RISK");
+    setBadge("RISK");
   }
 
   async function loadOne(url) {
@@ -846,20 +661,21 @@
 
   function pickBestBook(cands) {
     if (!cands.length) return null;
-    // Newest stamp wins. Stale CDN "open" must not beat a fresher book.
     const tagged = cands.map(function (c) {
       return { src: c.src, raw: c.raw, t: parseUpdatedEtMs(c.raw), flat: rawIsFlat(c.raw) };
     });
-    tagged.sort(function (a, b) { return b.t - a.t; });
-    return tagged[0];
+    const lives = tagged.filter(function (c) { return !c.flat; });
+    const newestLiveT = lives.length ? Math.max.apply(null, lives.map(function (c) { return c.t; })) : -Infinity;
+    const goodFlats = tagged.filter(function (c) { return c.flat && c.t >= newestLiveT; });
+    const pool = goodFlats.length ? goodFlats : tagged;
+    pool.sort(function (a, b) { return b.t - a.t; });
+    return pool[0];
   }
 
   async function refreshBook() {
     let lastErr = null;
     const cands = [];
-    const pinned = await loadVersionPinned();
-    const list = SOURCES.slice(); // always prefer raw/jsdelivr over Pages same-origin
-    for (const src of list) {
+    for (const src of SOURCES) {
       try {
         const raw = await loadOne(src);
         cands.push({ src: src, raw: raw });
@@ -888,12 +704,11 @@
     const set = {};
     if (bookRaw) {
       const open = positionsFrom(bookRaw).filter(isOpen);
-      for (const p of open) {
-        const a = assetOf(p);
-        if (a) set[a] = true;
-      }
+      for (const p of open) { const a = assetOf(p); if (a) set[a] = true; }
     }
     if (!Object.keys(set).length) set[markAsset || "ETH"] = true;
+    // always keep ETH for liquid residual pricing context when flat (never invent LINK↔ETH)
+    if (!set.ETH && !set.BTC && !set.LINK) set.ETH = true;
     return Object.keys(set).filter(Boolean);
   }
 
@@ -922,6 +737,7 @@
           any = true;
         } catch (e) { /* keep prior */ }
       }
+      // Prefer open position's asset spot only — NEVER fall LINK→ETH / BTC→ETH (or cross-asset).
       if (marks[markAsset] != null) {
         liveMark = marks[markAsset];
         markAt = Date.now();
@@ -950,6 +766,7 @@
     "./fleet.json",
     "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/fleet.json",
     "https://raw.githubusercontent.com/webbeep/desk-pulse/main/fleet.json",
+    "../scans/fleet.json",
   ];
   let fleetRaw = null;
   let fleetSrc = "";
@@ -966,13 +783,16 @@
     if (fleet) fleet.hidden = activeTab !== "fleet";
     if (tp) tp.classList.toggle("is-on", activeTab === "pulse");
     if (tf) tf.classList.toggle("is-on", activeTab === "fleet");
+    document.querySelectorAll(".seg-btn").forEach(function (el) {
+      el.classList.toggle("is-on", el.dataset.tab === activeTab);
+    });
     try {
       if (location.hash.replace("#", "") !== activeTab) {
         history.replaceState(null, "", "#" + activeTab);
       }
     } catch (e) {}
     if (activeTab === "fleet") paintFleet();
-    else if (bookRaw) render();
+    else render();
   }
 
   function pillClass(state) {
@@ -980,15 +800,21 @@
     if (s === "WORKING") return "pill pill-working";
     if (s === "LIVE") return "pill pill-live";
     if (s === "BLOCKED") return "pill pill-blocked";
-    if (s === "FROZEN" || s === "STANDBY" || s === "PARKED") return "pill pill-frozen";
-    if (s === "DEMOTED" || s === "ORPHAN") return "pill pill-demoted";
+    if (s === "FROZEN" || s === "STANDBY" || s === "PARKED") return "pill pill-standby";
+    if (s === "ORPHAN" || s === "DEMOTED") return "pill pill-orphan";
+    if (s === "ROOM") return "pill pill-room";
     return "pill pill-idle";
   }
 
   function pillLabel(state) {
     const s = String(state || "").toUpperCase();
-    if (!s) return "Idle";
-    return s.charAt(0) + s.slice(1).toLowerCase();
+    if (s === "WORKING") return "Working";
+    if (s === "IDLE") return "Idle";
+    if (s === "STANDBY") return "Standby";
+    if (s === "PARKED") return "Parked";
+    if (s === "ROOM") return "Room";
+    if (s === "ORPHAN") return "Orphan";
+    return s ? s.charAt(0) + s.slice(1).toLowerCase() : "Idle";
   }
 
   function paintFleet() {
@@ -1010,9 +836,10 @@
     bots.forEach(function (b) {
       const card = document.createElement("article");
       card.className = "fleet-card";
+      const age = b.age_min != null ? Math.round(Number(b.age_min)) + "m" : "—";
       const nowTxt = b.now || b.task || "—";
       const lastTxt = b.last_did || "—";
-      const lastEt = b.last_et || (b.age_min != null ? "~" + Math.round(Number(b.age_min)) + "m ago" : "—");
+      const lastEt = b.last_et || (age !== "—" ? age + " ago" : "—");
       card.innerHTML =
         '<div class="fleet-row">' +
         '<p class="fleet-name"></p>' +
@@ -1021,13 +848,13 @@
         '<p class="fleet-role"></p>' +
         '<p class="fleet-task"><span class="fleet-doing-k">Now</span> <span class="fleet-doing-v fleet-now"></span></p>' +
         '<p class="fleet-task"><span class="fleet-doing-k">Last</span> <span class="fleet-doing-v fleet-last"></span></p>' +
-        '<p class="fleet-meta"></p>';
+        '<p class="fleet-meta">proof <span class="mono fleet-proof"></span></p>';
       card.querySelector(".fleet-name").textContent = b.name || "—";
       card.querySelector(".pill").textContent = pillLabel(b.state);
       card.querySelector(".fleet-role").textContent = b.role || "—";
       card.querySelector(".fleet-now").textContent = nowTxt;
       card.querySelector(".fleet-last").textContent = lastEt + " · " + lastTxt;
-      card.querySelector(".fleet-meta").textContent = b.proof && b.proof !== "—" ? "proof " + b.proof : "";
+      card.querySelector(".fleet-proof").textContent = b.proof || "—";
       list.appendChild(card);
     });
     const fs = $("fleet-src");
@@ -1041,22 +868,16 @@
 
   async function refreshFleet() {
     let lastErr = null;
-    const bust = "?t=" + Date.now();
-    for (const base of FLEET_SOURCES) {
-      const url = base.indexOf("?") >= 0 ? base : base + bust;
+    for (const url of FLEET_SOURCES) {
       try {
         const res = await fetch(url, { cache: "no-store" });
         if (!res.ok) throw new Error("HTTP " + res.status);
         const j = await res.json();
         if (!j || !Array.isArray(j.bots)) throw new Error("bad fleet");
         fleetRaw = j;
-        fleetSrc = base;
+        fleetSrc = url;
         fleetAt = Date.now();
         if (activeTab === "fleet") paintFleet();
-        else {
-          const badge = $("fleet-badge");
-          if (badge) badge.textContent = j.working != null ? String(j.working) : "0";
-        }
         return;
       } catch (e) {
         lastErr = e;
@@ -1066,6 +887,30 @@
       $("err").hidden = false;
       $("err").textContent = "Fleet load failed" + (lastErr ? ": " + lastErr.message : "");
     }
+  }
+
+  const api = {
+    normalize: normalize,
+    liveNumbers: liveNumbers,
+    assetOf: assetOf,
+    markFor: markFor,
+    isOpen: isOpen,
+    positionsFrom: positionsFrom,
+    getMarks: function () { return marks; },
+    setMarks: function (next) { marks = Object.assign({ ETH: null, BTC: null, LINK: null }, next || {}); },
+    setBookMarks: function (next) { bookMarks = Object.assign({ ETH: null, BTC: null, LINK: null }, next || {}); },
+    resetMarks: function () {
+      marks = { ETH: null, BTC: null, LINK: null };
+      bookMarks = { ETH: null, BTC: null, LINK: null };
+      liveMark = null;
+      markAsset = "ETH";
+    },
+  };
+
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = api;
+  } else if (root) {
+    root.__desk = api;
   }
 
   if (typeof document !== "undefined") {
@@ -1089,7 +934,6 @@
     setInterval(refreshFleet, FLEET_MS);
     setInterval(function () {
       paintAge();
-      paintStale();
       if (activeTab === "fleet") paintFleet();
     }, 1000);
   }
