@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-28 10:29:55 ET",
+  "updated_et": "2026-09-28 10:30:39 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 261.4714,
-  "upnl_usd": 0.0087,
-  "equity_usd": 264.4801,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 261.8474,
+  "upnl_usd": 0.0,
+  "equity_usd": 261.8474,
+  "status": "EXITING:HARD_SL_PCT_-7.7017",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.416 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -26.1499,
-  "total_pnl_pct": -8.9977,
-  "mark_eth": 2669.68,
-  "mark": 2669.68,
+  "total_pnl_usd": -28.7826,
+  "total_pnl_pct": -9.9035,
+  "mark_eth": 2673.52,
+  "mark": 2673.52,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2669.68
+    "ETH": 2673.52
   },
   "holdings": {
     "L1": {
@@ -40,89 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-251",
-      "market": "SWORDCAT",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 0.00027964408345369866,
-      "mark": 0.0002804575313528157,
-      "uPnL": 0.0087,
-      "mtm_pct": 0.2909,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x9b5322efa17209e5e968d6cbc06e998e08ae07d6072d32dc4057d73b562c2af1",
-      "token": "0x9634430EA606532e9Ff7856f078e0E68F80625c7",
-      "held_sec": 20,
-      "weth_out": 0.001126998968363209,
-      "usd_out": 3.008727
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-28 09:44:07 ET",
-      "equity_usd": 266.8895,
-      "liquid_usd": 263.8906,
-      "upnl_usd": -0.0011,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 09:44:09 ET",
-      "equity_usd": 266.8846,
-      "liquid_usd": 263.8858,
-      "upnl_usd": -0.0012,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 09:44:13 ET",
-      "equity_usd": 266.9113,
-      "liquid_usd": 263.9122,
-      "upnl_usd": -0.0009,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 09:44:16 ET",
-      "equity_usd": 266.8865,
-      "liquid_usd": 263.8877,
-      "upnl_usd": -0.0012,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 09:44:19 ET",
-      "equity_usd": 266.8529,
-      "liquid_usd": 263.8544,
-      "upnl_usd": -0.0015,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 09:44:21 ET",
-      "equity_usd": 266.8183,
-      "liquid_usd": 263.8202,
-      "upnl_usd": -0.0019,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 09:44:23 ET",
-      "equity_usd": 266.8707,
-      "liquid_usd": 263.872,
-      "upnl_usd": -0.0013,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 09:44:26 ET",
-      "equity_usd": 266.8005,
-      "liquid_usd": 263.8026,
-      "upnl_usd": -0.0021,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 09:44:28 ET",
-      "equity_usd": 266.7172,
-      "liquid_usd": 263.7203,
-      "upnl_usd": -0.0031,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 09:44:31 ET",
       "equity_usd": 266.649,
@@ -1459,6 +1378,69 @@
       "liquid_usd": 261.4714,
       "upnl_usd": 0.0087,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 10:29:57 ET",
+      "equity_usd": 264.5812,
+      "liquid_usd": 261.5713,
+      "upnl_usd": 0.0099,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 10:30:00 ET",
+      "equity_usd": 264.6732,
+      "liquid_usd": 261.6623,
+      "upnl_usd": 0.0109,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 10:30:04 ET",
+      "equity_usd": 264.6683,
+      "liquid_usd": 261.6574,
+      "upnl_usd": 0.0109,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 10:30:07 ET",
+      "equity_usd": 264.6426,
+      "liquid_usd": 261.632,
+      "upnl_usd": 0.0106,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 10:30:11 ET",
+      "equity_usd": 264.7038,
+      "liquid_usd": 261.6917,
+      "upnl_usd": 0.0121,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 10:30:14 ET",
+      "equity_usd": 264.6731,
+      "liquid_usd": 261.6614,
+      "upnl_usd": 0.0117,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 10:30:25 ET",
+      "equity_usd": 264.6493,
+      "liquid_usd": 261.6379,
+      "upnl_usd": 0.0114,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 10:30:36 ET",
+      "equity_usd": 264.6163,
+      "liquid_usd": 261.8474,
+      "upnl_usd": -0.2311,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 10:30:39 ET",
+      "equity_usd": 264.6163,
+      "liquid_usd": 261.8474,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2591,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM SWORDCAT uPnL $0.0087 (0.2909%) \u00b7 held 21s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 10:29:54 ET",
+  "notes": "LIVE MTM SWORDCAT uPnL $-0.2311 (-7.7017%) \u00b7 held 53s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 10:30:27 ET \u00b7 CUT HARD_SL_PCT_-7.7017",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2639,32 +2621,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-251",
-    "market": "SWORDCAT",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 0.00027964408345369866,
-    "mark": 0.0002804575313528157,
-    "uPnL": 0.0087,
-    "mtm_pct": 0.2909,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x9b5322efa17209e5e968d6cbc06e998e08ae07d6072d32dc4057d73b562c2af1",
-    "token": "0x9634430EA606532e9Ff7856f078e0E68F80625c7",
-    "held_sec": 20,
-    "weth_out": 0.001126998968363209,
-    "usd_out": 3.008727
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "SWORDCAT",
+    "open": false,
+    "ticker": null,
     "tx": "0x9b5322efa17209e5e968d6cbc06e998e08ae07d6072d32dc4057d73b562c2af1",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 0.2909,
-    "upnl_usd": 0.0087,
-    "held_sec": 20,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 53,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.416
