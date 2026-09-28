@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-28 07:49:58 ET",
+  "updated_et": "2026-09-28 07:50:03 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.6399,
-  "upnl_usd": 0.0,
-  "equity_usd": 263.6399,
+  "liquid_usd": 260.4754,
+  "upnl_usd": -0.0006,
+  "equity_usd": 263.4748,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.9576 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -26.9901,
-  "total_pnl_pct": -9.2868,
-  "mark_eth": 2664.39,
-  "mark": 2664.39,
+  "total_pnl_usd": -27.1552,
+  "total_pnl_pct": -9.3436,
+  "mark_eth": 2662.81,
+  "mark": 2662.81,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2664.39
+    "ETH": 2662.81
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.005076623599125662,
+      "eth": 0.003946924949333626,
       "weth": 0.09246575925419355
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.005076623599125662,
+    "rh_eth": 0.003946924949333626,
     "rh_weth": 0.09246575925419355,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,20 +46,20 @@
       "market": "UNDERPANTSGNOME",
       "side": "LONG",
       "size_usd": 3.0,
+      "entry": 1.3355835796970845e-05,
+      "mark": 1.335316506371874e-05,
+      "uPnL": -0.0006,
+      "mtm_pct": -0.02,
+      "lev": 1,
+      "paper": false,
       "tx": "0x4eb326d355e73c95e6a2b08b61172a65151648bcbce3a2f1aeb9d75cf4510f81",
       "token": "0x6808af3407ad3F81a24F77080F4146a31EDd84Fe",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 5,
+      "weth_out": 0.001126404098476666,
+      "usd_out": 2.9994
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-28 07:15:49 ET",
-      "equity_usd": 263.639,
-      "liquid_usd": 260.6379,
-      "upnl_usd": 0.0011,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 07:15:51 ET",
       "equity_usd": 263.6538,
@@ -1452,6 +1452,13 @@
       "liquid_usd": 263.6399,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 07:50:03 ET",
+      "equity_usd": 263.4748,
+      "liquid_usd": 260.4754,
+      "upnl_usd": -0.0006,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2581,10 +2588,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 07:47:52 ET",
+  "notes": "LIVE MTM UNDERPANTSGNOME uPnL $-0.0006 (-0.02%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 07:50:02 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2637,22 +2644,28 @@
     "market": "UNDERPANTSGNOME",
     "side": "LONG",
     "size_usd": 3.0,
+    "entry": 1.3355835796970845e-05,
+    "mark": 1.335316506371874e-05,
+    "uPnL": -0.0006,
+    "mtm_pct": -0.02,
+    "lev": 1,
+    "paper": false,
     "tx": "0x4eb326d355e73c95e6a2b08b61172a65151648bcbce3a2f1aeb9d75cf4510f81",
     "token": "0x6808af3407ad3F81a24F77080F4146a31EDd84Fe",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 5,
+    "weth_out": 0.001126404098476666,
+    "usd_out": 2.9994
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "UNDERPANTSGNOME",
     "tx": "0x4eb326d355e73c95e6a2b08b61172a65151648bcbce3a2f1aeb9d75cf4510f81",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-228",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.02,
+    "upnl_usd": -0.0006,
+    "held_sec": 5,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.9576
 }
