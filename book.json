@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-28 12:10:04 ET",
+  "updated_et": "2026-09-28 12:10:19 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 261.2552,
-  "upnl_usd": 0.0007,
-  "equity_usd": 264.2559,
+  "liquid_usd": 261.1967,
+  "upnl_usd": -3.0,
+  "equity_usd": 261.1967,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-33.2288 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -26.3741,
-  "total_pnl_pct": -9.0748,
-  "mark_eth": 2676.96,
-  "mark": 2676.96,
+  "total_pnl_usd": -29.4333,
+  "total_pnl_pct": -10.1274,
+  "mark_eth": 2676.36,
+  "mark": 2676.36,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2676.96
+    "ETH": 2676.36
   },
   "holdings": {
     "L1": {
@@ -47,40 +47,19 @@
       "side": "LONG",
       "size_usd": 3.0,
       "entry": 1.3438805345371104e-05,
-      "mark": 1.344184231105891e-05,
-      "uPnL": 0.0007,
-      "mtm_pct": 0.0226,
+      "mark": 1.3438805345371104e-05,
+      "uPnL": -3.0,
+      "mtm_pct": -100.0,
       "lev": 1,
       "paper": false,
       "tx": "0x189663bebbad44d551035bb2046872df05643a9960efc47467dba0e93f1a31ea",
       "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
-      "held_sec": 6,
-      "weth_out": 0.00112092745292748,
-      "usd_out": 3.000678
+      "held_sec": 21,
+      "weth_out": 0.0,
+      "usd_out": 0.0
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-28 11:12:58 ET",
-      "equity_usd": 263.2574,
-      "liquid_usd": 260.2557,
-      "upnl_usd": 0.0017,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 11:13:00 ET",
-      "equity_usd": 263.294,
-      "liquid_usd": 260.2919,
-      "upnl_usd": 0.0021,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 11:13:03 ET",
-      "equity_usd": 263.3156,
-      "liquid_usd": 260.3133,
-      "upnl_usd": 0.0023,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 11:13:05 ET",
       "equity_usd": 263.2959,
@@ -1459,6 +1438,27 @@
       "liquid_usd": 261.2552,
       "upnl_usd": 0.0007,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 12:10:10 ET",
+      "equity_usd": 264.2332,
+      "liquid_usd": 261.2328,
+      "upnl_usd": 0.0004,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 12:10:12 ET",
+      "equity_usd": 264.1523,
+      "liquid_usd": 261.1528,
+      "upnl_usd": -0.0005,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 12:10:19 ET",
+      "equity_usd": 261.1967,
+      "liquid_usd": 261.1967,
+      "upnl_usd": -3.0,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2591,7 +2591,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM AURA uPnL $0.0007 (0.0226%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 12:10:04 ET",
+  "notes": "LIVE MTM AURA uPnL $-3.0 (-100.0%) \u00b7 held 21s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 12:10:19 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2645,16 +2645,16 @@
     "side": "LONG",
     "size_usd": 3.0,
     "entry": 1.3438805345371104e-05,
-    "mark": 1.344184231105891e-05,
-    "uPnL": 0.0007,
-    "mtm_pct": 0.0226,
+    "mark": 1.3438805345371104e-05,
+    "uPnL": -3.0,
+    "mtm_pct": -100.0,
     "lev": 1,
     "paper": false,
     "tx": "0x189663bebbad44d551035bb2046872df05643a9960efc47467dba0e93f1a31ea",
     "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
-    "held_sec": 6,
-    "weth_out": 0.00112092745292748,
-    "usd_out": 3.000678
+    "held_sec": 21,
+    "weth_out": 0.0,
+    "usd_out": 0.0
   },
   "live": {
     "open": true,
@@ -2662,9 +2662,9 @@
     "tx": "0x189663bebbad44d551035bb2046872df05643a9960efc47467dba0e93f1a31ea",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 0.0226,
-    "upnl_usd": 0.0007,
-    "held_sec": 6,
+    "mtm_pct": -100.0,
+    "upnl_usd": -3.0,
+    "held_sec": 21,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -33.2288
