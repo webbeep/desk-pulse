@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-28 17:39:57 ET",
+  "updated_et": "2026-09-28 17:40:44 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 264.7825,
   "upnl_usd": 0.0,
   "equity_usd": 264.7825,
-  "status": "EXITED",
+  "status": "LIVE_FLAT",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-31.9316 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.1612 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -25.8475,
   "total_pnl_pct": -8.8936,
   "mark_eth": 2678.29,
@@ -2573,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT PYGOSCELIS \u00b7 HARD_SL_PCT_-6.6043 \u00b7 tx 0x45e73aa7271aa563e82721918ddf1a53de1294e98fac92b521e7389d4e29235b \u00b7 2026-09-28 17:39:57 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 17:40:44 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2627,7 +2627,12 @@
     "ticker": null,
     "last_exit_tx": "0x45e73aa7271aa563e82721918ddf1a53de1294e98fac92b521e7389d4e29235b",
     "last_exit_reason": "HARD_SL_PCT_-6.6043",
-    "last_exit_upnl": -0.2296
+    "last_exit_upnl": -0.2296,
+    "flat": true,
+    "opens_paused": false,
+    "frozen": false,
+    "strategy": "MEME_V8_QUOTER_GUARD",
+    "loop": "rh_live_loop"
   },
-  "realized_pnl_usd": -31.9316
+  "realized_pnl_usd": -32.1612
 }
