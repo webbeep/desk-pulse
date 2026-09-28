@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-27 22:47:38 ET",
+  "updated_et": "2026-09-27 22:49:38 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 264.9768,
   "upnl_usd": 0.0,
   "equity_usd": 264.9768,
-  "status": "LIVE_FLAT",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-34.8956 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -25.6532,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-134",
+      "market": "SLOPCORE",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x337eb6cf5b6340821bdde5462e1f23327598e35def27af967e671a30b34ae9dd",
+      "token": "0x430af05CE727dF22302102Efb168A1C4e97a3C7f",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-27 22:25:53 ET",
@@ -2559,7 +2570,7 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
   "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-27 22:47:38 ET",
@@ -2610,17 +2621,26 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-134",
+    "market": "SLOPCORE",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x337eb6cf5b6340821bdde5462e1f23327598e35def27af967e671a30b34ae9dd",
+    "token": "0x430af05CE727dF22302102Efb168A1C4e97a3C7f",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0xa3176373880fbab85a361f8b8ac5055262ca25f64c5027987f906403a39d03b0",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0002,
-    "flat": true,
-    "opens_paused": false,
-    "frozen": false,
-    "strategy": "MEME_V8_QUOTER_GUARD",
+    "open": true,
+    "flat": false,
+    "ticker": "SLOPCORE",
+    "tx": "0x337eb6cf5b6340821bdde5462e1f23327598e35def27af967e671a30b34ae9dd",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-134",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
     "loop": "rh_live_loop"
   },
   "realized_pnl_usd": -34.8956
