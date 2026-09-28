@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-28 09:18:49 ET",
+  "updated_et": "2026-09-28 09:21:14 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 266.0872,
   "upnl_usd": 0.0,
   "equity_usd": 266.0872,
-  "status": "LIVE_FLAT",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.3087 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -24.5428,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-242",
+      "market": "USDG",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x8a7977b1804491186bf51e48661994551bf64de7ac591efa1f704513257c343d",
+      "token": "0xEd3Fd1025aa318B8E66CA25AA2ddC83096086DE0",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-28 08:43:37 ET",
@@ -2570,7 +2581,7 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
   "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 09:18:49 ET",
@@ -2621,17 +2632,26 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-242",
+    "market": "USDG",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x8a7977b1804491186bf51e48661994551bf64de7ac591efa1f704513257c343d",
+    "token": "0xEd3Fd1025aa318B8E66CA25AA2ddC83096086DE0",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x2f98fa59abe086d9dc262f2162493f8f839945a22ecbdaf171433880db12c2f9",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0032,
-    "flat": true,
-    "opens_paused": false,
-    "frozen": false,
-    "strategy": "MEME_V8_QUOTER_GUARD",
+    "open": true,
+    "flat": false,
+    "ticker": "USDG",
+    "tx": "0x8a7977b1804491186bf51e48661994551bf64de7ac591efa1f704513257c343d",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-242",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
     "loop": "rh_live_loop"
   },
   "realized_pnl_usd": -32.3087
