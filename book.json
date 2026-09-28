@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-28 04:56:00 ET",
+  "updated_et": "2026-09-28 04:56:05 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.5312,
-  "upnl_usd": -3.0,
-  "equity_usd": 263.5312,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 263.4626,
+  "upnl_usd": 0.0,
+  "equity_usd": 263.4626,
+  "status": "EXITING:QUOTE_DEGRADE_ABORT",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.0692 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.0988,
-  "total_pnl_pct": -9.3242,
-  "mark_eth": 2649.7,
-  "mark": 2649.7,
+  "total_pnl_usd": -27.1674,
+  "total_pnl_pct": -9.3478,
+  "mark_eth": 2649.01,
+  "mark": 2649.01,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2649.7
+    "ETH": 2649.01
   },
   "holdings": {
     "L1": {
@@ -40,40 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-197",
-      "market": "NEVERDOOM",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 7.98729931695578e-05,
-      "mark": 7.98729931695578e-05,
-      "uPnL": -3.0,
-      "mtm_pct": -100.0,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x7f86a914fc2600acf740413a65a1e2c4f12075c22880954355053786d08f2297",
-      "token": "0xe1716C96a66274e189c538158391475ba115f358",
-      "held_sec": 13,
-      "weth_out": 0.0,
-      "usd_out": 0.0
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-28 04:07:47 ET",
-      "equity_usd": 265.5367,
-      "liquid_usd": 262.5376,
-      "upnl_usd": -0.0009,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 04:07:50 ET",
-      "equity_usd": 265.5025,
-      "liquid_usd": 262.5038,
-      "upnl_usd": -0.0013,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 04:07:52 ET",
       "equity_usd": 265.4423,
@@ -1459,6 +1427,20 @@
       "liquid_usd": 263.5312,
       "upnl_usd": -3.0,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 04:56:05 ET",
+      "equity_usd": 263.4626,
+      "liquid_usd": 263.4626,
+      "upnl_usd": -3.0,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 04:56:05 ET",
+      "equity_usd": 263.4626,
+      "liquid_usd": 263.4626,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2591,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM NEVERDOOM uPnL $-3.0 (-100.0%) \u00b7 held 14s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 04:55:59 ET",
+  "notes": "LIVE MTM NEVERDOOM uPnL $-3.0 (-100.0%) \u00b7 held 19s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 04:56:04 ET \u00b7 CUT QUOTE_DEGRADE_ABORT",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2639,32 +2621,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-197",
-    "market": "NEVERDOOM",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 7.98729931695578e-05,
-    "mark": 7.98729931695578e-05,
-    "uPnL": -3.0,
-    "mtm_pct": -100.0,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x7f86a914fc2600acf740413a65a1e2c4f12075c22880954355053786d08f2297",
-    "token": "0xe1716C96a66274e189c538158391475ba115f358",
-    "held_sec": 13,
-    "weth_out": 0.0,
-    "usd_out": 0.0
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "NEVERDOOM",
+    "open": false,
+    "ticker": null,
     "tx": "0x7f86a914fc2600acf740413a65a1e2c4f12075c22880954355053786d08f2297",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -100.0,
-    "upnl_usd": -3.0,
-    "held_sec": 13,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 18,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.0692
