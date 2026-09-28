@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-27 21:37:26 ET",
+  "updated_et": "2026-09-27 21:37:41 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.1704,
-  "upnl_usd": 0.057,
-  "equity_usd": 266.2274,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 263.1733,
+  "upnl_usd": 0.0,
+  "equity_usd": 263.1733,
+  "status": "EXITING:TP_V7_+4.5",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-35.568 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -24.4026,
-  "total_pnl_pct": -8.3964,
-  "mark_eth": 2670.68,
-  "mark": 2670.68,
+  "total_pnl_usd": -27.4567,
+  "total_pnl_pct": -9.4473,
+  "mark_eth": 2670.71,
+  "mark": 2670.71,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2670.68
+    "ETH": 2670.71
   },
   "holdings": {
     "L1": {
@@ -40,68 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-119",
-      "market": "SLOPCORE",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 0.0002120947179969229,
-      "mark": 0.0002161262156304065,
-      "uPnL": 0.057,
-      "mtm_pct": 1.9008,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x74f67ddc92764934e0253cb75bbfd5b96f900f2f46792128d1728d4a3e1a77b0",
-      "token": "0x430af05CE727dF22302102Efb168A1C4e97a3C7f",
-      "held_sec": 6,
-      "weth_out": 0.001144661291300946,
-      "usd_out": 3.057024
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 21:07:00 ET",
-      "equity_usd": 266.4878,
-      "liquid_usd": 263.4884,
-      "upnl_usd": -0.0006,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 21:07:03 ET",
-      "equity_usd": 266.5387,
-      "liquid_usd": 263.5387,
-      "upnl_usd": 0.0,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 21:07:05 ET",
-      "equity_usd": 266.6584,
-      "liquid_usd": 263.6571,
-      "upnl_usd": 0.0013,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 21:07:09 ET",
-      "equity_usd": 266.6644,
-      "liquid_usd": 263.663,
-      "upnl_usd": 0.0014,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 21:07:11 ET",
-      "equity_usd": 266.6644,
-      "liquid_usd": 263.663,
-      "upnl_usd": 0.0014,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 21:07:13 ET",
-      "equity_usd": 266.775,
-      "liquid_usd": 263.7724,
-      "upnl_usd": 0.0026,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 21:07:16 ET",
       "equity_usd": 266.7182,
@@ -1459,6 +1399,48 @@
       "liquid_usd": 263.1704,
       "upnl_usd": 0.057,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 21:37:31 ET",
+      "equity_usd": 266.1605,
+      "liquid_usd": 263.1398,
+      "upnl_usd": 0.0207,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 21:37:33 ET",
+      "equity_usd": 266.2181,
+      "liquid_usd": 263.1743,
+      "upnl_usd": 0.0438,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 21:37:35 ET",
+      "equity_usd": 266.291,
+      "liquid_usd": 263.1644,
+      "upnl_usd": 0.1266,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 21:37:38 ET",
+      "equity_usd": 266.2841,
+      "liquid_usd": 263.1575,
+      "upnl_usd": 0.1266,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 21:37:41 ET",
+      "equity_usd": 266.3463,
+      "liquid_usd": 263.1733,
+      "upnl_usd": 0.173,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 21:37:41 ET",
+      "equity_usd": 266.3463,
+      "liquid_usd": 263.1733,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2566,7 +2548,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM SLOPCORE uPnL $0.057 (1.9008%) \u00b7 held 7s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 21:37:25 ET",
+  "notes": "LIVE MTM SLOPCORE uPnL $0.173 (5.7672%) \u00b7 held 22s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 21:37:40 ET \u00b7 CUT TP_V7_+4.5",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2614,32 +2596,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-119",
-    "market": "SLOPCORE",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 0.0002120947179969229,
-    "mark": 0.0002161262156304065,
-    "uPnL": 0.057,
-    "mtm_pct": 1.9008,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x74f67ddc92764934e0253cb75bbfd5b96f900f2f46792128d1728d4a3e1a77b0",
-    "token": "0x430af05CE727dF22302102Efb168A1C4e97a3C7f",
-    "held_sec": 6,
-    "weth_out": 0.001144661291300946,
-    "usd_out": 3.057024
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "SLOPCORE",
+    "open": false,
+    "ticker": null,
     "tx": "0x74f67ddc92764934e0253cb75bbfd5b96f900f2f46792128d1728d4a3e1a77b0",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 1.9008,
-    "upnl_usd": 0.057,
-    "held_sec": 6,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 21,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -35.568
