@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-28 09:41:33 ET",
+  "updated_et": "2026-09-28 09:42:34 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 266.8696,
   "upnl_usd": 0.0,
   "equity_usd": 266.8696,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.3038 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.6983 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -23.7604,
   "total_pnl_pct": -8.1755,
   "mark_eth": 2695.62,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-245",
+      "market": "AURA",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x7305d73e0f97ade526e22471f08c1ad79823ee08fc36c7de95f73e6893f181d6",
+      "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-28 08:56:48 ET",
@@ -2570,10 +2581,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT SWORDCAT \u00b7 POST_FILL_FLAT_-10.1889 \u00b7 tx 0x603718daa7845312a089d7bd99735e5eef909ac1a28880224483b024a689b405 \u00b7 2026-09-28 09:41:32 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 09:42:23 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2621,13 +2632,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x603718daa7845312a089d7bd99735e5eef909ac1a28880224483b024a689b405",
-    "last_exit_reason": "POST_FILL_FLAT_-10.1889",
-    "last_exit_upnl": -0.3945
+  "position": {
+    "id": "LIVE-SCALP-245",
+    "market": "AURA",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x7305d73e0f97ade526e22471f08c1ad79823ee08fc36c7de95f73e6893f181d6",
+    "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
+    "paper": false,
+    "uPnL": 0.0
   },
-  "realized_pnl_usd": -32.3038
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "AURA",
+    "tx": "0x7305d73e0f97ade526e22471f08c1ad79823ee08fc36c7de95f73e6893f181d6",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-245",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "realized_pnl_usd": -32.6983
 }
