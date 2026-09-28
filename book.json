@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-27 20:23:01 ET",
+  "updated_et": "2026-09-27 20:24:57 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 266.1084,
-  "upnl_usd": -0.0005,
-  "equity_usd": 269.1079,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 265.8578,
+  "upnl_usd": 0.0,
+  "equity_usd": 265.8578,
+  "status": "EXITING:TIME_FLAT_120s",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-35.032 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -21.5221,
-  "total_pnl_pct": -7.4053,
-  "mark_eth": 2697.97,
-  "mark": 2697.97,
+  "total_pnl_usd": -24.7722,
+  "total_pnl_pct": -8.5236,
+  "mark_eth": 2695.43,
+  "mark": 2695.43,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2697.97
+    "ETH": 2695.43
   },
   "holdings": {
     "L1": {
@@ -40,320 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-107",
-      "market": "AURA",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 1.3551127062274664e-05,
-      "mark": 1.3548668362984277e-05,
-      "uPnL": -0.0005,
-      "mtm_pct": -0.0181,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x8379284ac68434d1d6e25b4c0f3e215ba4809aeec07b2c60e53e5c8bec118478",
-      "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
-      "held_sec": 5,
-      "weth_out": 0.001111745380344719,
-      "usd_out": 2.999456
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 13:01:52 ET",
-      "equity_usd": 271.2323,
-      "liquid_usd": 268.2338,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-27 13:02:00 ET",
-      "equity_usd": 268.2338,
-      "liquid_usd": 271.2261,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-27 13:03:57 ET",
-      "equity_usd": 271.5847,
-      "liquid_usd": 268.5847,
-      "upnl_usd": 0.0,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 13:04:09 ET",
-      "equity_usd": 271.7062,
-      "liquid_usd": 268.5807,
-      "upnl_usd": 0.1255,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 13:04:20 ET",
-      "equity_usd": 271.5741,
-      "liquid_usd": 268.5637,
-      "upnl_usd": 0.0104,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 13:04:28 ET",
-      "equity_usd": 271.3808,
-      "liquid_usd": 268.5477,
-      "upnl_usd": -0.1669,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 13:04:29 ET",
-      "equity_usd": 271.3808,
-      "liquid_usd": 268.5477,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-27 13:04:36 ET",
-      "equity_usd": 268.5477,
-      "liquid_usd": 271.3952,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-27 18:38:46 ET",
-      "equity_usd": 269.8552,
-      "liquid_usd": 266.8557,
-      "upnl_usd": -0.0005,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:38:55 ET",
-      "equity_usd": 269.6748,
-      "liquid_usd": 266.8028,
-      "upnl_usd": -0.128,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:38:56 ET",
-      "equity_usd": 269.6748,
-      "liquid_usd": 266.8028,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-27 18:39:05 ET",
-      "equity_usd": 266.8028,
-      "liquid_usd": 269.7154,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-27 18:39:46 ET",
-      "equity_usd": 269.6916,
-      "liquid_usd": 266.6929,
-      "upnl_usd": -0.0013,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:39:56 ET",
-      "equity_usd": 269.6684,
-      "liquid_usd": 266.6699,
-      "upnl_usd": -0.0015,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:40:04 ET",
-      "equity_usd": 269.63,
-      "liquid_usd": 266.632,
-      "upnl_usd": -0.002,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:40:11 ET",
-      "equity_usd": 269.5988,
-      "liquid_usd": 266.6011,
-      "upnl_usd": -0.0023,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:40:20 ET",
-      "equity_usd": 269.6028,
-      "liquid_usd": 266.6051,
-      "upnl_usd": -0.0023,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:40:27 ET",
-      "equity_usd": 269.6109,
-      "liquid_usd": 266.6131,
-      "upnl_usd": -0.0022,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:40:35 ET",
-      "equity_usd": 269.5725,
-      "liquid_usd": 266.5751,
-      "upnl_usd": -0.0026,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:40:42 ET",
-      "equity_usd": 269.6109,
-      "liquid_usd": 266.6131,
-      "upnl_usd": -0.0022,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:40:50 ET",
-      "equity_usd": 269.6472,
-      "liquid_usd": 266.649,
-      "upnl_usd": -0.0018,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:40:58 ET",
-      "equity_usd": 269.6331,
-      "liquid_usd": 266.635,
-      "upnl_usd": -0.0019,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:41:06 ET",
-      "equity_usd": 269.5412,
-      "liquid_usd": 266.5442,
-      "upnl_usd": -0.003,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:41:13 ET",
-      "equity_usd": 269.5271,
-      "liquid_usd": 266.5302,
-      "upnl_usd": -0.0031,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:41:21 ET",
-      "equity_usd": 269.5796,
-      "liquid_usd": 266.5821,
-      "upnl_usd": -0.0025,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:41:28 ET",
-      "equity_usd": 269.5645,
-      "liquid_usd": 266.5672,
-      "upnl_usd": -0.0027,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:41:38 ET",
-      "equity_usd": 269.5705,
-      "liquid_usd": 266.5731,
-      "upnl_usd": -0.0026,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:41:45 ET",
-      "equity_usd": 269.5856,
-      "liquid_usd": 266.5881,
-      "upnl_usd": -0.0025,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:41:46 ET",
-      "equity_usd": 269.5856,
-      "liquid_usd": 266.5881,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-27 18:41:54 ET",
-      "equity_usd": 266.5881,
-      "liquid_usd": 269.5795,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-27 18:44:09 ET",
-      "equity_usd": 269.5134,
-      "liquid_usd": 266.514,
-      "upnl_usd": -0.0006,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:44:19 ET",
-      "equity_usd": 269.5498,
-      "liquid_usd": 266.55,
-      "upnl_usd": -0.0002,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:44:26 ET",
-      "equity_usd": 269.4821,
-      "liquid_usd": 266.4831,
-      "upnl_usd": -0.001,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:44:34 ET",
-      "equity_usd": 269.4851,
-      "liquid_usd": 266.4861,
-      "upnl_usd": -0.001,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:44:41 ET",
-      "equity_usd": 269.4519,
-      "liquid_usd": 266.4532,
-      "upnl_usd": -0.0013,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:44:49 ET",
-      "equity_usd": 269.474,
-      "liquid_usd": 266.4751,
-      "upnl_usd": -0.0011,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:44:57 ET",
-      "equity_usd": 269.462,
-      "liquid_usd": 266.4632,
-      "upnl_usd": -0.0012,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:45:05 ET",
-      "equity_usd": 269.3611,
-      "liquid_usd": 266.3634,
-      "upnl_usd": -0.0023,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:45:12 ET",
-      "equity_usd": 269.3933,
-      "liquid_usd": 266.3953,
-      "upnl_usd": -0.002,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:45:20 ET",
-      "equity_usd": 269.4306,
-      "liquid_usd": 266.4322,
-      "upnl_usd": -0.0016,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:45:27 ET",
-      "equity_usd": 269.4266,
-      "liquid_usd": 266.4282,
-      "upnl_usd": -0.0016,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 18:45:35 ET",
-      "equity_usd": 269.4176,
-      "liquid_usd": 266.4193,
-      "upnl_usd": -0.0017,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 18:45:42 ET",
       "equity_usd": 269.3822,
@@ -1459,6 +1147,300 @@
       "liquid_usd": 266.1084,
       "upnl_usd": -0.0005,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:06 ET",
+      "equity_usd": 269.0958,
+      "liquid_usd": 266.0965,
+      "upnl_usd": -0.0007,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:08 ET",
+      "equity_usd": 269.049,
+      "liquid_usd": 266.0502,
+      "upnl_usd": -0.0012,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:11 ET",
+      "equity_usd": 269.1028,
+      "liquid_usd": 266.1034,
+      "upnl_usd": -0.0006,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:14 ET",
+      "equity_usd": 269.1617,
+      "liquid_usd": 266.1616,
+      "upnl_usd": 0.0001,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:16 ET",
+      "equity_usd": 269.1617,
+      "liquid_usd": 266.1616,
+      "upnl_usd": 0.0001,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:18 ET",
+      "equity_usd": 269.2026,
+      "liquid_usd": 266.2021,
+      "upnl_usd": 0.0005,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:21 ET",
+      "equity_usd": 269.0829,
+      "liquid_usd": 266.0837,
+      "upnl_usd": -0.0008,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:23 ET",
+      "equity_usd": 269.025,
+      "liquid_usd": 266.0265,
+      "upnl_usd": -0.0015,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:25 ET",
+      "equity_usd": 268.9652,
+      "liquid_usd": 265.9673,
+      "upnl_usd": -0.0021,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:28 ET",
+      "equity_usd": 268.9652,
+      "liquid_usd": 265.9673,
+      "upnl_usd": -0.0021,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:30 ET",
+      "equity_usd": 268.8983,
+      "liquid_usd": 265.9012,
+      "upnl_usd": -0.0029,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:32 ET",
+      "equity_usd": 268.9123,
+      "liquid_usd": 265.915,
+      "upnl_usd": -0.0027,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:36 ET",
+      "equity_usd": 268.9752,
+      "liquid_usd": 265.9772,
+      "upnl_usd": -0.002,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:38 ET",
+      "equity_usd": 269.0429,
+      "liquid_usd": 266.0442,
+      "upnl_usd": -0.0013,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:43 ET",
+      "equity_usd": 268.9871,
+      "liquid_usd": 265.989,
+      "upnl_usd": -0.0019,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:46 ET",
+      "equity_usd": 268.9562,
+      "liquid_usd": 265.9584,
+      "upnl_usd": -0.0022,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:48 ET",
+      "equity_usd": 268.9762,
+      "liquid_usd": 265.9782,
+      "upnl_usd": -0.002,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:51 ET",
+      "equity_usd": 268.9762,
+      "liquid_usd": 265.9782,
+      "upnl_usd": -0.002,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:53 ET",
+      "equity_usd": 268.9762,
+      "liquid_usd": 265.9782,
+      "upnl_usd": -0.002,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:23:58 ET",
+      "equity_usd": 268.9562,
+      "liquid_usd": 265.9584,
+      "upnl_usd": -0.0022,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:01 ET",
+      "equity_usd": 268.9901,
+      "liquid_usd": 265.992,
+      "upnl_usd": -0.0019,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:07 ET",
+      "equity_usd": 269.1088,
+      "liquid_usd": 266.1093,
+      "upnl_usd": -0.0005,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:10 ET",
+      "equity_usd": 269.034,
+      "liquid_usd": 266.0354,
+      "upnl_usd": -0.0014,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:12 ET",
+      "equity_usd": 269.0519,
+      "liquid_usd": 266.0531,
+      "upnl_usd": -0.0012,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:15 ET",
+      "equity_usd": 269.033,
+      "liquid_usd": 266.0344,
+      "upnl_usd": -0.0014,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:17 ET",
+      "equity_usd": 269.014,
+      "liquid_usd": 266.0156,
+      "upnl_usd": -0.0016,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:20 ET",
+      "equity_usd": 269.0989,
+      "liquid_usd": 266.0995,
+      "upnl_usd": -0.0006,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:22 ET",
+      "equity_usd": 269.0999,
+      "liquid_usd": 266.1005,
+      "upnl_usd": -0.0006,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:24 ET",
+      "equity_usd": 269.0948,
+      "liquid_usd": 266.0955,
+      "upnl_usd": -0.0007,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:28 ET",
+      "equity_usd": 269.0999,
+      "liquid_usd": 266.1005,
+      "upnl_usd": -0.0006,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:31 ET",
+      "equity_usd": 269.0999,
+      "liquid_usd": 266.1005,
+      "upnl_usd": -0.0006,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:33 ET",
+      "equity_usd": 269.0729,
+      "liquid_usd": 266.0738,
+      "upnl_usd": -0.0009,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:35 ET",
+      "equity_usd": 269.0729,
+      "liquid_usd": 266.0738,
+      "upnl_usd": -0.0009,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:38 ET",
+      "equity_usd": 269.031,
+      "liquid_usd": 266.0324,
+      "upnl_usd": -0.0014,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:41 ET",
+      "equity_usd": 269.031,
+      "liquid_usd": 266.0324,
+      "upnl_usd": -0.0014,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:44 ET",
+      "equity_usd": 269.0989,
+      "liquid_usd": 266.0995,
+      "upnl_usd": -0.0006,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:46 ET",
+      "equity_usd": 269.0909,
+      "liquid_usd": 266.0916,
+      "upnl_usd": -0.0007,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:49 ET",
+      "equity_usd": 268.9951,
+      "liquid_usd": 265.9969,
+      "upnl_usd": -0.0018,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:51 ET",
+      "equity_usd": 268.9742,
+      "liquid_usd": 265.9762,
+      "upnl_usd": -0.002,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:54 ET",
+      "equity_usd": 268.9771,
+      "liquid_usd": 265.9791,
+      "upnl_usd": -0.002,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:57 ET",
+      "equity_usd": 268.8544,
+      "liquid_usd": 265.8578,
+      "upnl_usd": -0.0034,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 20:24:57 ET",
+      "equity_usd": 268.8544,
+      "liquid_usd": 265.8578,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2403,7 +2385,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM AURA uPnL $-0.0005 (-0.0181%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 20:23:00 ET",
+  "notes": "LIVE MTM AURA uPnL $-0.0034 (-0.1123%) \u00b7 held 121s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 20:24:56 ET \u00b7 CUT TIME_FLAT_120s",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2451,32 +2433,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-107",
-    "market": "AURA",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 1.3551127062274664e-05,
-    "mark": 1.3548668362984277e-05,
-    "uPnL": -0.0005,
-    "mtm_pct": -0.0181,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x8379284ac68434d1d6e25b4c0f3e215ba4809aeec07b2c60e53e5c8bec118478",
-    "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
-    "held_sec": 5,
-    "weth_out": 0.001111745380344719,
-    "usd_out": 2.999456
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "AURA",
+    "open": false,
+    "ticker": null,
     "tx": "0x8379284ac68434d1d6e25b4c0f3e215ba4809aeec07b2c60e53e5c8bec118478",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -0.0181,
-    "upnl_usd": -0.0005,
-    "held_sec": 5,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 121,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -35.032
