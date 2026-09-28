@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-28 03:12:52 ET",
+  "updated_et": "2026-09-28 03:13:02 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 262.9852,
-  "upnl_usd": 0.0438,
-  "equity_usd": 266.029,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 262.9763,
+  "upnl_usd": 0.0,
+  "equity_usd": 262.9763,
+  "status": "EXITING:TP_V7_+4.5",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.5928 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -24.601,
-  "total_pnl_pct": -8.4647,
-  "mark_eth": 2646.9,
-  "mark": 2646.9,
+  "total_pnl_usd": -27.6537,
+  "total_pnl_pct": -9.5151,
+  "mark_eth": 2646.81,
+  "mark": 2646.81,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2646.9
+    "ETH": 2646.81
   },
   "holdings": {
     "L1": {
@@ -40,47 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-179",
-      "market": "CLAUDECHAN",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 9.366682482029395e-05,
-      "mark": 9.5033500990149e-05,
-      "uPnL": 0.0438,
-      "mtm_pct": 1.4591,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x1248296c72a76ce3a7197983ab0373f140ad555d5c9db5e8300ad55c480201c8",
-      "token": "0xEd4239bF7F7C322719798cd55E235C618Fb92074",
-      "held_sec": 6,
-      "weth_out": 0.001149938597021735,
-      "usd_out": 3.043772
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-28 02:36:28 ET",
-      "equity_usd": 263.7843,
-      "liquid_usd": 260.7839,
-      "upnl_usd": 0.0004,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 02:36:31 ET",
-      "equity_usd": 263.7843,
-      "liquid_usd": 260.7839,
-      "upnl_usd": 0.0004,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 02:36:33 ET",
-      "equity_usd": 263.7843,
-      "liquid_usd": 260.7839,
-      "upnl_usd": 0.0004,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 02:36:36 ET",
       "equity_usd": 263.7843,
@@ -1459,6 +1420,27 @@
       "liquid_usd": 262.9852,
       "upnl_usd": 0.0438,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 03:12:58 ET",
+      "equity_usd": 266.0725,
+      "liquid_usd": 262.9802,
+      "upnl_usd": 0.0923,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 03:13:01 ET",
+      "equity_usd": 266.3009,
+      "liquid_usd": 262.9763,
+      "upnl_usd": 0.3246,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 03:13:02 ET",
+      "equity_usd": 266.3009,
+      "liquid_usd": 262.9763,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2591,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM CLAUDECHAN uPnL $0.0438 (1.4591%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 03:12:52 ET",
+  "notes": "LIVE MTM CLAUDECHAN uPnL $0.3246 (10.8201%) \u00b7 held 15s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 03:13:00 ET \u00b7 CUT TP_V7_+4.5",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2639,32 +2621,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-179",
-    "market": "CLAUDECHAN",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 9.366682482029395e-05,
-    "mark": 9.5033500990149e-05,
-    "uPnL": 0.0438,
-    "mtm_pct": 1.4591,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x1248296c72a76ce3a7197983ab0373f140ad555d5c9db5e8300ad55c480201c8",
-    "token": "0xEd4239bF7F7C322719798cd55E235C618Fb92074",
-    "held_sec": 6,
-    "weth_out": 0.001149938597021735,
-    "usd_out": 3.043772
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "CLAUDECHAN",
+    "open": false,
+    "ticker": null,
     "tx": "0x1248296c72a76ce3a7197983ab0373f140ad555d5c9db5e8300ad55c480201c8",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 1.4591,
-    "upnl_usd": 0.0438,
-    "held_sec": 6,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 14,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.5928
