@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-28 07:38:49 ET",
+  "updated_et": "2026-09-28 07:38:52 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 261.0296,
-  "upnl_usd": 0.002,
-  "equity_usd": 264.0316,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 261.0599,
+  "upnl_usd": 0.0,
+  "equity_usd": 261.0599,
+  "status": "EXITING:TIME_FLAT_120s",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.7912 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -26.5984,
-  "total_pnl_pct": -9.152,
-  "mark_eth": 2666.27,
-  "mark": 2666.27,
+  "total_pnl_usd": -29.5701,
+  "total_pnl_pct": -10.1745,
+  "mark_eth": 2666.58,
+  "mark": 2666.58,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2666.27
+    "ETH": 2666.58
   },
   "holdings": {
     "L1": {
@@ -40,40 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-225",
-      "market": "UNDERPANTSGNOME",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 1.3361501653770244e-05,
-      "mark": 1.3370514012049893e-05,
-      "uPnL": 0.002,
-      "mtm_pct": 0.0675,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x35a98ef11c8ebdb7d4859f5851d6a7e084122e9ee311433be18e08552fc3f332",
-      "token": "0x6808af3407ad3F81a24F77080F4146a31EDd84Fe",
-      "held_sec": 118,
-      "weth_out": 0.001125926296176357,
-      "usd_out": 3.002024
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-28 07:09:56 ET",
-      "equity_usd": 263.5874,
-      "liquid_usd": 260.5875,
-      "upnl_usd": -0.0001,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 07:09:59 ET",
-      "equity_usd": 263.5914,
-      "liquid_usd": 260.5915,
-      "upnl_usd": -0.0001,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 07:10:03 ET",
       "equity_usd": 263.5489,
@@ -1459,6 +1427,20 @@
       "liquid_usd": 261.0296,
       "upnl_usd": 0.002,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 07:38:51 ET",
+      "equity_usd": 264.0623,
+      "liquid_usd": 261.0599,
+      "upnl_usd": 0.0024,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 07:38:52 ET",
+      "equity_usd": 264.0623,
+      "liquid_usd": 261.0599,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2591,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM UNDERPANTSGNOME uPnL $0.002 (0.0675%) \u00b7 held 119s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 07:38:48 ET",
+  "notes": "LIVE MTM UNDERPANTSGNOME uPnL $0.0024 (0.0791%) \u00b7 held 121s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 07:38:51 ET \u00b7 CUT TIME_FLAT_120s",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2639,32 +2621,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-225",
-    "market": "UNDERPANTSGNOME",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 1.3361501653770244e-05,
-    "mark": 1.3370514012049893e-05,
-    "uPnL": 0.002,
-    "mtm_pct": 0.0675,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x35a98ef11c8ebdb7d4859f5851d6a7e084122e9ee311433be18e08552fc3f332",
-    "token": "0x6808af3407ad3F81a24F77080F4146a31EDd84Fe",
-    "held_sec": 118,
-    "weth_out": 0.001125926296176357,
-    "usd_out": 3.002024
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "UNDERPANTSGNOME",
+    "open": false,
+    "ticker": null,
     "tx": "0x35a98ef11c8ebdb7d4859f5851d6a7e084122e9ee311433be18e08552fc3f332",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 0.0675,
-    "upnl_usd": 0.002,
-    "held_sec": 118,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 121,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.7912
