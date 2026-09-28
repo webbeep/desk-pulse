@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-28 15:02:59 ET",
+  "updated_et": "2026-09-28 15:05:52 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 265.7779,
   "upnl_usd": 0.0,
   "equity_usd": 265.7779,
-  "status": "LIVE_FLAT",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-33.2139 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -24.8521,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-276",
+      "market": "WALLET",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x0b9209597435c87620fa21eeeb18ff96717f06946f1580529252c4b72d8e5ba3",
+      "token": "0x32C3cE734cf52F9429C8a8eC2982e4fd714960Ed",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-28 14:12:31 ET",
@@ -2570,7 +2581,7 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
   "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 15:02:59 ET",
@@ -2621,17 +2632,26 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-276",
+    "market": "WALLET",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x0b9209597435c87620fa21eeeb18ff96717f06946f1580529252c4b72d8e5ba3",
+    "token": "0x32C3cE734cf52F9429C8a8eC2982e4fd714960Ed",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0xb347c0178a72ab11db1232a26c39d6361cb0ed213b46ca7dba4ca11f4a22e89a",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0059,
-    "flat": true,
-    "opens_paused": false,
-    "frozen": false,
-    "strategy": "MEME_V8_QUOTER_GUARD",
+    "open": true,
+    "flat": false,
+    "ticker": "WALLET",
+    "tx": "0x0b9209597435c87620fa21eeeb18ff96717f06946f1580529252c4b72d8e5ba3",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-276",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
     "loop": "rh_live_loop"
   },
   "realized_pnl_usd": -33.2139
