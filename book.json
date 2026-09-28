@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-28 04:16:26 ET",
+  "updated_et": "2026-09-28 04:16:29 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 263.0652,
-  "upnl_usd": 0.5054,
-  "equity_usd": 266.5706,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 263.0652,
+  "status": "EXITING:TP_V7_+4.5",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.6491 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -24.0594,
-  "total_pnl_pct": -8.2784,
+  "total_pnl_usd": -27.5648,
+  "total_pnl_pct": -9.4845,
   "mark_eth": 2649.93,
   "mark": 2649.93,
   "mark_src": "coinbase",
@@ -40,33 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-191",
-      "market": "NEVERDOOM",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 4.097178299350801e-05,
-      "mark": 4.787424111447704e-05,
-      "uPnL": 0.5054,
-      "mtm_pct": 16.8469,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x842e6884a3bbeac1edff291fbbdd9fedef9bb0168f93748d54bcd83692016af5",
-      "token": "0xb3e92E6896Feb35f9d4Da891146cc1b0983F7A41",
-      "held_sec": 6,
-      "weth_out": 0.001322829562087789,
-      "usd_out": 3.505406
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-28 03:36:33 ET",
-      "equity_usd": 266.0477,
-      "liquid_usd": 263.0458,
-      "upnl_usd": 0.0019,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 03:36:36 ET",
       "equity_usd": 266.0778,
@@ -1459,6 +1434,13 @@
       "liquid_usd": 263.0652,
       "upnl_usd": 0.5054,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 04:16:29 ET",
+      "equity_usd": 266.5706,
+      "liquid_usd": 263.0652,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2591,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM NEVERDOOM uPnL $0.5054 (16.8469%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 04:16:26 ET",
+  "notes": "LIVE MTM NEVERDOOM uPnL $0.5054 (16.8469%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 04:16:26 ET \u00b7 CUT TP_V7_+4.5",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2639,31 +2621,15 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-191",
-    "market": "NEVERDOOM",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 4.097178299350801e-05,
-    "mark": 4.787424111447704e-05,
-    "uPnL": 0.5054,
-    "mtm_pct": 16.8469,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x842e6884a3bbeac1edff291fbbdd9fedef9bb0168f93748d54bcd83692016af5",
-    "token": "0xb3e92E6896Feb35f9d4Da891146cc1b0983F7A41",
-    "held_sec": 6,
-    "weth_out": 0.001322829562087789,
-    "usd_out": 3.505406
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "NEVERDOOM",
+    "open": false,
+    "ticker": null,
     "tx": "0x842e6884a3bbeac1edff291fbbdd9fedef9bb0168f93748d54bcd83692016af5",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 16.8469,
-    "upnl_usd": 0.5054,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 6,
     "watcher": "rh_live_mtm_loop"
   },
