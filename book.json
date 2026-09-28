@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-27 21:34:03 ET",
+  "updated_et": "2026-09-27 21:34:13 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.4253,
+  "liquid_usd": 266.4178,
   "upnl_usd": 0.0,
-  "equity_usd": 263.4253,
-  "status": "EXITING:TIME_FLAT_120s",
+  "equity_usd": 266.4178,
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-35.5662 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.2047,
-  "total_pnl_pct": -9.3606,
+  "total_pnl_usd": -24.2122,
+  "total_pnl_pct": -8.3309,
   "mark_eth": 2673.08,
   "mark": 2673.08,
   "mark_src": "coinbase",
@@ -21,14 +21,14 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.031178592519597464,
-      "weth": 0.06596184769486703
+      "eth": 0.031176285939597464,
+      "weth": 0.06708361359427605
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.031178592519597464,
-    "rh_weth": 0.06596184769486703,
+    "rh_eth": 0.031176285939597464,
+    "rh_weth": 0.06708361359427605,
     "arb_eth": 0,
     "arb_usdc": 0,
     "base_eth": 0,
@@ -42,13 +42,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 21:06:55 ET",
-      "equity_usd": 266.4878,
-      "liquid_usd": 263.4884,
-      "upnl_usd": -0.0006,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 21:06:57 ET",
       "equity_usd": 266.5557,
@@ -1441,9 +1434,30 @@
       "liquid_usd": 263.4253,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-27 21:34:13 ET",
+      "equity_usd": 263.4253,
+      "liquid_usd": 266.4178,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-118-EXIT",
+      "t": "2026-09-27 21:34:13 ET",
+      "kind": "LIVE",
+      "market": "UNDERPANTSGNOME",
+      "side": "SELL",
+      "size_usd": 3.0,
+      "pnl_usd": -0.0018,
+      "mtm_pct": -0.06,
+      "tx": "0xaf108e51195817b8ac3e23a9c6c4e1dfeb505ffca6e468e3c3802847d3243b03",
+      "reason": "TIME_FLAT_120s",
+      "stamp_et": "2026-09-27 21:34:13 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-117-EXIT",
       "market": "AURA",
@@ -2524,19 +2538,6 @@
       "tx": "CUT_HARD_-2.5",
       "id": "PAPER-1566",
       "paper": true
-    },
-    {
-      "t": "2026-09-26 20:39:32 ET",
-      "kind": "PAPER",
-      "market": "AURA",
-      "side": "LONG",
-      "size": 3.0,
-      "size_usd": 3.0,
-      "pnl_usd": 0.4494,
-      "pnl_pct": 14.9816,
-      "tx": "TP_+4.5",
-      "id": "PAPER-1565",
-      "paper": true
     }
   ],
   "paper": {
@@ -2547,7 +2548,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM UNDERPANTSGNOME uPnL $-0.0014 (-0.0477%) \u00b7 held 122s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 21:34:02 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT UNDERPANTSGNOME \u00b7 TIME_FLAT_120s \u00b7 tx 0xaf108e51195817b8ac3e23a9c6c4e1dfeb505ffca6e468e3c3802847d3243b03 \u00b7 2026-09-27 21:34:13 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2599,13 +2600,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xf0f1f2c2858eaf98bfc9668287d6ddaca2964bce427b648cb54a1b8b3b93ec06",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 122,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xaf108e51195817b8ac3e23a9c6c4e1dfeb505ffca6e468e3c3802847d3243b03",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": -0.0018
   },
   "realized_pnl_usd": -35.5662
 }
