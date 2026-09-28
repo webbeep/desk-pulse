@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-28 04:56:05 ET",
+  "updated_et": "2026-09-28 04:56:11 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 263.4626,
   "upnl_usd": 0.0,
   "equity_usd": 263.4626,
-  "status": "EXITING:QUOTE_DEGRADE_ABORT",
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.0692 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -27.1674,
@@ -42,13 +42,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-28 04:07:52 ET",
-      "equity_usd": 265.4423,
-      "liquid_usd": 262.4443,
-      "upnl_usd": -0.002,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 04:07:55 ET",
       "equity_usd": 265.4423,
@@ -1441,9 +1434,30 @@
       "liquid_usd": 263.4626,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 04:56:11 ET",
+      "equity_usd": 263.4626,
+      "liquid_usd": 263.4626,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-197-EXIT",
+      "t": "2026-09-28 04:56:11 ET",
+      "kind": "LIVE",
+      "market": "NEVERDOOM",
+      "side": "SELL",
+      "size_usd": 3.0,
+      "pnl_usd": -3.0,
+      "mtm_pct": -100.0,
+      "tx": null,
+      "reason": "QUOTE_DEGRADE_ABORT",
+      "stamp_et": "2026-09-28 04:56:11 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-196-EXIT",
       "t": "2026-09-28 04:42:32 ET",
@@ -2549,20 +2563,6 @@
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 21:34:13 ET",
       "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-117-EXIT",
-      "market": "AURA",
-      "side": "SELL",
-      "size_usd": 3.0,
-      "pnl_usd": -0.0029,
-      "mtm_pct": -0.0951,
-      "tx": "0xe9ca230625fade735c834b448cc415c0c2a7e24d9d3ac091fbe3318b35e2b542",
-      "reason": "TIME_FLAT_120s",
-      "stamp_et": "2026-09-27 21:29:35 ET",
-      "paper": false,
-      "t": "2026-09-27 21:29:35 ET",
-      "kind": "LIVE"
     }
   ],
   "paper": {
@@ -2573,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM NEVERDOOM uPnL $-3.0 (-100.0%) \u00b7 held 19s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 04:56:04 ET \u00b7 CUT QUOTE_DEGRADE_ABORT",
+  "notes": "LIVE EXIT NEVERDOOM \u00b7 QUOTE_DEGRADE_ABORT \u00b7 tx None \u00b7 2026-09-28 04:56:10 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2625,13 +2625,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x7f86a914fc2600acf740413a65a1e2c4f12075c22880954355053786d08f2297",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 18,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "QUOTE_DEGRADE_ABORT",
+    "last_exit_upnl": -3.0
   },
   "realized_pnl_usd": -32.0692
 }
