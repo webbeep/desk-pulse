@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-28 17:26:18 ET",
+  "updated_et": "2026-09-28 17:26:25 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 262.0226,
+  "liquid_usd": 265.3372,
   "upnl_usd": 0.0,
-  "equity_usd": 262.0226,
-  "status": "EXITING:POST_FILL_FLAT_-10.1791",
+  "equity_usd": 265.3372,
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.2536 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -28.6074,
-  "total_pnl_pct": -9.8432,
+  "total_pnl_usd": -25.2928,
+  "total_pnl_pct": -8.7027,
   "mark_eth": 2681.19,
   "mark": 2681.19,
   "mark_src": "coinbase",
@@ -21,14 +21,14 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.01995498651570913,
-      "weth": 0.07636420136869793
+      "eth": 0.019952496625397127,
+      "weth": 0.07760292782680642
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.01995498651570913,
-    "rh_weth": 0.07636420136869793,
+    "rh_eth": 0.019952496625397127,
+    "rh_weth": 0.07760292782680642,
     "arb_eth": 0,
     "arb_usdc": 0,
     "base_eth": 0,
@@ -42,13 +42,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-28 16:47:28 ET",
-      "equity_usd": 264.2135,
-      "liquid_usd": 261.2119,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-09-28 16:47:36 ET",
       "equity_usd": 261.2119,
@@ -1441,9 +1434,30 @@
       "liquid_usd": 262.0226,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 17:26:25 ET",
+      "equity_usd": 262.0226,
+      "liquid_usd": 265.3372,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-300-EXIT",
+      "t": "2026-09-28 17:26:25 ET",
+      "kind": "LIVE",
+      "market": "PYGOSCELIS",
+      "side": "SELL",
+      "size_usd": 3.0,
+      "pnl_usd": 0.3206,
+      "mtm_pct": 10.6876,
+      "tx": "0x7739263b7a73a32bc54d5f2dfe48886eaec6daeb7acec57e4930fc027fbfdc38",
+      "reason": "POST_FILL_FLAT_-10.1791",
+      "stamp_et": "2026-09-28 17:26:25 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-299-EXIT",
       "t": "2026-09-28 17:23:28 ET",
@@ -2549,20 +2563,6 @@
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-28 07:16:33 ET",
       "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-221-EXIT",
-      "t": "2026-09-28 07:11:04 ET",
-      "kind": "LIVE",
-      "market": "UNDERPANTSGNOME",
-      "side": "SELL",
-      "size_usd": 3.0,
-      "pnl_usd": -0.0003,
-      "mtm_pct": -0.0091,
-      "tx": "0x9d8b3875d153e7100914aad7a905b059d2d3eb2423cfcdd3b23ebfc0977c466d",
-      "reason": "TIME_FLAT_120s",
-      "stamp_et": "2026-09-28 07:11:04 ET",
-      "paper": false
     }
   ],
   "paper": {
@@ -2573,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM PYGOSCELIS uPnL $-0.3054 (-10.1791%) \u00b7 held 5s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 17:26:15 ET \u00b7 CUT POST_FILL_FLAT_-10.1791",
+  "notes": "LIVE EXIT PYGOSCELIS \u00b7 POST_FILL_FLAT_-10.1791 \u00b7 tx 0x7739263b7a73a32bc54d5f2dfe48886eaec6daeb7acec57e4930fc027fbfdc38 \u00b7 2026-09-28 17:26:24 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2625,13 +2625,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x6fae04025f7837fcadf59a95008049b079d6f9944cb2ae5403f7a5ddd8beffa7",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 5,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x7739263b7a73a32bc54d5f2dfe48886eaec6daeb7acec57e4930fc027fbfdc38",
+    "last_exit_reason": "POST_FILL_FLAT_-10.1791",
+    "last_exit_upnl": 0.3206
   },
   "realized_pnl_usd": -32.2536
 }
