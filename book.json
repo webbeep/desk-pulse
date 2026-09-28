@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-28 16:56:06 ET",
+  "updated_et": "2026-09-28 16:56:11 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 261.2053,
-  "upnl_usd": -0.0007,
-  "equity_usd": 264.2046,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 261.2286,
+  "upnl_usd": 0.0,
+  "equity_usd": 261.2286,
+  "status": "EXITING:POST_FILL_FLAT_-8.1953",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-33.0955 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -26.4254,
-  "total_pnl_pct": -9.0925,
-  "mark_eth": 2680.75,
-  "mark": 2680.75,
+  "total_pnl_usd": -29.4014,
+  "total_pnl_pct": -10.1164,
+  "mark_eth": 2680.99,
+  "mark": 2680.99,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2680.75
+    "ETH": 2680.99
   },
   "holdings": {
     "L1": {
@@ -40,40 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-294",
-      "market": "PYGOSCELIS",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 0.00010768594841102172,
-      "mark": 0.0001076624050436871,
-      "uPnL": -0.0007,
-      "mtm_pct": -0.0219,
-      "lev": 1,
-      "paper": false,
-      "tx": "0xc8194648193f542f2e80f5be66b92d5125588f2c21bfb0ae7f44b7feb270d5e7",
-      "token": "0xbeac4c5850c8967859fB72fA5FD1b3B083E3D935",
-      "held_sec": 5,
-      "weth_out": 0.001118845140472714,
-      "usd_out": 2.999344
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-28 16:19:43 ET",
-      "equity_usd": 264.3137,
-      "liquid_usd": 261.3128,
-      "upnl_usd": 0.0009,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-28 16:19:45 ET",
-      "equity_usd": 264.3097,
-      "liquid_usd": 261.3089,
-      "upnl_usd": 0.0008,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 16:19:49 ET",
       "equity_usd": 264.3097,
@@ -1459,6 +1427,20 @@
       "liquid_usd": 261.2053,
       "upnl_usd": -0.0007,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 16:56:10 ET",
+      "equity_usd": 263.9827,
+      "liquid_usd": 261.2286,
+      "upnl_usd": -0.2459,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 16:56:11 ET",
+      "equity_usd": 263.9827,
+      "liquid_usd": 261.2286,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2591,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM PYGOSCELIS uPnL $-0.0007 (-0.0219%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 16:56:05 ET",
+  "notes": "LIVE MTM PYGOSCELIS uPnL $-0.2459 (-8.1953%) \u00b7 held 10s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 16:56:09 ET \u00b7 CUT POST_FILL_FLAT_-8.1953",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2639,32 +2621,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-294",
-    "market": "PYGOSCELIS",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 0.00010768594841102172,
-    "mark": 0.0001076624050436871,
-    "uPnL": -0.0007,
-    "mtm_pct": -0.0219,
-    "lev": 1,
-    "paper": false,
-    "tx": "0xc8194648193f542f2e80f5be66b92d5125588f2c21bfb0ae7f44b7feb270d5e7",
-    "token": "0xbeac4c5850c8967859fB72fA5FD1b3B083E3D935",
-    "held_sec": 5,
-    "weth_out": 0.001118845140472714,
-    "usd_out": 2.999344
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "PYGOSCELIS",
+    "open": false,
+    "ticker": null,
     "tx": "0xc8194648193f542f2e80f5be66b92d5125588f2c21bfb0ae7f44b7feb270d5e7",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -0.0219,
-    "upnl_usd": -0.0007,
-    "held_sec": 5,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 9,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -33.0955
