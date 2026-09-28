@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-27 21:29:35 ET",
+  "updated_et": "2026-09-27 21:32:01 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 266.5272,
   "upnl_usd": 0.0,
   "equity_usd": 266.5272,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-35.5633 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-35.5662 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -24.1028,
   "total_pnl_pct": -8.2933,
   "mark_eth": 2674.03,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-118",
+      "market": "UNDERPANTSGNOME",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0xf0f1f2c2858eaf98bfc9668287d6ddaca2964bce427b648cb54a1b8b3b93ec06",
+      "token": "0x6808af3407ad3F81a24F77080F4146a31EDd84Fe",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-27 21:01:50 ET",
@@ -1454,7 +1465,9 @@
       "tx": "0xe9ca230625fade735c834b448cc415c0c2a7e24d9d3ac091fbe3318b35e2b542",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 21:29:35 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 21:29:35 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-116-EXIT",
@@ -1466,7 +1479,9 @@
       "tx": "0x8381bd24bd9af7cee5f86e42556ddcb4c72c65bb10c75980b278a3d2d8b8692b",
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-27 21:23:44 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 21:23:44 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-115-EXIT",
@@ -1478,7 +1493,9 @@
       "tx": "0xe7dda03537e93528da17107d5e4c549c96bd2a07a400804f6f9c704ec618354f",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 21:20:40 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 21:20:40 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-114-EXIT",
@@ -1490,7 +1507,9 @@
       "tx": "0xacbf566670bd9be36000092aef64e1ff8a0bc279849e1eb94dfdda1f701f942a",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 21:15:43 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 21:15:43 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-113-EXIT",
@@ -1502,7 +1521,9 @@
       "tx": "0xaab108f9e95981e6b55ef995dd7ac70a10b9feb9fae37d688d5148c2ae0a5009",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 21:07:33 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 21:07:33 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-112-EXIT",
@@ -1514,7 +1535,9 @@
       "tx": "0x9cc3b2081d7e0caae68bbb127d4be2885baecb1e525d1cf25892dee06ce5f2a3",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 21:02:27 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 21:02:27 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-111-EXIT",
@@ -1526,7 +1549,9 @@
       "tx": "0xe616fe256b809dce3b4241f92a6ea406d2bc91215f5aa049b7fdacc565482e38",
       "reason": "HARD_SL_PCT_-16.5875",
       "stamp_et": "2026-09-27 20:57:28 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 20:57:28 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-110-EXIT",
@@ -1538,7 +1563,9 @@
       "tx": "0xded0f4d78c33642e3c13091a6e0836606b053d2c480b1af4800b411f7a972642",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 20:54:02 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 20:54:02 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-109-EXIT",
@@ -1550,7 +1577,9 @@
       "tx": "0x83c176fd2a90fe2af2db741611adcfd4f1713a40981f124f7314b66a98bc92c4",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 20:45:51 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 20:45:51 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-108-EXIT",
@@ -1562,7 +1591,9 @@
       "tx": "0x0e7851df0465cbc3b67be2f3583fe91921121999f797d70ceaf45cf75ff36a8d",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 20:39:55 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 20:39:55 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-107-EXIT",
@@ -1574,7 +1605,9 @@
       "tx": "0xca39f98c08092f09878840a63e32286314dbfa409616186602d26f8cce4e348e",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 20:25:06 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 20:25:06 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-106-EXIT",
@@ -1586,7 +1619,9 @@
       "tx": "0x804fe1afee6463f554a08aca124405c7607a78414c75867cd27d2b64d205722d",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 20:06:24 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 20:06:24 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-105-EXIT",
@@ -1598,7 +1633,9 @@
       "tx": "0xee91470c4853f2f34501e7bc8ccbf0f95b23e6e46bf18a9b3e906c14aac45b23",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 19:51:24 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 19:51:24 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-104-EXIT",
@@ -1610,7 +1647,9 @@
       "tx": "0xdbba7ca5f778d7a9cb5d8524195edd1a488044cf402f0015ac5e10ecb8311879",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 19:31:03 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 19:31:03 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-103-EXIT",
@@ -1622,7 +1661,9 @@
       "tx": "0x8790470c8633efd39a53d2d11478dbeb74e7fa87250c85a414a8c59db8624138",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 19:19:17 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 19:19:17 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-102-EXIT",
@@ -1634,7 +1675,9 @@
       "tx": "0x8f1db39359d3ec8924fc3711059a9fe97b03d151c6fb29573ca3f60d509779e6",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 19:15:25 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 19:15:25 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-101-EXIT",
@@ -1646,7 +1689,9 @@
       "tx": null,
       "reason": "QUOTE_DEGRADE_ABORT",
       "stamp_et": "2026-09-27 19:11:28 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 19:11:28 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-100-EXIT",
@@ -1658,7 +1703,9 @@
       "tx": "0x616d59be04e36cd979c14a2114f62999707507e5d52ac425dbc0971acdad0df3",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 18:46:13 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 18:46:13 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-99-EXIT",
@@ -1670,7 +1717,9 @@
       "tx": "0xaa5ccdc15f508d6314b7d39fb95a0e846d4dc46e16e2d22f22e2289bfee6e009",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-27 18:41:54 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 18:41:54 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-98-EXIT",
@@ -1682,7 +1731,9 @@
       "tx": "0xed82a34aeb7ab68abf0dc74d2b9db1deaca224d9284a2959ef832aed1c7227b9",
       "reason": "HARD_SL_PCT_-4.2672",
       "stamp_et": "2026-09-27 18:39:05 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 18:39:05 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-97-EXIT",
@@ -1694,7 +1745,9 @@
       "tx": "0xbbdae32a34423e35f1b02453fbeb07e44316fadfe9be7f838b8dc55bef757ba2",
       "reason": "HARD_SL_PCT_-5.5641",
       "stamp_et": "2026-09-27 13:04:36 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 13:04:36 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-96-EXIT",
@@ -1706,7 +1759,9 @@
       "tx": "0x9fe4b5fb20bd63b4dd5d259e0af1b4c46d2920e504343c5b3fb20f8f607eb933",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 13:02:00 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 13:02:00 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-95-EXIT",
@@ -1718,7 +1773,9 @@
       "tx": "0x02ebb0a507ee51b6f64bb4d8323f0e8fa27636252ce4a5b185c7cc3c90ee0354",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 12:55:53 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 12:55:53 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-94-EXIT",
@@ -1730,7 +1787,9 @@
       "tx": "0xc0e839ad6d8b6a2371cbcbde6edbb3cbec8506a917c58e841ce725262e638cdc",
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-27 12:46:14 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 12:46:14 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-93-EXIT",
@@ -1742,7 +1801,9 @@
       "tx": "0x32fce19106a9d0e3c05c1a8b3ecb8a6b204ed606f388d4e6df5c2fa699b9c53a",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 12:43:38 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 12:43:38 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-92-EXIT",
@@ -1754,7 +1815,9 @@
       "tx": "0x6c55ad8036573be52a48ddbe042c321089ab0b0d3b31a00b97f9b38c0409cd9e",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 12:38:10 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 12:38:10 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-91-EXIT",
@@ -1766,7 +1829,9 @@
       "tx": null,
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-27 12:32:03 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 12:32:03 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-90-EXIT",
@@ -1778,7 +1843,9 @@
       "tx": null,
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-27 12:29:23 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 12:29:23 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-89-EXIT",
@@ -1790,7 +1857,9 @@
       "tx": null,
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-27 12:28:29 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 12:28:29 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-88-EXIT",
@@ -1802,7 +1871,9 @@
       "tx": null,
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-27 12:26:42 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 12:26:42 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-87-EXIT",
@@ -1814,7 +1885,9 @@
       "tx": "0xfe860e620ebe22a07b9a5f01a0d4b28f9a235446065f42231ecb1b6156711981",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 12:23:15 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 12:23:15 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-86-EXIT",
@@ -1826,7 +1899,9 @@
       "tx": "0xd762b5914ab5a16672e00d4c1670afccc72ed089562fb020391ca42e5ab09b8e",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 12:18:01 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 12:18:01 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-85-EXIT",
@@ -1838,7 +1913,9 @@
       "tx": null,
       "reason": "CUT_HARD_QUOTER",
       "stamp_et": "2026-09-27 11:35:33 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 11:35:33 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-84-EXIT",
@@ -1850,7 +1927,9 @@
       "tx": "0x3dc300b13dacd2bff3b408a7b942a51a46d075efeb1ebf290788c80e3141a937",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 11:25:10 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 11:25:10 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-83-EXIT",
@@ -1862,7 +1941,9 @@
       "tx": "0xdb6f6e1c238a927cb4af62260a7e249a5ca5249a3ac833089ede464ca506dcbe",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 11:19:48 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 11:19:48 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-82-EXIT",
@@ -1874,7 +1955,9 @@
       "tx": null,
       "reason": "CUT_HARD_QUOTER",
       "stamp_et": "2026-09-27 11:14:51 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 11:14:51 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-81-EXIT",
@@ -1886,7 +1969,9 @@
       "tx": "0x1372f6ad2b38cc2c1bc1503437e8ab01b73ed0eb2849c116e27c68c448a7b386",
       "reason": "CUT_HARD_QUOTER",
       "stamp_et": "2026-09-27 11:13:10 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 11:13:10 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-80-EXIT",
@@ -1898,7 +1983,9 @@
       "tx": "0xed19fb8702e70e3896df57e04e918acadf7ecb14c44c8a7a7bd0be9abef25fd3",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 11:08:14 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 11:08:14 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-79-EXIT",
@@ -1910,7 +1997,9 @@
       "tx": "0x9235f17f5a0e38069bf7a4364d2a521361ccda5f2c7d3f10ce028038caa03bcc",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 11:02:38 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 11:02:38 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-78-EXIT",
@@ -1922,7 +2011,9 @@
       "tx": "0x5e4ffe5ff7015c5acbae2302aaf089875729d59fd9518160ec5652eebb2bfe1e",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 10:57:09 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 10:57:09 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-77-EXIT",
@@ -1934,7 +2025,9 @@
       "tx": "0x089461386dce2deb3b423f141b7f35cde92b5e397ffcf67aeeaef73ffc69d0a0",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 10:51:31 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 10:51:31 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-76-EXIT",
@@ -1946,7 +2039,9 @@
       "tx": "0x40081153872fd1cbb7b8c433a4bfa80d792002c158b290d5d1efeb89abb77253",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 10:44:36 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 10:44:36 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-75-EXIT",
@@ -1958,7 +2053,9 @@
       "tx": null,
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-27 10:19:08 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 10:19:08 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-74-EXIT",
@@ -1970,7 +2067,9 @@
       "tx": "0x7db8f69df09ec915e80c5c2b71d0ff151a1258e30f1c77aa766c2595729e1b60",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 10:16:54 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 10:16:54 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-73-EXIT",
@@ -1982,7 +2081,9 @@
       "tx": "0xe411a4100d2948c75b60d12689294ac110516d33180243c729b7ce4d3f747dc2",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 10:11:31 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 10:11:31 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-72-EXIT",
@@ -1994,7 +2095,9 @@
       "tx": "0xe6dbc31a359fbc1743feaf2dc53b9f7c7d46568a33f7229a805f851bd6c77e02",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 10:06:24 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 10:06:24 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-71-EXIT",
@@ -2006,7 +2109,9 @@
       "tx": "0x23d74992fcd3db9f2bddf0ea0beeda014d62f71e4a3b342209d26c2a013fdd0d",
       "reason": "CUT_HARD_QUOTER",
       "stamp_et": "2026-09-27 10:00:32 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 10:00:32 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-70-EXIT",
@@ -2018,7 +2123,9 @@
       "tx": "0x0112f1e0840b3011701f0d27b439eefa5bc34883451aa7136d91239dde61abae",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 09:57:50 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 09:57:50 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-69-EXIT",
@@ -2030,7 +2137,9 @@
       "tx": "0x830a39c182ddf2dc49d170ead13bf14bfe16f1ada6721b2af737882094567573",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 09:50:24 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 09:50:24 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-68-EXIT",
@@ -2042,7 +2151,9 @@
       "tx": "0x77c3075b4e582eba9ada289ed3b72a45e08e0d42c8c8f7b31f5a8ec692aa7b30",
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-27 09:44:47 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 09:44:47 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-67-EXIT",
@@ -2054,7 +2165,9 @@
       "tx": "0x539fc695e2dbc9c0c2dcd7ccd39bf4102930273151fbbe4f45735d169d614fc9",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 09:42:23 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 09:42:23 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-66-EXIT",
@@ -2066,7 +2179,9 @@
       "tx": "0x647b5af8ad020db20838d848e0e7a03123e9ef082b3b7c88d7eefbf9ead4da4c",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 09:37:07 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 09:37:07 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-65-EXIT",
@@ -2078,7 +2193,9 @@
       "tx": "0xcd859424aced5bc877f08469c2b9194a3a206fa5c62fc25260fb79d49755a8fb",
       "reason": "TIME_FLAT_240s",
       "stamp_et": "2026-09-27 09:31:56 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 09:31:56 ET",
+      "kind": "LIVE"
     },
     {
       "id": "LIVE-SCALP-64-EXIT",
@@ -2090,7 +2207,9 @@
       "tx": "0xbf73c0934c46f824cf9ed266ef4fcc37a8c1ce49021af82f2a4498e6d02ab4c2",
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-27 09:26:31 ET",
-      "paper": false
+      "paper": false,
+      "t": "2026-09-27 09:26:31 ET",
+      "kind": "LIVE"
     },
     {
       "t": "2026-09-27 08:50:32 ET",
@@ -2436,10 +2555,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT AURA \u00b7 TIME_FLAT_120s \u00b7 tx 0xe9ca230625fade735c834b448cc415c0c2a7e24d9d3ac091fbe3318b35e2b542 \u00b7 2026-09-27 21:29:34 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-27 21:30:19 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2487,13 +2606,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0xe9ca230625fade735c834b448cc415c0c2a7e24d9d3ac091fbe3318b35e2b542",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0029
+  "position": {
+    "id": "LIVE-SCALP-118",
+    "market": "UNDERPANTSGNOME",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0xf0f1f2c2858eaf98bfc9668287d6ddaca2964bce427b648cb54a1b8b3b93ec06",
+    "token": "0x6808af3407ad3F81a24F77080F4146a31EDd84Fe",
+    "paper": false,
+    "uPnL": 0.0
   },
-  "realized_pnl_usd": -35.5633
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "UNDERPANTSGNOME",
+    "tx": "0xf0f1f2c2858eaf98bfc9668287d6ddaca2964bce427b648cb54a1b8b3b93ec06",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-118",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "realized_pnl_usd": -35.5662
 }
