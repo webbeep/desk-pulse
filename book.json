@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-28 19:02:11 ET",
+  "updated_et": "2026-09-28 19:02:15 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 265.1336,
-  "upnl_usd": 0.0,
-  "equity_usd": 265.1336,
+  "liquid_usd": 262.3046,
+  "upnl_usd": -0.0004,
+  "equity_usd": 265.3042,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.4347 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -25.4964,
-  "total_pnl_pct": -8.7728,
-  "mark_eth": 2686.03,
-  "mark": 2686.03,
+  "total_pnl_usd": -25.3258,
+  "total_pnl_pct": -8.7141,
+  "mark_eth": 2687.85,
+  "mark": 2687.85,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2686.03
+    "ETH": 2687.85
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.008682493733291764,
+      "eth": 0.007563152278228634,
       "weth": 0.08861880435080648
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.008682493733291764,
+    "rh_eth": 0.007563152278228634,
     "rh_weth": 0.08861880435080648,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,20 +46,20 @@
       "market": "CLAUDECAT",
       "side": "LONG",
       "size_usd": 3.0,
+      "entry": 9.652165411482136e-05,
+      "mark": 9.650917363863557e-05,
+      "uPnL": -0.0004,
+      "mtm_pct": -0.0129,
+      "lev": 1,
+      "paper": false,
       "tx": "0x70a8a0d26da091c847337d2eae1d610d94f332241ab129d2cf0a2ca58fbdb12c",
       "token": "0xAaB9fAD0dAB6c73C0E0aadbf8FaF4345E7499053",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 5,
+      "weth_out": 0.001115989394112794,
+      "usd_out": 2.999612
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-28 18:01:14 ET",
-      "equity_usd": 263.7214,
-      "liquid_usd": 260.7245,
-      "upnl_usd": -0.0031,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 18:01:16 ET",
       "equity_usd": 263.7312,
@@ -1452,6 +1452,13 @@
       "liquid_usd": 265.1336,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 19:02:15 ET",
+      "equity_usd": 265.3042,
+      "liquid_usd": 262.3046,
+      "upnl_usd": -0.0004,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2581,10 +2588,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 19:00:20 ET",
+  "notes": "LIVE MTM CLAUDECAT uPnL $-0.0004 (-0.0129%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 19:02:14 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2637,22 +2644,28 @@
     "market": "CLAUDECAT",
     "side": "LONG",
     "size_usd": 3.0,
+    "entry": 9.652165411482136e-05,
+    "mark": 9.650917363863557e-05,
+    "uPnL": -0.0004,
+    "mtm_pct": -0.0129,
+    "lev": 1,
+    "paper": false,
     "tx": "0x70a8a0d26da091c847337d2eae1d610d94f332241ab129d2cf0a2ca58fbdb12c",
     "token": "0xAaB9fAD0dAB6c73C0E0aadbf8FaF4345E7499053",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 5,
+    "weth_out": 0.001115989394112794,
+    "usd_out": 2.999612
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "CLAUDECAT",
     "tx": "0x70a8a0d26da091c847337d2eae1d610d94f332241ab129d2cf0a2ca58fbdb12c",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-311",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.0129,
+    "upnl_usd": -0.0004,
+    "held_sec": 5,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.4347
 }
