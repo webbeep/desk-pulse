@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-28 01:44:36 ET",
+  "updated_et": "2026-09-28 01:44:42 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.3706,
-  "upnl_usd": 0.0,
-  "equity_usd": 263.3706,
+  "liquid_usd": 261.131,
+  "upnl_usd": 0.0004,
+  "equity_usd": 264.1314,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-34.9843 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.2594,
-  "total_pnl_pct": -9.3794,
-  "mark_eth": 2642.09,
-  "mark": 2642.09,
+  "total_pnl_usd": -26.4986,
+  "total_pnl_pct": -9.1176,
+  "mark_eth": 2649.81,
+  "mark": 2649.81,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2642.09
+    "ETH": 2649.81
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.08017722697148807,
+      "eth": 0.07904165085737114,
       "weth": 0.018098373635976932
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.08017722697148807,
+    "rh_eth": 0.07904165085737114,
     "rh_weth": 0.018098373635976932,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,20 +46,20 @@
       "market": "DINGBOTICS",
       "side": "LONG",
       "size_usd": 3.0,
+      "entry": 1.3372072396763121e-05,
+      "mark": 1.3373637912169093e-05,
+      "uPnL": 0.0004,
+      "mtm_pct": 0.0117,
+      "lev": 1,
+      "paper": false,
       "tx": "0x94609f88baae0ec318996080e8028bfd452e1dd0a30343e09c4bd999cd7c1696",
       "token": "0xbd550669943094eeeF4E29C394ba388952D0a0EA",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 6,
+      "weth_out": 0.0011322891907419,
+      "usd_out": 3.000351
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-28 01:23:27 ET",
-      "equity_usd": 260.9566,
-      "liquid_usd": 263.9474,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-09-28 01:26:18 ET",
       "equity_usd": 263.7304,
@@ -1452,6 +1452,13 @@
       "liquid_usd": 263.3706,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 01:44:42 ET",
+      "equity_usd": 264.1314,
+      "liquid_usd": 261.131,
+      "upnl_usd": 0.0004,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2581,10 +2588,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 01:42:49 ET",
+  "notes": "LIVE MTM DINGBOTICS uPnL $0.0004 (0.0117%) \u00b7 held 7s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 01:44:41 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2637,22 +2644,28 @@
     "market": "DINGBOTICS",
     "side": "LONG",
     "size_usd": 3.0,
+    "entry": 1.3372072396763121e-05,
+    "mark": 1.3373637912169093e-05,
+    "uPnL": 0.0004,
+    "mtm_pct": 0.0117,
+    "lev": 1,
+    "paper": false,
     "tx": "0x94609f88baae0ec318996080e8028bfd452e1dd0a30343e09c4bd999cd7c1696",
     "token": "0xbd550669943094eeeF4E29C394ba388952D0a0EA",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 6,
+    "weth_out": 0.0011322891907419,
+    "usd_out": 3.000351
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "DINGBOTICS",
     "tx": "0x94609f88baae0ec318996080e8028bfd452e1dd0a30343e09c4bd999cd7c1696",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-162",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": 0.0117,
+    "upnl_usd": 0.0004,
+    "held_sec": 6,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -34.9843
 }
