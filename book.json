@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-27 20:07:09 ET",
+  "updated_et": "2026-09-27 20:22:56 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 268.2657,
   "upnl_usd": 0.0,
   "equity_usd": 268.2657,
-  "status": "LIVE_FLAT",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-35.032 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -22.3643,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-107",
+      "market": "AURA",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x8379284ac68434d1d6e25b4c0f3e215ba4809aeec07b2c60e53e5c8bec118478",
+      "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-27 13:01:52 ET",
@@ -2382,7 +2393,7 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
   "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-27 20:07:09 ET",
@@ -2433,17 +2444,26 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-107",
+    "market": "AURA",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x8379284ac68434d1d6e25b4c0f3e215ba4809aeec07b2c60e53e5c8bec118478",
+    "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x804fe1afee6463f554a08aca124405c7607a78414c75867cd27d2b64d205722d",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0012,
-    "flat": true,
-    "opens_paused": false,
-    "frozen": false,
-    "strategy": "MEME_V8_QUOTER_GUARD",
+    "open": true,
+    "flat": false,
+    "ticker": "AURA",
+    "tx": "0x8379284ac68434d1d6e25b4c0f3e215ba4809aeec07b2c60e53e5c8bec118478",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-107",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
     "loop": "rh_live_loop"
   },
   "realized_pnl_usd": -35.032
