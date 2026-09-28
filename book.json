@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-28 02:55:47 ET",
+  "updated_et": "2026-09-28 02:55:51 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.6283,
-  "upnl_usd": 0.0,
-  "equity_usd": 263.6283,
+  "liquid_usd": 260.4863,
+  "upnl_usd": 0.0634,
+  "equity_usd": 263.5497,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-35.1984 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.0017,
-  "total_pnl_pct": -9.2907,
-  "mark_eth": 2648.86,
-  "mark": 2648.86,
+  "total_pnl_usd": -27.0803,
+  "total_pnl_pct": -9.3178,
+  "mark_eth": 2647.51,
+  "mark": 2647.51,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2648.86
+    "ETH": 2647.51
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.06425074746754549,
+      "eth": 0.06311472791001531,
       "weth": 0.03386737394988137
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.06425074746754549,
+    "rh_eth": 0.06311472791001531,
     "rh_weth": 0.03386737394988137,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,20 +46,20 @@
       "market": "CLAUDECHAN",
       "side": "LONG",
       "size_usd": 3.0,
+      "entry": 8.541075471181291e-05,
+      "mark": 8.721656978643373e-05,
+      "uPnL": 0.0634,
+      "mtm_pct": 2.1143,
+      "lev": 1,
+      "paper": false,
       "tx": "0x64fd6feeb846b159505968dd7ea186bd1e596fdff6976e49caa757eae99d4326",
       "token": "0xEd4239bF7F7C322719798cd55E235C618Fb92074",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 5,
+      "weth_out": 0.001157097853840901,
+      "usd_out": 3.063428
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-28 02:22:46 ET",
-      "equity_usd": 263.4442,
-      "liquid_usd": 260.4465,
-      "upnl_usd": -0.0023,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 02:22:49 ET",
       "equity_usd": 263.459,
@@ -1452,6 +1452,13 @@
       "liquid_usd": 263.6283,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 02:55:51 ET",
+      "equity_usd": 263.5497,
+      "liquid_usd": 260.4863,
+      "upnl_usd": 0.0634,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2581,10 +2588,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 02:53:38 ET",
+  "notes": "LIVE MTM CLAUDECHAN uPnL $0.0634 (2.1143%) \u00b7 held 5s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 02:55:51 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2637,22 +2644,28 @@
     "market": "CLAUDECHAN",
     "side": "LONG",
     "size_usd": 3.0,
+    "entry": 8.541075471181291e-05,
+    "mark": 8.721656978643373e-05,
+    "uPnL": 0.0634,
+    "mtm_pct": 2.1143,
+    "lev": 1,
+    "paper": false,
     "tx": "0x64fd6feeb846b159505968dd7ea186bd1e596fdff6976e49caa757eae99d4326",
     "token": "0xEd4239bF7F7C322719798cd55E235C618Fb92074",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 5,
+    "weth_out": 0.001157097853840901,
+    "usd_out": 3.063428
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "CLAUDECHAN",
     "tx": "0x64fd6feeb846b159505968dd7ea186bd1e596fdff6976e49caa757eae99d4326",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-176",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": 2.1143,
+    "upnl_usd": 0.0634,
+    "held_sec": 5,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -35.1984
 }
