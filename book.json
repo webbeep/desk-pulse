@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-28 10:29:50 ET",
+  "updated_et": "2026-09-28 10:29:55 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 261.0629,
-  "upnl_usd": -0.0013,
-  "equity_usd": 264.0616,
+  "liquid_usd": 261.4714,
+  "upnl_usd": 0.0087,
+  "equity_usd": 264.4801,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.416 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -26.5684,
-  "total_pnl_pct": -9.1417,
-  "mark_eth": 2665.51,
-  "mark": 2665.51,
+  "total_pnl_usd": -26.1499,
+  "total_pnl_pct": -8.9977,
+  "mark_eth": 2669.68,
+  "mark": 2669.68,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2665.51
+    "ETH": 2669.68
   },
   "holdings": {
     "L1": {
@@ -47,26 +47,19 @@
       "side": "LONG",
       "size_usd": 3.0,
       "entry": 0.00027964408345369866,
-      "mark": 0.00027952667919673444,
-      "uPnL": -0.0013,
-      "mtm_pct": -0.042,
+      "mark": 0.0002804575313528157,
+      "uPnL": 0.0087,
+      "mtm_pct": 0.2909,
       "lev": 1,
       "paper": false,
       "tx": "0x9b5322efa17209e5e968d6cbc06e998e08ae07d6072d32dc4057d73b562c2af1",
       "token": "0x9634430EA606532e9Ff7856f078e0E68F80625c7",
-      "held_sec": 7,
-      "weth_out": 0.001125015661638169,
-      "usd_out": 2.99874
+      "held_sec": 20,
+      "weth_out": 0.001126998968363209,
+      "usd_out": 3.008727
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-28 09:44:04 ET",
-      "equity_usd": 266.9638,
-      "liquid_usd": 263.9641,
-      "upnl_usd": -0.0003,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 09:44:07 ET",
       "equity_usd": 266.8895,
@@ -1459,6 +1452,13 @@
       "liquid_usd": 261.0629,
       "upnl_usd": -0.0013,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 10:29:55 ET",
+      "equity_usd": 264.4801,
+      "liquid_usd": 261.4714,
+      "upnl_usd": 0.0087,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2591,7 +2591,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM SWORDCAT uPnL $-0.0013 (-0.042%) \u00b7 held 8s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 10:29:41 ET",
+  "notes": "LIVE MTM SWORDCAT uPnL $0.0087 (0.2909%) \u00b7 held 21s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 10:29:54 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2645,16 +2645,16 @@
     "side": "LONG",
     "size_usd": 3.0,
     "entry": 0.00027964408345369866,
-    "mark": 0.00027952667919673444,
-    "uPnL": -0.0013,
-    "mtm_pct": -0.042,
+    "mark": 0.0002804575313528157,
+    "uPnL": 0.0087,
+    "mtm_pct": 0.2909,
     "lev": 1,
     "paper": false,
     "tx": "0x9b5322efa17209e5e968d6cbc06e998e08ae07d6072d32dc4057d73b562c2af1",
     "token": "0x9634430EA606532e9Ff7856f078e0E68F80625c7",
-    "held_sec": 7,
-    "weth_out": 0.001125015661638169,
-    "usd_out": 2.99874
+    "held_sec": 20,
+    "weth_out": 0.001126998968363209,
+    "usd_out": 3.008727
   },
   "live": {
     "open": true,
@@ -2662,9 +2662,9 @@
     "tx": "0x9b5322efa17209e5e968d6cbc06e998e08ae07d6072d32dc4057d73b562c2af1",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -0.042,
-    "upnl_usd": -0.0013,
-    "held_sec": 7,
+    "mtm_pct": 0.2909,
+    "upnl_usd": 0.0087,
+    "held_sec": 20,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.416
