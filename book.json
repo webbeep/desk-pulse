@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-28 07:30:41 ET",
+  "updated_et": "2026-09-28 07:30:50 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 260.7986,
+  "liquid_usd": 263.7935,
   "upnl_usd": 0.0,
-  "equity_usd": 260.7986,
-  "status": "EXITING:TIME_FLAT_120s",
+  "equity_usd": 263.7935,
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.7915 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -29.8314,
-  "total_pnl_pct": -10.2644,
+  "total_pnl_usd": -26.8365,
+  "total_pnl_pct": -9.2339,
   "mark_eth": 2663.78,
   "mark": 2663.78,
   "mark_src": "coinbase",
@@ -21,14 +21,14 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.008473182201049034,
-      "weth": 0.08802521069932967
+      "eth": 0.008470860016849035,
+      "weth": 0.0891518475031858
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.008473182201049034,
-    "rh_weth": 0.08802521069932967,
+    "rh_eth": 0.008470860016849035,
+    "rh_weth": 0.0891518475031858,
     "arb_eth": 0,
     "arb_usdc": 0,
     "base_eth": 0,
@@ -42,13 +42,6 @@
   },
   "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-28 07:01:04 ET",
-      "equity_usd": 263.4299,
-      "liquid_usd": 260.4256,
-      "upnl_usd": 0.0043,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 07:01:06 ET",
       "equity_usd": 263.3715,
@@ -1441,9 +1434,30 @@
       "liquid_usd": 260.7986,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 07:30:50 ET",
+      "equity_usd": 260.7986,
+      "liquid_usd": 263.7935,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-224-EXIT",
+      "t": "2026-09-28 07:30:50 ET",
+      "kind": "LIVE",
+      "market": "AURA",
+      "side": "SELL",
+      "size_usd": 3.0,
+      "pnl_usd": 0.0003,
+      "mtm_pct": 0.0115,
+      "tx": "0xbde8470da4118f2b06edc231e8ae9cc6ae16eedf34fbb337b5b754861e1646aa",
+      "reason": "TIME_FLAT_120s",
+      "stamp_et": "2026-09-28 07:30:50 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-223-EXIT",
       "t": "2026-09-28 07:25:56 ET",
@@ -2549,20 +2563,6 @@
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-28 00:13:21 ET",
       "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-145-EXIT",
-      "t": "2026-09-28 00:08:17 ET",
-      "kind": "LIVE",
-      "market": "SLOPCORE",
-      "side": "SELL",
-      "size_usd": 3.0,
-      "pnl_usd": 0.0041,
-      "mtm_pct": 0.1366,
-      "tx": "0x59ca8b254fb1260fb4220a52bc95434ac81aaddf353fcb68ff1541f65b383ebf",
-      "reason": "TIME_FLAT_120s",
-      "stamp_et": "2026-09-28 00:08:17 ET",
-      "paper": false
     }
   ],
   "paper": {
@@ -2573,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM AURA uPnL $0.0011 (0.0371%) \u00b7 held 121s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 07:30:39 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT AURA \u00b7 TIME_FLAT_120s \u00b7 tx 0xbde8470da4118f2b06edc231e8ae9cc6ae16eedf34fbb337b5b754861e1646aa \u00b7 2026-09-28 07:30:49 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2625,13 +2625,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xc8f58ed47425c2baeb75efa6d5694581b33573996d2da993b21705e368f8b37e",
-    "size_usd": 0,
-    "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 120,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xbde8470da4118f2b06edc231e8ae9cc6ae16eedf34fbb337b5b754861e1646aa",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": 0.0003
   },
   "realized_pnl_usd": -32.7915
 }
