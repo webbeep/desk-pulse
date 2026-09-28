@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-28 16:15:53 ET",
+  "updated_et": "2026-09-28 16:18:25 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 264.5056,
   "upnl_usd": 0.0,
   "equity_usd": 264.5056,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-33.0974 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-33.0999 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -26.1244,
   "total_pnl_pct": -8.9889,
   "mark_eth": 2682.81,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-289",
+      "market": "AURA",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0xf82ef898c9dd32901c3f3c6c9fbe4ad43eff19da2903dc300b383c2c527ada98",
+      "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-28 15:49:59 ET",
@@ -2570,10 +2581,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT WALLET \u00b7 TIME_FLAT_120s \u00b7 tx 0x968e8985288ce71ca53b34a2c1061441bad4d7b61ab166fb33958d9fb21ea99a \u00b7 2026-09-28 16:15:53 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 16:16:38 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2621,13 +2632,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x968e8985288ce71ca53b34a2c1061441bad4d7b61ab166fb33958d9fb21ea99a",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0025
+  "position": {
+    "id": "LIVE-SCALP-289",
+    "market": "AURA",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0xf82ef898c9dd32901c3f3c6c9fbe4ad43eff19da2903dc300b383c2c527ada98",
+    "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
+    "paper": false,
+    "uPnL": 0.0
   },
-  "realized_pnl_usd": -33.0974
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "AURA",
+    "tx": "0xf82ef898c9dd32901c3f3c6c9fbe4ad43eff19da2903dc300b383c2c527ada98",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-289",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "realized_pnl_usd": -33.0999
 }
