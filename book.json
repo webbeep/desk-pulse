@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-27 23:51:10 ET",
+  "updated_et": "2026-09-27 23:51:15 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 261.9005,
-  "upnl_usd": -0.0547,
-  "equity_usd": 264.8458,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 261.7999,
+  "upnl_usd": 0.0,
+  "equity_usd": 261.7999,
+  "status": "EXITING:POST_FILL_FLAT_-3.2133",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-34.9679 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -25.7842,
-  "total_pnl_pct": -8.8718,
-  "mark_eth": 2654.72,
-  "mark": 2654.72,
+  "total_pnl_usd": -28.8301,
+  "total_pnl_pct": -9.9199,
+  "mark_eth": 2653.7,
+  "mark": 2653.7,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2654.72
+    "ETH": 2653.7
   },
   "holdings": {
     "L1": {
@@ -40,40 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-142",
-      "market": "DINGBOTICS",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 0.00023290801835198919,
-      "mark": 0.00022866363330872723,
-      "uPnL": -0.0547,
-      "mtm_pct": -1.8223,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x25287ca0628aa8e8afaa9a7919dc3a455263b0f13bbbf780fb067787a777fd73",
-      "token": "0xbd550669943094eeeF4E29C394ba388952D0a0EA",
-      "held_sec": 5,
-      "weth_out": 0.001109469052585818,
-      "usd_out": 2.94533
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-27 23:02:07 ET",
-      "equity_usd": 264.9932,
-      "liquid_usd": 261.9953,
-      "upnl_usd": -0.0021,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-27 23:02:10 ET",
-      "equity_usd": 265.0032,
-      "liquid_usd": 262.0052,
-      "upnl_usd": -0.002,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-27 23:02:13 ET",
       "equity_usd": 265.0061,
@@ -1459,6 +1427,20 @@
       "liquid_usd": 261.9005,
       "upnl_usd": -0.0547,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 23:51:14 ET",
+      "equity_usd": 264.7035,
+      "liquid_usd": 261.7999,
+      "upnl_usd": -0.0964,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-27 23:51:15 ET",
+      "equity_usd": 264.7035,
+      "liquid_usd": 261.7999,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2588,7 +2570,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM DINGBOTICS uPnL $-0.0547 (-1.8223%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 23:51:09 ET",
+  "notes": "LIVE MTM DINGBOTICS uPnL $-0.0964 (-3.2133%) \u00b7 held 10s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-27 23:51:14 ET \u00b7 CUT POST_FILL_FLAT_-3.2133",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2636,32 +2618,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-142",
-    "market": "DINGBOTICS",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 0.00023290801835198919,
-    "mark": 0.00022866363330872723,
-    "uPnL": -0.0547,
-    "mtm_pct": -1.8223,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x25287ca0628aa8e8afaa9a7919dc3a455263b0f13bbbf780fb067787a777fd73",
-    "token": "0xbd550669943094eeeF4E29C394ba388952D0a0EA",
-    "held_sec": 5,
-    "weth_out": 0.001109469052585818,
-    "usd_out": 2.94533
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "DINGBOTICS",
+    "open": false,
+    "ticker": null,
     "tx": "0x25287ca0628aa8e8afaa9a7919dc3a455263b0f13bbbf780fb067787a777fd73",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -1.8223,
-    "upnl_usd": -0.0547,
-    "held_sec": 5,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 10,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -34.9679
