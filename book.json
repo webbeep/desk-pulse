@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-28 17:08:49 ET",
+  "updated_et": "2026-09-28 17:11:49 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 265.4546,
   "upnl_usd": 0.0,
   "equity_usd": 265.4546,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.2455 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.2487 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -25.1754,
   "total_pnl_pct": -8.6624,
   "mark_eth": 2685.03,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-297",
+      "market": "PYGOSCELIS",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x346a4b5ac32e269b68707224ab2821aa5418ab56f34e2bcda95663005dca79ad",
+      "token": "0xbeac4c5850c8967859fB72fA5FD1b3B083E3D935",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-28 16:33:11 ET",
@@ -2570,10 +2581,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT AURA \u00b7 TIME_FLAT_120s \u00b7 tx 0x777467d337dc4345932ce56d84b466309d7c16c93ec069ed39867b503ea89e8c \u00b7 2026-09-28 17:08:48 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 17:09:47 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2621,13 +2632,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x777467d337dc4345932ce56d84b466309d7c16c93ec069ed39867b503ea89e8c",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0032
+  "position": {
+    "id": "LIVE-SCALP-297",
+    "market": "PYGOSCELIS",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x346a4b5ac32e269b68707224ab2821aa5418ab56f34e2bcda95663005dca79ad",
+    "token": "0xbeac4c5850c8967859fB72fA5FD1b3B083E3D935",
+    "paper": false,
+    "uPnL": 0.0
   },
-  "realized_pnl_usd": -32.2455
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "PYGOSCELIS",
+    "tx": "0x346a4b5ac32e269b68707224ab2821aa5418ab56f34e2bcda95663005dca79ad",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-297",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "realized_pnl_usd": -32.2487
 }
