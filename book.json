@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-28 05:12:21 ET",
+  "updated_et": "2026-09-28 05:15:18 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 262.0039,
   "upnl_usd": 0.0,
   "equity_usd": 262.0039,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.4276 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.7752 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -28.6261,
   "total_pnl_pct": -9.8497,
   "mark_eth": 2642.23,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-202",
+      "market": "UNDERPANTSGNOME",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x8c4fad4c1df124751f185969871b59c8cdf42f2866d0defbd003b7a240bcbb0b",
+      "token": "0x6808af3407ad3F81a24F77080F4146a31EDd84Fe",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-28 04:26:48 ET",
@@ -2570,10 +2581,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT TIME \u00b7 HARD_SL_PCT_-2.9951 \u00b7 tx 0xdb925315e6c07614836474aee3324afa793ec09a2aa2f128301b6ad6c733b4b0 \u00b7 2026-09-28 05:12:20 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 05:13:09 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2621,13 +2632,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0xdb925315e6c07614836474aee3324afa793ec09a2aa2f128301b6ad6c733b4b0",
-    "last_exit_reason": "HARD_SL_PCT_-2.9951",
-    "last_exit_upnl": -0.3476
+  "position": {
+    "id": "LIVE-SCALP-202",
+    "market": "UNDERPANTSGNOME",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x8c4fad4c1df124751f185969871b59c8cdf42f2866d0defbd003b7a240bcbb0b",
+    "token": "0x6808af3407ad3F81a24F77080F4146a31EDd84Fe",
+    "paper": false,
+    "uPnL": 0.0
   },
-  "realized_pnl_usd": -32.4276
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "UNDERPANTSGNOME",
+    "tx": "0x8c4fad4c1df124751f185969871b59c8cdf42f2866d0defbd003b7a240bcbb0b",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-202",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "realized_pnl_usd": -32.7752
 }
