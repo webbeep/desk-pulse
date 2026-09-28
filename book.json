@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-27 23:37:50 ET",
+  "updated_et": "2026-09-27 23:38:42 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 264.6812,
   "upnl_usd": 0.0,
   "equity_usd": 264.6812,
-  "status": "EXITED",
+  "status": "LIVE_FLAT",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-34.902 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-34.9675 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -25.9488,
   "total_pnl_pct": -8.9285,
   "mark_eth": 2652.13,
@@ -2568,7 +2568,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT DINGBOTICS \u00b7 HARD_SL_PCT_-3.2852 \u00b7 tx 0x6497f19a0d5177253f3bf73960c8e9faa771657f6005cdad468b81f0627714e1 \u00b7 2026-09-27 23:37:49 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-27 23:38:42 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2622,7 +2622,12 @@
     "ticker": null,
     "last_exit_tx": "0x6497f19a0d5177253f3bf73960c8e9faa771657f6005cdad468b81f0627714e1",
     "last_exit_reason": "HARD_SL_PCT_-3.2852",
-    "last_exit_upnl": -0.0655
+    "last_exit_upnl": -0.0655,
+    "flat": true,
+    "opens_paused": false,
+    "frozen": false,
+    "strategy": "MEME_V8_QUOTER_GUARD",
+    "loop": "rh_live_loop"
   },
-  "realized_pnl_usd": -34.902
+  "realized_pnl_usd": -34.9675
 }
