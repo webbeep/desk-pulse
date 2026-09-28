@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-28 03:33:23 ET",
+  "updated_et": "2026-09-28 03:33:28 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 265.8851,
-  "upnl_usd": 0.0,
-  "equity_usd": 265.8851,
+  "liquid_usd": 262.8043,
+  "upnl_usd": -0.0847,
+  "equity_usd": 265.7196,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.3105 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -24.7449,
-  "total_pnl_pct": -8.5142,
-  "mark_eth": 2643.58,
-  "mark": 2643.58,
+  "total_pnl_usd": -24.9104,
+  "total_pnl_pct": -8.5712,
+  "mark_eth": 2642.85,
+  "mark": 2642.85,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2643.58
+    "ETH": 2642.85
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.056282267557269706,
+      "eth": 0.05514430979419348,
       "weth": 0.04288835462882847
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.056282267557269706,
+    "rh_eth": 0.05514430979419348,
     "rh_weth": 0.04288835462882847,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,20 +46,20 @@
       "market": "TIME",
       "side": "LONG",
       "size_usd": 3.0,
+      "entry": 8.346099644769076e-05,
+      "mark": 8.110349152992989e-05,
+      "uPnL": -0.0847,
+      "mtm_pct": -2.8247,
+      "lev": 1,
+      "paper": false,
       "tx": "0x5d3c4e3c75102bf58d2b1bf1c5cbae50c137f440eabc5d81712fb2f27f8ee6a1",
       "token": "0xF4D05DdA60a1b9377B6E60F18d633786935e908C",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 6,
+      "weth_out": 0.001103074197013612,
+      "usd_out": 2.91526
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-28 03:01:36 ET",
-      "equity_usd": 266.4389,
-      "liquid_usd": 263.4371,
-      "upnl_usd": 0.0018,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 03:01:39 ET",
       "equity_usd": 266.435,
@@ -1452,6 +1452,13 @@
       "liquid_usd": 265.8851,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 03:33:28 ET",
+      "equity_usd": 265.7196,
+      "liquid_usd": 262.8043,
+      "upnl_usd": -0.0847,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2581,10 +2588,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 03:31:22 ET",
+  "notes": "LIVE MTM TIME uPnL $-0.0847 (-2.8247%) \u00b7 held 7s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 03:33:27 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2637,22 +2644,28 @@
     "market": "TIME",
     "side": "LONG",
     "size_usd": 3.0,
+    "entry": 8.346099644769076e-05,
+    "mark": 8.110349152992989e-05,
+    "uPnL": -0.0847,
+    "mtm_pct": -2.8247,
+    "lev": 1,
+    "paper": false,
     "tx": "0x5d3c4e3c75102bf58d2b1bf1c5cbae50c137f440eabc5d81712fb2f27f8ee6a1",
     "token": "0xF4D05DdA60a1b9377B6E60F18d633786935e908C",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 6,
+    "weth_out": 0.001103074197013612,
+    "usd_out": 2.91526
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "TIME",
     "tx": "0x5d3c4e3c75102bf58d2b1bf1c5cbae50c137f440eabc5d81712fb2f27f8ee6a1",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-183",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -2.8247,
+    "upnl_usd": -0.0847,
+    "held_sec": 6,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.3105
 }
