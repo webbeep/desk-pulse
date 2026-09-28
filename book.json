@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-28 03:07:17 ET",
+  "updated_et": "2026-09-28 03:12:47 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 266.1989,
   "upnl_usd": 0.0,
   "equity_usd": 266.1989,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.5876 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.5928 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -24.4311,
   "total_pnl_pct": -8.4063,
   "mark_eth": 2648.95,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-179",
+      "market": "CLAUDECHAN",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x1248296c72a76ce3a7197983ab0373f140ad555d5c9db5e8300ad55c480201c8",
+      "token": "0xEd4239bF7F7C322719798cd55E235C618Fb92074",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-28 02:36:25 ET",
@@ -2570,10 +2581,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT UNDERPANTSGNOME \u00b7 TIME_FLAT_120s \u00b7 tx 0x0b8e526d8ddc7849131eaaed5c4b9b0e7558e262520a788e7f08920689896fe4 \u00b7 2026-09-28 03:07:16 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 03:08:02 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2621,13 +2632,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x0b8e526d8ddc7849131eaaed5c4b9b0e7558e262520a788e7f08920689896fe4",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0052
+  "position": {
+    "id": "LIVE-SCALP-179",
+    "market": "CLAUDECHAN",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x1248296c72a76ce3a7197983ab0373f140ad555d5c9db5e8300ad55c480201c8",
+    "token": "0xEd4239bF7F7C322719798cd55E235C618Fb92074",
+    "paper": false,
+    "uPnL": 0.0
   },
-  "realized_pnl_usd": -32.5876
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "CLAUDECHAN",
+    "tx": "0x1248296c72a76ce3a7197983ab0373f140ad555d5c9db5e8300ad55c480201c8",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-179",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "realized_pnl_usd": -32.5928
 }
