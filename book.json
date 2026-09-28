@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-28 09:12:16 ET",
+  "updated_et": "2026-09-28 09:12:19 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 262.7747,
-  "upnl_usd": 0.3846,
-  "equity_usd": 266.1593,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 262.7747,
+  "status": "EXITING:TP_V7_+4.5",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.6692 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -24.4707,
-  "total_pnl_pct": -8.4199,
+  "total_pnl_usd": -27.8553,
+  "total_pnl_pct": -9.5845,
   "mark_eth": 2683.55,
   "mark": 2683.55,
   "mark_src": "coinbase",
@@ -40,33 +40,8 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-240",
-      "market": "SWORDCAT",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 0.00038331886623220966,
-      "mark": 0.00043246393640194715,
-      "uPnL": 0.3846,
-      "mtm_pct": 12.8209,
-      "lev": 1,
-      "paper": false,
-      "tx": "0xe284582f1bc6f796b6c8e7d9dcda1505265361eda5c64caeb66affd9e19aa4f6",
-      "token": "0x9634430EA606532e9Ff7856f078e0E68F80625c7",
-      "held_sec": 36,
-      "weth_out": 0.001261250250078818,
-      "usd_out": 3.384628
-    }
-  ],
+  "positions": [],
   "pnl_history": [
-    {
-      "t": "2026-09-28 08:36:08 ET",
-      "equity_usd": 265.4805,
-      "liquid_usd": 262.4821,
-      "upnl_usd": -0.0016,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 08:36:11 ET",
       "equity_usd": 265.5003,
@@ -1459,6 +1434,13 @@
       "liquid_usd": 262.7747,
       "upnl_usd": 0.3846,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 09:12:19 ET",
+      "equity_usd": 266.1593,
+      "liquid_usd": 262.7747,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2591,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM SWORDCAT uPnL $0.3846 (12.8209%) \u00b7 held 37s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 09:12:15 ET",
+  "notes": "LIVE MTM SWORDCAT uPnL $0.3846 (12.8209%) \u00b7 held 37s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 09:12:15 ET \u00b7 CUT TP_V7_+4.5",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2639,31 +2621,15 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-240",
-    "market": "SWORDCAT",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 0.00038331886623220966,
-    "mark": 0.00043246393640194715,
-    "uPnL": 0.3846,
-    "mtm_pct": 12.8209,
-    "lev": 1,
-    "paper": false,
-    "tx": "0xe284582f1bc6f796b6c8e7d9dcda1505265361eda5c64caeb66affd9e19aa4f6",
-    "token": "0x9634430EA606532e9Ff7856f078e0E68F80625c7",
-    "held_sec": 36,
-    "weth_out": 0.001261250250078818,
-    "usd_out": 3.384628
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "SWORDCAT",
+    "open": false,
+    "ticker": null,
     "tx": "0xe284582f1bc6f796b6c8e7d9dcda1505265361eda5c64caeb66affd9e19aa4f6",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 12.8209,
-    "upnl_usd": 0.3846,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 36,
     "watcher": "rh_live_mtm_loop"
   },
