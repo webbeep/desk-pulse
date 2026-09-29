@@ -8108,9 +8108,9 @@
       "market": "HOTDOG",
       "side": "SELL",
       "size_usd": 3.0,
-      "pnl_usd": -0.4507,
-      "mtm_pct": -15.0249,
-      "tx": "0x6ff9c5a2a4562fa9295effd1a081b8839119c60c813f6587de7e64a2a35ab7da",
+      "pnl_usd": -3.0,
+      "mtm_pct": -100.0,
+      "tx": null,
       "reason": "TIME_MAX_180s",
       "stamp_et": "2026-09-29 10:26:26 ET",
       "paper": false
@@ -9231,7 +9231,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT HOTDOG \u00b7 TIME_MAX_180s \u00b7 tx 0x6ff9c5a2a4562fa9295effd1a081b8839119c60c813f6587de7e64a2a35ab7da \u00b7 2026-09-29 10:26:25 ET",
+  "notes": "LIVE EXIT HOTDOG \u00b7 TIME_MAX_180s \u00b7 tx None \u00b7 2026-09-29 10:26:25 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9283,9 +9283,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0x6ff9c5a2a4562fa9295effd1a081b8839119c60c813f6587de7e64a2a35ab7da",
+    "last_exit_tx": null,
     "last_exit_reason": "TIME_MAX_180s",
-    "last_exit_upnl": -0.4507
+    "last_exit_upnl": -3.0
   },
   "realized_pnl_usd": -36.5125
 }
