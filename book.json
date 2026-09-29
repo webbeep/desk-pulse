@@ -2,14 +2,14 @@
   "updated_et": "2026-09-29 07:54:18 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 265.1507,
+  "liquid_usd": 265.1451,
   "upnl_usd": 0.0,
-  "equity_usd": 265.1507,
+  "equity_usd": 265.1451,
   "status": "EXIT_None",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.3819 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -25.4793,
-  "total_pnl_pct": -8.7669,
+  "total_pnl_usd": -25.4849,
+  "total_pnl_pct": -8.7688,
   "mark_eth": 2730.8,
   "mark": 2730.8,
   "mark_src": "coinbase",
@@ -21,13 +21,13 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.06959052153430377,
+      "eth": 0.06958847917341178,
       "weth": 0.026098755724177546
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.06959052153430377,
+    "rh_eth": 0.06958847917341178,
     "rh_weth": 0.026098755724177546,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -7688,8 +7688,8 @@
     },
     {
       "t": "2026-09-29 07:54:18 ET",
-      "equity_usd": 265.1507,
-      "liquid_usd": 265.1507,
+      "equity_usd": 265.1451,
+      "liquid_usd": 265.1451,
       "upnl_usd": 0,
       "n_pos": 0
     }
@@ -7702,8 +7702,8 @@
       "market": "BBB",
       "side": "SELL",
       "size_usd": 3.0,
-      "pnl_usd": 0.3025,
-      "mtm_pct": 10.0835,
+      "pnl_usd": 0.2389,
+      "mtm_pct": 7.9626,
       "tx": null,
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-29 07:54:18 ET",
@@ -8825,7 +8825,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT BBB \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-09-29 07:54:16 ET",
+  "notes": "LIVE EXIT BBB \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-09-29 07:54:17 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
