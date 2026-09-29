@@ -5,7 +5,7 @@
   "liquid_usd": 263.5733,
   "upnl_usd": 0.0,
   "equity_usd": 263.5733,
-  "status": "EXIT_None",
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-31.1648 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -27.0567,
@@ -1675,10 +1675,10 @@
       "market": "ADVENTURES",
       "side": "SELL",
       "size_usd": 5.0,
-      "pnl_usd": 0.1035,
-      "mtm_pct": 2.0707,
-      "tx": null,
-      "reason": "TIME_MAX_180s",
+      "pnl_usd": 0.1479,
+      "mtm_pct": 2.9571,
+      "tx": "0x0a11379dd4082a5911e25c935907b3859292c6ba9238ec7befb217ab9a9c9029",
+      "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-28 23:21:32 ET",
       "paper": false
     },
@@ -2797,7 +2797,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT ADVENTURES \u00b7 TIME_MAX_180s \u00b7 tx None \u00b7 2026-09-28 23:21:31 ET",
+  "notes": "LIVE EXIT ADVENTURES \u00b7 TIME_FLAT_120s \u00b7 tx 0x0a11379dd4082a5911e25c935907b3859292c6ba9238ec7befb217ab9a9c9029 \u00b7 2026-09-28 23:21:32 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2849,9 +2849,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "TIME_MAX_180s",
-    "last_exit_upnl": null
+    "last_exit_tx": "0x0a11379dd4082a5911e25c935907b3859292c6ba9238ec7befb217ab9a9c9029",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": 0.1479
   },
   "realized_pnl_usd": -31.1648
 }
