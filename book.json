@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-28 21:24:10 ET",
+  "updated_et": "2026-09-28 21:25:59 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 263.9781,
   "upnl_usd": 0.0,
   "equity_usd": 263.9781,
-  "status": "LIVE_OPEN",
+  "status": "LIVE_FLAT",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-31.6324 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -26.6519,
@@ -40,18 +40,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-327",
-      "market": "CAVO",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "tx": "0x0a4e011082dbc48ee68c61a673534f73e9576f7c30e2c58a8aebbfd3e39707d1",
-      "token": "0x8814790F075ce795450ab01fA60335A8B43E53f5",
-      "paper": false,
-      "uPnL": 0.0
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "2026-09-28 20:19:55 ET",
@@ -2584,7 +2573,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 21:23:59 ET",
+  "notes": "LIVE FLAT \u00b7 orphan 327 CAVO exited 0xab4f1bc2dc\u2026 \u00b7 +$1.30 \u00b7 2026-09-28 21:25:59 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2632,26 +2621,20 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-327",
-    "market": "CAVO",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "tx": "0x0a4e011082dbc48ee68c61a673534f73e9576f7c30e2c58a8aebbfd3e39707d1",
-    "token": "0x8814790F075ce795450ab01fA60335A8B43E53f5",
-    "paper": false,
-    "uPnL": 0.0
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "flat": false,
-    "ticker": "CAVO",
-    "tx": "0x0a4e011082dbc48ee68c61a673534f73e9576f7c30e2c58a8aebbfd3e39707d1",
-    "size_usd": 5.0,
-    "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-327",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
+    "open": false,
+    "flat": true,
+    "ticker": null,
+    "tx": null,
+    "size_usd": 0,
+    "max_loss_usd": null,
+    "id": null,
+    "last_flat_id": "LIVE-SCALP-327",
+    "last_exit_tx": "0xab4f1bc2dc2aa0e1696bd6b68fcd8591f9b263a8f15025573de59241d2339055",
+    "last_exit_reason": "ORPHAN_MTM_FALSE_FLAT",
+    "last_exit_upnl_usd": 1.3044,
+    "watcher": null,
     "loop": "rh_live_loop"
   },
   "realized_pnl_usd": -31.6324
