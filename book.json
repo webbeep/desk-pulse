@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-29 07:37:22 ET",
+  "updated_et": "2026-09-29 07:37:23 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 264.6382,
   "upnl_usd": 0.0,
   "equity_usd": 264.6382,
-  "status": "EXITED",
+  "status": "EXIT_EXIT_FAIL",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.422 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -25.9918,
@@ -7538,9 +7538,30 @@
       "liquid_usd": 264.6382,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-29 07:37:23 ET",
+      "equity_usd": 264.6382,
+      "liquid_usd": 264.6382,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-2-EXIT",
+      "t": "2026-09-29 07:37:23 ET",
+      "kind": "LIVE",
+      "market": "GFB",
+      "side": "SELL",
+      "size_usd": 3.0,
+      "pnl_usd": 0.0401,
+      "mtm_pct": 1.3375,
+      "tx": "0x5782626862a32ba87133f02696e48924d80305f6cc9a4ca5c17666a9631ef798",
+      "reason": "TIME_FLAT_120s",
+      "stamp_et": "2026-09-29 07:37:23 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-2-EXIT",
       "t": "2026-09-29 07:37:22 ET",
@@ -8647,20 +8668,6 @@
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-28 12:27:50 ET",
       "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-263-EXIT",
-      "t": "2026-09-28 12:12:09 ET",
-      "kind": "LIVE",
-      "market": "AURA",
-      "side": "SELL",
-      "size_usd": 3.0,
-      "pnl_usd": -0.001,
-      "mtm_pct": -0.0331,
-      "tx": "0x99949f7f6126cdd7dcfe4625fd91bacfd284b4151ee94a82ea1c9f3c4487d066",
-      "reason": "TIME_FLAT_120s",
-      "stamp_et": "2026-09-28 12:12:09 ET",
-      "paper": false
     }
   ],
   "paper": {
@@ -8671,7 +8678,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT GFB \u00b7 TIME_FLAT_120s \u00b7 tx 0x849068ef1ed04c5529ab6bd08e5aa1672d36bc384fc5e89564ae464144149f84 \u00b7 2026-09-29 07:37:22 ET",
+  "notes": "LIVE EXIT GFB \u00b7 TIME_FLAT_120s \u00b7 tx 0x5782626862a32ba87133f02696e48924d80305f6cc9a4ca5c17666a9631ef798 \u00b7 2026-09-29 07:37:23 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -8723,9 +8730,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0x849068ef1ed04c5529ab6bd08e5aa1672d36bc384fc5e89564ae464144149f84",
+    "last_exit_tx": "0x5782626862a32ba87133f02696e48924d80305f6cc9a4ca5c17666a9631ef798",
     "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0079
+    "last_exit_upnl": 0.0401
   },
   "realized_pnl_usd": -36.422
 }
