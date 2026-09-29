@@ -7898,9 +7898,9 @@
       "market": "DEADBEEF",
       "side": "SELL",
       "size_usd": 3.0,
-      "pnl_usd": -0.202,
-      "mtm_pct": -6.7332,
-      "tx": "0x49c4cfd61c0d7db7248d15e1eaadb1e334334040bf2538e788bc8b2a069c72ef",
+      "pnl_usd": -3.0,
+      "mtm_pct": -100.0,
+      "tx": null,
       "reason": "HARD_SL_PCT_-7.3535",
       "stamp_et": "2026-09-29 09:41:50 ET",
       "paper": false
@@ -9021,7 +9021,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT DEADBEEF \u00b7 HARD_SL_PCT_-7.3535 \u00b7 tx 0x49c4cfd61c0d7db7248d15e1eaadb1e334334040bf2538e788bc8b2a069c72ef \u00b7 2026-09-29 09:41:49 ET",
+  "notes": "LIVE EXIT DEADBEEF \u00b7 HARD_SL_PCT_-7.3535 \u00b7 tx None \u00b7 2026-09-29 09:41:49 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9073,9 +9073,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0x49c4cfd61c0d7db7248d15e1eaadb1e334334040bf2538e788bc8b2a069c72ef",
+    "last_exit_tx": null,
     "last_exit_reason": "HARD_SL_PCT_-7.3535",
-    "last_exit_upnl": -0.202
+    "last_exit_upnl": -3.0
   },
   "realized_pnl_usd": -36.0123
 }
