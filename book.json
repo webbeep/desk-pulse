@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-29 10:26:28 ET",
+  "updated_et": "2026-09-29 10:27:12 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 262.9594,
   "upnl_usd": 0.0,
   "equity_usd": 262.9594,
-  "status": "EXIT_None",
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.5125 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -27.6706,
@@ -40,7 +40,18 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-347",
+      "market": "PI",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x05b14ec09351656675d287b7ff38fcbc6b3150d1966c1b1f12e96367874d6691",
+      "token": "0x434C832E6352bF0cFEaDab8E86361a83E6D572E2",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-28 20:19:55 ET",
@@ -9235,10 +9246,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT HOTDOG \u00b7 HARD_SL_PCT_-15.0252 \u00b7 tx None \u00b7 2026-09-29 10:26:27 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-29 10:27:02 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9286,13 +9297,27 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-347",
+    "market": "PI",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x05b14ec09351656675d287b7ff38fcbc6b3150d1966c1b1f12e96367874d6691",
+    "token": "0x434C832E6352bF0cFEaDab8E86361a83E6D572E2",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "HARD_SL_PCT_-15.0252",
-    "last_exit_upnl": null
+    "open": true,
+    "flat": false,
+    "ticker": "PI",
+    "tx": "0x05b14ec09351656675d287b7ff38fcbc6b3150d1966c1b1f12e96367874d6691",
+    "size_usd": 3.0,
+    "max_loss_usd": 1.5,
+    "id": "LIVE-SCALP-347",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "realized_pnl_usd": -36.5125
 }
