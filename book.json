@@ -5,7 +5,7 @@
   "liquid_usd": 265.1752,
   "upnl_usd": 0.0,
   "equity_usd": 265.1752,
-  "status": "EXITED",
+  "status": "EXIT_EXIT_FAIL",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.3819 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -25.4548,
@@ -7709,11 +7709,25 @@
       "market": "BBB",
       "side": "SELL",
       "size_usd": 3.0,
-      "pnl_usd": 0.1563,
-      "mtm_pct": 5.2097,
-      "tx": "0xdb1b38f353dfe46987fc10163da20d3e9f044370fc9092b6b28fd43e79dcd746",
+      "pnl_usd": 0.1742,
+      "mtm_pct": 5.8059,
+      "tx": "0x7d9789621a4f9f9f18340cf89913309aaf977813d039839ac448feb3278eb6df",
       "reason": "TP_V7_+4.5",
       "stamp_et": "2026-09-29 07:54:19 ET",
+      "paper": false
+    },
+    {
+      "id": "LIVE-SCALP-2-EXIT",
+      "t": "2026-09-29 07:54:18 ET",
+      "kind": "LIVE",
+      "market": "BBB",
+      "side": "SELL",
+      "size_usd": 3.0,
+      "pnl_usd": 0.2389,
+      "mtm_pct": 7.9626,
+      "tx": null,
+      "reason": "TP_V7_+4.5",
+      "stamp_et": "2026-09-29 07:54:18 ET",
       "paper": false
     },
     {
@@ -8808,20 +8822,6 @@
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-28 13:46:16 ET",
       "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-268-EXIT",
-      "t": "2026-09-28 13:30:18 ET",
-      "kind": "LIVE",
-      "market": "AURA",
-      "side": "SELL",
-      "size_usd": 3.0,
-      "pnl_usd": 0.0013,
-      "mtm_pct": 0.0441,
-      "tx": "0xac416d5e4ac3b92c5b5a4887d0b8b43751162bab06ed44b175f6e09cc0e23d87",
-      "reason": "TIME_FLAT_120s",
-      "stamp_et": "2026-09-28 13:30:18 ET",
-      "paper": false
     }
   ],
   "paper": {
@@ -8832,7 +8832,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT BBB \u00b7 TP_V7_+4.5 \u00b7 tx 0xdb1b38f353dfe46987fc10163da20d3e9f044370fc9092b6b28fd43e79dcd746 \u00b7 2026-09-29 07:54:18 ET",
+  "notes": "LIVE EXIT BBB \u00b7 TP_V7_+4.5 \u00b7 tx 0x7d9789621a4f9f9f18340cf89913309aaf977813d039839ac448feb3278eb6df \u00b7 2026-09-29 07:54:18 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -8884,9 +8884,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0xdb1b38f353dfe46987fc10163da20d3e9f044370fc9092b6b28fd43e79dcd746",
+    "last_exit_tx": "0x7d9789621a4f9f9f18340cf89913309aaf977813d039839ac448feb3278eb6df",
     "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": 0.1563
+    "last_exit_upnl": 0.1742
   },
   "realized_pnl_usd": -36.3819
 }
