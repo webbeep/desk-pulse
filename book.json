@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-29 10:15:03 ET",
+  "updated_et": "2026-09-29 10:15:36 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 263.4312,
   "upnl_usd": 0.0,
   "equity_usd": 263.4312,
-  "status": "EXITED",
+  "status": "LIVE_FLAT",
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-35.8569 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.5125 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -27.1988,
   "total_pnl_pct": -9.3586,
   "mark_eth": 2718.44,
@@ -9182,7 +9182,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT HOTDOG \u00b7 POST_FILL_FLAT_-12.2679 \u00b7 tx 0x3496b0af1641fdbd2997a1e777740a66accfafc5b93d3b08372e15512520e535 \u00b7 2026-09-29 10:15:02 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-29 10:15:36 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9236,7 +9236,12 @@
     "ticker": null,
     "last_exit_tx": "0x3496b0af1641fdbd2997a1e777740a66accfafc5b93d3b08372e15512520e535",
     "last_exit_reason": "POST_FILL_FLAT_-12.2679",
-    "last_exit_upnl": -0.6556
+    "last_exit_upnl": -0.6556,
+    "flat": true,
+    "opens_paused": false,
+    "frozen": false,
+    "strategy": "MEME_V8_QUOTER_GUARD",
+    "loop": "rh_live_loop"
   },
-  "realized_pnl_usd": -35.8569
+  "realized_pnl_usd": -36.5125
 }
