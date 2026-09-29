@@ -1,6 +1,6 @@
 {
-  "updated_et": "2026-09-28 23:36:46 ET",
-  "working": 4,
+  "updated_et": "2026-09-28 23:46:49 ET",
+  "working": 3,
   "idle": 2,
   "standby": 0,
   "bots": [
@@ -14,23 +14,9 @@
       "last_et": "2026-09-28 23:22 ET",
       "task": "Updating EXECUTE / desk mode",
       "proof": "fleet-v2/rh-chain/EXECUTE-LIVE-SCALP-332.md",
-      "age_min": 14.5,
+      "age_min": 24.5,
       "lane": "file",
       "owner_stream": "cos"
-    },
-    {
-      "id": "pm",
-      "name": "PM \u00b7 DESK",
-      "role": "Role: DESK lead (day-ops)",
-      "state": "WORKING",
-      "now": "Refreshing book / STATUS",
-      "last_did": "LIVE EXIT ADVENTURES \u00b7 TIME_MAX_180s \u00b7 tx None \u00b7 2026-09-28 23:21:36 ET",
-      "last_et": "2026-09-28 23:21:36 ET",
-      "task": "Refreshing book / STATUS",
-      "proof": "quant/web/desk-dashboard/book.json",
-      "age_min": 15.2,
-      "lane": "file",
-      "owner_stream": "pm"
     },
     {
       "id": "risk",
@@ -42,7 +28,7 @@
       "last_et": "2026-09-28 23:22 ET",
       "task": "Updating RISK (PASS)",
       "proof": "fleet-v2/rh-chain/RISK-PASS-LIVE-SCALP-332.md",
-      "age_min": 14.5,
+      "age_min": 24.5,
       "lane": "file",
       "owner_stream": "risk"
     },
@@ -56,21 +42,35 @@
       "last_et": "2026-09-28 23:22 ET",
       "task": "Recent EXECUTE / wire",
       "proof": "fleet-v2/rh-chain/EXECUTE-LIVE-SCALP-332.md",
-      "age_min": 14.5,
+      "age_min": 24.5,
       "lane": "file",
       "owner_stream": "encode"
+    },
+    {
+      "id": "pm",
+      "name": "PM \u00b7 DESK",
+      "role": "Role: DESK lead (day-ops)",
+      "state": "LIVE",
+      "now": "LIVE EXIT ADVENTURES \u00b7 TIME_MAX_180s \u00b7 tx None \u00b7 2026-09-28 23:21:36 ET",
+      "last_did": "LIVE EXIT ADVENTURES \u00b7 TIME_MAX_180s \u00b7 tx None \u00b7 2026-09-28 23:21:36 ET",
+      "last_et": "2026-09-28 23:21:36 ET",
+      "task": "LIVE EXIT ADVENTURES \u00b7 TIME_MAX_180s \u00b7 tx None \u00b7 2026-09-28 23:21:36 ET",
+      "proof": "quant/web/desk-dashboard/book.json",
+      "age_min": 25.2,
+      "lane": "file",
+      "owner_stream": "pm"
     },
     {
       "id": "build",
       "name": "Build \u00b7 CODE",
       "role": "Role: CODE",
       "state": "IDLE",
-      "now": "Idle \u00b7 last touch ~143m ago",
+      "now": "Idle \u00b7 last touch ~153m ago",
       "last_did": "index.html",
       "last_et": "2026-09-28 21:13 ET",
-      "task": "Idle \u00b7 last touch ~143m ago",
+      "task": "Idle \u00b7 last touch ~153m ago",
       "proof": "/workspace/webbeep-desk-pulse/index.html",
-      "age_min": 143.2,
+      "age_min": 153.3,
       "lane": "file",
       "owner_stream": "code"
     },
@@ -79,12 +79,12 @@
       "name": "Edge \u00b7 SIGNALS",
       "role": "Role: SIGNALS",
       "state": "IDLE",
-      "now": "Idle \u00b7 last touch ~3671m ago",
+      "now": "Idle \u00b7 last touch ~3681m ago",
       "last_did": "BIAS-NOW \u00b7 BTC SHORT",
       "last_et": "2026-09-26 10:25 ET",
-      "task": "Idle \u00b7 last touch ~3671m ago",
+      "task": "Idle \u00b7 last touch ~3681m ago",
       "proof": "quant/signals/BIAS-NOW.md",
-      "age_min": 3670.9,
+      "age_min": 3681.0,
       "lane": "file",
       "owner_stream": "signals"
     }
