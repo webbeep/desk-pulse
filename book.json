@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-29 10:26:20 ET",
+  "updated_et": "2026-09-29 10:26:23 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 260.4223,
-  "upnl_usd": -0.4508,
-  "equity_usd": 262.9715,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 260.4223,
+  "status": "EXITING:HARD_SL_PCT_-15.0252",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.5125 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.6585,
-  "total_pnl_pct": -9.5167,
+  "total_pnl_usd": -30.2077,
+  "total_pnl_pct": -10.3939,
   "mark_eth": 2718.44,
   "mark": 2718.44,
   "mark_src": "coinbase",
@@ -40,25 +40,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "HOTDOG",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 0.00020076393014545425,
-      "mark": 0.00017059869740483142,
-      "uPnL": -0.4508,
-      "mtm_pct": -15.0252,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x61bbbf1605580d2c7561d4b1137b6a1f624ab0aa413944a2575f7534842e3231",
-      "token": "0x8A8E9c965C564BEd85038b44c6fd5aEBe6eA62c7",
-      "held_sec": 694,
-      "weth_out": 0.000937759612964844,
-      "usd_out": 2.549243
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "2026-09-28 20:19:55 ET",
@@ -8102,6 +8084,13 @@
       "liquid_usd": 260.4223,
       "upnl_usd": -0.4508,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-29 10:26:23 ET",
+      "equity_usd": 262.9715,
+      "liquid_usd": 260.4223,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -9235,7 +9224,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM HOTDOG uPnL $-0.4508 (-15.0252%) \u00b7 held 695s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 10:26:19 ET",
+  "notes": "LIVE MTM HOTDOG uPnL $-0.4508 (-15.0252%) \u00b7 held 695s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 10:26:19 ET \u00b7 CUT HARD_SL_PCT_-15.0252",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9283,31 +9272,15 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "HOTDOG",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 0.00020076393014545425,
-    "mark": 0.00017059869740483142,
-    "uPnL": -0.4508,
-    "mtm_pct": -15.0252,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x61bbbf1605580d2c7561d4b1137b6a1f624ab0aa413944a2575f7534842e3231",
-    "token": "0x8A8E9c965C564BEd85038b44c6fd5aEBe6eA62c7",
-    "held_sec": 694,
-    "weth_out": 0.000937759612964844,
-    "usd_out": 2.549243
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "HOTDOG",
+    "open": false,
+    "ticker": null,
     "tx": "0x61bbbf1605580d2c7561d4b1137b6a1f624ab0aa413944a2575f7534842e3231",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -15.0252,
-    "upnl_usd": -0.4508,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 694,
     "watcher": "rh_live_mtm_loop"
   },
