@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-29 10:15:02 ET",
+  "updated_et": "2026-09-29 10:15:03 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.4312,
+  "liquid_usd": 263.3585,
   "upnl_usd": 0.0,
-  "equity_usd": 263.4312,
+  "equity_usd": 263.3585,
   "status": "EXIT_None",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-35.8569 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.1988,
-  "total_pnl_pct": -9.3586,
-  "mark_eth": 2718.44,
-  "mark": 2718.44,
+  "total_pnl_usd": -27.2715,
+  "total_pnl_pct": -9.3836,
+  "mark_eth": 2717.69,
+  "mark": 2717.69,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2718.44
+    "ETH": 2717.69
   },
   "holdings": {
     "L1": {
@@ -8037,9 +8037,9 @@
       "n_pos": 0
     },
     {
-      "t": "2026-09-29 10:15:02 ET",
-      "equity_usd": 263.4312,
-      "liquid_usd": 263.4312,
+      "t": "2026-09-29 10:15:03 ET",
+      "equity_usd": 263.3585,
+      "liquid_usd": 263.3585,
       "upnl_usd": 0,
       "n_pos": 0
     }
@@ -8047,16 +8047,16 @@
   "trades": [
     {
       "id": "LIVE-SCALP-2-EXIT",
-      "t": "2026-09-29 10:15:02 ET",
+      "t": "2026-09-29 10:15:03 ET",
       "kind": "LIVE",
       "market": "HOTDOG",
       "side": "SELL",
       "size_usd": 3.0,
-      "pnl_usd": -0.368,
-      "mtm_pct": -12.2679,
+      "pnl_usd": -0.655,
+      "mtm_pct": -21.8328,
       "tx": null,
-      "reason": "POST_FILL_FLAT_-12.2679",
-      "stamp_et": "2026-09-29 10:15:02 ET",
+      "reason": "POST_FILL_FLAT_-21.8328",
+      "stamp_et": "2026-09-29 10:15:03 ET",
       "paper": false
     },
     {
@@ -9175,7 +9175,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT HOTDOG \u00b7 POST_FILL_FLAT_-12.2679 \u00b7 tx None \u00b7 2026-09-29 10:15:01 ET",
+  "notes": "LIVE EXIT HOTDOG \u00b7 POST_FILL_FLAT_-21.8328 \u00b7 tx None \u00b7 2026-09-29 10:15:02 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9228,7 +9228,7 @@
     "open": false,
     "ticker": null,
     "last_exit_tx": null,
-    "last_exit_reason": "POST_FILL_FLAT_-12.2679",
+    "last_exit_reason": "POST_FILL_FLAT_-21.8328",
     "last_exit_upnl": null
   },
   "realized_pnl_usd": -35.8569
