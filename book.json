@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-29 07:37:14 ET",
+  "updated_et": "2026-09-29 07:37:15 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 261.6093,
-  "upnl_usd": 0.0279,
-  "equity_usd": 264.6372,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 261.6093,
+  "status": "EXITING:TIME_FLAT_120s",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.422 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -25.9928,
-  "total_pnl_pct": -8.9436,
+  "total_pnl_usd": -29.0207,
+  "total_pnl_pct": -9.9854,
   "mark_eth": 2726.99,
   "mark": 2726.99,
   "mark_src": "coinbase",
@@ -40,25 +40,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "GFB",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 0.00018434785919980138,
-      "mark": 0.00018606058296417413,
-      "uPnL": 0.0279,
-      "mtm_pct": 0.9291,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x5d2afe91ea3080db2e4b6de4d5024685eacb32cc021b9ba55cddf582e655b508",
-      "token": "0x9EcB37049c1Fb7A805D22F9F91583fFdC471795E",
-      "held_sec": 975,
-      "weth_out": 0.001110334893268044,
-      "usd_out": 3.027872
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "2026-09-28 20:19:55 ET",
@@ -7528,6 +7510,13 @@
       "liquid_usd": 261.6093,
       "upnl_usd": 0.0279,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-29 07:37:15 ET",
+      "equity_usd": 264.6372,
+      "liquid_usd": 261.6093,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -8661,7 +8650,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM GFB uPnL $0.0279 (0.9291%) \u00b7 held 975s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 07:37:13 ET",
+  "notes": "LIVE MTM GFB uPnL $0.0279 (0.9291%) \u00b7 held 975s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 07:37:12 ET \u00b7 CUT TIME_FLAT_120s",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -8709,32 +8698,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "GFB",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 0.00018434785919980138,
-    "mark": 0.00018606058296417413,
-    "uPnL": 0.0279,
-    "mtm_pct": 0.9291,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x5d2afe91ea3080db2e4b6de4d5024685eacb32cc021b9ba55cddf582e655b508",
-    "token": "0x9EcB37049c1Fb7A805D22F9F91583fFdC471795E",
-    "held_sec": 975,
-    "weth_out": 0.001110334893268044,
-    "usd_out": 3.027872
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "GFB",
+    "open": false,
+    "ticker": null,
     "tx": "0x5d2afe91ea3080db2e4b6de4d5024685eacb32cc021b9ba55cddf582e655b508",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 0.9291,
-    "upnl_usd": 0.0279,
-    "held_sec": 975,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 974,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -36.422
