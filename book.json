@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-29 08:02:24 ET",
+  "updated_et": "2026-09-29 08:02:25 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 262.112,
-  "upnl_usd": 0.0,
-  "equity_usd": 262.112,
-  "status": "EXITING:TIME_FLAT_120s",
+  "liquid_usd": 262.0698,
+  "upnl_usd": -0.0017,
+  "equity_usd": 265.0681,
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.2077 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -28.518,
-  "total_pnl_pct": -9.8125,
-  "mark_eth": 2730.57,
-  "mark": 2730.57,
+  "total_pnl_usd": -25.5619,
+  "total_pnl_pct": -8.7953,
+  "mark_eth": 2730.13,
+  "mark": 2730.13,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2730.57
+    "ETH": 2730.13
   },
   "holdings": {
     "L1": {
@@ -40,7 +40,25 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "GFB",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "entry": 1.3907292218673715e-05,
+      "mark": 1.3899572761062698e-05,
+      "uPnL": -0.0017,
+      "mtm_pct": -0.0555,
+      "lev": 1,
+      "paper": false,
+      "tx": "0x6dc938c02df9b81e4f7e59bca1c44f51964679291be4b899d5c822a8c7dadf9e",
+      "token": "0x9EcB37049c1Fb7A805D22F9F91583fFdC471795E",
+      "held_sec": 1515,
+      "weth_out": 0.001098238839764928,
+      "usd_out": 2.998335
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-28 20:19:55 ET",
@@ -7727,6 +7745,13 @@
       "liquid_usd": 262.112,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-29 08:02:25 ET",
+      "equity_usd": 265.0681,
+      "liquid_usd": 262.0698,
+      "upnl_usd": -0.0017,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -8860,7 +8885,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM GFB uPnL $-0.0012 (-0.0394%) \u00b7 held 747s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 08:02:21 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE MTM GFB uPnL $-0.0017 (-0.0555%) \u00b7 held 1515s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 08:02:24 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -8908,16 +8933,32 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "GFB",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "entry": 1.3907292218673715e-05,
+    "mark": 1.3899572761062698e-05,
+    "uPnL": -0.0017,
+    "mtm_pct": -0.0555,
+    "lev": 1,
+    "paper": false,
+    "tx": "0x6dc938c02df9b81e4f7e59bca1c44f51964679291be4b899d5c822a8c7dadf9e",
+    "token": "0x9EcB37049c1Fb7A805D22F9F91583fFdC471795E",
+    "held_sec": 1515,
+    "weth_out": 0.001098238839764928,
+    "usd_out": 2.998335
+  },
   "live": {
-    "open": false,
-    "ticker": null,
-    "tx": "0x2c55c82d587a3fdcee5069771dcd51bd892d9d5fbe95aaaed98d75e30541df75",
-    "size_usd": 0,
+    "open": true,
+    "ticker": "GFB",
+    "tx": "0x6dc938c02df9b81e4f7e59bca1c44f51964679291be4b899d5c822a8c7dadf9e",
+    "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 747,
+    "mtm_pct": -0.0555,
+    "upnl_usd": -0.0017,
+    "held_sec": 1515,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -36.2077
