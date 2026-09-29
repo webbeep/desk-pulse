@@ -52,9 +52,9 @@
       "mtm_pct": 0.0115,
       "lev": 1,
       "paper": false,
-      "tx": "0x36ee3b53cb689a20bca9cc7be55d0833971c843150d9e0bf1a392f297782c40a",
+      "tx": "0xf862d0164be4db08fdb9d36b90c6db08b278f70ef0fbb19dace9da07e73cb3cb",
       "token": "0x05dC184414aF81436D069cf78A6bd821667363ee",
-      "held_sec": 3,
+      "held_sec": 765,
       "weth_out": 0.001099067821741244,
       "usd_out": 3.000345
     }
@@ -8920,7 +8920,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM BBB uPnL $0.0003 (0.0115%) \u00b7 held 3s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 08:06:40 ET",
+  "notes": "LIVE MTM BBB uPnL $0.0003 (0.0115%) \u00b7 held 765s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 08:06:40 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -8979,21 +8979,21 @@
     "mtm_pct": 0.0115,
     "lev": 1,
     "paper": false,
-    "tx": "0x36ee3b53cb689a20bca9cc7be55d0833971c843150d9e0bf1a392f297782c40a",
+    "tx": "0xf862d0164be4db08fdb9d36b90c6db08b278f70ef0fbb19dace9da07e73cb3cb",
     "token": "0x05dC184414aF81436D069cf78A6bd821667363ee",
-    "held_sec": 3,
+    "held_sec": 765,
     "weth_out": 0.001099067821741244,
     "usd_out": 3.000345
   },
   "live": {
     "open": true,
     "ticker": "BBB",
-    "tx": "0x36ee3b53cb689a20bca9cc7be55d0833971c843150d9e0bf1a392f297782c40a",
+    "tx": "0xf862d0164be4db08fdb9d36b90c6db08b278f70ef0fbb19dace9da07e73cb3cb",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
     "mtm_pct": 0.0115,
     "upnl_usd": 0.0003,
-    "held_sec": 3,
+    "held_sec": 765,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -36.2077
