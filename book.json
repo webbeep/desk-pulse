@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-29 10:27:18 ET",
+  "updated_et": "2026-09-29 10:27:19 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 260.1126,
@@ -8130,12 +8130,12 @@
     {
       "t": "2026-09-29 10:27:18 ET",
       "equity_usd": 263.1156,
-      "liquid_usd": 260.1126,
-      "upnl_usd": 0.003,
-      "n_pos": 1
+      "liquid_usd": 260.0868,
+      "upnl_usd": 0,
+      "n_pos": 0
     },
     {
-      "t": "2026-09-29 10:27:18 ET",
+      "t": "2026-09-29 10:27:19 ET",
       "equity_usd": 263.1156,
       "liquid_usd": 260.1126,
       "upnl_usd": 0,
@@ -9273,7 +9273,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM PI uPnL $0.003 (0.0987%) \u00b7 held 994s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 10:27:17 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE MTM PI uPnL $0.003 (0.0987%) \u00b7 held 993s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 10:27:15 ET \u00b7 CUT TIME_FLAT_120s",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9330,7 +9330,7 @@
     "max_loss_usd": 1.5,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 994,
+    "held_sec": 992,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -36.5125
