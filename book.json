@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-29 10:02:42 ET",
+  "updated_et": "2026-09-29 10:10:44 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 264.7286,
@@ -42,12 +42,12 @@
   },
   "positions": [
     {
-      "id": "LIVE-SCALP-342",
-      "market": "HUNCH",
+      "id": "LIVE-SCALP-343",
+      "market": "PI",
       "side": "LONG",
       "size_usd": 3.0,
-      "tx": "0x444bed168c076f92878787d3e0a1a3577054b427ad5093bc53cf9f1503c98c2e",
-      "token": "0x2DEf84085B8AC0758945A38A57c760D05C29bF13",
+      "tx": "0x9bc264445e62a0ff1303c85a32708f645dfaceaa6d4ac100e9cbb73fe3850ce6",
+      "token": "0x434C832E6352bF0cFEaDab8E86361a83E6D572E2",
       "paper": false,
       "uPnL": 0.0
     }
@@ -9032,7 +9032,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-29 09:42:23 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-29 10:03:31 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9081,23 +9081,23 @@
     "live": true
   },
   "position": {
-    "id": "LIVE-SCALP-342",
-    "market": "HUNCH",
+    "id": "LIVE-SCALP-343",
+    "market": "PI",
     "side": "LONG",
     "size_usd": 3.0,
-    "tx": "0x444bed168c076f92878787d3e0a1a3577054b427ad5093bc53cf9f1503c98c2e",
-    "token": "0x2DEf84085B8AC0758945A38A57c760D05C29bF13",
+    "tx": "0x9bc264445e62a0ff1303c85a32708f645dfaceaa6d4ac100e9cbb73fe3850ce6",
+    "token": "0x434C832E6352bF0cFEaDab8E86361a83E6D572E2",
     "paper": false,
     "uPnL": 0.0
   },
   "live": {
     "open": true,
     "flat": false,
-    "ticker": "HUNCH",
-    "tx": "0x444bed168c076f92878787d3e0a1a3577054b427ad5093bc53cf9f1503c98c2e",
+    "ticker": "PI",
+    "tx": "0x9bc264445e62a0ff1303c85a32708f645dfaceaa6d4ac100e9cbb73fe3850ce6",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-342",
+    "id": "LIVE-SCALP-343",
     "karure_banned": true,
     "watcher": "rh_live_mtm_loop",
     "loop": "rh_live_loop"
