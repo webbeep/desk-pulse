@@ -5,7 +5,7 @@
   "liquid_usd": 264.6382,
   "upnl_usd": 0.0,
   "equity_usd": 264.6382,
-  "status": "EXIT_None",
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.422 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -25.9918,
@@ -7548,9 +7548,9 @@
       "market": "GFB",
       "side": "SELL",
       "size_usd": 3.0,
-      "pnl_usd": 0.0279,
-      "mtm_pct": 0.9291,
-      "tx": null,
+      "pnl_usd": -0.0079,
+      "mtm_pct": -0.2635,
+      "tx": "0x849068ef1ed04c5529ab6bd08e5aa1672d36bc384fc5e89564ae464144149f84",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-29 07:37:22 ET",
       "paper": false
@@ -8671,7 +8671,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT GFB \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-09-29 07:37:22 ET",
+  "notes": "LIVE EXIT GFB \u00b7 TIME_FLAT_120s \u00b7 tx 0x849068ef1ed04c5529ab6bd08e5aa1672d36bc384fc5e89564ae464144149f84 \u00b7 2026-09-29 07:37:22 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -8723,9 +8723,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
+    "last_exit_tx": "0x849068ef1ed04c5529ab6bd08e5aa1672d36bc384fc5e89564ae464144149f84",
     "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": null
+    "last_exit_upnl": -0.0079
   },
   "realized_pnl_usd": -36.422
 }
