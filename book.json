@@ -3,13 +3,13 @@
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 261.9162,
-  "upnl_usd": -0.2206,
-  "equity_usd": 264.6956,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 261.9162,
+  "status": "EXITING:HARD_SL_PCT_-7.3535",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.0123 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -25.9344,
-  "total_pnl_pct": -8.9235,
+  "total_pnl_usd": -28.7138,
+  "total_pnl_pct": -9.8798,
   "mark_eth": 2726.49,
   "mark": 2726.49,
   "mark_src": "coinbase",
@@ -40,25 +40,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "DEADBEEF",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 0.00014788526726342347,
-      "mark": 0.00013701053172115196,
-      "uPnL": -0.2206,
-      "mtm_pct": -7.3535,
-      "lev": 1,
-      "paper": false,
-      "tx": "0xa5cc605b1ea97eb6704775260a02b8a7b822be7d08b7d5250a033c60717baff8",
-      "token": "0x40EB57842b260D2bCa26DC553B6c2213393Fc309",
-      "held_sec": 697,
-      "weth_out": 0.001019404125409754,
-      "usd_out": 2.779395
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "2026-09-28 20:19:55 ET",
@@ -7890,8 +7872,8 @@
       "t": "2026-09-29 09:41:41 ET",
       "equity_usd": 264.6956,
       "liquid_usd": 261.9162,
-      "upnl_usd": -0.2206,
-      "n_pos": 1
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -9025,7 +9007,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM DEADBEEF uPnL $-0.2206 (-7.3535%) \u00b7 held 698s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 09:41:40 ET",
+  "notes": "LIVE MTM DEADBEEF uPnL $-0.2206 (-7.3535%) \u00b7 held 695s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 09:41:38 ET \u00b7 CUT HARD_SL_PCT_-7.3535",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9073,32 +9055,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "DEADBEEF",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 0.00014788526726342347,
-    "mark": 0.00013701053172115196,
-    "uPnL": -0.2206,
-    "mtm_pct": -7.3535,
-    "lev": 1,
-    "paper": false,
-    "tx": "0xa5cc605b1ea97eb6704775260a02b8a7b822be7d08b7d5250a033c60717baff8",
-    "token": "0x40EB57842b260D2bCa26DC553B6c2213393Fc309",
-    "held_sec": 697,
-    "weth_out": 0.001019404125409754,
-    "usd_out": 2.779395
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "DEADBEEF",
+    "open": false,
+    "ticker": null,
     "tx": "0xa5cc605b1ea97eb6704775260a02b8a7b822be7d08b7d5250a033c60717baff8",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -7.3535,
-    "upnl_usd": -0.2206,
-    "held_sec": 697,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 695,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -36.0123
