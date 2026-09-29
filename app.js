@@ -454,33 +454,45 @@
   }
 
   function stabilizeHist(hist) {
+    // True total money = equity_usd (liquid + open MTM). Drop settlement-lag
+    // flats where equity cliffs by >$1.5 then recovers (exit eth lag).
     const chron = Array.isArray(hist) ? hist.slice() : [];
-    const out = [];
-    let prevEq = null;
-    let prevN = null;
+    const raw = [];
     for (let i = 0; i < chron.length; i++) {
       const h = chron[i];
       if (!h || typeof h !== "object") continue;
-      const nRaw = num(pick(h, ["n_pos", "n"]));
-      const n = nRaw != null ? nRaw : 0;
-      const liq = num(pick(h, ["liquid_usd", "liquidUsd"]));
-      const rawEq = num(pick(h, ["equity_usd", "equityUsd"]));
-      const up = num(pick(h, ["upnl_usd", "upnlUsd"])) || 0;
-      // Flat → liquid; open → equity (liquid+upnl)
-      let eq = n === 0 ? (liq != null ? liq : rawEq) : (rawEq != null ? rawEq : (liq != null ? liq + up : null));
+      const eq = num(pick(h, ["equity_usd", "equityUsd"]));
       if (eq == null) continue;
-      const statusFlip = prevN != null && ((prevN === 0) !== (n === 0));
-      if (prevEq != null) {
-        const d = Math.abs(eq - prevEq);
-        if (d > 15) continue; // corrupt spike
-        if (!statusFlip && d > 5) continue; // bogus jump while same status
-      }
       const row = {};
       for (const k in h) row[k] = h[k];
       row.equity_usd = eq;
-      out.push(row);
-      prevEq = eq;
-      prevN = n;
+      raw.push(row);
+    }
+    const out = [];
+    for (let i = 0; i < raw.length; i++) {
+      const cur = raw[i];
+      const prev = out.length ? out[out.length - 1] : null;
+      if (prev) {
+        const d = cur.equity_usd - prev.equity_usd;
+        if (d < -1.5) {
+          // look ahead up to 6 pts for recovery toward prior level
+          let recover = false;
+          for (let j = i + 1; j < Math.min(raw.length, i + 7); j++) {
+            if (raw[j].equity_usd >= prev.equity_usd - 0.75) { recover = true; break; }
+          }
+          if (recover) continue; // skip lag dip
+        }
+        if (d > 1.5) {
+          // skip lone bounce that only undoes a lag dip we already skipped
+          let priorDip = false;
+          for (let j = Math.max(0, i - 6); j < i; j++) {
+            if (raw[j].equity_usd <= prev.equity_usd - 1.5) { priorDip = true; break; }
+          }
+          // if jump from a much lower skipped region, still allow real +PnL; only skip if coming back to ~prev
+          if (Math.abs(cur.equity_usd - prev.equity_usd) < 0.75) continue;
+        }
+      }
+      out.push(cur);
     }
     return out;
   }
