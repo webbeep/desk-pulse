@@ -2,19 +2,19 @@
   "updated_et": "2026-09-28 21:52:11 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.571,
+  "liquid_usd": 263.6235,
   "upnl_usd": 0.0,
-  "equity_usd": 263.571,
-  "status": "EXIT_None",
+  "equity_usd": 263.6235,
+  "status": "EXITED",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-30.4636 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.059,
-  "total_pnl_pct": -9.3105,
-  "mark_eth": 2659.97,
-  "mark": 2659.97,
+  "total_pnl_usd": -27.0065,
+  "total_pnl_pct": -9.2924,
+  "mark_eth": 2660.5,
+  "mark": 2660.5,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2659.97
+    "ETH": 2660.5
   },
   "holdings": {
     "L1": {
@@ -1486,8 +1486,8 @@
     },
     {
       "t": "2026-09-28 21:52:11 ET",
-      "equity_usd": 263.571,
-      "liquid_usd": 263.571,
+      "equity_usd": 263.6235,
+      "liquid_usd": 263.6235,
       "upnl_usd": 0,
       "n_pos": 0
     }
@@ -1500,10 +1500,10 @@
       "market": "CAVO",
       "side": "SELL",
       "size_usd": 5.0,
-      "pnl_usd": 0.0876,
-      "mtm_pct": 1.7516,
-      "tx": null,
-      "reason": "TIME_MAX_180s",
+      "pnl_usd": -0.7397,
+      "mtm_pct": -14.7935,
+      "tx": "0x30758adc4230280f0fdecfd63cf58dc096b3d82e002e1e387c5a5025c8c146b5",
+      "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-28 21:52:11 ET",
       "paper": false
     },
@@ -2622,7 +2622,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT CAVO \u00b7 TIME_MAX_180s \u00b7 tx None \u00b7 2026-09-28 21:52:11 ET",
+  "notes": "LIVE EXIT CAVO \u00b7 TIME_FLAT_120s \u00b7 tx 0x30758adc4230280f0fdecfd63cf58dc096b3d82e002e1e387c5a5025c8c146b5 \u00b7 2026-09-28 21:52:11 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2674,9 +2674,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "TIME_MAX_180s",
-    "last_exit_upnl": null
+    "last_exit_tx": "0x30758adc4230280f0fdecfd63cf58dc096b3d82e002e1e387c5a5025c8c146b5",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": -0.7397
   },
   "realized_pnl_usd": -30.4636
 }
