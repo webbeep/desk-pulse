@@ -54,7 +54,7 @@
       "paper": false,
       "tx": "0xf862d0164be4db08fdb9d36b90c6db08b278f70ef0fbb19dace9da07e73cb3cb",
       "token": "0x05dC184414aF81436D069cf78A6bd821667363ee",
-      "held_sec": 765,
+      "held_sec": 766,
       "weth_out": 0.001102683136034191,
       "usd_out": 3.009895
     }
@@ -7782,10 +7782,10 @@
       "n_pos": 0
     },
     {
-      "t": "2026-09-29 08:06:40 ET",
-      "equity_usd": 265.0245,
+      "t": "2026-09-29 08:06:41 ET",
+      "equity_usd": 265.0344,
       "liquid_usd": 262.0242,
-      "upnl_usd": 0.0003,
+      "upnl_usd": 0.0102,
       "n_pos": 1
     },
     {
@@ -8927,7 +8927,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM BBB uPnL $0.0099 (0.3298%) \u00b7 held 766s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 08:06:40 ET",
+  "notes": "LIVE MTM BBB uPnL $0.0099 (0.3298%) \u00b7 held 766s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 08:06:41 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -8988,7 +8988,7 @@
     "paper": false,
     "tx": "0xf862d0164be4db08fdb9d36b90c6db08b278f70ef0fbb19dace9da07e73cb3cb",
     "token": "0x05dC184414aF81436D069cf78A6bd821667363ee",
-    "held_sec": 765,
+    "held_sec": 766,
     "weth_out": 0.001102683136034191,
     "usd_out": 3.009895
   },
@@ -9000,7 +9000,7 @@
     "max_loss_usd": 1.5,
     "mtm_pct": 0.3298,
     "upnl_usd": 0.0099,
-    "held_sec": 765,
+    "held_sec": 766,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -36.2077
