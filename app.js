@@ -10,8 +10,8 @@
   };
   const SOURCES = [
     "./book.json",
-    "https://cdn.jsdelivr.net/gh/webby-box/desk-pulse@main/book.json",
-    "https://raw.githubusercontent.com/webby-box/desk-pulse/main/book.json",
+    "https://cdn.jsdelivr.net/gh/webbeep/desk-pulse@main/book.json",
+    "https://raw.githubusercontent.com/webbeep/desk-pulse/main/book.json",
     "../scans/book.json",
   ];
 
@@ -84,8 +84,8 @@
   function compactTime(raw) {
     if (!raw) return "—";
     const s = String(raw).trim();
-    const m = s.match(/(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})(?::\d{2})?\s*(ET)?/i);
-    if (m) return m[2] + (m[3] ? " ET" : "") + " " + m[1].slice(5);
+    const m = s.match(/(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})(:\d{2})?\s*(ET)?/i);
+    if (m) return m[2] + (m[3] || ":00") + (m[4] ? " ET" : "") + " " + m[1].slice(5);
     if (s.length > 22) return s.slice(0, 20);
     return s;
   }
@@ -453,6 +453,67 @@
     return hist.map(function (h) { return num(h[key]); }).filter(function (v) { return v != null; });
   }
 
+  function stabilizeHist(hist) {
+    const chron = Array.isArray(hist) ? hist.slice() : [];
+    const out = [];
+    let prevEq = null;
+    let prevN = null;
+    for (let i = 0; i < chron.length; i++) {
+      const h = chron[i];
+      if (!h || typeof h !== "object") continue;
+      const nRaw = num(pick(h, ["n_pos", "n"]));
+      const n = nRaw != null ? nRaw : 0;
+      const liq = num(pick(h, ["liquid_usd", "liquidUsd"]));
+      const rawEq = num(pick(h, ["equity_usd", "equityUsd"]));
+      const up = num(pick(h, ["upnl_usd", "upnlUsd"])) || 0;
+      // Flat → liquid; open → equity (liquid+upnl)
+      let eq = n === 0 ? (liq != null ? liq : rawEq) : (rawEq != null ? rawEq : (liq != null ? liq + up : null));
+      if (eq == null) continue;
+      const statusFlip = prevN != null && ((prevN === 0) !== (n === 0));
+      if (prevEq != null) {
+        const d = Math.abs(eq - prevEq);
+        if (d > 15) continue; // corrupt spike
+        if (!statusFlip && d > 5) continue; // bogus jump while same status
+      }
+      const row = {};
+      for (const k in h) row[k] = h[k];
+      row.equity_usd = eq;
+      out.push(row);
+      prevEq = eq;
+      prevN = n;
+    }
+    return out;
+  }
+
+  function downsample(vals, maxN) {
+    if (!vals || vals.length <= maxN) return vals || [];
+    const out = [];
+    const last = vals.length - 1;
+    for (let i = 0; i < maxN; i++) {
+      const idx = Math.round((i * last) / (maxN - 1));
+      out.push(vals[idx]);
+    }
+    return out;
+  }
+
+  function histForTable(hist) {
+    const stab = stabilizeHist(hist);
+    // newest-first; one row per distinct second; cap ~60
+    const seen = {};
+    const rows = [];
+    for (let i = stab.length - 1; i >= 0; i--) {
+      const h = stab[i];
+      const raw = String(pick(h, ["t", "updated_et"]) || "");
+      const m = raw.match(/(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}:\d{2})/);
+      const key = m ? m[1] + " " + m[2] : raw;
+      if (!key || seen[key]) continue;
+      seen[key] = true;
+      rows.push(h);
+      if (rows.length >= 60) break;
+    }
+    return rows;
+  }
+
   function pathFrom(vals, w, h, pad) {
     const pts = vals.map(function (v, i) {
       return { i: i, v: v };
@@ -481,8 +542,9 @@
     const w = 320;
     const h = 64;
     const pad = 4;
-    const eq = series(hist, "equity_usd");
-    const up = series(hist, "upnl_usd");
+    const stab = stabilizeHist(hist);
+    const eq = downsample(series(stab, "equity_usd"), 80);
+    const up = downsample(series(stab, "upnl_usd"), 80);
     const pe = pathFrom(eq, w, h, pad);
     const pu = pathFrom(up, w, h, pad);
     function line(d, color) {
@@ -502,8 +564,8 @@
   function renderHist(hist) {
     const body = $("hist-body");
     body.replaceChildren();
-    $("hist-empty").hidden = hist.length > 0;
-    const rows = hist.slice().reverse();
+    const rows = histForTable(hist);
+    $("hist-empty").hidden = rows.length > 0;
     for (const h of rows) {
       const tr = el("tr");
       const u = num(pick(h, ["upnl_usd", "upnlUsd"]));
@@ -520,18 +582,25 @@
     renderSpark(hist);
   }
 
+  function tradeTimeKey(t) {
+    return String(pick(t, ["t", "stamp_et", "closed_et"]) || "");
+  }
+
   function renderTrades(trades) {
     const body = $("trades-body");
     body.replaceChildren();
-    $("trades-empty").hidden = trades.length > 0;
-    for (const t of trades) {
+    const list = (Array.isArray(trades) ? trades.slice() : []).sort(function (a, b) {
+      return tradeTimeKey(b).localeCompare(tradeTimeKey(a));
+    }).slice(0, 40);
+    $("trades-empty").hidden = list.length > 0;
+    for (const t of list) {
       const tr = el("tr");
       const pnl = num(pick(t, ["pnl_usd", "pnlUsd"]));
       const size = num(pick(t, ["size_usd", "sizeUsd"]));
       tr.append(
         el("td", "", compactTime(pick(t, ["t", "stamp_et", "closed_et"]))),
         el("td", "", String(pick(t, ["kind", "k"]) || (String(t.id || "").startsWith("LIVE") ? "LIVE" : (t.paper ? "PAPER" : "—")))),
-        el("td", "", String(pick(t, ["market"]) || "—")),
+        el("td", "", String(pick(t, ["market", "ticker", "sym"]) || "—")),
         el("td", "", String(pick(t, ["side"]) || "—")),
         el("td", "", size != null ? money(size) : "—"),
         el("td", pnl > 0 ? "up" : pnl < 0 ? "down" : "", money(pnl)),
