@@ -603,7 +603,7 @@
         el("td", "", String(pick(t, ["market", "ticker", "sym"]) || "—")),
         el("td", "", String(pick(t, ["side"]) || "—")),
         el("td", "", size != null ? money(size) : "—"),
-        el("td", pnl > 0 ? "up" : pnl < 0 ? "down" : "", money(pnl)),
+        el("td", pnl > 0 ? "up" : pnl < 0 ? "down" : "", money(pnl, (pnl != null && Math.abs(pnl) > 0 && Math.abs(pnl) < 0.01) ? 4 : 2)),
         el("td", "", truncTx(pick(t, ["tx"])))
       );
       body.append(tr);
