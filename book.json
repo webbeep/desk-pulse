@@ -2,19 +2,19 @@
   "updated_et": "2026-09-29 07:54:09 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 262.0168,
-  "upnl_usd": 0.0,
-  "equity_usd": 262.0168,
-  "status": "EXITING:TP_V7_+4.5",
+  "liquid_usd": 261.987,
+  "upnl_usd": 0.3025,
+  "equity_usd": 265.2895,
+  "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.3819 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -28.6132,
-  "total_pnl_pct": -9.8452,
-  "mark_eth": 2731.11,
-  "mark": 2731.11,
+  "total_pnl_usd": -25.3405,
+  "total_pnl_pct": -8.7192,
+  "mark_eth": 2730.8,
+  "mark": 2730.8,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2731.11
+    "ETH": 2730.8
   },
   "holdings": {
     "L1": {
@@ -40,7 +40,25 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [],
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "BBB",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "entry": 0.00012569765578759353,
+      "mark": 0.00013837239114692702,
+      "uPnL": 0.3025,
+      "mtm_pct": 10.0835,
+      "lev": 1,
+      "paper": false,
+      "tx": "0xf862d0164be4db08fdb9d36b90c6db08b278f70ef0fbb19dace9da07e73cb3cb",
+      "token": "0x05dC184414aF81436D069cf78A6bd821667363ee",
+      "held_sec": 14,
+      "weth_out": 0.001209354508598805,
+      "usd_out": 3.302505
+    }
+  ],
   "pnl_history": [
     {
       "t": "2026-09-28 20:19:55 ET",
@@ -7653,10 +7671,10 @@
     },
     {
       "t": "2026-09-29 07:54:09 ET",
-      "equity_usd": 265.1798,
-      "liquid_usd": 262.0168,
-      "upnl_usd": 0,
-      "n_pos": 0
+      "equity_usd": 265.2895,
+      "liquid_usd": 261.987,
+      "upnl_usd": 0.3025,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -8790,7 +8808,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM BBB uPnL $0.163 (5.433%) \u00b7 held 13s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 07:54:07 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE MTM BBB uPnL $0.3025 (10.0835%) \u00b7 held 14s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 07:54:09 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -8838,16 +8856,32 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": null,
-  "live": {
-    "open": false,
-    "ticker": null,
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "BBB",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "entry": 0.00012569765578759353,
+    "mark": 0.00013837239114692702,
+    "uPnL": 0.3025,
+    "mtm_pct": 10.0835,
+    "lev": 1,
+    "paper": false,
     "tx": "0xf862d0164be4db08fdb9d36b90c6db08b278f70ef0fbb19dace9da07e73cb3cb",
-    "size_usd": 0,
+    "token": "0x05dC184414aF81436D069cf78A6bd821667363ee",
+    "held_sec": 14,
+    "weth_out": 0.001209354508598805,
+    "usd_out": 3.302505
+  },
+  "live": {
+    "open": true,
+    "ticker": "BBB",
+    "tx": "0xf862d0164be4db08fdb9d36b90c6db08b278f70ef0fbb19dace9da07e73cb3cb",
+    "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 12,
+    "mtm_pct": 10.0835,
+    "upnl_usd": 0.3025,
+    "held_sec": 14,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -36.3819
