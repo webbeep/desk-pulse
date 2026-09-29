@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-28 23:01:59 ET",
+  "updated_et": "2026-09-28 23:02:01 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 258.0619,
-  "upnl_usd": 0.0053,
-  "equity_usd": 263.0672,
-  "status": "LIVE_OPEN",
+  "liquid_usd": 257.9979,
+  "upnl_usd": 0.0,
+  "equity_usd": 257.9979,
+  "status": "EXITING:TP_V7_+4.5",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-31.2033 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.5628,
-  "total_pnl_pct": -9.4838,
-  "mark_eth": 2658.93,
-  "mark": 2658.93,
+  "total_pnl_usd": -32.6321,
+  "total_pnl_pct": -11.2281,
+  "mark_eth": 2658.27,
+  "mark": 2658.27,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2658.93
+    "ETH": 2658.27
   },
   "holdings": {
     "L1": {
@@ -40,25 +40,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "ADVENTURES",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 0.00010298881453558717,
-      "mark": 0.00010309839570987412,
-      "uPnL": 0.0053,
-      "mtm_pct": 0.1064,
-      "lev": 1,
-      "paper": false,
-      "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
-      "token": "0x2AD287050E4b91970d87bADBdcC81AdbAb48c6df",
-      "held_sec": 6,
-      "weth_out": 0.001882456496493058,
-      "usd_out": 5.00532
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "2026-09-28 20:19:55 ET",
@@ -1578,6 +1560,20 @@
       "liquid_usd": 258.0619,
       "upnl_usd": 0.0053,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 23:02:01 ET",
+      "equity_usd": 263.2376,
+      "liquid_usd": 257.9979,
+      "upnl_usd": 0.2397,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 23:02:01 ET",
+      "equity_usd": 263.2376,
+      "liquid_usd": 257.9979,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -2710,7 +2706,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM ADVENTURES uPnL $0.0053 (0.1064%) \u00b7 held 7s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 23:01:58 ET",
+  "notes": "LIVE MTM ADVENTURES uPnL $0.2397 (4.794%) \u00b7 held 9s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 23:02:00 ET \u00b7 CUT TP_V7_+4.5",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2758,32 +2754,16 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "ADVENTURES",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 0.00010298881453558717,
-    "mark": 0.00010309839570987412,
-    "uPnL": 0.0053,
-    "mtm_pct": 0.1064,
-    "lev": 1,
-    "paper": false,
-    "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
-    "token": "0x2AD287050E4b91970d87bADBdcC81AdbAb48c6df",
-    "held_sec": 6,
-    "weth_out": 0.001882456496493058,
-    "usd_out": 5.00532
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "ADVENTURES",
+    "open": false,
+    "ticker": null,
     "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
-    "size_usd": 5.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": 0.1064,
-    "upnl_usd": 0.0053,
-    "held_sec": 6,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 8,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -31.2033
