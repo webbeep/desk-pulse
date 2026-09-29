@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-28 23:01:53 ET",
+  "updated_et": "2026-09-28 23:01:55 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.0756,
-  "upnl_usd": 0.0,
-  "equity_usd": 263.0756,
+  "liquid_usd": 258.059,
+  "upnl_usd": -0.0004,
+  "equity_usd": 263.0586,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-31.2033 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.5544,
-  "total_pnl_pct": -9.4809,
-  "mark_eth": 2658.98,
-  "mark": 2658.98,
+  "total_pnl_usd": -27.5714,
+  "total_pnl_pct": -9.4868,
+  "mark_eth": 2658.9,
+  "mark": 2658.9,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2658.98
+    "ETH": 2658.9
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.07964367084865792,
+      "eth": 0.0777599331646159,
       "weth": 0.01788780561976599
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.07964367084865792,
+    "rh_eth": 0.0777599331646159,
     "rh_weth": 0.01788780561976599,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,14 +42,21 @@
   },
   "positions": [
     {
-      "id": "LIVE-SCALP-331",
+      "id": "LIVE-SCALP-2",
       "market": "ADVENTURES",
       "side": "LONG",
       "size_usd": 5.0,
+      "entry": 0.00010298881453558717,
+      "mark": 0.00010298022532235246,
+      "uPnL": -0.0004,
+      "mtm_pct": -0.0083,
+      "lev": 1,
+      "paper": false,
       "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
       "token": "0x2AD287050E4b91970d87bADBdcC81AdbAb48c6df",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 3,
+      "weth_out": 0.001880320058150615,
+      "usd_out": 4.999583
     }
   ],
   "pnl_history": [
@@ -1550,6 +1557,13 @@
       "liquid_usd": 263.0756,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 23:01:55 ET",
+      "equity_usd": 263.0586,
+      "liquid_usd": 258.059,
+      "upnl_usd": -0.0004,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2679,10 +2693,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 22:53:30 ET",
+  "notes": "LIVE MTM ADVENTURES uPnL $-0.0004 (-0.0083%) \u00b7 held 3s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 23:01:55 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2731,26 +2745,32 @@
     "live": true
   },
   "position": {
-    "id": "LIVE-SCALP-331",
+    "id": "LIVE-SCALP-2",
     "market": "ADVENTURES",
     "side": "LONG",
     "size_usd": 5.0,
+    "entry": 0.00010298881453558717,
+    "mark": 0.00010298022532235246,
+    "uPnL": -0.0004,
+    "mtm_pct": -0.0083,
+    "lev": 1,
+    "paper": false,
     "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
     "token": "0x2AD287050E4b91970d87bADBdcC81AdbAb48c6df",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 3,
+    "weth_out": 0.001880320058150615,
+    "usd_out": 4.999583
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "ADVENTURES",
     "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
     "size_usd": 5.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-331",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.0083,
+    "upnl_usd": -0.0004,
+    "held_sec": 3,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -31.2033
 }
