@@ -1,15 +1,15 @@
 {
-  "updated_et": "2026-09-29 10:10:47 ET",
+  "updated_et": "2026-09-29 10:10:49 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 261.0122,
-  "upnl_usd": -0.3872,
-  "equity_usd": 263.625,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 261.0122,
+  "status": "EXITING:POST_FILL_FLAT_-12.906",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.0123 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.005,
-  "total_pnl_pct": -9.2919,
+  "total_pnl_usd": -29.6178,
+  "total_pnl_pct": -10.1909,
   "mark_eth": 2719.3,
   "mark": 2719.3,
   "mark_src": "coinbase",
@@ -40,25 +40,7 @@
     "base": "https://basescan.org/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "PI",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 0.00013069721438427976,
-      "mark": 0.00011382948299523857,
-      "uPnL": -0.3872,
-      "mtm_pct": -12.906,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x9bc264445e62a0ff1303c85a32708f645dfaceaa6d4ac100e9cbb73fe3850ce6",
-      "token": "0x434C832E6352bF0cFEaDab8E86361a83E6D572E2",
-      "held_sec": 3,
-      "weth_out": 0.000960843295306204,
-      "usd_out": 2.612821
-    }
-  ],
+  "positions": [],
   "pnl_history": [
     {
       "t": "2026-09-28 20:19:55 ET",
@@ -7913,6 +7895,13 @@
       "liquid_usd": 261.0122,
       "upnl_usd": -0.3872,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-29 10:10:49 ET",
+      "equity_usd": 263.625,
+      "liquid_usd": 261.0122,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -9046,7 +9035,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM PI uPnL $-0.3872 (-12.906%) \u00b7 held 3s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 10:10:46 ET",
+  "notes": "LIVE MTM PI uPnL $-0.3872 (-12.906%) \u00b7 held 3s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 10:10:46 ET \u00b7 CUT POST_FILL_FLAT_-12.906",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9094,31 +9083,15 @@
     "confidence": 0.98,
     "live": true
   },
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "PI",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 0.00013069721438427976,
-    "mark": 0.00011382948299523857,
-    "uPnL": -0.3872,
-    "mtm_pct": -12.906,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x9bc264445e62a0ff1303c85a32708f645dfaceaa6d4ac100e9cbb73fe3850ce6",
-    "token": "0x434C832E6352bF0cFEaDab8E86361a83E6D572E2",
-    "held_sec": 3,
-    "weth_out": 0.000960843295306204,
-    "usd_out": 2.612821
-  },
+  "position": null,
   "live": {
-    "open": true,
-    "ticker": "PI",
+    "open": false,
+    "ticker": null,
     "tx": "0x9bc264445e62a0ff1303c85a32708f645dfaceaa6d4ac100e9cbb73fe3850ce6",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 1.5,
-    "mtm_pct": -12.906,
-    "upnl_usd": -0.3872,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 3,
     "watcher": "rh_live_mtm_loop"
   },
