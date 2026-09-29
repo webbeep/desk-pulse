@@ -1,11 +1,11 @@
 {
-  "updated_et": "2026-09-28 23:21:32 ET",
+  "updated_et": "2026-09-28 23:21:34 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 263.5733,
   "upnl_usd": 0.0,
   "equity_usd": 263.5733,
-  "status": "EXITED",
+  "status": "EXIT_None",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-31.1648 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -27.0567,
@@ -1672,9 +1672,30 @@
       "liquid_usd": 263.5733,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 23:21:34 ET",
+      "equity_usd": 263.5733,
+      "liquid_usd": 263.5733,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-2-EXIT",
+      "t": "2026-09-28 23:21:34 ET",
+      "kind": "LIVE",
+      "market": "ADVENTURES",
+      "side": "SELL",
+      "size_usd": 5.0,
+      "pnl_usd": 0.1035,
+      "mtm_pct": 2.0707,
+      "tx": null,
+      "reason": "TIME_MAX_180s",
+      "stamp_et": "2026-09-28 23:21:34 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-2-EXIT",
       "t": "2026-09-28 23:21:32 ET",
@@ -2780,20 +2801,6 @@
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-28 11:01:09 ET",
       "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-255-EXIT",
-      "t": "2026-09-28 10:55:59 ET",
-      "kind": "LIVE",
-      "market": "SWORDCAT",
-      "side": "SELL",
-      "size_usd": 3.0,
-      "pnl_usd": -0.7182,
-      "mtm_pct": -23.9395,
-      "tx": "0x307c20a1fd1f056a77c8e3eee4c39d92994ba3ee1977ff2f2ae08ffd86b9eeb8",
-      "reason": "HARD_SL_PCT_-23.9053",
-      "stamp_et": "2026-09-28 10:55:59 ET",
-      "paper": false
     }
   ],
   "paper": {
@@ -2804,7 +2811,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT ADVENTURES \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-09-28 23:21:32 ET",
+  "notes": "LIVE EXIT ADVENTURES \u00b7 TIME_MAX_180s \u00b7 tx None \u00b7 2026-09-28 23:21:33 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2857,8 +2864,8 @@
     "open": false,
     "ticker": null,
     "last_exit_tx": null,
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -5.0
+    "last_exit_reason": "TIME_MAX_180s",
+    "last_exit_upnl": null
   },
   "realized_pnl_usd": -31.1648
 }
