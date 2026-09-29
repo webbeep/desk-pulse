@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-09-29 10:14:53 ET",
+  "updated_et": "2026-09-29 10:14:54 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "liquid_usd": 261.0488,
@@ -8014,6 +8014,13 @@
       "liquid_usd": 261.0488,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-29 10:14:54 ET",
+      "equity_usd": 263.6808,
+      "liquid_usd": 261.0488,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
@@ -9147,7 +9154,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM HOTDOG uPnL $-0.368 (-12.2679%) \u00b7 held 5s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 10:14:49 ET \u00b7 CUT POST_FILL_FLAT_-12.2679",
+  "notes": "LIVE MTM HOTDOG uPnL $-0.368 (-12.2679%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-29 10:14:51 ET \u00b7 CUT POST_FILL_FLAT_-12.2679",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -9204,7 +9211,7 @@
     "max_loss_usd": 1.5,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 4,
+    "held_sec": 6,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -35.8569
