@@ -1,20 +1,20 @@
 {
-  "updated_et": "2026-09-28 22:06:20 ET",
+  "updated_et": "2026-09-28 22:06:21 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.0657,
+  "liquid_usd": 263.0756,
   "upnl_usd": 0.0,
-  "equity_usd": 263.0657,
-  "status": "EXIT_EXIT_FAIL",
+  "equity_usd": 263.0756,
+  "status": "EXIT_None",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-31.2033 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.5643,
-  "total_pnl_pct": -9.4843,
-  "mark_eth": 2658.88,
-  "mark": 2658.88,
+  "total_pnl_usd": -27.5544,
+  "total_pnl_pct": -9.4809,
+  "mark_eth": 2658.98,
+  "mark": 2658.98,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2658.88
+    "ETH": 2658.98
   },
   "holdings": {
     "L1": {
@@ -1532,9 +1532,30 @@
       "liquid_usd": 263.0657,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 22:06:21 ET",
+      "equity_usd": 263.0756,
+      "liquid_usd": 263.0756,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "trades": [
+    {
+      "id": "LIVE-SCALP-2-EXIT",
+      "t": "2026-09-28 22:06:21 ET",
+      "kind": "LIVE",
+      "market": "CAVO",
+      "side": "SELL",
+      "size_usd": 5.0,
+      "pnl_usd": 0.0022,
+      "mtm_pct": 0.0445,
+      "tx": null,
+      "reason": "TIME_FLAT_120s",
+      "stamp_et": "2026-09-28 22:06:21 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-2-EXIT",
       "t": "2026-09-28 22:06:20 ET",
@@ -2640,20 +2661,6 @@
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-28 10:42:56 ET",
       "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-252-EXIT",
-      "t": "2026-09-28 10:35:55 ET",
-      "kind": "LIVE",
-      "market": "USDG",
-      "side": "SELL",
-      "size_usd": 3.0,
-      "pnl_usd": 0.002,
-      "mtm_pct": 0.0664,
-      "tx": "0x2e704183ad395c8ff4af42ec2a6f83b8820f7c96f637359d37961874925fef30",
-      "reason": "TIME_FLAT_120s",
-      "stamp_et": "2026-09-28 10:35:55 ET",
-      "paper": false
     }
   ],
   "paper": {
@@ -2664,7 +2671,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE EXIT CAVO \u00b7 TIME_FLAT_120s \u00b7 tx 0xe118b262b3741239ccc66fe3b35ddea7d8346e374a6e1e0a182b5f4e4b4fd7fd \u00b7 2026-09-28 22:06:19 ET",
+  "notes": "LIVE EXIT CAVO \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-09-28 22:06:20 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2716,9 +2723,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0xe118b262b3741239ccc66fe3b35ddea7d8346e374a6e1e0a182b5f4e4b4fd7fd",
+    "last_exit_tx": null,
     "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.428
+    "last_exit_upnl": null
   },
   "realized_pnl_usd": -31.2033
 }
