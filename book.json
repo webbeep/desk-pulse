@@ -54,7 +54,7 @@
       "paper": false,
       "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
       "token": "0x2AD287050E4b91970d87bADBdcC81AdbAb48c6df",
-      "held_sec": 3,
+      "held_sec": 4,
       "weth_out": 0.001880320058150615,
       "usd_out": 4.999583
     }
@@ -1564,6 +1564,13 @@
       "liquid_usd": 258.059,
       "upnl_usd": -0.0004,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-28 23:01:56 ET",
+      "equity_usd": 263.0586,
+      "liquid_usd": 258.059,
+      "upnl_usd": -0.0004,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2696,7 +2703,7 @@
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE MTM ADVENTURES uPnL $-0.0004 (-0.0083%) \u00b7 held 4s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 23:01:55 ET",
+  "notes": "LIVE MTM ADVENTURES uPnL $-0.0004 (-0.0083%) \u00b7 held 4s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 23:01:56 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2757,7 +2764,7 @@
     "paper": false,
     "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
     "token": "0x2AD287050E4b91970d87bADBdcC81AdbAb48c6df",
-    "held_sec": 3,
+    "held_sec": 4,
     "weth_out": 0.001880320058150615,
     "usd_out": 4.999583
   },
@@ -2769,7 +2776,7 @@
     "max_loss_usd": 1.5,
     "mtm_pct": -0.0083,
     "upnl_usd": -0.0004,
-    "held_sec": 3,
+    "held_sec": 4,
     "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -31.2033
