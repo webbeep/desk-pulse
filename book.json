@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-28 23:21:23 ET",
+  "updated_et": "2026-09-28 23:21:25 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 263.0358,
-  "upnl_usd": 0.0,
-  "equity_usd": 263.0358,
+  "liquid_usd": 258.4489,
+  "upnl_usd": -0.0006,
+  "equity_usd": 263.4483,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-31.1648 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.5942,
-  "total_pnl_pct": -9.4946,
-  "mark_eth": 2658.27,
-  "mark": 2658.27,
+  "total_pnl_usd": -27.1817,
+  "total_pnl_pct": -9.3527,
+  "mark_eth": 2662.54,
+  "mark": 2662.54,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2658.27
+    "ETH": 2662.54
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.07775667408251388,
+      "eth": 0.07587524818141107,
       "weth": 0.019786262010309936
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.07775667408251388,
+    "rh_eth": 0.07587524818141107,
     "rh_weth": 0.019786262010309936,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -42,14 +42,21 @@
   },
   "positions": [
     {
-      "id": "LIVE-SCALP-332",
+      "id": "LIVE-SCALP-2",
       "market": "ADVENTURES",
       "side": "LONG",
       "size_usd": 5.0,
-      "tx": "0x571bcffdb08424837c0c4b147dbe173b24a2dc2f9dd186d8bd9d285840a3b287",
-      "token": "0x2AD287050E4b91970d87bADBdcC81AdbAb48c6df",
+      "entry": 0.00011959385170228032,
+      "mark": 0.00011957891763125809,
+      "uPnL": -0.0006,
+      "mtm_pct": -0.0125,
+      "lev": 1,
       "paper": false,
-      "uPnL": 0.0
+      "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
+      "token": "0x2AD287050E4b91970d87bADBdcC81AdbAb48c6df",
+      "held_sec": 1172,
+      "weth_out": 0.001877671559424559,
+      "usd_out": 4.999376
     }
   ],
   "pnl_history": [
@@ -1627,6 +1634,13 @@
       "liquid_usd": 263.0358,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 23:21:25 ET",
+      "equity_usd": 263.4483,
+      "liquid_usd": 258.4489,
+      "upnl_usd": -0.0006,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2756,10 +2770,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 23:02:42 ET",
+  "notes": "LIVE MTM ADVENTURES uPnL $-0.0006 (-0.0125%) \u00b7 held 1172s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 23:21:24 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2808,26 +2822,32 @@
     "live": true
   },
   "position": {
-    "id": "LIVE-SCALP-332",
+    "id": "LIVE-SCALP-2",
     "market": "ADVENTURES",
     "side": "LONG",
     "size_usd": 5.0,
-    "tx": "0x571bcffdb08424837c0c4b147dbe173b24a2dc2f9dd186d8bd9d285840a3b287",
-    "token": "0x2AD287050E4b91970d87bADBdcC81AdbAb48c6df",
+    "entry": 0.00011959385170228032,
+    "mark": 0.00011957891763125809,
+    "uPnL": -0.0006,
+    "mtm_pct": -0.0125,
+    "lev": 1,
     "paper": false,
-    "uPnL": 0.0
+    "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
+    "token": "0x2AD287050E4b91970d87bADBdcC81AdbAb48c6df",
+    "held_sec": 1172,
+    "weth_out": 0.001877671559424559,
+    "usd_out": 4.999376
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "ADVENTURES",
-    "tx": "0x571bcffdb08424837c0c4b147dbe173b24a2dc2f9dd186d8bd9d285840a3b287",
+    "tx": "0xa42890120a11b8e804239a47736aaf8972bdf306b4bdc1dad1d6730a96bf614d",
     "size_usd": 5.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-332",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.0125,
+    "upnl_usd": -0.0006,
+    "held_sec": 1172,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -31.1648
 }
