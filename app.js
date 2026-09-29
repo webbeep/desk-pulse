@@ -536,6 +536,50 @@
     }).join(" ");
   }
 
+
+  let histRange = "session";
+
+  function parseEtMs(raw) {
+    if (!raw) return null;
+    const m = String(raw).trim().match(/(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})(?::(\d{2}))?/);
+    if (!m) return null;
+    const sec = m[6] || "00";
+    const d = new Date(+m[1], +m[2] - 1, +m[3], +m[4], +m[5], +sec);
+    return Number.isNaN(d.getTime()) ? null : d.getTime();
+  }
+
+  function sessionStartMs(nowMs) {
+    const d = new Date(nowMs);
+    return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+  }
+
+  function filterHistByRange(hist, range) {
+    const arr = Array.isArray(hist) ? hist : [];
+    if (!arr.length || range === "all") return arr;
+    const nowMs = Date.now();
+    let cut = null;
+    if (range === "1h") cut = nowMs - 3600e3;
+    else if (range === "6h") cut = nowMs - 6 * 3600e3;
+    else if (range === "session") cut = sessionStartMs(nowMs);
+    else return arr;
+    return arr.filter(function (h) {
+      const ms = parseEtMs(pick(h, ["t", "updated_et"]));
+      return ms == null || ms >= cut;
+    });
+  }
+
+  function setHistRange(range) {
+    const allowed = { "1h": 1, "6h": 1, session: 1, all: 1 };
+    histRange = allowed[range] ? range : "session";
+    const host = $("hist-range");
+    if (host) {
+      host.querySelectorAll(".range-btn").forEach(function (btn) {
+        btn.classList.toggle("active", btn.getAttribute("data-range") === histRange);
+      });
+    }
+    render();
+  }
+
   function renderSpark(hist) {
     const svg = $("spark");
     svg.replaceChildren();
@@ -544,27 +588,23 @@
     const pad = 4;
     const stab = stabilizeHist(hist);
     const eq = downsample(series(stab, "equity_usd"), 80);
-    const up = downsample(series(stab, "upnl_usd"), 80);
     const pe = pathFrom(eq, w, h, pad);
-    const pu = pathFrom(up, w, h, pad);
-    function line(d, color) {
-      if (!d) return;
+    if (pe) {
       const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      p.setAttribute("d", d);
+      p.setAttribute("d", pe);
       p.setAttribute("fill", "none");
-      p.setAttribute("stroke", color);
-      p.setAttribute("stroke-width", "1.5");
+      p.setAttribute("stroke", "#19c37d");
+      p.setAttribute("stroke-width", "1.75");
       svg.appendChild(p);
     }
-    line(pe, "#ffffff");
-    line(pu, "#19c37d");
-    $("spark-wrap").hidden = !pe && !pu;
+    $("spark-wrap").hidden = !pe;
   }
 
   function renderHist(hist) {
     const body = $("hist-body");
     body.replaceChildren();
-    const rows = histForTable(hist);
+    const scoped = filterHistByRange(hist, histRange);
+    const rows = histForTable(scoped);
     $("hist-empty").hidden = rows.length > 0;
     for (const h of rows) {
       const tr = el("tr");
@@ -579,7 +619,7 @@
       );
       body.append(tr);
     }
-    renderSpark(hist);
+    renderSpark(scoped);
   }
 
   function tradeTimeKey(t) {
@@ -841,6 +881,22 @@
   let fleetSrc = "";
   let fleetAt = 0;
   let activeTab = "pulse";
+
+  (function wireHistRange() {
+    const host = document.getElementById("hist-range");
+    if (!host || host.dataset.wired === "1") return;
+    host.dataset.wired = "1";
+    host.addEventListener("click", function (ev) {
+      const btn = ev.target && ev.target.closest ? ev.target.closest(".range-btn") : null;
+      if (!btn || !host.contains(btn)) return;
+      const r = btn.getAttribute("data-range");
+      if (r) setHistRange(r);
+    });
+    host.querySelectorAll(".range-btn").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-range") === histRange);
+    });
+  })();
+
 
   function setTab(tab) {
     activeTab = tab === "fleet" ? "fleet" : "pulse";
