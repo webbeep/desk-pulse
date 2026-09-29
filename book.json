@@ -1,33 +1,33 @@
 {
-  "updated_et": "2026-09-28 21:13:08 ET",
+  "updated_et": "2026-09-28 21:13:13 ET",
   "mode": "LIVE",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
-  "liquid_usd": 264.0498,
-  "upnl_usd": 0.0,
-  "equity_usd": 264.0498,
+  "liquid_usd": 260.1937,
+  "upnl_usd": 0.0402,
+  "equity_usd": 263.2339,
   "status": "LIVE_OPEN",
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-32.4049 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -26.5802,
-  "total_pnl_pct": -9.1457,
-  "mark_eth": 2676.98,
-  "mark": 2676.98,
+  "total_pnl_usd": -27.3961,
+  "total_pnl_pct": -9.4265,
+  "mark_eth": 2668.38,
+  "mark": 2668.38,
   "mark_src": "coinbase",
   "marks": {
-    "ETH": 2676.98
+    "ETH": 2668.38
   },
   "holdings": {
     "L1": {
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.0883142702570762,
+      "eth": 0.08718705607903107,
       "weth": 0.008915855545639237
     }
   },
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.0883142702570762,
+    "rh_eth": 0.08718705607903107,
     "rh_weth": 0.008915855545639237,
     "arb_eth": 0,
     "arb_usdc": 0,
@@ -46,20 +46,20 @@
       "market": "CAVO",
       "side": "LONG",
       "size_usd": 3.0,
+      "entry": 9.824550742797969e-05,
+      "mark": 9.956086781435056e-05,
+      "uPnL": 0.0402,
+      "mtm_pct": 1.3389,
+      "lev": 1,
+      "paper": false,
       "tx": "0xe30b3dbbe3ea62c6a85b533f9208f1f0958b790c2401249e7f5061a9095ae529",
       "token": "0x8814790F075ce795450ab01fA60335A8B43E53f5",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 6,
+      "weth_out": 0.001139330047641224,
+      "usd_out": 3.040166
     }
   ],
   "pnl_history": [
-    {
-      "t": "2026-09-28 20:07:55 ET",
-      "equity_usd": 265.4415,
-      "liquid_usd": 262.4412,
-      "upnl_usd": 0.0003,
-      "n_pos": 1
-    },
     {
       "t": "2026-09-28 20:07:55 ET",
       "equity_usd": 265.4415,
@@ -1452,6 +1452,13 @@
       "liquid_usd": 264.0498,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-28 21:13:13 ET",
+      "equity_usd": 263.2339,
+      "liquid_usd": 260.1937,
+      "upnl_usd": 0.0402,
+      "n_pos": 1
     }
   ],
   "trades": [
@@ -2581,10 +2588,10 @@
     "start_equity_usd": 100,
     "paper_equity_usd": 101.4319,
     "archived_et": "2026-09-27 09:24:17 ET",
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop",
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher",
     "strategy": "MEME_V7_SELECT"
   },
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-28 21:05:25 ET",
+  "notes": "LIVE MTM CAVO uPnL $0.0402 (1.3389%) \u00b7 held 6s \u00b7 max-loss \u2264$1.5 \u00b7 2026-09-28 21:13:13 ET",
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
@@ -2637,22 +2644,28 @@
     "market": "CAVO",
     "side": "LONG",
     "size_usd": 3.0,
+    "entry": 9.824550742797969e-05,
+    "mark": 9.956086781435056e-05,
+    "uPnL": 0.0402,
+    "mtm_pct": 1.3389,
+    "lev": 1,
+    "paper": false,
     "tx": "0xe30b3dbbe3ea62c6a85b533f9208f1f0958b790c2401249e7f5061a9095ae529",
     "token": "0x8814790F075ce795450ab01fA60335A8B43E53f5",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 6,
+    "weth_out": 0.001139330047641224,
+    "usd_out": 3.040166
   },
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "CAVO",
     "tx": "0xe30b3dbbe3ea62c6a85b533f9208f1f0958b790c2401249e7f5061a9095ae529",
     "size_usd": 3.0,
     "max_loss_usd": 1.5,
-    "id": "LIVE-SCALP-326",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": 1.3389,
+    "upnl_usd": 0.0402,
+    "held_sec": 6,
+    "watcher": "rh_live_mtm_loop"
   },
   "realized_pnl_usd": -32.4049
 }
