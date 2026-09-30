@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-09-30 09:22:57 ET",
-  "liquid_usd": 258.4532,
-  "upnl_usd": -0.3165,
-  "equity_usd": 263.1367,
-  "status": "LIVE_OPEN",
+  "updated_et": "2026-09-30 09:23:00 ET",
+  "liquid_usd": 258.4504,
+  "upnl_usd": 0.0,
+  "equity_usd": 258.4504,
+  "status": "EXITING:HARD_SL_USD_-0.3165",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.05665749959569146,
+    "rh_eth": 0.056656479286109465,
     "rh_weth": 0.03679945298374666,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
@@ -19,7 +19,7 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.05665749959569146,
+      "eth": 0.056656479286109465,
       "weth": 0.03679945298374666
     }
   },
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM GINGITSUNE uPnL $-0.3165 (-6.3292%) \u00b7 held 20s \u00b7 max-loss \u2264$0.15 \u00b7 2026-09-30 09:22:57 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "GINGITSUNE",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 7.123289916214487e-05,
-      "mark": 6.672440405684181e-05,
-      "uPnL": -0.3165,
-      "mtm_pct": -6.3292,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x16abbe9a0a8d8f1eb7e574bcf4d48089918ace42754f1bcded726fc39e57fa0e",
-      "token": "0x8f18dD8863e3c07a0e6A7183d3Aff213eB213680",
-      "held_sec": 20,
-      "weth_out": 0.001719070356722291,
-      "usd_out": 4.683538
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "GINGITSUNE",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 7.123289916214487e-05,
-    "mark": 6.672440405684181e-05,
-    "uPnL": -0.3165,
-    "mtm_pct": -6.3292,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x16abbe9a0a8d8f1eb7e574bcf4d48089918ace42754f1bcded726fc39e57fa0e",
-    "token": "0x8f18dD8863e3c07a0e6A7183d3Aff213eB213680",
-    "held_sec": 20,
-    "weth_out": 0.001719070356722291,
-    "usd_out": 4.683538
-  },
+  "notes": "LIVE MTM GINGITSUNE uPnL $-0.3165 (-6.3292%) \u00b7 held 20s \u00b7 max-loss \u2264$0.15 \u00b7 2026-09-30 09:22:57 ET \u00b7 CUT HARD_SL_USD_-0.3165",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-09-29 07:49:57 ET",
@@ -781,12 +747,19 @@
       "liquid_usd": 258.4532,
       "upnl_usd": -0.3165,
       "n_pos": 1
+    },
+    {
+      "t": "2026-09-30 09:23:00 ET",
+      "equity_usd": 263.1367,
+      "liquid_usd": 258.4504,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.5052 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.4933,
-  "total_pnl_pct": -9.4599,
+  "total_pnl_usd": -32.1796,
+  "total_pnl_pct": -11.0724,
   "trades": [
     {
       "t": "2026-09-07 12:19 ET",
@@ -815,13 +788,13 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "GINGITSUNE",
+    "open": false,
+    "ticker": null,
     "tx": "0x16abbe9a0a8d8f1eb7e574bcf4d48089918ace42754f1bcded726fc39e57fa0e",
-    "size_usd": 5.0,
+    "size_usd": 0,
     "max_loss_usd": 0.15,
-    "mtm_pct": -6.3292,
-    "upnl_usd": -0.3165,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 20,
     "watcher": "rh_live_mtm_loop"
   },
