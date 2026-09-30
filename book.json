@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-09-29 22:14:53 ET",
-  "liquid_usd": 258.2722,
+  "updated_et": "2026-09-29 22:54:11 ET",
+  "liquid_usd": 258.6726,
   "upnl_usd": 0,
-  "equity_usd": 258.2722,
-  "status": "LIVE_FLAT",
+  "equity_usd": 258.6726,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -38,17 +38,10 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed); LIVE sleeve \u00b7 WETH counted",
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
   "positions": [],
   "position": null,
   "pnl_history": [
-    {
-      "t": "2026-09-29 07:37:22 ET",
-      "equity_usd": 264.6382,
-      "liquid_usd": 264.6382,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-09-29 07:37:24 ET",
       "equity_usd": 264.579,
@@ -713,12 +706,19 @@
       "liquid_usd": 258.2722,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-29 22:54:11 ET",
+      "equity_usd": 258.6726,
+      "liquid_usd": 258.6726,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -32.3578,
-  "total_pnl_pct": -11.13,
+  "total_pnl_usd": -31.9574,
+  "total_pnl_pct": -11.0,
   "trades": [
     {
       "t": "2026-09-07 12:19 ET",
@@ -733,29 +733,16 @@
       "note": "EOD1K-C-LEG3-OPEN.md"
     }
   ],
-  "mark": 2670.83,
+  "mark": 2674.97,
   "mark_src": "coinbase",
-  "mark_eth": 2670.83,
-  "mark_btc": 83448.55,
+  "mark_eth": 2674.97,
+  "mark_btc": 83374.67,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.417,
+  "mark_link": 14.492,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2670.83,
-    "BTC": 83448.55,
-    "LINK": 14.417
-  },
-  "mode": "LIVE",
-  "live": {
-    "mode": "LIVE",
-    "flat": true,
-    "n_open": 0,
-    "caps": {
-      "ticket_usd_max": 5.0,
-      "max_loss_usd": 2.0,
-      "max_open": 2
-    },
-    "dd_pct": 11.1337,
-    "stamp_et": "2026-09-29 22:14:53 ET"
+    "ETH": 2674.97,
+    "BTC": 83374.67,
+    "LINK": 14.492
   }
 }
