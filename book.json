@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-09-30 09:24:00 ET",
-  "liquid_usd": 258.239,
+  "updated_et": "2026-09-30 09:24:06 ET",
+  "liquid_usd": 263.0911,
   "upnl_usd": 0.0,
-  "equity_usd": 258.239,
-  "status": "EXIT_None",
+  "equity_usd": 263.0911,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.054814527479459925,
-    "rh_weth": 0.03851405993016139,
+    "rh_eth": 0.05481145572730393,
+    "rh_weth": 0.04029714260935232,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.054814527479459925,
-      "weth": 0.03851405993016139
+      "eth": 0.05481145572730393,
+      "weth": 0.04029714260935232
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT TIT \u00b7 HARD_SL_USD_-0.1599 \u00b7 tx None \u00b7 2026-09-30 09:23:59 ET",
+  "notes": "LIVE EXIT TIT \u00b7 HARD_SL_USD_-0.1599 \u00b7 tx 0x1fcf4b8b202d9066e506a1a50800b3ac6fdc01fdbb14662c355e9b7f3342c50a \u00b7 2026-09-30 09:24:06 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -831,13 +831,41 @@
       "liquid_usd": 258.239,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-30 09:24:01 ET",
+      "equity_usd": 263.1063,
+      "liquid_usd": 258.2042,
+      "upnl_usd": -0.0979,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-09-30 09:24:06 ET",
+      "equity_usd": 263.0911,
+      "liquid_usd": 263.0911,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.8338 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -32.391,
-  "total_pnl_pct": -11.1451,
+  "total_pnl_usd": -27.5389,
+  "total_pnl_pct": -9.4756,
   "trades": [
+    {
+      "id": "LIVE-SCALP-2-EXIT",
+      "t": "2026-09-30 09:24:06 ET",
+      "kind": "LIVE",
+      "market": "TIT",
+      "side": "SELL",
+      "size_usd": 5.0,
+      "pnl_usd": -0.0974,
+      "mtm_pct": -1.9473,
+      "tx": "0x1fcf4b8b202d9066e506a1a50800b3ac6fdc01fdbb14662c355e9b7f3342c50a",
+      "reason": "HARD_SL_USD_-0.1599",
+      "stamp_et": "2026-09-30 09:24:06 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-2-EXIT",
       "t": "2026-09-30 09:24:00 ET",
@@ -909,9 +937,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
+    "last_exit_tx": "0x1fcf4b8b202d9066e506a1a50800b3ac6fdc01fdbb14662c355e9b7f3342c50a",
     "last_exit_reason": "HARD_SL_USD_-0.1599",
-    "last_exit_upnl": null
+    "last_exit_upnl": -0.0974
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
