@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-09-30 09:23:03 ET",
-  "liquid_usd": 263.1815,
+  "updated_et": "2026-09-30 09:23:04 ET",
+  "liquid_usd": 263.1149,
   "upnl_usd": 0.0,
-  "equity_usd": 263.1815,
-  "status": "EXITED",
+  "equity_usd": 263.1149,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT GINGITSUNE \u00b7 HARD_SL_USD_-0.2065 \u00b7 tx 0x7948a42d63cdb238856e31b5836ecdec4f16832f066bbad5c55a76ae030c1f20 \u00b7 2026-09-30 09:23:02 ET",
+  "notes": "LIVE EXIT GINGITSUNE \u00b7 HARD_SL_USD_-0.3165 \u00b7 tx None \u00b7 2026-09-30 09:23:04 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -761,13 +761,34 @@
       "liquid_usd": 263.1815,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-30 09:23:04 ET",
+      "equity_usd": 263.1149,
+      "liquid_usd": 263.1149,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.5052 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -27.4485,
-  "total_pnl_pct": -9.4445,
+  "total_pnl_usd": -27.5151,
+  "total_pnl_pct": -9.4674,
   "trades": [
+    {
+      "id": "LIVE-SCALP-2-EXIT",
+      "t": "2026-09-30 09:23:04 ET",
+      "kind": "LIVE",
+      "market": "GINGITSUNE",
+      "side": "SELL",
+      "size_usd": 5.0,
+      "pnl_usd": -0.3165,
+      "mtm_pct": -6.3292,
+      "tx": null,
+      "reason": "HARD_SL_USD_-0.3165",
+      "stamp_et": "2026-09-30 09:23:04 ET",
+      "paper": false
+    },
     {
       "id": "LIVE-SCALP-2-EXIT",
       "t": "2026-09-30 09:23:03 ET",
@@ -795,15 +816,15 @@
       "note": "EOD1K-C-LEG3-OPEN.md"
     }
   ],
-  "mark": 2725.15,
+  "mark": 2724.46,
   "mark_src": "coinbase",
-  "mark_eth": 2725.15,
+  "mark_eth": 2724.46,
   "mark_btc": 85275.32,
   "mark_btc_src": "coinbase",
   "mark_link": 14.684,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2725.15,
+    "ETH": 2724.46,
     "BTC": 85275.32,
     "LINK": 14.684
   },
@@ -811,9 +832,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0x7948a42d63cdb238856e31b5836ecdec4f16832f066bbad5c55a76ae030c1f20",
-    "last_exit_reason": "HARD_SL_USD_-0.2065",
-    "last_exit_upnl": -0.3286
+    "last_exit_tx": null,
+    "last_exit_reason": "HARD_SL_USD_-0.3165",
+    "last_exit_upnl": null
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
