@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-09-30 09:24:06 ET",
+  "updated_et": "2026-09-30 09:39:08 ET",
   "liquid_usd": 263.0911,
   "upnl_usd": 0.0,
   "equity_usd": 263.0911,
-  "status": "EXITED",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,29 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT TIT \u00b7 HARD_SL_USD_-0.1599 \u00b7 tx 0x1fcf4b8b202d9066e506a1a50800b3ac6fdc01fdbb14662c355e9b7f3342c50a \u00b7 2026-09-30 09:24:06 ET",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-09-30 09:24:24 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-351",
+      "market": "TIT",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x5c690a2a4b068fb090da4761b33fb38d8d3ed90b0e0509aed55c1b4f582f77fa",
+      "token": "0xb550dC511d70F9F65b68449EB00c53bB1d5b0472",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-351",
+    "market": "TIT",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x5c690a2a4b068fb090da4761b33fb38d8d3ed90b0e0509aed55c1b4f582f77fa",
+    "token": "0xb550dC511d70F9F65b68449EB00c53bB1d5b0472",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-09-29 07:49:57 ET",
@@ -848,7 +868,7 @@
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.8338 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.9312 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -27.5389,
   "total_pnl_pct": -9.4756,
   "trades": [
@@ -935,19 +955,24 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x1fcf4b8b202d9066e506a1a50800b3ac6fdc01fdbb14662c355e9b7f3342c50a",
-    "last_exit_reason": "HARD_SL_USD_-0.1599",
-    "last_exit_upnl": -0.0974
+    "open": true,
+    "flat": false,
+    "ticker": "TIT",
+    "tx": "0x5c690a2a4b068fb090da4761b33fb38d8d3ed90b0e0509aed55c1b4f582f77fa",
+    "size_usd": 5.0,
+    "max_loss_usd": 0.15,
+    "id": "LIVE-SCALP-351",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
   },
-  "realized_pnl_usd": -36.8338,
+  "realized_pnl_usd": -36.9312,
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
