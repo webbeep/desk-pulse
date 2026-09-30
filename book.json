@@ -1,9 +1,9 @@
 {
   "updated_et": "2026-09-30 09:39:30 ET",
-  "liquid_usd": 260.3692,
+  "liquid_usd": 260.1985,
   "upnl_usd": 0.0,
-  "equity_usd": 260.3692,
-  "status": "EXIT_EXIT_FAIL",
+  "equity_usd": 260.1985,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT TIT \u00b7 TIME_FLAT_120s \u00b7 tx 0x5f101eb27930f2cd6ea9b7e0adf3266e24bc0f11abad65bee0b847fa3c19eaf8 \u00b7 2026-09-30 09:39:29 ET",
+  "notes": "LIVE EXIT TIT \u00b7 TIME_FLAT_120s \u00b7 tx 0x14bfb3b6f10e5fee9a44bb27fd4b24d966fd01aac6f3b2b05b0e81ff29f54495 \u00b7 2026-09-30 09:39:29 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -904,16 +904,16 @@
     },
     {
       "t": "2026-09-30 09:39:30 ET",
-      "equity_usd": 260.3692,
-      "liquid_usd": 260.3692,
+      "equity_usd": 260.1985,
+      "liquid_usd": 260.1985,
       "upnl_usd": 0,
       "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.9312 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -30.2608,
-  "total_pnl_pct": -10.4121,
+  "total_pnl_usd": -30.4315,
+  "total_pnl_pct": -10.4709,
   "trades": [
     {
       "id": "LIVE-SCALP-2-EXIT",
@@ -924,7 +924,7 @@
       "size_usd": 5.0,
       "pnl_usd": -0.0725,
       "mtm_pct": -1.4493,
-      "tx": "0x5f101eb27930f2cd6ea9b7e0adf3266e24bc0f11abad65bee0b847fa3c19eaf8",
+      "tx": "0x14bfb3b6f10e5fee9a44bb27fd4b24d966fd01aac6f3b2b05b0e81ff29f54495",
       "reason": "TIME_FLAT_120s",
       "stamp_et": "2026-09-30 09:39:30 ET",
       "paper": false
@@ -1012,15 +1012,15 @@
       "note": "EOD1K-C-LEG3-OPEN.md"
     }
   ],
-  "mark": 2698.98,
+  "mark": 2697.21,
   "mark_src": "coinbase",
-  "mark_eth": 2698.98,
+  "mark_eth": 2697.21,
   "mark_btc": 85275.32,
   "mark_btc_src": "coinbase",
   "mark_link": 14.684,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2698.98,
+    "ETH": 2697.21,
     "BTC": 85275.32,
     "LINK": 14.684
   },
@@ -1028,7 +1028,7 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0x5f101eb27930f2cd6ea9b7e0adf3266e24bc0f11abad65bee0b847fa3c19eaf8",
+    "last_exit_tx": "0x14bfb3b6f10e5fee9a44bb27fd4b24d966fd01aac6f3b2b05b0e81ff29f54495",
     "last_exit_reason": "TIME_FLAT_120s",
     "last_exit_upnl": -0.0725
   },
