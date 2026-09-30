@@ -1,26 +1,34 @@
 {
-  "updated_et": "2026-09-30 09:39:30 ET",
-  "liquid_usd": 260.1985,
-  "upnl_usd": 0.0,
-  "equity_usd": 260.1985,
-  "status": "EXITED",
+  "updated_et": "2026-09-30 09:54:51 ET",
+  "liquid_usd": 261.1902,
+  "upnl_usd": 0,
+  "equity_usd": 261.1902,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
-    "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.052950337499880186,
-    "rh_weth": 0.04211210256229169,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0
+    "base_usdc": 0.0,
+    "l1_eth": 0.00140706,
+    "rh_eth": 0.05295034,
+    "rh_weth": 0.0421121
   },
   "holdings": {
     "L1": {
-      "eth": 0.001407059032801532
+      "eth": 0.00140706
+    },
+    "Arb": {
+      "eth": 0.0,
+      "usdc": 0.0
+    },
+    "Base": {
+      "eth": 0.0,
+      "usdc": 0.0
     },
     "RH": {
-      "eth": 0.052950337499880186,
-      "weth": 0.04211210256229169
+      "eth": 0.05295034,
+      "weth": 0.0421121
     }
   },
   "wallet_urls": {
@@ -30,220 +38,10 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT TIT \u00b7 TIME_FLAT_120s \u00b7 tx 0x14bfb3b6f10e5fee9a44bb27fd4b24d966fd01aac6f3b2b05b0e81ff29f54495 \u00b7 2026-09-30 09:39:29 ET",
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
   "positions": [],
   "position": null,
   "pnl_history": [
-    {
-      "t": "2026-09-29 07:49:57 ET",
-      "equity_usd": 265.1098,
-      "liquid_usd": 262.1106,
-      "upnl_usd": -0.0008,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:49:58 ET",
-      "equity_usd": 265.1098,
-      "liquid_usd": 262.1106,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 07:50:00 ET",
-      "equity_usd": 265.1263,
-      "liquid_usd": 262.1269,
-      "upnl_usd": -0.0006,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:50:01 ET",
-      "equity_usd": 265.1263,
-      "liquid_usd": 262.1096,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 07:50:02 ET",
-      "equity_usd": 265.1263,
-      "liquid_usd": 262.1269,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 07:50:06 ET",
-      "equity_usd": 265.1035,
-      "liquid_usd": 265.1035,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 07:50:07 ET",
-      "equity_usd": 265.1035,
-      "liquid_usd": 265.1035,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 07:53:59 ET",
-      "equity_usd": 265.0311,
-      "liquid_usd": 262.0686,
-      "upnl_usd": -0.0375,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:54:01 ET",
-      "equity_usd": 264.9923,
-      "liquid_usd": 262.035,
-      "upnl_usd": -0.0427,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:54:04 ET",
-      "equity_usd": 264.9616,
-      "liquid_usd": 262.0206,
-      "upnl_usd": -0.059,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:54:05 ET",
-      "equity_usd": 264.9238,
-      "liquid_usd": 261.9832,
-      "upnl_usd": -0.0594,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:54:06 ET",
-      "equity_usd": 264.9762,
-      "liquid_usd": 261.9582,
-      "upnl_usd": 0.018,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:54:07 ET",
-      "equity_usd": 265.0751,
-      "liquid_usd": 262.0168,
-      "upnl_usd": 0.0583,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:54:08 ET",
-      "equity_usd": 265.1798,
-      "liquid_usd": 262.0168,
-      "upnl_usd": 0.163,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:54:09 ET",
-      "equity_usd": 265.2895,
-      "liquid_usd": 261.987,
-      "upnl_usd": 0.3025,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:54:10 ET",
-      "equity_usd": 265.2259,
-      "liquid_usd": 261.987,
-      "upnl_usd": 0.2389,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 07:54:11 ET",
-      "equity_usd": 265.2259,
-      "liquid_usd": 261.987,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 07:54:13 ET",
-      "equity_usd": 265.2259,
-      "liquid_usd": 261.987,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 07:54:16 ET",
-      "equity_usd": 265.2259,
-      "liquid_usd": 262.0127,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 07:54:18 ET",
-      "equity_usd": 265.1451,
-      "liquid_usd": 265.1451,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 07:54:19 ET",
-      "equity_usd": 265.1752,
-      "liquid_usd": 265.1752,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 08:02:21 ET",
-      "equity_usd": 265.1108,
-      "liquid_usd": 262.112,
-      "upnl_usd": -0.0012,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 08:02:22 ET",
-      "equity_usd": 265.1108,
-      "liquid_usd": 262.112,
-      "upnl_usd": -0.0012,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-09-29 08:02:23 ET",
-      "equity_usd": 265.1108,
-      "liquid_usd": 262.112,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 08:02:24 ET",
-      "equity_usd": 265.1108,
-      "liquid_usd": 262.112,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 08:02:25 ET",
-      "equity_usd": 265.1108,
-      "liquid_usd": 262.1005,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 08:02:27 ET",
-      "equity_usd": 265.1108,
-      "liquid_usd": 262.0698,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 08:02:30 ET",
-      "equity_usd": 265.1014,
-      "liquid_usd": 265.1014,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 08:02:31 ET",
-      "equity_usd": 265.1014,
-      "liquid_usd": 265.1014,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-09-29 08:02:32 ET",
-      "equity_usd": 265.1014,
-      "liquid_usd": 265.1014,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-09-29 08:06:41 ET",
       "equity_usd": 265.0063,
@@ -908,97 +706,20 @@
       "liquid_usd": 260.1985,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-09-30 09:54:51 ET",
+      "equity_usd": 261.1902,
+      "liquid_usd": 261.1902,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.9312 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -30.4315,
-  "total_pnl_pct": -10.4709,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -29.4398,
+  "total_pnl_pct": -10.13,
   "trades": [
-    {
-      "id": "LIVE-SCALP-2-EXIT",
-      "t": "2026-09-30 09:39:30 ET",
-      "kind": "LIVE",
-      "market": "TIT",
-      "side": "SELL",
-      "size_usd": 5.0,
-      "pnl_usd": -0.0725,
-      "mtm_pct": -1.4493,
-      "tx": "0x14bfb3b6f10e5fee9a44bb27fd4b24d966fd01aac6f3b2b05b0e81ff29f54495",
-      "reason": "TIME_FLAT_120s",
-      "stamp_et": "2026-09-30 09:39:30 ET",
-      "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-2-EXIT",
-      "t": "2026-09-30 09:39:29 ET",
-      "kind": "LIVE",
-      "market": "TIT",
-      "side": "SELL",
-      "size_usd": 5.0,
-      "pnl_usd": 0.0273,
-      "mtm_pct": 0.5466,
-      "tx": null,
-      "reason": "TIME_FLAT_120s",
-      "stamp_et": "2026-09-30 09:39:29 ET",
-      "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-2-EXIT",
-      "t": "2026-09-30 09:24:06 ET",
-      "kind": "LIVE",
-      "market": "TIT",
-      "side": "SELL",
-      "size_usd": 5.0,
-      "pnl_usd": -0.0974,
-      "mtm_pct": -1.9473,
-      "tx": "0x1fcf4b8b202d9066e506a1a50800b3ac6fdc01fdbb14662c355e9b7f3342c50a",
-      "reason": "HARD_SL_USD_-0.1599",
-      "stamp_et": "2026-09-30 09:24:06 ET",
-      "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-2-EXIT",
-      "t": "2026-09-30 09:24:00 ET",
-      "kind": "LIVE",
-      "market": "TIT",
-      "side": "SELL",
-      "size_usd": 5.0,
-      "pnl_usd": -0.1599,
-      "mtm_pct": -3.1972,
-      "tx": null,
-      "reason": "HARD_SL_USD_-0.1599",
-      "stamp_et": "2026-09-30 09:24:00 ET",
-      "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-2-EXIT",
-      "t": "2026-09-30 09:23:04 ET",
-      "kind": "LIVE",
-      "market": "GINGITSUNE",
-      "side": "SELL",
-      "size_usd": 5.0,
-      "pnl_usd": -0.3165,
-      "mtm_pct": -6.3292,
-      "tx": null,
-      "reason": "HARD_SL_USD_-0.3165",
-      "stamp_et": "2026-09-30 09:23:04 ET",
-      "paper": false
-    },
-    {
-      "id": "LIVE-SCALP-2-EXIT",
-      "t": "2026-09-30 09:23:03 ET",
-      "kind": "LIVE",
-      "market": "GINGITSUNE",
-      "side": "SELL",
-      "size_usd": 5.0,
-      "pnl_usd": -0.3286,
-      "mtm_pct": -6.5724,
-      "tx": "0x7948a42d63cdb238856e31b5836ecdec4f16832f066bbad5c55a76ae030c1f20",
-      "reason": "HARD_SL_USD_-0.2065",
-      "stamp_et": "2026-09-30 09:23:03 ET",
-      "paper": false
-    },
     {
       "t": "2026-09-07 12:19 ET",
       "kind": "OPEN",
@@ -1012,33 +733,16 @@
       "note": "EOD1K-C-LEG3-OPEN.md"
     }
   ],
-  "mark": 2697.21,
+  "mark": 2707.49,
   "mark_src": "coinbase",
-  "mark_eth": 2697.21,
-  "mark_btc": 85275.32,
+  "mark_eth": 2707.49,
+  "mark_btc": 84581.82,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.684,
+  "mark_link": 14.543,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2697.21,
-    "BTC": 85275.32,
-    "LINK": 14.684
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x14bfb3b6f10e5fee9a44bb27fd4b24d966fd01aac6f3b2b05b0e81ff29f54495",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0725
-  },
-  "strategy": {
-    "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
-  },
-  "realized_pnl_usd": -36.9312,
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "ETH": 2707.49,
+    "BTC": 84581.82,
+    "LINK": 14.543
   }
 }
