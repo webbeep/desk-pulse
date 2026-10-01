@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 17:49:14 ET",
+  "updated_et": "2026-10-01 17:49:38 ET",
   "liquid_usd": 252.9109,
   "upnl_usd": 0.0,
   "equity_usd": 252.9109,
-  "status": "EXITED",
+  "status": "LIVE_FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT DOMAIN \u00b7 TIME_MAX_180s \u00b7 tx 0x3b6cf5d908090a3b2c6222232c51b386cc2fbb3b087a6ce91b3974d6fdd16a3a \u00b7 2026-10-01 17:49:13 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-01 17:49:38 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -950,6 +950,24 @@
   "total_pnl_usd": -37.7191,
   "total_pnl_pct": -12.9784,
   "trades": [
+    {
+      "t": "2026-10-01 17:49:18 ET",
+      "kind": "FLAT",
+      "venue": "RH",
+      "market": "DOMAIN",
+      "side": "LONG",
+      "size_usd": null,
+      "pnl_usd": 0.0,
+      "tx": "0x3f3903078569250f85b9b5788d8a10daa82127e7f6975d0ac15f073d282a5854",
+      "open_tx": "0x3f3903078569250f85b9b5788d8a10daa82127e7f6975d0ac15f073d282a5854",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-362",
+      "reason": "FLAT",
+      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
+      "token": "0xc5698Cf0F84a33784D131Eff9030AAB9340B2243",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-01 17:38:36 ET",
       "kind": "FLAT",
@@ -2371,24 +2389,6 @@
       "token": "0xee46BD2FEb81eFC9C1153FAae7A3d5c388eaF9a1",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-28 15:42:05 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "AURA",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0018,
-      "tx": "0x44ab637dcab2bbe555dc4247498819c34d1390d06267f8e408de96bfa8e3dde0",
-      "open_tx": "0xbc66ed6742772d768516e3087de20c9c954a99f23e9b19b7c37819627eeb432e",
-      "exit_tx": "0x44ab637dcab2bbe555dc4247498819c34d1390d06267f8e408de96bfa8e3dde0",
-      "id": "LIVE-SCALP-282",
-      "reason": "TIME_FLAT_120s",
-      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=TIME_FLAT_120s pnl=0.0018",
-      "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2691.24,
@@ -2409,7 +2409,12 @@
     "ticker": null,
     "last_exit_tx": "0x3b6cf5d908090a3b2c6222232c51b386cc2fbb3b087a6ce91b3974d6fdd16a3a",
     "last_exit_reason": "TIME_MAX_180s",
-    "last_exit_upnl": -0.0765
+    "last_exit_upnl": -0.0765,
+    "flat": true,
+    "opens_paused": false,
+    "frozen": false,
+    "strategy": "MEME_V8_QUOTER_GUARD",
+    "loop": "rh_live_loop"
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
