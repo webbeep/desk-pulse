@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 17:38:24 ET",
+  "updated_et": "2026-10-01 17:38:26 ET",
   "liquid_usd": 248.4042,
   "upnl_usd": 0.0,
   "equity_usd": 248.4042,
-  "status": "EXITING:HARD_SL_USD_-0.4478",
+  "status": "EXITING:HARD_SL_USD_-0.4107",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM DOMAIN uPnL $-0.4478 (-8.9553%) \u00b7 held 641s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-01 17:38:21 ET \u00b7 CUT HARD_SL_USD_-0.4478",
+  "notes": "LIVE MTM DOMAIN uPnL $-0.4107 (-8.2135%) \u00b7 held 643s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-01 17:38:23 ET \u00b7 CUT HARD_SL_USD_-0.4107",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -883,6 +883,13 @@
     },
     {
       "t": "2026-10-01 17:38:24 ET",
+      "equity_usd": 252.9564,
+      "liquid_usd": 248.4042,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-10-01 17:38:26 ET",
       "equity_usd": 252.9564,
       "liquid_usd": 248.4042,
       "upnl_usd": 0,
@@ -2356,7 +2363,7 @@
     "max_loss_usd": 0.15,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 641,
+    "held_sec": 643,
     "watcher": "rh_live_mtm_loop"
   },
   "strategy": {
