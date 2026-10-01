@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 14:45:32 ET",
+  "updated_et": "2026-10-01 14:45:33 ET",
   "liquid_usd": 255.0979,
   "upnl_usd": 0.0,
   "equity_usd": 255.0979,
-  "status": "EXITED",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT SI \u00b7 HARD_SL_USD_-1.5526 \u00b7 tx 0xb39572503f6934ad7f9eeb8a833fd622a8e833f8e5f52009139cd03e73d5c57b \u00b7 2026-10-01 14:45:31 ET",
+  "notes": "LIVE EXIT SI \u00b7 HARD_SL_USD_-1.4678 \u00b7 tx None \u00b7 2026-10-01 14:45:33 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -782,6 +782,13 @@
       "liquid_usd": 255.0979,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-01 14:45:33 ET",
+      "equity_usd": 255.0979,
+      "liquid_usd": 255.0979,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
@@ -789,20 +796,6 @@
   "total_pnl_usd": -35.5321,
   "total_pnl_pct": -12.2259,
   "trades": [
-    {
-      "id": "LIVE-SCALP-2-EXIT",
-      "t": "2026-10-01 14:45:32 ET",
-      "kind": "LIVE",
-      "market": "SI",
-      "side": "SELL",
-      "size_usd": 5.0,
-      "pnl_usd": -1.4746,
-      "mtm_pct": -29.491,
-      "tx": "0xb39572503f6934ad7f9eeb8a833fd622a8e833f8e5f52009139cd03e73d5c57b",
-      "reason": "HARD_SL_USD_-1.5526",
-      "stamp_et": "2026-10-01 14:45:32 ET",
-      "paper": false
-    },
     {
       "t": "2026-10-01 14:14:48 ET",
       "kind": "TP",
@@ -2224,6 +2217,24 @@
       "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
       "paper": false,
       "live": true
+    },
+    {
+      "t": "2026-09-28 15:11:32 ET",
+      "kind": "LIVE",
+      "venue": "RH",
+      "market": "SI",
+      "side": "LONG",
+      "size_usd": null,
+      "pnl_usd": -0.1133,
+      "tx": "0x02867aa2d828c11f5b50b2fea1c0ad2dc802029ba38bb57ee17f2bdbe3625270",
+      "open_tx": "0x019d94fdaabacca7b1fe75bf72bc71a1a7dc908f16fac41bac8890bd6a9e2474",
+      "exit_tx": "0x02867aa2d828c11f5b50b2fea1c0ad2dc802029ba38bb57ee17f2bdbe3625270",
+      "id": "LIVE-SCALP-277",
+      "reason": "POST_FILL_FLAT_-3.2433",
+      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=POST_FILL_FLAT_-3.2433 pnl=-0.1133",
+      "token": "0xee46BD2FEb81eFC9C1153FAae7A3d5c388eaF9a1",
+      "paper": false,
+      "live": true
     }
   ],
   "mark": 2704.97,
@@ -2242,9 +2253,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0xb39572503f6934ad7f9eeb8a833fd622a8e833f8e5f52009139cd03e73d5c57b",
-    "last_exit_reason": "HARD_SL_USD_-1.5526",
-    "last_exit_upnl": -1.4746
+    "last_exit_tx": null,
+    "last_exit_reason": "HARD_SL_USD_-1.4678",
+    "last_exit_upnl": null
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
