@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 17:38:31 ET",
-  "liquid_usd": 252.9872,
+  "updated_et": "2026-10-01 17:38:34 ET",
+  "liquid_usd": 252.9834,
   "upnl_usd": 0.0,
-  "equity_usd": 252.9872,
-  "status": "EXITED",
+  "equity_usd": 252.9834,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT DOMAIN \u00b7 HARD_SL_USD_-0.4478 \u00b7 tx 0xd71c7f4ff0efb3dd2e31ff1b95aa5ac8bc57cc8690a553f74aa66b1514ec8ea9 \u00b7 2026-10-01 17:38:31 ET",
+  "notes": "LIVE EXIT DOMAIN \u00b7 HARD_SL_USD_-0.4107 \u00b7 tx None \u00b7 2026-10-01 17:38:33 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -915,12 +915,19 @@
       "liquid_usd": 252.9872,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-01 17:38:34 ET",
+      "equity_usd": 252.9834,
+      "liquid_usd": 252.9834,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-40.5467 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -37.6428,
-  "total_pnl_pct": -12.9521,
+  "total_pnl_usd": -37.6466,
+  "total_pnl_pct": -12.9534,
   "trades": [
     {
       "t": "2026-10-01 17:28:03 ET",
@@ -2363,15 +2370,15 @@
       "live": true
     }
   ],
-  "mark": 2690.85,
+  "mark": 2690.81,
   "mark_src": "coinbase",
-  "mark_eth": 2690.85,
+  "mark_eth": 2690.81,
   "mark_btc": 84143.82,
   "mark_btc_src": "coinbase",
   "mark_link": 14.364,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2690.85,
+    "ETH": 2690.81,
     "BTC": 84143.82,
     "LINK": 14.364
   },
@@ -2379,9 +2386,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0xd71c7f4ff0efb3dd2e31ff1b95aa5ac8bc57cc8690a553f74aa66b1514ec8ea9",
-    "last_exit_reason": "HARD_SL_USD_-0.4478",
-    "last_exit_upnl": -0.4107
+    "last_exit_tx": null,
+    "last_exit_reason": "HARD_SL_USD_-0.4107",
+    "last_exit_upnl": null
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
