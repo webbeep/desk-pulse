@@ -1,34 +1,26 @@
 {
-  "updated_et": "2026-10-01 01:30:47 ET",
-  "liquid_usd": 261.7719,
-  "upnl_usd": 0,
-  "equity_usd": 261.7719,
+  "updated_et": "2026-10-01 01:30:53 ET",
+  "liquid_usd": 256.6625,
+  "upnl_usd": -0.002,
+  "equity_usd": 261.6605,
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
+    "l1_eth": 0.001407059032801532,
+    "rh_eth": 0.051104358554960046,
+    "rh_weth": 0.04211210256229169,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "l1_eth": 0.00140706,
-    "rh_eth": 0.05295034,
-    "rh_weth": 0.0421121
+    "base_usdc": 0.0
   },
   "holdings": {
     "L1": {
-      "eth": 0.00140706
-    },
-    "Arb": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "Base": {
-      "eth": 0.0,
-      "usdc": 0.0
+      "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.05295034,
-      "weth": 0.0421121
+      "eth": 0.051104358554960046,
+      "weth": 0.04211210256229169
     }
   },
   "wallet_urls": {
@@ -38,28 +30,42 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-01 01:24:16 ET",
+  "notes": "LIVE MTM TIBBIR uPnL $-0.002 (-0.0392%) \u00b7 held 6s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-01 01:30:52 ET",
   "positions": [
     {
-      "id": "LIVE-SCALP-352",
+      "id": "LIVE-SCALP-2",
       "market": "TIBBIR",
       "side": "LONG",
       "size_usd": 5.0,
+      "entry": 0.0002984721836517787,
+      "mark": 0.000298355295721851,
+      "uPnL": -0.002,
+      "mtm_pct": -0.0392,
+      "lev": 1,
+      "paper": false,
       "tx": "0x0c1646b221a9778c3aff782de8e23407f3234f55e94dca5116f0593d6792f244",
       "token": "0x5E42D056C4d4E7E7b701542d60Dff0d2B2Bff26b",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 6,
+      "weth_out": 0.001842623262925764,
+      "usd_out": 4.998042
     }
   ],
   "position": {
-    "id": "LIVE-SCALP-352",
+    "id": "LIVE-SCALP-2",
     "market": "TIBBIR",
     "side": "LONG",
     "size_usd": 5.0,
+    "entry": 0.0002984721836517787,
+    "mark": 0.000298355295721851,
+    "uPnL": -0.002,
+    "mtm_pct": -0.0392,
+    "lev": 1,
+    "paper": false,
     "tx": "0x0c1646b221a9778c3aff782de8e23407f3234f55e94dca5116f0593d6792f244",
     "token": "0x5E42D056C4d4E7E7b701542d60Dff0d2B2Bff26b",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 6,
+    "weth_out": 0.001842623262925764,
+    "usd_out": 4.998042
   },
   "pnl_history": [
     {
@@ -733,12 +739,19 @@
       "liquid_usd": 261.7719,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-01 01:30:53 ET",
+      "equity_usd": 261.6605,
+      "liquid_usd": 256.6625,
+      "upnl_usd": -0.002,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.9312 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -28.8581,
-  "total_pnl_pct": -9.9295,
+  "total_pnl_usd": -28.9695,
+  "total_pnl_pct": -9.9678,
   "trades": [
     {
       "t": "2026-09-30 09:39:31 ET",
@@ -2181,30 +2194,29 @@
       "live": true
     }
   ],
-  "mark": 2713.52,
+  "mark": 2712.46,
   "mark_src": "coinbase",
-  "mark_eth": 2713.52,
+  "mark_eth": 2712.46,
   "mark_btc": 84238.24,
   "mark_btc_src": "coinbase",
   "mark_link": 14.479,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2713.52,
+    "ETH": 2712.46,
     "BTC": 84238.24,
     "LINK": 14.479
   },
   "mode": "LIVE",
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "TIBBIR",
     "tx": "0x0c1646b221a9778c3aff782de8e23407f3234f55e94dca5116f0593d6792f244",
     "size_usd": 5.0,
     "max_loss_usd": 0.15,
-    "id": "LIVE-SCALP-352",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.0392,
+    "upnl_usd": -0.002,
+    "held_sec": 6,
+    "watcher": "rh_live_mtm_loop"
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
@@ -2213,6 +2225,6 @@
   "realized_pnl_usd": -36.9312,
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
   }
 }
