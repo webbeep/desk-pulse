@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 01:50:01 ET",
-  "liquid_usd": 261.7324,
+  "updated_et": "2026-10-01 02:26:03 ET",
+  "liquid_usd": 261.9263,
   "upnl_usd": 0,
-  "equity_usd": 261.7324,
-  "status": "LIVE_FLAT",
+  "equity_usd": 261.9263,
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -38,17 +38,30 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-01 01:50:01 ET",
-  "positions": [],
-  "position": null,
-  "pnl_history": [
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "positions": [
     {
-      "t": "2026-09-29 10:27:27 ET",
-      "equity_usd": 263.1138,
-      "liquid_usd": 263.1138,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
+      "id": "LIVE-SCALP-353",
+      "market": "NUVI",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x1d0f6bbf4973251374fb5afd52674dd3da7f0516e06e21dc14aa215064010fe3",
+      "token": "0x60c80DD1Fd33dE89fa59605085f45F1DBf643649",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-353",
+    "market": "NUVI",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x1d0f6bbf4973251374fb5afd52674dd3da7f0516e06e21dc14aa215064010fe3",
+    "token": "0x60c80DD1Fd33dE89fa59605085f45F1DBf643649",
+    "paper": false,
+    "uPnL": 0.0
+  },
+  "pnl_history": [
     {
       "t": "2026-09-29 10:27:29 ET",
       "equity_usd": 263.0266,
@@ -713,12 +726,19 @@
       "liquid_usd": 261.7324,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-01 02:20:19 ET",
+      "equity_usd": 261.9263,
+      "liquid_usd": 261.9263,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.9318 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -28.8976,
-  "total_pnl_pct": -9.9431,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -28.7037,
+  "total_pnl_pct": -9.88,
   "trades": [
     {
       "t": "2026-10-01 01:32:58 ET",
@@ -2161,30 +2181,33 @@
       "live": true
     }
   ],
-  "mark": 2713.31,
+  "mark": 2715.32,
   "mark_src": "coinbase",
-  "mark_eth": 2713.31,
-  "mark_btc": 84191.35,
+  "mark_eth": 2715.32,
+  "mark_btc": 84262.55,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.458,
+  "mark_link": 14.476,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2713.31,
-    "BTC": 84191.35,
-    "LINK": 14.458
+    "ETH": 2715.32,
+    "BTC": 84262.55,
+    "LINK": 14.476
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "flat": true,
-    "opens_paused": false,
-    "frozen": false,
-    "strategy": "MEME_V8_QUOTER_GUARD",
+    "open": true,
+    "flat": false,
+    "ticker": "NUVI",
+    "tx": "0x1d0f6bbf4973251374fb5afd52674dd3da7f0516e06e21dc14aa215064010fe3",
+    "size_usd": 5.0,
+    "max_loss_usd": 0.15,
+    "id": "LIVE-SCALP-353",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
     "loop": "rh_live_loop"
   },
-  "strategy": {
-    "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
-  },
-  "realized_pnl_usd": -36.9318
+  "paper": {
+    "active": false,
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
+  }
 }
