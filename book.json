@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 02:27:08 ET",
-  "liquid_usd": 257.4983,
-  "upnl_usd": 0.0,
-  "equity_usd": 257.4983,
-  "status": "EXITING:TIME_FLAT_120s",
+  "updated_et": "2026-10-01 02:27:10 ET",
+  "liquid_usd": 257.5031,
+  "upnl_usd": -0.0013,
+  "equity_usd": 262.5018,
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,43 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM TIBBIR uPnL $-0.0014 (-0.0281%) \u00b7 held 3380s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-01 02:27:05 ET \u00b7 CUT TIME_FLAT_120s",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE MTM TIBBIR uPnL $-0.0013 (-0.0263%) \u00b7 held 3384s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-01 02:27:09 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "TIBBIR",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "entry": 0.0002990079539428329,
+      "mark": 0.00029892945689001673,
+      "uPnL": -0.0013,
+      "mtm_pct": -0.0263,
+      "lev": 1,
+      "paper": false,
+      "tx": "0x0c1646b221a9778c3aff782de8e23407f3234f55e94dca5116f0593d6792f244",
+      "token": "0x5E42D056C4d4E7E7b701542d60Dff0d2B2Bff26b",
+      "held_sec": 3383,
+      "weth_out": 0.001839321544542446,
+      "usd_out": 4.998687
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "TIBBIR",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "entry": 0.0002990079539428329,
+    "mark": 0.00029892945689001673,
+    "uPnL": -0.0013,
+    "mtm_pct": -0.0263,
+    "lev": 1,
+    "paper": false,
+    "tx": "0x0c1646b221a9778c3aff782de8e23407f3234f55e94dca5116f0593d6792f244",
+    "token": "0x5E42D056C4d4E7E7b701542d60Dff0d2B2Bff26b",
+    "held_sec": 3383,
+    "weth_out": 0.001839321544542446,
+    "usd_out": 4.998687
+  },
   "pnl_history": [
     {
       "t": "2026-09-29 10:27:29 ET",
@@ -768,12 +802,19 @@
       "liquid_usd": 257.4983,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-01 02:27:10 ET",
+      "equity_usd": 262.5018,
+      "liquid_usd": 257.5031,
+      "upnl_usd": -0.0013,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.5217 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -33.1317,
-  "total_pnl_pct": -11.4,
+  "total_pnl_usd": -28.1282,
+  "total_pnl_pct": -9.6784,
   "trades": [
     {
       "t": "2026-10-01 02:26:27 ET",
@@ -2216,28 +2257,28 @@
       "live": true
     }
   ],
-  "mark": 2717.63,
+  "mark": 2717.68,
   "mark_src": "coinbase",
-  "mark_eth": 2717.63,
+  "mark_eth": 2717.68,
   "mark_btc": 84262.55,
   "mark_btc_src": "coinbase",
   "mark_link": 14.476,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2717.63,
+    "ETH": 2717.68,
     "BTC": 84262.55,
     "LINK": 14.476
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
+    "open": true,
+    "ticker": "TIBBIR",
     "tx": "0x0c1646b221a9778c3aff782de8e23407f3234f55e94dca5116f0593d6792f244",
-    "size_usd": 0,
+    "size_usd": 5.0,
     "max_loss_usd": 0.15,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 3379,
+    "mtm_pct": -0.0263,
+    "upnl_usd": -0.0013,
+    "held_sec": 3383,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
