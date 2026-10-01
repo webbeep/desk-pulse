@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-01 02:26:22 ET",
-  "liquid_usd": 257.361,
+  "updated_et": "2026-10-01 02:26:27 ET",
+  "liquid_usd": 262.7285,
   "upnl_usd": 0.0,
-  "equity_usd": 257.361,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 262.7285,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.04925900130551223,
-    "rh_weth": 0.04395472582521745,
+    "rh_eth": 0.049255718461644234,
+    "rh_weth": 0.045931425168503494,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.04925900130551223,
-      "weth": 0.04395472582521745
+      "eth": 0.049255718461644234,
+      "weth": 0.045931425168503494
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM NUVI uPnL $0.3979 (7.9571%) \u00b7 held 18s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-01 02:26:19 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT NUVI \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-10-01 02:26:27 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -740,13 +740,38 @@
       "liquid_usd": 257.361,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-01 02:26:27 ET",
+      "equity_usd": 262.7285,
+      "liquid_usd": 262.7285,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.9318 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -33.269,
-  "total_pnl_pct": -11.4472,
+  "total_pnl_usd": -27.9015,
+  "total_pnl_pct": -9.6004,
   "trades": [
+    {
+      "t": "2026-10-01 02:26:27 ET",
+      "kind": "TP",
+      "venue": "RH",
+      "market": "NUVI",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": 0.4101,
+      "tx": "0x6341f321b5bbdc17fd71c7cf4390eb7f6b3242ae7d8068e434fe9e06bec49057",
+      "open_tx": "0x1d0f6bbf4973251374fb5afd52674dd3da7f0516e06e21dc14aa215064010fe3",
+      "exit_tx": "0x6341f321b5bbdc17fd71c7cf4390eb7f6b3242ae7d8068e434fe9e06bec49057",
+      "id": "LIVE-SCALP-353",
+      "reason": "TP_V7_+4.5",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x60c80DD1Fd33dE89fa59605085f45F1DBf643649",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-01 01:32:58 ET",
       "kind": "FLAT",
@@ -2168,24 +2193,6 @@
       "token": "0x32C3cE734cf52F9429C8a8eC2982e4fd714960Ed",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-28 14:46:53 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "AURA",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": null,
-      "tx": "0x3af457a84d880de4dc0f1d9e4c7216dfc69a6632cf45c4bbdc6a6ea3bbb92151",
-      "open_tx": "0x3af457a84d880de4dc0f1d9e4c7216dfc69a6632cf45c4bbdc6a6ea3bbb92151",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-273",
-      "reason": null,
-      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=None pnl=None",
-      "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2719.92,
@@ -2204,13 +2211,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x1d0f6bbf4973251374fb5afd52674dd3da7f0516e06e21dc14aa215064010fe3",
-    "size_usd": 0,
-    "max_loss_usd": 0.15,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 17,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": -5.0
   },
   "paper": {
     "active": false,
