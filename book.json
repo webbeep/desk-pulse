@@ -3,7 +3,7 @@
   "liquid_usd": 252.9872,
   "upnl_usd": 0.0,
   "equity_usd": 252.9872,
-  "status": "EXIT_None",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT DOMAIN \u00b7 HARD_SL_USD_-0.4107 \u00b7 tx None \u00b7 2026-10-01 17:38:30 ET",
+  "notes": "LIVE EXIT DOMAIN \u00b7 HARD_SL_USD_-0.4478 \u00b7 tx 0xd71c7f4ff0efb3dd2e31ff1b95aa5ac8bc57cc8690a553f74aa66b1514ec8ea9 \u00b7 2026-10-01 17:38:31 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -2379,9 +2379,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "HARD_SL_USD_-0.4107",
-    "last_exit_upnl": null
+    "last_exit_tx": "0xd71c7f4ff0efb3dd2e31ff1b95aa5ac8bc57cc8690a553f74aa66b1514ec8ea9",
+    "last_exit_reason": "HARD_SL_USD_-0.4478",
+    "last_exit_upnl": -0.4107
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
