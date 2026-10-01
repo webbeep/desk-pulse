@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 18:42:09 ET",
+  "updated_et": "2026-10-01 18:54:57 ET",
   "liquid_usd": 254.0179,
   "upnl_usd": 0.0,
   "equity_usd": 254.0179,
-  "status": "LIVE_FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -31,8 +31,28 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-01 18:42:09 ET",
-  "positions": [],
-  "position": null,
+  "positions": [
+    {
+      "id": "LIVE-SCALP-365",
+      "market": "DOMAIN",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x8642371b794ff3f20b944e9600a7e71dbb0dc9d1a8441ea700add4ac17fec847",
+      "token": "0xc5698Cf0F84a33784D131Eff9030AAB9340B2243",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-365",
+    "market": "DOMAIN",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x8642371b794ff3f20b944e9600a7e71dbb0dc9d1a8441ea700add4ac17fec847",
+    "token": "0xc5698Cf0F84a33784D131Eff9030AAB9340B2243",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-09-30 09:39:11 ET",
@@ -2482,15 +2502,15 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x78f92c8dae41e09daec86f5e47d3c1ea4201c8a177d0148ad99b1cb91ae9ecdb",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": -0.0431,
-    "flat": true,
-    "opens_paused": false,
-    "frozen": false,
-    "strategy": "MEME_V8_QUOTER_GUARD",
+    "open": true,
+    "flat": false,
+    "ticker": "DOMAIN",
+    "tx": "0x8642371b794ff3f20b944e9600a7e71dbb0dc9d1a8441ea700add4ac17fec847",
+    "size_usd": 5.0,
+    "max_loss_usd": 0.15,
+    "id": "LIVE-SCALP-365",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
     "loop": "rh_live_loop"
   },
   "strategy": {
@@ -2500,6 +2520,6 @@
   "realized_pnl_usd": -40.5467,
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
