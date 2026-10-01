@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 02:27:12 ET",
-  "liquid_usd": 262.495,
+  "updated_et": "2026-10-01 02:27:13 ET",
+  "liquid_usd": 262.4902,
   "upnl_usd": 0.0,
-  "equity_usd": 262.495,
-  "status": "EXITING:TIME_FLAT_120s",
+  "equity_usd": 262.4902,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM TIBBIR uPnL $-0.0013 (-0.0263%) \u00b7 held 3384s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-01 02:27:09 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT TIBBIR \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-10-01 02:27:12 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -782,12 +782,19 @@
       "liquid_usd": 262.495,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-01 02:27:13 ET",
+      "equity_usd": 262.4902,
+      "liquid_usd": 262.4902,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-36.5217 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -28.135,
-  "total_pnl_pct": -9.6807,
+  "total_pnl_usd": -28.1398,
+  "total_pnl_pct": -9.6823,
   "trades": [
     {
       "t": "2026-10-01 02:26:27 ET",
@@ -2230,15 +2237,15 @@
       "live": true
     }
   ],
-  "mark": 2717.68,
+  "mark": 2717.63,
   "mark_src": "coinbase",
-  "mark_eth": 2717.68,
+  "mark_eth": 2717.63,
   "mark_btc": 84262.55,
   "mark_btc_src": "coinbase",
   "mark_link": 14.476,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2717.68,
+    "ETH": 2717.63,
     "BTC": 84262.55,
     "LINK": 14.476
   },
@@ -2246,13 +2253,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x0c1646b221a9778c3aff782de8e23407f3234f55e94dca5116f0593d6792f244",
-    "size_usd": 0,
-    "max_loss_usd": 0.15,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 3383,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": -5.0
   },
   "paper": {
     "active": false,
