@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 14:45:21 ET",
+  "updated_et": "2026-10-01 14:45:24 ET",
   "liquid_usd": 251.5785,
-  "upnl_usd": -1.5526,
-  "equity_usd": 255.0259,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 251.5785,
+  "status": "EXITING:HARD_SL_USD_-1.5526",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SI uPnL $-1.5526 (-31.0515%) \u00b7 held 1859s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-01 14:45:20 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "SI",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 0.00013204797409983426,
-      "mark": 9.104506472477779e-05,
-      "uPnL": -1.5526,
-      "mtm_pct": -31.0515,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x51e4d5a39201ca948ac4faf06065b72c4bc27999764ac15935a2d3e8e67c24aa",
-      "token": "0x7Ad48f55D4D8548ae3d21aa8AA8E647d833C6337",
-      "held_sec": 1858,
-      "weth_out": 0.001274477632620818,
-      "usd_out": 3.447424
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "SI",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 0.00013204797409983426,
-    "mark": 9.104506472477779e-05,
-    "uPnL": -1.5526,
-    "mtm_pct": -31.0515,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x51e4d5a39201ca948ac4faf06065b72c4bc27999764ac15935a2d3e8e67c24aa",
-    "token": "0x7Ad48f55D4D8548ae3d21aa8AA8E647d833C6337",
-    "held_sec": 1858,
-    "weth_out": 0.001274477632620818,
-    "usd_out": 3.447424
-  },
+  "notes": "LIVE MTM SI uPnL $-1.5526 (-31.0515%) \u00b7 held 1859s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-01 14:45:20 ET \u00b7 CUT HARD_SL_USD_-1.5526",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-09-30 09:39:11 ET",
@@ -788,12 +754,19 @@
       "liquid_usd": 251.5785,
       "upnl_usd": -1.5526,
       "n_pos": 1
+    },
+    {
+      "t": "2026-10-01 14:45:24 ET",
+      "equity_usd": 255.0259,
+      "liquid_usd": 251.5785,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-41.1356 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -35.6041,
-  "total_pnl_pct": -12.2507,
+  "total_pnl_usd": -39.0515,
+  "total_pnl_pct": -13.4368,
   "trades": [
     {
       "t": "2026-10-01 14:14:48 ET",
@@ -2250,13 +2223,13 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "SI",
+    "open": false,
+    "ticker": null,
     "tx": "0x51e4d5a39201ca948ac4faf06065b72c4bc27999764ac15935a2d3e8e67c24aa",
-    "size_usd": 5.0,
+    "size_usd": 0,
     "max_loss_usd": 0.15,
-    "mtm_pct": -31.0515,
-    "upnl_usd": -1.5526,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 1858,
     "watcher": "rh_live_mtm_loop"
   },
