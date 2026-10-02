@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-02 13:32:44 ET",
-  "liquid_usd": 89.7035,
+  "updated_et": "2026-10-02 13:32:52 ET",
+  "liquid_usd": 94.7593,
   "upnl_usd": 0.0,
-  "equity_usd": 89.7035,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 94.7593,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.026326060271945492,
-    "rh_weth": 0.005708896033235543,
+    "rh_eth": 0.026320905998219492,
+    "rh_weth": 0.007599779513289062,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.026326060271945492,
-      "weth": 0.005708896033235543
+      "eth": 0.026320905998219492,
+      "weth": 0.007599779513289062
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM CODYNC uPnL $0.5567 (11.7988%) \u00b7 held 19s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 13:32:41 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT CODYNC \u00b7 TP_V7_+4.5 \u00b7 tx 0xf1f30c8355201bdc99b8bf08464e357deae0db727bc9414bf39c55e91e7df0ba \u00b7 2026-10-02 13:32:51 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -761,13 +761,38 @@
       "liquid_usd": 89.7035,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 13:32:52 ET",
+      "equity_usd": 94.7593,
+      "liquid_usd": 94.7593,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.6131 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -200.9265,
-  "total_pnl_pct": -69.1348,
+  "total_pnl_usd": -195.8707,
+  "total_pnl_pct": -67.3952,
   "trades": [
+    {
+      "t": "2026-10-02 13:32:51 ET",
+      "kind": "TP",
+      "venue": "RH",
+      "market": "CODYNC",
+      "side": "LONG",
+      "size_usd": 4.7186,
+      "pnl_usd": 0.2075,
+      "tx": "0xf1f30c8355201bdc99b8bf08464e357deae0db727bc9414bf39c55e91e7df0ba",
+      "open_tx": "0xe9de6899e7687da7254269c6c972504918a3a52b27f120617c226019722244af",
+      "exit_tx": "0xf1f30c8355201bdc99b8bf08464e357deae0db727bc9414bf39c55e91e7df0ba",
+      "id": "LIVE-SCALP-410",
+      "reason": "TP_V7_+4.5",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0xD129ED139Af04a60Fee71D9cf757dbe345C277dD",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-02 13:14:00 ET",
       "kind": "FLAT",
@@ -2189,35 +2214,17 @@
       "token": "0x8814790F075ce795450ab01fA60335A8B43E53f5",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-28 21:52:11 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "CAVO",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.7397,
-      "tx": "0x30758adc4230280f0fdecfd63cf58dc096b3d82e002e1e387c5a5025c8c146b5",
-      "open_tx": "0x3a5c18061d16bedbe73775863e04ad7490f1a72367157e0f57ee2ba8ff9a5bea",
-      "exit_tx": "0x30758adc4230280f0fdecfd63cf58dc096b3d82e002e1e387c5a5025c8c146b5",
-      "id": "LIVE-SCALP-329",
-      "reason": "TIME_FLAT_120s",
-      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=TIME_FLAT_120s pnl=-0.7397",
-      "token": "0x8814790F075ce795450ab01fA60335A8B43E53f5",
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2682.36,
+  "mark": 2682.29,
   "mark_src": "coinbase",
-  "mark_eth": 2682.36,
+  "mark_eth": 2682.29,
   "mark_btc": 84655.12,
   "mark_btc_src": "coinbase",
   "mark_link": 14.15,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2682.36,
+    "ETH": 2682.29,
     "BTC": 84655.12,
     "LINK": 14.15
   },
@@ -2225,13 +2232,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xe9de6899e7687da7254269c6c972504918a3a52b27f120617c226019722244af",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 19,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xf1f30c8355201bdc99b8bf08464e357deae0db727bc9414bf39c55e91e7df0ba",
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": 0.2075
   },
   "paper": {
     "active": false,
