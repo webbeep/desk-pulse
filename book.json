@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-02 12:37:17 ET",
+  "updated_et": "2026-10-02 12:41:56 ET",
   "liquid_usd": 104.8252,
   "upnl_usd": 0,
   "equity_usd": 104.8252,
-  "status": "FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -39,8 +39,28 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [],
-  "position": null,
+  "positions": [
+    {
+      "id": "LIVE-SCALP-408",
+      "market": "CPAY",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x0ed339a2a86f76af909ca06ba664eb8640b3924601a464e35f2f8919c67c6a2b",
+      "token": "0x32303676D2758d73b75Fb22023E657859eb28031",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-408",
+    "market": "CPAY",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x0ed339a2a86f76af909ca06ba664eb8640b3924601a464e35f2f8919c67c6a2b",
+    "token": "0x32303676D2758d73b75Fb22023E657859eb28031",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-10-02 02:58:09 ET",
@@ -2172,5 +2192,22 @@
     "ETH": 2692.63,
     "BTC": 85160.48,
     "LINK": 14.189
+  },
+  "mode": "LIVE",
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "CPAY",
+    "tx": "0x0ed339a2a86f76af909ca06ba664eb8640b3924601a464e35f2f8919c67c6a2b",
+    "size_usd": 5.0,
+    "max_loss_usd": 2.0,
+    "id": "LIVE-SCALP-408",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "paper": {
+    "active": false,
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
