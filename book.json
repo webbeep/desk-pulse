@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 21:29:16 ET",
+  "updated_et": "2026-10-01 21:29:46 ET",
   "liquid_usd": 253.4432,
   "upnl_usd": 0.0,
   "equity_usd": 253.4432,
-  "status": "EXITED",
+  "status": "LIVE_FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT MEGADUCK \u00b7 POST_FILL_FLAT_-6.3844 \u00b7 tx 0x823809c1d818fb54775f5a8cfad5f4a615e1157d413fc5dbd18d1acde098d774 \u00b7 2026-10-01 21:29:16 ET",
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-01 21:29:46 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -1114,7 +1114,7 @@
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-40.5467 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-40.8659 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -37.1868,
   "total_pnl_pct": -12.7952,
   "trades": [
@@ -1124,14 +1124,14 @@
       "venue": "RH",
       "market": "MEGADUCK",
       "side": "LONG",
-      "size_usd": 5.0,
-      "pnl_usd": -0.319,
+      "size_usd": null,
+      "pnl_usd": -0.3192,
       "tx": "0x823809c1d818fb54775f5a8cfad5f4a615e1157d413fc5dbd18d1acde098d774",
       "open_tx": "0x0cdee088f1a5842702c81d7b25b133e5aa654168cef1f4adb92f3a3c215e66fa",
       "exit_tx": "0x823809c1d818fb54775f5a8cfad5f4a615e1157d413fc5dbd18d1acde098d774",
       "id": "LIVE-SCALP-366",
-      "reason": "EXIT_FAIL",
-      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "reason": "POST_FILL_FLAT_-6.3844",
+      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=POST_FILL_FLAT_-6.3844 pnl=-0.3192",
       "token": "0x34e3a3cbf842d831B2194087abFfC0596218e5e6",
       "paper": false,
       "live": true
@@ -2577,13 +2577,18 @@
     "ticker": null,
     "last_exit_tx": "0x823809c1d818fb54775f5a8cfad5f4a615e1157d413fc5dbd18d1acde098d774",
     "last_exit_reason": "POST_FILL_FLAT_-6.3844",
-    "last_exit_upnl": -0.3192
+    "last_exit_upnl": -0.3192,
+    "flat": true,
+    "opens_paused": false,
+    "frozen": false,
+    "strategy": "MEME_V8_QUOTER_GUARD",
+    "loop": "rh_live_loop"
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
   },
-  "realized_pnl_usd": -40.5467,
+  "realized_pnl_usd": -40.8659,
   "paper": {
     "active": false,
     "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
