@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-02 09:08:08 ET",
-  "liquid_usd": 126.813,
+  "updated_et": "2026-10-02 09:12:52 ET",
+  "liquid_usd": 126.6541,
   "upnl_usd": 0,
-  "equity_usd": 126.813,
-  "status": "LIVE_FLAT",
+  "equity_usd": 126.6541,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -38,17 +38,10 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-02 09:08:08 ET",
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
   "positions": [],
   "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-02 02:44:51 ET",
-      "equity_usd": 245.0733,
-      "liquid_usd": 240.6216,
-      "upnl_usd": -0.5483,
-      "n_pos": 1
-    },
     {
       "t": "2026-10-02 02:44:53 ET",
       "equity_usd": 245.0733,
@@ -713,12 +706,19 @@
       "liquid_usd": 126.813,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 09:12:52 ET",
+      "equity_usd": 126.6541,
+      "liquid_usd": 126.6541,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-47.4205 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -163.817,
-  "total_pnl_pct": -56.3662,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -163.9759,
+  "total_pnl_pct": -56.42,
   "trades": [
     {
       "t": "2026-10-02 08:31:42 ET",
@@ -2161,34 +2161,16 @@
       "live": true
     }
   ],
-  "mark": 2754.11,
+  "mark": 2750.66,
   "mark_src": "coinbase",
-  "mark_eth": 2754.11,
-  "mark_btc": 86764.91,
+  "mark_eth": 2750.66,
+  "mark_btc": 86688.22,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.447,
+  "mark_link": 14.409,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2754.11,
-    "BTC": 86764.91,
-    "LINK": 14.447
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": false,
-    "flat": true,
-    "opens_paused": false,
-    "frozen": false,
-    "strategy": "MEME_V8_QUOTER_GUARD",
-    "loop": "rh_live_loop"
-  },
-  "strategy": {
-    "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
-  },
-  "realized_pnl_usd": -47.4205,
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
+    "ETH": 2750.66,
+    "BTC": 86688.22,
+    "LINK": 14.409
   }
 }
