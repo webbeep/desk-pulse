@@ -1,9 +1,9 @@
 {
   "updated_et": "2026-10-02 01:26:39 ET",
   "liquid_usd": 244.9036,
-  "upnl_usd": 0.0,
+  "upnl_usd": -5.0,
   "equity_usd": 244.9036,
-  "status": "EXITING:CUT_HARD_LIQ0",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,43 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM HOOKR uPnL $-5.0 (-100.0%) \u00b7 held 3s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-02 01:26:36 ET \u00b7 CUT CUT_HARD_LIQ0",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE MTM HOOKR uPnL $-5.0 (-100.0%) \u00b7 held 6s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-02 01:26:38 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "HOOKR",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "entry": 3.6187661015129126e-05,
+      "mark": 3.6187661015129126e-05,
+      "uPnL": -5.0,
+      "mtm_pct": -100.0,
+      "lev": 1,
+      "paper": false,
+      "tx": "0xe3c50bb8d8bb88985b5484aeaa0012fb00414b8ed538f21287a3af474efd04c2",
+      "token": "0x78Dbf6962d1090a57cb336e82A75aAD2096442BC",
+      "held_sec": 5,
+      "weth_out": 0.0,
+      "usd_out": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "HOOKR",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "entry": 3.6187661015129126e-05,
+    "mark": 3.6187661015129126e-05,
+    "uPnL": -5.0,
+    "mtm_pct": -100.0,
+    "lev": 1,
+    "paper": false,
+    "tx": "0xe3c50bb8d8bb88985b5484aeaa0012fb00414b8ed538f21287a3af474efd04c2",
+    "token": "0x78Dbf6962d1090a57cb336e82A75aAD2096442BC",
+    "held_sec": 5,
+    "weth_out": 0.0,
+    "usd_out": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-09-30 09:39:11 ET",
@@ -5015,8 +5049,8 @@
       "t": "2026-10-02 01:26:39 ET",
       "equity_usd": 244.9036,
       "liquid_usd": 244.9036,
-      "upnl_usd": 0,
-      "n_pos": 0
+      "upnl_usd": -5.0,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
@@ -6479,14 +6513,14 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
+    "open": true,
+    "ticker": "HOOKR",
     "tx": "0xe3c50bb8d8bb88985b5484aeaa0012fb00414b8ed538f21287a3af474efd04c2",
-    "size_usd": 0,
+    "size_usd": 5.0,
     "max_loss_usd": 0.15,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 3,
+    "mtm_pct": -100.0,
+    "upnl_usd": -5.0,
+    "held_sec": 5,
     "watcher": "rh_live_mtm_loop"
   },
   "strategy": {
