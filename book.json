@@ -1,9 +1,9 @@
 {
   "updated_et": "2026-10-02 19:15:35 ET",
   "liquid_usd": 80.7571,
-  "upnl_usd": -0.4499,
-  "equity_usd": 84.5583,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 80.7571,
+  "status": "EXITING:POST_FILL_FLAT_-12.2142",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM CINCINNATI uPnL $-0.4499 (-10.5842%) \u00b7 held 17s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 19:15:34 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "CINCINNATI",
-      "side": "LONG",
-      "size_usd": 4.2511,
-      "entry": 7.852593659830192e-05,
-      "mark": 7.02146325902141e-05,
-      "uPnL": -0.4499,
-      "mtm_pct": -10.5842,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x8348930f215dd89704ccaadea8385c0cd821532d3b27e9b1df9c0b7bf5fb3fa2",
-      "token": "0xEF61347cDadA034b478f6505b8439dc8D1119322",
-      "held_sec": 16,
-      "weth_out": 0.001425977581588779,
-      "usd_out": 3.801157
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "CINCINNATI",
-    "side": "LONG",
-    "size_usd": 4.2511,
-    "entry": 7.852593659830192e-05,
-    "mark": 7.02146325902141e-05,
-    "uPnL": -0.4499,
-    "mtm_pct": -10.5842,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x8348930f215dd89704ccaadea8385c0cd821532d3b27e9b1df9c0b7bf5fb3fa2",
-    "token": "0xEF61347cDadA034b478f6505b8439dc8D1119322",
-    "held_sec": 16,
-    "weth_out": 0.001425977581588779,
-    "usd_out": 3.801157
-  },
+  "notes": "LIVE MTM CINCINNATI uPnL $-0.5192 (-12.2142%) \u00b7 held 13s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 19:15:30 ET \u00b7 CUT POST_FILL_FLAT_-12.2142",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-10-02 06:24:08 ET",
@@ -1043,16 +1009,16 @@
     },
     {
       "t": "2026-10-02 19:15:35 ET",
-      "equity_usd": 84.5583,
+      "equity_usd": 84.489,
       "liquid_usd": 80.7571,
-      "upnl_usd": -0.4499,
-      "n_pos": 1
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.3039 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -206.0717,
-  "total_pnl_pct": -70.9052,
+  "total_pnl_usd": -209.8729,
+  "total_pnl_pct": -72.2131,
   "trades": [
     {
       "t": "2026-10-02 19:10:19 ET",
@@ -2509,14 +2475,14 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "CINCINNATI",
+    "open": false,
+    "ticker": null,
     "tx": "0x8348930f215dd89704ccaadea8385c0cd821532d3b27e9b1df9c0b7bf5fb3fa2",
-    "size_usd": 4.2511,
+    "size_usd": 0,
     "max_loss_usd": 2.0,
-    "mtm_pct": -10.5842,
-    "upnl_usd": -0.4499,
-    "held_sec": 16,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 12,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
