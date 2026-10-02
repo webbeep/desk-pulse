@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-02 14:15:15 ET",
+  "updated_et": "2026-10-02 14:15:19 ET",
   "liquid_usd": 85.61,
   "upnl_usd": 0.0,
   "equity_usd": 85.61,
-  "status": "EXITING:HARD_SL_PCT_-4.9222",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM CPAY uPnL $-0.2331 (-4.9222%) \u00b7 held 1820s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 14:15:12 ET \u00b7 CUT HARD_SL_PCT_-4.9222",
+  "notes": "LIVE EXIT CPAY \u00b7 HARD_SL_PCT_-4.9222 \u00b7 tx None \u00b7 2026-10-02 14:15:18 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -715,6 +715,13 @@
     },
     {
       "t": "2026-10-02 14:15:15 ET",
+      "equity_usd": 90.1133,
+      "liquid_usd": 85.61,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 14:15:19 ET",
       "equity_usd": 90.1133,
       "liquid_usd": 85.61,
       "upnl_usd": 0,
@@ -2183,13 +2190,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x21575b048120f57e7718c521132bfd87678efb63cb6c0af1c8ed3718bda9ef5d",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 1819,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "HARD_SL_PCT_-4.9222",
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
