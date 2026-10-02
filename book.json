@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-10-01 21:29:09 ET",
-  "liquid_usd": 248.7919,
+  "updated_et": "2026-10-01 21:29:14 ET",
+  "liquid_usd": 248.7874,
   "upnl_usd": 0.0,
-  "equity_usd": 248.7919,
-  "status": "EXITING:POST_FILL_FLAT_-6.3792",
+  "equity_usd": 248.7874,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.026941196464285447,
+    "rh_eth": 0.02693953413173745,
     "rh_weth": 0.06379995684032376,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
@@ -19,7 +19,7 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.026941196464285447,
+      "eth": 0.02693953413173745,
       "weth": 0.06379995684032376
     }
   },
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM MEGADUCK uPnL $-0.319 (-6.3792%) \u00b7 held 10s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-01 21:29:06 ET \u00b7 CUT POST_FILL_FLAT_-6.3792",
+  "notes": "LIVE EXIT MEGADUCK \u00b7 POST_FILL_FLAT_-6.3792 \u00b7 tx None \u00b7 2026-10-01 21:29:13 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -1097,12 +1097,19 @@
       "liquid_usd": 248.7919,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-01 21:29:14 ET",
+      "equity_usd": 253.4729,
+      "liquid_usd": 248.7874,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-40.5467 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -41.8381,
-  "total_pnl_pct": -14.3957,
+  "total_pnl_usd": -41.8426,
+  "total_pnl_pct": -14.3972,
   "trades": [
     {
       "t": "2026-10-01 18:55:14 ET",
@@ -2561,13 +2568,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x0cdee088f1a5842702c81d7b25b133e5aa654168cef1f4adb92f3a3c215e66fa",
-    "size_usd": 0,
-    "max_loss_usd": 0.15,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 9,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "POST_FILL_FLAT_-6.3792",
+    "last_exit_upnl": null
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
