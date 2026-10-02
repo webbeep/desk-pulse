@@ -1,26 +1,34 @@
 {
-  "updated_et": "2026-10-02 12:42:03 ET",
-  "liquid_usd": 99.6179,
-  "upnl_usd": -0.0029,
-  "equity_usd": 104.615,
-  "status": "LIVE_OPEN",
+  "updated_et": "2026-10-02 12:47:34 ET",
+  "liquid_usd": 99.7899,
+  "upnl_usd": 0,
+  "equity_usd": 99.7899,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
-    "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.02994978139555979,
-    "rh_weth": 0.005708896033235543,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0
+    "base_usdc": 0.0,
+    "l1_eth": 0.00140706,
+    "rh_eth": 0.02994978,
+    "rh_weth": 0.0057089
   },
   "holdings": {
     "L1": {
-      "eth": 0.001407059032801532
+      "eth": 0.00140706
+    },
+    "Arb": {
+      "eth": 0.0,
+      "usdc": 0.0
+    },
+    "Base": {
+      "eth": 0.0,
+      "usdc": 0.0
     },
     "RH": {
-      "eth": 0.02994978139555979,
-      "weth": 0.005708896033235543
+      "eth": 0.02994978,
+      "weth": 0.0057089
     }
   },
   "wallet_urls": {
@@ -30,58 +38,10 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM CPAY uPnL $-0.0029 (-0.0587%) \u00b7 held 6s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 12:42:00 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "CPAY",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 6.192497694162516e-05,
-      "mark": 6.188864537498426e-05,
-      "uPnL": -0.0029,
-      "mtm_pct": -0.0587,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x0ed339a2a86f76af909ca06ba664eb8640b3924601a464e35f2f8919c67c6a2b",
-      "token": "0x32303676D2758d73b75Fb22023E657859eb28031",
-      "held_sec": 5,
-      "weth_out": 0.001859304392488005,
-      "usd_out": 4.997066
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "CPAY",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 6.192497694162516e-05,
-    "mark": 6.188864537498426e-05,
-    "uPnL": -0.0029,
-    "mtm_pct": -0.0587,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x0ed339a2a86f76af909ca06ba664eb8640b3924601a464e35f2f8919c67c6a2b",
-    "token": "0x32303676D2758d73b75Fb22023E657859eb28031",
-    "held_sec": 5,
-    "weth_out": 0.001859304392488005,
-    "usd_out": 4.997066
-  },
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "positions": [],
+  "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-02 02:58:09 ET",
-      "equity_usd": 244.2133,
-      "liquid_usd": 239.8258,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-02 02:58:12 ET",
-      "equity_usd": 243.9968,
-      "liquid_usd": 243.9968,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-10-02 02:58:13 ET",
       "equity_usd": 243.987,
@@ -746,13 +706,38 @@
       "liquid_usd": 99.6179,
       "upnl_usd": -0.0029,
       "n_pos": 1
+    },
+    {
+      "t": "2026-10-02 12:47:34 ET",
+      "equity_usd": 99.7899,
+      "liquid_usd": 99.7899,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.6131 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -186.015,
-  "total_pnl_pct": -64.0041,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -190.8401,
+  "total_pnl_pct": -65.66,
   "trades": [
+    {
+      "t": "2026-10-02 12:42:07 ET",
+      "kind": "FLAT",
+      "venue": "RH",
+      "market": "CPAY",
+      "side": "LONG",
+      "size_usd": null,
+      "pnl_usd": 0.0,
+      "tx": "0x0ed339a2a86f76af909ca06ba664eb8640b3924601a464e35f2f8919c67c6a2b",
+      "open_tx": "0x0ed339a2a86f76af909ca06ba664eb8640b3924601a464e35f2f8919c67c6a2b",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-408",
+      "reason": "FLAT",
+      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
+      "token": "0x32303676D2758d73b75Fb22023E657859eb28031",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-02 12:06:48 ET",
       "kind": "FLAT",
@@ -2174,57 +2159,18 @@
       "token": "0x8814790F075ce795450ab01fA60335A8B43E53f5",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-28 21:25:31 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "CAVO",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 1.3044,
-      "tx": "0xab4f1bc2dc2aa0e1696bd6b68fcd8591f9b263a8f15025573de59241d2339055",
-      "open_tx": "0x0a4e011082dbc48ee68c61a673534f73e9576f7c30e2c58a8aebbfd3e39707d1",
-      "exit_tx": "0xab4f1bc2dc2aa0e1696bd6b68fcd8591f9b263a8f15025573de59241d2339055",
-      "id": "LIVE-SCALP-327",
-      "reason": "ORPHAN_MTM_FALSE_FLAT",
-      "note": "false-FLAT orphan: book said FLAT while tokens>0; Wire exit OK tokens_left=0 pnl=+1.3044. Hold 2nd LIVE until book clean. MTM must not mark FLAT with bal>0.",
-      "token": null,
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2687.6,
+  "mark": 2692.24,
   "mark_src": "coinbase",
-  "mark_eth": 2687.6,
-  "mark_btc": 85160.48,
+  "mark_eth": 2692.24,
+  "mark_btc": 85231.83,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.189,
+  "mark_link": 14.187,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2687.6,
-    "BTC": 85160.48,
-    "LINK": 14.189
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": true,
-    "ticker": "CPAY",
-    "tx": "0x0ed339a2a86f76af909ca06ba664eb8640b3924601a464e35f2f8919c67c6a2b",
-    "size_usd": 5.0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": -0.0587,
-    "upnl_usd": -0.0029,
-    "held_sec": 5,
-    "watcher": "rh_live_mtm_loop"
-  },
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
-  },
-  "strategy": {
-    "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
-  },
-  "realized_pnl_usd": -46.6131
+    "ETH": 2692.24,
+    "BTC": 85231.83,
+    "LINK": 14.187
+  }
 }
