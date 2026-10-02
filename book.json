@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-02 01:08:50 ET",
-  "liquid_usd": 246.1446,
+  "updated_et": "2026-10-02 01:08:51 ET",
+  "liquid_usd": 246.1455,
   "upnl_usd": 0.0,
-  "equity_usd": 246.1446,
-  "status": "EXITING:POST_FILL_FLAT_-3.2112",
+  "equity_usd": 246.1455,
+  "status": "EXITING:POST_FILL_FLAT_-3.2109",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM MSI uPnL $-0.1606 (-3.2112%) \u00b7 held 7s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-02 01:08:47 ET \u00b7 CUT POST_FILL_FLAT_-3.2112",
+  "notes": "LIVE MTM MSI uPnL $-0.1605 (-3.2109%) \u00b7 held 9s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-02 01:08:48 ET \u00b7 CUT POST_FILL_FLAT_-3.2109",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -4961,12 +4961,19 @@
       "liquid_usd": 246.1446,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 01:08:51 ET",
+      "equity_usd": 250.984,
+      "liquid_usd": 246.1455,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.4143 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -44.4854,
-  "total_pnl_pct": -15.3065,
+  "total_pnl_usd": -44.4845,
+  "total_pnl_pct": -15.3062,
   "trades": [
     {
       "t": "2026-10-02 00:50:51 ET",
@@ -6409,15 +6416,15 @@
       "live": true
     }
   ],
-  "mark": 2734.92,
+  "mark": 2734.93,
   "mark_src": "coinbase",
-  "mark_eth": 2734.92,
+  "mark_eth": 2734.93,
   "mark_btc": 84143.82,
   "mark_btc_src": "coinbase",
   "mark_link": 14.364,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2734.92,
+    "ETH": 2734.93,
     "BTC": 84143.82,
     "LINK": 14.364
   },
@@ -6430,7 +6437,7 @@
     "max_loss_usd": 0.15,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 7,
+    "held_sec": 8,
     "watcher": "rh_live_mtm_loop"
   },
   "strategy": {
