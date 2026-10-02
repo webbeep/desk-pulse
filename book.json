@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-02 11:58:57 ET",
+  "updated_et": "2026-10-02 11:59:00 ET",
   "liquid_usd": 104.1519,
-  "upnl_usd": 1.2145,
-  "equity_usd": 110.3664,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 104.1519,
+  "status": "EXITING:TP_V7_+4.5",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SI.GOV uPnL $1.2145 (24.2892%) \u00b7 held 6s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 11:58:56 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "SI.GOV",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 5.0596737961364544e-05,
-      "mark": 6.288628252066617e-05,
-      "uPnL": 1.2145,
-      "mtm_pct": 24.2892,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x7baaad28574363f7be9afd54f2d829871c10f79d2d467ffadfdbd761632e5de7",
-      "token": "0x9AFDEAa7d67e8dE70A37C9d5aD008a24Ed16315A",
-      "held_sec": 5,
-      "weth_out": 0.002305443086503278,
-      "usd_out": 6.21446
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "SI.GOV",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 5.0596737961364544e-05,
-    "mark": 6.288628252066617e-05,
-    "uPnL": 1.2145,
-    "mtm_pct": 24.2892,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x7baaad28574363f7be9afd54f2d829871c10f79d2d467ffadfdbd761632e5de7",
-    "token": "0x9AFDEAa7d67e8dE70A37C9d5aD008a24Ed16315A",
-    "held_sec": 5,
-    "weth_out": 0.002305443086503278,
-    "usd_out": 6.21446
-  },
+  "notes": "LIVE MTM SI.GOV uPnL $1.2145 (24.2892%) \u00b7 held 6s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 11:58:56 ET \u00b7 CUT TP_V7_+4.5",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-10-02 02:57:57 ET",
@@ -746,12 +712,19 @@
       "liquid_usd": 104.1519,
       "upnl_usd": 1.2145,
       "n_pos": 1
+    },
+    {
+      "t": "2026-10-02 11:59:00 ET",
+      "equity_usd": 110.3664,
+      "liquid_usd": 104.1519,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-47.4205 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -180.2636,
-  "total_pnl_pct": -62.0251,
+  "total_pnl_usd": -186.4781,
+  "total_pnl_pct": -64.1634,
   "trades": [
     {
       "t": "2026-10-02 11:35:19 ET",
@@ -2208,13 +2181,13 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "SI.GOV",
+    "open": false,
+    "ticker": null,
     "tx": "0x7baaad28574363f7be9afd54f2d829871c10f79d2d467ffadfdbd761632e5de7",
-    "size_usd": 5.0,
+    "size_usd": 0,
     "max_loss_usd": 2.0,
-    "mtm_pct": 24.2892,
-    "upnl_usd": 1.2145,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 5,
     "watcher": "rh_live_mtm_loop"
   },
