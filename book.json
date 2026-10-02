@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-10-02 19:15:29 ET",
+  "updated_et": "2026-10-02 19:15:31 ET",
   "liquid_usd": 80.7571,
   "upnl_usd": -0.5192,
   "equity_usd": 84.489,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM CINCINNATI uPnL $-0.5192 (-12.2142%) \u00b7 held 11s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 19:15:28 ET",
+  "notes": "LIVE MTM CINCINNATI uPnL $-0.5192 (-12.2142%) \u00b7 held 13s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 19:15:30 ET",
   "positions": [
     {
       "id": "LIVE-SCALP-2",
@@ -45,7 +45,7 @@
       "paper": false,
       "tx": "0x8348930f215dd89704ccaadea8385c0cd821532d3b27e9b1df9c0b7bf5fb3fa2",
       "token": "0xEF61347cDadA034b478f6505b8439dc8D1119322",
-      "held_sec": 10,
+      "held_sec": 12,
       "weth_out": 0.001399982096949994,
       "usd_out": 3.731862
     }
@@ -63,7 +63,7 @@
     "paper": false,
     "tx": "0x8348930f215dd89704ccaadea8385c0cd821532d3b27e9b1df9c0b7bf5fb3fa2",
     "token": "0xEF61347cDadA034b478f6505b8439dc8D1119322",
-    "held_sec": 10,
+    "held_sec": 12,
     "weth_out": 0.001399982096949994,
     "usd_out": 3.731862
   },
@@ -1029,6 +1029,13 @@
     },
     {
       "t": "2026-10-02 19:15:29 ET",
+      "equity_usd": 84.489,
+      "liquid_usd": 80.7571,
+      "upnl_usd": -0.5192,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-02 19:15:31 ET",
       "equity_usd": 84.489,
       "liquid_usd": 80.7571,
       "upnl_usd": -0.5192,
@@ -2502,7 +2509,7 @@
     "max_loss_usd": 2.0,
     "mtm_pct": -12.2142,
     "upnl_usd": -0.5192,
-    "held_sec": 10,
+    "held_sec": 12,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
