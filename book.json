@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-02 15:32:23 ET",
-  "liquid_usd": 80.7149,
-  "upnl_usd": 0.0,
-  "equity_usd": 80.7149,
-  "status": "EXITING:POST_FILL_FLAT_-3.7234",
+  "updated_et": "2026-10-02 15:32:24 ET",
+  "liquid_usd": 80.7055,
+  "upnl_usd": -0.1998,
+  "equity_usd": 84.744,
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,43 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM HUMAN uPnL $-0.1578 (-3.7234%) \u00b7 held 13s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 15:32:20 ET \u00b7 CUT POST_FILL_FLAT_-3.7234",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE MTM HUMAN uPnL $-0.1998 (-4.7144%) \u00b7 held 17s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 15:32:23 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "HUMAN",
+      "side": "LONG",
+      "size_usd": 4.2383,
+      "entry": 0.00012461961044608143,
+      "mark": 0.00011874450095171753,
+      "uPnL": -0.1998,
+      "mtm_pct": -4.7144,
+      "lev": 1,
+      "paper": false,
+      "tx": "0xb2d5b938fcc7faade0f22d865481574c837acf5f3e155c2ef7d53f1e2de87a6f",
+      "token": "0x7dE5320e55a8241A4e3af4711425aE408Ca1Cc94",
+      "held_sec": 16,
+      "weth_out": 0.001515164117940346,
+      "usd_out": 4.038488
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "HUMAN",
+    "side": "LONG",
+    "size_usd": 4.2383,
+    "entry": 0.00012461961044608143,
+    "mark": 0.00011874450095171753,
+    "uPnL": -0.1998,
+    "mtm_pct": -4.7144,
+    "lev": 1,
+    "paper": false,
+    "tx": "0xb2d5b938fcc7faade0f22d865481574c837acf5f3e155c2ef7d53f1e2de87a6f",
+    "token": "0x7dE5320e55a8241A4e3af4711425aE408Ca1Cc94",
+    "held_sec": 16,
+    "weth_out": 0.001515164117940346,
+    "usd_out": 4.038488
+  },
   "pnl_history": [
     {
       "t": "2026-10-02 05:21:57 ET",
@@ -733,12 +767,19 @@
       "liquid_usd": 80.7149,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 15:32:24 ET",
+      "equity_usd": 84.744,
+      "liquid_usd": 80.7055,
+      "upnl_usd": -0.1998,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.4056 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -209.9151,
-  "total_pnl_pct": -72.2276,
+  "total_pnl_usd": -205.886,
+  "total_pnl_pct": -70.8413,
   "trades": [
     {
       "t": "2026-10-02 14:15:22 ET",
@@ -2181,28 +2222,28 @@
       "live": true
     }
   ],
-  "mark": 2665.69,
+  "mark": 2665.38,
   "mark_src": "coinbase",
-  "mark_eth": 2665.69,
+  "mark_eth": 2665.38,
   "mark_btc": 84121.13,
   "mark_btc_src": "coinbase",
   "mark_link": 13.639,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2665.69,
+    "ETH": 2665.38,
     "BTC": 84121.13,
     "LINK": 13.639
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
+    "open": true,
+    "ticker": "HUMAN",
     "tx": "0xb2d5b938fcc7faade0f22d865481574c837acf5f3e155c2ef7d53f1e2de87a6f",
-    "size_usd": 0,
+    "size_usd": 4.2383,
     "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 13,
+    "mtm_pct": -4.7144,
+    "upnl_usd": -0.1998,
+    "held_sec": 16,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
