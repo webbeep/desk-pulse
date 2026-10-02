@@ -1,8 +1,8 @@
 {
-  "updated_et": "2026-10-02 13:32:30 ET",
-  "liquid_usd": 89.6731,
-  "upnl_usd": 0.0126,
-  "equity_usd": 94.4043,
+  "updated_et": "2026-10-02 13:32:40 ET",
+  "liquid_usd": 89.7012,
+  "upnl_usd": 0.4862,
+  "equity_usd": 94.906,
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM CODYNC uPnL $0.0126 (0.2678%) \u00b7 held 8s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 13:32:30 ET",
+  "notes": "LIVE MTM CODYNC uPnL $0.4862 (10.3031%) \u00b7 held 18s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 13:32:39 ET",
   "positions": [
     {
       "id": "LIVE-SCALP-2",
@@ -38,16 +38,16 @@
       "side": "LONG",
       "size_usd": 4.7186,
       "entry": 0.00021082610925749582,
-      "mark": 0.00021139066362735966,
-      "uPnL": 0.0126,
-      "mtm_pct": 0.2678,
+      "mark": 0.00023254764249020402,
+      "uPnL": 0.4862,
+      "mtm_pct": 10.3031,
       "lev": 1,
       "paper": false,
       "tx": "0xe9de6899e7687da7254269c6c972504918a3a52b27f120617c226019722244af",
       "token": "0xD129ED139Af04a60Fee71D9cf757dbe345C277dD",
-      "held_sec": 8,
-      "weth_out": 0.001764431766919618,
-      "usd_out": 4.731236
+      "held_sec": 17,
+      "weth_out": 0.001940416593947949,
+      "usd_out": 5.20476
     }
   ],
   "position": {
@@ -56,16 +56,16 @@
     "side": "LONG",
     "size_usd": 4.7186,
     "entry": 0.00021082610925749582,
-    "mark": 0.00021139066362735966,
-    "uPnL": 0.0126,
-    "mtm_pct": 0.2678,
+    "mark": 0.00023254764249020402,
+    "uPnL": 0.4862,
+    "mtm_pct": 10.3031,
     "lev": 1,
     "paper": false,
     "tx": "0xe9de6899e7687da7254269c6c972504918a3a52b27f120617c226019722244af",
     "token": "0xD129ED139Af04a60Fee71D9cf757dbe345C277dD",
-    "held_sec": 8,
-    "weth_out": 0.001764431766919618,
-    "usd_out": 4.731236
+    "held_sec": 17,
+    "weth_out": 0.001940416593947949,
+    "usd_out": 5.20476
   },
   "pnl_history": [
     {
@@ -753,12 +753,33 @@
       "liquid_usd": 89.6731,
       "upnl_usd": 0.0126,
       "n_pos": 1
+    },
+    {
+      "t": "2026-10-02 13:32:35 ET",
+      "equity_usd": 94.3811,
+      "liquid_usd": 89.6975,
+      "upnl_usd": -0.035,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-02 13:32:37 ET",
+      "equity_usd": 94.3831,
+      "liquid_usd": 89.7069,
+      "upnl_usd": -0.0424,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-02 13:32:40 ET",
+      "equity_usd": 94.906,
+      "liquid_usd": 89.7012,
+      "upnl_usd": 0.4862,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.6131 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -196.2257,
-  "total_pnl_pct": -67.5174,
+  "total_pnl_usd": -195.724,
+  "total_pnl_pct": -67.3447,
   "trades": [
     {
       "t": "2026-10-02 13:14:00 ET",
@@ -2201,15 +2222,15 @@
       "live": true
     }
   ],
-  "mark": 2681.45,
+  "mark": 2682.29,
   "mark_src": "coinbase",
-  "mark_eth": 2681.45,
+  "mark_eth": 2682.29,
   "mark_btc": 84655.12,
   "mark_btc_src": "coinbase",
   "mark_link": 14.15,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2681.45,
+    "ETH": 2682.29,
     "BTC": 84655.12,
     "LINK": 14.15
   },
@@ -2220,9 +2241,9 @@
     "tx": "0xe9de6899e7687da7254269c6c972504918a3a52b27f120617c226019722244af",
     "size_usd": 4.7186,
     "max_loss_usd": 2.0,
-    "mtm_pct": 0.2678,
-    "upnl_usd": 0.0126,
-    "held_sec": 8,
+    "mtm_pct": 10.3031,
+    "upnl_usd": 0.4862,
+    "held_sec": 17,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
