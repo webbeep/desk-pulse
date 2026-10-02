@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-01 22:23:38 ET",
+  "updated_et": "2026-10-02 00:48:05 ET",
   "liquid_usd": 249.5434,
   "upnl_usd": -5.0,
   "equity_usd": 249.5434,
-  "status": "LIVE_FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -31,8 +31,28 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-01 22:23:38 ET",
-  "positions": [],
-  "position": null,
+  "positions": [
+    {
+      "id": "LIVE-SCALP-368",
+      "market": "MSI",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x966a51d86eab9914dbd1c45c018ae1d87c415985241c8700baa235b06674c9d0",
+      "token": "0x6e93a4561Aa677c2e58F7daB04c3605cebb49C08",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-368",
+    "market": "MSI",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x966a51d86eab9914dbd1c45c018ae1d87c415985241c8700baa235b06674c9d0",
+    "token": "0x6e93a4561Aa677c2e58F7daB04c3605cebb49C08",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-09-30 09:39:11 ET",
@@ -6339,19 +6359,15 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": "MEGADUCK",
-    "tx": "0x57eb64476b731611e00ab571587a0fd5244171b926efff710da036ddffd9103d",
+    "open": true,
+    "flat": false,
+    "ticker": "MSI",
+    "tx": "0x966a51d86eab9914dbd1c45c018ae1d87c415985241c8700baa235b06674c9d0",
     "size_usd": 5.0,
     "max_loss_usd": 0.15,
-    "mtm_pct": -100.0,
-    "upnl_usd": -5.0,
-    "held_sec": 2553,
+    "id": "LIVE-SCALP-368",
+    "karure_banned": true,
     "watcher": "rh_live_mtm_loop",
-    "flat": true,
-    "opens_paused": false,
-    "frozen": false,
-    "strategy": "MEME_V8_QUOTER_GUARD",
     "loop": "rh_live_loop"
   },
   "strategy": {
@@ -6361,6 +6377,6 @@
   "realized_pnl_usd": -45.8659,
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
