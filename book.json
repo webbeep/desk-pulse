@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-02 00:48:16 ET",
-  "liquid_usd": 247.2348,
+  "updated_et": "2026-10-02 00:48:25 ET",
+  "liquid_usd": 251.5383,
   "upnl_usd": 0.0,
-  "equity_usd": 247.2348,
-  "status": "EXITING:POST_FILL_FLAT_-11.1226",
+  "equity_usd": 251.5383,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.0232497520116488,
-    "rh_weth": 0.06553373341819473,
+    "rh_eth": 0.0232441386200668,
+    "rh_weth": 0.0671092290094725,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.0232497520116488,
-      "weth": 0.06553373341819473
+      "eth": 0.0232441386200668,
+      "weth": 0.0671092290094725
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM MSI uPnL $-0.5561 (-11.1226%) \u00b7 held 9s \u00b7 max-loss \u2264$0.15 \u00b7 2026-10-02 00:48:13 ET \u00b7 CUT POST_FILL_FLAT_-11.1226",
+  "notes": "LIVE EXIT MSI \u00b7 POST_FILL_FLAT_-11.1226 \u00b7 tx 0xbe651e4b388f08ead54ecb75c6848cf7225fa8437bd41a5ba36842aa03a86976 \u00b7 2026-10-02 00:48:24 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -4891,13 +4891,38 @@
       "liquid_usd": 247.2348,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 00:48:25 ET",
+      "equity_usd": 251.5383,
+      "liquid_usd": 251.5383,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-45.8659 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -43.3952,
-  "total_pnl_pct": -14.9314,
+  "total_pnl_usd": -39.0917,
+  "total_pnl_pct": -13.4507,
   "trades": [
+    {
+      "t": "2026-10-02 00:48:24 ET",
+      "kind": "LIVE",
+      "venue": "RH",
+      "market": "MSI",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": -0.6791,
+      "tx": "0xbe651e4b388f08ead54ecb75c6848cf7225fa8437bd41a5ba36842aa03a86976",
+      "open_tx": "0x966a51d86eab9914dbd1c45c018ae1d87c415985241c8700baa235b06674c9d0",
+      "exit_tx": "0xbe651e4b388f08ead54ecb75c6848cf7225fa8437bd41a5ba36842aa03a86976",
+      "id": "LIVE-SCALP-368",
+      "reason": "POST_FILL_FLAT_-11.1226",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x6e93a4561Aa677c2e58F7daB04c3605cebb49C08",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-01 22:22:32 ET",
       "kind": "WIPE",
@@ -6319,24 +6344,6 @@
       "token": "0x692C8D95d78f4D709Bb14e9Aa1AAcB47f320935b",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-28 16:15:53 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "WALLET",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.0025,
-      "tx": "0x968e8985288ce71ca53b34a2c1061441bad4d7b61ab166fb33958d9fb21ea99a",
-      "open_tx": "0xc5363086374ec093e58d11cad9181dd97be2b5363aafe1da48eaafecaec589d4",
-      "exit_tx": "0x968e8985288ce71ca53b34a2c1061441bad4d7b61ab166fb33958d9fb21ea99a",
-      "id": "LIVE-SCALP-288",
-      "reason": "TIME_FLAT_120s",
-      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=TIME_FLAT_120s pnl=-0.0025",
-      "token": "0x32C3cE734cf52F9429C8a8eC2982e4fd714960Ed",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2741.25,
@@ -6355,13 +6362,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x966a51d86eab9914dbd1c45c018ae1d87c415985241c8700baa235b06674c9d0",
-    "size_usd": 0,
-    "max_loss_usd": 0.15,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 9,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xbe651e4b388f08ead54ecb75c6848cf7225fa8437bd41a5ba36842aa03a86976",
+    "last_exit_reason": "POST_FILL_FLAT_-11.1226",
+    "last_exit_upnl": -0.6791
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
