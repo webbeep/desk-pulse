@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-02 15:32:26 ET",
-  "liquid_usd": 80.7055,
+  "updated_et": "2026-10-02 15:32:31 ET",
+  "liquid_usd": 84.7452,
   "upnl_usd": 0.0,
-  "equity_usd": 80.7055,
-  "status": "EXITING:HARD_SL_PCT_-4.7144",
+  "equity_usd": 84.7452,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.02127233269367529,
-    "rh_weth": 0.007599779513289062,
+    "rh_eth": 0.021267174249405288,
+    "rh_weth": 0.00912056459989405,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.02127233269367529,
-      "weth": 0.007599779513289062
+      "eth": 0.021267174249405288,
+      "weth": 0.00912056459989405
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM HUMAN uPnL $-0.1998 (-4.7144%) \u00b7 held 17s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 15:32:23 ET \u00b7 CUT HARD_SL_PCT_-4.7144",
+  "notes": "LIVE EXIT HUMAN \u00b7 HARD_SL_PCT_-4.7144 \u00b7 tx None \u00b7 2026-10-02 15:32:31 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -747,13 +747,38 @@
       "liquid_usd": 80.7055,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 15:32:31 ET",
+      "equity_usd": 84.7452,
+      "liquid_usd": 84.7452,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.4056 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -209.9245,
-  "total_pnl_pct": -72.2308,
+  "total_pnl_usd": -205.8848,
+  "total_pnl_pct": -70.8409,
   "trades": [
+    {
+      "t": "2026-10-02 15:32:31 ET",
+      "kind": "LIVE",
+      "venue": "RH",
+      "market": "HUMAN",
+      "side": "LONG",
+      "size_usd": 4.2383,
+      "pnl_usd": -0.1995,
+      "tx": "0xda83192c932005caa4d81fcbde0327c319b7d68e12f0ad302b6aee4a32049549",
+      "open_tx": "0xb2d5b938fcc7faade0f22d865481574c837acf5f3e155c2ef7d53f1e2de87a6f",
+      "exit_tx": "0xda83192c932005caa4d81fcbde0327c319b7d68e12f0ad302b6aee4a32049549",
+      "id": "LIVE-SCALP-413",
+      "reason": "POST_FILL_FLAT_-3.7234",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x7dE5320e55a8241A4e3af4711425aE408Ca1Cc94",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-02 14:15:22 ET",
       "kind": "FLAT",
@@ -2175,24 +2200,6 @@
       "token": "0x2B8E6D9464Ce5b7DC9B57248C4d921cA5FDa6dBe",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-29 04:20:11 ET",
-      "kind": "WIPE",
-      "venue": "RH",
-      "market": "CURVE",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -5.0,
-      "tx": "0xf6a7264421915e9d5b489423fb5baa3c1bbd8d030c8a72545e0f24cee5131ffd",
-      "open_tx": "0xf6a7264421915e9d5b489423fb5baa3c1bbd8d030c8a72545e0f24cee5131ffd",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-332",
-      "reason": "QUOTER_DEAD_LIQ0_WIPE",
-      "note": "liq\u21920 @18s; MTM stuck qfail=1 under quoter_revert short-circuit (never hit CUT_HARD_LIQ0); 5 zombie MTM \u2192 RPC 429. Force wipe+ban; demote ladder; liq0 must beat",
-      "token": null,
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2665.38,
@@ -2211,13 +2218,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xb2d5b938fcc7faade0f22d865481574c837acf5f3e155c2ef7d53f1e2de87a6f",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 16,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "HARD_SL_PCT_-4.7144",
+    "last_exit_upnl": -4.2383
   },
   "paper": {
     "active": false,
