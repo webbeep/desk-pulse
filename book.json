@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-10-02 13:32:52 ET",
-  "liquid_usd": 94.7593,
+  "updated_et": "2026-10-02 13:32:55 ET",
+  "liquid_usd": 94.7594,
   "upnl_usd": 0.0,
-  "equity_usd": 94.7593,
-  "status": "EXITED",
+  "equity_usd": 94.7594,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.026320905998219492,
+    "rh_eth": 0.026320052551489493,
     "rh_weth": 0.007599779513289062,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
@@ -19,7 +19,7 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.026320905998219492,
+      "eth": 0.026320052551489493,
       "weth": 0.007599779513289062
     }
   },
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT CODYNC \u00b7 TP_V7_+4.5 \u00b7 tx 0xf1f30c8355201bdc99b8bf08464e357deae0db727bc9414bf39c55e91e7df0ba \u00b7 2026-10-02 13:32:51 ET",
+  "notes": "LIVE EXIT CODYNC \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-10-02 13:32:55 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -768,26 +768,33 @@
       "liquid_usd": 94.7593,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 13:32:55 ET",
+      "equity_usd": 94.7594,
+      "liquid_usd": 94.7594,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.6131 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -195.8707,
+  "total_pnl_usd": -195.8706,
   "total_pnl_pct": -67.3952,
   "trades": [
     {
       "t": "2026-10-02 13:32:51 ET",
-      "kind": "TP",
+      "kind": "LIVE",
       "venue": "RH",
       "market": "CODYNC",
       "side": "LONG",
       "size_usd": 4.7186,
-      "pnl_usd": 0.2075,
+      "pnl_usd": 0.4862,
       "tx": "0xf1f30c8355201bdc99b8bf08464e357deae0db727bc9414bf39c55e91e7df0ba",
       "open_tx": "0xe9de6899e7687da7254269c6c972504918a3a52b27f120617c226019722244af",
       "exit_tx": "0xf1f30c8355201bdc99b8bf08464e357deae0db727bc9414bf39c55e91e7df0ba",
       "id": "LIVE-SCALP-410",
-      "reason": "TP_V7_+4.5",
+      "reason": "EXITED",
       "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
       "token": "0xD129ED139Af04a60Fee71D9cf757dbe345C277dD",
       "paper": false,
@@ -2216,15 +2223,15 @@
       "live": true
     }
   ],
-  "mark": 2682.29,
+  "mark": 2682.36,
   "mark_src": "coinbase",
-  "mark_eth": 2682.29,
+  "mark_eth": 2682.36,
   "mark_btc": 84655.12,
   "mark_btc_src": "coinbase",
   "mark_link": 14.15,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2682.29,
+    "ETH": 2682.36,
     "BTC": 84655.12,
     "LINK": 14.15
   },
@@ -2232,9 +2239,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0xf1f30c8355201bdc99b8bf08464e357deae0db727bc9414bf39c55e91e7df0ba",
+    "last_exit_tx": null,
     "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": 0.2075
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
