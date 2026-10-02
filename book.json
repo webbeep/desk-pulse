@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-02 19:10:20 ET",
+  "updated_et": "2026-10-02 19:15:19 ET",
   "liquid_usd": 85.0218,
   "upnl_usd": 0.0,
   "equity_usd": 85.0218,
-  "status": "EXIT_EXIT_FAIL",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,29 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT ZERO \u00b7 TP_V7_+4.5 \u00b7 tx 0x248e18c74e20031485c844d55f60c6ec73d16c1bb92d5117ab26704689092edf \u00b7 2026-10-02 19:10:20 ET",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-02 19:10:26 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-415",
+      "market": "CINCINNATI",
+      "side": "LONG",
+      "size_usd": 4.2511,
+      "tx": "0x8348930f215dd89704ccaadea8385c0cd821532d3b27e9b1df9c0b7bf5fb3fa2",
+      "token": "0xEF61347cDadA034b478f6505b8439dc8D1119322",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-415",
+    "market": "CINCINNATI",
+    "side": "LONG",
+    "size_usd": 4.2511,
+    "tx": "0x8348930f215dd89704ccaadea8385c0cd821532d3b27e9b1df9c0b7bf5fb3fa2",
+    "token": "0xEF61347cDadA034b478f6505b8439dc8D1119322",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-10-02 06:24:08 ET",
@@ -974,10 +994,28 @@
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.6051 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.3039 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -205.6082,
   "total_pnl_pct": -70.7457,
   "trades": [
+    {
+      "t": "2026-10-02 19:10:19 ET",
+      "kind": "TP",
+      "venue": "RH",
+      "market": "ZERO",
+      "side": "LONG",
+      "size_usd": null,
+      "pnl_usd": 0.3012,
+      "tx": "0x248e18c74e20031485c844d55f60c6ec73d16c1bb92d5117ab26704689092edf",
+      "open_tx": "0x2db66af1e58e218a16168bb6d7695924d3598a385879a4ae43a0f04e685a3146",
+      "exit_tx": "0x248e18c74e20031485c844d55f60c6ec73d16c1bb92d5117ab26704689092edf",
+      "id": "LIVE-SCALP-414",
+      "reason": "TP_V7_+4.5",
+      "note": "continuous LIVE \u00b7 caps $4.2407/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=TP_V7_+4.5 pnl=0.3012",
+      "token": "0x23822510E46b68a3B41fEc54D84951A2E8847026",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-02 15:32:31 ET",
       "kind": "LIVE",
@@ -2399,24 +2437,6 @@
       "token": "0x9EcB37049c1Fb7A805D22F9F91583fFdC471795E",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-29 06:03:38 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "SER",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x329998763e582c969bbb502802908550acf8895a52015203609b61a7ecbdb174",
-      "open_tx": "0x329998763e582c969bbb502802908550acf8895a52015203609b61a7ecbdb174",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-333",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0x2B8E6D9464Ce5b7DC9B57248C4d921cA5FDa6dBe",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2665.7,
@@ -2433,19 +2453,24 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x248e18c74e20031485c844d55f60c6ec73d16c1bb92d5117ab26704689092edf",
-    "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": 0.3012
+    "open": true,
+    "flat": false,
+    "ticker": "CINCINNATI",
+    "tx": "0x8348930f215dd89704ccaadea8385c0cd821532d3b27e9b1df9c0b7bf5fb3fa2",
+    "size_usd": 4.2511,
+    "max_loss_usd": 2.0,
+    "id": "LIVE-SCALP-415",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
   },
-  "realized_pnl_usd": -46.6051
+  "realized_pnl_usd": -46.3039
 }
