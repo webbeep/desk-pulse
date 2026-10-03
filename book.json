@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-10-03 13:18:47 ET",
-  "liquid_usd": 50.6497,
+  "updated_et": "2026-10-03 13:18:51 ET",
+  "liquid_usd": 50.6465,
   "upnl_usd": 0.0,
-  "equity_usd": 50.6497,
-  "status": "EXITING:TIME_FLAT_120s",
+  "equity_usd": 50.6465,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.015291751362819062,
+    "rh_eth": 0.015290531937599062,
     "rh_weth": 0.002166698465718498,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
@@ -19,7 +19,7 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.015291751362819062,
+      "eth": 0.015290531937599062,
       "weth": 0.002166698465718498
     }
   },
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM CAT uPnL $-0.0007 (-0.023%) \u00b7 held 126s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 13:18:46 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT CAT \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-10-03 13:18:51 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -992,12 +992,19 @@
       "liquid_usd": 50.6497,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 13:18:51 ET",
+      "equity_usd": 53.649,
+      "liquid_usd": 50.6465,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.2692 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -239.9803,
-  "total_pnl_pct": -82.5724,
+  "total_pnl_usd": -239.9835,
+  "total_pnl_pct": -82.5735,
   "trades": [
     {
       "t": "2026-10-03 13:07:13 ET",
@@ -2456,13 +2463,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x866b521653f9b998f0c24d8d6b2d3d3ec882de5beaf7d89b6226a4cf13b733a0",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 125,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
