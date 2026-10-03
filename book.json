@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-03 16:10:25 ET",
-  "liquid_usd": 50.5437,
+  "updated_et": "2026-10-03 16:10:49 ET",
+  "liquid_usd": 53.5113,
   "upnl_usd": 0.0,
-  "equity_usd": 50.5437,
-  "status": "EXITING:TIME_FLAT_120s",
+  "equity_usd": 53.5113,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.011919842742446564,
-    "rh_weth": 0.005483433616302257,
+    "rh_eth": 0.011917224032814564,
+    "rh_weth": 0.006590467527729002,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.011919842742446564,
-      "weth": 0.005483433616302257
+      "eth": 0.011917224032814564,
+      "weth": 0.006590467527729002
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SDOG uPnL $-0.0254 (-0.8459%) \u00b7 held 15066s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 16:10:10 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT SDOG \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-10-03 16:10:42 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -733,13 +733,38 @@
       "liquid_usd": 50.5437,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 16:10:49 ET",
+      "equity_usd": 53.5113,
+      "liquid_usd": 53.5113,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.3757 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -240.0863,
-  "total_pnl_pct": -82.6089,
+  "total_pnl_usd": -237.1187,
+  "total_pnl_pct": -81.5878,
   "trades": [
+    {
+      "t": "2026-10-03 16:10:45 ET",
+      "kind": "LIVE",
+      "venue": "RH",
+      "market": "SDOG",
+      "side": "LONG",
+      "size_usd": null,
+      "pnl_usd": null,
+      "tx": "0x7097a0db22617e08002c67dd3133299d66badee2d5be7a45dba5ab8ff5a8921b",
+      "open_tx": "0x7097a0db22617e08002c67dd3133299d66badee2d5be7a45dba5ab8ff5a8921b",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-454",
+      "reason": null,
+      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=None pnl=None",
+      "token": "0x614B60a3d6bC8f5a74b93F4E158A646132Bb8Ae6",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-03 14:38:03 ET",
       "kind": "SL",
@@ -2161,24 +2186,6 @@
       "token": "0x5f9e73EDA1027b039552EFA15A695A8fe55D66b7",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 02:46:39 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "GIKO",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.1743,
-      "tx": "0x3dec8f801ed420e8fcc3125d59b7d8ea7ad8f8d7da3af3a9cd600e97a5100245",
-      "open_tx": "0xa4bfb30683967b62ff4b9c18c3f250ae0d51f4ceb36a029d455269d69b3384c1",
-      "exit_tx": "0x3dec8f801ed420e8fcc3125d59b7d8ea7ad8f8d7da3af3a9cd600e97a5100245",
-      "id": "LIVE-SCALP-374",
-      "reason": "TIME_FLAT_120s",
-      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=TIME_FLAT_120s pnl=-0.1743",
-      "token": "0x5f9e73EDA1027b039552EFA15A695A8fe55D66b7",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2687.02,
@@ -2197,13 +2204,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x5d2610a78206c1f0086739f6a6b21e31247fcf83767466b07d80d3ff729dcf33",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 15065,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
