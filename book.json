@@ -3,7 +3,7 @@
   "liquid_usd": 52.604,
   "upnl_usd": 0.0,
   "equity_usd": 52.604,
-  "status": "EXIT_None",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT DEXTER \u00b7 HARD_SL_PCT_-12.7006 \u00b7 tx None \u00b7 2026-10-03 09:32:21 ET",
+  "notes": "LIVE EXIT DEXTER \u00b7 HARD_SL_PCT_-13.025 \u00b7 tx 0x7f0792c7e1df657c1aefe34dd669ecdde4b76c9283e5d9c53f9ac9b3159e05c0 \u00b7 2026-10-03 09:32:21 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -2197,9 +2197,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "HARD_SL_PCT_-12.7006",
-    "last_exit_upnl": null
+    "last_exit_tx": "0x7f0792c7e1df657c1aefe34dd669ecdde4b76c9283e5d9c53f9ac9b3159e05c0",
+    "last_exit_reason": "HARD_SL_PCT_-13.025",
+    "last_exit_upnl": -0.381
   },
   "paper": {
     "active": false,
