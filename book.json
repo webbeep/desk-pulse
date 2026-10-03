@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-10-03 13:16:49 ET",
+  "updated_et": "2026-10-03 13:16:53 ET",
   "liquid_usd": 50.6531,
   "upnl_usd": -0.0005,
   "equity_usd": 53.6526,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM CAT uPnL $-0.0005 (-0.0163%) \u00b7 held 8s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 13:16:48 ET",
+  "notes": "LIVE MTM CAT uPnL $-0.0005 (-0.0163%) \u00b7 held 12s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 13:16:53 ET",
   "positions": [
     {
       "id": "LIVE-SCALP-2",
@@ -45,7 +45,7 @@
       "paper": false,
       "tx": "0x866b521653f9b998f0c24d8d6b2d3d3ec882de5beaf7d89b6226a4cf13b733a0",
       "token": "0x3aCA3AF9E863C2d7483d926a744C837004Dc3e11",
-      "held_sec": 7,
+      "held_sec": 12,
       "weth_out": 0.001117153251195209,
       "usd_out": 2.999512
     }
@@ -63,7 +63,7 @@
     "paper": false,
     "tx": "0x866b521653f9b998f0c24d8d6b2d3d3ec882de5beaf7d89b6226a4cf13b733a0",
     "token": "0x3aCA3AF9E863C2d7483d926a744C837004Dc3e11",
-    "held_sec": 7,
+    "held_sec": 12,
     "weth_out": 0.001117153251195209,
     "usd_out": 2.999512
   },
@@ -749,6 +749,13 @@
     },
     {
       "t": "2026-10-03 13:16:49 ET",
+      "equity_usd": 53.6526,
+      "liquid_usd": 50.6531,
+      "upnl_usd": -0.0005,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-03 13:16:53 ET",
       "equity_usd": 53.6526,
       "liquid_usd": 50.6531,
       "upnl_usd": -0.0005,
@@ -2222,7 +2229,7 @@
     "max_loss_usd": 2.0,
     "mtm_pct": -0.0163,
     "upnl_usd": -0.0005,
-    "held_sec": 7,
+    "held_sec": 12,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
