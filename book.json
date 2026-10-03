@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-02 21:56:42 ET",
+  "updated_et": "2026-10-02 21:56:46 ET",
   "liquid_usd": 82.7255,
   "upnl_usd": 0.0,
   "equity_usd": 82.7255,
-  "status": "EXITED",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT ORANGE \u00b7 TIME_FLAT_120s \u00b7 tx 0x0035214d9a3c268d6c22ffdecc937e1df0e48c109e2f4252e0d1951a77808e39 \u00b7 2026-10-02 21:56:42 ET",
+  "notes": "LIVE EXIT ORANGE \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-10-02 21:56:45 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -733,6 +733,13 @@
       "liquid_usd": 82.7255,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 21:56:46 ET",
+      "equity_usd": 82.7255,
+      "liquid_usd": 82.7255,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
@@ -740,6 +747,24 @@
   "total_pnl_usd": -207.9045,
   "total_pnl_pct": -71.5358,
   "trades": [
+    {
+      "t": "2026-10-02 21:56:45 ET",
+      "kind": "FLAT",
+      "venue": "RH",
+      "market": "ORANGE",
+      "side": "LONG",
+      "size_usd": 4.1221,
+      "pnl_usd": 0.0,
+      "tx": "0xc422cdbe94b8656ce358ac699c93c0c590896660975febae97f8f8a485f53c6e",
+      "open_tx": "0xc422cdbe94b8656ce358ac699c93c0c590896660975febae97f8f8a485f53c6e",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-420",
+      "reason": "FLAT",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0xCC30D0fcef5d48eFF7f1C65238df36332d5eF93f",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-02 21:50:38 ET",
       "kind": "FLAT",
@@ -2161,24 +2186,6 @@
       "token": "0x40EB57842b260D2bCa26DC553B6c2213393Fc309",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-29 08:06:56 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "BBB",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x36ee3b53cb689a20bca9cc7be55d0833971c843150d9e0bf1a392f297782c40a",
-      "open_tx": "0x36ee3b53cb689a20bca9cc7be55d0833971c843150d9e0bf1a392f297782c40a",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-339",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0x05dC184414aF81436D069cf78A6bd821667363ee",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2678.03,
@@ -2197,9 +2204,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0x0035214d9a3c268d6c22ffdecc937e1df0e48c109e2f4252e0d1951a77808e39",
-    "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": 0.3501
+    "last_exit_tx": null,
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
