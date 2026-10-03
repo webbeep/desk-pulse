@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-03 02:15:19 ET",
-  "liquid_usd": 63.9611,
+  "updated_et": "2026-10-03 02:15:25 ET",
+  "liquid_usd": 67.8127,
   "upnl_usd": 0.0,
-  "equity_usd": 63.9611,
-  "status": "EXITING:HARD_SL_PCT_-27.6158",
+  "equity_usd": 67.8127,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.003184290346549697,
-    "rh_weth": 0.01931727924268084,
+    "rh_eth": 0.003181192898657697,
+    "rh_weth": 0.02076011641502529,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.003184290346549697,
-      "weth": 0.01931727924268084
+      "eth": 0.003181192898657697,
+      "weth": 0.02076011641502529
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM PUDU uPnL $-0.9305 (-27.6158%) \u00b7 held 31s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 02:15:16 ET \u00b7 CUT HARD_SL_PCT_-27.6158",
+  "notes": "LIVE EXIT PUDU \u00b7 HARD_SL_PCT_-27.6158 \u00b7 tx None \u00b7 2026-10-03 02:15:24 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -768,13 +768,38 @@
       "liquid_usd": 63.9611,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 02:15:25 ET",
+      "equity_usd": 67.8127,
+      "liquid_usd": 67.8127,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.8623 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -226.6689,
-  "total_pnl_pct": -77.9923,
+  "total_pnl_usd": -222.8173,
+  "total_pnl_pct": -76.667,
   "trades": [
+    {
+      "t": "2026-10-03 02:15:25 ET",
+      "kind": "SL",
+      "venue": "RH",
+      "market": "PUDU",
+      "side": "LONG",
+      "size_usd": 3.3693,
+      "pnl_usd": 0.0633,
+      "tx": "0x35ec6381ab345d5586b1355b168988bb34cdab1ac3446689e06b862150acb4f2",
+      "open_tx": "0x2ee84cb8a3f6f530b1a4f6a5221f4d38d19c659f25ed06e2e2c2b39c7c279230",
+      "exit_tx": "0x35ec6381ab345d5586b1355b168988bb34cdab1ac3446689e06b862150acb4f2",
+      "id": "LIVE-SCALP-427",
+      "reason": "HARD_SL_PCT_-36.7831",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0xb374B63C01e66713124c822A27d3c3a2676d321C",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-03 01:23:03 ET",
       "kind": "FLAT",
@@ -2196,24 +2221,6 @@
       "token": "0x434C832E6352bF0cFEaDab8E86361a83E6D572E2",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-29 10:26:31 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "HOTDOG",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x96a7b477a770e86ba666a4e5bd60bfba8c7266469c6c3b60b7b307ef19adcf79",
-      "open_tx": "0x96a7b477a770e86ba666a4e5bd60bfba8c7266469c6c3b60b7b307ef19adcf79",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-346",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0x8A8E9c965C564BEd85038b44c6fd5aEBe6eA62c7",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2675.23,
@@ -2232,13 +2239,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x2ee84cb8a3f6f530b1a4f6a5221f4d38d19c659f25ed06e2e2c2b39c7c279230",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 31,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "HARD_SL_PCT_-27.6158",
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
