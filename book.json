@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 02:50:13 ET",
-  "liquid_usd": 68.0503,
+  "updated_et": "2026-10-03 02:50:14 ET",
+  "liquid_usd": 68.0557,
   "upnl_usd": 0.0,
-  "equity_usd": 68.0503,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 68.0557,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM PUDU uPnL $0.1771 (5.2565%) \u00b7 held 2124s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 02:50:09 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT PUDU \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-10-03 02:50:12 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -749,17 +749,17 @@
       "n_pos": 1
     },
     {
-      "t": "2026-10-03 02:50:13 ET",
-      "equity_usd": 68.0503,
-      "liquid_usd": 68.0503,
+      "t": "2026-10-03 02:50:14 ET",
+      "equity_usd": 68.0557,
+      "liquid_usd": 68.0557,
       "upnl_usd": 0,
       "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.799 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -222.5797,
-  "total_pnl_pct": -76.5852,
+  "total_pnl_usd": -222.5743,
+  "total_pnl_pct": -76.5834,
   "trades": [
     {
       "t": "2026-10-03 02:46:16 ET",
@@ -2202,15 +2202,15 @@
       "live": true
     }
   ],
-  "mark": 2677.07,
+  "mark": 2677.28,
   "mark_src": "coinbase",
-  "mark_eth": 2677.07,
+  "mark_eth": 2677.28,
   "mark_btc": 84620.17,
   "mark_btc_src": "coinbase",
   "mark_link": 14.093,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2677.07,
+    "ETH": 2677.28,
     "BTC": 84620.17,
     "LINK": 14.093
   },
@@ -2218,13 +2218,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x2ee84cb8a3f6f530b1a4f6a5221f4d38d19c659f25ed06e2e2c2b39c7c279230",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 2124,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": null
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
