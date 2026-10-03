@@ -1,9 +1,9 @@
 {
   "updated_et": "2026-10-03 08:20:11 ET",
   "liquid_usd": 56.1158,
-  "upnl_usd": -0.3223,
-  "equity_usd": 58.7935,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 56.1158,
+  "status": "EXITING:POST_FILL_FLAT_-7.0689",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM DEXTER uPnL $-0.3223 (-10.7443%) \u00b7 held 10s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 08:20:11 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "DEXTER",
-      "side": "LONG",
-      "size_usd": 3.0,
-      "entry": 0.0001408698912736701,
-      "mark": 0.0001257344269075365,
-      "uPnL": -0.3223,
-      "mtm_pct": -10.7443,
-      "lev": 1,
-      "paper": false,
-      "tx": "0xb50f5f68813a12836a8a7ef1292912252802215d0daee3c904489c45ee95b43f",
-      "token": "0x3C24EeCe4081b132eDbe69d6261471047d7bC3af",
-      "held_sec": 10,
-      "weth_out": 0.000997203692988023,
-      "usd_out": 2.677671
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "DEXTER",
-    "side": "LONG",
-    "size_usd": 3.0,
-    "entry": 0.0001408698912736701,
-    "mark": 0.0001257344269075365,
-    "uPnL": -0.3223,
-    "mtm_pct": -10.7443,
-    "lev": 1,
-    "paper": false,
-    "tx": "0xb50f5f68813a12836a8a7ef1292912252802215d0daee3c904489c45ee95b43f",
-    "token": "0x3C24EeCe4081b132eDbe69d6261471047d7bC3af",
-    "held_sec": 10,
-    "weth_out": 0.000997203692988023,
-    "usd_out": 2.677671
-  },
+  "notes": "LIVE MTM DEXTER uPnL $-0.2121 (-7.0689%) \u00b7 held 8s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 08:20:09 ET \u00b7 CUT POST_FILL_FLAT_-7.0689",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-10-02 23:23:03 ET",
@@ -749,16 +715,16 @@
     },
     {
       "t": "2026-10-03 08:20:11 ET",
-      "equity_usd": 58.7935,
+      "equity_usd": 58.9037,
       "liquid_usd": 56.1158,
-      "upnl_usd": -0.3223,
-      "n_pos": 1
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-49.1783 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -231.8365,
-  "total_pnl_pct": -79.7703,
+  "total_pnl_usd": -234.5142,
+  "total_pnl_pct": -80.6917,
   "trades": [
     {
       "t": "2026-10-03 04:20:41 ET",
@@ -2215,14 +2181,14 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "DEXTER",
+    "open": false,
+    "ticker": null,
     "tx": "0xb50f5f68813a12836a8a7ef1292912252802215d0daee3c904489c45ee95b43f",
-    "size_usd": 3.0,
+    "size_usd": 0,
     "max_loss_usd": 2.0,
-    "mtm_pct": -10.7443,
-    "upnl_usd": -0.3223,
-    "held_sec": 10,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 8,
     "watcher": "rh_live_mtm_loop"
   },
   "strategy": {
