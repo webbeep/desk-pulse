@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-02 22:52:05 ET",
-  "liquid_usd": 78.7751,
+  "updated_et": "2026-10-02 22:52:44 ET",
+  "liquid_usd": 74.7897,
   "upnl_usd": 0,
-  "equity_usd": 78.7751,
-  "status": "LIVE_OPEN",
+  "equity_usd": 74.7897,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -11,7 +11,7 @@
     "base_eth": 0.0,
     "base_usdc": 0.0,
     "l1_eth": 0.00140706,
-    "rh_eth": 0.00865928,
+    "rh_eth": 0.00718507,
     "rh_weth": 0.01931728
   },
   "holdings": {
@@ -27,7 +27,7 @@
       "usdc": 0.0
     },
     "RH": {
-      "eth": 0.00865928,
+      "eth": 0.00718507,
       "weth": 0.01931728
     }
   },
@@ -39,36 +39,9 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-423",
-      "market": "POOPYBOT",
-      "side": "LONG",
-      "size_usd": 3.9388,
-      "tx": "0x020cd1c1c47dbc25e135915c60cc58613e8abf463a39c7a55a3e776c0e816390",
-      "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
-      "paper": false,
-      "uPnL": 0.0
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-423",
-    "market": "POOPYBOT",
-    "side": "LONG",
-    "size_usd": 3.9388,
-    "tx": "0x020cd1c1c47dbc25e135915c60cc58613e8abf463a39c7a55a3e776c0e816390",
-    "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
-    "paper": false,
-    "uPnL": 0.0
-  },
+  "positions": [],
+  "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-02 18:59:09 ET",
-      "equity_usd": 84.8136,
-      "liquid_usd": 84.8136,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-10-02 19:08:39 ET",
       "equity_usd": 84.7396,
@@ -733,13 +706,38 @@
       "liquid_usd": 78.7751,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 22:52:44 ET",
+      "equity_usd": 74.7897,
+      "liquid_usd": 74.7897,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -211.8549,
-  "total_pnl_pct": -72.9,
+  "total_pnl_usd": -215.8403,
+  "total_pnl_pct": -74.27,
   "trades": [
+    {
+      "t": "2026-10-02 22:52:10 ET",
+      "kind": "FLAT",
+      "venue": "RH",
+      "market": "POOPYBOT",
+      "side": "LONG",
+      "size_usd": 3.9388,
+      "pnl_usd": 0.0,
+      "tx": "0x020cd1c1c47dbc25e135915c60cc58613e8abf463a39c7a55a3e776c0e816390",
+      "open_tx": "0x020cd1c1c47dbc25e135915c60cc58613e8abf463a39c7a55a3e776c0e816390",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-423",
+      "reason": "FLAT",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-02 22:27:45 ET",
       "kind": "FLAT",
@@ -2161,53 +2159,18 @@
       "token": "0x434C832E6352bF0cFEaDab8E86361a83E6D572E2",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-29 10:02:47 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "HUNCH",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x444bed168c076f92878787d3e0a1a3577054b427ad5093bc53cf9f1503c98c2e",
-      "open_tx": "0x444bed168c076f92878787d3e0a1a3577054b427ad5093bc53cf9f1503c98c2e",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-342",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0x2DEf84085B8AC0758945A38A57c760D05C29bF13",
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2680.92,
+  "mark": 2679.73,
   "mark_src": "coinbase",
-  "mark_eth": 2680.92,
-  "mark_btc": 84656.59,
+  "mark_eth": 2679.73,
+  "mark_btc": 84622.38,
   "mark_btc_src": "coinbase",
-  "mark_link": 13.929,
+  "mark_link": 13.953,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2680.92,
-    "BTC": 84656.59,
-    "LINK": 13.929
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": true,
-    "flat": false,
-    "ticker": "POOPYBOT",
-    "tx": "0x020cd1c1c47dbc25e135915c60cc58613e8abf463a39c7a55a3e776c0e816390",
-    "size_usd": 3.9388,
-    "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-423",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
-  },
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
+    "ETH": 2679.73,
+    "BTC": 84622.38,
+    "LINK": 13.953
   }
 }
