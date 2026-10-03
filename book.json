@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-10-03 02:14:59 ET",
-  "liquid_usd": 63.9794,
+  "updated_et": "2026-10-03 02:15:05 ET",
+  "liquid_usd": 63.9759,
   "upnl_usd": 0.0,
-  "equity_usd": 63.9794,
-  "status": "EXITING:POST_FILL_FLAT_-22.3444",
+  "equity_usd": 63.9759,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.003188815352985697,
+    "rh_eth": 0.003187497068287697,
     "rh_weth": 0.01931727924268084,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
@@ -19,7 +19,7 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.003188815352985697,
+      "eth": 0.003187497068287697,
       "weth": 0.01931727924268084
     }
   },
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM PUDU uPnL $-0.7528 (-22.3444%) \u00b7 held 12s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 02:14:56 ET \u00b7 CUT POST_FILL_FLAT_-22.3444",
+  "notes": "LIVE EXIT PUDU \u00b7 POST_FILL_FLAT_-22.3444 \u00b7 tx None \u00b7 2026-10-03 02:15:04 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -726,12 +726,19 @@
       "liquid_usd": 63.9794,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 02:15:05 ET",
+      "equity_usd": 66.67,
+      "liquid_usd": 63.9759,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.8623 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -226.6506,
-  "total_pnl_pct": -77.986,
+  "total_pnl_usd": -226.6541,
+  "total_pnl_pct": -77.9872,
   "trades": [
     {
       "t": "2026-10-03 01:23:03 ET",
@@ -2190,13 +2197,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x2ee84cb8a3f6f530b1a4f6a5221f4d38d19c659f25ed06e2e2c2b39c7c279230",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 11,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "POST_FILL_FLAT_-22.3444",
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
