@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 09:32:36 ET",
+  "updated_et": "2026-10-03 09:34:39 ET",
   "liquid_usd": 52.604,
   "upnl_usd": 0,
   "equity_usd": 52.604,
-  "status": "FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -38,9 +38,29 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-03 09:32:54 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-442",
+      "market": "GLASS",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0x0a1659ae9fc1a4bc6bfcf3782a02e25cda1aae4c64003167acbec2f2d37af3c3",
+      "token": "0x50C4039c743d93b52a5326d47b30Ac22cE77b25a",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-442",
+    "market": "GLASS",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0x0a1659ae9fc1a4bc6bfcf3782a02e25cda1aae4c64003167acbec2f2d37af3c3",
+    "token": "0x50C4039c743d93b52a5326d47b30Ac22cE77b25a",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-10-03 03:37:05 ET",
@@ -716,7 +736,7 @@
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-49.1304 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -238.026,
   "total_pnl_pct": -81.9,
   "trades": [
@@ -726,14 +746,14 @@
       "venue": "RH",
       "market": "DEXTER",
       "side": "LONG",
-      "size_usd": 3.0,
+      "size_usd": null,
       "pnl_usd": 0.0,
       "tx": "0x90f85c8dd1df31b903cea5223e7910066a93dbc9ca6ac47c717e1638ac5ccd8c",
       "open_tx": "0x90f85c8dd1df31b903cea5223e7910066a93dbc9ca6ac47c717e1638ac5ccd8c",
       "exit_tx": null,
       "id": "LIVE-SCALP-441",
       "reason": "FLAT",
-      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
       "token": "0x3C24EeCe4081b132eDbe69d6261471047d7bC3af",
       "paper": false,
       "live": true
@@ -2172,5 +2192,27 @@
     "ETH": 2678.31,
     "BTC": 84798.62,
     "LINK": 13.862
+  },
+  "mode": "LIVE",
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "GLASS",
+    "tx": "0x0a1659ae9fc1a4bc6bfcf3782a02e25cda1aae4c64003167acbec2f2d37af3c3",
+    "size_usd": 3.0,
+    "max_loss_usd": 2.0,
+    "id": "LIVE-SCALP-442",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "strategy": {
+    "lane": "RH_LIVE_SCALP",
+    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
+  },
+  "realized_pnl_usd": -49.1304,
+  "paper": {
+    "active": false,
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
