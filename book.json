@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 03:49:13 ET",
-  "liquid_usd": 65.3609,
+  "updated_et": "2026-10-03 03:57:24 ET",
+  "liquid_usd": 62.1091,
   "upnl_usd": 0,
-  "equity_usd": 65.3609,
-  "status": "LIVE_OPEN",
+  "equity_usd": 62.1091,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -11,7 +11,7 @@
     "base_eth": 0.0,
     "base_usdc": 0.0,
     "l1_eth": 0.00140706,
-    "rh_eth": 0.0215224,
+    "rh_eth": 0.02029977,
     "rh_weth": 0.00144703
   },
   "holdings": {
@@ -27,7 +27,7 @@
       "usdc": 0.0
     },
     "RH": {
-      "eth": 0.0215224,
+      "eth": 0.02029977,
       "weth": 0.00144703
     }
   },
@@ -39,36 +39,9 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-432",
-      "market": "SPARE",
-      "side": "LONG",
-      "size_usd": 3.268,
-      "tx": "0x2b540cbfe5febf294e27dfd0229a820ba73d1877c4fed380671d990b0f33fa20",
-      "token": "0x341D8769005Ef2F8b60f66e9c05719969672B2e0",
-      "paper": false,
-      "uPnL": 0.0
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-432",
-    "market": "SPARE",
-    "side": "LONG",
-    "size_usd": 3.268,
-    "tx": "0x2b540cbfe5febf294e27dfd0229a820ba73d1877c4fed380671d990b0f33fa20",
-    "token": "0x341D8769005Ef2F8b60f66e9c05719969672B2e0",
-    "paper": false,
-    "uPnL": 0.0
-  },
+  "positions": [],
+  "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-02 21:19:36 ET",
-      "equity_usd": 85.3472,
-      "liquid_usd": 81.0827,
-      "upnl_usd": -0.0033,
-      "n_pos": 1
-    },
     {
       "t": "2026-10-02 21:19:42 ET",
       "equity_usd": 86.7762,
@@ -733,13 +706,38 @@
       "liquid_usd": 65.3609,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 03:57:24 ET",
+      "equity_usd": 62.1091,
+      "liquid_usd": 62.1091,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -225.2691,
-  "total_pnl_pct": -77.51,
+  "total_pnl_usd": -228.5209,
+  "total_pnl_pct": -78.63,
   "trades": [
+    {
+      "t": "2026-10-03 03:49:18 ET",
+      "kind": "FLAT",
+      "venue": "RH",
+      "market": "SPARE",
+      "side": "LONG",
+      "size_usd": null,
+      "pnl_usd": 0.0,
+      "tx": "0x2b540cbfe5febf294e27dfd0229a820ba73d1877c4fed380671d990b0f33fa20",
+      "open_tx": "0x2b540cbfe5febf294e27dfd0229a820ba73d1877c4fed380671d990b0f33fa20",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-432",
+      "reason": "FLAT",
+      "note": "continuous LIVE \u00b7 caps $3.268/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
+      "token": "0x341D8769005Ef2F8b60f66e9c05719969672B2e0",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-03 03:34:21 ET",
       "kind": "SL",
@@ -2161,53 +2159,18 @@
       "token": "0x5E42D056C4d4E7E7b701542d60Dff0d2B2Bff26b",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-30 09:39:31 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "TIT",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x5c690a2a4b068fb090da4761b33fb38d8d3ed90b0e0509aed55c1b4f582f77fa",
-      "open_tx": "0x5c690a2a4b068fb090da4761b33fb38d8d3ed90b0e0509aed55c1b4f582f77fa",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-351",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0xb550dC511d70F9F65b68449EB00c53bB1d5b0472",
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2681.31,
+  "mark": 2682.45,
   "mark_src": "coinbase",
-  "mark_eth": 2681.31,
-  "mark_btc": 84577.2,
+  "mark_eth": 2682.45,
+  "mark_btc": 84582.21,
   "mark_btc_src": "coinbase",
   "mark_link": 13.976,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2681.31,
-    "BTC": 84577.2,
+    "ETH": 2682.45,
+    "BTC": 84582.21,
     "LINK": 13.976
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": true,
-    "flat": false,
-    "ticker": "SPARE",
-    "tx": "0x2b540cbfe5febf294e27dfd0229a820ba73d1877c4fed380671d990b0f33fa20",
-    "size_usd": 3.268,
-    "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-432",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
-  },
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
