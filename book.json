@@ -1,26 +1,34 @@
 {
-  "updated_et": "2026-10-03 03:34:22 ET",
-  "liquid_usd": 65.3665,
-  "upnl_usd": 0.0,
-  "equity_usd": 65.3665,
-  "status": "EXITED",
+  "updated_et": "2026-10-03 03:37:05 ET",
+  "liquid_usd": 65.386,
+  "upnl_usd": 0,
+  "equity_usd": 65.386,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
-    "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.021522401297643913,
-    "rh_weth": 0.001447031900230458,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0
+    "base_usdc": 0.0,
+    "l1_eth": 0.00140706,
+    "rh_eth": 0.0215224,
+    "rh_weth": 0.00144703
   },
   "holdings": {
     "L1": {
-      "eth": 0.001407059032801532
+      "eth": 0.00140706
+    },
+    "Arb": {
+      "eth": 0.0,
+      "usdc": 0.0
+    },
+    "Base": {
+      "eth": 0.0,
+      "usdc": 0.0
     },
     "RH": {
-      "eth": 0.021522401297643913,
-      "weth": 0.001447031900230458
+      "eth": 0.0215224,
+      "weth": 0.00144703
     }
   },
   "wallet_urls": {
@@ -30,94 +38,10 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT XLIFE \u00b7 HARD_SL_PCT_-8.563 \u00b7 tx 0xc994263f0acade5b3d59db6f1646c82fc1a239541e9bfcf3a5a3fef1d1343f78 \u00b7 2026-10-03 03:34:21 ET",
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
   "positions": [],
   "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-02 20:33:01 ET",
-      "equity_usd": 85.2306,
-      "liquid_usd": 80.7188,
-      "upnl_usd": 0.2653,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-10-02 20:33:03 ET",
-      "equity_usd": 85.2306,
-      "liquid_usd": 80.7188,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-02 20:33:05 ET",
-      "equity_usd": 85.2341,
-      "liquid_usd": 80.7221,
-      "upnl_usd": 0.2655,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-10-02 20:33:07 ET",
-      "equity_usd": 85.2341,
-      "liquid_usd": 80.7221,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-02 20:33:10 ET",
-      "equity_usd": 85.2341,
-      "liquid_usd": 80.7149,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-02 20:33:15 ET",
-      "equity_usd": 85.2144,
-      "liquid_usd": 85.2144,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-02 20:40:38 ET",
-      "equity_usd": 85.2011,
-      "liquid_usd": 85.2011,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-02 20:50:47 ET",
-      "equity_usd": 85.3018,
-      "liquid_usd": 85.3018,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-02 21:00:56 ET",
-      "equity_usd": 85.2485,
-      "liquid_usd": 85.2485,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-02 21:11:05 ET",
-      "equity_usd": 85.3566,
-      "liquid_usd": 85.3566,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-02 21:19:21 ET",
-      "equity_usd": 85.3611,
-      "liquid_usd": 81.0942,
-      "upnl_usd": -0.0009,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-10-02 21:19:27 ET",
-      "equity_usd": 85.3574,
-      "liquid_usd": 81.0906,
-      "upnl_usd": -0.001,
-      "n_pos": 1
-    },
     {
       "t": "2026-10-02 21:19:29 ET",
       "equity_usd": 85.3405,
@@ -782,12 +706,19 @@
       "liquid_usd": 65.3665,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 03:37:05 ET",
+      "equity_usd": 65.386,
+      "liquid_usd": 65.386,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.799 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -225.2635,
-  "total_pnl_pct": -77.5087,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -225.244,
+  "total_pnl_pct": -77.5,
   "trades": [
     {
       "t": "2026-10-03 03:34:21 ET",
@@ -795,14 +726,14 @@
       "venue": "RH",
       "market": "XLIFE",
       "side": "LONG",
-      "size_usd": 3.2345,
+      "size_usd": null,
       "pnl_usd": -0.3793,
       "tx": "0xc994263f0acade5b3d59db6f1646c82fc1a239541e9bfcf3a5a3fef1d1343f78",
       "open_tx": "0x242c8fa677c4a537516350321e8181e2e7e2ae0b8ea53beda75c60b365f04949",
       "exit_tx": "0xc994263f0acade5b3d59db6f1646c82fc1a239541e9bfcf3a5a3fef1d1343f78",
       "id": "LIVE-SCALP-431",
       "reason": "HARD_SL_PCT_-8.563",
-      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "note": "continuous LIVE \u00b7 caps $3.2345/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=HARD_SL_PCT_-8.563 pnl=-0.3793",
       "token": "0x82A504616066Feca3183253BC3115A636FcF32e6",
       "paper": false,
       "live": true
@@ -2230,33 +2161,16 @@
       "live": true
     }
   ],
-  "mark": 2681.54,
+  "mark": 2682.34,
   "mark_src": "coinbase",
-  "mark_eth": 2681.54,
-  "mark_btc": 84599.99,
+  "mark_eth": 2682.34,
+  "mark_btc": 84631.66,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.012,
+  "mark_link": 14.005,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2681.54,
-    "BTC": 84599.99,
-    "LINK": 14.012
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0xc994263f0acade5b3d59db6f1646c82fc1a239541e9bfcf3a5a3fef1d1343f78",
-    "last_exit_reason": "HARD_SL_PCT_-8.563",
-    "last_exit_upnl": -0.3793
-  },
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
-  },
-  "strategy": {
-    "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
-  },
-  "realized_pnl_usd": -48.799
+    "ETH": 2682.34,
+    "BTC": 84631.66,
+    "LINK": 14.005
+  }
 }
