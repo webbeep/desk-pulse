@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 08:38:36 ET",
+  "updated_et": "2026-10-03 08:38:38 ET",
   "liquid_usd": 56.6945,
   "upnl_usd": 0.0,
   "equity_usd": 56.6945,
-  "status": "EXITED",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT CLTR \u00b7 TP_V7_+4.5 \u00b7 tx 0xa2c319eda8aa19c7297dd05a98fda91c0d8f22dedc64e803a8df10c655244ce3 \u00b7 2026-10-03 08:38:36 ET",
+  "notes": "LIVE EXIT CLTR \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-10-03 08:38:38 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -887,6 +887,13 @@
       "liquid_usd": 56.6945,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 08:38:38 ET",
+      "equity_usd": 56.6945,
+      "liquid_usd": 56.6945,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
@@ -896,17 +903,17 @@
   "trades": [
     {
       "t": "2026-10-03 08:38:35 ET",
-      "kind": "TP",
+      "kind": "LIVE",
       "venue": "RH",
       "market": "CLTR",
       "side": "LONG",
       "size_usd": 3.0,
-      "pnl_usd": 0.4132,
+      "pnl_usd": 0.4331,
       "tx": "0xa2c319eda8aa19c7297dd05a98fda91c0d8f22dedc64e803a8df10c655244ce3",
       "open_tx": "0x33553727ec62d159a2d2cd53d43c8c4036b45a7319605679d05b7749782f92dd",
       "exit_tx": "0xa2c319eda8aa19c7297dd05a98fda91c0d8f22dedc64e803a8df10c655244ce3",
       "id": "LIVE-SCALP-437",
-      "reason": "TP_V7_+4.5",
+      "reason": "EXITED",
       "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
       "token": "0x45f08b771CDebE921cc3986DFeD02fD109Ad6bF0",
       "paper": false,
@@ -2351,9 +2358,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0xa2c319eda8aa19c7297dd05a98fda91c0d8f22dedc64e803a8df10c655244ce3",
+    "last_exit_tx": null,
     "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": 0.4132
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
