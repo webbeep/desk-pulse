@@ -3,7 +3,7 @@
   "liquid_usd": 82.7255,
   "upnl_usd": 0.0,
   "equity_usd": 82.7255,
-  "status": "EXITING:TP_V7_+4.5",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM ORANGE uPnL $0.204 (4.7793%) \u00b7 held 2239s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 21:56:36 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT ORANGE \u00b7 TIME_FLAT_120s \u00b7 tx 0x0035214d9a3c268d6c22ffdecc937e1df0e48c109e2f4252e0d1951a77808e39 \u00b7 2026-10-02 21:56:42 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -2197,13 +2197,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x8f7b5e7fc6a5bb161079361fa1cc79cbc1585c9c4060f3104133c8458e167b26",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 2238,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x0035214d9a3c268d6c22ffdecc937e1df0e48c109e2f4252e0d1951a77808e39",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": 0.3501
   },
   "paper": {
     "active": false,
