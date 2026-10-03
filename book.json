@@ -1,34 +1,26 @@
 {
-  "updated_et": "2026-10-02 23:22:53 ET",
-  "liquid_usd": 74.6792,
-  "upnl_usd": 0,
-  "equity_usd": 74.6792,
+  "updated_et": "2026-10-02 23:22:57 ET",
+  "liquid_usd": 71.0158,
+  "upnl_usd": -0.6088,
+  "equity_usd": 74.7491,
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
+    "l1_eth": 0.001407059032801532,
+    "rh_eth": 0.005786651626700626,
+    "rh_weth": 0.01931727924268084,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "l1_eth": 0.00140706,
-    "rh_eth": 0.00718507,
-    "rh_weth": 0.01931728
+    "base_usdc": 0.0
   },
   "holdings": {
     "L1": {
-      "eth": 0.00140706
-    },
-    "Arb": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "Base": {
-      "eth": 0.0,
-      "usdc": 0.0
+      "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.00718507,
-      "weth": 0.01931728
+      "eth": 0.005786651626700626,
+      "weth": 0.01931727924268084
     }
   },
   "wallet_urls": {
@@ -38,28 +30,42 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "notes": "LIVE MTM POOPYBOT uPnL $-0.6088 (-14.0219%) \u00b7 held 5546s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 23:22:56 ET",
   "positions": [
     {
-      "id": "LIVE-SCALP-424",
+      "id": "LIVE-SCALP-2",
       "market": "POOPYBOT",
       "side": "LONG",
-      "size_usd": 3.734,
-      "tx": "0x176c10e240b8912ddd6a24020d44b0bd0d02021291e2986f73c3c59edf790811",
-      "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
+      "size_usd": 4.3421,
+      "entry": 5.8066661919543614e-05,
+      "mark": 4.992458893917059e-05,
+      "uPnL": -0.6088,
+      "mtm_pct": -14.0219,
+      "lev": 1,
       "paper": false,
-      "uPnL": 0.0
+      "tx": "0x6f37e2c3d16a9fa48610b37706f5ece2e1ab0abbc1d77c060ff9bea6254fa12b",
+      "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
+      "held_sec": 5545,
+      "weth_out": 0.001393665396257587,
+      "usd_out": 3.733253
     }
   ],
   "position": {
-    "id": "LIVE-SCALP-424",
+    "id": "LIVE-SCALP-2",
     "market": "POOPYBOT",
     "side": "LONG",
-    "size_usd": 3.734,
-    "tx": "0x176c10e240b8912ddd6a24020d44b0bd0d02021291e2986f73c3c59edf790811",
-    "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
+    "size_usd": 4.3421,
+    "entry": 5.8066661919543614e-05,
+    "mark": 4.992458893917059e-05,
+    "uPnL": -0.6088,
+    "mtm_pct": -14.0219,
+    "lev": 1,
     "paper": false,
-    "uPnL": 0.0
+    "tx": "0x6f37e2c3d16a9fa48610b37706f5ece2e1ab0abbc1d77c060ff9bea6254fa12b",
+    "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
+    "held_sec": 5545,
+    "weth_out": 0.001393665396257587,
+    "usd_out": 3.733253
   },
   "pnl_history": [
     {
@@ -733,12 +739,19 @@
       "liquid_usd": 74.6792,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 23:22:57 ET",
+      "equity_usd": 74.7491,
+      "liquid_usd": 71.0158,
+      "upnl_usd": -0.6088,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -215.9508,
-  "total_pnl_pct": -74.3,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.8623 \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -215.8809,
+  "total_pnl_pct": -74.2803,
   "trades": [
     {
       "t": "2026-10-02 22:52:10 ET",
@@ -2181,33 +2194,37 @@
       "live": true
     }
   ],
-  "mark": 2675.77,
+  "mark": 2678.73,
   "mark_src": "coinbase",
-  "mark_eth": 2675.77,
+  "mark_eth": 2678.73,
   "mark_btc": 84512.98,
   "mark_btc_src": "coinbase",
   "mark_link": 13.921,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2675.77,
+    "ETH": 2678.73,
     "BTC": 84512.98,
     "LINK": 13.921
   },
   "mode": "LIVE",
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "POOPYBOT",
-    "tx": "0x176c10e240b8912ddd6a24020d44b0bd0d02021291e2986f73c3c59edf790811",
-    "size_usd": 3.734,
+    "tx": "0x6f37e2c3d16a9fa48610b37706f5ece2e1ab0abbc1d77c060ff9bea6254fa12b",
+    "size_usd": 4.3421,
     "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-424",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -14.0219,
+    "upnl_usd": -0.6088,
+    "held_sec": 5545,
+    "watcher": "rh_live_mtm_loop"
   },
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
-  }
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+  },
+  "strategy": {
+    "lane": "RH_LIVE_SCALP",
+    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
+  },
+  "realized_pnl_usd": -48.8623
 }
