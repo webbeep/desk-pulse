@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 02:15:18 ET",
+  "updated_et": "2026-10-03 02:15:19 ET",
   "liquid_usd": 63.9611,
   "upnl_usd": 0.0,
   "equity_usd": 63.9611,
-  "status": "EXITING:HARD_SL_PCT_-36.7831",
+  "status": "EXITING:HARD_SL_PCT_-27.6158",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM PUDU uPnL $-1.2393 (-36.7831%) \u00b7 held 30s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 02:15:15 ET \u00b7 CUT HARD_SL_PCT_-36.7831",
+  "notes": "LIVE MTM PUDU uPnL $-0.9305 (-27.6158%) \u00b7 held 31s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 02:15:16 ET \u00b7 CUT HARD_SL_PCT_-27.6158",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -757,6 +757,13 @@
     },
     {
       "t": "2026-10-03 02:15:18 ET",
+      "equity_usd": 66.3999,
+      "liquid_usd": 63.9611,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 02:15:19 ET",
       "equity_usd": 66.3999,
       "liquid_usd": 63.9611,
       "upnl_usd": 0,
@@ -2230,7 +2237,7 @@
     "max_loss_usd": 2.0,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 30,
+    "held_sec": 31,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
