@@ -1,34 +1,26 @@
 {
-  "updated_et": "2026-10-03 09:32:05 ET",
-  "liquid_usd": 52.9865,
-  "upnl_usd": 0,
-  "equity_usd": 52.9865,
+  "updated_et": "2026-10-03 09:32:11 ET",
+  "liquid_usd": 49.9921,
+  "upnl_usd": -0.3907,
+  "equity_usd": 52.6014,
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
+    "l1_eth": 0.001407059032801532,
+    "rh_eth": 0.010096554370368865,
+    "rh_weth": 0.007161924683892407,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "l1_eth": 0.00140706,
-    "rh_eth": 0.01122032,
-    "rh_weth": 0.00716192
+    "base_usdc": 0.0
   },
   "holdings": {
     "L1": {
-      "eth": 0.00140706
-    },
-    "Arb": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "Base": {
-      "eth": 0.0,
-      "usdc": 0.0
+      "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.01122032,
-      "weth": 0.00716192
+      "eth": 0.010096554370368865,
+      "weth": 0.007161924683892407
     }
   },
   "wallet_urls": {
@@ -38,28 +30,42 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "notes": "LIVE MTM DEXTER uPnL $-0.3907 (-13.025%) \u00b7 held 4330s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 09:32:11 ET",
   "positions": [
     {
-      "id": "LIVE-SCALP-441",
+      "id": "LIVE-SCALP-2",
       "market": "DEXTER",
       "side": "LONG",
       "size_usd": 3.0,
-      "tx": "0x90f85c8dd1df31b903cea5223e7910066a93dbc9ca6ac47c717e1638ac5ccd8c",
-      "token": "0x3C24EeCe4081b132eDbe69d6261471047d7bC3af",
+      "entry": 0.00048299856235984993,
+      "mark": 0.0004200882371523927,
+      "uPnL": -0.3907,
+      "mtm_pct": -13.025,
+      "lev": 1,
       "paper": false,
-      "uPnL": 0.0
+      "tx": "0xb50f5f68813a12836a8a7ef1292912252802215d0daee3c904489c45ee95b43f",
+      "token": "0x3C24EeCe4081b132eDbe69d6261471047d7bC3af",
+      "held_sec": 4330,
+      "weth_out": 0.000974215634264734,
+      "usd_out": 2.609251
     }
   ],
   "position": {
-    "id": "LIVE-SCALP-441",
+    "id": "LIVE-SCALP-2",
     "market": "DEXTER",
     "side": "LONG",
     "size_usd": 3.0,
-    "tx": "0x90f85c8dd1df31b903cea5223e7910066a93dbc9ca6ac47c717e1638ac5ccd8c",
-    "token": "0x3C24EeCe4081b132eDbe69d6261471047d7bC3af",
+    "entry": 0.00048299856235984993,
+    "mark": 0.0004200882371523927,
+    "uPnL": -0.3907,
+    "mtm_pct": -13.025,
+    "lev": 1,
     "paper": false,
-    "uPnL": 0.0
+    "tx": "0xb50f5f68813a12836a8a7ef1292912252802215d0daee3c904489c45ee95b43f",
+    "token": "0x3C24EeCe4081b132eDbe69d6261471047d7bC3af",
+    "held_sec": 4330,
+    "weth_out": 0.000974215634264734,
+    "usd_out": 2.609251
   },
   "pnl_history": [
     {
@@ -733,12 +739,19 @@
       "liquid_usd": 52.9865,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 09:32:11 ET",
+      "equity_usd": 52.6014,
+      "liquid_usd": 49.9921,
+      "upnl_usd": -0.3907,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -237.6435,
-  "total_pnl_pct": -81.77,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-49.1304 \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -238.0286,
+  "total_pnl_pct": -81.9009,
   "trades": [
     {
       "t": "2026-10-03 09:07:29 ET",
@@ -2181,33 +2194,37 @@
       "live": true
     }
   ],
-  "mark": 2677.53,
+  "mark": 2678.31,
   "mark_src": "coinbase",
-  "mark_eth": 2677.53,
+  "mark_eth": 2678.31,
   "mark_btc": 84778.14,
   "mark_btc_src": "coinbase",
   "mark_link": 13.86,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2677.53,
+    "ETH": 2678.31,
     "BTC": 84778.14,
     "LINK": 13.86
   },
   "mode": "LIVE",
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "DEXTER",
-    "tx": "0x90f85c8dd1df31b903cea5223e7910066a93dbc9ca6ac47c717e1638ac5ccd8c",
+    "tx": "0xb50f5f68813a12836a8a7ef1292912252802215d0daee3c904489c45ee95b43f",
     "size_usd": 3.0,
     "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-441",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -13.025,
+    "upnl_usd": -0.3907,
+    "held_sec": 4330,
+    "watcher": "rh_live_mtm_loop"
   },
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
-  }
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+  },
+  "strategy": {
+    "lane": "RH_LIVE_SCALP",
+    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
+  },
+  "realized_pnl_usd": -49.1304
 }
