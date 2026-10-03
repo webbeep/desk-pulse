@@ -1,9 +1,9 @@
 {
   "updated_et": "2026-10-03 02:14:57 ET",
   "liquid_usd": 63.9794,
-  "upnl_usd": -0.7528,
-  "equity_usd": 66.5959,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 63.9794,
+  "status": "EXITING:POST_FILL_FLAT_-20.144",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM PUDU uPnL $-0.7528 (-22.3444%) \u00b7 held 12s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 02:14:56 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "PUDU",
-      "side": "LONG",
-      "size_usd": 3.3693,
-      "entry": 5.7305890052361736e-05,
-      "mark": 4.450125776435376e-05,
-      "uPnL": -0.7528,
-      "mtm_pct": -22.3444,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x2ee84cb8a3f6f530b1a4f6a5221f4d38d19c659f25ed06e2e2c2b39c7c279230",
-      "token": "0xb374B63C01e66713124c822A27d3c3a2676d321C",
-      "held_sec": 11,
-      "weth_out": 0.00097793361260761,
-      "usd_out": 2.616452
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "PUDU",
-    "side": "LONG",
-    "size_usd": 3.3693,
-    "entry": 5.7305890052361736e-05,
-    "mark": 4.450125776435376e-05,
-    "uPnL": -0.7528,
-    "mtm_pct": -22.3444,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x2ee84cb8a3f6f530b1a4f6a5221f4d38d19c659f25ed06e2e2c2b39c7c279230",
-    "token": "0xb374B63C01e66713124c822A27d3c3a2676d321C",
-    "held_sec": 11,
-    "weth_out": 0.00097793361260761,
-    "usd_out": 2.616452
-  },
+  "notes": "LIVE MTM PUDU uPnL $-0.6787 (-20.144%) \u00b7 held 10s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 02:14:54 ET \u00b7 CUT POST_FILL_FLAT_-20.144",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-10-02 19:09:43 ET",
@@ -749,16 +715,16 @@
     },
     {
       "t": "2026-10-03 02:14:57 ET",
-      "equity_usd": 66.5959,
+      "equity_usd": 66.67,
       "liquid_usd": 63.9794,
-      "upnl_usd": -0.7528,
-      "n_pos": 1
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.8623 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -224.0341,
-  "total_pnl_pct": -77.0857,
+  "total_pnl_usd": -226.6506,
+  "total_pnl_pct": -77.986,
   "trades": [
     {
       "t": "2026-10-03 01:23:03 ET",
@@ -2215,14 +2181,14 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "PUDU",
+    "open": false,
+    "ticker": null,
     "tx": "0x2ee84cb8a3f6f530b1a4f6a5221f4d38d19c659f25ed06e2e2c2b39c7c279230",
-    "size_usd": 3.3693,
+    "size_usd": 0,
     "max_loss_usd": 2.0,
-    "mtm_pct": -22.3444,
-    "upnl_usd": -0.7528,
-    "held_sec": 11,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 9,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
