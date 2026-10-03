@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 16:09:54 ET",
-  "liquid_usd": 50.5439,
-  "upnl_usd": 0.0,
-  "equity_usd": 50.5439,
-  "status": "EXITING:TIME_FLAT_120s",
+  "updated_et": "2026-10-03 16:10:16 ET",
+  "liquid_usd": 50.5437,
+  "upnl_usd": -0.0254,
+  "equity_usd": 53.5183,
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,43 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SDOG uPnL $-0.03 (-0.9992%) \u00b7 held 15034s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 16:09:38 ET \u00b7 CUT TIME_FLAT_120s",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE MTM SDOG uPnL $-0.0254 (-0.8459%) \u00b7 held 15066s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 16:10:10 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "SDOG",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "entry": 0.0001919033999178306,
+      "mark": 0.00019028004176537282,
+      "uPnL": -0.0254,
+      "mtm_pct": -0.8459,
+      "lev": 1,
+      "paper": false,
+      "tx": "0x5d2610a78206c1f0086739f6a6b21e31247fcf83767466b07d80d3ff729dcf33",
+      "token": "0x614B60a3d6bC8f5a74b93F4E158A646132Bb8Ae6",
+      "held_sec": 15065,
+      "weth_out": 0.001107033911426745,
+      "usd_out": 2.974622
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "SDOG",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "entry": 0.0001919033999178306,
+    "mark": 0.00019028004176537282,
+    "uPnL": -0.0254,
+    "mtm_pct": -0.8459,
+    "lev": 1,
+    "paper": false,
+    "tx": "0x5d2610a78206c1f0086739f6a6b21e31247fcf83767466b07d80d3ff729dcf33",
+    "token": "0x614B60a3d6bC8f5a74b93F4E158A646132Bb8Ae6",
+    "held_sec": 15065,
+    "weth_out": 0.001107033911426745,
+    "usd_out": 2.974622
+  },
   "pnl_history": [
     {
       "t": "2026-10-03 11:20:50 ET",
@@ -719,12 +753,19 @@
       "liquid_usd": 50.5439,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 16:10:16 ET",
+      "equity_usd": 53.5183,
+      "liquid_usd": 50.5437,
+      "upnl_usd": -0.0254,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.3757 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -240.0861,
-  "total_pnl_pct": -82.6088,
+  "total_pnl_usd": -237.1117,
+  "total_pnl_pct": -81.5854,
   "trades": [
     {
       "t": "2026-10-03 14:38:03 ET",
@@ -2167,28 +2208,28 @@
       "live": true
     }
   ],
-  "mark": 2687.03,
+  "mark": 2687.02,
   "mark_src": "coinbase",
-  "mark_eth": 2687.03,
+  "mark_eth": 2687.02,
   "mark_btc": 84841.56,
   "mark_btc_src": "coinbase",
   "mark_link": 13.984,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2687.03,
+    "ETH": 2687.02,
     "BTC": 84841.56,
     "LINK": 13.984
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
+    "open": true,
+    "ticker": "SDOG",
     "tx": "0x5d2610a78206c1f0086739f6a6b21e31247fcf83767466b07d80d3ff729dcf33",
-    "size_usd": 0,
+    "size_usd": 3.0,
     "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 15033,
+    "mtm_pct": -0.8459,
+    "upnl_usd": -0.0254,
+    "held_sec": 15065,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
