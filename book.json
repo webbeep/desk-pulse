@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-03 08:55:36 ET",
-  "liquid_usd": 53.0286,
+  "updated_et": "2026-10-03 08:55:38 ET",
+  "liquid_usd": 56.1,
   "upnl_usd": 0.0,
-  "equity_usd": 53.0286,
-  "status": "EXIT_None",
+  "equity_usd": 56.1,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.01234569216625088,
-    "rh_weth": 0.006013469620016732,
+    "rh_eth": 0.01234285902903488,
+    "rh_weth": 0.007161924683892407,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.01234569216625088,
-      "weth": 0.006013469620016732
+      "eth": 0.01234285902903488,
+      "weth": 0.007161924683892407
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT DEXTER \u00b7 TIME_MAX_180s \u00b7 tx None \u00b7 2026-10-03 08:55:36 ET",
+  "notes": "LIVE EXIT DEXTER \u00b7 TIME_MAX_180s \u00b7 tx 0xfc1fa3dbe4042d246a2ca8361aa200a4382a004d4038344b0705d88285b807c3 \u00b7 2026-10-03 08:55:37 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -817,12 +817,19 @@
       "liquid_usd": 53.0286,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 08:55:38 ET",
+      "equity_usd": 56.1,
+      "liquid_usd": 56.1,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-49.1304 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -237.6014,
-  "total_pnl_pct": -81.7539,
+  "total_pnl_usd": -234.53,
+  "total_pnl_pct": -80.6971,
   "trades": [
     {
       "t": "2026-10-03 08:53:25 ET",
@@ -2265,15 +2272,15 @@
       "live": true
     }
   ],
-  "mark": 2682.79,
+  "mark": 2682.69,
   "mark_src": "coinbase",
-  "mark_eth": 2682.79,
+  "mark_eth": 2682.69,
   "mark_btc": 84818.99,
   "mark_btc_src": "coinbase",
   "mark_link": 13.841,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2682.79,
+    "ETH": 2682.69,
     "BTC": 84818.99,
     "LINK": 13.841
   },
@@ -2281,9 +2288,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
+    "last_exit_tx": "0xfc1fa3dbe4042d246a2ca8361aa200a4382a004d4038344b0705d88285b807c3",
     "last_exit_reason": "TIME_MAX_180s",
-    "last_exit_upnl": null
+    "last_exit_upnl": 0.0811
   },
   "paper": {
     "active": false,
