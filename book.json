@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-10-03 02:15:05 ET",
-  "liquid_usd": 63.9759,
+  "updated_et": "2026-10-03 02:15:06 ET",
+  "liquid_usd": 63.9673,
   "upnl_usd": 0.0,
-  "equity_usd": 63.9759,
-  "status": "EXIT_None",
+  "equity_usd": 63.9673,
+  "status": "EXIT_EXIT_FAIL",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.003187497068287697,
+    "rh_eth": 0.003184290346549697,
     "rh_weth": 0.01931727924268084,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
@@ -19,7 +19,7 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.003187497068287697,
+      "eth": 0.003184290346549697,
       "weth": 0.01931727924268084
     }
   },
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT PUDU \u00b7 POST_FILL_FLAT_-22.3444 \u00b7 tx None \u00b7 2026-10-03 02:15:04 ET",
+  "notes": "LIVE EXIT PUDU \u00b7 POST_FILL_FLAT_-20.144 \u00b7 tx 0x1c5437fb1337057310debc7db48a4d094d477befd70dce3f1cc9961644aa2511 \u00b7 2026-10-03 02:15:05 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -733,12 +733,19 @@
       "liquid_usd": 63.9759,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 02:15:06 ET",
+      "equity_usd": 66.67,
+      "liquid_usd": 63.9673,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.8623 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -226.6541,
-  "total_pnl_pct": -77.9872,
+  "total_pnl_usd": -226.6627,
+  "total_pnl_pct": -77.9901,
   "trades": [
     {
       "t": "2026-10-03 01:23:03 ET",
@@ -2197,9 +2204,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "POST_FILL_FLAT_-22.3444",
-    "last_exit_upnl": null
+    "last_exit_tx": "0x1c5437fb1337057310debc7db48a4d094d477befd70dce3f1cc9961644aa2511",
+    "last_exit_reason": "POST_FILL_FLAT_-20.144",
+    "last_exit_upnl": -0.8534
   },
   "paper": {
     "active": false,
