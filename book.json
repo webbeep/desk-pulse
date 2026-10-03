@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-03 10:03:50 ET",
-  "liquid_usd": 49.9217,
+  "updated_et": "2026-10-03 10:03:54 ET",
+  "liquid_usd": 52.9033,
   "upnl_usd": 0.0,
-  "equity_usd": 49.9217,
-  "status": "EXITING:TIME_FLAT_120s",
+  "equity_usd": 52.9033,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.006715601767802467,
-    "rh_weth": 0.010506794396425528,
+    "rh_eth": 0.006712795496216467,
+    "rh_weth": 0.011622244908126167,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.006715601767802467,
-      "weth": 0.010506794396425528
+      "eth": 0.006712795496216467,
+      "weth": 0.011622244908126167
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM DEXTER uPnL $-0.0109 (-0.3635%) \u00b7 held 6226s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 10:03:47 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT DEXTER \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-10-03 10:03:54 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -733,12 +733,19 @@
       "liquid_usd": 49.9217,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 10:03:54 ET",
+      "equity_usd": 52.9033,
+      "liquid_usd": 52.9033,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.9737 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -240.7083,
-  "total_pnl_pct": -82.8229,
+  "total_pnl_usd": -237.7267,
+  "total_pnl_pct": -81.797,
   "trades": [
     {
       "t": "2026-10-03 09:41:49 ET",
@@ -2197,13 +2204,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xb50f5f68813a12836a8a7ef1292912252802215d0daee3c904489c45ee95b43f",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 6226,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": -3.0
   },
   "paper": {
     "active": false,
