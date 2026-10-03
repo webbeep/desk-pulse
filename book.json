@@ -1,5 +1,5 @@
 {
-  "updated_et": "2026-10-03 13:18:45 ET",
+  "updated_et": "2026-10-03 13:18:47 ET",
   "liquid_usd": 50.6497,
   "upnl_usd": 0.0,
   "equity_usd": 50.6497,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM CAT uPnL $-0.0007 (-0.023%) \u00b7 held 124s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 13:18:44 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE MTM CAT uPnL $-0.0007 (-0.023%) \u00b7 held 126s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 13:18:46 ET \u00b7 CUT TIME_FLAT_120s",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -974,6 +974,20 @@
     },
     {
       "t": "2026-10-03 13:18:45 ET",
+      "equity_usd": 53.649,
+      "liquid_usd": 50.6497,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 13:18:47 ET",
+      "equity_usd": 53.649,
+      "liquid_usd": 50.6497,
+      "upnl_usd": -0.0007,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-03 13:18:47 ET",
       "equity_usd": 53.649,
       "liquid_usd": 50.6497,
       "upnl_usd": 0,
@@ -2447,7 +2461,7 @@
     "max_loss_usd": 2.0,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 123,
+    "held_sec": 125,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
