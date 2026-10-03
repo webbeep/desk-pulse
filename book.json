@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 08:21:33 ET",
+  "updated_et": "2026-10-03 08:22:33 ET",
   "liquid_usd": 59.3981,
   "upnl_usd": 0,
   "equity_usd": 59.3981,
-  "status": "FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -39,8 +39,28 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [],
-  "position": null,
+  "positions": [
+    {
+      "id": "LIVE-SCALP-436",
+      "market": "CALICO",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0xfa7202a9933551bbd6b0f7ce5c48103a6a5e08833e97e6e8dc4529ac881fd120",
+      "token": "0xd7Fa667f5765074e232726cAfA72f57997bAB9c6",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-436",
+    "market": "CALICO",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0xfa7202a9933551bbd6b0f7ce5c48103a6a5e08833e97e6e8dc4529ac881fd120",
+    "token": "0xd7Fa667f5765074e232726cAfA72f57997bAB9c6",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-10-03 00:13:56 ET",
@@ -2172,5 +2192,22 @@
     "ETH": 2685.99,
     "BTC": 84845.51,
     "LINK": 13.92
+  },
+  "mode": "LIVE",
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "CALICO",
+    "tx": "0xfa7202a9933551bbd6b0f7ce5c48103a6a5e08833e97e6e8dc4529ac881fd120",
+    "size_usd": 3.0,
+    "max_loss_usd": 2.0,
+    "id": "LIVE-SCALP-436",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "paper": {
+    "active": false,
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
