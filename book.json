@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 10:12:41 ET",
+  "updated_et": "2026-10-03 10:12:42 ET",
   "liquid_usd": 52.9117,
   "upnl_usd": 0.0,
   "equity_usd": 52.9117,
-  "status": "EXITING:TIME_MAX_180s",
+  "status": "EXIT_EXIT_FAIL",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SI uPnL $0.0512 (1.7077%) \u00b7 held 1870s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-03 10:12:37 ET \u00b7 CUT TIME_MAX_180s",
+  "notes": "LIVE EXIT SI \u00b7 TIME_FLAT_120s \u00b7 tx 0xbf6a5dd7c8153dfa59078e3aadb33b0b1efca4b9ec5ca8f41c98bcfa53cb5eac \u00b7 2026-10-03 10:12:41 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -771,6 +771,13 @@
     },
     {
       "t": "2026-10-03 10:12:41 ET",
+      "equity_usd": 52.9117,
+      "liquid_usd": 52.9117,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-10-03 10:12:42 ET",
       "equity_usd": 52.9117,
       "liquid_usd": 52.9117,
       "upnl_usd": 0,
@@ -2239,13 +2246,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xe80d00531f53c0b8d0c19cda5fc22086db10da678a55f0b2e9bea508c8208a11",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 1869,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xbf6a5dd7c8153dfa59078e3aadb33b0b1efca4b9ec5ca8f41c98bcfa53cb5eac",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": 0.0512
   },
   "paper": {
     "active": false,
