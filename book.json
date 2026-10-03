@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-02 23:22:59 ET",
+  "updated_et": "2026-10-02 23:23:03 ET",
   "liquid_usd": 71.0158,
   "upnl_usd": 0.0,
   "equity_usd": 71.0158,
-  "status": "EXITING:HARD_SL_PCT_-14.0219",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM POOPYBOT uPnL $-0.6088 (-14.0219%) \u00b7 held 5546s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 23:22:56 ET \u00b7 CUT HARD_SL_PCT_-14.0219",
+  "notes": "LIVE EXIT POOPYBOT \u00b7 HARD_SL_PCT_-14.0219 \u00b7 tx None \u00b7 2026-10-02 23:23:02 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -719,6 +719,13 @@
       "liquid_usd": 71.0158,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-02 23:23:03 ET",
+      "equity_usd": 74.7491,
+      "liquid_usd": 71.0158,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
@@ -726,6 +733,24 @@
   "total_pnl_usd": -219.6142,
   "total_pnl_pct": -75.5649,
   "trades": [
+    {
+      "t": "2026-10-02 23:23:02 ET",
+      "kind": "FLAT",
+      "venue": "RH",
+      "market": "POOPYBOT",
+      "side": "LONG",
+      "size_usd": 3.734,
+      "pnl_usd": 0.0,
+      "tx": "0x176c10e240b8912ddd6a24020d44b0bd0d02021291e2986f73c3c59edf790811",
+      "open_tx": "0x176c10e240b8912ddd6a24020d44b0bd0d02021291e2986f73c3c59edf790811",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-424",
+      "reason": "FLAT",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-02 22:52:10 ET",
       "kind": "FLAT",
@@ -2147,24 +2172,6 @@
       "token": "0x9C87A432Bd2B801f63511B38C25C2316958aECF7",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-09-29 10:10:58 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "PI",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.02,
-      "tx": "0x9adce68dd67b1acf97dd61422b5d54d66758a436b6381af7eef45ee0f490148f",
-      "open_tx": "0x9bc264445e62a0ff1303c85a32708f645dfaceaa6d4ac100e9cbb73fe3850ce6",
-      "exit_tx": "0x9adce68dd67b1acf97dd61422b5d54d66758a436b6381af7eef45ee0f490148f",
-      "id": "LIVE-SCALP-343",
-      "reason": "POST_FILL_FLAT_-12.906",
-      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=POST_FILL_FLAT_-12.906 pnl=0.02",
-      "token": "0x434C832E6352bF0cFEaDab8E86361a83E6D572E2",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2678.73,
@@ -2183,13 +2190,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x6f37e2c3d16a9fa48610b37706f5ece2e1ab0abbc1d77c060ff9bea6254fa12b",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 5545,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "HARD_SL_PCT_-14.0219",
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
