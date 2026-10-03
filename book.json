@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 09:34:56 ET",
-  "liquid_usd": 52.5176,
+  "updated_et": "2026-10-03 09:34:57 ET",
+  "liquid_usd": 52.5201,
   "upnl_usd": 0.0,
-  "equity_usd": 52.5176,
-  "status": "EXIT_None",
+  "equity_usd": 52.5201,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT GLASS \u00b7 POST_FILL_FLAT_-3.0027 \u00b7 tx None \u00b7 2026-10-03 09:34:55 ET",
+  "notes": "LIVE EXIT GLASS \u00b7 POST_FILL_FLAT_-3.0211 \u00b7 tx 0xf24e5fd7cf080abe6e4f7f87aaf7a6e46aed727d98f8de947a16c3147926ebfd \u00b7 2026-10-03 09:34:56 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -749,17 +749,17 @@
       "n_pos": 0
     },
     {
-      "t": "2026-10-03 09:34:56 ET",
-      "equity_usd": 52.5176,
-      "liquid_usd": 52.5176,
+      "t": "2026-10-03 09:34:57 ET",
+      "equity_usd": 52.5201,
+      "liquid_usd": 52.5201,
       "upnl_usd": 0,
       "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-49.1304 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -238.1124,
-  "total_pnl_pct": -81.9297,
+  "total_pnl_usd": -238.1099,
+  "total_pnl_pct": -81.9289,
   "trades": [
     {
       "t": "2026-10-03 09:34:56 ET",
@@ -2202,15 +2202,15 @@
       "live": true
     }
   ],
-  "mark": 2680.19,
+  "mark": 2680.32,
   "mark_src": "coinbase",
-  "mark_eth": 2680.19,
+  "mark_eth": 2680.32,
   "mark_btc": 84798.62,
   "mark_btc_src": "coinbase",
   "mark_link": 13.862,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2680.19,
+    "ETH": 2680.32,
     "BTC": 84798.62,
     "LINK": 13.862
   },
@@ -2218,9 +2218,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "POST_FILL_FLAT_-3.0027",
-    "last_exit_upnl": null
+    "last_exit_tx": "0xf24e5fd7cf080abe6e4f7f87aaf7a6e46aed727d98f8de947a16c3147926ebfd",
+    "last_exit_reason": "POST_FILL_FLAT_-3.0211",
+    "last_exit_upnl": -0.1214
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
