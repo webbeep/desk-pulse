@@ -1,8 +1,8 @@
 {
   "updated_et": "2026-10-02 22:27:41 ET",
-  "liquid_usd": 78.7372,
+  "liquid_usd": 78.7366,
   "upnl_usd": 0.0,
-  "equity_usd": 78.7372,
+  "equity_usd": 78.7366,
   "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT ORANGE \u00b7 HARD_SL_PCT_-4.9558 \u00b7 tx None \u00b7 2026-10-02 22:27:41 ET",
+  "notes": "LIVE EXIT ORANGE \u00b7 HARD_SL_PCT_-5.1273 \u00b7 tx 0x187659c93476052b1f478107f34058ececaacfb6c11de9a61834ce14ab038c0e \u00b7 2026-10-02 22:27:41 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -743,16 +743,16 @@
     },
     {
       "t": "2026-10-02 22:27:41 ET",
-      "equity_usd": 78.7372,
-      "liquid_usd": 78.7372,
+      "equity_usd": 78.7366,
+      "liquid_usd": 78.7366,
       "upnl_usd": 0,
       "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.8623 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -211.8928,
-  "total_pnl_pct": -72.9081,
+  "total_pnl_usd": -211.8934,
+  "total_pnl_pct": -72.9083,
   "trades": [
     {
       "t": "2026-10-02 22:21:53 ET",
@@ -2195,15 +2195,15 @@
       "live": true
     }
   ],
-  "mark": 2679.63,
+  "mark": 2679.61,
   "mark_src": "coinbase",
-  "mark_eth": 2679.63,
+  "mark_eth": 2679.61,
   "mark_btc": 84664.74,
   "mark_btc_src": "coinbase",
   "mark_link": 13.954,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2679.63,
+    "ETH": 2679.61,
     "BTC": 84664.74,
     "LINK": 13.954
   },
@@ -2211,9 +2211,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "HARD_SL_PCT_-4.9558",
-    "last_exit_upnl": -3.9315
+    "last_exit_tx": "0x187659c93476052b1f478107f34058ececaacfb6c11de9a61834ce14ab038c0e",
+    "last_exit_reason": "HARD_SL_PCT_-5.1273",
+    "last_exit_upnl": 0.1304
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
