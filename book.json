@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 09:34:58 ET",
+  "updated_et": "2026-10-03 09:41:29 ET",
   "liquid_usd": 52.5109,
   "upnl_usd": 0.0,
   "equity_usd": 52.5109,
-  "status": "EXIT_EXIT_FAIL",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,29 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT GLASS \u00b7 POST_FILL_FLAT_-4.0477 \u00b7 tx 0xf4c92b10ccb9ebc936dd740138e6f9b2ecff940311e32b743700c5522abf0ff0 \u00b7 2026-10-03 09:34:58 ET",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-03 09:35:28 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-443",
+      "market": "SI",
+      "side": "LONG",
+      "size_usd": 3.0,
+      "tx": "0xe80d00531f53c0b8d0c19cda5fc22086db10da678a55f0b2e9bea508c8208a11",
+      "token": "0xdC86E70fDA1D9f9Dd0DA555701C160D9671E86f7",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-443",
+    "market": "SI",
+    "side": "LONG",
+    "size_usd": 3.0,
+    "tx": "0xe80d00531f53c0b8d0c19cda5fc22086db10da678a55f0b2e9bea508c8208a11",
+    "token": "0xdC86E70fDA1D9f9Dd0DA555701C160D9671E86f7",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-10-03 03:37:05 ET",
@@ -764,7 +784,7 @@
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-49.1304 \u00b7 equity\u2212baseline SoT",
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-49.2337 \u00b7 equity\u2212baseline SoT",
   "total_pnl_usd": -238.1191,
   "total_pnl_pct": -81.932,
   "trades": [
@@ -774,14 +794,14 @@
       "venue": "RH",
       "market": "GLASS",
       "side": "LONG",
-      "size_usd": 3.0,
-      "pnl_usd": -0.0901,
+      "size_usd": null,
+      "pnl_usd": -0.1033,
       "tx": "0xf4c92b10ccb9ebc936dd740138e6f9b2ecff940311e32b743700c5522abf0ff0",
       "open_tx": "0x0a1659ae9fc1a4bc6bfcf3782a02e25cda1aae4c64003167acbec2f2d37af3c3",
       "exit_tx": "0xf4c92b10ccb9ebc936dd740138e6f9b2ecff940311e32b743700c5522abf0ff0",
       "id": "LIVE-SCALP-442",
-      "reason": "EXIT_FAIL",
-      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "reason": "POST_FILL_FLAT_-4.0477",
+      "note": "continuous LIVE \u00b7 caps $3.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=POST_FILL_FLAT_-4.0477 pnl=-0.1033",
       "token": "0x50C4039c743d93b52a5326d47b30Ac22cE77b25a",
       "paper": false,
       "live": true
@@ -2223,19 +2243,24 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0xf4c92b10ccb9ebc936dd740138e6f9b2ecff940311e32b743700c5522abf0ff0",
-    "last_exit_reason": "POST_FILL_FLAT_-4.0477",
-    "last_exit_upnl": -0.1033
+    "open": true,
+    "flat": false,
+    "ticker": "SI",
+    "tx": "0xe80d00531f53c0b8d0c19cda5fc22086db10da678a55f0b2e9bea508c8208a11",
+    "size_usd": 3.0,
+    "max_loss_usd": 2.0,
+    "id": "LIVE-SCALP-443",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
     "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
   },
-  "realized_pnl_usd": -49.1304,
+  "realized_pnl_usd": -49.2337,
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
