@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-03 11:20:49 ET",
-  "liquid_usd": 53.5441,
+  "updated_et": "2026-10-03 11:20:50 ET",
+  "liquid_usd": 53.5494,
   "upnl_usd": 0.0,
-  "equity_usd": 53.5441,
-  "status": "EXIT_None",
+  "equity_usd": 53.5494,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT SI \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-10-03 11:20:49 ET",
+  "notes": "LIVE EXIT SI \u00b7 TP_V7_+4.5 \u00b7 tx 0xe1cb872b3d923af90138ab4031e1b8388b7148b836f030be7102f3581df5e0ed \u00b7 2026-10-03 11:20:49 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -742,17 +742,17 @@
       "n_pos": 1
     },
     {
-      "t": "2026-10-03 11:20:49 ET",
-      "equity_usd": 53.5441,
-      "liquid_usd": 53.5441,
+      "t": "2026-10-03 11:20:50 ET",
+      "equity_usd": 53.5494,
+      "liquid_usd": 53.5494,
       "upnl_usd": 0,
       "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.402 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -237.0859,
-  "total_pnl_pct": -81.5765,
+  "total_pnl_usd": -237.0806,
+  "total_pnl_pct": -81.5747,
   "trades": [
     {
       "t": "2026-10-03 11:20:49 ET",
@@ -2195,15 +2195,15 @@
       "live": true
     }
   ],
-  "mark": 2680.92,
+  "mark": 2681.19,
   "mark_src": "coinbase",
-  "mark_eth": 2680.92,
+  "mark_eth": 2681.19,
   "mark_btc": 84828.91,
   "mark_btc_src": "coinbase",
   "mark_link": 13.843,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2680.92,
+    "ETH": 2681.19,
     "BTC": 84828.91,
     "LINK": 13.843
   },
@@ -2211,9 +2211,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
+    "last_exit_tx": "0xe1cb872b3d923af90138ab4031e1b8388b7148b836f030be7102f3581df5e0ed",
     "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": null
+    "last_exit_upnl": 0.0574
   },
   "paper": {
     "active": false,
