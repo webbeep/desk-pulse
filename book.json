@@ -1,9 +1,9 @@
 {
   "updated_et": "2026-10-02 22:27:34 ET",
-  "liquid_usd": 74.684,
-  "upnl_usd": 0.0,
-  "equity_usd": 74.684,
-  "status": "EXITING:HARD_SL_PCT_-5.1273",
+  "liquid_usd": 74.6845,
+  "upnl_usd": -0.2115,
+  "equity_usd": 78.7408,
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,43 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM ORANGE uPnL $-0.2188 (-5.1273%) \u00b7 held 4093s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 22:27:30 ET \u00b7 CUT HARD_SL_PCT_-5.1273",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE MTM ORANGE uPnL $-0.2115 (-4.9558%) \u00b7 held 4095s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 22:27:33 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "ORANGE",
+      "side": "LONG",
+      "size_usd": 4.2678,
+      "entry": 0.00048459916605153494,
+      "mark": 0.0004605832835064845,
+      "uPnL": -0.2115,
+      "mtm_pct": -4.9558,
+      "lev": 1,
+      "paper": false,
+      "tx": "0x8f7b5e7fc6a5bb161079361fa1cc79cbc1585c9c4060f3104133c8458e167b26",
+      "token": "0xCC30D0fcef5d48eFF7f1C65238df36332d5eF93f",
+      "held_sec": 4095,
+      "weth_out": 0.001513752024177259,
+      "usd_out": 4.056295
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "ORANGE",
+    "side": "LONG",
+    "size_usd": 4.2678,
+    "entry": 0.00048459916605153494,
+    "mark": 0.0004605832835064845,
+    "uPnL": -0.2115,
+    "mtm_pct": -4.9558,
+    "lev": 1,
+    "paper": false,
+    "tx": "0x8f7b5e7fc6a5bb161079361fa1cc79cbc1585c9c4060f3104133c8458e167b26",
+    "token": "0xCC30D0fcef5d48eFF7f1C65238df36332d5eF93f",
+    "held_sec": 4095,
+    "weth_out": 0.001513752024177259,
+    "usd_out": 4.056295
+  },
   "pnl_history": [
     {
       "t": "2026-10-02 17:48:08 ET",
@@ -715,16 +749,16 @@
     },
     {
       "t": "2026-10-02 22:27:34 ET",
-      "equity_usd": 78.733,
-      "liquid_usd": 74.684,
-      "upnl_usd": 0,
-      "n_pos": 0
+      "equity_usd": 78.7408,
+      "liquid_usd": 74.6845,
+      "upnl_usd": -0.2115,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.8623 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -215.946,
-  "total_pnl_pct": -74.3027,
+  "total_pnl_usd": -211.8892,
+  "total_pnl_pct": -72.9069,
   "trades": [
     {
       "t": "2026-10-02 22:21:53 ET",
@@ -2167,28 +2201,28 @@
       "live": true
     }
   ],
-  "mark": 2679.61,
+  "mark": 2679.63,
   "mark_src": "coinbase",
-  "mark_eth": 2679.61,
+  "mark_eth": 2679.63,
   "mark_btc": 84664.74,
   "mark_btc_src": "coinbase",
   "mark_link": 13.954,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2679.61,
+    "ETH": 2679.63,
     "BTC": 84664.74,
     "LINK": 13.954
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
+    "open": true,
+    "ticker": "ORANGE",
     "tx": "0x8f7b5e7fc6a5bb161079361fa1cc79cbc1585c9c4060f3104133c8458e167b26",
-    "size_usd": 0,
+    "size_usd": 4.2678,
     "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 4092,
+    "mtm_pct": -4.9558,
+    "upnl_usd": -0.2115,
+    "held_sec": 4095,
     "watcher": "rh_live_mtm_loop"
   },
   "strategy": {
