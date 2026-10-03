@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-02 21:56:39 ET",
-  "liquid_usd": 78.2631,
-  "upnl_usd": 0.204,
-  "equity_usd": 82.7349,
-  "status": "LIVE_OPEN",
+  "updated_et": "2026-10-02 21:56:42 ET",
+  "liquid_usd": 82.7255,
+  "upnl_usd": 0.0,
+  "equity_usd": 82.7255,
+  "status": "EXITING:TP_V7_+4.5",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.01168549716481594,
-    "rh_weth": 0.016131572244736877,
+    "rh_eth": 0.01168199467099594,
+    "rh_weth": 0.017801371549817268,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.01168549716481594,
-      "weth": 0.016131572244736877
+      "eth": 0.01168199467099594,
+      "weth": 0.017801371549817268
     }
   },
   "wallet_urls": {
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM ORANGE uPnL $0.204 (4.7793%) \u00b7 held 2239s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 21:56:36 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "ORANGE",
-      "side": "LONG",
-      "size_usd": 4.2678,
-      "entry": 0.00031286588572218506,
-      "mark": 0.0003278188072465685,
-      "uPnL": 0.204,
-      "mtm_pct": 4.7793,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x8f7b5e7fc6a5bb161079361fa1cc79cbc1585c9c4060f3104133c8458e167b26",
-      "token": "0xCC30D0fcef5d48eFF7f1C65238df36332d5eF93f",
-      "held_sec": 2238,
-      "weth_out": 0.001669799305080392,
-      "usd_out": 4.471773
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "ORANGE",
-    "side": "LONG",
-    "size_usd": 4.2678,
-    "entry": 0.00031286588572218506,
-    "mark": 0.0003278188072465685,
-    "uPnL": 0.204,
-    "mtm_pct": 4.7793,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x8f7b5e7fc6a5bb161079361fa1cc79cbc1585c9c4060f3104133c8458e167b26",
-    "token": "0xCC30D0fcef5d48eFF7f1C65238df36332d5eF93f",
-    "held_sec": 2238,
-    "weth_out": 0.001669799305080392,
-    "usd_out": 4.471773
-  },
+  "notes": "LIVE MTM ORANGE uPnL $0.204 (4.7793%) \u00b7 held 2239s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-02 21:56:36 ET \u00b7 CUT TP_V7_+4.5",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-10-02 15:32:32 ET",
@@ -760,12 +726,19 @@
       "liquid_usd": 78.2631,
       "upnl_usd": 0.204,
       "n_pos": 1
+    },
+    {
+      "t": "2026-10-02 21:56:42 ET",
+      "equity_usd": 82.7255,
+      "liquid_usd": 82.7255,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.8623 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -207.8951,
-  "total_pnl_pct": -71.5326,
+  "total_pnl_usd": -207.9045,
+  "total_pnl_pct": -71.5358,
   "trades": [
     {
       "t": "2026-10-02 21:50:38 ET",
@@ -2222,13 +2195,13 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "ORANGE",
+    "open": false,
+    "ticker": null,
     "tx": "0x8f7b5e7fc6a5bb161079361fa1cc79cbc1585c9c4060f3104133c8458e167b26",
-    "size_usd": 4.2678,
+    "size_usd": 0,
     "max_loss_usd": 2.0,
-    "mtm_pct": 4.7793,
-    "upnl_usd": 0.204,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 2238,
     "watcher": "rh_live_mtm_loop"
   },
