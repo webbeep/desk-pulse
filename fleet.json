@@ -1,7 +1,7 @@
 {
-  "updated_et": "2026-10-02 19:59:56 ET",
-  "working": 4,
-  "idle": 2,
+  "updated_et": "2026-10-02 20:10:06 ET",
+  "working": 2,
+  "idle": 4,
   "standby": 0,
   "bots": [
     {
@@ -14,7 +14,7 @@
       "last_et": "2026-10-02 19:51 ET",
       "task": "Updating EXECUTE / desk mode",
       "proof": "fleet-v2/rh-chain/DESK-MODE.json",
-      "age_min": 8.3,
+      "age_min": 18.5,
       "lane": "file",
       "owner_stream": "cos"
     },
@@ -25,7 +25,7 @@
       "state": "WORKING",
       "now": "Refreshing book / STATUS",
       "last_did": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legac",
-      "last_et": "2026-10-02 19:49:52 ET",
+      "last_et": "2026-10-02 20:00:02 ET",
       "task": "Refreshing book / STATUS",
       "proof": "quant/web/desk-dashboard/book.json",
       "age_min": 10.1,
@@ -33,44 +33,16 @@
       "owner_stream": "pm"
     },
     {
-      "id": "risk",
-      "name": "Risk \u00b7 GATE",
-      "role": "Role: RISK gate",
-      "state": "WORKING",
-      "now": "Updating RISK (PASS)",
-      "last_did": "RISK-PASS-LIVE-SCALP-416.md: PASS",
-      "last_et": "2026-10-02 19:42 ET",
-      "task": "Updating RISK (PASS)",
-      "proof": "fleet-v2/rh-chain/RISK-PASS-LIVE-SCALP-416.md",
-      "age_min": 17.0,
-      "lane": "file",
-      "owner_stream": "risk"
-    },
-    {
-      "id": "wire",
-      "name": "Wire \u00b7 ENCODE",
-      "role": "Role: ENCODE",
-      "state": "WORKING",
-      "now": "Recent EXECUTE / wire",
-      "last_did": "EXECUTE-LIVE-SCALP-416.md",
-      "last_et": "2026-10-02 19:42 ET",
-      "task": "Recent EXECUTE / wire",
-      "proof": "fleet-v2/rh-chain/EXECUTE-LIVE-SCALP-416.md",
-      "age_min": 17.0,
-      "lane": "file",
-      "owner_stream": "encode"
-    },
-    {
       "id": "build",
       "name": "Build \u00b7 CODE",
       "role": "Role: CODE",
       "state": "IDLE",
-      "now": "Idle \u00b7 last touch ~5686m ago",
+      "now": "Idle \u00b7 last touch ~5696m ago",
       "last_did": "index.html",
       "last_et": "2026-09-28 21:13 ET",
-      "task": "Idle \u00b7 last touch ~5686m ago",
+      "task": "Idle \u00b7 last touch ~5696m ago",
       "proof": "/workspace/webbeep-desk-pulse/index.html",
-      "age_min": 5686.4,
+      "age_min": 5696.5,
       "lane": "file",
       "owner_stream": "code"
     },
@@ -79,14 +51,42 @@
       "name": "Edge \u00b7 SIGNALS",
       "role": "Role: SIGNALS",
       "state": "IDLE",
-      "now": "Idle \u00b7 last touch ~9214m ago",
+      "now": "Idle \u00b7 last touch ~9224m ago",
       "last_did": "BIAS-NOW \u00b7 BTC SHORT",
       "last_et": "2026-09-26 10:25 ET",
-      "task": "Idle \u00b7 last touch ~9214m ago",
+      "task": "Idle \u00b7 last touch ~9224m ago",
       "proof": "quant/signals/BIAS-NOW.md",
-      "age_min": 9214.1,
+      "age_min": 9224.3,
       "lane": "file",
       "owner_stream": "signals"
+    },
+    {
+      "id": "risk",
+      "name": "Risk \u00b7 GATE",
+      "role": "Role: RISK gate",
+      "state": "IDLE",
+      "now": "Idle \u00b7 last touch ~27m ago",
+      "last_did": "RISK-PASS-LIVE-SCALP-416.md: PASS",
+      "last_et": "2026-10-02 19:42 ET",
+      "task": "Idle \u00b7 last touch ~27m ago",
+      "proof": "fleet-v2/rh-chain/RISK-PASS-LIVE-SCALP-416.md",
+      "age_min": 27.2,
+      "lane": "file",
+      "owner_stream": "risk"
+    },
+    {
+      "id": "wire",
+      "name": "Wire \u00b7 ENCODE",
+      "role": "Role: ENCODE",
+      "state": "IDLE",
+      "now": "Idle \u00b7 last touch ~27m ago",
+      "last_did": "EXECUTE-LIVE-SCALP-416.md",
+      "last_et": "2026-10-02 19:42 ET",
+      "task": "Idle \u00b7 last touch ~27m ago",
+      "proof": "fleet-v2/rh-chain/EXECUTE-LIVE-SCALP-416.md",
+      "age_min": 27.2,
+      "lane": "file",
+      "owner_stream": "encode"
     }
   ]
 }
