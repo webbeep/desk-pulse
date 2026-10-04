@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 18:47:34 ET",
-  "liquid_usd": 50.1171,
+  "updated_et": "2026-10-04 18:47:41 ET",
+  "liquid_usd": 50.1246,
   "upnl_usd": 0.0,
-  "equity_usd": 50.1171,
-  "status": "EXITING:TIME_FLAT_120s",
+  "equity_usd": 50.1246,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM WALLET uPnL $-0.0008 (-0.0156%) \u00b7 held 162s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 18:47:31 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT WALLET \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-10-04 18:47:41 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -1118,12 +1118,19 @@
       "liquid_usd": 50.1171,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 18:47:41 ET",
+      "equity_usd": 55.1163,
+      "liquid_usd": 50.1246,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-47.9351 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -240.5129,
-  "total_pnl_pct": -82.7557,
+  "total_pnl_usd": -240.5054,
+  "total_pnl_pct": -82.7531,
   "trades": [
     {
       "t": "2026-10-04 18:42:36 ET",
@@ -2566,15 +2573,15 @@
       "live": true
     }
   ],
-  "mark": 2727.12,
+  "mark": 2727.53,
   "mark_src": "coinbase",
-  "mark_eth": 2727.12,
+  "mark_eth": 2727.53,
   "mark_btc": 86474.22,
   "mark_btc_src": "coinbase",
   "mark_link": 14.244,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2727.12,
+    "ETH": 2727.53,
     "BTC": 86474.22,
     "LINK": 14.244
   },
@@ -2582,13 +2589,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x67e960acda8f220a91de131f12736d71fdf6b1eb03a58a3fc34af59d07f9692c",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 161,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": null
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
