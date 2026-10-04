@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 00:45:09 ET",
-  "liquid_usd": 53.9696,
+  "updated_et": "2026-10-04 00:50:13 ET",
+  "liquid_usd": 53.9539,
   "upnl_usd": 0,
-  "equity_usd": 53.9696,
-  "status": "LIVE_OPEN",
+  "equity_usd": 53.9539,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -11,7 +11,7 @@
     "base_eth": 0.0,
     "base_usdc": 0.0,
     "l1_eth": 0.00140706,
-    "rh_eth": 0.01005356,
+    "rh_eth": 0.01005009,
     "rh_weth": 0.00858887
   },
   "holdings": {
@@ -27,7 +27,7 @@
       "usdc": 0.0
     },
     "RH": {
-      "eth": 0.01005356,
+      "eth": 0.01005009,
       "weth": 0.00858887
     }
   },
@@ -38,37 +38,10 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE FLAT \u00b7 V8 gates armed \u00b7 timing 120s/180s \u00b7 2026-10-04 00:40:31 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-456",
-      "market": "CRAWLER",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "tx": "0x4ece7ca6cc53924f1d228680e9b293b845545f8bc687809ab0f4e5effd1f6460",
-      "token": "0x5089D6fCf4De31a659214a55E8054f00c33b07Ac",
-      "paper": false,
-      "uPnL": 0.0
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-456",
-    "market": "CRAWLER",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "tx": "0x4ece7ca6cc53924f1d228680e9b293b845545f8bc687809ab0f4e5effd1f6460",
-    "token": "0x5089D6fCf4De31a659214a55E8054f00c33b07Ac",
-    "paper": false,
-    "uPnL": 0.0
-  },
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "positions": [],
+  "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-03 13:18:38 ET",
-      "equity_usd": 53.6438,
-      "liquid_usd": 50.6448,
-      "upnl_usd": -0.001,
-      "n_pos": 1
-    },
     {
       "t": "2026-10-03 13:18:39 ET",
       "equity_usd": 53.6438,
@@ -733,13 +706,38 @@
       "liquid_usd": 53.9696,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 00:50:13 ET",
+      "equity_usd": 53.9539,
+      "liquid_usd": 53.9539,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.0011 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -236.6604,
-  "total_pnl_pct": -81.4301,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -236.6761,
+  "total_pnl_pct": -81.44,
   "trades": [
+    {
+      "t": "2026-10-04 00:46:00 ET",
+      "kind": "LIVE",
+      "venue": "RH",
+      "market": "CRAWLER",
+      "side": "LONG",
+      "size_usd": null,
+      "pnl_usd": null,
+      "tx": "0x4ece7ca6cc53924f1d228680e9b293b845545f8bc687809ab0f4e5effd1f6460",
+      "open_tx": "0x4ece7ca6cc53924f1d228680e9b293b845545f8bc687809ab0f4e5effd1f6460",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-456",
+      "reason": null,
+      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=None pnl=None",
+      "token": "0x5089D6fCf4De31a659214a55E8054f00c33b07Ac",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-04 00:36:00 ET",
       "kind": "SL",
@@ -2161,58 +2159,18 @@
       "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 02:58:12 ET",
-      "kind": "SL",
-      "venue": "RH",
-      "market": "GIKO",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": -0.7125,
-      "tx": "0xc326ba849b5891e459fd20b3ee74b875a789b3af8e8654a89082221e61a50791",
-      "open_tx": "0x75fa67f0696e4832fcd6d802fc2bd957cbb276c2b9ebfb70b6f8337a42297099",
-      "exit_tx": "0xc326ba849b5891e459fd20b3ee74b875a789b3af8e8654a89082221e61a50791",
-      "id": "LIVE-SCALP-376",
-      "reason": "HARD_SL_PCT_-10.5596",
-      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=HARD_SL_PCT_-10.5596 pnl=-0.7125",
-      "token": "0x75eF22Fc566458909f668FCBC932d0C5b61Aa3DB",
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2691.82,
+  "mark": 2691.5,
   "mark_src": "coinbase",
-  "mark_eth": 2691.82,
-  "mark_btc": 84803.93,
+  "mark_eth": 2691.5,
+  "mark_btc": 84805.34,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.013,
+  "mark_link": 13.998,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2691.82,
-    "BTC": 84803.93,
-    "LINK": 14.013
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": true,
-    "flat": false,
-    "ticker": "CRAWLER",
-    "tx": "0x4ece7ca6cc53924f1d228680e9b293b845545f8bc687809ab0f4e5effd1f6460",
-    "size_usd": 5.0,
-    "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-456",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
-  },
-  "strategy": {
-    "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
-  },
-  "realized_pnl_usd": -48.0011,
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
+    "ETH": 2691.5,
+    "BTC": 84805.34,
+    "LINK": 13.998
   }
 }
