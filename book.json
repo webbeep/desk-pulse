@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-10-04 14:28:32 ET",
-  "liquid_usd": 49.7268,
-  "upnl_usd": 0.3548,
-  "equity_usd": 55.0816,
-  "status": "LIVE_OPEN",
+  "updated_et": "2026-10-04 14:28:35 ET",
+  "liquid_usd": 49.7243,
+  "upnl_usd": 0.0,
+  "equity_usd": 49.7243,
+  "status": "EXITING:TP_V7_+4.5",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.002605178905672986,
+    "rh_eth": 0.002604229268096986,
     "rh_weth": 0.014401017286538469,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
@@ -19,7 +19,7 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.002605178905672986,
+      "eth": 0.002604229268096986,
       "weth": 0.014401017286538469
     }
   },
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SXSI uPnL $0.3548 (7.0968%) \u00b7 held 1858s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 14:28:32 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "SXSI",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 0.00043033976941642837,
-      "mark": 0.00046088013761195633,
-      "uPnL": 0.3548,
-      "mtm_pct": 7.0968,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x8436de587e1b217972d10bb3f292abde46e0faa701b66eb95b0d9cdbeb2466a3",
-      "token": "0xee8b791E1344996126A7Bb6B4e3B53F13367fea4",
-      "held_sec": 1858,
-      "weth_out": 0.001982833510845104,
-      "usd_out": 5.35484
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "SXSI",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 0.00043033976941642837,
-    "mark": 0.00046088013761195633,
-    "uPnL": 0.3548,
-    "mtm_pct": 7.0968,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x8436de587e1b217972d10bb3f292abde46e0faa701b66eb95b0d9cdbeb2466a3",
-    "token": "0xee8b791E1344996126A7Bb6B4e3B53F13367fea4",
-    "held_sec": 1858,
-    "weth_out": 0.001982833510845104,
-    "usd_out": 5.35484
-  },
+  "notes": "LIVE MTM SXSI uPnL $0.3548 (7.0968%) \u00b7 held 1858s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 14:28:32 ET \u00b7 CUT TP_V7_+4.5",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-10-04 00:52:23 ET",
@@ -760,12 +726,19 @@
       "liquid_usd": 49.7268,
       "upnl_usd": 0.3548,
       "n_pos": 1
+    },
+    {
+      "t": "2026-10-04 14:28:35 ET",
+      "equity_usd": 55.0816,
+      "liquid_usd": 49.7243,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-47.4094 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -235.5484,
-  "total_pnl_pct": -81.0475,
+  "total_pnl_usd": -240.9057,
+  "total_pnl_pct": -82.8909,
   "trades": [
     {
       "t": "2026-10-04 13:57:37 ET",
@@ -2222,13 +2195,13 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "SXSI",
+    "open": false,
+    "ticker": null,
     "tx": "0x8436de587e1b217972d10bb3f292abde46e0faa701b66eb95b0d9cdbeb2466a3",
-    "size_usd": 5.0,
+    "size_usd": 0,
     "max_loss_usd": 2.0,
-    "mtm_pct": 7.0968,
-    "upnl_usd": 0.3548,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 1858,
     "watcher": "rh_live_mtm_loop"
   },
