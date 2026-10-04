@@ -1,34 +1,26 @@
 {
-  "updated_et": "2026-10-04 19:54:54 ET",
-  "liquid_usd": 54.7464,
-  "upnl_usd": 0,
-  "equity_usd": 54.7464,
+  "updated_et": "2026-10-04 19:54:57 ET",
+  "liquid_usd": 49.7403,
+  "upnl_usd": 0.0002,
+  "equity_usd": 54.7405,
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
+    "l1_eth": 0.001407059032801532,
+    "rh_eth": 0.016837970890398696,
+    "rh_weth": 1e-18,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "l1_eth": 0.00140706,
-    "rh_eth": 0.01867556,
-    "rh_weth": 0.0
+    "base_usdc": 0.0
   },
   "holdings": {
     "L1": {
-      "eth": 0.00140706
-    },
-    "Arb": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "Base": {
-      "eth": 0.0,
-      "usdc": 0.0
+      "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.01867556,
-      "weth": 0.0
+      "eth": 0.016837970890398696,
+      "weth": 1e-18
     }
   },
   "wallet_urls": {
@@ -38,28 +30,42 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "notes": "LIVE MTM WALLET uPnL $0.0002 (0.0038%) \u00b7 held 4207s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 19:54:57 ET",
   "positions": [
     {
-      "id": "LIVE-SCALP-473",
+      "id": "LIVE-SCALP-2",
       "market": "WALLET",
       "side": "LONG",
       "size_usd": 5.0,
-      "tx": "0x64d7df6bdf788adbfb2c77682e46858c9ba4bba290bece8df7d44a2fa2009192",
-      "token": "0x72548C880e1A1729301c49D745E0CACD0C49c48B",
+      "entry": 0.0009541646534501701,
+      "mark": 0.0009542013348190419,
+      "uPnL": 0.0002,
+      "mtm_pct": 0.0038,
+      "lev": 1,
       "paper": false,
-      "uPnL": 0.0
+      "tx": "0x67e960acda8f220a91de131f12736d71fdf6b1eb03a58a3fc34af59d07f9692c",
+      "token": "0x72548C880e1A1729301c49D745E0CACD0C49c48B",
+      "held_sec": 4207,
+      "weth_out": 0.001834098324867098,
+      "usd_out": 5.000192
     }
   ],
   "position": {
-    "id": "LIVE-SCALP-473",
+    "id": "LIVE-SCALP-2",
     "market": "WALLET",
     "side": "LONG",
     "size_usd": 5.0,
-    "tx": "0x64d7df6bdf788adbfb2c77682e46858c9ba4bba290bece8df7d44a2fa2009192",
-    "token": "0x72548C880e1A1729301c49D745E0CACD0C49c48B",
+    "entry": 0.0009541646534501701,
+    "mark": 0.0009542013348190419,
+    "uPnL": 0.0002,
+    "mtm_pct": 0.0038,
+    "lev": 1,
     "paper": false,
-    "uPnL": 0.0
+    "tx": "0x67e960acda8f220a91de131f12736d71fdf6b1eb03a58a3fc34af59d07f9692c",
+    "token": "0x72548C880e1A1729301c49D745E0CACD0C49c48B",
+    "held_sec": 4207,
+    "weth_out": 0.001834098324867098,
+    "usd_out": 5.000192
   },
   "pnl_history": [
     {
@@ -733,12 +739,19 @@
       "liquid_usd": 54.7464,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 19:54:57 ET",
+      "equity_usd": 54.7405,
+      "liquid_usd": 49.7403,
+      "upnl_usd": 0.0002,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -235.8836,
-  "total_pnl_pct": -81.16,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.2392 \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -235.8895,
+  "total_pnl_pct": -81.1649,
   "trades": [
     {
       "t": "2026-10-04 19:28:18 ET",
@@ -2181,33 +2194,37 @@
       "live": true
     }
   ],
-  "mark": 2726.06,
+  "mark": 2726.24,
   "mark_src": "coinbase",
-  "mark_eth": 2726.06,
+  "mark_eth": 2726.24,
   "mark_btc": 86488.99,
   "mark_btc_src": "coinbase",
   "mark_link": 14.276,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2726.06,
+    "ETH": 2726.24,
     "BTC": 86488.99,
     "LINK": 14.276
   },
   "mode": "LIVE",
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "WALLET",
-    "tx": "0x64d7df6bdf788adbfb2c77682e46858c9ba4bba290bece8df7d44a2fa2009192",
+    "tx": "0x67e960acda8f220a91de131f12736d71fdf6b1eb03a58a3fc34af59d07f9692c",
     "size_usd": 5.0,
     "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-473",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": 0.0038,
+    "upnl_usd": 0.0002,
+    "held_sec": 4207,
+    "watcher": "rh_live_mtm_loop"
   },
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
-  }
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+  },
+  "strategy": {
+    "lane": "RH_LIVE_SCALP",
+    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
+  },
+  "realized_pnl_usd": -48.2392
 }
