@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-04 11:28:58 ET",
-  "liquid_usd": 49.0678,
+  "updated_et": "2026-10-04 11:29:07 ET",
+  "liquid_usd": 53.7067,
   "upnl_usd": 0.0,
-  "equity_usd": 49.0678,
-  "status": "EXITING:POST_FILL_FLAT_-8.9037",
+  "equity_usd": 53.7067,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.006321431598694232,
-    "rh_weth": 0.01044618828123247,
+    "rh_eth": 0.006318193643856232,
+    "rh_weth": 0.012167681932813276,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.006321431598694232,
-      "weth": 0.01044618828123247
+      "eth": 0.006318193643856232,
+      "weth": 0.012167681932813276
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SLOPCORE uPnL $-0.4452 (-8.9037%) \u00b7 held 9s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 11:28:55 ET \u00b7 CUT POST_FILL_FLAT_-8.9037",
+  "notes": "LIVE EXIT SLOPCORE \u00b7 POST_FILL_FLAT_-8.9037 \u00b7 tx 0xbd204354e3b95c2814f8c19d1217b3abe9022792d7aac163703ab3983c349fbd \u00b7 2026-10-04 11:29:06 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -719,13 +719,38 @@
       "liquid_usd": 49.0678,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 11:29:07 ET",
+      "equity_usd": 53.7067,
+      "liquid_usd": 53.7067,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.0025 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -241.5622,
-  "total_pnl_pct": -83.1167,
+  "total_pnl_usd": -236.9233,
+  "total_pnl_pct": -81.5206,
   "trades": [
+    {
+      "t": "2026-10-04 11:29:06 ET",
+      "kind": "LIVE",
+      "venue": "RH",
+      "market": "SLOPCORE",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": -0.4452,
+      "tx": "0xbd204354e3b95c2814f8c19d1217b3abe9022792d7aac163703ab3983c349fbd",
+      "open_tx": "0xc70fd12011c895ba37999bed0bac5fa2ec5b6c261a28f7cf2f387788c814319b",
+      "exit_tx": "0xbd204354e3b95c2814f8c19d1217b3abe9022792d7aac163703ab3983c349fbd",
+      "id": "LIVE-SCALP-460",
+      "reason": "POST_FILL_FLAT_-8.9037",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x67C13EFd2C7BADccCD630ad5fB524CD51A8C70ba",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-04 01:56:00 ET",
       "kind": "LIVE",
@@ -2147,24 +2172,6 @@
       "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 04:15:30 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "HER",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0xcd1c918f2d77151d5514eaaef746b137e2796b36bcf01a1e8ed3fe906b4d72e4",
-      "open_tx": "0xcd1c918f2d77151d5514eaaef746b137e2796b36bcf01a1e8ed3fe906b4d72e4",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-380",
-      "reason": "FLAT_NO_EXIT",
-      "note": "2026-10-02 09:07:20 ET LEARN: HER FLAT_NO_EXIT/tokens_left \u00b7 ledger pnl\u22480 but book equity burned ~ticket \u00b7 ban HER \u00b7 cool1800 \u00b7 false-FLAT recovery must not reo",
-      "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2699.79,
@@ -2183,13 +2190,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xc70fd12011c895ba37999bed0bac5fa2ec5b6c261a28f7cf2f387788c814319b",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 9,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xbd204354e3b95c2814f8c19d1217b3abe9022792d7aac163703ab3983c349fbd",
+    "last_exit_reason": "POST_FILL_FLAT_-8.9037",
+    "last_exit_upnl": -0.4452
   },
   "paper": {
     "active": false,
