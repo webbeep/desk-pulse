@@ -3,7 +3,7 @@
   "liquid_usd": 55.153,
   "upnl_usd": 0.0,
   "equity_usd": 55.153,
-  "status": "EXIT_None",
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT WALLET \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-10-04 18:46:58 ET",
+  "notes": "LIVE EXIT WALLET \u00b7 TIME_FLAT_120s \u00b7 tx 0x73c6e12253725e04bb6cd94b1051114e4587a408d67cb8c4fdb0571e3bbf8bd6 \u00b7 2026-10-04 18:46:59 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -1053,6 +1053,13 @@
       "t": "2026-10-04 18:46:55 ET",
       "equity_usd": 55.1626,
       "liquid_usd": 50.1643,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 18:46:59 ET",
+      "equity_usd": 55.153,
+      "liquid_usd": 55.153,
       "upnl_usd": 0,
       "n_pos": 0
     },
@@ -2526,9 +2533,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
+    "last_exit_tx": "0x73c6e12253725e04bb6cd94b1051114e4587a408d67cb8c4fdb0571e3bbf8bd6",
     "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": null
+    "last_exit_upnl": -0.0017
   },
   "strategy": {
     "lane": "RH_LIVE_SCALP",
