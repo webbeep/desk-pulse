@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-04 00:35:34 ET",
-  "liquid_usd": 48.5973,
+  "updated_et": "2026-10-04 00:36:01 ET",
+  "liquid_usd": 53.9674,
   "upnl_usd": 0.0,
-  "equity_usd": 48.5973,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 53.9674,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.010056919435349271,
-    "rh_weth": 0.006590467527729002,
+    "rh_eth": 0.010053564489925271,
+    "rh_weth": 0.008588873385296406,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.010056919435349271,
-      "weth": 0.006590467527729002
+      "eth": 0.010053564489925271,
+      "weth": 0.008588873385296406
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SI uPnL $0.4961 (9.9213%) \u00b7 held 56s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 00:35:21 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT SI \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-10-04 00:35:57 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -733,13 +733,38 @@
       "liquid_usd": 48.5973,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 00:36:01 ET",
+      "equity_usd": 53.9674,
+      "liquid_usd": 53.9674,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.3757 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -242.0327,
-  "total_pnl_pct": -83.2786,
+  "total_pnl_usd": -236.6626,
+  "total_pnl_pct": -81.4309,
   "trades": [
+    {
+      "t": "2026-10-04 00:36:00 ET",
+      "kind": "SL",
+      "venue": "RH",
+      "market": "SI",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": 0.3746,
+      "tx": "0xe1bf9775d4fef1d7f208c59fe66ef5c89f0f0057c4469a4f180b8c2b4c31df09",
+      "open_tx": "0x84e3bee5589ff9efa6e517b91240afb926ad26beab810044b3f6b88b9e616b79",
+      "exit_tx": "0xe1bf9775d4fef1d7f208c59fe66ef5c89f0f0057c4469a4f180b8c2b4c31df09",
+      "id": "LIVE-SCALP-455",
+      "reason": "HARD_SL_PCT_-3.4748",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x2267629f4953A581C250Cd01872f5e38990CD999",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-03 16:10:45 ET",
       "kind": "LIVE",
@@ -2161,24 +2186,6 @@
       "token": "0x75eF22Fc566458909f668FCBC932d0C5b61Aa3DB",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 02:46:42 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "GIKO",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x885ef49f72ee49625fe4da4362699a4b6a0d3b5eefb9b849ce8259aae1ee7b23",
-      "open_tx": "0x885ef49f72ee49625fe4da4362699a4b6a0d3b5eefb9b849ce8259aae1ee7b23",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-375",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0x5f9e73EDA1027b039552EFA15A695A8fe55D66b7",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2691.71,
@@ -2197,13 +2204,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x84e3bee5589ff9efa6e517b91240afb926ad26beab810044b3f6b88b9e616b79",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 55,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": -5.0
   },
   "paper": {
     "active": false,
