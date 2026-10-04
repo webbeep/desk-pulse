@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 00:53:44 ET",
+  "updated_et": "2026-10-04 00:53:49 ET",
   "liquid_usd": 53.9272,
   "upnl_usd": 0.0,
   "equity_usd": 53.9272,
-  "status": "EXITED",
+  "status": "EXIT_EXIT_FAIL",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT KIBBLE \u00b7 TIME_FLAT_120s \u00b7 tx 0x4b2a3a960b34297bcf161a39d6b1f2d75325ec2c405a25cd3eea9a9412702f3e \u00b7 2026-10-04 00:53:41 ET",
+  "notes": "LIVE EXIT KIBBLE \u00b7 TIME_FLAT_120s \u00b7 tx 0x6e3f78298c8520c2e91e665752198b76bdaa0d3b51a259c163227cec18359581 \u00b7 2026-10-04 00:53:46 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -789,6 +789,13 @@
       "liquid_usd": 53.9272,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 00:53:49 ET",
+      "equity_usd": 53.9272,
+      "liquid_usd": 53.9272,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
@@ -798,17 +805,17 @@
   "trades": [
     {
       "t": "2026-10-04 00:53:41 ET",
-      "kind": "FLAT",
+      "kind": "LIVE",
       "venue": "RH",
       "market": "KIBBLE",
       "side": "LONG",
       "size_usd": 5.0,
-      "pnl_usd": -0.0014,
-      "tx": "0x4b2a3a960b34297bcf161a39d6b1f2d75325ec2c405a25cd3eea9a9412702f3e",
+      "pnl_usd": -0.0011,
+      "tx": "0x6e3f78298c8520c2e91e665752198b76bdaa0d3b51a259c163227cec18359581",
       "open_tx": "0xf0e6691a632c1d786600b7b7d4dfa6b3ad6c67886c30203f45dd4f32bd57e0bb",
-      "exit_tx": "0x4b2a3a960b34297bcf161a39d6b1f2d75325ec2c405a25cd3eea9a9412702f3e",
+      "exit_tx": "0x6e3f78298c8520c2e91e665752198b76bdaa0d3b51a259c163227cec18359581",
       "id": "LIVE-SCALP-457",
-      "reason": "TIME_FLAT_120s",
+      "reason": "EXITED",
       "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
       "token": "0xd3e1c8cEd11Bf574872F98c259050f37d8975F68",
       "paper": false,
@@ -2253,7 +2260,7 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0x4b2a3a960b34297bcf161a39d6b1f2d75325ec2c405a25cd3eea9a9412702f3e",
+    "last_exit_tx": "0x6e3f78298c8520c2e91e665752198b76bdaa0d3b51a259c163227cec18359581",
     "last_exit_reason": "TIME_FLAT_120s",
     "last_exit_upnl": -0.0014
   },
