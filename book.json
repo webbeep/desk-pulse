@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 01:16:53 ET",
-  "liquid_usd": 53.9681,
+  "updated_et": "2026-10-04 01:20:59 ET",
+  "liquid_usd": 53.9716,
   "upnl_usd": 0,
-  "equity_usd": 53.9681,
-  "status": "LIVE_OPEN",
+  "equity_usd": 53.9716,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -11,7 +11,7 @@
     "base_eth": 0.0,
     "base_usdc": 0.0,
     "l1_eth": 0.00140706,
-    "rh_eth": 0.00818317,
+    "rh_eth": 0.00817971,
     "rh_weth": 0.01044619
   },
   "holdings": {
@@ -27,7 +27,7 @@
       "usdc": 0.0
     },
     "RH": {
-      "eth": 0.00818317,
+      "eth": 0.00817971,
       "weth": 0.01044619
     }
   },
@@ -39,36 +39,9 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-458",
-      "market": "CRAWLER",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "tx": "0xe6f4601c559838486d77f9e7c641dd4c3205444acac6bcdbbfb1f2d493c7526d",
-      "token": "0x5089D6fCf4De31a659214a55E8054f00c33b07Ac",
-      "paper": false,
-      "uPnL": 0.0
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-458",
-    "market": "CRAWLER",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "tx": "0xe6f4601c559838486d77f9e7c641dd4c3205444acac6bcdbbfb1f2d493c7526d",
-    "token": "0x5089D6fCf4De31a659214a55E8054f00c33b07Ac",
-    "paper": false,
-    "uPnL": 0.0
-  },
+  "positions": [],
+  "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-03 13:46:50 ET",
-      "equity_usd": 53.6214,
-      "liquid_usd": 53.6214,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-10-03 13:57:05 ET",
       "equity_usd": 53.6821,
@@ -733,13 +706,38 @@
       "liquid_usd": 53.9681,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 01:20:59 ET",
+      "equity_usd": 53.9716,
+      "liquid_usd": 53.9716,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -236.6619,
+  "total_pnl_usd": -236.6584,
   "total_pnl_pct": -81.43,
   "trades": [
+    {
+      "t": "2026-10-04 01:17:45 ET",
+      "kind": "LIVE",
+      "venue": "RH",
+      "market": "CRAWLER",
+      "side": "LONG",
+      "size_usd": null,
+      "pnl_usd": null,
+      "tx": "0xe6f4601c559838486d77f9e7c641dd4c3205444acac6bcdbbfb1f2d493c7526d",
+      "open_tx": "0xe6f4601c559838486d77f9e7c641dd4c3205444acac6bcdbbfb1f2d493c7526d",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-458",
+      "reason": null,
+      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=None pnl=None",
+      "token": "0x5089D6fCf4De31a659214a55E8054f00c33b07Ac",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-04 00:53:41 ET",
       "kind": "FLAT",
@@ -2161,53 +2159,18 @@
       "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 03:51:17 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "HER",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x119aa87de7315d8ab4730e8b3cc4eb6e2c93e3fc7deeb35ed26c2f1d06a85355",
-      "open_tx": "0x119aa87de7315d8ab4730e8b3cc4eb6e2c93e3fc7deeb35ed26c2f1d06a85355",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-378",
-      "reason": "FLAT_NO_EXIT",
-      "note": "2026-10-02 09:07:20 ET LEARN: HER FLAT_NO_EXIT/tokens_left \u00b7 ledger pnl\u22480 but book equity burned ~ticket \u00b7 ban HER \u00b7 cool1800 \u00b7 false-FLAT recovery must not reo",
-      "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2693.5,
+  "mark": 2694.14,
   "mark_src": "coinbase",
-  "mark_eth": 2693.5,
-  "mark_btc": 84826.21,
+  "mark_eth": 2694.14,
+  "mark_btc": 84829.29,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.009,
+  "mark_link": 14.003,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2693.5,
-    "BTC": 84826.21,
-    "LINK": 14.009
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": true,
-    "flat": false,
-    "ticker": "CRAWLER",
-    "tx": "0xe6f4601c559838486d77f9e7c641dd4c3205444acac6bcdbbfb1f2d493c7526d",
-    "size_usd": 5.0,
-    "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-458",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
-  },
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
+    "ETH": 2694.14,
+    "BTC": 84829.29,
+    "LINK": 14.003
   }
 }
