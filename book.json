@@ -1,8 +1,8 @@
 {
-  "updated_et": "2026-10-04 00:53:18 ET",
-  "liquid_usd": 48.9447,
+  "updated_et": "2026-10-04 00:53:26 ET",
+  "liquid_usd": 48.9443,
   "upnl_usd": 0.0,
-  "equity_usd": 48.9447,
+  "equity_usd": 48.9443,
   "status": "EXITING:TIME_FLAT_120s",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM KIBBLE uPnL $-0.0011 (-0.0222%) \u00b7 held 157s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 00:53:10 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE MTM KIBBLE uPnL $-0.0011 (-0.023%) \u00b7 held 167s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 00:53:20 ET \u00b7 CUT TIME_FLAT_120s",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -768,12 +768,26 @@
       "liquid_usd": 48.9447,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 00:53:23 ET",
+      "equity_usd": 53.9432,
+      "liquid_usd": 48.9443,
+      "upnl_usd": -0.0011,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-04 00:53:26 ET",
+      "equity_usd": 53.9432,
+      "liquid_usd": 48.9443,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.0011 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -241.6853,
-  "total_pnl_pct": -83.1591,
+  "total_pnl_usd": -241.6857,
+  "total_pnl_pct": -83.1592,
   "trades": [
     {
       "t": "2026-10-04 00:46:00 ET",
@@ -2216,15 +2230,15 @@
       "live": true
     }
   ],
-  "mark": 2691.46,
+  "mark": 2691.44,
   "mark_src": "coinbase",
-  "mark_eth": 2691.46,
+  "mark_eth": 2691.44,
   "mark_btc": 84805.34,
   "mark_btc_src": "coinbase",
   "mark_link": 13.998,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2691.46,
+    "ETH": 2691.44,
     "BTC": 84805.34,
     "LINK": 13.998
   },
@@ -2237,7 +2251,7 @@
     "max_loss_usd": 2.0,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 157,
+    "held_sec": 167,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
