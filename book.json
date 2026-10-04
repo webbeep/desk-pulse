@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 14:18:22 ET",
+  "updated_et": "2026-10-04 14:28:24 ET",
   "liquid_usd": 54.749,
   "upnl_usd": 0,
   "equity_usd": 54.749,
-  "status": "FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -39,8 +39,28 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [],
-  "position": null,
+  "positions": [
+    {
+      "id": "LIVE-SCALP-463",
+      "market": "SXSI",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0xf10330b3e18e4d94815dd4543851166e9d675937b7b95e34f5ca01a08279d34b",
+      "token": "0xee8b791E1344996126A7Bb6B4e3B53F13367fea4",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-463",
+    "market": "SXSI",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0xf10330b3e18e4d94815dd4543851166e9d675937b7b95e34f5ca01a08279d34b",
+    "token": "0xee8b791E1344996126A7Bb6B4e3B53F13367fea4",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-10-04 00:52:23 ET",
@@ -2172,5 +2192,22 @@
     "ETH": 2701.3,
     "BTC": 85314.0,
     "LINK": 14.151
+  },
+  "mode": "LIVE",
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "SXSI",
+    "tx": "0xf10330b3e18e4d94815dd4543851166e9d675937b7b95e34f5ca01a08279d34b",
+    "size_usd": 5.0,
+    "max_loss_usd": 2.0,
+    "id": "LIVE-SCALP-463",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "paper": {
+    "active": false,
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
