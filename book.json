@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 18:11:39 ET",
-  "liquid_usd": 49.4455,
+  "updated_et": "2026-10-04 18:11:47 ET",
+  "liquid_usd": 49.4358,
   "upnl_usd": 0.0,
-  "equity_usd": 49.4455,
-  "status": "EXIT_None",
+  "equity_usd": 49.4358,
+  "status": "EXITING:TP_V7_+4.5",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT SC \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-10-04 18:11:39 ET",
+  "notes": "LIVE MTM SC uPnL $0.2452 (4.9047%) \u00b7 held 25s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 18:11:46 ET \u00b7 CUT TP_V7_+4.5",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -742,17 +742,31 @@
       "n_pos": 0
     },
     {
-      "t": "2026-10-04 18:11:39 ET",
-      "equity_usd": 54.8382,
-      "liquid_usd": 49.4455,
+      "t": "2026-10-04 18:11:40 ET",
+      "equity_usd": 54.5322,
+      "liquid_usd": 49.4429,
+      "upnl_usd": 0.0893,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-04 18:11:46 ET",
+      "equity_usd": 54.681,
+      "liquid_usd": 49.4358,
+      "upnl_usd": 0.2452,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-04 18:11:47 ET",
+      "equity_usd": 54.681,
+      "liquid_usd": 49.4358,
       "upnl_usd": 0,
       "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.236 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -241.1845,
-  "total_pnl_pct": -82.9868,
+  "total_pnl_usd": -241.1942,
+  "total_pnl_pct": -82.9901,
   "trades": [
     {
       "t": "2026-10-04 17:40:57 ET",
@@ -2195,15 +2209,15 @@
       "live": true
     }
   ],
-  "mark": 2713.74,
+  "mark": 2713.21,
   "mark_src": "coinbase",
-  "mark_eth": 2713.74,
+  "mark_eth": 2713.21,
   "mark_btc": 85999.38,
   "mark_btc_src": "coinbase",
   "mark_link": 14.204,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2713.74,
+    "ETH": 2713.21,
     "BTC": 85999.38,
     "LINK": 14.204
   },
@@ -2211,9 +2225,13 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": null,
-    "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": null
+    "tx": "0x931ed42448bc41a9c8e99e777d34d9cc47ce6f74d7c98944a71e7b5291a2740b",
+    "size_usd": 0,
+    "max_loss_usd": 2.0,
+    "mtm_pct": null,
+    "upnl_usd": null,
+    "held_sec": 25,
+    "watcher": "rh_live_mtm_loop"
   },
   "paper": {
     "active": false,
