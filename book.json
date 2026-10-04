@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-04 19:22:04 ET",
-  "liquid_usd": 50.2104,
+  "updated_et": "2026-10-04 19:22:06 ET",
+  "liquid_usd": 55.2026,
   "upnl_usd": 0.0,
-  "equity_usd": 50.2104,
-  "status": "EXITING:TIME_FLAT_120s",
+  "equity_usd": 55.2026,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.004216523638238152,
-    "rh_weth": 0.012751684725946608,
+    "rh_eth": 0.004214028520508152,
+    "rh_weth": 0.014580857098918374,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.004216523638238152,
-      "weth": 0.012751684725946608
+      "eth": 0.004214028520508152,
+      "weth": 0.014580857098918374
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM WALLET uPnL $-0.0018 (-0.0357%) \u00b7 held 2233s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 19:22:02 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT WALLET \u00b7 TIME_FLAT_120s \u00b7 tx 0xe618cc5947f5f6123020f7546baa17dc7592280baf2643e0b052a9c9f34afe1a \u00b7 2026-10-04 19:22:05 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -761,12 +761,19 @@
       "liquid_usd": 50.2104,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 19:22:06 ET",
+      "equity_usd": 55.2026,
+      "liquid_usd": 55.2026,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-47.9359 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -240.4196,
-  "total_pnl_pct": -82.7236,
+  "total_pnl_usd": -235.4274,
+  "total_pnl_pct": -81.0059,
   "trades": [
     {
       "t": "2026-10-04 18:47:44 ET",
@@ -2209,15 +2216,15 @@
       "live": true
     }
   ],
-  "mark": 2732.5,
+  "mark": 2732.54,
   "mark_src": "coinbase",
-  "mark_eth": 2732.5,
+  "mark_eth": 2732.54,
   "mark_btc": 86385.01,
   "mark_btc_src": "coinbase",
   "mark_link": 14.248,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2732.5,
+    "ETH": 2732.54,
     "BTC": 86385.01,
     "LINK": 14.248
   },
@@ -2225,13 +2232,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x67e960acda8f220a91de131f12736d71fdf6b1eb03a58a3fc34af59d07f9692c",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 2232,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xe618cc5947f5f6123020f7546baa17dc7592280baf2643e0b052a9c9f34afe1a",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": -0.0018
   },
   "paper": {
     "active": false,
