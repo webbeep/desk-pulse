@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-04 14:28:35 ET",
-  "liquid_usd": 49.7243,
+  "updated_et": "2026-10-04 14:28:37 ET",
+  "liquid_usd": 55.0735,
   "upnl_usd": 0.0,
-  "equity_usd": 49.7243,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 55.0735,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.002604229268096986,
-    "rh_weth": 0.014401017286538469,
+    "rh_eth": 0.002601928580120986,
+    "rh_weth": 0.016383931276250766,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.002604229268096986,
-      "weth": 0.014401017286538469
+      "eth": 0.002601928580120986,
+      "weth": 0.016383931276250766
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SXSI uPnL $0.3548 (7.0968%) \u00b7 held 1858s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 14:28:32 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT SXSI \u00b7 TIME_FLAT_120s \u00b7 tx 0x746e1bd83b5216ed0e08ff59ae9046b6d1f2217b94c0a6e12ad2a8d4e65e5b11 \u00b7 2026-10-04 14:28:36 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -733,12 +733,19 @@
       "liquid_usd": 49.7243,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 14:28:37 ET",
+      "equity_usd": 55.0735,
+      "liquid_usd": 55.0735,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-47.4094 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -240.9057,
-  "total_pnl_pct": -82.8909,
+  "total_pnl_usd": -235.5565,
+  "total_pnl_pct": -81.0503,
   "trades": [
     {
       "t": "2026-10-04 13:57:37 ET",
@@ -2181,15 +2188,15 @@
       "live": true
     }
   ],
-  "mark": 2700.6,
+  "mark": 2700.62,
   "mark_src": "coinbase",
-  "mark_eth": 2700.6,
+  "mark_eth": 2700.62,
   "mark_btc": 85314.0,
   "mark_btc_src": "coinbase",
   "mark_link": 14.151,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2700.6,
+    "ETH": 2700.62,
     "BTC": 85314.0,
     "LINK": 14.151
   },
@@ -2197,13 +2204,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x8436de587e1b217972d10bb3f292abde46e0faa701b66eb95b0d9cdbeb2466a3",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 1858,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x746e1bd83b5216ed0e08ff59ae9046b6d1f2217b94c0a6e12ad2a8d4e65e5b11",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": 0.3544
   },
   "paper": {
     "active": false,
