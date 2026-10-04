@@ -1,8 +1,8 @@
 {
-  "updated_et": "2026-10-04 18:47:29 ET",
-  "liquid_usd": 50.1096,
+  "updated_et": "2026-10-04 18:47:30 ET",
+  "liquid_usd": 50.1246,
   "upnl_usd": 0.0,
-  "equity_usd": 50.1096,
+  "equity_usd": 50.1246,
   "status": "EXITING:TIME_FLAT_120s",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM WALLET uPnL $-0.0015 (-0.0306%) \u00b7 held 157s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 18:47:26 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE MTM WALLET uPnL $-0.0 (-0.0006%) \u00b7 held 157s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 18:47:27 ET \u00b7 CUT TIME_FLAT_120s",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -1097,12 +1097,19 @@
       "liquid_usd": 50.1096,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 18:47:30 ET",
+      "equity_usd": 55.1246,
+      "liquid_usd": 50.1246,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-47.9351 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -240.5204,
-  "total_pnl_pct": -82.7583,
+  "total_pnl_usd": -240.5054,
+  "total_pnl_pct": -82.7531,
   "trades": [
     {
       "t": "2026-10-04 18:42:36 ET",
@@ -2545,15 +2552,15 @@
       "live": true
     }
   ],
-  "mark": 2726.71,
+  "mark": 2727.53,
   "mark_src": "coinbase",
-  "mark_eth": 2726.71,
+  "mark_eth": 2727.53,
   "mark_btc": 86474.22,
   "mark_btc_src": "coinbase",
   "mark_link": 14.244,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2726.71,
+    "ETH": 2727.53,
     "BTC": 86474.22,
     "LINK": 14.244
   },
@@ -2566,7 +2573,7 @@
     "max_loss_usd": 2.0,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 156,
+    "held_sec": 157,
     "watcher": "rh_live_mtm_loop"
   },
   "strategy": {
