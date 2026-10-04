@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 13:57:36 ET",
-  "liquid_usd": 54.8289,
+  "updated_et": "2026-10-04 13:58:04 ET",
+  "liquid_usd": 54.7527,
   "upnl_usd": 0,
-  "equity_usd": 54.8289,
-  "status": "LIVE_OPEN",
+  "equity_usd": 54.7527,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -11,7 +11,7 @@
     "base_eth": 0.0,
     "base_usdc": 0.0,
     "l1_eth": 0.00140706,
-    "rh_eth": 0.00446295,
+    "rh_eth": 0.00445959,
     "rh_weth": 0.01440102
   },
   "holdings": {
@@ -27,7 +27,7 @@
       "usdc": 0.0
     },
     "RH": {
-      "eth": 0.00446295,
+      "eth": 0.00445959,
       "weth": 0.01440102
     }
   },
@@ -39,36 +39,9 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-462",
-      "market": "SXSI",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "tx": "0x8436de587e1b217972d10bb3f292abde46e0faa701b66eb95b0d9cdbeb2466a3",
-      "token": "0xee8b791E1344996126A7Bb6B4e3B53F13367fea4",
-      "paper": false,
-      "uPnL": 0.0
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-462",
-    "market": "SXSI",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "tx": "0x8436de587e1b217972d10bb3f292abde46e0faa701b66eb95b0d9cdbeb2466a3",
-    "token": "0xee8b791E1344996126A7Bb6B4e3B53F13367fea4",
-    "paper": false,
-    "uPnL": 0.0
-  },
+  "positions": [],
+  "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-04 00:51:32 ET",
-      "equity_usd": 53.9409,
-      "liquid_usd": 48.9423,
-      "upnl_usd": -0.0014,
-      "n_pos": 1
-    },
     {
       "t": "2026-10-04 00:51:44 ET",
       "equity_usd": 53.9409,
@@ -733,13 +706,38 @@
       "liquid_usd": 54.8289,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 13:58:04 ET",
+      "equity_usd": 54.7527,
+      "liquid_usd": 54.7527,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -235.8011,
-  "total_pnl_pct": -81.13,
+  "total_pnl_usd": -235.8773,
+  "total_pnl_pct": -81.16,
   "trades": [
+    {
+      "t": "2026-10-04 13:57:37 ET",
+      "kind": "FLAT",
+      "venue": "RH",
+      "market": "SXSI",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": 0.0,
+      "tx": "0x8436de587e1b217972d10bb3f292abde46e0faa701b66eb95b0d9cdbeb2466a3",
+      "open_tx": "0x8436de587e1b217972d10bb3f292abde46e0faa701b66eb95b0d9cdbeb2466a3",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-462",
+      "reason": "FLAT",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0xee8b791E1344996126A7Bb6B4e3B53F13367fea4",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-04 13:25:42 ET",
       "kind": "TP",
@@ -2161,53 +2159,18 @@
       "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 04:42:09 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "HER",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x2d3beee32413c8806d77a1f9abff41a47e46b9dca0e0f3ffc9f7f1bcf48552fe",
-      "open_tx": "0x2d3beee32413c8806d77a1f9abff41a47e46b9dca0e0f3ffc9f7f1bcf48552fe",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-382",
-      "reason": "FLAT_NO_EXIT",
-      "note": "2026-10-02 09:07:20 ET LEARN: HER FLAT_NO_EXIT/tokens_left \u00b7 ledger pnl\u22480 but book equity burned ~ticket \u00b7 ban HER \u00b7 cool1800 \u00b7 false-FLAT recovery must not reo",
-      "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2704.79,
+  "mark": 2701.48,
   "mark_src": "coinbase",
-  "mark_eth": 2704.79,
-  "mark_btc": 85429.99,
+  "mark_eth": 2701.48,
+  "mark_btc": 85300.23,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.202,
+  "mark_link": 14.164,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2704.79,
-    "BTC": 85429.99,
-    "LINK": 14.202
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": true,
-    "flat": false,
-    "ticker": "SXSI",
-    "tx": "0x8436de587e1b217972d10bb3f292abde46e0faa701b66eb95b0d9cdbeb2466a3",
-    "size_usd": 5.0,
-    "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-462",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
-  },
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
+    "ETH": 2701.48,
+    "BTC": 85300.23,
+    "LINK": 14.164
   }
 }
