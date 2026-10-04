@@ -1,8 +1,8 @@
 {
-  "updated_et": "2026-10-04 18:11:47 ET",
-  "liquid_usd": 49.4358,
+  "updated_et": "2026-10-04 18:11:48 ET",
+  "liquid_usd": 49.4342,
   "upnl_usd": 0.0,
-  "equity_usd": 49.4358,
+  "equity_usd": 49.4342,
   "status": "EXITING:TP_V7_+4.5",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SC uPnL $0.3011 (6.021%) \u00b7 held 25s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 18:11:46 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE MTM SC uPnL $0.3009 (6.0175%) \u00b7 held 27s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 18:11:47 ET \u00b7 CUT TP_V7_+4.5",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -761,12 +761,26 @@
       "liquid_usd": 49.4358,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 18:11:48 ET",
+      "equity_usd": 54.7351,
+      "liquid_usd": 49.4342,
+      "upnl_usd": 0.3009,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-04 18:11:48 ET",
+      "equity_usd": 54.7351,
+      "liquid_usd": 49.4342,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.236 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -241.1942,
-  "total_pnl_pct": -82.9901,
+  "total_pnl_usd": -241.1958,
+  "total_pnl_pct": -82.9907,
   "trades": [
     {
       "t": "2026-10-04 17:40:57 ET",
@@ -2209,15 +2223,15 @@
       "live": true
     }
   ],
-  "mark": 2713.21,
+  "mark": 2713.12,
   "mark_src": "coinbase",
-  "mark_eth": 2713.21,
+  "mark_eth": 2713.12,
   "mark_btc": 85999.38,
   "mark_btc_src": "coinbase",
   "mark_link": 14.204,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2713.21,
+    "ETH": 2713.12,
     "BTC": 85999.38,
     "LINK": 14.204
   },
@@ -2230,7 +2244,7 @@
     "max_loss_usd": 2.0,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 25,
+    "held_sec": 26,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
