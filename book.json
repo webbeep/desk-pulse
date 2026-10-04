@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 19:28:20 ET",
+  "updated_et": "2026-10-04 19:28:24 ET",
   "liquid_usd": 54.9155,
   "upnl_usd": 0.0,
   "equity_usd": 54.9155,
-  "status": "EXITING:TP_V7_+4.5",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM TECKTONIK uPnL $0.4811 (9.621%) \u00b7 held 20s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 19:28:12 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT TECKTONIK \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-10-04 19:28:24 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -831,6 +831,13 @@
       "liquid_usd": 54.9155,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 19:28:24 ET",
+      "equity_usd": 54.9155,
+      "liquid_usd": 54.9155,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
@@ -840,17 +847,17 @@
   "trades": [
     {
       "t": "2026-10-04 19:28:18 ET",
-      "kind": "TP",
+      "kind": "LIVE",
       "venue": "RH",
       "market": "TECKTONIK",
       "side": "LONG",
       "size_usd": 5.0,
-      "pnl_usd": -0.3033,
+      "pnl_usd": 0.4369,
       "tx": "0x75a86b0cd8c21e5d897d971e3062a2144acc7e19504e774d74e52af3283bcc01",
       "open_tx": "0xbcdd7bbb3e09ea3d5e7e2d5437d6855b388b2f12610af043238b5e987c163433",
       "exit_tx": "0x75a86b0cd8c21e5d897d971e3062a2144acc7e19504e774d74e52af3283bcc01",
       "id": "LIVE-SCALP-472",
-      "reason": "TP_V7_+4.5",
+      "reason": "EXITED",
       "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
       "token": "0x0631a4A5ba03ac2B4630c4a33177cB69469a0fd5",
       "paper": false,
@@ -2295,13 +2302,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xbcdd7bbb3e09ea3d5e7e2d5437d6855b388b2f12610af043238b5e987c163433",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 20,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
