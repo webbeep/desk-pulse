@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 17:40:47 ET",
+  "updated_et": "2026-10-04 17:40:49 ET",
   "liquid_usd": 49.5879,
   "upnl_usd": 0.0,
   "equity_usd": 49.5879,
-  "status": "EXITING:POST_FILL_FLAT_-12.8323",
+  "status": "EXITING:POST_FILL_FLAT_-13.6029",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SC uPnL $-0.6416 (-12.8323%) \u00b7 held 11s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 17:40:44 ET \u00b7 CUT POST_FILL_FLAT_-12.8323",
+  "notes": "LIVE MTM SC uPnL $-0.6801 (-13.6029%) \u00b7 held 13s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 17:40:46 ET \u00b7 CUT POST_FILL_FLAT_-13.6029",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -729,6 +729,13 @@
     },
     {
       "t": "2026-10-04 17:40:47 ET",
+      "equity_usd": 53.9078,
+      "liquid_usd": 49.5879,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 17:40:49 ET",
       "equity_usd": 53.9078,
       "liquid_usd": 49.5879,
       "upnl_usd": 0,
@@ -2202,7 +2209,7 @@
     "max_loss_usd": 2.0,
     "mtm_pct": null,
     "upnl_usd": null,
-    "held_sec": 10,
+    "held_sec": 12,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
