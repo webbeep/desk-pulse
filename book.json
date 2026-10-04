@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-04 18:11:52 ET",
-  "liquid_usd": 49.4358,
+  "updated_et": "2026-10-04 18:11:53 ET",
+  "liquid_usd": 54.8754,
   "upnl_usd": 0.0,
-  "equity_usd": 49.4358,
+  "equity_usd": 54.8754,
   "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.011569956142050263,
-    "rh_weth": 0.005243393381079511,
+    "rh_eth": 0.011567652838150264,
+    "rh_weth": 0.007251208887133539,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.011569956142050263,
-      "weth": 0.005243393381079511
+      "eth": 0.011567652838150264,
+      "weth": 0.007251208887133539
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT SC \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-10-04 18:11:51 ET",
+  "notes": "LIVE EXIT SC \u00b7 TP_V7_+4.5 \u00b7 tx None \u00b7 2026-10-04 18:11:52 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -782,13 +782,38 @@
       "liquid_usd": 49.4358,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 18:11:53 ET",
+      "equity_usd": 54.8754,
+      "liquid_usd": 54.8754,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.236 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -241.1942,
-  "total_pnl_pct": -82.9901,
+  "total_pnl_usd": -235.7546,
+  "total_pnl_pct": -81.1185,
   "trades": [
+    {
+      "t": "2026-10-04 18:11:52 ET",
+      "kind": "TP",
+      "venue": "RH",
+      "market": "SC",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": 0.3009,
+      "tx": "0x4dc5e870f374b0882c0c5281bba3257599b2f1fb5c8d5eac7e4f2101a92c1ed1",
+      "open_tx": "0x931ed42448bc41a9c8e99e777d34d9cc47ce6f74d7c98944a71e7b5291a2740b",
+      "exit_tx": "0x4dc5e870f374b0882c0c5281bba3257599b2f1fb5c8d5eac7e4f2101a92c1ed1",
+      "id": "LIVE-SCALP-467",
+      "reason": "TP_V7_+4.5",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x13042dbE191DB48F8ab78be1Cb22fcD29D05A2Df",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-04 17:40:57 ET",
       "kind": "LIVE",
@@ -2210,35 +2235,17 @@
       "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 05:24:30 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "HER",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x674f8006b83e4b1cd72015896df6fe87453cd3452232cc592ad1e32c39db9161",
-      "open_tx": "0x674f8006b83e4b1cd72015896df6fe87453cd3452232cc592ad1e32c39db9161",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-387",
-      "reason": "FLAT_NO_EXIT",
-      "note": "2026-10-02 09:07:20 ET LEARN: HER FLAT_NO_EXIT/tokens_left \u00b7 ledger pnl\u22480 but book equity burned ~ticket \u00b7 ban HER \u00b7 cool1800 \u00b7 false-FLAT recovery must not reo",
-      "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2713.21,
+  "mark": 2713.12,
   "mark_src": "coinbase",
-  "mark_eth": 2713.21,
+  "mark_eth": 2713.12,
   "mark_btc": 85999.38,
   "mark_btc_src": "coinbase",
   "mark_link": 14.204,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2713.21,
+    "ETH": 2713.12,
     "BTC": 85999.38,
     "LINK": 14.204
   },
