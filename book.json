@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 23:45:43 ET",
-  "liquid_usd": 49.5811,
-  "upnl_usd": 0.0,
-  "equity_usd": 49.5811,
-  "status": "EXIT_EXIT_FAIL",
+  "updated_et": "2026-10-04 23:45:53 ET",
+  "liquid_usd": 49.5897,
+  "upnl_usd": -0.9089,
+  "equity_usd": 53.6808,
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,43 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT TEXCAT \u00b7 TP_V7_+4.5 \u00b7 tx 0x12e1db3d3f8537659d6bb8748b5e594e50be81c12793f064643d06f2120f0905 \u00b7 2026-10-04 23:45:42 ET",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE MTM TEXCAT uPnL $-0.9089 (-18.1778%) \u00b7 held 38s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 23:45:53 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "TEXCAT",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "entry": 8.085338663141739e-05,
+      "mark": 6.615599804183583e-05,
+      "uPnL": -0.9089,
+      "mtm_pct": -18.1778,
+      "lev": 1,
+      "paper": false,
+      "tx": "0xc700203771a4f567f52747eb4986a74e479685049e449bed2ddb198700b0d6e1",
+      "token": "0x6015814a48E7E78CD210789C003ECd53aFb38406",
+      "held_sec": 38,
+      "weth_out": 0.001502736023435616,
+      "usd_out": 4.091109
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "TEXCAT",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "entry": 8.085338663141739e-05,
+    "mark": 6.615599804183583e-05,
+    "uPnL": -0.9089,
+    "mtm_pct": -18.1778,
+    "lev": 1,
+    "paper": false,
+    "tx": "0xc700203771a4f567f52747eb4986a74e479685049e449bed2ddb198700b0d6e1",
+    "token": "0x6015814a48E7E78CD210789C003ECd53aFb38406",
+    "held_sec": 38,
+    "weth_out": 0.001502736023435616,
+    "usd_out": 4.091109
+  },
   "pnl_history": [
     {
       "t": "2026-10-04 18:46:55 ET",
@@ -733,12 +767,19 @@
       "liquid_usd": 49.5811,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 23:45:53 ET",
+      "equity_usd": 53.6808,
+      "liquid_usd": 49.5897,
+      "upnl_usd": -0.9089,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.4491 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -241.0489,
-  "total_pnl_pct": -82.9401,
+  "total_pnl_usd": -236.9492,
+  "total_pnl_pct": -81.5295,
   "trades": [
     {
       "t": "2026-10-04 21:30:21 ET",
@@ -2181,25 +2222,29 @@
       "live": true
     }
   ],
-  "mark": 2721.97,
+  "mark": 2722.44,
   "mark_src": "coinbase",
-  "mark_eth": 2721.97,
+  "mark_eth": 2722.44,
   "mark_btc": 86325.61,
   "mark_btc_src": "coinbase",
   "mark_link": 14.184,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2721.97,
+    "ETH": 2722.44,
     "BTC": 86325.61,
     "LINK": 14.184
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x12e1db3d3f8537659d6bb8748b5e594e50be81c12793f064643d06f2120f0905",
-    "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": 3.0267
+    "open": true,
+    "ticker": "TEXCAT",
+    "tx": "0xc700203771a4f567f52747eb4986a74e479685049e449bed2ddb198700b0d6e1",
+    "size_usd": 5.0,
+    "max_loss_usd": 2.0,
+    "mtm_pct": -18.1778,
+    "upnl_usd": -0.9089,
+    "held_sec": 38,
+    "watcher": "rh_live_mtm_loop"
   },
   "paper": {
     "active": false,
