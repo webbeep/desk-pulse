@@ -1,34 +1,26 @@
 {
-  "updated_et": "2026-10-04 23:45:16 ET",
-  "liquid_usd": 54.6718,
-  "upnl_usd": 0,
-  "equity_usd": 54.6718,
+  "updated_et": "2026-10-04 23:45:21 ET",
+  "liquid_usd": 49.5883,
+  "upnl_usd": -0.0004,
+  "equity_usd": 54.5879,
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
+    "l1_eth": 0.001407059032801532,
+    "rh_eth": 0.007635883649732929,
+    "rh_weth": 0.00917547213003682,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "l1_eth": 0.00140706,
-    "rh_eth": 0.00947596,
-    "rh_weth": 0.00917547
+    "base_usdc": 0.0
   },
   "holdings": {
     "L1": {
-      "eth": 0.00140706
-    },
-    "Arb": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "Base": {
-      "eth": 0.0,
-      "usdc": 0.0
+      "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.00947596,
-      "weth": 0.00917547
+      "eth": 0.007635883649732929,
+      "weth": 0.00917547213003682
     }
   },
   "wallet_urls": {
@@ -38,28 +30,42 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "notes": "LIVE MTM TEXCAT uPnL $-0.0004 (-0.0071%) \u00b7 held 6s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 23:45:20 ET",
   "positions": [
     {
-      "id": "LIVE-SCALP-478",
+      "id": "LIVE-SCALP-2",
       "market": "TEXCAT",
       "side": "LONG",
       "size_usd": 5.0,
+      "entry": 8.085338663141739e-05,
+      "mark": 8.084761404704393e-05,
+      "uPnL": -0.0004,
+      "mtm_pct": -0.0071,
+      "lev": 1,
+      "paper": false,
       "tx": "0xc700203771a4f567f52747eb4986a74e479685049e449bed2ddb198700b0d6e1",
       "token": "0x6015814a48E7E78CD210789C003ECd53aFb38406",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 5,
+      "weth_out": 0.001836834475247002,
+      "usd_out": 4.999643
     }
   ],
   "position": {
-    "id": "LIVE-SCALP-478",
+    "id": "LIVE-SCALP-2",
     "market": "TEXCAT",
     "side": "LONG",
     "size_usd": 5.0,
+    "entry": 8.085338663141739e-05,
+    "mark": 8.084761404704393e-05,
+    "uPnL": -0.0004,
+    "mtm_pct": -0.0071,
+    "lev": 1,
+    "paper": false,
     "tx": "0xc700203771a4f567f52747eb4986a74e479685049e449bed2ddb198700b0d6e1",
     "token": "0x6015814a48E7E78CD210789C003ECd53aFb38406",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 5,
+    "weth_out": 0.001836834475247002,
+    "usd_out": 4.999643
   },
   "pnl_history": [
     {
@@ -733,12 +739,19 @@
       "liquid_usd": 54.6718,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 23:45:21 ET",
+      "equity_usd": 54.5879,
+      "liquid_usd": 49.5883,
+      "upnl_usd": -0.0004,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -235.9582,
-  "total_pnl_pct": -81.19,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.4491 \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -236.0421,
+  "total_pnl_pct": -81.2174,
   "trades": [
     {
       "t": "2026-10-04 21:30:21 ET",
@@ -2181,33 +2194,37 @@
       "live": true
     }
   ],
-  "mark": 2725.62,
+  "mark": 2721.88,
   "mark_src": "coinbase",
-  "mark_eth": 2725.62,
+  "mark_eth": 2721.88,
   "mark_btc": 86325.61,
   "mark_btc_src": "coinbase",
   "mark_link": 14.184,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2725.62,
+    "ETH": 2721.88,
     "BTC": 86325.61,
     "LINK": 14.184
   },
   "mode": "LIVE",
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "TEXCAT",
     "tx": "0xc700203771a4f567f52747eb4986a74e479685049e449bed2ddb198700b0d6e1",
     "size_usd": 5.0,
     "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-478",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.0071,
+    "upnl_usd": -0.0004,
+    "held_sec": 5,
+    "watcher": "rh_live_mtm_loop"
   },
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
-  }
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+  },
+  "strategy": {
+    "lane": "RH_LIVE_SCALP",
+    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
+  },
+  "realized_pnl_usd": -48.4491
 }
