@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-05 04:19:14 ET",
+  "updated_et": "2026-10-05 04:24:09 ET",
   "liquid_usd": 59.0554,
   "upnl_usd": 0,
   "equity_usd": 59.0554,
-  "status": "FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -39,8 +39,28 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [],
-  "position": null,
+  "positions": [
+    {
+      "id": "LIVE-SCALP-484",
+      "market": "TEXCAT",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0xfdd56fac9aaed9e7c2233ad00f3e70e52d3a7affcc4c0f38cec6fc3e6da997c8",
+      "token": "0x0cd229F1bBad5ae58e9a84950AEbcf5816229d75",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-484",
+    "market": "TEXCAT",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0xfdd56fac9aaed9e7c2233ad00f3e70e52d3a7affcc4c0f38cec6fc3e6da997c8",
+    "token": "0x0cd229F1bBad5ae58e9a84950AEbcf5816229d75",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-10-04 20:26:46 ET",
@@ -2172,5 +2192,22 @@
     "ETH": 2724.53,
     "BTC": 86295.46,
     "LINK": 14.2
+  },
+  "mode": "LIVE",
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "TEXCAT",
+    "tx": "0xfdd56fac9aaed9e7c2233ad00f3e70e52d3a7affcc4c0f38cec6fc3e6da997c8",
+    "size_usd": 5.0,
+    "max_loss_usd": 2.0,
+    "id": "LIVE-SCALP-484",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "paper": {
+    "active": false,
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
