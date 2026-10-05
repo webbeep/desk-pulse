@@ -1,8 +1,8 @@
 {
-  "updated_et": "2026-10-04 20:27:08 ET",
-  "liquid_usd": 54.598,
+  "updated_et": "2026-10-04 20:37:17 ET",
+  "liquid_usd": 54.5723,
   "upnl_usd": 0,
-  "equity_usd": 54.598,
+  "equity_usd": 54.5723,
   "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
@@ -42,13 +42,6 @@
   "positions": [],
   "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-04 18:45:40 ET",
-      "equity_usd": 55.1495,
-      "liquid_usd": 50.1524,
-      "upnl_usd": -0.0029,
-      "n_pos": 1
-    },
     {
       "t": "2026-10-04 18:45:42 ET",
       "equity_usd": 55.1522,
@@ -713,12 +706,19 @@
       "liquid_usd": 54.598,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 20:37:17 ET",
+      "equity_usd": 54.5723,
+      "liquid_usd": 54.5723,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -236.032,
-  "total_pnl_pct": -81.21,
+  "total_pnl_usd": -236.0577,
+  "total_pnl_pct": -81.22,
   "trades": [
     {
       "t": "2026-10-04 20:26:51 ET",
@@ -726,14 +726,14 @@
       "venue": "RH",
       "market": "WALLET",
       "side": "LONG",
-      "size_usd": 5.0,
+      "size_usd": null,
       "pnl_usd": 0.0,
       "tx": "0x4c8ac8b61c81d17b0dc7309c2f6bc054cdfaae83432ae6b3b53a85bfbb016fec",
       "open_tx": "0x4c8ac8b61c81d17b0dc7309c2f6bc054cdfaae83432ae6b3b53a85bfbb016fec",
       "exit_tx": null,
       "id": "LIVE-SCALP-475",
       "reason": "FLAT",
-      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
       "token": "0x72548C880e1A1729301c49D745E0CACD0C49c48B",
       "paper": false,
       "live": true
@@ -2161,16 +2161,16 @@
       "live": true
     }
   ],
-  "mark": 2720.31,
+  "mark": 2719.03,
   "mark_src": "coinbase",
-  "mark_eth": 2720.31,
-  "mark_btc": 86287.28,
+  "mark_eth": 2719.03,
+  "mark_btc": 86303.93,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.195,
+  "mark_link": 14.192,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2720.31,
-    "BTC": 86287.28,
-    "LINK": 14.195
+    "ETH": 2719.03,
+    "BTC": 86303.93,
+    "LINK": 14.192
   }
 }
