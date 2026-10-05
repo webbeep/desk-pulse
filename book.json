@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-05 10:16:08 ET",
+  "updated_et": "2026-10-05 10:16:18 ET",
   "liquid_usd": 57.992,
   "upnl_usd": 0,
   "equity_usd": 57.992,
-  "status": "FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -39,8 +39,28 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [],
-  "position": null,
+  "positions": [
+    {
+      "id": "LIVE-SCALP-499",
+      "market": "STOMPY",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x759bc5daf5d24096b52ccff3cecf4aff966baf8008c46c4d2a9bc1890aa2b81b",
+      "token": "0xd1AAF85e66a9FF756F3b7E2179Ecc1c7747B6293",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-499",
+    "market": "STOMPY",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x759bc5daf5d24096b52ccff3cecf4aff966baf8008c46c4d2a9bc1890aa2b81b",
+    "token": "0xd1AAF85e66a9FF756F3b7E2179Ecc1c7747B6293",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-10-05 04:09:05 ET",
@@ -2172,5 +2192,22 @@
     "ETH": 2726.4,
     "BTC": 86564.36,
     "LINK": 14.109
+  },
+  "mode": "LIVE",
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "STOMPY",
+    "tx": "0x759bc5daf5d24096b52ccff3cecf4aff966baf8008c46c4d2a9bc1890aa2b81b",
+    "size_usd": 5.0,
+    "max_loss_usd": 2.0,
+    "id": "LIVE-SCALP-499",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "paper": {
+    "active": false,
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
