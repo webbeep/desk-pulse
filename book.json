@@ -1,9 +1,9 @@
 {
   "updated_et": "2026-10-04 20:26:46 ET",
-  "liquid_usd": 54.5992,
+  "liquid_usd": 54.6211,
   "upnl_usd": 0.0,
-  "equity_usd": 54.5992,
-  "status": "EXITED",
+  "equity_usd": 54.6211,
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT WALLET \u00b7 TIME_FLAT_120s \u00b7 tx 0xf80fc33e3c10bcfbed6c117c297b93baea246ccd1b92b72d2a16694121dca718 \u00b7 2026-10-04 20:26:45 ET",
+  "notes": "LIVE EXIT WALLET \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-10-04 20:26:46 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -740,12 +740,19 @@
       "liquid_usd": 54.5992,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 20:26:46 ET",
+      "equity_usd": 54.6211,
+      "liquid_usd": 54.6211,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.4491 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -236.0308,
-  "total_pnl_pct": -81.2135,
+  "total_pnl_usd": -236.0089,
+  "total_pnl_pct": -81.206,
   "trades": [
     {
       "t": "2026-10-04 20:01:51 ET",
@@ -2188,15 +2195,15 @@
       "live": true
     }
   ],
-  "mark": 2720.37,
+  "mark": 2721.46,
   "mark_src": "coinbase",
-  "mark_eth": 2720.37,
+  "mark_eth": 2721.46,
   "mark_btc": 86464.58,
   "mark_btc_src": "coinbase",
   "mark_link": 14.262,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2720.37,
+    "ETH": 2721.46,
     "BTC": 86464.58,
     "LINK": 14.262
   },
@@ -2204,9 +2211,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "last_exit_tx": "0xf80fc33e3c10bcfbed6c117c297b93baea246ccd1b92b72d2a16694121dca718",
+    "last_exit_tx": null,
     "last_exit_reason": "TIME_FLAT_120s",
-    "last_exit_upnl": 0.0007
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
