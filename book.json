@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 12:38:01 ET",
-  "liquid_usd": 54.4195,
+  "updated_et": "2026-10-05 12:38:11 ET",
+  "liquid_usd": 60.2483,
   "upnl_usd": 0.0,
-  "equity_usd": 54.4195,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 60.2483,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.01477367832558879,
-    "rh_weth": 0.004036866398251779,
+    "rh_eth": 0.01476730896763479,
+    "rh_weth": 0.00620872507955588,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.01477367832558879,
-      "weth": 0.004036866398251779
+      "eth": 0.01476730896763479,
+      "weth": 0.00620872507955588
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM VLAD uPnL $0.5985 (11.9704%) \u00b7 held 12s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 12:37:54 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT VLAD \u00b7 TP_V7_+4.5 \u00b7 tx 0x6eeb0ad337c0b9eb2dca73c7626d5da5c1c3c5ae7818d916af3077dadbdb830d \u00b7 2026-10-05 12:38:10 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -719,13 +719,38 @@
       "liquid_usd": 54.4195,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 12:38:11 ET",
+      "equity_usd": 60.2483,
+      "liquid_usd": 60.2483,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-43.9809 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -236.2105,
-  "total_pnl_pct": -81.2753,
+  "total_pnl_usd": -230.3817,
+  "total_pnl_pct": -79.2698,
   "trades": [
+    {
+      "t": "2026-10-05 12:38:10 ET",
+      "kind": "TP",
+      "venue": "RH",
+      "market": "VLAD",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": 0.8227,
+      "tx": "0x6eeb0ad337c0b9eb2dca73c7626d5da5c1c3c5ae7818d916af3077dadbdb830d",
+      "open_tx": "0x70a4aef1d4271e125a14c30405c20e1329d831c8be2489a1c87228f12b76541a",
+      "exit_tx": "0x6eeb0ad337c0b9eb2dca73c7626d5da5c1c3c5ae7818d916af3077dadbdb830d",
+      "id": "LIVE-SCALP-505",
+      "reason": "TP_V7_+4.5",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0xdBeadf359E08Fe5eA95565191Ff00dfcaA8EBd58",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-05 12:09:02 ET",
       "kind": "FLAT",
@@ -2147,24 +2172,6 @@
       "token": "0xE59061E82979f2a75E589C480A39ffBce65D4ff1",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 23:54:04 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "POOPYBOT",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0xb8dfc55cd429e310d22d36a763cca73e6ef66a9587d73a4f0cbd414d614df2f8",
-      "open_tx": "0xb8dfc55cd429e310d22d36a763cca73e6ef66a9587d73a4f0cbd414d614df2f8",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-425",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $3.553/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2691.69,
@@ -2183,13 +2190,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x70a4aef1d4271e125a14c30405c20e1329d831c8be2489a1c87228f12b76541a",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 12,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x6eeb0ad337c0b9eb2dca73c7626d5da5c1c3c5ae7818d916af3077dadbdb830d",
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": 0.8227
   },
   "paper": {
     "active": false,
