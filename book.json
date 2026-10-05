@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-05 02:59:35 ET",
+  "updated_et": "2026-10-05 02:59:37 ET",
   "liquid_usd": 49.891,
-  "upnl_usd": 3.0237,
-  "equity_usd": 57.9147,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 49.891,
+  "status": "EXITING:TP_V7_+4.5",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM TEXCAT uPnL $3.0237 (60.4737%) \u00b7 held 12s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 02:59:34 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "TEXCAT",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 5.338694854254876e-05,
-      "mark": 8.567202514954188e-05,
-      "uPnL": 3.0237,
-      "mtm_pct": 60.4737,
-      "lev": 1,
-      "paper": false,
-      "tx": "0xa329a28c794e6ad1d90f0fad1e89fb6119c433121922e95c9080e211ba14793f",
-      "token": "0xF1EF6d4c8a78da17f0298C250d44fbB8c1d0960E",
-      "held_sec": 11,
-      "weth_out": 0.002947316589933146,
-      "usd_out": 8.023686
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "TEXCAT",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 5.338694854254876e-05,
-    "mark": 8.567202514954188e-05,
-    "uPnL": 3.0237,
-    "mtm_pct": 60.4737,
-    "lev": 1,
-    "paper": false,
-    "tx": "0xa329a28c794e6ad1d90f0fad1e89fb6119c433121922e95c9080e211ba14793f",
-    "token": "0xF1EF6d4c8a78da17f0298C250d44fbB8c1d0960E",
-    "held_sec": 11,
-    "weth_out": 0.002947316589933146,
-    "usd_out": 8.023686
-  },
+  "notes": "LIVE MTM TEXCAT uPnL $3.0237 (60.4737%) \u00b7 held 12s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 02:59:34 ET \u00b7 CUT TP_V7_+4.5",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-10-04 19:28:06 ET",
@@ -753,12 +719,19 @@
       "liquid_usd": 49.891,
       "upnl_usd": 3.0237,
       "n_pos": 1
+    },
+    {
+      "t": "2026-10-05 02:59:37 ET",
+      "equity_usd": 57.9147,
+      "liquid_usd": 49.891,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.116 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -232.7153,
-  "total_pnl_pct": -80.0727,
+  "total_pnl_usd": -240.739,
+  "total_pnl_pct": -82.8335,
   "trades": [
     {
       "t": "2026-10-05 02:47:42 ET",
@@ -2215,13 +2188,13 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "TEXCAT",
+    "open": false,
+    "ticker": null,
     "tx": "0xa329a28c794e6ad1d90f0fad1e89fb6119c433121922e95c9080e211ba14793f",
-    "size_usd": 5.0,
+    "size_usd": 0,
     "max_loss_usd": 2.0,
-    "mtm_pct": 60.4737,
-    "upnl_usd": 3.0237,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 11,
     "watcher": "rh_live_mtm_loop"
   },
