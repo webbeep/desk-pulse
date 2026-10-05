@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-04 23:45:56 ET",
-  "liquid_usd": 49.5897,
+  "updated_et": "2026-10-04 23:46:03 ET",
+  "liquid_usd": 54.2098,
   "upnl_usd": 0.0,
-  "equity_usd": 49.5897,
-  "status": "EXITING:HARD_SL_PCT_-18.1778",
+  "equity_usd": 54.2098,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.007632624600548929,
-    "rh_weth": 0.00917547213003682,
+    "rh_eth": 0.007630419604550929,
+    "rh_weth": 0.010874735850740244,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.007632624600548929,
-      "weth": 0.00917547213003682
+      "eth": 0.007630419604550929,
+      "weth": 0.010874735850740244
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM TEXCAT uPnL $-0.9089 (-18.1778%) \u00b7 held 38s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 23:45:53 ET \u00b7 CUT HARD_SL_PCT_-18.1778",
+  "notes": "LIVE EXIT TEXCAT \u00b7 HARD_SL_PCT_-18.1778 \u00b7 tx 0xf9c00a61efc9bd6aa8e23da0d20f5b240280e75c1f489de7297c8f8fce904e7d \u00b7 2026-10-04 23:46:03 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -747,13 +747,38 @@
       "liquid_usd": 49.5897,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 23:46:03 ET",
+      "equity_usd": 54.2098,
+      "liquid_usd": 54.2098,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.4491 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -241.0403,
-  "total_pnl_pct": -82.9372,
+  "total_pnl_usd": -236.4202,
+  "total_pnl_pct": -81.3475,
   "trades": [
+    {
+      "t": "2026-10-04 23:46:03 ET",
+      "kind": "SL",
+      "venue": "RH",
+      "market": "TEXCAT",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": -0.3741,
+      "tx": "0xf9c00a61efc9bd6aa8e23da0d20f5b240280e75c1f489de7297c8f8fce904e7d",
+      "open_tx": "0xc700203771a4f567f52747eb4986a74e479685049e449bed2ddb198700b0d6e1",
+      "exit_tx": "0xf9c00a61efc9bd6aa8e23da0d20f5b240280e75c1f489de7297c8f8fce904e7d",
+      "id": "LIVE-SCALP-478",
+      "reason": "HARD_SL_PCT_-18.1778",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x6015814a48E7E78CD210789C003ECd53aFb38406",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-04 21:30:21 ET",
       "kind": "FLAT",
@@ -2175,24 +2200,6 @@
       "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 07:32:35 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "HER",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0xbc2102c38aa3f606ab4c0e18f4ec10a811bd02248699c9f590e72df2268bc477",
-      "open_tx": "0xbc2102c38aa3f606ab4c0e18f4ec10a811bd02248699c9f590e72df2268bc477",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-398",
-      "reason": "FLAT_NO_EXIT",
-      "note": "2026-10-02 09:07:20 ET LEARN: HER FLAT_NO_EXIT/tokens_left \u00b7 ledger pnl\u22480 but book equity burned ~ticket \u00b7 ban HER \u00b7 cool1800 \u00b7 false-FLAT recovery must not reo",
-      "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2722.44,
@@ -2211,13 +2218,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xc700203771a4f567f52747eb4986a74e479685049e449bed2ddb198700b0d6e1",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 38,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xf9c00a61efc9bd6aa8e23da0d20f5b240280e75c1f489de7297c8f8fce904e7d",
+    "last_exit_reason": "HARD_SL_PCT_-18.1778",
+    "last_exit_upnl": -0.3741
   },
   "paper": {
     "active": false,
