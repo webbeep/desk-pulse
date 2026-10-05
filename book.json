@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-04 20:01:48 ET",
-  "liquid_usd": 49.6718,
+  "updated_et": "2026-10-04 20:01:52 ET",
+  "liquid_usd": 54.6609,
   "upnl_usd": 0.0,
-  "equity_usd": 49.6718,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 54.6609,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.014996329594111296,
-    "rh_weth": 0.001834098324867099,
+    "rh_eth": 0.014993993302955297,
+    "rh_weth": 0.003675454828070281,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.014996329594111296,
-      "weth": 0.001834098324867099
+      "eth": 0.014993993302955297,
+      "weth": 0.003675454828070281
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM TECKTONIK uPnL $0.2337 (4.6734%) \u00b7 held 2033s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 20:01:44 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT TECKTONIK \u00b7 TIME_FLAT_120s \u00b7 tx 0xf5f69a1ac70abacd76c7c87df1ed2fd6264eef53a637837c488156b09474ebc9 \u00b7 2026-10-04 20:01:51 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -740,13 +740,38 @@
       "liquid_usd": 49.6718,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 20:01:52 ET",
+      "equity_usd": 54.6609,
+      "liquid_usd": 54.6609,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.2392 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -240.9582,
-  "total_pnl_pct": -82.9089,
+  "total_pnl_usd": -235.9691,
+  "total_pnl_pct": -81.1923,
   "trades": [
+    {
+      "t": "2026-10-04 20:01:51 ET",
+      "kind": "FLAT",
+      "venue": "RH",
+      "market": "TECKTONIK",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": -0.2099,
+      "tx": "0xf5f69a1ac70abacd76c7c87df1ed2fd6264eef53a637837c488156b09474ebc9",
+      "open_tx": "0x0de06c550e9a8f861dfc9b65b44cd20a5710251a653eb0448091909bdcba23c1",
+      "exit_tx": "0xf5f69a1ac70abacd76c7c87df1ed2fd6264eef53a637837c488156b09474ebc9",
+      "id": "LIVE-SCALP-474",
+      "reason": "TIME_FLAT_120s",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x0631a4A5ba03ac2B4630c4a33177cB69469a0fd5",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-04 19:55:11 ET",
       "kind": "FLAT",
@@ -2168,35 +2193,17 @@
       "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 06:48:17 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "HER",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x11f9c1071ea07aa79f89ce884ec2027392fb4aba6aaa8c31b33c02c993079b59",
-      "open_tx": "0x11f9c1071ea07aa79f89ce884ec2027392fb4aba6aaa8c31b33c02c993079b59",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-394",
-      "reason": "FLAT_NO_EXIT",
-      "note": "2026-10-02 09:07:20 ET LEARN: HER FLAT_NO_EXIT/tokens_left \u00b7 ledger pnl\u22480 but book equity burned ~ticket \u00b7 ban HER \u00b7 cool1800 \u00b7 false-FLAT recovery must not reo",
-      "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2723.61,
+  "mark": 2722.63,
   "mark_src": "coinbase",
-  "mark_eth": 2723.61,
+  "mark_eth": 2722.63,
   "mark_btc": 86489.48,
   "mark_btc_src": "coinbase",
   "mark_link": 14.279,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2723.61,
+    "ETH": 2722.63,
     "BTC": 86489.48,
     "LINK": 14.279
   },
@@ -2204,13 +2211,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xbcdd7bbb3e09ea3d5e7e2d5437d6855b388b2f12610af043238b5e987c163433",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 2032,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xf5f69a1ac70abacd76c7c87df1ed2fd6264eef53a637837c488156b09474ebc9",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": -0.2099
   },
   "paper": {
     "active": false,
