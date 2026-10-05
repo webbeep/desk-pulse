@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 12:40:37 ET",
-  "liquid_usd": 55.2241,
+  "updated_et": "2026-10-05 12:40:45 ET",
+  "liquid_usd": 59.5613,
   "upnl_usd": 0.0,
-  "equity_usd": 55.2241,
-  "status": "EXITING:TIME_FLAT_120s",
+  "equity_usd": 59.5613,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.012904452387997945,
-    "rh_weth": 0.00620872507955588,
+    "rh_eth": 0.012900138901981944,
+    "rh_weth": 0.007824658753663418,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.012904452387997945,
-      "weth": 0.00620872507955588
+      "eth": 0.012900138901981944,
+      "weth": 0.007824658753663418
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM KITTIES uPnL $-0.001 (-0.0204%) \u00b7 held 2150s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 12:40:34 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT KITTIES \u00b7 TIME_FLAT_120s \u00b7 tx 0x393869a89fb63c724239d5d054a7bf1e213045b67444d665491cb81e99e19372 \u00b7 2026-10-05 12:40:44 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -719,12 +719,19 @@
       "liquid_usd": 55.2241,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 12:40:45 ET",
+      "equity_usd": 59.5613,
+      "liquid_usd": 59.5613,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-43.1582 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -235.4059,
-  "total_pnl_pct": -80.9985,
+  "total_pnl_usd": -231.0687,
+  "total_pnl_pct": -79.5061,
   "trades": [
     {
       "t": "2026-10-05 12:38:10 ET",
@@ -2183,13 +2190,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 2150,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x393869a89fb63c724239d5d054a7bf1e213045b67444d665491cb81e99e19372",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": -0.6513
   },
   "paper": {
     "active": false,
