@@ -1,26 +1,34 @@
 {
-  "updated_et": "2026-10-05 02:47:33 ET",
-  "liquid_usd": 49.0204,
-  "upnl_usd": 0.0,
-  "equity_usd": 49.0204,
-  "status": "EXITING:TP_V7_+4.5",
+  "updated_et": "2026-10-05 02:47:34 ET",
+  "liquid_usd": 49.0284,
+  "upnl_usd": 0,
+  "equity_usd": 49.0284,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
-    "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.00578466515628173,
-    "rh_weth": 0.010874735850740244,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0
+    "base_usdc": 0.0,
+    "l1_eth": 0.00140706,
+    "rh_eth": 0.00578467,
+    "rh_weth": 0.01087474
   },
   "holdings": {
     "L1": {
-      "eth": 0.001407059032801532
+      "eth": 0.00140706
+    },
+    "Arb": {
+      "eth": 0.0,
+      "usdc": 0.0
+    },
+    "Base": {
+      "eth": 0.0,
+      "usdc": 0.0
     },
     "RH": {
-      "eth": 0.00578466515628173,
-      "weth": 0.010874735850740244
+      "eth": 0.00578467,
+      "weth": 0.01087474
     }
   },
   "wallet_urls": {
@@ -30,31 +38,10 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM WHY uPnL $0.7052 (14.1047%) \u00b7 held 3s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 02:47:30 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
   "positions": [],
   "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-04 19:27:57 ET",
-      "equity_usd": 55.1745,
-      "liquid_usd": 50.2346,
-      "upnl_usd": -0.0601,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-10-04 19:27:59 ET",
-      "equity_usd": 55.1639,
-      "liquid_usd": 50.2346,
-      "upnl_usd": -0.0707,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-10-04 19:28:00 ET",
-      "equity_usd": 55.2997,
-      "liquid_usd": 50.2346,
-      "upnl_usd": 0.0651,
-      "n_pos": 1
-    },
     {
       "t": "2026-10-04 19:28:03 ET",
       "equity_usd": 55.2498,
@@ -719,12 +706,19 @@
       "liquid_usd": 49.0204,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 02:47:34 ET",
+      "equity_usd": 49.0284,
+      "liquid_usd": 49.0284,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.8232 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -241.6096,
-  "total_pnl_pct": -83.1331,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -241.6016,
+  "total_pnl_pct": -83.13,
   "trades": [
     {
       "t": "2026-10-04 23:46:03 ET",
@@ -2167,37 +2161,16 @@
       "live": true
     }
   ],
-  "mark": 2713.34,
+  "mark": 2713.78,
   "mark_src": "coinbase",
-  "mark_eth": 2713.34,
-  "mark_btc": 85869.1,
+  "mark_eth": 2713.78,
+  "mark_btc": 85960.15,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.126,
+  "mark_link": 14.137,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2713.34,
-    "BTC": 85869.1,
-    "LINK": 14.126
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": false,
-    "ticker": null,
-    "tx": "0x475c6f92b985189d2423ee187d264c3a2a123abc3b4820b25c970b712250fd4a",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 3,
-    "watcher": "rh_live_mtm_loop"
-  },
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
-  },
-  "strategy": {
-    "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
-  },
-  "realized_pnl_usd": -48.8232
+    "ETH": 2713.78,
+    "BTC": 85960.15,
+    "LINK": 14.137
+  }
 }
