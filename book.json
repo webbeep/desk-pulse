@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 12:08:51 ET",
-  "liquid_usd": 54.1296,
+  "updated_et": "2026-10-05 12:08:59 ET",
+  "liquid_usd": 59.5148,
   "upnl_usd": 0.0,
-  "equity_usd": 54.1296,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 59.5148,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.01663882728515671,
-    "rh_weth": 0.002036537130017483,
+    "rh_eth": 0.01663646594117271,
+    "rh_weth": 0.004036866398251779,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.01663882728515671,
-      "weth": 0.002036537130017483
+      "eth": 0.01663646594117271,
+      "weth": 0.004036866398251779
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM KITTIES uPnL $0.623 (12.4599%) \u00b7 held 244s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 12:08:48 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT KITTIES \u00b7 TP_V7_+4.5 \u00b7 tx 0xc55d93085f23089c0cc1e25aad7baf4ab50ec8e732329569703dfe242e4d7bff \u00b7 2026-10-05 12:08:58 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -719,13 +719,38 @@
       "liquid_usd": 54.1296,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 12:08:59 ET",
+      "equity_usd": 59.5148,
+      "liquid_usd": 59.5148,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-44.2521 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -236.5004,
-  "total_pnl_pct": -81.3751,
+  "total_pnl_usd": -231.1152,
+  "total_pnl_pct": -79.5221,
   "trades": [
+    {
+      "t": "2026-10-05 12:08:58 ET",
+      "kind": "TP",
+      "venue": "RH",
+      "market": "KITTIES",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": 0.2712,
+      "tx": "0xc55d93085f23089c0cc1e25aad7baf4ab50ec8e732329569703dfe242e4d7bff",
+      "open_tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
+      "exit_tx": "0xc55d93085f23089c0cc1e25aad7baf4ab50ec8e732329569703dfe242e4d7bff",
+      "id": "LIVE-SCALP-503",
+      "reason": "TP_V7_+4.5",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-05 11:45:25 ET",
       "kind": "TP",
@@ -2147,24 +2172,6 @@
       "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 22:52:10 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "POOPYBOT",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x020cd1c1c47dbc25e135915c60cc58613e8abf463a39c7a55a3e776c0e816390",
-      "open_tx": "0x020cd1c1c47dbc25e135915c60cc58613e8abf463a39c7a55a3e776c0e816390",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-423",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $3.9388/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2695.37,
@@ -2183,13 +2190,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 244,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xc55d93085f23089c0cc1e25aad7baf4ab50ec8e732329569703dfe242e4d7bff",
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": 0.2712
   },
   "paper": {
     "active": false,
