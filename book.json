@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 14:16:30 ET",
-  "liquid_usd": 55.6324,
+  "updated_et": "2026-10-05 14:16:38 ET",
+  "liquid_usd": 58.6302,
   "upnl_usd": 0.0,
-  "equity_usd": 55.6324,
-  "status": "EXITING:HARD_SL_USD_-2.0689",
+  "equity_usd": 58.6302,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.00733931611801796,
-    "rh_weth": 0.011798777360158693,
+    "rh_eth": 0.00733707398434596,
+    "rh_weth": 0.012908135088394649,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.00733931611801796,
-      "weth": 0.011798777360158693
+      "eth": 0.00733707398434596,
+      "weth": 0.012908135088394649
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM PLAGUE uPnL $-2.0689 (-41.378%) \u00b7 held 23s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 14:16:27 ET \u00b7 CUT HARD_SL_USD_-2.0689",
+  "notes": "LIVE EXIT PLAGUE \u00b7 HARD_SL_USD_-2.0689 \u00b7 tx 0x7e0e126c2b2fdde6887d7ae7cdd4746d769082516487770a1a7a9c82c412d796 \u00b7 2026-10-05 14:16:38 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -740,13 +740,38 @@
       "liquid_usd": 55.6324,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 14:16:38 ET",
+      "equity_usd": 58.6302,
+      "liquid_usd": 58.6302,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-42.8537 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -234.9976,
-  "total_pnl_pct": -80.858,
+  "total_pnl_usd": -231.9998,
+  "total_pnl_pct": -79.8265,
   "trades": [
+    {
+      "t": "2026-10-05 14:16:37 ET",
+      "kind": "SL",
+      "venue": "RH",
+      "market": "PLAGUE",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": -2.0268,
+      "tx": "0x7e0e126c2b2fdde6887d7ae7cdd4746d769082516487770a1a7a9c82c412d796",
+      "open_tx": "0x26572ade8c9b539d70a9cf73a953437036803ff2d25882b8261bf9931cc42d85",
+      "exit_tx": "0x7e0e126c2b2fdde6887d7ae7cdd4746d769082516487770a1a7a9c82c412d796",
+      "id": "LIVE-SCALP-509",
+      "reason": "HARD_SL_USD_-2.0689",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0xd64e18f046ceb873B7Fe8C944E626dCFBA511597",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-05 13:37:49 ET",
       "kind": "LIVE",
@@ -2168,24 +2193,6 @@
       "token": "0x341D8769005Ef2F8b60f66e9c05719969672B2e0",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-03 02:50:18 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "PUDU",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0xb0eecea24ba82f29effe1e702b52fd2aea73e0d85fea9bcfa955a262cc2dfbb4",
-      "open_tx": "0xb0eecea24ba82f29effe1e702b52fd2aea73e0d85fea9bcfa955a262cc2dfbb4",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-429",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $3.3924/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0xb374B63C01e66713124c822A27d3c3a2676d321C",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2707.81,
@@ -2204,13 +2211,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x26572ade8c9b539d70a9cf73a953437036803ff2d25882b8261bf9931cc42d85",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 22,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x7e0e126c2b2fdde6887d7ae7cdd4746d769082516487770a1a7a9c82c412d796",
+    "last_exit_reason": "HARD_SL_USD_-2.0689",
+    "last_exit_upnl": -2.0268
   },
   "paper": {
     "active": false,
