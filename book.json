@@ -1,34 +1,26 @@
 {
-  "updated_et": "2026-10-05 02:47:34 ET",
-  "liquid_usd": 49.0284,
-  "upnl_usd": 0,
-  "equity_usd": 49.0284,
-  "status": "FLAT",
+  "updated_et": "2026-10-05 02:47:43 ET",
+  "liquid_usd": 54.7169,
+  "upnl_usd": 0.0,
+  "equity_usd": 54.7169,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
+    "l1_eth": 0.001407059032801532,
+    "rh_eth": 0.00578142373022373,
+    "rh_weth": 0.012977396844986024,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "l1_eth": 0.00140706,
-    "rh_eth": 0.00578467,
-    "rh_weth": 0.01087474
+    "base_usdc": 0.0
   },
   "holdings": {
     "L1": {
-      "eth": 0.00140706
-    },
-    "Arb": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "Base": {
-      "eth": 0.0,
-      "usdc": 0.0
+      "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.00578467,
-      "weth": 0.01087474
+      "eth": 0.00578142373022373,
+      "weth": 0.012977396844986024
     }
   },
   "wallet_urls": {
@@ -38,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "notes": "LIVE EXIT WHY \u00b7 TP_V7_+4.5 \u00b7 tx 0x9ae61fff4a67899d195000289855a3d380d9605fad5d3782a38fad998694d4eb \u00b7 2026-10-05 02:47:42 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -713,13 +705,38 @@
       "liquid_usd": 49.0284,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 02:47:43 ET",
+      "equity_usd": 54.7169,
+      "liquid_usd": 54.7169,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -241.6016,
-  "total_pnl_pct": -83.13,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.8232 \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -235.9131,
+  "total_pnl_pct": -81.173,
   "trades": [
+    {
+      "t": "2026-10-05 02:47:42 ET",
+      "kind": "TP",
+      "venue": "RH",
+      "market": "WHY",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": 0.7072,
+      "tx": "0x9ae61fff4a67899d195000289855a3d380d9605fad5d3782a38fad998694d4eb",
+      "open_tx": "0x475c6f92b985189d2423ee187d264c3a2a123abc3b4820b25c970b712250fd4a",
+      "exit_tx": "0x9ae61fff4a67899d195000289855a3d380d9605fad5d3782a38fad998694d4eb",
+      "id": "LIVE-SCALP-479",
+      "reason": "TP_V7_+4.5",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x836429B6a5C6B13554877820c2bAc234B4207c34",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-04 23:46:03 ET",
       "kind": "SL",
@@ -2141,36 +2158,35 @@
       "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 07:39:42 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "HER",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x4d42047c73581539d7a844431a8ab94bb0fa7ed4dac9f06d1c4d4f11156ffbf5",
-      "open_tx": "0x4d42047c73581539d7a844431a8ab94bb0fa7ed4dac9f06d1c4d4f11156ffbf5",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-399",
-      "reason": "FLAT_NO_EXIT",
-      "note": "2026-10-02 09:07:20 ET LEARN: HER FLAT_NO_EXIT/tokens_left \u00b7 ledger pnl\u22480 but book equity burned ~ticket \u00b7 ban HER \u00b7 cool1800 \u00b7 false-FLAT recovery must not reo",
-      "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2713.78,
+  "mark": 2713.34,
   "mark_src": "coinbase",
-  "mark_eth": 2713.78,
+  "mark_eth": 2713.34,
   "mark_btc": 85960.15,
   "mark_btc_src": "coinbase",
   "mark_link": 14.137,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2713.78,
+    "ETH": 2713.34,
     "BTC": 85960.15,
     "LINK": 14.137
-  }
+  },
+  "mode": "LIVE",
+  "paper": {
+    "active": false,
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+  },
+  "live": {
+    "open": false,
+    "ticker": null,
+    "last_exit_tx": "0x9ae61fff4a67899d195000289855a3d380d9605fad5d3782a38fad998694d4eb",
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": 0.7072
+  },
+  "strategy": {
+    "lane": "RH_LIVE_SCALP",
+    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
+  },
+  "realized_pnl_usd": -48.8232
 }
