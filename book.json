@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 06:32:31 ET",
-  "liquid_usd": 53.742,
+  "updated_et": "2026-10-05 06:32:46 ET",
+  "liquid_usd": 58.5839,
   "upnl_usd": 0.0,
-  "equity_usd": 53.742,
-  "status": "EXITING:HARD_SL_PCT_-7.9934",
+  "equity_usd": 58.5839,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.003208621858489203,
-    "rh_weth": 0.015170272754747815,
+    "rh_eth": 0.003205399415397203,
+    "rh_weth": 0.01695610462373373,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.003208621858489203,
-      "weth": 0.015170272754747815
+      "eth": 0.003205399415397203,
+      "weth": 0.01695610462373373
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SHIBLING uPnL $-0.3997 (-7.9934%) \u00b7 held 16s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 06:32:28 ET \u00b7 CUT HARD_SL_PCT_-7.9934",
+  "notes": "LIVE EXIT SHIBLING \u00b7 HARD_SL_PCT_-7.9934 \u00b7 tx 0xbaf24fbfb64bb210f44aec0c61d760879cdc79636d0da2e77b35fb7c9e084efb \u00b7 2026-10-05 06:32:45 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -726,13 +726,38 @@
       "liquid_usd": 53.742,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 06:32:46 ET",
+      "equity_usd": 58.5839,
+      "liquid_usd": 58.5839,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-45.3508 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -236.888,
-  "total_pnl_pct": -81.5084,
+  "total_pnl_usd": -232.0461,
+  "total_pnl_pct": -79.8424,
   "trades": [
+    {
+      "t": "2026-10-05 06:32:45 ET",
+      "kind": "SL",
+      "venue": "RH",
+      "market": "SHIBLING",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": -0.6852,
+      "tx": "0xbaf24fbfb64bb210f44aec0c61d760879cdc79636d0da2e77b35fb7c9e084efb",
+      "open_tx": "0x9934a90482787eb29d1e4f8ffe7cbb78f5f3cda01e16693596657aa2a7991117",
+      "exit_tx": "0xbaf24fbfb64bb210f44aec0c61d760879cdc79636d0da2e77b35fb7c9e084efb",
+      "id": "LIVE-SCALP-490",
+      "reason": "HARD_SL_PCT_-7.9934",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x9B7ae4f70BB3482E517177e8C6d75d57d0164AE9",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-05 06:08:33 ET",
       "kind": "SL",
@@ -2154,24 +2179,6 @@
       "token": "0x32303676D2758d73b75Fb22023E657859eb28031",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 13:32:51 ET",
-      "kind": "TP",
-      "venue": "RH",
-      "market": "CODYNC",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.2075,
-      "tx": "0xf1f30c8355201bdc99b8bf08464e357deae0db727bc9414bf39c55e91e7df0ba",
-      "open_tx": "0xe9de6899e7687da7254269c6c972504918a3a52b27f120617c226019722244af",
-      "exit_tx": "0xf1f30c8355201bdc99b8bf08464e357deae0db727bc9414bf39c55e91e7df0ba",
-      "id": "LIVE-SCALP-410",
-      "reason": "TP_V7_+4.5",
-      "note": "continuous LIVE \u00b7 caps $4.7186/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=TP_V7_+4.5 pnl=0.2075",
-      "token": "0xD129ED139Af04a60Fee71D9cf757dbe345C277dD",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2716.17,
@@ -2190,13 +2197,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x9934a90482787eb29d1e4f8ffe7cbb78f5f3cda01e16693596657aa2a7991117",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 16,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xbaf24fbfb64bb210f44aec0c61d760879cdc79636d0da2e77b35fb7c9e084efb",
+    "last_exit_reason": "HARD_SL_PCT_-7.9934",
+    "last_exit_upnl": -0.6852
   },
   "paper": {
     "active": false,
