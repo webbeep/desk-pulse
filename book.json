@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-05 12:08:48 ET",
+  "updated_et": "2026-10-05 12:08:51 ET",
   "liquid_usd": 54.1296,
-  "upnl_usd": 0.623,
-  "equity_usd": 59.7526,
-  "status": "LIVE_OPEN",
+  "upnl_usd": 0.0,
+  "equity_usd": 54.1296,
+  "status": "EXITING:TP_V7_+4.5",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM KITTIES uPnL $0.623 (12.4599%) \u00b7 held 244s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 12:08:48 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "KITTIES",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 0.00011211905336841258,
-      "mark": 0.00012608899249094376,
-      "uPnL": 0.623,
-      "mtm_pct": 12.4599,
-      "lev": 1,
-      "paper": false,
-      "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
-      "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
-      "held_sec": 244,
-      "weth_out": 0.002086168417204204,
-      "usd_out": 5.622996
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "KITTIES",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 0.00011211905336841258,
-    "mark": 0.00012608899249094376,
-    "uPnL": 0.623,
-    "mtm_pct": 12.4599,
-    "lev": 1,
-    "paper": false,
-    "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
-    "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
-    "held_sec": 244,
-    "weth_out": 0.002086168417204204,
-    "usd_out": 5.622996
-  },
+  "notes": "LIVE MTM KITTIES uPnL $0.623 (12.4599%) \u00b7 held 244s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 12:08:48 ET \u00b7 CUT TP_V7_+4.5",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-10-05 06:08:05 ET",
@@ -746,12 +712,19 @@
       "liquid_usd": 54.1296,
       "upnl_usd": 0.623,
       "n_pos": 1
+    },
+    {
+      "t": "2026-10-05 12:08:51 ET",
+      "equity_usd": 59.7526,
+      "liquid_usd": 54.1296,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-44.2521 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -230.8774,
-  "total_pnl_pct": -79.4403,
+  "total_pnl_usd": -236.5004,
+  "total_pnl_pct": -81.3751,
   "trades": [
     {
       "t": "2026-10-05 11:45:25 ET",
@@ -2208,13 +2181,13 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "KITTIES",
+    "open": false,
+    "ticker": null,
     "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
-    "size_usd": 5.0,
+    "size_usd": 0,
     "max_loss_usd": 2.0,
-    "mtm_pct": 12.4599,
-    "upnl_usd": 0.623,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 244,
     "watcher": "rh_live_mtm_loop"
   },
