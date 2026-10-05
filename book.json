@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 09:03:28 ET",
-  "liquid_usd": 52.6351,
+  "updated_et": "2026-10-05 09:03:37 ET",
+  "liquid_usd": 58.1563,
   "upnl_usd": 0.0,
-  "equity_usd": 52.6351,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 58.1563,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.010968484666521543,
-    "rh_weth": 0.007012448913135502,
+    "rh_eth": 0.010966157112109545,
+    "rh_weth": 0.00904849841662437,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.010968484666521543,
-      "weth": 0.007012448913135502
+      "eth": 0.010966157112109545,
+      "weth": 0.00904849841662437
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM STOMPY uPnL $0.5113 (10.2255%) \u00b7 held 23s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 09:03:25 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT STOMPY \u00b7 TP_V7_+4.5 \u00b7 tx 0xda7f69bb4a36ca144799133b24044acfab947ccf1b60bf3fd7ecdc3662468ddd \u00b7 2026-10-05 09:03:36 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -789,13 +789,38 @@
       "liquid_usd": 52.6351,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 09:03:37 ET",
+      "equity_usd": 58.1563,
+      "liquid_usd": 58.1563,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.7275 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -237.9949,
-  "total_pnl_pct": -81.8893,
+  "total_pnl_usd": -232.4737,
+  "total_pnl_pct": -79.9896,
   "trades": [
+    {
+      "t": "2026-10-05 09:03:36 ET",
+      "kind": "TP",
+      "venue": "RH",
+      "market": "STOMPY",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": 0.5291,
+      "tx": "0xda7f69bb4a36ca144799133b24044acfab947ccf1b60bf3fd7ecdc3662468ddd",
+      "open_tx": "0xae067a73f4741b89baa500215a5f58dc220034f9eed413f57a493fc92c13012d",
+      "exit_tx": "0xda7f69bb4a36ca144799133b24044acfab947ccf1b60bf3fd7ecdc3662468ddd",
+      "id": "LIVE-SCALP-497",
+      "reason": "TP_V7_+4.5",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0xd1AAF85e66a9FF756F3b7E2179Ecc1c7747B6293",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-05 08:20:21 ET",
       "kind": "FLAT",
@@ -2217,24 +2242,6 @@
       "token": "0xAef1fDd21A7D6Bc463BB7E636672eF4aD6De69F6",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 19:43:04 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "ZERO",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0x23baa4aeb27eab0b0ed77ca107f4f146a022f66f08b294bde3b4e843610bf28d",
-      "open_tx": "0x23baa4aeb27eab0b0ed77ca107f4f146a022f66f08b294bde3b4e843610bf28d",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-416",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $4.2403/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0x23822510E46b68a3B41fEc54D84951A2E8847026",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2714.83,
@@ -2253,13 +2260,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xae067a73f4741b89baa500215a5f58dc220034f9eed413f57a493fc92c13012d",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 23,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0xda7f69bb4a36ca144799133b24044acfab947ccf1b60bf3fd7ecdc3662468ddd",
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": 0.5291
   },
   "paper": {
     "active": false,
