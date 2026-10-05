@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-05 12:39:05 ET",
+  "updated_et": "2026-10-05 12:40:30 ET",
   "liquid_usd": 60.2725,
   "upnl_usd": 0,
   "equity_usd": 60.2725,
-  "status": "FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -39,8 +39,28 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [],
-  "position": null,
+  "positions": [
+    {
+      "id": "LIVE-SCALP-506",
+      "market": "KITTIES",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x034d6c7bb6fcd93bd77841db8d78e8f262ab7406b72eff01a4b174873fd83030",
+      "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-506",
+    "market": "KITTIES",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x034d6c7bb6fcd93bd77841db8d78e8f262ab7406b72eff01a4b174873fd83030",
+    "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-10-05 06:32:28 ET",
@@ -2172,5 +2192,22 @@
     "ETH": 2692.77,
     "BTC": 85259.22,
     "LINK": 13.839
+  },
+  "mode": "LIVE",
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "KITTIES",
+    "tx": "0x034d6c7bb6fcd93bd77841db8d78e8f262ab7406b72eff01a4b174873fd83030",
+    "size_usd": 5.0,
+    "max_loss_usd": 2.0,
+    "id": "LIVE-SCALP-506",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "paper": {
+    "active": false,
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
