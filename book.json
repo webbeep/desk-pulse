@@ -1,34 +1,26 @@
 {
-  "updated_et": "2026-10-05 12:08:39 ET",
-  "liquid_usd": 59.1005,
-  "upnl_usd": 0,
-  "equity_usd": 59.1005,
+  "updated_et": "2026-10-05 12:08:48 ET",
+  "liquid_usd": 54.1296,
+  "upnl_usd": 0.623,
+  "equity_usd": 59.7526,
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
+    "l1_eth": 0.001407059032801532,
+    "rh_eth": 0.01663882728515671,
+    "rh_weth": 0.002036537130017483,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "l1_eth": 0.00140706,
-    "rh_eth": 0.01849707,
-    "rh_weth": 0.00203654
+    "base_usdc": 0.0
   },
   "holdings": {
     "L1": {
-      "eth": 0.00140706
-    },
-    "Arb": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "Base": {
-      "eth": 0.0,
-      "usdc": 0.0
+      "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.01849707,
-      "weth": 0.00203654
+      "eth": 0.01663882728515671,
+      "weth": 0.002036537130017483
     }
   },
   "wallet_urls": {
@@ -38,28 +30,42 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "notes": "LIVE MTM KITTIES uPnL $0.623 (12.4599%) \u00b7 held 244s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 12:08:48 ET",
   "positions": [
     {
-      "id": "LIVE-SCALP-504",
+      "id": "LIVE-SCALP-2",
       "market": "KITTIES",
       "side": "LONG",
       "size_usd": 5.0,
-      "tx": "0x3554ff4d375ba2b11bf629831fe7a0ccf58966a4c179b3535b6517069428404a",
-      "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+      "entry": 0.00011211905336841258,
+      "mark": 0.00012608899249094376,
+      "uPnL": 0.623,
+      "mtm_pct": 12.4599,
+      "lev": 1,
       "paper": false,
-      "uPnL": 0.0
+      "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
+      "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+      "held_sec": 244,
+      "weth_out": 0.002086168417204204,
+      "usd_out": 5.622996
     }
   ],
   "position": {
-    "id": "LIVE-SCALP-504",
+    "id": "LIVE-SCALP-2",
     "market": "KITTIES",
     "side": "LONG",
     "size_usd": 5.0,
-    "tx": "0x3554ff4d375ba2b11bf629831fe7a0ccf58966a4c179b3535b6517069428404a",
-    "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+    "entry": 0.00011211905336841258,
+    "mark": 0.00012608899249094376,
+    "uPnL": 0.623,
+    "mtm_pct": 12.4599,
+    "lev": 1,
     "paper": false,
-    "uPnL": 0.0
+    "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
+    "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+    "held_sec": 244,
+    "weth_out": 0.002086168417204204,
+    "usd_out": 5.622996
   },
   "pnl_history": [
     {
@@ -733,31 +739,20 @@
       "liquid_usd": 59.1005,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 12:08:48 ET",
+      "equity_usd": 59.7526,
+      "liquid_usd": 54.1296,
+      "upnl_usd": 0.623,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -231.5295,
-  "total_pnl_pct": -79.66,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-44.2521 \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -230.8774,
+  "total_pnl_pct": -79.4403,
   "trades": [
-    {
-      "t": "2026-10-05 12:06:08 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "KITTIES",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "pnl_usd": 0.349,
-      "tx": "0x4c9f8a4f66dd95e66d6744789516cb8ea49ef1e43b63e74b9e60b52c6e5ec1c7",
-      "open_tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
-      "exit_tx": "0x4c9f8a4f66dd95e66d6744789516cb8ea49ef1e43b63e74b9e60b52c6e5ec1c7",
-      "id": "LIVE-SCALP-503",
-      "reason": "EXITED",
-      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
-      "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
-      "paper": false,
-      "live": true
-    },
     {
       "t": "2026-10-05 11:45:25 ET",
       "kind": "TP",
@@ -2179,35 +2174,57 @@
       "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
       "paper": false,
       "live": true
+    },
+    {
+      "t": "2026-10-02 22:52:10 ET",
+      "kind": "FLAT",
+      "venue": "RH",
+      "market": "POOPYBOT",
+      "side": "LONG",
+      "size_usd": null,
+      "pnl_usd": 0.0,
+      "tx": "0x020cd1c1c47dbc25e135915c60cc58613e8abf463a39c7a55a3e776c0e816390",
+      "open_tx": "0x020cd1c1c47dbc25e135915c60cc58613e8abf463a39c7a55a3e776c0e816390",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-423",
+      "reason": "FLAT",
+      "note": "continuous LIVE \u00b7 caps $3.9388/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
+      "token": "0xbB6E4a2e78Ad729e9b35842478EeEa936a07d216",
+      "paper": false,
+      "live": true
     }
   ],
-  "mark": 2693.65,
+  "mark": 2695.37,
   "mark_src": "coinbase",
-  "mark_eth": 2693.65,
+  "mark_eth": 2695.37,
   "mark_btc": 85248.41,
   "mark_btc_src": "coinbase",
   "mark_link": 13.794,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2693.65,
+    "ETH": 2695.37,
     "BTC": 85248.41,
     "LINK": 13.794
   },
   "mode": "LIVE",
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "KITTIES",
-    "tx": "0x3554ff4d375ba2b11bf629831fe7a0ccf58966a4c179b3535b6517069428404a",
+    "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
     "size_usd": 5.0,
     "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-504",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": 12.4599,
+    "upnl_usd": 0.623,
+    "held_sec": 244,
+    "watcher": "rh_live_mtm_loop"
   },
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
-  }
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+  },
+  "strategy": {
+    "lane": "RH_LIVE_SCALP",
+    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
+  },
+  "realized_pnl_usd": -44.2521
 }
