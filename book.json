@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 09:37:54 ET",
-  "liquid_usd": 53.1084,
+  "updated_et": "2026-10-05 09:38:03 ET",
+  "liquid_usd": 57.7034,
   "upnl_usd": 0.0,
-  "equity_usd": 53.1084,
-  "status": "EXITING:HARD_SL_PCT_-8.2414",
+  "equity_usd": 57.7034,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.009121181610066172,
-    "rh_weth": 0.00904849841662437,
+    "rh_eth": 0.009118820098550171,
+    "rh_weth": 0.010744664680840482,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.009121181610066172,
-      "weth": 0.00904849841662437
+      "eth": 0.009118820098550171,
+      "weth": 0.010744664680840482
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM STOMPY uPnL $-0.4121 (-8.2414%) \u00b7 held 2088s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 09:37:49 ET \u00b7 CUT HARD_SL_PCT_-8.2414",
+  "notes": "LIVE EXIT STOMPY \u00b7 HARD_SL_PCT_-8.2414 \u00b7 tx 0x4bff12797193d10d0058e50344cbe9b6520f063151a57b11ccafe2cedcac97d2 \u00b7 2026-10-05 09:38:02 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -740,12 +740,19 @@
       "liquid_usd": 53.1084,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 09:38:03 ET",
+      "equity_usd": 57.7034,
+      "liquid_usd": 57.7034,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-45.5702 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -237.5216,
-  "total_pnl_pct": -81.7265,
+  "total_pnl_usd": -232.9266,
+  "total_pnl_pct": -80.1454,
   "trades": [
     {
       "t": "2026-10-05 09:03:36 ET",
@@ -2204,13 +2211,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xae067a73f4741b89baa500215a5f58dc220034f9eed413f57a493fc92c13012d",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 2087,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x4bff12797193d10d0058e50344cbe9b6520f063151a57b11ccafe2cedcac97d2",
+    "last_exit_reason": "HARD_SL_PCT_-8.2414",
+    "last_exit_upnl": -0.3983
   },
   "paper": {
     "active": false,
