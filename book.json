@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 05:06:56 ET",
-  "liquid_usd": 54.3216,
+  "updated_et": "2026-10-05 05:07:06 ET",
+  "liquid_usd": 59.1837,
   "upnl_usd": 0.0,
-  "equity_usd": 54.3216,
-  "status": "EXITING:HARD_SL_PCT_-2.5826",
+  "equity_usd": 59.1837,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.008746405983564428,
-    "rh_weth": 0.009814788036141478,
+    "rh_eth": 0.008743153903014429,
+    "rh_weth": 0.011605285498366863,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.008746405983564428,
-      "weth": 0.009814788036141478
+      "eth": 0.008743153903014429,
+      "weth": 0.011605285498366863
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM BATONROGUE uPnL $-0.1291 (-2.5826%) \u00b7 held 25s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 05:06:55 ET \u00b7 CUT HARD_SL_PCT_-2.5826",
+  "notes": "LIVE EXIT BATONROGUE \u00b7 HARD_SL_PCT_-2.5826 \u00b7 tx 0x40c85ce5f28045bbaad861d5f05be027cfcbf32fc89c87bfbcc9d453e0eb1a6d \u00b7 2026-10-05 05:07:05 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -733,13 +733,38 @@
       "liquid_usd": 54.3216,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 05:07:06 ET",
+      "equity_usd": 59.1837,
+      "liquid_usd": 59.1837,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-44.8322 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -236.3084,
-  "total_pnl_pct": -81.309,
+  "total_pnl_usd": -231.4463,
+  "total_pnl_pct": -79.6361,
   "trades": [
+    {
+      "t": "2026-10-05 05:07:05 ET",
+      "kind": "SL",
+      "venue": "RH",
+      "market": "BATONROGUE",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": -0.1295,
+      "tx": "0x40c85ce5f28045bbaad861d5f05be027cfcbf32fc89c87bfbcc9d453e0eb1a6d",
+      "open_tx": "0xf43703ff9f8b21e53d65d3e1af33d9ed9d3d62df929a45688a117b64a3778345",
+      "exit_tx": "0x40c85ce5f28045bbaad861d5f05be027cfcbf32fc89c87bfbcc9d453e0eb1a6d",
+      "id": "LIVE-SCALP-487",
+      "reason": "HARD_SL_PCT_-2.5826",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x45eD299C14FfD727aD265C031E61acae55a6E589",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-05 04:56:54 ET",
       "kind": "FLAT",
@@ -2161,24 +2186,6 @@
       "token": "0x32303676D2758d73b75Fb22023E657859eb28031",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 12:06:48 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "CPAY",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0xda3df820c97523d1daf0eeca6098067962e6e21e2c9a2e5207911925e19806f6",
-      "open_tx": "0xda3df820c97523d1daf0eeca6098067962e6e21e2c9a2e5207911925e19806f6",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-407",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0x32303676D2758d73b75Fb22023E657859eb28031",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2720.4,
@@ -2197,13 +2204,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xf43703ff9f8b21e53d65d3e1af33d9ed9d3d62df929a45688a117b64a3778345",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 24,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x40c85ce5f28045bbaad861d5f05be027cfcbf32fc89c87bfbcc9d453e0eb1a6d",
+    "last_exit_reason": "HARD_SL_PCT_-2.5826",
+    "last_exit_upnl": -0.1295
   },
   "paper": {
     "active": false,
