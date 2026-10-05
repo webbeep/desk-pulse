@@ -1,8 +1,8 @@
 {
-  "updated_et": "2026-10-05 03:50:02 ET",
-  "liquid_usd": 52.6857,
-  "upnl_usd": -0.0013,
-  "equity_usd": 57.6844,
+  "updated_et": "2026-10-05 03:50:42 ET",
+  "liquid_usd": 52.7192,
+  "upnl_usd": 1.1451,
+  "equity_usd": 58.8643,
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM TEXCAT uPnL $-0.0013 (-0.0251%) \u00b7 held 9s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 03:50:01 ET",
+  "notes": "LIVE MTM TEXCAT uPnL $1.1451 (22.9024%) \u00b7 held 49s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 03:50:41 ET",
   "positions": [
     {
       "id": "LIVE-SCALP-2",
@@ -38,16 +38,16 @@
       "side": "LONG",
       "size_usd": 5.0,
       "entry": 0.00013777346890419352,
-      "mark": 0.000137738831100651,
-      "uPnL": -0.0013,
-      "mtm_pct": -0.0251,
+      "mark": 0.00016932686067169198,
+      "uPnL": 1.1451,
+      "mtm_pct": 22.9024,
       "lev": 1,
       "paper": false,
       "tx": "0x6b2730ff99607674b9830d1498b857ba63398071ddb3bdb83eac16faa9234a43",
       "token": "0x0cd229F1bBad5ae58e9a84950AEbcf5816229d75",
-      "held_sec": 8,
-      "weth_out": 0.001836908713407908,
-      "usd_out": 4.998743
+      "held_sec": 48,
+      "weth_out": 0.002256737425969366,
+      "usd_out": 6.145119
     }
   ],
   "position": {
@@ -56,16 +56,16 @@
     "side": "LONG",
     "size_usd": 5.0,
     "entry": 0.00013777346890419352,
-    "mark": 0.000137738831100651,
-    "uPnL": -0.0013,
-    "mtm_pct": -0.0251,
+    "mark": 0.00016932686067169198,
+    "uPnL": 1.1451,
+    "mtm_pct": 22.9024,
     "lev": 1,
     "paper": false,
     "tx": "0x6b2730ff99607674b9830d1498b857ba63398071ddb3bdb83eac16faa9234a43",
     "token": "0x0cd229F1bBad5ae58e9a84950AEbcf5816229d75",
-    "held_sec": 8,
-    "weth_out": 0.001836908713407908,
-    "usd_out": 4.998743
+    "held_sec": 48,
+    "weth_out": 0.002256737425969366,
+    "usd_out": 6.145119
   },
   "pnl_history": [
     {
@@ -746,12 +746,47 @@
       "liquid_usd": 52.6857,
       "upnl_usd": -0.0013,
       "n_pos": 1
+    },
+    {
+      "t": "2026-10-05 03:50:12 ET",
+      "equity_usd": 57.7294,
+      "liquid_usd": 52.7268,
+      "upnl_usd": 0.0026,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-05 03:50:19 ET",
+      "equity_usd": 57.7494,
+      "liquid_usd": 52.7299,
+      "upnl_usd": 0.0195,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-05 03:50:27 ET",
+      "equity_usd": 57.8359,
+      "liquid_usd": 52.7184,
+      "upnl_usd": 0.1175,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-05 03:50:34 ET",
+      "equity_usd": 57.8981,
+      "liquid_usd": 52.7157,
+      "upnl_usd": 0.1824,
+      "n_pos": 1
+    },
+    {
+      "t": "2026-10-05 03:50:42 ET",
+      "equity_usd": 58.8643,
+      "liquid_usd": 52.7192,
+      "upnl_usd": 1.1451,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-45.6744 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -232.9456,
-  "total_pnl_pct": -80.1519,
+  "total_pnl_usd": -231.7657,
+  "total_pnl_pct": -79.746,
   "trades": [
     {
       "t": "2026-10-05 03:21:13 ET",
@@ -2194,15 +2229,15 @@
       "live": true
     }
   ],
-  "mark": 2721.28,
+  "mark": 2723.01,
   "mark_src": "coinbase",
-  "mark_eth": 2721.28,
+  "mark_eth": 2723.01,
   "mark_btc": 86298.06,
   "mark_btc_src": "coinbase",
   "mark_link": 14.25,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2721.28,
+    "ETH": 2723.01,
     "BTC": 86298.06,
     "LINK": 14.25
   },
@@ -2213,9 +2248,9 @@
     "tx": "0x6b2730ff99607674b9830d1498b857ba63398071ddb3bdb83eac16faa9234a43",
     "size_usd": 5.0,
     "max_loss_usd": 2.0,
-    "mtm_pct": -0.0251,
-    "upnl_usd": -0.0013,
-    "held_sec": 8,
+    "mtm_pct": 22.9024,
+    "upnl_usd": 1.1451,
+    "held_sec": 48,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
