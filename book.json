@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 13:37:21 ET",
-  "liquid_usd": 59.5702,
-  "upnl_usd": -0.3854,
-  "equity_usd": 64.1848,
-  "status": "LIVE_OPEN",
+  "updated_et": "2026-10-05 13:37:40 ET",
+  "liquid_usd": 54.5341,
+  "upnl_usd": 0.0,
+  "equity_usd": 54.5341,
+  "status": "EXITING:POST_FILL_FLAT_-7.7083",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
-    "l1_eth": 0.00140706,
-    "rh_eth": 0.0110393,
-    "rh_weth": 0.00960991,
+    "l1_eth": 0.001407059032801532,
+    "rh_eth": 0.009184214773100129,
+    "rh_weth": 0.009609907444090625,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -16,11 +16,11 @@
   },
   "holdings": {
     "L1": {
-      "eth": 0.00140706
+      "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.0110393,
-      "weth": 0.00960991
+      "eth": 0.009184214773100129,
+      "weth": 0.009609907444090625
     }
   },
   "wallet_urls": {
@@ -30,43 +30,9 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM PLAGUE uPnL $-0.3854 (-7.7083%) \u00b7 held 4s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 13:36:38 ET",
-  "positions": [
-    {
-      "id": "LIVE-SCALP-2",
-      "market": "PLAGUE",
-      "side": "LONG",
-      "size_usd": 5.0,
-      "entry": 7.792109532082551e-05,
-      "mark": 7.191471907607863e-05,
-      "uPnL": -0.3854,
-      "mtm_pct": -7.7083,
-      "lev": 1,
-      "paper": false,
-      "tx": "0xce31805d1942789d32d986344b4a395009567533eb5f4875d93d2b8fa18fdbf1",
-      "token": "0xd64e18f046ceb873B7Fe8C944E626dCFBA511597",
-      "held_sec": 3,
-      "weth_out": 0.001709390823485073,
-      "usd_out": 4.614586
-    }
-  ],
-  "position": {
-    "id": "LIVE-SCALP-2",
-    "market": "PLAGUE",
-    "side": "LONG",
-    "size_usd": 5.0,
-    "entry": 7.792109532082551e-05,
-    "mark": 7.191471907607863e-05,
-    "uPnL": -0.3854,
-    "mtm_pct": -7.7083,
-    "lev": 1,
-    "paper": false,
-    "tx": "0xce31805d1942789d32d986344b4a395009567533eb5f4875d93d2b8fa18fdbf1",
-    "token": "0xd64e18f046ceb873B7Fe8C944E626dCFBA511597",
-    "held_sec": 3,
-    "weth_out": 0.001709390823485073,
-    "usd_out": 4.614586
-  },
+  "notes": "LIVE MTM PLAGUE uPnL $-0.3854 (-7.7083%) \u00b7 held 4s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 13:36:38 ET \u00b7 CUT POST_FILL_FLAT_-7.7083",
+  "positions": [],
+  "position": null,
   "pnl_history": [
     {
       "t": "2026-10-05 07:03:37 ET",
@@ -746,12 +712,19 @@
       "liquid_usd": 59.5702,
       "upnl_usd": -0.3854,
       "n_pos": 1
+    },
+    {
+      "t": "2026-10-05 13:37:40 ET",
+      "equity_usd": 64.1848,
+      "liquid_usd": 54.5341,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-43.1582 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -226.4452,
-  "total_pnl_pct": -77.9153,
+  "total_pnl_usd": -236.0959,
+  "total_pnl_pct": -81.2359,
   "trades": [
     {
       "t": "2026-10-05 13:12:04 ET",
@@ -2208,13 +2181,13 @@
   },
   "mode": "LIVE",
   "live": {
-    "open": true,
-    "ticker": "PLAGUE",
+    "open": false,
+    "ticker": null,
     "tx": "0xce31805d1942789d32d986344b4a395009567533eb5f4875d93d2b8fa18fdbf1",
-    "size_usd": 5.0,
+    "size_usd": 0,
     "max_loss_usd": 2.0,
-    "mtm_pct": -7.7083,
-    "upnl_usd": -0.3854,
+    "mtm_pct": null,
+    "upnl_usd": null,
     "held_sec": 3,
     "watcher": "rh_live_mtm_loop"
   },
