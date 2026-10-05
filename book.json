@@ -1,34 +1,26 @@
 {
-  "updated_et": "2026-10-05 12:40:30 ET",
-  "liquid_usd": 60.2725,
-  "upnl_usd": 0,
-  "equity_usd": 60.2725,
+  "updated_et": "2026-10-05 12:40:34 ET",
+  "liquid_usd": 55.2241,
+  "upnl_usd": -0.001,
+  "equity_usd": 60.2231,
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
+    "l1_eth": 0.001407059032801532,
+    "rh_eth": 0.012904452387997945,
+    "rh_weth": 0.00620872507955588,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "l1_eth": 0.00140706,
-    "rh_eth": 0.01476731,
-    "rh_weth": 0.00620873
+    "base_usdc": 0.0
   },
   "holdings": {
     "L1": {
-      "eth": 0.00140706
-    },
-    "Arb": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "Base": {
-      "eth": 0.0,
-      "usdc": 0.0
+      "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.01476731,
-      "weth": 0.00620873
+      "eth": 0.012904452387997945,
+      "weth": 0.00620872507955588
     }
   },
   "wallet_urls": {
@@ -38,28 +30,42 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "notes": "LIVE MTM KITTIES uPnL $-0.001 (-0.0204%) \u00b7 held 2150s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 12:40:34 ET",
   "positions": [
     {
-      "id": "LIVE-SCALP-506",
+      "id": "LIVE-SCALP-2",
       "market": "KITTIES",
       "side": "LONG",
       "size_usd": 5.0,
-      "tx": "0x034d6c7bb6fcd93bd77841db8d78e8f262ab7406b72eff01a4b174873fd83030",
-      "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+      "entry": 0.0003653505881435795,
+      "mark": 0.000365276167743412,
+      "uPnL": -0.001,
+      "mtm_pct": -0.0204,
+      "lev": 1,
       "paper": false,
-      "uPnL": 0.0
+      "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
+      "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+      "held_sec": 2150,
+      "weth_out": 0.001857528805264769,
+      "usd_out": 4.998982
     }
   ],
   "position": {
-    "id": "LIVE-SCALP-506",
+    "id": "LIVE-SCALP-2",
     "market": "KITTIES",
     "side": "LONG",
     "size_usd": 5.0,
-    "tx": "0x034d6c7bb6fcd93bd77841db8d78e8f262ab7406b72eff01a4b174873fd83030",
-    "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+    "entry": 0.0003653505881435795,
+    "mark": 0.000365276167743412,
+    "uPnL": -0.001,
+    "mtm_pct": -0.0204,
+    "lev": 1,
     "paper": false,
-    "uPnL": 0.0
+    "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
+    "token": "0x6a785Ce78e04c3127D04331bd19AEB70E9aCb7bc",
+    "held_sec": 2150,
+    "weth_out": 0.001857528805264769,
+    "usd_out": 4.998982
   },
   "pnl_history": [
     {
@@ -733,12 +739,19 @@
       "liquid_usd": 60.2725,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 12:40:34 ET",
+      "equity_usd": 60.2231,
+      "liquid_usd": 55.2241,
+      "upnl_usd": -0.001,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -230.3575,
-  "total_pnl_pct": -79.26,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-43.1582 \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -230.4069,
+  "total_pnl_pct": -79.2784,
   "trades": [
     {
       "t": "2026-10-05 12:38:10 ET",
@@ -2181,33 +2194,37 @@
       "live": true
     }
   ],
-  "mark": 2692.77,
+  "mark": 2691.2,
   "mark_src": "coinbase",
-  "mark_eth": 2692.77,
+  "mark_eth": 2691.2,
   "mark_btc": 85259.22,
   "mark_btc_src": "coinbase",
   "mark_link": 13.839,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2692.77,
+    "ETH": 2691.2,
     "BTC": 85259.22,
     "LINK": 13.839
   },
   "mode": "LIVE",
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "KITTIES",
-    "tx": "0x034d6c7bb6fcd93bd77841db8d78e8f262ab7406b72eff01a4b174873fd83030",
+    "tx": "0x83da3cd056864afd02e4890c6baa1d215743813cc6ba21eaa2d69c432c7daf29",
     "size_usd": 5.0,
     "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-506",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -0.0204,
+    "upnl_usd": -0.001,
+    "held_sec": 2150,
+    "watcher": "rh_live_mtm_loop"
   },
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
-  }
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+  },
+  "strategy": {
+    "lane": "RH_LIVE_SCALP",
+    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
+  },
+  "realized_pnl_usd": -43.1582
 }
