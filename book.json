@@ -1,13 +1,13 @@
 {
-  "updated_et": "2026-10-04 23:45:34 ET",
-  "liquid_usd": 49.59,
+  "updated_et": "2026-10-04 23:45:43 ET",
+  "liquid_usd": 49.5811,
   "upnl_usd": 0.0,
-  "equity_usd": 49.59,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 49.5811,
+  "status": "EXIT_EXIT_FAIL",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.007635883649732929,
+    "rh_eth": 0.007632624600548929,
     "rh_weth": 0.00917547213003682,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
@@ -19,7 +19,7 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.007635883649732929,
+      "eth": 0.007632624600548929,
       "weth": 0.00917547213003682
     }
   },
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM TEXCAT uPnL $2.6313 (52.6266%) \u00b7 held 16s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 23:45:30 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT TEXCAT \u00b7 TP_V7_+4.5 \u00b7 tx 0x12e1db3d3f8537659d6bb8748b5e594e50be81c12793f064643d06f2120f0905 \u00b7 2026-10-04 23:45:42 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -726,12 +726,19 @@
       "liquid_usd": 49.59,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 23:45:43 ET",
+      "equity_usd": 57.2213,
+      "liquid_usd": 49.5811,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.4491 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -241.04,
-  "total_pnl_pct": -82.9371,
+  "total_pnl_usd": -241.0489,
+  "total_pnl_pct": -82.9401,
   "trades": [
     {
       "t": "2026-10-04 21:30:21 ET",
@@ -2190,13 +2197,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xc700203771a4f567f52747eb4986a74e479685049e449bed2ddb198700b0d6e1",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 15,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x12e1db3d3f8537659d6bb8748b5e594e50be81c12793f064643d06f2120f0905",
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": 3.0267
   },
   "paper": {
     "active": false,
