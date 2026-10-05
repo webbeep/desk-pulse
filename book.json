@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 07:03:39 ET",
-  "liquid_usd": 53.6429,
+  "updated_et": "2026-10-05 07:03:48 ET",
+  "liquid_usd": 58.0751,
   "upnl_usd": 0.0,
-  "equity_usd": 53.6429,
-  "status": "EXITING:HARD_SL_PCT_-16.0194",
+  "equity_usd": 58.0751,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.018370015602521494,
-    "rh_weth": 1e-18,
+    "rh_eth": 0.018366762777415495,
+    "rh_weth": 0.001637296718874423,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.018370015602521494,
-      "weth": 1e-18
+      "eth": 0.018366762777415495,
+      "weth": 0.001637296718874423
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM SHIBLING uPnL $-0.801 (-16.0194%) \u00b7 held 22s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 07:03:36 ET \u00b7 CUT HARD_SL_PCT_-16.0194",
+  "notes": "LIVE EXIT SHIBLING \u00b7 HARD_SL_PCT_-16.0194 \u00b7 tx 0x1e66421d0679a7c7590d9460e5f38accfa5fb5e1a3871c7d901e7d44767b7942 \u00b7 2026-10-05 07:03:47 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -733,13 +733,38 @@
       "liquid_usd": 53.6429,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 07:03:48 ET",
+      "equity_usd": 58.0751,
+      "liquid_usd": 58.0751,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.036 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -236.9871,
-  "total_pnl_pct": -81.5425,
+  "total_pnl_usd": -232.5549,
+  "total_pnl_pct": -80.0175,
   "trades": [
+    {
+      "t": "2026-10-05 07:03:47 ET",
+      "kind": "SL",
+      "venue": "RH",
+      "market": "SHIBLING",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": -0.6915,
+      "tx": "0x1e66421d0679a7c7590d9460e5f38accfa5fb5e1a3871c7d901e7d44767b7942",
+      "open_tx": "0x6cd6a1bd5141ba9ae39f229b1d75adeaca46582e9a89801c4fbdec55e77419bb",
+      "exit_tx": "0x1e66421d0679a7c7590d9460e5f38accfa5fb5e1a3871c7d901e7d44767b7942",
+      "id": "LIVE-SCALP-492",
+      "reason": "HARD_SL_PCT_-16.0194",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0xE17470FbB83C657A160b1B6af96872aBa04B0a7b",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-05 06:39:10 ET",
       "kind": "FLAT",
@@ -2161,24 +2186,6 @@
       "token": "0x7dE5320e55a8241A4e3af4711425aE408Ca1Cc94",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 14:15:22 ET",
-      "kind": "FLAT",
-      "venue": "RH",
-      "market": "CPAY",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0xe7e0df157e904d40ddebcb9e300827bf94a9d8c07838d0239cae71d46630f738",
-      "open_tx": "0xe7e0df157e904d40ddebcb9e300827bf94a9d8c07838d0239cae71d46630f738",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-412",
-      "reason": "FLAT",
-      "note": "continuous LIVE \u00b7 caps $4.5044/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
-      "token": "0x32303676D2758d73b75Fb22023E657859eb28031",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2712.38,
@@ -2197,13 +2204,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x6cd6a1bd5141ba9ae39f229b1d75adeaca46582e9a89801c4fbdec55e77419bb",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 21,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x1e66421d0679a7c7590d9460e5f38accfa5fb5e1a3871c7d901e7d44767b7942",
+    "last_exit_reason": "HARD_SL_PCT_-16.0194",
+    "last_exit_upnl": -0.6915
   },
   "paper": {
     "active": false,
