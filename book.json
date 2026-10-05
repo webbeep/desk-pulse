@@ -1,30 +1,22 @@
 {
-  "updated_et": "2026-10-05 13:36:36 ET",
+  "updated_et": "2026-10-05 13:37:21 ET",
   "liquid_usd": 59.5702,
-  "upnl_usd": 0,
-  "equity_usd": 59.5702,
+  "upnl_usd": -0.3854,
+  "equity_usd": 64.1848,
   "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
+    "l1_eth": 0.00140706,
+    "rh_eth": 0.0110393,
+    "rh_weth": 0.00960991,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0,
-    "l1_eth": 0.00140706,
-    "rh_eth": 0.0110393,
-    "rh_weth": 0.00960991
+    "base_usdc": 0.0
   },
   "holdings": {
     "L1": {
       "eth": 0.00140706
-    },
-    "Arb": {
-      "eth": 0.0,
-      "usdc": 0.0
-    },
-    "Base": {
-      "eth": 0.0,
-      "usdc": 0.0
     },
     "RH": {
       "eth": 0.0110393,
@@ -38,28 +30,42 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "notes": "LIVE MTM PLAGUE uPnL $-0.3854 (-7.7083%) \u00b7 held 4s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 13:36:38 ET",
   "positions": [
     {
-      "id": "LIVE-SCALP-508",
+      "id": "LIVE-SCALP-2",
       "market": "PLAGUE",
       "side": "LONG",
       "size_usd": 5.0,
+      "entry": 7.792109532082551e-05,
+      "mark": 7.191471907607863e-05,
+      "uPnL": -0.3854,
+      "mtm_pct": -7.7083,
+      "lev": 1,
+      "paper": false,
       "tx": "0xce31805d1942789d32d986344b4a395009567533eb5f4875d93d2b8fa18fdbf1",
       "token": "0xd64e18f046ceb873B7Fe8C944E626dCFBA511597",
-      "paper": false,
-      "uPnL": 0.0
+      "held_sec": 3,
+      "weth_out": 0.001709390823485073,
+      "usd_out": 4.614586
     }
   ],
   "position": {
-    "id": "LIVE-SCALP-508",
+    "id": "LIVE-SCALP-2",
     "market": "PLAGUE",
     "side": "LONG",
     "size_usd": 5.0,
+    "entry": 7.792109532082551e-05,
+    "mark": 7.191471907607863e-05,
+    "uPnL": -0.3854,
+    "mtm_pct": -7.7083,
+    "lev": 1,
+    "paper": false,
     "tx": "0xce31805d1942789d32d986344b4a395009567533eb5f4875d93d2b8fa18fdbf1",
     "token": "0xd64e18f046ceb873B7Fe8C944E626dCFBA511597",
-    "paper": false,
-    "uPnL": 0.0
+    "held_sec": 3,
+    "weth_out": 0.001709390823485073,
+    "usd_out": 4.614586
   },
   "pnl_history": [
     {
@@ -733,12 +739,19 @@
       "liquid_usd": 59.5702,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 13:37:21 ET",
+      "equity_usd": 64.1848,
+      "liquid_usd": 59.5702,
+      "upnl_usd": -0.3854,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -231.0598,
-  "total_pnl_pct": -79.5,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-43.1582 \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -226.4452,
+  "total_pnl_pct": -77.9153,
   "trades": [
     {
       "t": "2026-10-05 13:12:04 ET",
@@ -2181,33 +2194,37 @@
       "live": true
     }
   ],
-  "mark": 2700.83,
+  "mark": 2699.55,
   "mark_src": "coinbase",
-  "mark_eth": 2700.83,
+  "mark_eth": 2699.55,
   "mark_btc": 85375.16,
   "mark_btc_src": "coinbase",
   "mark_link": 13.89,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2700.83,
+    "ETH": 2699.55,
     "BTC": 85375.16,
     "LINK": 13.89
   },
   "mode": "LIVE",
   "live": {
     "open": true,
-    "flat": false,
     "ticker": "PLAGUE",
     "tx": "0xce31805d1942789d32d986344b4a395009567533eb5f4875d93d2b8fa18fdbf1",
     "size_usd": 5.0,
     "max_loss_usd": 2.0,
-    "id": "LIVE-SCALP-508",
-    "karure_banned": true,
-    "watcher": "rh_live_mtm_loop",
-    "loop": "rh_live_loop"
+    "mtm_pct": -7.7083,
+    "upnl_usd": -0.3854,
+    "held_sec": 3,
+    "watcher": "rh_live_mtm_loop"
   },
   "paper": {
     "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
-  }
+    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
+  },
+  "strategy": {
+    "lane": "RH_LIVE_SCALP",
+    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
+  },
+  "realized_pnl_usd": -43.1582
 }
