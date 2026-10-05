@@ -1,26 +1,34 @@
 {
-  "updated_et": "2026-10-05 04:56:50 ET",
-  "liquid_usd": 59.2762,
-  "upnl_usd": 0.0,
-  "equity_usd": 59.2762,
-  "status": "EXITED",
+  "updated_et": "2026-10-05 04:59:51 ET",
+  "liquid_usd": 59.3275,
+  "upnl_usd": 0,
+  "equity_usd": 59.3275,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
-    "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.010586914225706545,
-    "rh_weth": 0.009814788036141478,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0
+    "base_usdc": 0.0,
+    "l1_eth": 0.00140706,
+    "rh_eth": 0.01058691,
+    "rh_weth": 0.00981479
   },
   "holdings": {
     "L1": {
-      "eth": 0.001407059032801532
+      "eth": 0.00140706
+    },
+    "Arb": {
+      "eth": 0.0,
+      "usdc": 0.0
+    },
+    "Base": {
+      "eth": 0.0,
+      "usdc": 0.0
     },
     "RH": {
-      "eth": 0.010586914225706545,
-      "weth": 0.009814788036141478
+      "eth": 0.01058691,
+      "weth": 0.00981479
     }
   },
   "wallet_urls": {
@@ -30,38 +38,10 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT TEXCAT \u00b7 TIME_MAX_180s \u00b7 tx 0x90dff4d8f0585847eaa8e2976b5b3417943d54cbf6d1bfece6cf15995dd185d0 \u00b7 2026-10-05 04:56:50 ET",
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
   "positions": [],
   "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-04 20:58:08 ET",
-      "equity_usd": 54.7546,
-      "liquid_usd": 54.7546,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-04 21:07:54 ET",
-      "equity_usd": 54.6926,
-      "liquid_usd": 54.6926,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-04 21:18:04 ET",
-      "equity_usd": 54.7925,
-      "liquid_usd": 54.7925,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-04 21:28:13 ET",
-      "equity_usd": 54.8018,
-      "liquid_usd": 54.8018,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-10-04 21:30:06 ET",
       "equity_usd": 54.7958,
@@ -726,13 +706,38 @@
       "liquid_usd": 59.2762,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 04:59:51 ET",
+      "equity_usd": 59.3275,
+      "liquid_usd": 59.3275,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-44.8322 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -231.3538,
-  "total_pnl_pct": -79.6042,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -231.3025,
+  "total_pnl_pct": -79.59,
   "trades": [
+    {
+      "t": "2026-10-05 04:56:54 ET",
+      "kind": "FLAT",
+      "venue": "RH",
+      "market": "TEXCAT",
+      "side": "LONG",
+      "size_usd": null,
+      "pnl_usd": 0.0,
+      "tx": "0xea4cc8ef2b6fd4754515f08803b2ec8f4ae4bcbb1265fb91fa8327308152c003",
+      "open_tx": "0xea4cc8ef2b6fd4754515f08803b2ec8f4ae4bcbb1265fb91fa8327308152c003",
+      "exit_tx": null,
+      "id": "LIVE-SCALP-486",
+      "reason": "FLAT",
+      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=FLAT pnl=0.0",
+      "token": "0x0cd229F1bBad5ae58e9a84950AEbcf5816229d75",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-05 04:33:55 ET",
       "kind": "SL",
@@ -2154,53 +2159,18 @@
       "token": "0x32303676D2758d73b75Fb22023E657859eb28031",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 11:59:08 ET",
-      "kind": "TP",
-      "venue": "RH",
-      "market": "SI.GOV",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.8074,
-      "tx": "0xb0c2b726dc2b7038844cf9a8bf70681b0a4772d1ef9ed0e04003e83a9d2d7ae7",
-      "open_tx": "0x7baaad28574363f7be9afd54f2d829871c10f79d2d467ffadfdbd761632e5de7",
-      "exit_tx": "0xb0c2b726dc2b7038844cf9a8bf70681b0a4772d1ef9ed0e04003e83a9d2d7ae7",
-      "id": "LIVE-SCALP-406",
-      "reason": "TP_V7_+4.5",
-      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=TP_V7_+4.5 pnl=0.8074",
-      "token": "0x9AFDEAa7d67e8dE70A37C9d5aD008a24Ed16315A",
-      "paper": false,
-      "live": true
     }
   ],
-  "mark": 2718.0,
+  "mark": 2720.35,
   "mark_src": "coinbase",
-  "mark_eth": 2718.0,
-  "mark_btc": 86236.22,
+  "mark_eth": 2720.35,
+  "mark_btc": 86203.57,
   "mark_btc_src": "coinbase",
-  "mark_link": 14.14,
+  "mark_link": 14.143,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2718.0,
-    "BTC": 86236.22,
-    "LINK": 14.14
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x90dff4d8f0585847eaa8e2976b5b3417943d54cbf6d1bfece6cf15995dd185d0",
-    "last_exit_reason": "TIME_MAX_180s",
-    "last_exit_upnl": 0.2001
-  },
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
-  },
-  "strategy": {
-    "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
-  },
-  "realized_pnl_usd": -44.8322
+    "ETH": 2720.35,
+    "BTC": 86203.57,
+    "LINK": 14.143
+  }
 }
