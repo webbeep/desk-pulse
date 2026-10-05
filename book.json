@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-05 14:16:18 ET",
+  "updated_et": "2026-10-05 14:16:24 ET",
   "liquid_usd": 55.6274,
   "upnl_usd": 0.0,
   "equity_usd": 55.6274,
-  "status": "EXITING:HARD_SL_PCT_-39.3182",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM PLAGUE uPnL $-1.9659 (-39.3182%) \u00b7 held 2380s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 14:16:15 ET \u00b7 CUT HARD_SL_PCT_-39.3182",
+  "notes": "LIVE EXIT PLAGUE \u00b7 HARD_SL_PCT_-39.3182 \u00b7 tx None \u00b7 2026-10-05 14:16:23 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -715,6 +715,13 @@
     },
     {
       "t": "2026-10-05 14:16:18 ET",
+      "equity_usd": 58.6615,
+      "liquid_usd": 55.6274,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 14:16:24 ET",
       "equity_usd": 58.6615,
       "liquid_usd": 55.6274,
       "upnl_usd": 0,
@@ -2183,13 +2190,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xce31805d1942789d32d986344b4a395009567533eb5f4875d93d2b8fa18fdbf1",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 2380,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "HARD_SL_PCT_-39.3182",
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
