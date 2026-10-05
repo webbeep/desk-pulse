@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-05 09:03:21 ET",
-  "liquid_usd": 52.633,
-  "upnl_usd": 0.0,
-  "equity_usd": 52.633,
-  "status": "EXIT_EXIT_FAIL",
+  "updated_et": "2026-10-05 09:03:25 ET",
+  "liquid_usd": 52.6351,
+  "upnl_usd": 0.5113,
+  "equity_usd": 58.1464,
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,43 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT STOMPY \u00b7 TP_V7_+4.5 \u00b7 tx 0x72e0b44363226ba00e6e15f92fba66b993252f599a9cc16f0712c3a370fa93c9 \u00b7 2026-10-05 09:03:21 ET",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE MTM STOMPY uPnL $0.5113 (10.2255%) \u00b7 held 23s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 09:03:25 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "STOMPY",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "entry": 0.0001402444158545033,
+      "mark": 0.00015458506268283115,
+      "uPnL": 0.5113,
+      "mtm_pct": 10.2255,
+      "lev": 1,
+      "paper": false,
+      "tx": "0xae067a73f4741b89baa500215a5f58dc220034f9eed413f57a493fc92c13012d",
+      "token": "0xd1AAF85e66a9FF756F3b7E2179Ecc1c7747B6293",
+      "held_sec": 23,
+      "weth_out": 0.002030062052887623,
+      "usd_out": 5.511273
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "STOMPY",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "entry": 0.0001402444158545033,
+    "mark": 0.00015458506268283115,
+    "uPnL": 0.5113,
+    "mtm_pct": 10.2255,
+    "lev": 1,
+    "paper": false,
+    "tx": "0xae067a73f4741b89baa500215a5f58dc220034f9eed413f57a493fc92c13012d",
+    "token": "0xd1AAF85e66a9FF756F3b7E2179Ecc1c7747B6293",
+    "held_sec": 23,
+    "weth_out": 0.002030062052887623,
+    "usd_out": 5.511273
+  },
   "pnl_history": [
     {
       "t": "2026-10-05 02:59:53 ET",
@@ -775,12 +809,19 @@
       "liquid_usd": 52.633,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 09:03:25 ET",
+      "equity_usd": 58.1464,
+      "liquid_usd": 52.6351,
+      "upnl_usd": 0.5113,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.7275 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -237.997,
-  "total_pnl_pct": -81.89,
+  "total_pnl_usd": -232.4836,
+  "total_pnl_pct": -79.993,
   "trades": [
     {
       "t": "2026-10-05 08:20:21 ET",
@@ -2223,25 +2264,29 @@
       "live": true
     }
   ],
-  "mark": 2714.72,
+  "mark": 2714.83,
   "mark_src": "coinbase",
-  "mark_eth": 2714.72,
+  "mark_eth": 2714.83,
   "mark_btc": 85861.82,
   "mark_btc_src": "coinbase",
   "mark_link": 14.068,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2714.72,
+    "ETH": 2714.83,
     "BTC": 85861.82,
     "LINK": 14.068
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0x72e0b44363226ba00e6e15f92fba66b993252f599a9cc16f0712c3a370fa93c9",
-    "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": 0.6282
+    "open": true,
+    "ticker": "STOMPY",
+    "tx": "0xae067a73f4741b89baa500215a5f58dc220034f9eed413f57a493fc92c13012d",
+    "size_usd": 5.0,
+    "max_loss_usd": 2.0,
+    "mtm_pct": 10.2255,
+    "upnl_usd": 0.5113,
+    "held_sec": 23,
+    "watcher": "rh_live_mtm_loop"
   },
   "paper": {
     "active": false,
