@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-05 09:37:15 ET",
+  "updated_et": "2026-10-05 09:37:44 ET",
   "liquid_usd": 53.1473,
   "upnl_usd": 0.0,
   "equity_usd": 53.1473,
-  "status": "EXITING:TIME_FLAT_120s",
+  "status": "EXIT_None",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM STOMPY uPnL $-0.0226 (-0.4521%) \u00b7 held 2249s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 09:37:12 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT STOMPY \u00b7 TIME_FLAT_120s \u00b7 tx None \u00b7 2026-10-05 09:37:43 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -715,6 +715,13 @@
     },
     {
       "t": "2026-10-05 09:37:15 ET",
+      "equity_usd": 58.1247,
+      "liquid_usd": 53.1473,
+      "upnl_usd": 0,
+      "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 09:37:44 ET",
       "equity_usd": 58.1247,
       "liquid_usd": 53.1473,
       "upnl_usd": 0,
@@ -2183,13 +2190,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xcdc3fb981061beff420375dca97c7ed156f47b759e94f0e75f15e4d82207d83c",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 2249,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": null,
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": null
   },
   "paper": {
     "active": false,
