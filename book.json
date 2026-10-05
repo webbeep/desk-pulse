@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-05 12:28:50 ET",
+  "updated_et": "2026-10-05 12:37:46 ET",
   "liquid_usd": 59.3143,
   "upnl_usd": 0,
   "equity_usd": 59.3143,
-  "status": "FLAT",
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "arb_eth": 0.0,
@@ -39,8 +39,28 @@
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
   "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
-  "positions": [],
-  "position": null,
+  "positions": [
+    {
+      "id": "LIVE-SCALP-505",
+      "market": "VLAD",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "tx": "0x70a4aef1d4271e125a14c30405c20e1329d831c8be2489a1c87228f12b76541a",
+      "token": "0xdBeadf359E08Fe5eA95565191Ff00dfcaA8EBd58",
+      "paper": false,
+      "uPnL": 0.0
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-505",
+    "market": "VLAD",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "tx": "0x70a4aef1d4271e125a14c30405c20e1329d831c8be2489a1c87228f12b76541a",
+    "token": "0xdBeadf359E08Fe5eA95565191Ff00dfcaA8EBd58",
+    "paper": false,
+    "uPnL": 0.0
+  },
   "pnl_history": [
     {
       "t": "2026-10-05 06:10:57 ET",
@@ -2172,5 +2192,22 @@
     "ETH": 2686.29,
     "BTC": 85102.16,
     "LINK": 13.767
+  },
+  "mode": "LIVE",
+  "live": {
+    "open": true,
+    "flat": false,
+    "ticker": "VLAD",
+    "tx": "0x70a4aef1d4271e125a14c30405c20e1329d831c8be2489a1c87228f12b76541a",
+    "size_usd": 5.0,
+    "max_loss_usd": 2.0,
+    "id": "LIVE-SCALP-505",
+    "karure_banned": true,
+    "watcher": "rh_live_mtm_loop",
+    "loop": "rh_live_loop"
+  },
+  "paper": {
+    "active": false,
+    "notes": "PAPER-OFF \u00b7 LIVE continuous loop"
   }
 }
