@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 05:33:57 ET",
-  "liquid_usd": 54.0887,
+  "updated_et": "2026-10-05 05:34:05 ET",
+  "liquid_usd": 59.248,
   "upnl_usd": 0.0,
-  "equity_usd": 54.0887,
-  "status": "EXITING:TIME_FLAT_120s",
+  "equity_usd": 59.248,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.006899568658107663,
-    "rh_weth": 0.011605285498366863,
+    "rh_eth": 0.006897253368911663,
+    "rh_weth": 0.01350689396065254,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.006899568658107663,
-      "weth": 0.011605285498366863
+      "eth": 0.006897253368911663,
+      "weth": 0.01350689396065254
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM TEXCAT uPnL $0.0234 (0.4687%) \u00b7 held 6242s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 05:33:54 ET \u00b7 CUT TIME_FLAT_120s",
+  "notes": "LIVE EXIT TEXCAT \u00b7 TIME_FLAT_120s \u00b7 tx 0x00879cd3d269383883cbc48fa47c5b998905e1bfb15cb1f4cf79d1b792f88969 \u00b7 2026-10-05 05:34:04 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -719,12 +719,19 @@
       "liquid_usd": 54.0887,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 05:34:05 ET",
+      "equity_usd": 59.248,
+      "liquid_usd": 59.248,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-44.9617 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -236.5413,
-  "total_pnl_pct": -81.3892,
+  "total_pnl_usd": -231.382,
+  "total_pnl_pct": -79.6139,
   "trades": [
     {
       "t": "2026-10-05 05:07:05 ET",
@@ -2183,13 +2190,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0x6b2730ff99607674b9830d1498b857ba63398071ddb3bdb83eac16faa9234a43",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 6241,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x00879cd3d269383883cbc48fa47c5b998905e1bfb15cb1f4cf79d1b792f88969",
+    "last_exit_reason": "TIME_FLAT_120s",
+    "last_exit_upnl": 0.0115
   },
   "paper": {
     "active": false,
