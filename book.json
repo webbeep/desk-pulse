@@ -1,26 +1,34 @@
 {
-  "updated_et": "2026-10-05 11:45:25 ET",
-  "liquid_usd": 58.7917,
-  "upnl_usd": 0.0,
-  "equity_usd": 58.7917,
-  "status": "EXITED",
+  "updated_et": "2026-10-05 11:48:05 ET",
+  "liquid_usd": 58.7951,
+  "upnl_usd": 0,
+  "equity_usd": 58.7951,
+  "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
-    "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.003560818557467141,
-    "rh_weth": 0.01680003582553874,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
-    "base_usdc": 0.0
+    "base_usdc": 0.0,
+    "l1_eth": 0.00140706,
+    "rh_eth": 0.00356082,
+    "rh_weth": 0.01680004
   },
   "holdings": {
     "L1": {
-      "eth": 0.001407059032801532
+      "eth": 0.00140706
+    },
+    "Arb": {
+      "eth": 0.0,
+      "usdc": 0.0
+    },
+    "Base": {
+      "eth": 0.0,
+      "usdc": 0.0
     },
     "RH": {
-      "eth": 0.003560818557467141,
-      "weth": 0.01680003582553874
+      "eth": 0.00356082,
+      "weth": 0.01680004
     }
   },
   "wallet_urls": {
@@ -30,66 +38,10 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE EXIT SACABAMBASPIS \u00b7 TP_V7_+4.5 \u00b7 tx 0xe5f78422a896b75547977d4be91ce72ef138cd7ef2a73b90afd41069465ddf22 \u00b7 2026-10-05 11:45:25 ET",
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
   "positions": [],
   "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-05 04:56:50 ET",
-      "equity_usd": 59.2762,
-      "liquid_usd": 59.2762,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-05 04:59:51 ET",
-      "equity_usd": 59.3275,
-      "liquid_usd": 59.3275,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-05 05:06:39 ET",
-      "equity_usd": 59.3255,
-      "liquid_usd": 54.3272,
-      "upnl_usd": -0.0017,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-10-05 05:06:48 ET",
-      "equity_usd": 59.3264,
-      "liquid_usd": 54.328,
-      "upnl_usd": -0.0016,
-      "n_pos": 1
-    },
-    {
-      "t": "2026-10-05 05:06:56 ET",
-      "equity_usd": 59.1925,
-      "liquid_usd": 54.3216,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-05 05:07:06 ET",
-      "equity_usd": 59.1837,
-      "liquid_usd": 59.1837,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-05 05:10:01 ET",
-      "equity_usd": 59.1797,
-      "liquid_usd": 59.1797,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
-    {
-      "t": "2026-10-05 05:20:10 ET",
-      "equity_usd": 59.166,
-      "liquid_usd": 59.166,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-10-05 05:30:19 ET",
       "equity_usd": 59.114,
@@ -754,12 +706,19 @@
       "liquid_usd": 58.7917,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 11:48:05 ET",
+      "equity_usd": 58.7951,
+      "liquid_usd": 58.7951,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
-  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-45.5702 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -231.8383,
-  "total_pnl_pct": -79.7709,
+  "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
+  "total_pnl_usd": -231.8349,
+  "total_pnl_pct": -79.77,
   "trades": [
     {
       "t": "2026-10-05 11:45:25 ET",
@@ -767,14 +726,14 @@
       "venue": "RH",
       "market": "SACABAMBASPIS",
       "side": "LONG",
-      "size_usd": 5.0,
+      "size_usd": null,
       "pnl_usd": 1.3181,
       "tx": "0xe5f78422a896b75547977d4be91ce72ef138cd7ef2a73b90afd41069465ddf22",
       "open_tx": "0xc91d1b4c0ace73f1d62d5bda5d000c3ab5c5993d08a61b664ee62956718778bc",
       "exit_tx": "0xe5f78422a896b75547977d4be91ce72ef138cd7ef2a73b90afd41069465ddf22",
       "id": "LIVE-SCALP-502",
       "reason": "TP_V7_+4.5",
-      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "note": "continuous LIVE \u00b7 caps $5.0/$1.50 \u00b7 bans+liq+exit-quote gates \u00b7 reason=TP_V7_+4.5 pnl=1.3181",
       "token": "0xB111557CF867C76333989E1f1740733813001b01",
       "paper": false,
       "live": true
@@ -2202,33 +2161,16 @@
       "live": true
     }
   ],
-  "mark": 2700.84,
+  "mark": 2701.0,
   "mark_src": "coinbase",
-  "mark_eth": 2700.84,
-  "mark_btc": 85294.57,
+  "mark_eth": 2701.0,
+  "mark_btc": 85400.84,
   "mark_btc_src": "coinbase",
-  "mark_link": 13.808,
+  "mark_link": 13.844,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2700.84,
-    "BTC": 85294.57,
-    "LINK": 13.808
-  },
-  "mode": "LIVE",
-  "live": {
-    "open": false,
-    "ticker": null,
-    "last_exit_tx": "0xe5f78422a896b75547977d4be91ce72ef138cd7ef2a73b90afd41069465ddf22",
-    "last_exit_reason": "TP_V7_+4.5",
-    "last_exit_upnl": 1.3181
-  },
-  "paper": {
-    "active": false,
-    "notes": "PAPER-OFF \u00b7 LIVE MTM watcher"
-  },
-  "strategy": {
-    "lane": "RH_LIVE_SCALP",
-    "cut_rules": "SL -$1.50|-2.5% \u00b7 post-fill -3%/15s \u00b7 TP +4.5% \u00b7 hold\u2264180s \u00b7 V8 timing"
-  },
-  "realized_pnl_usd": -45.5702
+    "ETH": 2701.0,
+    "BTC": 85400.84,
+    "LINK": 13.844
+  }
 }
