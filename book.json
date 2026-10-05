@@ -1,14 +1,14 @@
 {
-  "updated_et": "2026-10-05 03:21:04 ET",
-  "liquid_usd": 51.9328,
+  "updated_et": "2026-10-05 03:21:13 ET",
+  "liquid_usd": 57.6992,
   "upnl_usd": 0.0,
-  "equity_usd": 51.9328,
-  "status": "EXITING:TP_V7_+4.5",
+  "equity_usd": 57.6992,
+  "status": "EXITED",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
-    "rh_eth": 0.002098190856859925,
-    "rh_weth": 0.015577739071507876,
+    "rh_eth": 0.002094993645267925,
+    "rh_weth": 0.017699816315924943,
     "arb_eth": 0.0,
     "arb_usdc": 0.0,
     "base_eth": 0.0,
@@ -19,8 +19,8 @@
       "eth": 0.001407059032801532
     },
     "RH": {
-      "eth": 0.002098190856859925,
-      "weth": 0.015577739071507876
+      "eth": 0.002094993645267925,
+      "weth": 0.017699816315924943
     }
   },
   "wallet_urls": {
@@ -30,7 +30,7 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM WHY uPnL $0.4682 (9.3642%) \u00b7 held 14s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-05 03:21:01 ET \u00b7 CUT TP_V7_+4.5",
+  "notes": "LIVE EXIT WHY \u00b7 TP_V7_+4.5 \u00b7 tx 0x451ab9e3c6cc2f8692fd1be6436a4ffb11a8a3b29febebf6f6240c15d1b1d0d3 \u00b7 2026-10-05 03:21:13 ET",
   "positions": [],
   "position": null,
   "pnl_history": [
@@ -726,13 +726,38 @@
       "liquid_usd": 51.9328,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-05 03:21:13 ET",
+      "equity_usd": 57.6992,
+      "liquid_usd": 57.6992,
+      "upnl_usd": 0,
+      "n_pos": 0
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-46.0306 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -238.6972,
-  "total_pnl_pct": -82.131,
+  "total_pnl_usd": -232.9308,
+  "total_pnl_pct": -80.1469,
   "trades": [
+    {
+      "t": "2026-10-05 03:21:13 ET",
+      "kind": "TP",
+      "venue": "RH",
+      "market": "WHY",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "pnl_usd": 0.3562,
+      "tx": "0x451ab9e3c6cc2f8692fd1be6436a4ffb11a8a3b29febebf6f6240c15d1b1d0d3",
+      "open_tx": "0xffb6fa1e0015c994715dbd399bc86ffb717e6881703f62f575b261bc1fc3ba84",
+      "exit_tx": "0x451ab9e3c6cc2f8692fd1be6436a4ffb11a8a3b29febebf6f6240c15d1b1d0d3",
+      "id": "LIVE-SCALP-481",
+      "reason": "TP_V7_+4.5",
+      "note": "from RH-LIVE-OPENS.json \u00b7 not yet in LIVE-LEARN-LEDGER",
+      "token": "0x2478AbEd48A7d9C527Fda12fB473c634fe7cD46B",
+      "paper": false,
+      "live": true
+    },
     {
       "t": "2026-10-05 03:00:02 ET",
       "kind": "TP",
@@ -2154,24 +2179,6 @@
       "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
       "paper": false,
       "live": true
-    },
-    {
-      "t": "2026-10-02 08:13:46 ET",
-      "kind": "LIVE",
-      "venue": "RH",
-      "market": "HER",
-      "side": "LONG",
-      "size_usd": null,
-      "pnl_usd": 0.0,
-      "tx": "0xe6e6ab5f871cab972c00f268673a935a7f62ac3c88dfdce2416e713a2b25f40e",
-      "open_tx": "0xe6e6ab5f871cab972c00f268673a935a7f62ac3c88dfdce2416e713a2b25f40e",
-      "exit_tx": null,
-      "id": "LIVE-SCALP-401",
-      "reason": "FLAT_NO_EXIT",
-      "note": "2026-10-02 09:07:20 ET LEARN: HER FLAT_NO_EXIT/tokens_left \u00b7 ledger pnl\u22480 but book equity burned ~ticket \u00b7 ban HER \u00b7 cool1800 \u00b7 false-FLAT recovery must not reo",
-      "token": "0x4B66B4604C6ea0E072fEC64DEFe6695730af142f",
-      "paper": false,
-      "live": true
     }
   ],
   "mark": 2721.42,
@@ -2190,13 +2197,9 @@
   "live": {
     "open": false,
     "ticker": null,
-    "tx": "0xffb6fa1e0015c994715dbd399bc86ffb717e6881703f62f575b261bc1fc3ba84",
-    "size_usd": 0,
-    "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 14,
-    "watcher": "rh_live_mtm_loop"
+    "last_exit_tx": "0x451ab9e3c6cc2f8692fd1be6436a4ffb11a8a3b29febebf6f6240c15d1b1d0d3",
+    "last_exit_reason": "TP_V7_+4.5",
+    "last_exit_upnl": 0.3562
   },
   "paper": {
     "active": false,
