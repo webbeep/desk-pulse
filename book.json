@@ -1,9 +1,9 @@
 {
-  "updated_et": "2026-10-04 20:01:42 ET",
-  "liquid_usd": 49.6539,
-  "upnl_usd": 0.0,
-  "equity_usd": 49.6539,
-  "status": "EXITING:TIME_FLAT_120s",
+  "updated_et": "2026-10-04 20:01:45 ET",
+  "liquid_usd": 49.6718,
+  "upnl_usd": 0.2337,
+  "equity_usd": 54.9055,
+  "status": "LIVE_OPEN",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
     "l1_eth": 0.001407059032801532,
@@ -30,9 +30,43 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "LIVE MTM TECKTONIK uPnL $-0.0249 (-0.4976%) \u00b7 held 2027s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 20:01:39 ET \u00b7 CUT TIME_FLAT_120s",
-  "positions": [],
-  "position": null,
+  "notes": "LIVE MTM TECKTONIK uPnL $0.2337 (4.6734%) \u00b7 held 2033s \u00b7 max-loss \u2264$2.0 \u00b7 2026-10-04 20:01:44 ET",
+  "positions": [
+    {
+      "id": "LIVE-SCALP-2",
+      "market": "TECKTONIK",
+      "side": "LONG",
+      "size_usd": 5.0,
+      "entry": 0.0006465691192382335,
+      "mark": 0.0006767858886157076,
+      "uPnL": 0.2337,
+      "mtm_pct": 4.6734,
+      "lev": 1,
+      "paper": false,
+      "tx": "0xbcdd7bbb3e09ea3d5e7e2d5437d6855b388b2f12610af043238b5e987c163433",
+      "token": "0x0631a4A5ba03ac2B4630c4a33177cB69469a0fd5",
+      "held_sec": 2032,
+      "weth_out": 0.001921593055942123,
+      "usd_out": 5.23367
+    }
+  ],
+  "position": {
+    "id": "LIVE-SCALP-2",
+    "market": "TECKTONIK",
+    "side": "LONG",
+    "size_usd": 5.0,
+    "entry": 0.0006465691192382335,
+    "mark": 0.0006767858886157076,
+    "uPnL": 0.2337,
+    "mtm_pct": 4.6734,
+    "lev": 1,
+    "paper": false,
+    "tx": "0xbcdd7bbb3e09ea3d5e7e2d5437d6855b388b2f12610af043238b5e987c163433",
+    "token": "0x0631a4A5ba03ac2B4630c4a33177cB69469a0fd5",
+    "held_sec": 2032,
+    "weth_out": 0.001921593055942123,
+    "usd_out": 5.23367
+  },
   "pnl_history": [
     {
       "t": "2026-10-04 18:45:02 ET",
@@ -726,12 +760,19 @@
       "liquid_usd": 49.6539,
       "upnl_usd": 0,
       "n_pos": 0
+    },
+    {
+      "t": "2026-10-04 20:01:45 ET",
+      "equity_usd": 54.9055,
+      "liquid_usd": 49.6718,
+      "upnl_usd": 0.2337,
+      "n_pos": 1
     }
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 realized sleeve PnL $-48.2392 \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -240.9761,
-  "total_pnl_pct": -82.9151,
+  "total_pnl_usd": -235.7245,
+  "total_pnl_pct": -81.1081,
   "trades": [
     {
       "t": "2026-10-04 19:55:11 ET",
@@ -2174,28 +2215,28 @@
       "live": true
     }
   ],
-  "mark": 2722.63,
+  "mark": 2723.61,
   "mark_src": "coinbase",
-  "mark_eth": 2722.63,
+  "mark_eth": 2723.61,
   "mark_btc": 86489.48,
   "mark_btc_src": "coinbase",
   "mark_link": 14.279,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2722.63,
+    "ETH": 2723.61,
     "BTC": 86489.48,
     "LINK": 14.279
   },
   "mode": "LIVE",
   "live": {
-    "open": false,
-    "ticker": null,
+    "open": true,
+    "ticker": "TECKTONIK",
     "tx": "0xbcdd7bbb3e09ea3d5e7e2d5437d6855b388b2f12610af043238b5e987c163433",
-    "size_usd": 0,
+    "size_usd": 5.0,
     "max_loss_usd": 2.0,
-    "mtm_pct": null,
-    "upnl_usd": null,
-    "held_sec": 2027,
+    "mtm_pct": 4.6734,
+    "upnl_usd": 0.2337,
+    "held_sec": 2032,
     "watcher": "rh_live_mtm_loop"
   },
   "paper": {
