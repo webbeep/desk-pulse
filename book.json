@@ -1,8 +1,8 @@
 {
-  "updated_et": "2026-10-07 08:14:12 ET",
-  "liquid_usd": 55.8497,
+  "updated_et": "2026-10-07 08:27:48 ET",
+  "liquid_usd": 0.0,
   "upnl_usd": 0,
-  "equity_usd": 55.8497,
+  "equity_usd": 0.0,
   "status": "FLAT",
   "wallet": "0x11257A84b997f1f5168300bfA644CFebCAE29C1A",
   "residuals": {
@@ -38,17 +38,10 @@
     "robinhood": "https://explorer.mainnet.chain.robinhood.com/address/0x11257A84b997f1f5168300bfA644CFebCAE29C1A"
   },
   "legacy_wallet": "0x425F91cFebFD8979c21008806403379390900052",
-  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed)",
+  "notes": "manage-only; primary_wallet=V2 0x11257A84b997f1f5168300bfA644CFebCAE29C1A; legacy_wallet=0x425F91cFebFD8979c21008806403379390900052 (not primary; residual not mixed); eth_mark_missing; btc_mark_missing",
   "positions": [],
   "position": null,
   "pnl_history": [
-    {
-      "t": "2026-10-06 15:35:24 ET",
-      "equity_usd": 58.1813,
-      "liquid_usd": 58.1813,
-      "upnl_usd": 0,
-      "n_pos": 0
-    },
     {
       "t": "2026-10-06 15:45:34 ET",
       "equity_usd": 58.1975,
@@ -717,8 +710,8 @@
   ],
   "funding_usd": 290.63,
   "funding_note": "LIVE baseline $290.63 \u00b7 post-2026-09-27 ~$291 inbound \u00b7 equity\u2212baseline SoT",
-  "total_pnl_usd": -234.7803,
-  "total_pnl_pct": -80.78,
+  "total_pnl_usd": -290.63,
+  "total_pnl_pct": -100.0,
   "trades": [
     {
       "t": "2026-10-05 14:39:04 ET",
@@ -2161,16 +2154,16 @@
       "live": true
     }
   ],
-  "mark": 2579.83,
-  "mark_src": "coinbase",
-  "mark_eth": 2579.83,
-  "mark_btc": 83623.28,
-  "mark_btc_src": "coinbase",
-  "mark_link": 13.378,
+  "mark": 0.0,
+  "mark_src": "missing",
+  "mark_eth": null,
+  "mark_btc": null,
+  "mark_btc_src": "missing",
+  "mark_link": 13.31,
   "mark_link_src": "coinbase",
   "marks": {
-    "ETH": 2579.83,
-    "BTC": 83623.28,
-    "LINK": 13.378
+    "ETH": null,
+    "BTC": null,
+    "LINK": 13.31
   }
 }
